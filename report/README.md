@@ -4,10 +4,16 @@ Folder này là **một chỗ duy nhất cho mã nguồn báo cáo IDS mới**, 
 
 ## Artifact hiện có
 
-- `chapters/methodology.tex`: chương phương pháp (UNSW-NB15, official split, preprocessing, feature selection, frozen configurations, OOF stacking, metrics, statistical protocol và reproducibility limits).
-- `chapters/results_discussion.tex`: chương kết quả/thảo luận tiếng Việt với bảng official holdout, paired-bootstrap CI, chi phí, attack families, novel-vector view và các giới hạn RQ1–RQ5.
+- `main.tex`: báo cáo XeLaTeX làm việc có bìa placeholder, tóm tắt, mục lục, 5 chương và bibliography.
+- `chapters/introduction.tex`: bối cảnh, RQ gốc, động cơ và phạm vi đóng góp.
+- `chapters/related_work.tex`: công trình liên quan với claim bị giới hạn theo mức đọc thực tế.
+- `chapters/methodology.tex`: UNSW-NB15, protocol, three frozen pipelines, OOF, uncertainty và limitations.
+- `chapters/results_discussion.tex`: official/novel results, paired CI, costs, Fuzzers/Generic, RQ1–RQ5; tham chiếu trực tiếp đến hai hình P16 dạng PDF trong `../results/figures/`, chưa visual QA sau build.
+- `chapters/conclusion.tex`: kết luận không khẳng định superiority/novelty, hướng nghiên cứu còn thiếu.
+- `references_verified.bib`: 11 legacy entries có verified metadata, L03/U01/U03 chưa đóng.
+- `BUILD.md`: hướng dẫn build, và `P17_SOURCE_QA_2026-10-16.md`: scoped check history.
 
-File hiện là **fragment LaTeX dùng lệnh `\\chapter`**, cần được `\\input` từ report `main.tex` trong bản làm việc theo template trước khi biên dịch. Không tự nhận đã build được PDF.
+Đây là **bản nguồn đầy đủ theo cấu trúc báo cáo để nội bộ review**, nhưng chưa chứng nhận khả năng build/render của chính source hoặc tính đúng mẫu trường. Xem `BUILD.md`.
 
 ## Provenance bắt buộc
 
@@ -25,8 +31,8 @@ File hiện là **fragment LaTeX dùng lệnh `\\chapter`**, cần được `\\i
 
 ## Gate chưa hoàn tất
 
-- Nội dung các chương khác, abstract và bibliography cần ghép từ canon và nguồn đã kiểm chứng; không copy nguyên văn mẫu Android.
-- Chưa có LaTeX `main.tex` working theo template; chưa compile/render hoặc chạy PDF text/visual QA.
+- Năm chương, tóm tắt và bibliography đã ghép vào bản nguồn làm việc; vẫn cần peer/source review, final citation verification và QA bản PDF render.
+- Có `main.tex` standalone working, nhưng **chưa biên dịch/render chính báo cáo này** và chưa QA PDF/figure layout; chưa xác nhận đúng mẫu trường.
 - P18 chưa đóng nguồn tham khảo L03/U01/U03; không bịa citation hoàn chỉnh.
 - Thông tin người thực hiện/GVHD/ngày/chữ ký vẫn cần xác nhận; không được điền theo ví dụ mẫu.
 - P17 toàn bộ **IN PROGRESS**, không phải DONE. Dataset/model/test configuration và toàn bộ kết quả frozen giữ nguyên.
