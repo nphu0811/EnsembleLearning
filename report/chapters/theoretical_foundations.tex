@@ -46,7 +46,7 @@ Tăng số cây thường đòi hỏi thêm thời gian train, suy luận và b�
 
 \section{Voting, Stacking và sai số bổ sung}
 \subsection{Hard voting và weighted soft voting}
-Hard voting chọn nhãn theo số thành viên bình chọn. Weighted soft voting tổng hợp xác suất từ các model:
+Hard voting chọn nhãn theo số thành viên bình chọn \cite{legacyL01,legacyL05}. Weighted soft voting tổng hợp xác suất từ các model:
 \begin{equation}
 \widehat p_{\mathrm{vote}}(x)=\sum_{m=1}^{M}w_m\widehat p_m(x),\quad
 w_m\ge 0,\quad\sum_{m=1}^{M}w_m=1.
@@ -55,7 +55,7 @@ w_m\ge 0,\quad\sum_{m=1}^{M}w_m=1.
 Trọng số dựa vào một tập validation riêng có thể điều chỉnh ưu tiên thành viên, nhưng chỉ số chất lượng cá nhân không nhất thiết dự báo đóng góp trong ensemble. Nếu tất cả base learners sai trên các dòng giống nhau, lấy trung bình dự đoán không có cơ chế sửa những lỗi chung ấy. Do đó diversity là biến quan sát có ý nghĩa, chứ không phải bằng chứng bắt buộc cho superiority.
 
 \subsection{Out-of-fold training của Stacking}
-Stacking sử dụng một meta learner để học ánh xạ từ dự đoán của các base learners sang kết quả cuối. Nếu dùng dự đoán trên chính tập fit của base learners để train meta, tầng meta có thể nhận đầu vào quá lạc quan. Out-of-fold (OOF) giảm vấn đề này: ở mỗi fold, base learner chỉ fit trên các fold khác và tạo xác suất cho fold hiện hành. Ghép lại cho mỗi dòng huấn luyện một dự đoán chưa được base learner fit trực tiếp trên dòng đó:
+Stacking sử dụng một meta learner để học ánh xạ từ dự đoán của các base learners sang kết quả cuối \cite{legacyL06}. Nếu dùng dự đoán trên chính tập fit của base learners để train meta, tầng meta có thể nhận đầu vào quá lạc quan. Out-of-fold (OOF) giảm vấn đề này: ở mỗi fold, base learner chỉ fit trên các fold khác và tạo xác suất cho fold hiện hành. Ghép lại cho mỗi dòng huấn luyện một dự đoán chưa được base learner fit trực tiếp trên dòng đó:
 \begin{equation}
 Z_{i,m}=\widehat p_m^{(-k(i))}(x_i),\qquad
 \widehat p_{\mathrm{stack}}(x)=g\left(\widehat p_1(x),\ldots,\widehat p_M(x)\right).
@@ -84,7 +84,7 @@ $\downarrow$\\[1mm]
 Double-fault đo tỷ lệ cùng sai của hai bộ phân loại, error correlation mô tả mức liên hệ giữa các biến chỉ báo lỗi, còn oracle giả định có thể chọn đúng đầu ra của một base model bất kỳ trên mỗi mẫu. Oracle là cận mô tả dưới thông tin nhãn thật, không phải thuật toán dự đoán có thể vận hành trực tiếp. Những chỉ số này cho biết các base learners có thể bổ sung nhau ở đâu, nhưng không trả lời việc meta learner có thực sự học được quy tắc kết hợp đúng hay không. Kết quả voting không thuận lợi trong development vẫn phải được giữ lại để tránh thiên lệch chỉ báo cáo phương án tốt.
 
 \section{Các chiến lược Feature Selection}
-Filter selection sử dụng phép đo thống kê để xếp hạng biến; wrapper selection đánh giá trực tiếp các tập con thông qua mô hình; embedded selection khai thác cơ chế lựa chọn trong khi fit. Các phương pháp có ưu nhược điểm khác nhau về chi phí, tương tác biến và thiên lệch theo model. Tính ổn định của feature được chọn qua nhiều lần lặp giúp hạn chế phụ thuộc một phép chia cụ thể, nhưng không chứng minh loại bỏ biến ít quan trọng luôn cải thiện generalization.
+Filter selection sử dụng phép đo thống kê để xếp hạng biến; wrapper selection đánh giá trực tiếp các tập con thông qua mô hình; embedded selection khai thác cơ chế lựa chọn trong khi fit \cite{legacyL08,legacyL12}. Các phương pháp có ưu nhược điểm khác nhau về chi phí, tương tác biến và thiên lệch theo model. Tính ổn định của feature được chọn qua nhiều lần lặp giúp hạn chế phụ thuộc một phép chia cụ thể, nhưng không chứng minh loại bỏ biến ít quan trọng luôn cải thiện generalization.
 
 Một phép đo gần bằng nhau của RF-17 và RF-42 không cho phép suy rằng 25 feature bị bỏ đều vô dụng. Mục tiêu của việc giảm feature trong đề tài là khảo sát một \emph{đánh đổi giữa chất lượng và tài nguyên} của hai pipeline cụ thể. Muốn quy kết quả cho riêng số feature phải giữ cố định mọi thành phần khác của RF và lồng lựa chọn feature trong outer folds.
 
