@@ -1,5 +1,12 @@
 # Release blockers ngày 16/10/2026
 
+## Cập nhật P17 CI/PDF — 16/10/2026 (ưu tiên hiện hành)
+
+- **G4 technical PDF build/render: PASS trong phạm vi kỹ thuật**, không còn BUILD_BLOCKED trên máy: GitHub Actions run 38901027329 thành công, XeLaTeX + BibTeX; 22 trang A4, 12 bibliography items, 2 vector figures, 5 results tables; sau sửa 0 Overfull, 0 missing glyph, 0 text boundary outliers. Biên bản `report/P17_PDF_QA_2026-10-16.md`; CI mới block regression. Không gọi G4 final/approved vì bibliography L03 và mẫu chuẩn trường còn treo.
+- **G5 vẫn AUTHOR_INPUT_NEEDED** (tên SV/GVHD/trường/đơn vị/ngày/ký/xác nhận form). G0–G3/G6 không tự đóng. Chưa release chính thức, không thay mô hình/test.
+- Dòng `G4 BLOCKED` trong bảng lịch sử dưới đây chỉ mô tả **trước build 16/10**; trạng thái hiện hành là scoped technical pass + final P17 partial. Không sửa lại audit cũ.
+
+
 ## Cập nhật r05 — 16/10/2026, ưu tiên hiện hành
 
 - Independent full argument/form content review đã hoàn tất; ARG-R05-01–05 addressed trong bản r05 và recheck riêng. Không còn blocker usage limit cho review này; không thay G4/G5 bằng reviewer judgment.

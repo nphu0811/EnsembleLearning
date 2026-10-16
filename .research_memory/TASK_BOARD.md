@@ -27,7 +27,7 @@ Checkpoint hiện hành r03: `docs/RESUME_AUDIT_R03_2026-10-16.md`. Prior manife
 | P16-REST | QA remaining evidence figures/tables | TODO | Existing drafts require explicit contracts | NOT_RUN |
 | P15-ML | Clean ML reproduction / model artifact | TODO | Current original env UNKNOWN | NOT_RUN; isolated run plan required |
 | PROP-DOCX | Fill original DOCX + render | BLOCKED tool/content | Original located, preserved | Runtime loader unavailable; verified literature/admin pending |
-| REPORT | IDS LaTeX report + PDF | TODO | templates/original/latex/ | TeX not on PATH |
+| REPORT | IDS LaTeX report + PDF | DONE_SCOPED_PDF_BUILD_QA | `report/main.tex`; `report/P17_PDF_QA_2026-10-16.md`; Actions 38901027329; commit cb556fc | G4 technical XeLaTeX/BibTeX+render QA PASS; institutional template/admin/final release gates OPEN |
 | DEFENSE-QA | Prepare evidence-grounded council questions | DONE_SCOPED | defense/Hoi_dap_hoi_dong.md; qa_validation_r02.json |20 questions,33 paths checked; DRAFT_FOR_REVIEW |
 | DEFENSE | Slides, script, inference demo and final rehearsal | TODO | MASTER requirements | Depends on evidence/report/model; Q&A draft exists |
 | RELEASE | G0–G6 and final checksum package | BLOCKED | release/RELEASE_BLOCKERS.md | NOT_READY_FOR_SUBMISSION |
@@ -99,3 +99,9 @@ Evidence: `.research_memory/r04/R04-FINAL-CHECKPOINT.json`.
 DONE_SCOPED — Independent full argument/form review and recheck saved;3P1/2P2 addressed in separate r05 draft;34/34 source-boundary checks;author/renderP0 open;no training or release closure
 
 Evidence: `.research_memory/r05/R05-ASSEMBLY-REVIEW.json`.
+
+## P17 2026-10-16 continuation checkpoint
+
+- REPORT source = 5 chapters + main entry; 12 BibTeX sources; 2 P16 figures linked; exact frozen performance numbers unchanged.
+- GitHub Actions 38900247221 (first SUCCESS but 16 Overfull); patch cb556fc; run 38901027329 SUCCESS, 0 Overfull, 0 missing glyph, 22 A4 pages. Independent extracted-PDF QA at `report/P17_PDF_QA_2026-10-16.md`.
+- G4 technical build/layout = DONE_SCOPED; P17 full = PARTIAL pending administrative form and institutional signoff. No final model/fullTRAIN reproduction and no source data cleanup performed.

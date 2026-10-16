@@ -29,7 +29,7 @@ Checkpoint r03: docs/RESUME_AUDIT_R03_2026-10-16.md. P18 xác nhận metadata th
 | P14 | VERIFIED_REUSE descriptive | Step1/3/4/5 + closure; 375 checks là evidence lịch sử, không nói vừa chạy lại |
 | P15 | PARTIAL | Hash/protocol/tests/postprocessing clean replay đạt; training reproduction, original env, model artifact còn thiếu |
 | P16 | IN_PROGRESS | Bắt đầu figure QA từ saved tables; draft cũ không tự động đạt |
-| P17 | TODO | Có template LaTeX đã bảo quản; chưa có báo cáo IDS build/render đạt |
+| P17 | PARTIAL (PDF_BUILD_QA_SCOPED_PASS) | `report/main.tex` 5 chương, 22 trang A4 được XeLaTeX/BibTeX build/render; CI từ 16 Overfull thành 0, 12 nguồn/2 hình/5 bảng. Mẫu trường và thông tin hành chính chưa được xác nhận, chưa phát hành cuối. |
 | P18 | TODO/PARTIAL | Literature list cũ; chưa verified refs.bib cho báo cáo cuối |
 | P19 | IN_PROGRESS | Draft availability + inventory; license code, repository/version chưa chốt |
 | P20 | TODO | Chỉ review đầy đủ sau khi có manuscript và package; không giả 3 reviewer |
