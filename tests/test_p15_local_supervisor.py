@@ -22,6 +22,26 @@ class SafetyTests(unittest.TestCase):
 
     def tearDown(self):self.temp.cleanup()
 
+    def test_unbounded_deadline_only_opt_in_full(self):
+        self.assertTrue(mod.timeout_policy_valid(0, 'full'))
+        self.assertFalse(mod.timeout_policy_valid(0, 'pilot'))
+        self.assertTrue(mod.timeout_policy_valid(20, 'pilot'))
+        self.assertTrue(mod.timeout_policy_valid(20, 'full'))
+        self.assertFalse(mod.timeout_policy_valid(21, 'full'))
+        self.assertFalse(mod.timeout_policy_valid(-1, 'full'))
+
+    def test_zero_deadline_never_times_out_even_after_hours(self):
+        self.assertFalse(mod.timeout_reached(0, 0))
+        self.assertFalse(mod.timeout_reached(24 * 3600, 0))
+        self.assertFalse(mod.timeout_reached(1000 * 3600, 0))
+
+    def test_positive_deadline_and_resource_watcher_independent(self):
+        self.assertFalse(mod.timeout_reached(19 * 60, 20))
+        self.assertTrue(mod.timeout_reached(20 * 60 + 0.1, 20))
+        self.assertFalse(mod.timeout_reached(8 * 60, 20))
+        self.assertEqual(mod.MIN_FREE_FLOOR, int(1.5 * G))
+        self.assertEqual(mod.DEFAULT_CAP, 2 * G)
+
     def test_2gib_free_is_no_go(self):
         b=mod.resource_budget(int(2.01*G),25*G,2*G)
         self.assertFalse(b['passed'])
