@@ -25,7 +25,7 @@
 | P14 | Error analysis | VERIFIED_REUSE_DESCRIPTIVE | Saved detailed profiles and reconciliation; associations not causal |
 | P15 | Reproducibility | PARTIAL | Raw hashes, protocol, postprocessing replay, R04 TRAIN-only smoke45/45; unknown original env; NO_GO full TRAIN model reconstruction |
 | P16 | Scientific figures | IN_PROGRESS | Historical paired forest plot; r05 error tradeoff & frozen tables; two ChatGPT independent scoped audits below |
-| P17 | Report writing | 40P_PDF_SCOPED_QA_PASS / FORM_NOT_APPROVED | Reference-inspired PTIT styling: 8 chapters, 40 physical A4 pages, 7 figures and 10 tables, 12 bibliography items; XeLaTeX/BibTeX build+independent visual/text/page-boundary QA PASS, 0 overfull/0 missing glyphs. Author/student IDs/adviser and institutional form approval remain OPEN. |
+| P17 | Report writing | FIVE_CHAPTER_37P_PDF_QA_PASS / FORM_NOT_APPROVED | Main entry point có 5 chương, 37 trang A4; viết tắt sau Mục lục, không tóm tắt, không dẫn file .md/.json nội bộ trong PDF; Actions 38916942038 PASS, 12 bibliography items, 0 Overfull và 0 duplicate labels. Phê duyệt mẫu và chữ ký thật vẫn OPEN. |
 | P18 | Citation management | PARTIAL | 11/12 legacy metadata verified r04, U01 pages1–6 independently corroborated, U03 final 2019 vol5(4) corroborated; L03 page conflict disclosed with evidence favoring254–263, VOR PDF check open; final complete bibliography pending |
 | P19 | Data availability | IN_PROGRESS | Public GitHub repository confirmed; raw data not tracked; source/derived tables available; no root LICENSE or final model artifact; privacy/release/version/rights checks open |
 | P20 | Final review | TODO | G0–G6, completeness, rendered reports, inference demo and scientific limitations not all closed |
@@ -85,3 +85,7 @@
 ## P17 reformatted to 40 pages using sample report as layout reference (2026-10-16)
 
 User-provided `Bao_cao_NetFlow.pdf` inspected as a **64-page structural/visual reference only**. Current report has 8 evidence-bounded chapters, PTIT original logo (no third-party identity reused), double cover frame, carmine-linked TOC, blue accents, 4 original Phase4 EDA figures, 2 P16 figures, and OOF conceptual diagram. XeLaTeX CI run 38907313697 on commit `13f310f975fc2405abbf35bd433b35021f630367` returned 40 A4 pages with 0 overfull, 0 missing glyph, 12 bibliography entries and no out-of-page text. See `report/P17_PTIT_40PAGE_QA_2026-10-16.md`. This supersedes the 22-page *design status* only; preserved historical audit values remain valid for their old artifact. P17 still PARTIAL: administrative names, approved template/signature, P18 total and P20 final approval remain OPEN.
+
+## 2026-10-16 — P17 five-chapter layout takes precedence
+
+User-requested structure follows five top-level chapters of uploaded PTIT NetFlow reference. The previous eight-chapter 40-page PDF status is preserved in historical QA documents only; **current PDF has five chapters and 37 A4 pages** after removing the abstract and moving the substantive acronym glossary immediately after TOC. Actual compile/run: https://github.com/nphu0811/EnsembleLearning/actions/runs/38916942038 ; QA file `docs/research/P17_FIVE_CHAPTER_RESTRUCTURE_QA_2026-10-16.md`. All frozen experimental results remain unchanged. Nature Skills were not directly available in this ChatGPT runtime, and no Nature skill execution is claimed.
