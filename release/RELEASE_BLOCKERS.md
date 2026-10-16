@@ -1,5 +1,13 @@
 # Release blockers ngày 16/10/2026
 
+## P17 — Thông tin MỚI NHẤT: báo cáo năm chương (16/10/2026)
+
+- Bản PDF hiện hành có **5 chương, 37 trang A4**, bỏ Tóm tắt, Danh mục từ viết tắt nằm sau Mục lục. Bản 8 chương/40 trang dưới đây là **đã thay thế**, chỉ còn giá trị lịch sử QA.
+- [P17 five-chapter build run](https://github.com/nphu0811/EnsembleLearning/actions/runs/38916942038): XeLaTeX/BibTeX PASS, không trùng nhãn, không glyph thiếu/Overfull; bảng chỉ số/12 trích dẫn tiếp tục hiện diện.
+- Bản PDF không in đường dẫn nội bộ tới `.md`, `.json`, `notebook/` hoặc `results/`. Nội dung tập trung vào lý thuyết, xử lý dữ liệu, huấn luyện, kết quả và thảo luận. Chi tiết tại `docs/research/P17_FIVE_CHAPTER_RESTRUCTURE_QA_2026-10-16.md`.
+- **Chữ ký thật, chấp thuận biểu mẫu của cơ sở đào tạo, kiểm định trích dẫn/toàn văn học thuật và các release gates khác vẫn mở.** Không suy ra PASS của phần mềm quét tương đồng từ việc PDF build thành công.
+
+
 ## Cập nhật P17 báo cáo 40 trang theo mẫu tham khảo (mới nhất)
 
 - **G4 báo cáo kỹ thuật**: XeLaTeX/BibTeX 40 trang A4 PASS (CI `38907313697`), 7 hình/10 bảng/12 bibliography; không có Overfull hay thiếu glyph; đã xem PDF thật. Có logo PTIT, khung bìa, màu mục lục/biểu đồ và đầu/chân trang dựa trên mẫu người dùng cung cấp. Bài tham khảo chỉ dùng về hình thức, không chép kết quả hoặc danh tính.
