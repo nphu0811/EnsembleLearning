@@ -4,6 +4,7 @@ Folder này là **một chỗ duy nhất cho mã nguồn báo cáo IDS mới**, 
 
 ## Artifact hiện có
 
+- `chapters/methodology.tex`: chương phương pháp (UNSW-NB15, official split, preprocessing, feature selection, frozen configurations, OOF stacking, metrics, statistical protocol và reproducibility limits).
 - `chapters/results_discussion.tex`: chương kết quả/thảo luận tiếng Việt với bảng official holdout, paired-bootstrap CI, chi phí, attack families, novel-vector view và các giới hạn RQ1–RQ5.
 
 File hiện là **fragment LaTeX dùng lệnh `\\chapter`**, cần được `\\input` từ report `main.tex` trong bản làm việc theo template trước khi biên dịch. Không tự nhận đã build được PDF.
