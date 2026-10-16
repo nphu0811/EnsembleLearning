@@ -1,0 +1,62 @@
+% PTIT-style preliminary pages. Do not reuse identities or statements from sample group.
+\chapter*{LỜI CAM ĐOAN}
+\addcontentsline{toc}{chapter}{Lời cam đoan}
+\noindent Đây là bản \textbf{dự thảo lời cam đoan}, người thực hiện phải kiểm tra, xác nhận và ký trước khi nộp.
+
+Tôi/chúng tôi, \textbf{[TÁC GIẢ CẦN XÁC NHẬN]}, trình bày đề tài “Nghiên cứu Ensemble Learning cho bài toán phát hiện xâm nhập mạng” dựa trên công việc học thuật và các kết quả thực nghiệm có thể truy vết. Các kết quả định lượng được dẫn từ những file đã lưu; giới hạn dữ liệu, validation và tính tái lập được công bố cùng kết quả. Những ý tưởng, thông tin có nguồn tham khảo được ghi rõ trong báo cáo.
+
+Thông tin về tác giả, lịch sử công bố, tuyên bố tính nguyên gốc và xác nhận của đơn vị cần được tác giả tự kiểm tra theo quy định. Không sử dụng danh tính, chữ ký hoặc tuyên bố của nhóm khác.
+\vspace{2cm}
+\begin{flushright}TP. Hồ Chí Minh, ngày \textbf{[...]} tháng \textbf{[...]} năm \textbf{[...]}\\[10pt]
+Người/nhóm thực hiện\\[25mm]\textbf{[CẦN XÁC NHẬN VÀ KÝ]}\end{flushright}
+
+\clearpage
+\chapter*{LỜI CẢM ƠN}
+\addcontentsline{toc}{chapter}{Lời cảm ơn}
+Bản báo cáo được hình thành trong quá trình nghiên cứu phát hiện xâm nhập mạng bằng các phương pháp học máy và học kết hợp. Người thực hiện trân trọng ghi nhận giá trị của hoạt động giảng dạy, định hướng phương pháp luận và các nguồn công trình khoa học làm cơ sở xây dựng câu hỏi nghiên cứu và phân tích kết quả.
+
+Lời cảm ơn dành cho giảng viên hướng dẫn, khoa, nhà trường hoặc những người hỗ trợ cụ thể sẽ được bổ sung \emph{sau khi người thực hiện kiểm tra chính xác tên và đóng góp}. Bản thảo không tự nhận có hướng dẫn hay đóng góp từ một cá nhân chưa được xác nhận.
+
+Việc đánh giá minh bạch cả kết quả thuận lợi, kết quả không thuận lợi và giới hạn của kiểm định là một phần quan trọng của quá trình nghiên cứu.
+\vspace{2cm}
+\begin{flushright}TP. Hồ Chí Minh, \textbf{[NGÀY THÁNG CẦN XÁC NHẬN]}\\[10pt]
+Người/nhóm thực hiện\\[25mm]\textbf{[CẦN XÁC NHẬN]}\end{flushright}
+
+\clearpage
+\chapter*{TÓM TẮT}
+\addcontentsline{toc}{chapter}{Tóm tắt}
+Nghiên cứu đối chiếu các mô hình học máy đơn và Stacking cho bài toán phát hiện xâm nhập nhị phân Normal/Attack trên official UNSW-NB15. Ba pipeline cuối gồm Random Forest 42 feature (RF-42), Stacking 42 feature (Stacking-42) và Random Forest 17 feature (RF-17). Các bước audit, feature selection, development evaluation, kiểm thử trên tập đã khóa và paired statistics được lưu để truy vết quyết định.
+
+Trên 82\,332 mẫu official TEST, Macro-F1 của Stacking-42 và RF-42 lần lượt là 0.863840 và 0.863343. Khoảng tin cậy 95\% của chênh lệch Macro-F1 từ paired bootstrap chứa 0, nên chưa đủ bằng chứng khẳng định Stacking có ưu thế tổng thể. So với RF-42, Stacking-42 giảm 142 false positives nhưng tăng 118 false negatives. RF-17 có chi phí quan sát thấp hơn, nhưng khác cả số feature và siêu tham số nên không thể quy chênh lệch cho riêng feature selection.
+
+Báo cáo bổ sung phân tích nhóm Attack thật bị bỏ sót và novel-vector subset của official TEST. Các kết luận bị giới hạn bởi overlap giữa TRAIN và TEST, lựa chọn feature trên toàn TRAIN trước development CV, meta tuning chưa fully nested, thiếu external/temporal validation và chưa tái dựng mô hình cuối từ môi trường huấn luyện lịch sử. Đóng góp chính thuộc phạm vi đối chiếu có truy vết và đánh đổi FP/FN, không phải phát minh thuật toán mới.
+
+\noindent\textbf{Từ khóa:} IDS, UNSW-NB15, Ensemble Learning, Stacking, Random Forest, OOF, Macro-F1, MCC.
+
+\clearpage
+\chapter*{DANH MỤC TỪ VIẾT TẮT}
+\addcontentsline{toc}{chapter}{Danh mục từ viết tắt}
+\begin{longtable}{p{.16\linewidth}p{.39\linewidth}p{.35\linewidth}}
+\toprule\textbf{Từ} & \textbf{Tiếng Anh} & \textbf{Ý nghĩa tiếng Việt}\\\midrule\endhead
+IDS & Intrusion Detection System & Hệ thống phát hiện xâm nhập\\
+NIDS & Network Intrusion Detection System & Hệ thống phát hiện xâm nhập mạng\\
+ML & Machine Learning & Học máy\\
+RF & Random Forest & Rừng ngẫu nhiên\\
+LR & Logistic Regression & Hồi quy logistic\\
+DT & Decision Tree & Cây quyết định\\
+OOF & Out-of-Fold & Dự đoán ngoài fold huấn luyện\\
+CV & Cross-Validation & Đánh giá chéo\\
+FS & Feature Selection & Lựa chọn đặc trưng\\
+TP & True Positive & Attack dự đoán đúng\\
+TN & True Negative & Normal dự đoán đúng\\
+FP & False Positive & Normal bị báo Attack\\
+FN & False Negative & Attack bị bỏ sót\\
+FPR & False Positive Rate & Tỷ lệ báo động giả\\
+FNR & False Negative Rate & Tỷ lệ bỏ sót Attack\\
+MCC & Matthews Correlation Coefficient & Hệ số tương quan Matthews\\
+CI & Confidence Interval & Khoảng tin cậy\\
+AP & Average Precision & Độ chính xác trung bình theo PR\\
+EDA & Exploratory Data Analysis & Phân tích dữ liệu khám phá\\
+SMD & Standardized Mean Difference & Chênh lệch trung bình chuẩn hóa\\
+\bottomrule
+\end{longtable}
