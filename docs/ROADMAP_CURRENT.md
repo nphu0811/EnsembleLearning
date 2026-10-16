@@ -29,7 +29,7 @@ Checkpoint r03: docs/RESUME_AUDIT_R03_2026-10-16.md. P18 xác nhận metadata th
 | P14 | VERIFIED_REUSE descriptive | Step1/3/4/5 + closure; 375 checks là evidence lịch sử, không nói vừa chạy lại |
 | P15 | PARTIAL | Hash/protocol/tests/postprocessing clean replay đạt; training reproduction, original env, model artifact còn thiếu |
 | P16 | IN_PROGRESS | Bắt đầu figure QA từ saved tables; draft cũ không tự động đạt |
-| P17 | PARTIAL (40P_PTIT_STYLE_PDF_QA_PASS) | `report/main.tex` 8 chương, 40 trang A4, 7 hình/10 bảng/12 nguồn, build XeLaTeX+BibTeX PASS, 0 Overfull/0 missing glyph, 0 page-boundary outliers. Đối chiếu phong cách mẫu NetFlow PTIT (không sao chép nội dung/nhận dạng), admin/signature, form acceptance vẫn PENDING_HUMAN. |
+| P17 | PARTIAL (FIVE_CHAPTER_37P_PDF_QA_PASS) | Báo cáo 5 chương như mẫu tham khảo; 37 trang A4, bỏ Tóm tắt, Danh mục từ viết tắt đặt sau Mục lục với cột giải nghĩa theo vai trò; không in đường dẫn source Markdown/JSON trong PDF; XeLaTeX/BibTeX PASS, 12 tài liệu, không thiếu glyph/nhãn/cảnh báo tràn dòng. Xác nhận chữ ký, form nộp, các gate học thuật vẫn OPEN. |
 | P18 | TODO/PARTIAL | Literature list cũ; chưa verified refs.bib cho báo cáo cuối |
 | P19 | IN_PROGRESS | Draft availability + inventory; license code, repository/version chưa chốt |
 | P20 | TODO | Chỉ review đầy đủ sau khi có manuscript và package; không giả 3 reviewer |
@@ -50,3 +50,7 @@ Mọi task có purpose/inputs/outputs/validation ở TASK_BOARD hoặc tài li�
 ## Cập nhật lượt r02 ngày16/10
 
 P01/P18: có `literature/literature_matrix.csv`12 records, `literature/gap_matrix.md`, working BibTeX12 entries và metadata-verified subset4 entries. Nguồn domestic D01/D02 đã tìm qua cơ sở đào tạo, reading boundary lưu rõ. Đây là tiến bộ trên partial tasks, không full systematic review/reference closure. Dataset refs U01/U03 warnings giữ nguyên. Proposal foundation nhận các literature facts trong phạm vi đọc, review độc lập đang xử lý trước drafting.
+
+## 2026-10-16 — P17 five-chapter layout takes precedence
+
+User-requested structure follows five top-level chapters of uploaded PTIT NetFlow reference. The previous eight-chapter 40-page PDF status is preserved in historical QA documents only; **current PDF has five chapters and 37 A4 pages** after removing the abstract and moving the substantive acronym glossary immediately after TOC. Actual compile/run: https://github.com/nphu0811/EnsembleLearning/actions/runs/38916942038 ; QA file `docs/research/P17_FIVE_CHAPTER_RESTRUCTURE_QA_2026-10-16.md`. All frozen experimental results remain unchanged. Nature Skills were not directly available in this ChatGPT runtime, and no Nature skill execution is claimed.
