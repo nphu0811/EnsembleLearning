@@ -135,3 +135,9 @@ Evidence: `.research_memory/r05/R05-ASSEMBLY-REVIEW.json`.
 - **P15-WINDOWS-PREFLIGHT = DONE_SCOPED_USER_EVIDENCE:** Author ran six fixture unit tests (6/6 PASS) and a read-only preflight (11/12 PASS); evidence recorded in `docs/research/P15_LOCAL_PREFLIGHT_USER_RUN_2026-10-16.md`. This is reported console output, not an independent runner execution.
 - **RAM gate FAILED:** available 2,157,973,504 bytes (~2.01 GiB) vs conservative 9-GiB threshold. Other 11 gates pass, including hashes, schema, versions, tracked Git cleanliness and disk. `training_authorized=false`, `reconstruction_status=NOT_RUN`. **G3/P15 still PARTIAL; no full-TRAIN fitting.**
 - Next: do not try fitting or bypass memory guard. Continue independent P16/P18 tasks until a proper host and reviewed watchdog runner exist; then re-check on the execution host. Existing published 5-chapter PDF remains unchanged.
+
+## P16 — Independent current 5-chapter PDF/figure audit (16/10/2026)
+
+- **P16-PDF-37P-INDEPENDENT-QA = DONE_SCOPED**. Evidence `docs/research/P16_FIVE_CHAPTER_PDF_RENDERED_INDEPENDENT_QA_2026-10-16.md`. User-supplied PDF verified 37 A4 pages / 0 nonempty text spans out of page; rendered representative 10 pages; figure and results-table placement checked. Frozen CSV and P16 figure sources independently crosschecked: **49/49 PASS**, 0 fail, no new fit/TEST evaluation.
+- **Warnings remain:** plotted labels on pages 20/22/29 smaller than 8 pt; heatmap page 22 at ~118 effective dpi; no 300 dpi print certificate. PDF preserved unchanged, no chart regeneration. Canonical **P16 IN_PROGRESS**; P15/G3 unchanged (RAM NO_GO).
+- Next: decide standalone higher-resolution heatmap repair for future defense asset, or continue P18 reference verification; don't alter user-approved five-chapter PDF without new request.
