@@ -25,9 +25,9 @@
 | P14 | Error analysis | VERIFIED_REUSE_DESCRIPTIVE | Saved detailed profiles and reconciliation; associations not causal |
 | P15 | Reproducibility | PARTIAL | Raw hashes, protocol, postprocessing replay, R04 TRAIN-only smoke45/45; unknown original env; NO_GO full TRAIN model reconstruction |
 | P16 | Scientific figures | IN_PROGRESS | Historical paired forest plot; r05 error tradeoff & frozen tables; two ChatGPT independent scoped audits below |
-| P17 | Report writing | TODO_FINAL_OUTPUT | Working source/template available; no checked complete IDS LaTeX PDF |
-| P18 | Citation management | PARTIAL | 11/12 legacy metadata verified at r04; L03 pagination conflict, U01/U03 warning; final refs.bib QA open |
-| P19 | Data availability | IN_PROGRESS | Draft provenance/repository material; public release/license/version and rights review pending |
+| P17 | Report writing | DRAFT_SOURCE_READY / PDF_QA_OPEN | `report/main.tex` + 5 chapter `.tex` sources + 12 BibTeX entries (11 legacy metadata-verified + U01 dataset paper); figures linked; 78/78 source checks; no full XeLaTeX/BibTeX build/render or institutional-form acceptance |
+| P18 | Citation management | PARTIAL | 11/12 legacy metadata verified r04, U01 pages1–6 independently corroborated, U03 final 2019 vol5(4) corroborated; L03 page conflict disclosed with evidence favoring254–263, VOR PDF check open; final complete bibliography pending |
+| P19 | Data availability | IN_PROGRESS | Public GitHub repository confirmed; raw data not tracked; source/derived tables available; no root LICENSE or final model artifact; privacy/release/version/rights checks open |
 | P20 | Final review | TODO | G0–G6, completeness, rendered reports, inference demo and scientific limitations not all closed |
 
 **Không đếm VERIFIED_REUSE hoặc DONE_SCOPED như đầy đủ mọi gate của một phase.** Phase order/IDs không được đổi.
@@ -59,3 +59,12 @@
 6. **P19/P20/defense:** release/license safety, actual validated full model for inference demo, slides/rehearsal, final acceptance gates.
 
 **Integrity/safety:** These takeover commits add only scoped verification documentation. No raw data, official TEST, frozen metrics/configs/predictions, models, templates, original sources or pre-existing checkpoint files were modified. Persistent r05 STATE/HANDOFF has not been rewritten in this limited documentation-only takeover; use this report plus r05 memory as the future handoff, and refresh the memory manifest in a controlled verified next checkpoint rather than partially editing hash-tracked files.
+
+## Bổ sung ChatGPT source-writing / citation / availability — 16/10/2026
+
+- **P17 new working manuscript:** `report/main.tex`, `report/chapters/{introduction,related_work,methodology,results_discussion,conclusion}.tex`, `report/references_verified.bib`, `report/references_dataset_checked.bib`. Both P16 saved PDFs are linked in results chapter by relative paths. `report/README.md` and `report/BUILD.md` specify correct scope.
+- **Independent read-only cross-file audit (after additions): 78/78 PASS**: 5 input chapters, 12 BibTeX keys / 12 cited, no duplicate labels, all LaTeX `\\ref` keys resolved, balanced audited environment tokens, P16 figures' PDFs tracked, official dataset source cited. These checks do NOT prove compilation/render; this remains the next P17 gate. Preflight XeLaTeX minimal separate Vietnamese document built in container, **not the actual report**.
+- **P18:** `literature/L03_PAGE_CONFLICT_FOLLOWUP_2026-10-16.md`, `literature/UNSW_U01_U03_METADATA_FOLLOWUP_2026-10-16.md`: L03 publisher-final PDF unchecked; U01 bibliographic page evidence stronger; U03 final 2019 issue corroborated. No silent mutation of original ledger.
+- **P19:** `docs/research/DATA_CODE_AVAILABILITY_PUBLIC_UPDATE_2026-10-16.md`: repository now public, but missing root license, raw dataset not committed, SMOKE_ONLY models must not be mistaken for full TRAIN models.
+- **Cleanup scope:** strictly advice only per user. No deletion, moving, untracking or history rewriting performed.
+- **Next safe work:** run actual XeLaTeX/BibTeX for working report and visually QA pages/figures; align with preserved original institutional template without inventing admin fields; continue resolving remaining citation and release gates. P15 fullTRAIN reconstruction still NO_GO, no retuning official TEST.
