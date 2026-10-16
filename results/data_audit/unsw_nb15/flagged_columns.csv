@@ -1,0 +1,5 @@
+dataset,column,dtype,non_null,missing,missing_pct,unique_non_null,unique_ratio,most_common_value,most_common_count,dominance_ratio,is_constant,near_zero_variance_flag,high_cardinality_flag
+train,id,int64,175341,0,0.0,175341,1.0,1,1,6e-06,False,False,True
+test,id,int64,82332,0,0.0,82332,1.0,1,1,1.2e-05,False,False,True
+test,is_ftp_login,int64,82332,0,0.0,3,3.6e-05,0,81654,0.991765,False,True,False
+test,ct_ftp_cmd,int64,82332,0,0.0,3,3.6e-05,0,81652,0.991741,False,True,False

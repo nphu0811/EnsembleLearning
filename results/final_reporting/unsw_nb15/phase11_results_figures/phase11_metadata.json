@@ -1,0 +1,19 @@
+{
+  "phase": 11,
+  "model_training_performed": false,
+  "source": "Phase-10 statistical tables only",
+  "figures": [
+    "fig01_official_macro_f1_ci",
+    "fig02_official_mcc_ci",
+    "fig03_fpr_fnr_tradeoff",
+    "fig04_macro_f1_vs_training_cost",
+    "fig05_official_vs_novel_macro_f1",
+    "fig06_attack_family_miss_rate_ci"
+  ],
+  "figure_formats": [
+    "PNG 300 dpi",
+    "PDF vector"
+  ],
+  "attack_figure_min_rows": 300,
+  "post_test_rule": "No model, threshold, feature, or hyperparameter changes were made."
+}

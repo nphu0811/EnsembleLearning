@@ -1,0 +1,50 @@
+{
+  "checks": {
+    "L01_doi_title": true,
+    "L01_volume_pages": true,
+    "L02_doi_title": true,
+    "L02_volume_pages": true,
+    "L03_doi_title": true,
+    "L03_volume_pages": true,
+    "L04_doi_title": true,
+    "L04_volume_pages": true,
+    "L05_doi_title": true,
+    "L05_volume_pages": true,
+    "L06_doi_title": true,
+    "L06_volume_pages": true,
+    "L07_doi_title": true,
+    "L07_volume_pages": true,
+    "L08_doi_title": true,
+    "L08_volume_pages": true,
+    "L09_doi_title": true,
+    "L09_volume_pages": true,
+    "L10_doi_title": true,
+    "L10_volume_pages": true,
+    "L11_doi_title": true,
+    "L11_volume_pages": true,
+    "L12_doi_title": true,
+    "L12_volume_pages": true,
+    "unique_12": true,
+    "verified_subset_11": true,
+    "L03_conflict_not_promoted": true,
+    "matrix_matches": true
+  },
+  "passed": true,
+  "verified": [
+    "L01",
+    "L02",
+    "L04",
+    "L05",
+    "L06",
+    "L07",
+    "L08",
+    "L09",
+    "L10",
+    "L11",
+    "L12"
+  ],
+  "pending": [
+    "L03"
+  ],
+  "scope": "Metadata/identity/bookkeeping; independent source coverage manually reviewed in FIELD_VERIFICATION_REPORT.md; not full-paper or final P18 gate"
+}

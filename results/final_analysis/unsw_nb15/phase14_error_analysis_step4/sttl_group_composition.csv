@@ -1,0 +1,13 @@
+sttl,error_group,n,pct_value_within_error_group
+254,both_caught,5246,0.9971488310207185
+255,both_caught,14,0.002661091047329405
+62,both_caught,1,0.00019007793195210037
+254,both_missed,574,1.0
+255,both_missed,0,0.0
+62,both_missed,0,0.0
+254,rf_caught_stack_missed,180,1.0
+255,rf_caught_stack_missed,0,0.0
+62,rf_caught_stack_missed,0,0.0
+254,rf_missed_stack_caught,47,1.0
+255,rf_missed_stack_caught,0,0.0
+62,rf_missed_stack_caught,0,0.0

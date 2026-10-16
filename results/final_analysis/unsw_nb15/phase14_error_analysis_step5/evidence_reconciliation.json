@@ -1,0 +1,1547 @@
+{
+  "phase": "canonical-14",
+  "step": 5,
+  "date": "2026-10-11",
+  "scope": "Independent aggregate consistency; source-row join NOT independently replayed",
+  "sources": {
+    "step1": {
+      "filename": "phase14_error_analysis_step1.zip",
+      "size_bytes": 2201,
+      "sha256": "0a9c1e3f9d3347131e9f313f9d17fab863233530fc1c7da33bbf010bb4ba68fc"
+    },
+    "step3": {
+      "filename": "phase14_error_analysis_step3.zip",
+      "size_bytes": 6072,
+      "sha256": "c984cb02a66a530a696b18a6c1dffdee2cce18806fd694303e8e54a98210545e"
+    },
+    "step4": {
+      "filename": "phase14_error_analysis_step4.zip",
+      "size_bytes": 9158,
+      "sha256": "c15a2f51b09ef803c38f00da5caac4b79d0dd8a823d79a8aa0d98da9a4db85fc"
+    },
+    "frozen_metric_snapshot": {
+      "filename": "NCKH_FRESH_AUDIT_V2_20261010_224249.zip",
+      "size_bytes": 442349,
+      "sha256": "d2a731be039ef0fd28afd4829b02d754f13b2bc76bcb6e6e6865cf8b3a390e21"
+    }
+  },
+  "checks_total": 375,
+  "checks_passed": 375,
+  "checks": [
+    {
+      "check": "Paired transitions cover Normal and Attack",
+      "result": "PASS"
+    },
+    {
+      "check": "Pair groups sum to support for Normal",
+      "result": "PASS"
+    },
+    {
+      "check": "Pair groups sum to support for Attack",
+      "result": "PASS"
+    },
+    {
+      "check": "All 82,332 official-test rows accounted for",
+      "result": "PASS"
+    },
+    {
+      "check": "RF/Stack frozen FP and FN counts match",
+      "result": "PASS"
+    },
+    {
+      "check": "Overall deltas FP=-142 FN=+118",
+      "result": "PASS"
+    },
+    {
+      "check": "All 9 attack families present",
+      "result": "PASS"
+    },
+    {
+      "check": "Attack-family support sums to 45,332",
+      "result": "PASS"
+    },
+    {
+      "check": "Attack-family RF misses sum to frozen FN",
+      "result": "PASS"
+    },
+    {
+      "check": "Attack-family Stack misses sum to frozen FN",
+      "result": "PASS"
+    },
+    {
+      "check": "Paired family FN reconciliation: Fuzzers",
+      "result": "PASS"
+    },
+    {
+      "check": "Paired family FN reconciliation: Analysis",
+      "result": "PASS"
+    },
+    {
+      "check": "Paired family FN reconciliation: DoS",
+      "result": "PASS"
+    },
+    {
+      "check": "Paired family FN reconciliation: Exploits",
+      "result": "PASS"
+    },
+    {
+      "check": "Paired family FN reconciliation: Reconnaissance",
+      "result": "PASS"
+    },
+    {
+      "check": "Paired family FN reconciliation: Backdoor",
+      "result": "PASS"
+    },
+    {
+      "check": "Paired family FN reconciliation: Shellcode",
+      "result": "PASS"
+    },
+    {
+      "check": "Paired family FN reconciliation: Worms",
+      "result": "PASS"
+    },
+    {
+      "check": "Paired family FN reconciliation: Generic",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers +133 and Generic -43 FN verified",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state feature support sums to 37,000",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state group stack_correct_rf_wrong sums to 420",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state group rf_correct_stack_wrong sums to 278",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state group both_correct sums to 26719",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state group both_wrong sums to 9583",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state support identity: FIN",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state FP identity: FIN",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state support identity: CON",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state FP identity: CON",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state support identity: INT",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state FP identity: INT",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state support identity: REQ",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state FP identity: REQ",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state support identity: ACC",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state FP identity: ACC",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state support identity: RST",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal state FP identity: RST",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal proto feature support sums to 37,000",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal proto group stack_correct_rf_wrong sums to 420",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal proto group rf_correct_stack_wrong sums to 278",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal proto group both_correct sums to 26719",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal proto group both_wrong sums to 9583",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal proto support identity: tcp",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal proto FP identity: tcp",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal proto support identity: udp",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal proto FP identity: udp",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal proto support identity: arp",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal proto FP identity: arp",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal proto support identity: ospf",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal proto FP identity: ospf",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal proto support identity: igmp",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal proto FP identity: igmp",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl feature support sums to 37,000",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl group stack_correct_rf_wrong sums to 420",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl group rf_correct_stack_wrong sums to 278",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl group both_correct sums to 26719",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl group both_wrong sums to 9583",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl support identity: 31",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl FP identity: 31",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl support identity: 254",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl FP identity: 254",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl support identity: 62",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl FP identity: 62",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl support identity: 0",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl FP identity: 0",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl support identity: 29",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl FP identity: 29",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl support identity: 1",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl FP identity: 1",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl support identity: 60",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl FP identity: 60",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl support identity: 32",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl FP identity: 32",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl support identity: 30",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl FP identity: 30",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers four paired groups match frozen families",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers support 6062",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers state support sums to 6062",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers state both_caught sums to 5261",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers state rf_caught_stack_missed sums to 180",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers state rf_missed_stack_caught sums to 47",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers state both_missed sums to 574",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers state identity: FIN",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers state FN identity: FIN",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers state identity: INT",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers state FN identity: INT",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers state identity: REQ",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers state FN identity: REQ",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers state identity: CON",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers state FN identity: CON",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers state identity: ACC",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers state FN identity: ACC",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto support sums to 6062",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto both_caught sums to 5261",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto rf_caught_stack_missed sums to 180",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto rf_missed_stack_caught sums to 47",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto both_missed sums to 574",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: tcp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: tcp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: udp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: udp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: unas",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: unas",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ospf",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ospf",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: any",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: any",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: sctp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: sctp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: rsvp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: rsvp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: sep",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: sep",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: gre",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: gre",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: 3pc",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: 3pc",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: a/n",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: a/n",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: aes-sp3-d",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: aes-sp3-d",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: argus",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: argus",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: aris",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: aris",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ax.25",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ax.25",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: bbn-rcc",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: bbn-rcc",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: bna",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: bna",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: br-sat-mon",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: br-sat-mon",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: cbt",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: cbt",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: cftp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: cftp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: chaos",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: chaos",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: compaq-peer",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: compaq-peer",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: cphb",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: cphb",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: cpnx",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: cpnx",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: crtp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: crtp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: crudp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: crudp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: dcn",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: dcn",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ddp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ddp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ddx",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ddx",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: dgp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: dgp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: egp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: egp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: eigrp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: eigrp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: emcon",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: emcon",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: encap",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: encap",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: etherip",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: etherip",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: fc",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: fc",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: fire",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: fire",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ggp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ggp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: gmtp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: gmtp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: hmp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: hmp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: i-nlsp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: i-nlsp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: iatp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: iatp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ib",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ib",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: idpr",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: idpr",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: idpr-cmtp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: idpr-cmtp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: idrp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: idrp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ifmp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ifmp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: igp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: igp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: il",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: il",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ip",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ip",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ipcomp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ipcomp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ipcv",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ipcv",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ipip",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ipip",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: iplt",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: iplt",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ipnip",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ipnip",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ippc",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ippc",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ipv6",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ipv6",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ipv6-frag",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ipv6-frag",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ipv6-no",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ipv6-no",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ipv6-opts",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ipv6-opts",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ipv6-route",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ipv6-route",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ipx-n-ip",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ipx-n-ip",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: irtp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: irtp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: isis",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: isis",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: iso-ip",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: iso-ip",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: iso-tp4",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: iso-tp4",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: kryptolan",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: kryptolan",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: l2tp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: l2tp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: larp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: larp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: leaf-1",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: leaf-1",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: leaf-2",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: leaf-2",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: merit-inp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: merit-inp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: mfe-nsp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: mfe-nsp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: mhrp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: mhrp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: micp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: micp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: mobile",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: mobile",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: mtp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: mtp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: mux",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: mux",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: narp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: narp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: netblt",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: netblt",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: nsfnet-igp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: nsfnet-igp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: nvp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: nvp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: pgm",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: pgm",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: pim",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: pim",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: pipe",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: pipe",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: pnni",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: pnni",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: pri-enc",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: pri-enc",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: prm",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: prm",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ptp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ptp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: pup",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: pup",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: pvp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: pvp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: qnx",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: qnx",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: rdp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: rdp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: rvd",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: rvd",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: sat-expak",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: sat-expak",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: sat-mon",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: sat-mon",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: sccopmce",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: sccopmce",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: scps",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: scps",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: sdrp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: sdrp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: secure-vmtp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: secure-vmtp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: skip",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: skip",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: sm",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: sm",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: smp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: smp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: snp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: snp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: sprite-rpc",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: sprite-rpc",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: sps",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: sps",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: srp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: srp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: st2",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: st2",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: stp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: stp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: sun-nd",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: sun-nd",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: swipe",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: swipe",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: tcf",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: tcf",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: tlsp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: tlsp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: tp++",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: tp++",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: trunk-1",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: trunk-1",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: trunk-2",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: trunk-2",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: ttp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: ttp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: uti",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: uti",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: vines",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: vines",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: visa",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: visa",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: vmtp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: vmtp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: vrrp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: vrrp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: wb-expak",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: wb-expak",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: wb-mon",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: wb-mon",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: wsn",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: wsn",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: xnet",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: xnet",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: xns-idp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: xns-idp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: xtp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: xtp",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto identity: zero",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers proto FN identity: zero",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers sttl support sums to 6062",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers sttl both_caught sums to 5261",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers sttl rf_caught_stack_missed sums to 180",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers sttl rf_missed_stack_caught sums to 47",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers sttl both_missed sums to 574",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers sttl identity: 254",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers sttl FN identity: 254",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers sttl identity: 255",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers sttl FN identity: 255",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers sttl identity: 62",
+      "result": "PASS"
+    },
+    {
+      "check": "Fuzzers sttl FN identity: 62",
+      "result": "PASS"
+    },
+    {
+      "check": "254 sttl ubiquity and paired disagreements confirmed",
+      "result": "PASS"
+    },
+    {
+      "check": "Normal sttl=254 -184, sttl=62 +42 FP",
+      "result": "PASS"
+    },
+    {
+      "check": "Frozen Phase9 random_forest_42 FP/FN agrees with Step14",
+      "result": "PASS"
+    },
+    {
+      "check": "Frozen Phase9 stacking_42 FP/FN agrees with Step14",
+      "result": "PASS"
+    },
+    {
+      "check": "Paired bootstrap macro_f1 data available",
+      "result": "PASS"
+    },
+    {
+      "check": "Paired bootstrap mcc data available",
+      "result": "PASS"
+    },
+    {
+      "check": "Paired bootstrap false_positive_rate data available",
+      "result": "PASS"
+    },
+    {
+      "check": "Paired bootstrap false_negative_rate data available",
+      "result": "PASS"
+    },
+    {
+      "check": "Holm adjusted McNemar p=0.468376519 agrees with snapshot",
+      "result": "PASS"
+    }
+  ],
+  "key_counts": {
+    "official_n": 82332,
+    "normal_n": 37000,
+    "attack_n": 45332,
+    "rf_fp": 10003,
+    "stack_fp": 9861,
+    "rf_fn": 734,
+    "stack_fn": 852,
+    "fuzzers": {
+      "both_caught": 5261,
+      "rf_caught_stack_missed": 180,
+      "rf_missed_stack_caught": 47,
+      "both_missed": 574
+    }
+  }
+}

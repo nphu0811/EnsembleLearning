@@ -1,0 +1,4 @@
+true_class,support,both_correct,rf_only_correct,stack_only_correct,both_wrong
+Normal,37000,26719,278,420,9583
+Attack,45332,44385,213,95,639
+Total,82332,71104,491,515,10222

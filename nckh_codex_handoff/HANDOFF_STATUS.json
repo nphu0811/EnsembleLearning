@@ -1,0 +1,25 @@
+{
+  "project": "NCKH - Ensemble Learning for Network Intrusion Detection",
+  "official_completed_phases": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "last_official_phase": 10,
+  "roadmap_11_18": "UNRESOLVED_MUST_RECOVER",
+  "known_roadmap_clue": {
+    "phase_16": "publication-level figure QA"
+  },
+  "test_opened_phase": 9,
+  "post_test_model_changes_allowed": false,
+  "rq4_status": "PARTIAL",
+  "premature_artifacts": "preserve_and_reclassify"
+}

@@ -1,0 +1,5 @@
+eval_view,model_a,model_b,metric,delta_a_minus_b,ci_level,ci_lower,ci_upper,ci_excludes_zero,bootstrap_replicates
+official_test,stacking_42,random_forest_42,macro_f1,0.0004966898940774733,0.95,-0.0003118042125941106,0.0013089503250197615,False,10000
+official_test,stacking_42,random_forest_42,mcc,-0.0004130362586621805,0.95,-0.0019378760206115232,0.0011395704058473617,False,10000
+official_test,stacking_42,random_forest_42,false_positive_rate,-0.0038378378378378653,0.95,-0.005243243243243267,-0.002432432432432463,True,10000
+official_test,stacking_42,random_forest_42,false_negative_rate,0.002603017735815758,0.95,0.0018529956763434219,0.0033750992676255184,True,10000

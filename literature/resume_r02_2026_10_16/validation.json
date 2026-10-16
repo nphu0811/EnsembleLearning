@@ -1,0 +1,119 @@
+{
+  "records": 12,
+  "unique_final_dois": 12,
+  "metadata_verified": 4,
+  "working_bib_entries": 12,
+  "verified_subset_entries": 4,
+  "checks": [
+    {
+      "id": "L01",
+      "raw_json_parsed": true,
+      "doi_match": true,
+      "title_present": true,
+      "authors_present": true,
+      "year_present": true,
+      "source_file_exists": true
+    },
+    {
+      "id": "L02",
+      "raw_json_parsed": true,
+      "doi_match": true,
+      "title_present": true,
+      "authors_present": true,
+      "year_present": true,
+      "source_file_exists": true
+    },
+    {
+      "id": "L03",
+      "raw_json_parsed": true,
+      "doi_match": true,
+      "title_present": true,
+      "authors_present": true,
+      "year_present": true,
+      "source_file_exists": true
+    },
+    {
+      "id": "L04",
+      "raw_json_parsed": true,
+      "doi_match": true,
+      "title_present": true,
+      "authors_present": true,
+      "year_present": true,
+      "source_file_exists": true
+    },
+    {
+      "id": "L05",
+      "raw_json_parsed": true,
+      "doi_match": true,
+      "title_present": true,
+      "authors_present": true,
+      "year_present": true,
+      "source_file_exists": true
+    },
+    {
+      "id": "L06",
+      "raw_json_parsed": true,
+      "doi_match": true,
+      "title_present": true,
+      "authors_present": true,
+      "year_present": true,
+      "source_file_exists": true
+    },
+    {
+      "id": "L07",
+      "raw_json_parsed": true,
+      "doi_match": true,
+      "title_present": true,
+      "authors_present": true,
+      "year_present": true,
+      "source_file_exists": true
+    },
+    {
+      "id": "L08",
+      "raw_json_parsed": true,
+      "doi_match": true,
+      "title_present": true,
+      "authors_present": true,
+      "year_present": true,
+      "source_file_exists": true
+    },
+    {
+      "id": "L09",
+      "raw_json_parsed": true,
+      "doi_match": true,
+      "title_present": true,
+      "authors_present": true,
+      "year_present": true,
+      "source_file_exists": true
+    },
+    {
+      "id": "L10",
+      "raw_json_parsed": true,
+      "doi_match": true,
+      "title_present": true,
+      "authors_present": true,
+      "year_present": true,
+      "source_file_exists": true
+    },
+    {
+      "id": "L11",
+      "raw_json_parsed": true,
+      "doi_match": true,
+      "title_present": true,
+      "authors_present": true,
+      "year_present": true,
+      "source_file_exists": true
+    },
+    {
+      "id": "L12",
+      "raw_json_parsed": true,
+      "doi_match": true,
+      "title_present": true,
+      "authors_present": true,
+      "year_present": true,
+      "source_file_exists": true
+    }
+  ],
+  "pass": true,
+  "full_review_complete": false
+}

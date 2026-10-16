@@ -1,0 +1,82 @@
+{
+  "timestamp": "2026-10-16T10:09:48.861648+00:00",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "executable": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\results\\reproducibility\\r04_ml_smoke_runtime\\Scripts\\python.exe",
+  "environment_original": "UNKNOWN; this is a new smoke environment",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "input_sha256": {
+    "data/raw/unsw-nb15/UNSW_NB15_training-set.csv": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa",
+    "src/models/run_unsw_phase9_final_holdout.py": "3e7d1369222ccdf452116e069a0db3df55e1d6d683d0f92f4e2bcde0800ae480",
+    "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json": "cdda800318c5d2259e581bff5b194381be7434d654950377dd4b40fca50be0a6",
+    "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json": "5a8fe201c88b49a2c018778f6d159a107b6fdfa810c05c1606e42e6d675244be"
+  },
+  "sampling": {
+    "seed_pool": 42,
+    "seed_split": 137,
+    "train_index_sha256": "3a02dd094390b40ba508237bea815201560af7cf1758dd90d1d44d27e6e2686d",
+    "validation_index_sha256": "83260200773a64a443fd96d2960648af2e2613bacab062e7f40101b933287589",
+    "validation_source": "official TRAIN only"
+  },
+  "dataset_csv_reads": [
+    "data/raw/unsw-nb15/UNSW_NB15_training-set.csv"
+  ],
+  "models": {
+    "random_forest_42": {
+      "fit_seconds": 1.145271600002161,
+      "sha256": "b77786277c1a53298330fbe35c0d936fdef164404b3c43c28e2b844f56b7c120",
+      "bytes": 730001,
+      "threshold": 0.5,
+      "train_rows": 2000,
+      "validation_rows": 500,
+      "feature_count": 42,
+      "roundtrip_bitwise": true,
+      "roundtrip_max_abs": 0.0,
+      "probability_tolerance": {
+        "rtol": 1e-12,
+        "atol": 1e-12
+      },
+      "scope": "software smoke; no scientific performance metrics"
+    },
+    "stacking_42": {
+      "fit_seconds": 4.217352899999241,
+      "sha256": "be9209ca833eb6667832e9a8a3ee3b6347d5e8b0dc457eed713b496621c59c14",
+      "bytes": 737273,
+      "threshold": 0.5,
+      "train_rows": 2000,
+      "validation_rows": 500,
+      "feature_count": 42,
+      "roundtrip_bitwise": true,
+      "roundtrip_max_abs": 0.0,
+      "probability_tolerance": {
+        "rtol": 1e-12,
+        "atol": 1e-12
+      },
+      "scope": "software smoke; no scientific performance metrics"
+    },
+    "random_forest_17": {
+      "fit_seconds": 0.43800699999701465,
+      "sha256": "70f34043cb360acaf8942c7c63f019be6425eac5f68708de9250cf6643532c1a",
+      "bytes": 411288,
+      "threshold": 0.5,
+      "train_rows": 2000,
+      "validation_rows": 500,
+      "feature_count": 17,
+      "roundtrip_bitwise": false,
+      "roundtrip_max_abs": 2.220446049250313e-16,
+      "probability_tolerance": {
+        "rtol": 1e-12,
+        "atol": 1e-12
+      },
+      "scope": "software smoke; no scientific performance metrics"
+    }
+  },
+  "scope": "SMOKE_ONLY; no official TEST evaluation, no tuning, no final model reproduction"
+}

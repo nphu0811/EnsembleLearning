@@ -1,0 +1,97 @@
+{
+  "feature_vector_column_count": 42,
+  "feature_vector_columns": [
+    "dur",
+    "proto",
+    "service",
+    "state",
+    "spkts",
+    "dpkts",
+    "sbytes",
+    "dbytes",
+    "rate",
+    "sttl",
+    "dttl",
+    "sload",
+    "dload",
+    "sloss",
+    "dloss",
+    "sinpkt",
+    "dinpkt",
+    "sjit",
+    "djit",
+    "swin",
+    "stcpb",
+    "dtcpb",
+    "dwin",
+    "tcprtt",
+    "synack",
+    "ackdat",
+    "smean",
+    "dmean",
+    "trans_depth",
+    "response_body_len",
+    "ct_srv_src",
+    "ct_state_ttl",
+    "ct_dst_ltm",
+    "ct_src_dport_ltm",
+    "ct_dst_sport_ltm",
+    "ct_dst_src_ltm",
+    "is_ftp_login",
+    "ct_ftp_cmd",
+    "ct_flw_http_mthd",
+    "ct_src_ltm",
+    "ct_srv_dst",
+    "is_sm_ips_ports"
+  ],
+  "excluded_columns": [
+    "attack_cat",
+    "id",
+    "label"
+  ],
+  "within_train": {
+    "split": "train",
+    "rows": 175341,
+    "unique_feature_vectors": 101040,
+    "duplicate_feature_vector_groups": 9748,
+    "rows_inside_duplicate_groups": 84049,
+    "extra_duplicate_rows": 74301,
+    "duplicate_row_pct": 47.934596,
+    "label_conflict_groups": 229,
+    "attack_category_conflict_groups": 1772
+  },
+  "within_test": {
+    "split": "test",
+    "rows": 82332,
+    "unique_feature_vectors": 53946,
+    "duplicate_feature_vector_groups": 6318,
+    "rows_inside_duplicate_groups": 34704,
+    "extra_duplicate_rows": 28386,
+    "duplicate_row_pct": 42.15129,
+    "label_conflict_groups": 6,
+    "attack_category_conflict_groups": 575
+  },
+  "exact_labeled_duplicates_excluding_id": {
+    "train": {
+      "split": "train",
+      "duplicate_rows_excluding_id_including_all_copies": 79204,
+      "extra_duplicate_rows_excluding_id": 67601,
+      "extra_duplicate_pct": 38.554018
+    },
+    "test": {
+      "split": "test",
+      "duplicate_rows_excluding_id_including_all_copies": 33979,
+      "extra_duplicate_rows_excluding_id": 26387,
+      "extra_duplicate_pct": 32.049507
+    }
+  },
+  "cross_split": {
+    "unique_overlapping_feature_vectors": 1302,
+    "train_rows_in_overlap": 10279,
+    "test_rows_in_overlap": 8541,
+    "train_overlap_pct": 5.862291,
+    "test_overlap_pct": 10.373852,
+    "overlap_vectors_with_different_label_sets": 279,
+    "overlap_vectors_with_different_attack_sets": 547
+  }
+}

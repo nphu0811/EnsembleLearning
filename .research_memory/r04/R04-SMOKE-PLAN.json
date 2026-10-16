@@ -1,0 +1,12 @@
+{
+  "task": "R04-SMOKE-PLAN",
+  "status": "DONE_SCOPED",
+  "note": "Capacity and frozen source paths inspected;bounded2000/500 TRAIN-only smoke contract and observed-version requirements saved;no fit or original-environment claim yet",
+  "timestamp": "2026-10-16T10:03:40.847264+00:00",
+  "artifacts": {
+    "docs/research/R04_ML_SMOKE_CONTRACT.md": "3d765f7762ea3a10d23a86fc055ba9799ea4c979ada2577794391d0bb072b54a",
+    "reproducibility/requirements-r04-smoke-py311-NOT-ORIGINAL.txt": "b6c991c444b14bba0bf4802154de0540df28a9fcc45f3933b31dc25f48bf2ec4"
+  },
+  "changed_prior_artifacts": [],
+  "next_action": "Create isolated venv and execute smoke only after dependency preflight; complete proposal assembly/review independently"
+}

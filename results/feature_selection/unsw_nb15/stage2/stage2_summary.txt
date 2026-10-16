@@ -1,0 +1,42 @@
+PHASE 5.2 — FEATURE SELECTION STABILITY + WRAPPER SUMMARY
+==============================================================================
+
+IMPORTANT:
+- Official TEST set was never loaded.
+- No subset is declared final/best yet.
+- RFECV is model-dependent.
+
+STABILITY
+Seeds: [11, 23, 42, 71, 101]
+Rows per stability sample: 60,000
+Top-K per method: 20
+Stable threshold: >= 60% of runs
+
+- filter: mean pairwise Jaccard=0.889, range=0.818–1.000
+- l1: mean pairwise Jaccard=0.862, range=0.818–1.000
+- extra_trees: mean pairwise Jaccard=0.829, range=0.739–0.905
+
+Features stable in >=2/3 methods: 17
+ct_srv_dst, ct_state_ttl, dload, dttl, proto, state, sttl, ct_dst_ltm, dmean, dwin, is_sm_ips_ports, rate, service, swin, ct_dst_sport_ltm, ct_dst_src_ltm, dbytes
+
+Features stable in all 3 methods: 7
+ct_srv_dst, ct_state_ttl, dload, dttl, proto, state, sttl
+
+RFECV WRAPPER
+Wrapper sample rows: 50,000
+Input original candidates: 20
+One-hot transformed features: 169
+Selected transformed features: 25
+Selected original features: 13
+Best CV Macro-F1 during RFECV: 0.921748
+
+RFECV-selected original features:
+ct_src_dport_ltm, ct_srv_dst, ct_state_ttl, dload, dmean, dttl, dwin, is_sm_ips_ports, sttl, swin, service, state, proto
+
+Stable >=2 methods AND selected by RFECV:
+ct_srv_dst, ct_state_ttl, dload, dttl, proto, state, sttl, dmean, dwin, is_sm_ips_ports, service, swin
+
+NEXT:
+Phase 6 will compare ALL FEATURES vs candidate subsets using matched
+baseline models and validation. Only predictive/cost evidence can tell
+us whether reducing the feature set is actually worthwhile.

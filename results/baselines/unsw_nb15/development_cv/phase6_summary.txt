@@ -1,0 +1,39 @@
+PHASE 6 — DEVELOPMENT BASELINE SUMMARY
+==============================================================================
+
+IMPORTANT:
+- Official TEST was never loaded.
+- Preprocessing was fitted inside each CV training fold.
+- These numbers are DEVELOPMENT evidence, not final test claims.
+
+Training records: 175,341
+CV: 3-fold StratifiedKFold
+
+MODELS
+- Logistic Regression: simple linear baseline
+- Decision Tree: simple nonlinear single-tree baseline
+- Random Forest: strong conventional tree-ensemble reference
+
+FEATURE SUBSETS
+- all_features: 42 original features
+- stable_2plus_methods: 17 original features
+- rfecv_selected_original: 13 original features
+- stable_and_rfecv: 12 original features
+- stable_all_3_methods: 7 original features
+
+TOP DEVELOPMENT RESULTS BY MACRO-F1
+- random_forest + all_features: Macro-F1=0.9504±0.0008, MCC=0.9016, train=26.32s, features=42
+- random_forest + stable_2plus_methods: Macro-F1=0.9413±0.0017, MCC=0.8836, train=14.84s, features=17
+- decision_tree + all_features: Macro-F1=0.9368±0.0017, MCC=0.8738, train=7.49s, features=42
+- random_forest + rfecv_selected_original: Macro-F1=0.9366±0.0008, MCC=0.8744, train=12.26s, features=13
+- random_forest + stable_and_rfecv: Macro-F1=0.9346±0.0011, MCC=0.8705, train=8.74s, features=12
+- decision_tree + stable_2plus_methods: Macro-F1=0.9296±0.0008, MCC=0.8593, train=2.09s, features=17
+- decision_tree + rfecv_selected_original: Macro-F1=0.9259±0.0006, MCC=0.8520, train=1.15s, features=13
+- decision_tree + stable_and_rfecv: Macro-F1=0.9233±0.0010, MCC=0.8466, train=1.43s, features=12
+- random_forest + stable_all_3_methods: Macro-F1=0.9228±0.0010, MCC=0.8478, train=13.21s, features=7
+- logistic_regression + all_features: Macro-F1=0.9218±0.0012, MCC=0.8498, train=7.02s, features=42
+
+NEXT DECISION
+Use this development evidence to narrow the feature-set candidates.
+Do not open the official test yet. Phase 7 will build Voting/Stacking/
+Boosting against the same development protocol before final freezing.

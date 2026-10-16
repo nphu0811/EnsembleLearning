@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "RQ1_RQ3_bridge": true,
+    "L03_documentation_warning": true,
+    "two_reports_exist": true
+  },
+  "passed": true,
+  "review_sha256": {
+    "r04_lit_evidence_review.md": "2a47c33acbd7d370f92650db04c2fae0db632423381046cbc150b070472992de",
+    "r04_lit_argument_review.md": "5dd572c0df4786828eef7296b8d2ff8d894f6bea8650a6aa4125db6235f9aa68"
+  },
+  "post_repair_rescore": "NOT_PERFORMED",
+  "form_mapping_action": "Keep original domestic/international labels; integrate rationale as introduction and gap as ending of body33-38, not new original form headings"
+}

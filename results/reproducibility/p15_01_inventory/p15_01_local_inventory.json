@@ -1,0 +1,753 @@
+{
+  "generated_utc": "2026-10-10T18:17:35.021770+00:00",
+  "project_root": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH",
+  "task": "P15-01 current-state presence check only",
+  "script_entries": [
+    {
+      "id": "P03-A",
+      "phase": "3",
+      "script_candidates": [
+        {
+          "relative_path": "src/data/audit_unsw-nb15.py",
+          "exists": true,
+          "size_bytes": 23877
+        }
+      ],
+      "script_found": "src/data/audit_unsw-nb15.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_training-set.csv",
+          "exists": true,
+          "size_bytes": 32293018
+        },
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_testing-set.csv",
+          "exists": true,
+          "size_bytes": 15380800
+        },
+        {
+          "relative_path": "data/raw/unsw-nb15/NUSW-NB15_features.csv",
+          "exists": true,
+          "size_bytes": 4044
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/data_audit/unsw_nb15/raw_file_checksums.csv",
+          "exists": true,
+          "size_bytes": 468
+        },
+        {
+          "relative_path": "results/data_audit/unsw_nb15/dataset_summary.json",
+          "exists": true,
+          "size_bytes": 2221
+        }
+      ]
+    },
+    {
+      "id": "P03-B",
+      "phase": "3",
+      "script_candidates": [
+        {
+          "relative_path": "src/data/audit_unsw-nb15_overlap.py",
+          "exists": true,
+          "size_bytes": 12641
+        }
+      ],
+      "script_found": "src/data/audit_unsw-nb15_overlap.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_training-set.csv",
+          "exists": true,
+          "size_bytes": 32293018
+        },
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_testing-set.csv",
+          "exists": true,
+          "size_bytes": 15380800
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/data_audit/unsw_nb15_overlap/overlap_consistency_summary.json",
+          "exists": true,
+          "size_bytes": 2336
+        },
+        {
+          "relative_path": "results/data_audit/unsw_nb15_overlap/cross_split_conflicts.csv",
+          "exists": true,
+          "size_bytes": 46497
+        }
+      ]
+    },
+    {
+      "id": "P03-C",
+      "phase": "3",
+      "script_candidates": [
+        {
+          "relative_path": "src/data/build_unsw_experiment_views.py",
+          "exists": true,
+          "size_bytes": 4000
+        }
+      ],
+      "script_found": "src/data/build_unsw_experiment_views.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_training-set.csv",
+          "exists": true,
+          "size_bytes": 32293018
+        },
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_testing-set.csv",
+          "exists": true,
+          "size_bytes": 15380800
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "data/interim/unsw-nb15/test_unseen_vectors.csv",
+          "exists": true,
+          "size_bytes": 14616174
+        },
+        {
+          "relative_path": "results/data_audit/unsw_nb15_views/view_summary.json",
+          "exists": true,
+          "size_bytes": 1126
+        }
+      ]
+    },
+    {
+      "id": "P04-A",
+      "phase": "4",
+      "script_candidates": [
+        {
+          "relative_path": "src/data/eda_unsw-nb15.py",
+          "exists": true,
+          "size_bytes": 18837
+        }
+      ],
+      "script_found": "src/data/eda_unsw-nb15.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_training-set.csv",
+          "exists": true,
+          "size_bytes": 32293018
+        },
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_testing-set.csv",
+          "exists": true,
+          "size_bytes": 15380800
+        },
+        {
+          "relative_path": "data/interim/unsw-nb15/test_unseen_vectors.csv",
+          "exists": true,
+          "size_bytes": 14616174
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/eda/unsw_nb15/tables/binary_class_distribution.csv",
+          "exists": true,
+          "size_bytes": 201
+        },
+        {
+          "relative_path": "results/eda/unsw_nb15/tables/numeric_feature_summary_train.csv",
+          "exists": true,
+          "size_bytes": 5091
+        }
+      ]
+    },
+    {
+      "id": "P05-A",
+      "phase": "5",
+      "script_candidates": [
+        {
+          "relative_path": "src/features/select_unsw_features_stage1.py",
+          "exists": true,
+          "size_bytes": 22764
+        }
+      ],
+      "script_found": "src/features/select_unsw_features_stage1.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_training-set.csv",
+          "exists": true,
+          "size_bytes": 32293018
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/feature_selection/unsw_nb15/stage1/subsets/candidate_feature_subsets.json",
+          "exists": true,
+          "size_bytes": 2736
+        },
+        {
+          "relative_path": "results/feature_selection/unsw_nb15/stage1/tables/consensus_feature_ranking.csv",
+          "exists": true,
+          "size_bytes": 4907
+        }
+      ]
+    },
+    {
+      "id": "P05-B",
+      "phase": "5",
+      "script_candidates": [
+        {
+          "relative_path": "src/features/select_unsw_features_stage2.py",
+          "exists": true,
+          "size_bytes": 25900
+        }
+      ],
+      "script_found": "src/features/select_unsw_features_stage2.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_training-set.csv",
+          "exists": true,
+          "size_bytes": 32293018
+        },
+        {
+          "relative_path": "results/feature_selection/unsw_nb15/stage1/subsets/candidate_feature_subsets.json",
+          "exists": true,
+          "size_bytes": 2736
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json",
+          "exists": true,
+          "size_bytes": 1627
+        },
+        {
+          "relative_path": "results/feature_selection/unsw_nb15/stage2/tables/selection_stability.csv",
+          "exists": true,
+          "size_bytes": 2403
+        }
+      ]
+    },
+    {
+      "id": "P06-A",
+      "phase": "6",
+      "script_candidates": [
+        {
+          "relative_path": "src/models/run_unsw_baseline_development.py",
+          "exists": true,
+          "size_bytes": 19411
+        }
+      ],
+      "script_found": "src/models/run_unsw_baseline_development.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_training-set.csv",
+          "exists": true,
+          "size_bytes": 32293018
+        },
+        {
+          "relative_path": "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json",
+          "exists": true,
+          "size_bytes": 1627
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/baselines/unsw_nb15/development_cv/tables/aggregate_metrics.csv",
+          "exists": true,
+          "size_bytes": 11095
+        },
+        {
+          "relative_path": "results/baselines/unsw_nb15/development_cv/tables/fold_metrics.csv",
+          "exists": true,
+          "size_bytes": 16960
+        }
+      ]
+    },
+    {
+      "id": "P07-A",
+      "phase": "7",
+      "script_candidates": [
+        {
+          "relative_path": "src/models/run_unsw_diversity_oof.py",
+          "exists": true,
+          "size_bytes": 17814
+        }
+      ],
+      "script_found": "src/models/run_unsw_diversity_oof.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_training-set.csv",
+          "exists": true,
+          "size_bytes": 32293018
+        },
+        {
+          "relative_path": "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json",
+          "exists": true,
+          "size_bytes": 1627
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/ensemble/unsw_nb15/phase7_1_diversity/tables/pairwise_diversity.csv",
+          "exists": true,
+          "size_bytes": 2420
+        },
+        {
+          "relative_path": "results/ensemble/unsw_nb15/phase7_1_diversity/oof/all_features_oof_predictions.csv",
+          "exists": true,
+          "size_bytes": 16597920
+        }
+      ]
+    },
+    {
+      "id": "P07-B",
+      "phase": "7",
+      "script_candidates": [
+        {
+          "relative_path": "src/models/run_unsw_ensemble_phase7_2.py",
+          "exists": true,
+          "size_bytes": 30555
+        }
+      ],
+      "script_found": "src/models/run_unsw_ensemble_phase7_2.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_training-set.csv",
+          "exists": true,
+          "size_bytes": 32293018
+        },
+        {
+          "relative_path": "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json",
+          "exists": true,
+          "size_bytes": 1627
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/aggregate_metrics.csv",
+          "exists": true,
+          "size_bytes": 7077
+        },
+        {
+          "relative_path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/oof/all_features_ensemble_oof.csv",
+          "exists": true,
+          "size_bytes": 20585450
+        }
+      ]
+    },
+    {
+      "id": "P10-A",
+      "phase": "10",
+      "script_candidates": [
+        {
+          "relative_path": "src/models/run_unsw_phase8_controlled_tuning.py",
+          "exists": true,
+          "size_bytes": 25236
+        }
+      ],
+      "script_found": "src/models/run_unsw_phase8_controlled_tuning.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_training-set.csv",
+          "exists": true,
+          "size_bytes": 32293018
+        },
+        {
+          "relative_path": "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json",
+          "exists": true,
+          "size_bytes": 1627
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+          "exists": true,
+          "size_bytes": 1139
+        },
+        {
+          "relative_path": "results/tuning/unsw_nb15/phase8_controlled/tables/rf42_grid_results.csv",
+          "exists": true,
+          "size_bytes": 2871
+        }
+      ]
+    },
+    {
+      "id": "P11-A",
+      "phase": "11",
+      "script_candidates": [
+        {
+          "relative_path": "src/models/run_unsw_phase9_final_holdout.py",
+          "exists": true,
+          "size_bytes": 28509
+        }
+      ],
+      "script_found": "src/models/run_unsw_phase9_final_holdout.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_training-set.csv",
+          "exists": true,
+          "size_bytes": 32293018
+        },
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_testing-set.csv",
+          "exists": true,
+          "size_bytes": 15380800
+        },
+        {
+          "relative_path": "data/interim/unsw-nb15/test_unseen_vectors.csv",
+          "exists": true,
+          "size_bytes": 14616174
+        },
+        {
+          "relative_path": "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json",
+          "exists": true,
+          "size_bytes": 1627
+        },
+        {
+          "relative_path": "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+          "exists": true,
+          "size_bytes": 1139
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+          "exists": true,
+          "size_bytes": 1871
+        },
+        {
+          "relative_path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/official_test_predictions.csv",
+          "exists": true,
+          "size_bytes": 5514921
+        }
+      ]
+    },
+    {
+      "id": "P11-B",
+      "phase": "11",
+      "script_candidates": [
+        {
+          "relative_path": "src/analysis/close_original_phase11.py",
+          "exists": true,
+          "size_bytes": 11519
+        },
+        {
+          "relative_path": "close_original_phase11.py",
+          "exists": false,
+          "size_bytes": null
+        }
+      ],
+      "script_found": "src/analysis/close_original_phase11.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+          "exists": true,
+          "size_bytes": 1871
+        },
+        {
+          "relative_path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+          "exists": true,
+          "size_bytes": 411
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_final_evaluation_complete.csv",
+          "exists": true,
+          "size_bytes": 2603
+        },
+        {
+          "relative_path": "results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_per_class_metrics.csv",
+          "exists": true,
+          "size_bytes": 1270
+        }
+      ]
+    },
+    {
+      "id": "P12-A",
+      "phase": "12",
+      "script_candidates": [
+        {
+          "relative_path": "src/analysis/run_unsw_phase10_statistics.py",
+          "exists": true,
+          "size_bytes": 32368
+        }
+      ],
+      "script_found": "src/analysis/run_unsw_phase10_statistics.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/official_test_predictions.csv",
+          "exists": true,
+          "size_bytes": 5514921
+        },
+        {
+          "relative_path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+          "exists": true,
+          "size_bytes": 411
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+          "exists": true,
+          "size_bytes": 3550
+        },
+        {
+          "relative_path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+          "exists": true,
+          "size_bytes": 1020
+        }
+      ]
+    },
+    {
+      "id": "P13-A",
+      "phase": "13",
+      "script_candidates": [
+        {
+          "relative_path": "src/analysis/run_unsw_phase13_ablation.py",
+          "exists": true,
+          "size_bytes": 18186
+        }
+      ],
+      "script_found": "src/analysis/run_unsw_phase13_ablation.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "results/ensemble/unsw_nb15/phase7_1_diversity/oof/all_features_oof_predictions.csv",
+          "exists": true,
+          "size_bytes": 16597920
+        },
+        {
+          "relative_path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/oof/all_features_ensemble_oof.csv",
+          "exists": true,
+          "size_bytes": 20585450
+        },
+        {
+          "relative_path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/aggregate_metrics.csv",
+          "exists": true,
+          "size_bytes": 7077
+        },
+        {
+          "relative_path": "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+          "exists": true,
+          "size_bytes": 1139
+        },
+        {
+          "relative_path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+          "exists": true,
+          "size_bytes": 1871
+        },
+        {
+          "relative_path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+          "exists": true,
+          "size_bytes": 3550
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/ablation/unsw_nb15/phase13_ablation/phase13_ablation_matrix.csv",
+          "exists": true,
+          "size_bytes": 30838
+        },
+        {
+          "relative_path": "results/ablation/unsw_nb15/phase13_ablation/comparability_audit.csv",
+          "exists": true,
+          "size_bytes": 770
+        }
+      ]
+    },
+    {
+      "id": "P14-A",
+      "phase": "14",
+      "script_candidates": [
+        {
+          "relative_path": "src/analysis/phase14_step1_error_transitions.py",
+          "exists": true,
+          "size_bytes": 7852
+        },
+        {
+          "relative_path": "phase14_step1_error_transitions.py",
+          "exists": false,
+          "size_bytes": null
+        }
+      ],
+      "script_found": "src/analysis/phase14_step1_error_transitions.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/official_test_predictions.csv",
+          "exists": true,
+          "size_bytes": 5514921
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step1/class_pairwise_transitions.csv",
+          "exists": true,
+          "size_bytes": 176
+        },
+        {
+          "relative_path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step1/attack_family_transitions.csv",
+          "exists": true,
+          "size_bytes": 811
+        }
+      ]
+    },
+    {
+      "id": "P14-B",
+      "phase": "14",
+      "script_candidates": [
+        {
+          "relative_path": "src/analysis/run_unsw_phase14_normal_feature_profiles.py",
+          "exists": true,
+          "size_bytes": 14301
+        }
+      ],
+      "script_found": "src/analysis/run_unsw_phase14_normal_feature_profiles.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/official_test_predictions.csv",
+          "exists": true,
+          "size_bytes": 5514921
+        },
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_testing-set.csv",
+          "exists": true,
+          "size_bytes": 15380800
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step3/state_by_value.csv",
+          "exists": true,
+          "size_bytes": 826
+        },
+        {
+          "relative_path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step3/sttl_by_value.csv",
+          "exists": true,
+          "size_bytes": 878
+        }
+      ]
+    },
+    {
+      "id": "P14-C",
+      "phase": "14",
+      "script_candidates": [
+        {
+          "relative_path": "src/analysis/run_unsw_phase14_fuzzers_feature_profiles.py",
+          "exists": true,
+          "size_bytes": 13378
+        }
+      ],
+      "script_found": "src/analysis/run_unsw_phase14_fuzzers_feature_profiles.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/official_test_predictions.csv",
+          "exists": true,
+          "size_bytes": 5514921
+        },
+        {
+          "relative_path": "data/raw/unsw-nb15/UNSW_NB15_testing-set.csv",
+          "exists": true,
+          "size_bytes": 15380800
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step4/fuzzers_pairwise_groups.csv",
+          "exists": true,
+          "size_bytes": 207
+        },
+        {
+          "relative_path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step4/proto_by_value.csv",
+          "exists": true,
+          "size_bytes": 4294
+        }
+      ]
+    },
+    {
+      "id": "P16-EARLY",
+      "phase": "16",
+      "script_candidates": [
+        {
+          "relative_path": "src/analysis/run_unsw_phase11_results_figures.py",
+          "exists": true,
+          "size_bytes": 22093
+        }
+      ],
+      "script_found": "src/analysis/run_unsw_phase11_results_figures.py",
+      "matches_archived_script_sha256": true,
+      "inputs": [
+        {
+          "relative_path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/recomputed_point_metrics.csv",
+          "exists": true,
+          "size_bytes": 1545
+        },
+        {
+          "relative_path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/bootstrap_metric_ci.csv",
+          "exists": true,
+          "size_bytes": 4567
+        },
+        {
+          "relative_path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+          "exists": true,
+          "size_bytes": 3550
+        },
+        {
+          "relative_path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+          "exists": true,
+          "size_bytes": 1020
+        },
+        {
+          "relative_path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/attack_family_miss_rate_ci.csv",
+          "exists": true,
+          "size_bytes": 5913
+        },
+        {
+          "relative_path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/official_vs_novel_degradation.csv",
+          "exists": true,
+          "size_bytes": 1181
+        },
+        {
+          "relative_path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/performance_cost_tradeoff.csv",
+          "exists": true,
+          "size_bytes": 690
+        }
+      ],
+      "outputs": [
+        {
+          "relative_path": "results/final_reporting/unsw_nb15/phase11_results_figures/phase11_metadata.json",
+          "exists": true,
+          "size_bytes": 537
+        },
+        {
+          "relative_path": "results/final_reporting/unsw_nb15/phase11_results_figures/tables/table01_final_performance_with_ci.csv",
+          "exists": true,
+          "size_bytes": 1369
+        }
+      ]
+    }
+  ],
+  "warning": "Path presence and SHA of script bytes, NOT model rerun or raw-data content validation",
+  "summary": {
+    "scripts_present": 18,
+    "scripts_expected": 18,
+    "input_paths_present": 48,
+    "input_path_checks": 48,
+    "representative_output_paths_present": 36,
+    "representative_output_checks": 36,
+    "note": "Optional missing phase14 paths can be reconciled from supplied output ZIP; script SHA differences are flagged for review, not automatically an error."
+  }
+}

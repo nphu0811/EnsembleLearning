@@ -1,0 +1,36 @@
+{
+  "phase": 10,
+  "dataset": "UNSW-NB15",
+  "model_training_performed": false,
+  "source_predictions": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\results\\final_evaluation\\unsw_nb15\\phase9_holdout\\tables\\official_test_predictions.csv",
+  "models": [
+    "stacking_42",
+    "random_forest_42",
+    "random_forest_17"
+  ],
+  "evaluation_views": [
+    "official_test",
+    "novel_vector_test"
+  ],
+  "bootstrap": {
+    "replicates": 10000,
+    "random_seed": 20260928,
+    "confidence_level": 0.95,
+    "type": "stratified paired multinomial bootstrap over joint prediction patterns",
+    "metrics": [
+      "macro_f1",
+      "mcc",
+      "false_positive_rate",
+      "false_negative_rate"
+    ],
+    "interpretation": "Uncertainty conditional on benchmark rows; does not establish independent network-flow sampling."
+  },
+  "mcnemar": {
+    "variant": "exact two-sided binomial",
+    "familywise_correction": "Holm",
+    "alpha": 0.05,
+    "scope": "overall paired correctness/error rate only"
+  },
+  "attack_family_ci": "Wilson 95% interval for miss rate",
+  "post_test_rule": "No model, feature, threshold, or hyperparameter changes are permitted based on Phase-10 findings."
+}

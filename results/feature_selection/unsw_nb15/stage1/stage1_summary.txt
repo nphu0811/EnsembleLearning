@@ -1,0 +1,44 @@
+PHASE 5.1 — FEATURE SELECTION STAGE-1 SUMMARY
+============================================================================
+
+IMPORTANT:
+- Official TEST set was not loaded.
+- No feature subset is declared 'best' yet.
+- These are candidate rankings for later validation.
+
+Official training rows: 175,341
+Selection sample rows : 100,000
+Original model features: 42
+
+Filter subset size: 20
+L1 top-K size      : 20
+ExtraTrees top-K   : 20
+Consensus >=2 votes: 20
+Union of top-K     : 33
+
+TOP CONSENSUS FEATURES
+- dttl: votes=3, MI-rank=5, L1-rank=4, ET-rank=2
+- sttl: votes=3, MI-rank=2, L1-rank=10, ET-rank=1
+- dload: votes=3, MI-rank=12, L1-rank=1, ET-rank=7
+- state: votes=3, MI-rank=21, L1-rank=5, ET-rank=3
+- ct_state_ttl: votes=3, MI-rank=4, L1-rank=15, ET-rank=4
+- proto: votes=3, MI-rank=24, L1-rank=3, ET-rank=5
+- ct_srv_dst: votes=3, MI-rank=27, L1-rank=9, ET-rank=10
+- service: votes=2, MI-rank=36, L1-rank=2, ET-rank=6
+- dmean: votes=2, MI-rank=10, L1-rank=7, ET-rank=9
+- dbytes: votes=2, MI-rank=3, L1-rank=12, ET-rank=31
+- rate: votes=2, MI-rank=6, L1-rank=25, ET-rank=13
+- smean: votes=2, MI-rank=9, L1-rank=22, ET-rank=20
+- swin: votes=2, MI-rank=32, L1-rank=6, ET-rank=8
+- tcprtt: votes=2, MI-rank=15, L1-rank=42, ET-rank=17
+- dwin: votes=2, MI-rank=35, L1-rank=8, ET-rank=12
+- ct_dst_sport_ltm: votes=2, MI-rank=23, L1-rank=32, ET-rank=18
+- ct_dst_ltm: votes=2, MI-rank=26, L1-rank=17, ET-rank=21
+- ct_src_dport_ltm: votes=2, MI-rank=30, L1-rank=14, ET-rank=19
+- ct_dst_src_ltm: votes=2, MI-rank=28, L1-rank=34, ET-rank=16
+- is_sm_ips_ports: votes=2, MI-rank=38, L1-rank=13, ET-rank=14
+
+NEXT:
+Phase 5.2 will test stability and wrapper/RFECV on a reduced candidate
+space, then Phase 6 baselines will compare candidate subsets using
+the same validation protocol.

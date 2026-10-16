@@ -1,0 +1,2295 @@
+{
+  "timestamp": "2026-10-16T09:48:28.237445+00:00",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "prior_artifacts": [
+    {
+      "path": ".research_memory/CHANGELOG.md",
+      "expected": "eec82f72124a40cb759ca60f7d9e53697f051804aa68cddadf603edfca5d4c04",
+      "actual": "eec82f72124a40cb759ca60f7d9e53697f051804aa68cddadf603edfca5d4c04",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/DECISIONS.md",
+      "expected": "48845c112e2c92347b3f01c3d9b78880f54975a94e551e29750cb960f5dafaf3",
+      "actual": "48845c112e2c92347b3f01c3d9b78880f54975a94e551e29750cb960f5dafaf3",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/EVIDENCE_INDEX.csv",
+      "expected": "e0dc3581d9872c008055eac3a7d62f417ff2aa4e4ee2ccff418379bb1660c6f8",
+      "actual": "e0dc3581d9872c008055eac3a7d62f417ff2aa4e4ee2ccff418379bb1660c6f8",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/HANDOFF.md",
+      "expected": "466dbbc14c5d2d5ac8c00363f1175057a9f28f505183333637d6df5e7a186634",
+      "actual": "466dbbc14c5d2d5ac8c00363f1175057a9f28f505183333637d6df5e7a186634",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/ISSUE_LOG.md",
+      "expected": "e27e159354249a3bbd99d9fcdea42ceda89b970b8357e88708232360fd52a9b5",
+      "actual": "e27e159354249a3bbd99d9fcdea42ceda89b970b8357e88708232360fd52a9b5",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/RESEARCH_CANON.md",
+      "expected": "2b394964de53702c9ec5067e34871f1003ea2d140b76bb7468fa659313feeb36",
+      "actual": "2b394964de53702c9ec5067e34871f1003ea2d140b76bb7468fa659313feeb36",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/SKILL_USAGE_LOG.md",
+      "expected": "190559a9dd3680c75ea432301cc7bfd408b1e3df27956048961330d914511ed5",
+      "actual": "190559a9dd3680c75ea432301cc7bfd408b1e3df27956048961330d914511ed5",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/TASK_BOARD.md",
+      "expected": "ec82f94f0af99129b25bb20f1b899a6ac741215aeebfe7d39f5adc95a72f8fea",
+      "actual": "ec82f94f0af99129b25bb20f1b899a6ac741215aeebfe7d39f5adc95a72f8fea",
+      "passed": true
+    },
+    {
+      "path": "defense/Hoi_dap_hoi_dong.md",
+      "expected": "ab8f69d1d8ad03ef7caf648def5384fde9202896133dd8ae397904a36ee7e990",
+      "actual": "ab8f69d1d8ad03ef7caf648def5384fde9202896133dd8ae397904a36ee7e990",
+      "passed": true
+    },
+    {
+      "path": "defense/QA_PREPARATION_CONTRACT.md",
+      "expected": "fe6d2ebd7a62e4471ce43f024bdeb5c368a35331d3b4fbd12306efaef700af73",
+      "actual": "fe6d2ebd7a62e4471ce43f024bdeb5c368a35331d3b4fbd12306efaef700af73",
+      "passed": true
+    },
+    {
+      "path": "defense/qa_validation_r02.json",
+      "expected": "fbb21e2809297915cb80b667c76f0e5f430af01f263bbfece6dc055f8afbaa17",
+      "actual": "fbb21e2809297915cb80b667c76f0e5f430af01f263bbfece6dc055f8afbaa17",
+      "passed": true
+    },
+    {
+      "path": "docs/CLAIM_EVIDENCE_MATRIX.md",
+      "expected": "298ead70f2cc68c32d8998ccc7fda14a7d5c35f587fe0721c151c6f7aff20abd",
+      "actual": "298ead70f2cc68c32d8998ccc7fda14a7d5c35f587fe0721c151c6f7aff20abd",
+      "passed": true
+    },
+    {
+      "path": "docs/P15_01_VERIFICATION.md",
+      "expected": "85b48b7b0c8a3804a6d7842ef3a1042f6fecbde272dd300b804f76fc3736bdd5",
+      "actual": "85b48b7b0c8a3804a6d7842ef3a1042f6fecbde272dd300b804f76fc3736bdd5",
+      "passed": true
+    },
+    {
+      "path": "docs/P15_02_ENVIRONMENT_VERIFICATION.md",
+      "expected": "c72b3f1b7f95e4eb2a603d9a72d5608f56bd2f6407f08a5acc9a9ff8eca3479d",
+      "actual": "c72b3f1b7f95e4eb2a603d9a72d5608f56bd2f6407f08a5acc9a9ff8eca3479d",
+      "passed": true
+    },
+    {
+      "path": "docs/P15_03B_SOURCE_AND_P15_04_SCOPE.md",
+      "expected": "9d9459558394ce3b5ce7021d87df015f2df97e847dc88195c8fd3a301059a917",
+      "actual": "9d9459558394ce3b5ce7021d87df015f2df97e847dc88195c8fd3a301059a917",
+      "passed": true
+    },
+    {
+      "path": "docs/P15_04_SNAPSHOT_ONLY_EXAMPLE.md",
+      "expected": "63be7feea1b3c0fcfd992008c0fd4212c8c8ff11f5357da5c98eb8434b26a6ae",
+      "actual": "63be7feea1b3c0fcfd992008c0fd4212c8c8ff11f5357da5c98eb8434b26a6ae",
+      "passed": true
+    },
+    {
+      "path": "docs/PREMATURE_REPORTING_INVENTORY.csv",
+      "expected": "529794bc1bd357f6441663e0ef418a5d91c3bd896a29690fed21d899a2fecf36",
+      "actual": "529794bc1bd357f6441663e0ef418a5d91c3bd896a29690fed21d899a2fecf36",
+      "passed": true
+    },
+    {
+      "path": "docs/RESUME_AUDIT.md",
+      "expected": "40bd17351afea47d2fecdb59b04fd24c957fcbeefe9f0c11d27a90e350be4e7e",
+      "actual": "40bd17351afea47d2fecdb59b04fd24c957fcbeefe9f0c11d27a90e350be4e7e",
+      "passed": true
+    },
+    {
+      "path": "docs/RESUME_AUDIT_R02_2026-10-16.md",
+      "expected": "dd60d2cb1e6ad0e5d2a1597f8520db093a4173434a12bba0c3110f21689a425a",
+      "actual": "dd60d2cb1e6ad0e5d2a1597f8520db093a4173434a12bba0c3110f21689a425a",
+      "passed": true
+    },
+    {
+      "path": "docs/RESUME_AUDIT_R03_2026-10-16.md",
+      "expected": "f830f784e140ab325c10423c074867ede8ec5491102cabad4e98c1ccc6749027",
+      "actual": "f830f784e140ab325c10423c074867ede8ec5491102cabad4e98c1ccc6749027",
+      "passed": true
+    },
+    {
+      "path": "docs/ROADMAP_CURRENT.md",
+      "expected": "65088f7c083f25a7ef16286f3bc9320fa3b1cf8ea184f81bfb4e7b960668a4b3",
+      "actual": "65088f7c083f25a7ef16286f3bc9320fa3b1cf8ea184f81bfb4e7b960668a4b3",
+      "passed": true
+    },
+    {
+      "path": "docs/ROADMAP_PHASE_AUDIT_2026-10-07.md",
+      "expected": "e1c44a44f78e6d769e1e3822c0b9774390e4740609df229f5e2f0e2e3dbcbdc8",
+      "actual": "e1c44a44f78e6d769e1e3822c0b9774390e4740609df229f5e2f0e2e3dbcbdc8",
+      "passed": true
+    },
+    {
+      "path": "docs/ROADMAP_RECONCILIATION.md",
+      "expected": "c0e8e36d544f056eb1da554a07197d81a5843f1c7ef7f6ed24eee77fcd644305",
+      "actual": "c0e8e36d544f056eb1da554a07197d81a5843f1c7ef7f6ed24eee77fcd644305",
+      "passed": true
+    },
+    {
+      "path": "docs/TAKEOVER_FILE_INVENTORY.csv",
+      "expected": "fa96dabca648699c912f57c8b162c5543d9df804b78459651b667d96d7e5fb30",
+      "actual": "fa96dabca648699c912f57c8b162c5543d9df804b78459651b667d96d7e5fb30",
+      "passed": true
+    },
+    {
+      "path": "docs/TAKEOVER_PRESERVATION_SHA256.csv",
+      "expected": "fc499505512c1ea5020d2e189e790d2d57434a5a034d4e9d493ec2815866146a",
+      "actual": "fc499505512c1ea5020d2e189e790d2d57434a5a034d4e9d493ec2815866146a",
+      "passed": true
+    },
+    {
+      "path": "docs/TEMPLATE_FOLDER_REVIEW.md",
+      "expected": "b4b0c9927e2ef1f634397c99b8a23461ee24227ebeacb08c486d847996c5a30d",
+      "actual": "b4b0c9927e2ef1f634397c99b8a23461ee24227ebeacb08c486d847996c5a30d",
+      "passed": true
+    },
+    {
+      "path": "docs/TEMPLATE_MAPPING.md",
+      "expected": "d9134c8204294085a529073a2b4bab0e6ae2032d17d28abae78617c68c105801",
+      "actual": "d9134c8204294085a529073a2b4bab0e6ae2032d17d28abae78617c68c105801",
+      "passed": true
+    },
+    {
+      "path": "docs/TEMPLATE_REQUIREMENTS_MATRIX.md",
+      "expected": "ad481733ccc22a231bbaae504e925bc9d64dd603e80a2d753bcdd2e95f493e6f",
+      "actual": "ad481733ccc22a231bbaae504e925bc9d64dd603e80a2d753bcdd2e95f493e6f",
+      "passed": true
+    },
+    {
+      "path": "docs/research/DATA_CODE_AVAILABILITY.md",
+      "expected": "7ce7b8ad2c7273aa951ec343c2dfc4f3c0237b7f997c2b83877b853b10a628f6",
+      "actual": "7ce7b8ad2c7273aa951ec343c2dfc4f3c0237b7f997c2b83877b853b10a628f6",
+      "passed": true
+    },
+    {
+      "path": "docs/research/ENSEMBLE_FRAMEWORK.md",
+      "expected": "5106199c66336bcca195f221bbf43c45baf339a526a15cbde92bec3fa17c6f83",
+      "actual": "5106199c66336bcca195f221bbf43c45baf339a526a15cbde92bec3fa17c6f83",
+      "passed": true
+    },
+    {
+      "path": "docs/research/P15_01_SCRIPT_IO_MATRIX.csv",
+      "expected": "e0d48a07d5c1536eea403c774a63ae30a886deaa99e61fa3a4b7abe408cfb7ad",
+      "actual": "e0d48a07d5c1536eea403c774a63ae30a886deaa99e61fa3a4b7abe408cfb7ad",
+      "passed": true
+    },
+    {
+      "path": "docs/research/P15_01_SOURCE_VERIFICATION.json",
+      "expected": "d9afd367e75137af1d28e47012d651707a2f74694972151b6a6c56026819c429",
+      "actual": "d9afd367e75137af1d28e47012d651707a2f74694972151b6a6c56026819c429",
+      "passed": true
+    },
+    {
+      "path": "docs/research/P15_03_DATASET_PROVENANCE.md",
+      "expected": "cdd4b23eb48d923e1123f1f186fffb599a2cdb2f3df158f46fd36ed3173bed03",
+      "actual": "cdd4b23eb48d923e1123f1f186fffb599a2cdb2f3df158f46fd36ed3173bed03",
+      "passed": true
+    },
+    {
+      "path": "docs/research/P16_PAIRED_EFFECT_CONTRACT.md",
+      "expected": "707d16803e7629881ab870d473bafea8249b5d149e35be14ccde09fb0eb66b0d",
+      "actual": "707d16803e7629881ab870d473bafea8249b5d149e35be14ccde09fb0eb66b0d",
+      "passed": true
+    },
+    {
+      "path": "docs/research/PHASE14_ERROR_ANALYSIS_CLOSURE.md",
+      "expected": "1f3aeba4c21029262b53f0dda79cc891525bd9d8102d8d886600c5250296164a",
+      "actual": "1f3aeba4c21029262b53f0dda79cc891525bd9d8102d8d886600c5250296164a",
+      "passed": true
+    },
+    {
+      "path": "docs/research/PHASE15_REPRODUCIBILITY_OPENING_CHECKLIST.md",
+      "expected": "9fb8a6eae142c625d996285a2764c3bf94f255975405962466117dc3607c80c6",
+      "actual": "9fb8a6eae142c625d996285a2764c3bf94f255975405962466117dc3607c80c6",
+      "passed": true
+    },
+    {
+      "path": "docs/research/REPRODUCIBILITY_MAP.md",
+      "expected": "b5cfcd8150ea649a21de5eecb86cbff7bfe58b76abc6eaff7381c5ec7a835b60",
+      "actual": "b5cfcd8150ea649a21de5eecb86cbff7bfe58b76abc6eaff7381c5ec7a835b60",
+      "passed": true
+    },
+    {
+      "path": "docs/research/REPRODUCIBILITY_RUNBOOK.md",
+      "expected": "52b04e897c3e11d31f0ef2b62de946c0faed06cd45fb9256e2081a0d54bd9120",
+      "actual": "52b04e897c3e11d31f0ef2b62de946c0faed06cd45fb9256e2081a0d54bd9120",
+      "passed": true
+    },
+    {
+      "path": "literature/gap_matrix.md",
+      "expected": "e118c4e3c091673d4dc42ceb88c94481ad97a112526324fadddf581217aad2c2",
+      "actual": "e118c4e3c091673d4dc42ceb88c94481ad97a112526324fadddf581217aad2c2",
+      "passed": true
+    },
+    {
+      "path": "literature/literature_matrix.csv",
+      "expected": "5cdd950c560e3d44decf646d4f414bf4cff22fba9c92e4aaee120dee89be4dec",
+      "actual": "5cdd950c560e3d44decf646d4f414bf4cff22fba9c92e4aaee120dee89be4dec",
+      "passed": true
+    },
+    {
+      "path": "literature/refs_verified_subset.bib",
+      "expected": "f717562ef38bdfe2aa5baf6c498fed63aaa2a067d52ca83bf81032d77acbc425",
+      "actual": "f717562ef38bdfe2aa5baf6c498fed63aaa2a067d52ca83bf81032d77acbc425",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/DOMESTIC_SOURCES.md",
+      "expected": "c735bb6c199c9476b38c3c52e9f452ab0a3b31c1936fb0d6adbb9cab66123ea0",
+      "actual": "c735bb6c199c9476b38c3c52e9f452ab0a3b31c1936fb0d6adbb9cab66123ea0",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L01_crossref_doi.json",
+      "expected": "26e77c51ce2eccdff306ef5a09a1dc1757a15ba3797a9fefa08e6e90d997fa30",
+      "actual": "26e77c51ce2eccdff306ef5a09a1dc1757a15ba3797a9fefa08e6e90d997fa30",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L01_crossref_search.json",
+      "expected": "519dc6e8f3571b15b34fb56e336709b7c8ee3bb7c3f1a76911be34148dd3299f",
+      "actual": "519dc6e8f3571b15b34fb56e336709b7c8ee3bb7c3f1a76911be34148dd3299f",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L02_crossref_doi.json",
+      "expected": "4598c39aab470b5a3718e7c6cdc6caa4a372b298357b56b687262f274a3d6c51",
+      "actual": "4598c39aab470b5a3718e7c6cdc6caa4a372b298357b56b687262f274a3d6c51",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L02_crossref_search.json",
+      "expected": "6eab338788c4d8357c9d2404680401e2976e57475f3f8d2ae0d12a0d96f79fe6",
+      "actual": "6eab338788c4d8357c9d2404680401e2976e57475f3f8d2ae0d12a0d96f79fe6",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L03_crossref_doi.json",
+      "expected": "372b4e544a0b3bde7385e9ad4851f8d29a8412043de6016f688e262dd02cb4f9",
+      "actual": "372b4e544a0b3bde7385e9ad4851f8d29a8412043de6016f688e262dd02cb4f9",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L03_crossref_search.json",
+      "expected": "6e112297a92e1713bd34dd5bca71fbb1621f9e30054d6666df93684e1e98e19e",
+      "actual": "6e112297a92e1713bd34dd5bca71fbb1621f9e30054d6666df93684e1e98e19e",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L04_crossref_doi.json",
+      "expected": "5db2445e1404c2f62e7df5bf911da4e577b5f696c99af6848ca4d534969d9a7f",
+      "actual": "5db2445e1404c2f62e7df5bf911da4e577b5f696c99af6848ca4d534969d9a7f",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L04_crossref_search.json",
+      "expected": "bf9e3afba03ff04341e57f313a0faac10c854e17c1af13cd2b110d391f929b18",
+      "actual": "bf9e3afba03ff04341e57f313a0faac10c854e17c1af13cd2b110d391f929b18",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L05_crossref_doi.json",
+      "expected": "51e65e99f19bcc0ea4f731a29da5965936e815e1ef4682b43d9d0532de91fa46",
+      "actual": "51e65e99f19bcc0ea4f731a29da5965936e815e1ef4682b43d9d0532de91fa46",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L06_crossref_doi.json",
+      "expected": "95c3a7663311a48fc30343305ce1bc6aaa0eca1dd77856f584bf1eaac8575936",
+      "actual": "95c3a7663311a48fc30343305ce1bc6aaa0eca1dd77856f584bf1eaac8575936",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L07_final_crossref_doi.json",
+      "expected": "cce39fe44e46a9b71c59d78ddabf628f92449f89d74889eee82d3a86431d75cb",
+      "actual": "cce39fe44e46a9b71c59d78ddabf628f92449f89d74889eee82d3a86431d75cb",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L07_preprint_crossref_doi.json",
+      "expected": "be382755df28967663013a2f6ad910c4e3c1ded6032888d169d3159852fe61ef",
+      "actual": "be382755df28967663013a2f6ad910c4e3c1ded6032888d169d3159852fe61ef",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L08_crossref_doi.json",
+      "expected": "a5bd4e5c31b4de2f1c6a338402debcf102892eb3310d24387aac376bc0a69f48",
+      "actual": "a5bd4e5c31b4de2f1c6a338402debcf102892eb3310d24387aac376bc0a69f48",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L09_crossref_doi.json",
+      "expected": "cb210bf3a093e3ec47ebce278d1ac5d916d99293617c0e32c2626e90b3f9b7b6",
+      "actual": "cb210bf3a093e3ec47ebce278d1ac5d916d99293617c0e32c2626e90b3f9b7b6",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L10_crossref_doi.json",
+      "expected": "3f8285854f8e0eb9ab593c71c71738ee556425baa75d03c0f510ef86f9c85655",
+      "actual": "3f8285854f8e0eb9ab593c71c71738ee556425baa75d03c0f510ef86f9c85655",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L10_crossref_search.json",
+      "expected": "633f61109891bc16a5b485bbafe9a9564111d80b6a55c50820de3fb56c056884",
+      "actual": "633f61109891bc16a5b485bbafe9a9564111d80b6a55c50820de3fb56c056884",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L11_crossref_doi.json",
+      "expected": "18f0be825559249f592b064dab7151f1f5787b9865e7495170a1dcc5015cda6b",
+      "actual": "18f0be825559249f592b064dab7151f1f5787b9865e7495170a1dcc5015cda6b",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L12_crossref_doi.json",
+      "expected": "9347a242d7a429800239c5658bc151d8f82dec84eece7f54c19ef15a8f7b4a4d",
+      "actual": "9347a242d7a429800239c5658bc151d8f82dec84eece7f54c19ef15a8f7b4a4d",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/READING_NOTES.md",
+      "expected": "6df63b8b026e7a7db504bc47656c2d2f9ca74fe8a6b4cfe702fbbe6db11ca943",
+      "actual": "6df63b8b026e7a7db504bc47656c2d2f9ca74fe8a6b4cfe702fbbe6db11ca943",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/SEARCH_PROTOCOL_AND_QA.md",
+      "expected": "89861547e7be912cfe0acd3fd44b9cbf7d11e51f3d110b659e26cc718f2c3796",
+      "actual": "89861547e7be912cfe0acd3fd44b9cbf7d11e51f3d110b659e26cc718f2c3796",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/doi_metadata.json",
+      "expected": "0ad20277fb7fc4f013b2a6ed45f840205eed2c5abac5e87e6ec9b5d08c64fb41",
+      "actual": "0ad20277fb7fc4f013b2a6ed45f840205eed2c5abac5e87e6ec9b5d08c64fb41",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/legacy_candidates.json",
+      "expected": "0547794cd3b5201047df2ce1172ecbc6049679304bd58334b0d1828b82cc2be9",
+      "actual": "0547794cd3b5201047df2ce1172ecbc6049679304bd58334b0d1828b82cc2be9",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/legacy_verification_ledger.csv",
+      "expected": "0719a20faa513dc96150ca74a2c8ef99218571288caf95cb25d67ef6c39e201b",
+      "actual": "0719a20faa513dc96150ca74a2c8ef99218571288caf95cb25d67ef6c39e201b",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/legacy_working_references.bib",
+      "expected": "b665cba05a7ff2ebea387491291200e46dfea4413dce456d90fe4a7583d7e250",
+      "actual": "b665cba05a7ff2ebea387491291200e46dfea4413dce456d90fe4a7583d7e250",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/validation.json",
+      "expected": "ea78893d9c7c6cea86665f16cd766994b40f425ccabb28aecbc9731cb59383a8",
+      "actual": "ea78893d9c7c6cea86665f16cd766994b40f425ccabb28aecbc9731cb59383a8",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/version_relations.json",
+      "expected": "24c3294c3d0cff931a965181df69c1042a0b507683ffcc194dd9816758d4e7d6",
+      "actual": "24c3294c3d0cff931a965181df69c1042a0b507683ffcc194dd9816758d4e7d6",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/FIELD_CROSSCHECKS.md",
+      "expected": "f93f1d4167be5f0158389aceef35ef1760cfba9011b11bfdfc5232a93a4b9f30",
+      "actual": "f93f1d4167be5f0158389aceef35ef1760cfba9011b11bfdfc5232a93a4b9f30",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/L10_comsoc.pdf",
+      "expected": "fc06af335bbc6a0819370257d8fbd0b8646021eb2e7adadd36a12da9bb1a2272",
+      "actual": "fc06af335bbc6a0819370257d8fbd0b8646021eb2e7adadd36a12da9bb1a2272",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/L11_uaeu.html",
+      "expected": "06196591c3311f4ec10b000d441b979b42d969d148cca2f8e8b5002aeef6830b",
+      "actual": "06196591c3311f4ec10b000d441b979b42d969d148cca2f8e8b5002aeef6830b",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/fetch_ledger.json",
+      "expected": "d8e8d0e15a5ef5e4dde090c1c0afe28d539836644445fb28fa14f4a5d5106161",
+      "actual": "d8e8d0e15a5ef5e4dde090c1c0afe28d539836644445fb28fa14f4a5d5106161",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/legacy_verification_ledger.csv",
+      "expected": "8d2c5b73b310961a428d2b8085fd58d749ef41354365faae655550fc6881a055",
+      "actual": "8d2c5b73b310961a428d2b8085fd58d749ef41354365faae655550fc6881a055",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/validation.json",
+      "expected": "defa88e0fff5e8074e9a2e983d4827c7a1ad5972cd07a1f4c8351aebcb1ef7ef",
+      "actual": "defa88e0fff5e8074e9a2e983d4827c7a1ad5972cd07a1f4c8351aebcb1ef7ef",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_1.json",
+      "expected": "755b6fc4dceebabb9aa2f146c157924c6166ee78ecbd29725fcc60e589ecd52f",
+      "actual": "755b6fc4dceebabb9aa2f146c157924c6166ee78ecbd29725fcc60e589ecd52f",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_2.json",
+      "expected": "1ead6a83edc0f88f6785340792ac6e299b068d7e6b4ecc90b50c05c806ddba75",
+      "actual": "1ead6a83edc0f88f6785340792ac6e299b068d7e6b4ecc90b50c05c806ddba75",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_3.json",
+      "expected": "b820b517a5d608bdd4ab2a42188b9a777d30a091bd34fbd90d665aaa7248ba9d",
+      "actual": "b820b517a5d608bdd4ab2a42188b9a777d30a091bd34fbd90d665aaa7248ba9d",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_4.json",
+      "expected": "a2fb04eee46ed59e9ec368a20a17f07f2c9032f76abc1a5a2fe6b99381e3bb74",
+      "actual": "a2fb04eee46ed59e9ec368a20a17f07f2c9032f76abc1a5a2fe6b99381e3bb74",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_5.json",
+      "expected": "b5e81b155f09cf2eb509593f21229fa77060251dfccf17690733382be7d02e39",
+      "actual": "b5e81b155f09cf2eb509593f21229fa77060251dfccf17690733382be7d02e39",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_6.json",
+      "expected": "dba0b016a42f50d709e7af9f6421600d1d0faf6f6728aaefbf5a6da0a55e3ab8",
+      "actual": "dba0b016a42f50d709e7af9f6421600d1d0faf6f6728aaefbf5a6da0a55e3ab8",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_7.json",
+      "expected": "da46c9069015105c057cff66eb6e523e81c01d557d3746f6620f74035c2f350e",
+      "actual": "da46c9069015105c057cff66eb6e523e81c01d557d3746f6620f74035c2f350e",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_8.json",
+      "expected": "ea127d53ce2abbaf3bfc945a09b470fa8166900930cce654963fa7a373b2cd82",
+      "actual": "ea127d53ce2abbaf3bfc945a09b470fa8166900930cce654963fa7a373b2cd82",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/VERIFICATION_REPORT.md",
+      "expected": "3281b75ec5b5c8427b339e6518f15e3412d4983573b5a072c6f6ccba48aa606f",
+      "actual": "3281b75ec5b5c8427b339e6518f15e3412d4983573b5a072c6f6ccba48aa606f",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_01_retry.json",
+      "expected": "e63c3fcab16ab728d1dafe465fa30160a6c29282bbcb91538ac8ca5e70f51a17",
+      "actual": "e63c3fcab16ab728d1dafe465fa30160a6c29282bbcb91538ac8ca5e70f51a17",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_02.json",
+      "expected": "c6f547817e1001f138c2bee7985bf688802343e933dc9f8233fbbe96c9e35b2f",
+      "actual": "c6f547817e1001f138c2bee7985bf688802343e933dc9f8233fbbe96c9e35b2f",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_03_retry.json",
+      "expected": "b545081215dce383016ccf1decae9568b4b0f7bd1cc59e26b37f8e11441694a7",
+      "actual": "b545081215dce383016ccf1decae9568b4b0f7bd1cc59e26b37f8e11441694a7",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_04.json",
+      "expected": "a535f845d74f914f60eb4ba1fa8ad290e1ccac47ee7fe7813e67a5930c3c83c3",
+      "actual": "a535f845d74f914f60eb4ba1fa8ad290e1ccac47ee7fe7813e67a5930c3c83c3",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_05.json",
+      "expected": "8f9d2d042bad6d2fdc90b60099daf12513c2fae87b68b2918ca83439782218be",
+      "actual": "8f9d2d042bad6d2fdc90b60099daf12513c2fae87b68b2918ca83439782218be",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_summary.json",
+      "expected": "ba57e51dd829ce0324e18ab5998ad4054fd9eaa0124ebadb5881a43e21d6de20",
+      "actual": "ba57e51dd829ce0324e18ab5998ad4054fd9eaa0124ebadb5881a43e21d6de20",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/dataset_references.bib",
+      "expected": "cf7ac97db6d8e3ff55b25100f405f95c5dd24b0e701aa45c7047f0c93a1c310f",
+      "actual": "cf7ac97db6d8e3ff55b25100f405f95c5dd24b0e701aa45c7047f0c93a1c310f",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/reference_verification_ledger.csv",
+      "expected": "a8bce520af6f6212a9e14b72ec283ede38b74784fcb65b87059717a44e6bd0a2",
+      "actual": "a8bce520af6f6212a9e14b72ec283ede38b74784fcb65b87059717a44e6bd0a2",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/00_scope.md",
+      "expected": "d0f8d9f2bba7bae12a93a9150bcf0df0094f64ff2e900e0cf63b826d9b18ce5d",
+      "actual": "d0f8d9f2bba7bae12a93a9150bcf0df0094f64ff2e900e0cf63b826d9b18ce5d",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/01_research_canon.md",
+      "expected": "d86cc01e920285d9c4bc7ed22b9fb748d3ae940609285b294a7c05188a664e6e",
+      "actual": "d86cc01e920285d9c4bc7ed22b9fb748d3ae940609285b294a7c05188a664e6e",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/02_evidence_table.md",
+      "expected": "2f8c30746f06b750f760dca8e1eff0736f5ff9d80a8ec3c50b65d63e9d8d2f44",
+      "actual": "2f8c30746f06b750f760dca8e1eff0736f5ff9d80a8ec3c50b65d63e9d8d2f44",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/03_argument_map.md",
+      "expected": "5c8bfe738f3f07d56dbb7a8875cb71e1676c15b38d561a769a108b5e71243d35",
+      "actual": "5c8bfe738f3f07d56dbb7a8875cb71e1676c15b38d561a769a108b5e71243d35",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/04_section_contracts.md",
+      "expected": "cf498f8173db79c7c1ab7966b030599d79bd170c5b8afb1be68505c17f238206",
+      "actual": "cf498f8173db79c7c1ab7966b030599d79bd170c5b8afb1be68505c17f238206",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/05_style_guide.md",
+      "expected": "7920aee79a9963e1fac9588ace31f44a289b7d1c49f317902fbd32035b558385",
+      "actual": "7920aee79a9963e1fac9588ace31f44a289b7d1c49f317902fbd32035b558385",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/06_rq_method_output_gates.md",
+      "expected": "26c36f5d5d75c9076c6c361b5ac339190c76ebef306482fb6f97fb4161170819",
+      "actual": "26c36f5d5d75c9076c6c361b5ac339190c76ebef306482fb6f97fb4161170819",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/07_remaining_work_feasibility.md",
+      "expected": "d68163bdc94ea68df74c7b3e19756092fabed9e0627d518307e107d24963f836",
+      "actual": "d68163bdc94ea68df74c7b3e19756092fabed9e0627d518307e107d24963f836",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/drafts/sections/muc_tieu_noi_dung_phuong_phap_r02.md",
+      "expected": "b46774817bafa12896c69ab67ae59bd0daed2e29a339a18b5f2f798b32c49333",
+      "actual": "b46774817bafa12896c69ab67ae59bd0daed2e29a339a18b5f2f798b32c49333",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/drafts/sections/ung_dung_san_pham_tien_do_r03.md",
+      "expected": "d6b7afa3f7552883cc250026415d81fd9ba935163c3d2199f924fd57d6ac4685",
+      "actual": "d6b7afa3f7552883cc250026415d81fd9ba935163c3d2199f924fd57d6ac4685",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/foundation_review_r02.md",
+      "expected": "25c9e28d0cb14ac0806ab207a98892e7ef74f6ba80a2b3fe2aa95fbe9f1f14f3",
+      "actual": "25c9e28d0cb14ac0806ab207a98892e7ef74f6ba80a2b3fe2aa95fbe9f1f14f3",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_argument_recheck.md",
+      "expected": "b29c1d509816a32b8251737a3f20b4dadc718e744a7192aa229259bd9aa606be",
+      "actual": "b29c1d509816a32b8251737a3f20b4dadc718e744a7192aa229259bd9aa606be",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_argument_review.md",
+      "expected": "43cd08a808f36defe4060922048c10e434282de9157e99691f593b763de4da76",
+      "actual": "43cd08a808f36defe4060922048c10e434282de9157e99691f593b763de4da76",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_mapping_validation.json",
+      "expected": "d5cd109d909bcda6ad0293f91688dfa8b89d81e8af0cdae8bc7c2e94202fca96",
+      "actual": "d5cd109d909bcda6ad0293f91688dfa8b89d81e8af0cdae8bc7c2e94202fca96",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_methods_recheck.md",
+      "expected": "b05dec71d8f0d560619a392cd4e44d72f63ae7c442db814d8022a0c0c571d5f8",
+      "actual": "b05dec71d8f0d560619a392cd4e44d72f63ae7c442db814d8022a0c0c571d5f8",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_methods_review.md",
+      "expected": "264830c9e9ba4c40ab44760770df0626c7692afd15d3b79d1e3a5c24f5c44c13",
+      "actual": "264830c9e9ba4c40ab44760770df0626c7692afd15d3b79d1e3a5c24f5c44c13",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_section_repair_validation.json",
+      "expected": "7690c661d9740e59a5bcdd6711451662e97b5b42287c1be3aba3a430a12e9fcb",
+      "actual": "7690c661d9740e59a5bcdd6711451662e97b5b42287c1be3aba3a430a12e9fcb",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_section_review.md",
+      "expected": "2d9885ec2e1fad7a50996bfdbe90b86e1e80b0f8801dc9ec5937d15c1d928f86",
+      "actual": "2d9885ec2e1fad7a50996bfdbe90b86e1e80b0f8801dc9ec5937d15c1d928f86",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r03_products_section_review.md",
+      "expected": "0abc198654cce35e20d0a5acd69179d530fd216c987a0ec2b174292df1e2ba44",
+      "actual": "0abc198654cce35e20d0a5acd69179d530fd216c987a0ec2b174292df1e2ba44",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r03_source_validation.json",
+      "expected": "9c9ad0a4cdac4a66c038be968e38dfc4554c6c2e3ef40fa4e0ff75fafdd211e7",
+      "actual": "9c9ad0a4cdac4a66c038be968e38dfc4554c6c2e3ef40fa4e0ff75fafdd211e7",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/state.json",
+      "expected": "171da6eaf08cd97b5a085946fbe0e3e2ca0c34312162e5bb794b5337c1cd6835",
+      "actual": "171da6eaf08cd97b5a085946fbe0e3e2ca0c34312162e5bb794b5337c1cd6835",
+      "passed": true
+    },
+    {
+      "path": "release/RELEASE_BLOCKERS.md",
+      "expected": "0204fc07b4f7e7126c38d16e47ea08a65af4915c30d664a297ce5d0716b438c3",
+      "actual": "0204fc07b4f7e7126c38d16e47ea08a65af4915c30d664a297ce5d0716b438c3",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/CAPTION_QA.md",
+      "expected": "b041cc4446d72b491480493545f09abff5cca62aad810f57269e50b75f915321",
+      "actual": "b041cc4446d72b491480493545f09abff5cca62aad810f57269e50b75f915321",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/metadata.json",
+      "expected": "6e3ca5b376242033a6867471cd143c2f7e065d0255ff3fab2ae7b695275f30eb",
+      "actual": "6e3ca5b376242033a6867471cd143c2f7e065d0255ff3fab2ae7b695275f30eb",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.alignment.json",
+      "expected": "fcdd472d530869ec9389eafd63182f62caa96598aea8c0938c44be514053b6d5",
+      "actual": "fcdd472d530869ec9389eafd63182f62caa96598aea8c0938c44be514053b6d5",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.alignment.svg",
+      "expected": "a7d7efd45b315ffddf26f33264b08f59d9ce1b821b17f57d41db3ffe596a6bed",
+      "actual": "a7d7efd45b315ffddf26f33264b08f59d9ce1b821b17f57d41db3ffe596a6bed",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.collision-audit.json",
+      "expected": "7f812eb941c407f40efd285a54a59b793950db4f1a851d1f98767de6b5381942",
+      "actual": "7f812eb941c407f40efd285a54a59b793950db4f1a851d1f98767de6b5381942",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.pdf",
+      "expected": "b05a40f35751e1479a077e97a042b895e8832c5fd0482b875348ccc0a07fdc4b",
+      "actual": "b05a40f35751e1479a077e97a042b895e8832c5fd0482b875348ccc0a07fdc4b",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.png",
+      "expected": "6a9ce7198403e4930b9f80b4241fde33bb1244384987c8acf6070d77bc840e67",
+      "actual": "6a9ce7198403e4930b9f80b4241fde33bb1244384987c8acf6070d77bc840e67",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.svg",
+      "expected": "d25d20e72a1beb9002f2f1ef5ea62093ba61975df345202630828a1b2f62394c",
+      "actual": "d25d20e72a1beb9002f2f1ef5ea62093ba61975df345202630828a1b2f62394c",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.text-audit.json",
+      "expected": "d9b2aafdd6adcda26994885282722c4cc6abc7b33e15bc9600bee4abc5c14447",
+      "actual": "d9b2aafdd6adcda26994885282722c4cc6abc7b33e15bc9600bee4abc5c14447",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/source_data.csv",
+      "expected": "480da392d2448b212933eb3a8739db0ff4dcc3a8dd9f390b82d1b5b781ac4112",
+      "actual": "480da392d2448b212933eb3a8739db0ff4dcc3a8dd9f390b82d1b5b781ac4112",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/source_preflight.json",
+      "expected": "3fd918881ebf5241acd8502d30d635b5811d7c0543bfa131ba814c5bf166b2c1",
+      "actual": "3fd918881ebf5241acd8502d30d635b5811d7c0543bfa131ba814c5bf166b2c1",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/nature_skill_registry.csv",
+      "expected": "ff9cb8769208867669417caaaed903b3ca338f6f2fdc44c8a70b6214f0811341",
+      "actual": "ff9cb8769208867669417caaaed903b3ca338f6f2fdc44c8a70b6214f0811341",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/preservation_manifest.csv",
+      "expected": "277613734ef70ef3bf3c88f5f9ea1ae05864e10b370904064c16bd4c67723f6a",
+      "actual": "277613734ef70ef3bf3c88f5f9ea1ae05864e10b370904064c16bd4c67723f6a",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/proposal_template_structure.json",
+      "expected": "dca16803fdf70cd0932a1de36b5fbe075c651d2655034b3dc78cb3cecd864571",
+      "actual": "dca16803fdf70cd0932a1de36b5fbe075c651d2655034b3dc78cb3cecd864571",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/saved_evidence_checks.json",
+      "expected": "be69f35ef93665ae313d48bb802f984f36c6ab1dee7c722ceafb944344f0ca11",
+      "actual": "be69f35ef93665ae313d48bb802f984f36c6ab1dee7c722ceafb944344f0ca11",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/session_environment.json",
+      "expected": "353f998be7ac193c88d25dea3ab6d26a8cf0ff3900d2389c5e42c540d0ae243d",
+      "actual": "353f998be7ac193c88d25dea3ab6d26a8cf0ff3900d2389c5e42c540d0ae243d",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/template_audit.json",
+      "expected": "88de166faa5ec4d88d7485b890c957a7ccbd75dc49563e610384c4d10c8580b0",
+      "actual": "88de166faa5ec4d88d7485b890c957a7ccbd75dc49563e610384c4d10c8580b0",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/unit_tests.log",
+      "expected": "761dc7fdf1a25028df21e675676a258db5e622ed3c04c4f85d7e8aaad9add200",
+      "actual": "761dc7fdf1a25028df21e675676a258db5e622ed3c04c4f85d7e8aaad9add200",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/workspace_inventory.csv",
+      "expected": "49351835d27f1a53d1c409c26ec5051a855886c4988cd921b5863d8796cac201",
+      "actual": "49351835d27f1a53d1c409c26ec5051a855886c4988cd921b5863d8796cac201",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/clean_replay_0.log",
+      "expected": "27bfb5572979fae3876aee3f83cb14da46396e8db9b2e71ceb8ec3bb4ff83eed",
+      "actual": "27bfb5572979fae3876aee3f83cb14da46396e8db9b2e71ceb8ec3bb4ff83eed",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/clean_replay_1.log",
+      "expected": "77c3998cf960e5462368015e04da375b05b22442d4c0d148470e06d176ba5411",
+      "actual": "77c3998cf960e5462368015e04da375b05b22442d4c0d148470e06d176ba5411",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/clean_replay_report.json",
+      "expected": "64f8c7c000e659adc817b150cc4ab49ce0dd1b7df8c955cf143f90ffd56d8856",
+      "actual": "64f8c7c000e659adc817b150cc4ab49ce0dd1b7df8c955cf143f90ffd56d8856",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/p15_01_inventory.json",
+      "expected": "48d92d97a054849c6f8f8811164716ae6d25a3ce2bea3f76bdc20dbc2340def0",
+      "actual": "48d92d97a054849c6f8f8811164716ae6d25a3ce2bea3f76bdc20dbc2340def0",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/p15_03_dataset.json",
+      "expected": "3f28254552f2a91d0c8a638c379c2f7fd48b0f0082cbd8c4a28a5dff6b43a057",
+      "actual": "3f28254552f2a91d0c8a638c379c2f7fd48b0f0082cbd8c4a28a5dff6b43a057",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/phase11_clean_replay/PHASE11_CHECKPOINT.md",
+      "expected": "7a96a8e069a95dfe45962b0791e816f122cbe21adda8e1da75d0e553af24b3e9",
+      "actual": "7a96a8e069a95dfe45962b0791e816f122cbe21adda8e1da75d0e553af24b3e9",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/phase11_clean_replay/phase11_confusion_matrices.csv",
+      "expected": "de901884c029a327492a368e6b11fa44de90eeff27088b62c150d656c88a8617",
+      "actual": "de901884c029a327492a368e6b11fa44de90eeff27088b62c150d656c88a8617",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/phase11_clean_replay/phase11_final_evaluation_complete.csv",
+      "expected": "a0a742b50860dd3a74c47453919b7ff276fbb579caafa431f81fc9c4c8f2278f",
+      "actual": "a0a742b50860dd3a74c47453919b7ff276fbb579caafa431f81fc9c4c8f2278f",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/phase11_clean_replay/phase11_per_class_metrics.csv",
+      "expected": "3988e15796beb44ca11c9a4a30b4d1aafe28a510a2c8ec1b2c788078affb0fd7",
+      "actual": "3988e15796beb44ca11c9a4a30b4d1aafe28a510a2c8ec1b2c788078affb0fd7",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/preservation_recheck.json",
+      "expected": "58a33ca457070aedaff40c365a984e1e30c4fe58799f883ac499c96d09c0e4af",
+      "actual": "58a33ca457070aedaff40c365a984e1e30c4fe58799f883ac499c96d09c0e4af",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/protocol/P15_04_PROTOCOL_REPORT.md",
+      "expected": "327236f58d4515d8bbad87e76c09f15036fa3d1166cfac94f37d297ed3ca9870",
+      "actual": "327236f58d4515d8bbad87e76c09f15036fa3d1166cfac94f37d297ed3ca9870",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/protocol/p15_04_protocol_integrity.json",
+      "expected": "93326634b7a40e4995ca9337452d6b060f1d38845d2f91598d96a132507efc70",
+      "actual": "93326634b7a40e4995ca9337452d6b060f1d38845d2f91598d96a132507efc70",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r02/preservation_final.json",
+      "expected": "3594b38dc38538a0b54b678eca6d4dd05a359f8c63d6ac1196a2a3b34c17869f",
+      "actual": "3594b38dc38538a0b54b678eca6d4dd05a359f8c63d6ac1196a2a3b34c17869f",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r02/previous_EVIDENCE_INDEX.csv",
+      "expected": "62e45f0d9448bf2ac67b53f26697024521276bcda859438378129f397aad388d",
+      "actual": "62e45f0d9448bf2ac67b53f26697024521276bcda859438378129f397aad388d",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r02/previous_EXPERIMENT_REGISTRY.csv",
+      "expected": "78f52f5515b1fa2ace6d7535e2245000b031918399c8651d5741d5417face613",
+      "actual": "78f52f5515b1fa2ace6d7535e2245000b031918399c8651d5741d5417face613",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r02/resume_audit.json",
+      "expected": "dbedc8e21d6fbb683179edf3aaf2823b5c681fcb8758f87a49899689baaa566e",
+      "actual": "dbedc8e21d6fbb683179edf3aaf2823b5c681fcb8758f87a49899689baaa566e",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r03/resume_audit.json",
+      "expected": "5001842075f97f89db12aa8cbe90d511c58b7f36f519b9e95b38b723a944225f",
+      "actual": "5001842075f97f89db12aa8cbe90d511c58b7f36f519b9e95b38b723a944225f",
+      "passed": true
+    },
+    {
+      "path": "src/analysis/plot_p16_paired_effects.py",
+      "expected": "82bae85c1b4dd6a1d67b3f29c661142163a4ec6f90af18dc01d7384f42ced959",
+      "actual": "82bae85c1b4dd6a1d67b3f29c661142163a4ec6f90af18dc01d7384f42ced959",
+      "passed": true
+    },
+    {
+      "path": "templates/original/DE-TAI-NCKHSV-15.zip",
+      "expected": "8bdfa9a0f5a26f03115ac8435a851417d1ef48e98749d5f48dd52ae7de831bf0",
+      "actual": "8bdfa9a0f5a26f03115ac8435a851417d1ef48e98749d5f48dd52ae7de831bf0",
+      "passed": true
+    },
+    {
+      "path": "templates/original/Mau-De-cuong-NCKH-Sinh-vien-2026-7-trieu.docx",
+      "expected": "bedb06dcecfc40a4d04a9412022509f039f7c4e64e6d779aa13b7dc9ec3d26c7",
+      "actual": "bedb06dcecfc40a4d04a9412022509f039f7c4e64e6d779aa13b7dc9ec3d26c7",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/assets/Logo_PTIT_University.png",
+      "expected": "2d804f4c34eb3b75925c4c5804cb3cb28936257ba65879a8c99e3d94dc2b7b9a",
+      "actual": "2d804f4c34eb3b75925c4c5804cb3cb28936257ba65879a8c99e3d94dc2b7b9a",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/assets/cnn.jpeg",
+      "expected": "a8599e5473af3af917b3bbea2d0615857378879b6276c8478668be2befc33e7c",
+      "actual": "a8599e5473af3af917b3bbea2d0615857378879b6276c8478668be2befc33e7c",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/chapters/chap-0.phan-mo-dau.tex",
+      "expected": "d9f54c76b6687075bd647f9ba6d568386ee036a47cc074bb78aa9d74923bbaa9",
+      "actual": "d9f54c76b6687075bd647f9ba6d568386ee036a47cc074bb78aa9d74923bbaa9",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/chapters/chap-1-background.tex",
+      "expected": "bb947fc1fd5105433fd858b5d0250555b2bbfd284ed47623ba6510887cf4f2d3",
+      "actual": "bb947fc1fd5105433fd858b5d0250555b2bbfd284ed47623ba6510887cf4f2d3",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/chapters/chap-2-method.tex",
+      "expected": "a6cb34d9e7c43e0a70e73a2c98a0643e389c46cf2d9da704980e062dc7880b02",
+      "actual": "a6cb34d9e7c43e0a70e73a2c98a0643e389c46cf2d9da704980e062dc7880b02",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/chapters/chap-3.tex",
+      "expected": "031d2130c9dbf22f7348273a7ea8318ebb998c0aa3290d911b24417cfaac7261",
+      "actual": "031d2130c9dbf22f7348273a7ea8318ebb998c0aa3290d911b24417cfaac7261",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/chapters/conclusion.tex",
+      "expected": "13a4a4efd38aac00d28e40928870645fc572eb29b193e045479e1eea1705cb48",
+      "actual": "13a4a4efd38aac00d28e40928870645fc572eb29b193e045479e1eea1705cb48",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/figures/social-thumbnail.png",
+      "expected": "d3541d7bb57211a89a35869fc4f44302e4487309e377db97ad8b51e0961eb6c8",
+      "actual": "d3541d7bb57211a89a35869fc4f44302e4487309e377db97ad8b51e0961eb6c8",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/main.tex",
+      "expected": "7a8088ea6a15ab69211727dc1d47499abed96ae68fa7fcf34a47572738107a9a",
+      "actual": "7a8088ea6a15ab69211727dc1d47499abed96ae68fa7fcf34a47572738107a9a",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/pages/abbreviations.tex",
+      "expected": "6e593bf32085ab10cb8db3cc6df9ae1026487bebe3e7e4acff2836ee8a279d8c",
+      "actual": "6e593bf32085ab10cb8db3cc6df9ae1026487bebe3e7e4acff2836ee8a279d8c",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/pages/acknowledgments.tex",
+      "expected": "f352fd7f09002d11462e0227eb6ae20e5883805228afd2c83dc8f58ff4755a0b",
+      "actual": "f352fd7f09002d11462e0227eb6ae20e5883805228afd2c83dc8f58ff4755a0b",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/pages/declaration.tex",
+      "expected": "1cd72dec19b8ef035ad623f367e2e6fcf73b293b0f6a763d186534e7faf6213f",
+      "actual": "1cd72dec19b8ef035ad623f367e2e6fcf73b293b0f6a763d186534e7faf6213f",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/refs.bib",
+      "expected": "496e5b2420006b0a33037dc9899eeb74c0fd2c5606b5bcc173e4c5683351e41e",
+      "actual": "496e5b2420006b0a33037dc9899eeb74c0fd2c5606b5bcc173e4c5683351e41e",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/styles/settings.tex",
+      "expected": "06d8e8b876903027251de646e903dbbe44764d3672544dcb44903c47558a3394",
+      "actual": "06d8e8b876903027251de646e903dbbe44764d3672544dcb44903c47558a3394",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/thesis.sty",
+      "expected": "2a16545dc3a8cd7ffd0fc8447ca5f4ec78b37f72d787a5371ecdef4760809f1a",
+      "actual": "2a16545dc3a8cd7ffd0fc8447ca5f4ec78b37f72d787a5371ecdef4760809f1a",
+      "passed": true
+    },
+    {
+      "path": "tools/checkpoint_r03.py",
+      "expected": "1f745426c9494a1ee4a5362231854bd937f99df8347f376d2c7de30616eab95d",
+      "actual": "1f745426c9494a1ee4a5362231854bd937f99df8347f376d2c7de30616eab95d",
+      "passed": true
+    },
+    {
+      "path": "tools/fetch_reference_crosschecks_r03.py",
+      "expected": "98537bb53b3afdcbdd86bc6ac6b32b7206fe81337df6af71cd1217149a3e996f",
+      "actual": "98537bb53b3afdcbdd86bc6ac6b32b7206fe81337df6af71cd1217149a3e996f",
+      "passed": true
+    },
+    {
+      "path": "tools/reconcile_reference_checks_r03.py",
+      "expected": "2133f72fe4196cdf11eee4ab0fe86e33e39dae2a89e535dc4588773117c001fb",
+      "actual": "2133f72fe4196cdf11eee4ab0fe86e33e39dae2a89e535dc4588773117c001fb",
+      "passed": true
+    },
+    {
+      "path": "tools/resume_audit_2026_10_16.py",
+      "expected": "8f45daad4a711be048b07aadac287b2a9895deea614aa33303c2735b57ecd919",
+      "actual": "8f45daad4a711be048b07aadac287b2a9895deea614aa33303c2735b57ecd919",
+      "passed": true
+    },
+    {
+      "path": "tools/resume_checkpoint_audit.py",
+      "expected": "75fe99880b22b3eb70e0578fbd79455e64440183fa4475f8a0941728d09148da",
+      "actual": "75fe99880b22b3eb70e0578fbd79455e64440183fa4475f8a0941728d09148da",
+      "passed": true
+    }
+  ],
+  "preservation": [
+    {
+      "path": "data/interim/unsw-nb15/test_unseen_vectors.csv",
+      "passed": true
+    },
+    {
+      "path": "data/raw/cic-ids2017/Friday-WorkingHours.csv",
+      "passed": true
+    },
+    {
+      "path": "data/raw/cic-ids2017/Monday-WorkingHours.csv",
+      "passed": true
+    },
+    {
+      "path": "data/raw/cic-ids2017/Thursday-WorkingHours.csv",
+      "passed": true
+    },
+    {
+      "path": "data/raw/cic-ids2017/Tuesday-WorkingHours.csv",
+      "passed": true
+    },
+    {
+      "path": "data/raw/cic-ids2017/Wednesday-WorkingHours.csv",
+      "passed": true
+    },
+    {
+      "path": "data/raw/unsw-nb15/NUSW-NB15_features.csv",
+      "passed": true
+    },
+    {
+      "path": "data/raw/unsw-nb15/UNSW_NB15_testing-set.csv",
+      "passed": true
+    },
+    {
+      "path": "data/raw/unsw-nb15/UNSW_NB15_training-set.csv",
+      "passed": true
+    },
+    {
+      "path": "src/analysis/close_original_phase11.py",
+      "passed": true
+    },
+    {
+      "path": "src/analysis/phase14_step1_error_transitions.py",
+      "passed": true
+    },
+    {
+      "path": "src/analysis/run_unsw_phase10_statistics.py",
+      "passed": true
+    },
+    {
+      "path": "src/analysis/run_unsw_phase11_results_figures.py",
+      "passed": true
+    },
+    {
+      "path": "src/analysis/run_unsw_phase13_ablation.py",
+      "passed": true
+    },
+    {
+      "path": "src/analysis/run_unsw_phase14_fuzzers_feature_profiles.py",
+      "passed": true
+    },
+    {
+      "path": "src/analysis/run_unsw_phase14_normal_feature_profiles.py",
+      "passed": true
+    },
+    {
+      "path": "src/data/audit_unsw-nb15.py",
+      "passed": true
+    },
+    {
+      "path": "src/data/audit_unsw-nb15_overlap.py",
+      "passed": true
+    },
+    {
+      "path": "src/data/build_unsw_experiment_views.py",
+      "passed": true
+    },
+    {
+      "path": "src/data/eda_unsw-nb15.py",
+      "passed": true
+    },
+    {
+      "path": "src/features/select_unsw_features_stage1.py",
+      "passed": true
+    },
+    {
+      "path": "src/features/select_unsw_features_stage2.py",
+      "passed": true
+    },
+    {
+      "path": "src/models/run_unsw_baseline_development.py",
+      "passed": true
+    },
+    {
+      "path": "src/models/run_unsw_diversity_oof.py",
+      "passed": true
+    },
+    {
+      "path": "src/models/run_unsw_ensemble_phase7_2.py",
+      "passed": true
+    },
+    {
+      "path": "src/models/run_unsw_phase8_controlled_tuning.py",
+      "passed": true
+    },
+    {
+      "path": "src/models/run_unsw_phase9_final_holdout.py",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase01/phase1_checkpoint.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase01/phase1_frozen_research_design_v1.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase01/phase1_literature_matrix.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase01/phase1_research_gap_matrix.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase01/research_decisions_log_phase1.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase01/research_task_board_phase1.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase02/phase2_dataset_decision_v1.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase02/research_decisions_log_phase2.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase02/research_task_board_phase2.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase03/phase3_unsw_cleaning_policy_v1.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase04/phase4_eda_plan.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase05/phase5_feature_selection_plan.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase05/phase5_stage2_plan.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase06/phase6_baseline_plan.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase07/phase7_1_diversity_plan.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase07/phase7_2_ensemble_plan.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase08/phase8_controlled_tuning_plan.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase09/phase9_final_holdout_plan.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase10/phase10_final_evidence_and_rq_answers.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase10/phase10_statistics_plan.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase11/phase11_1_final_tables.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase11/phase11_figure_captions.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase11/phase11_plan.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase11/phase11_results_ready_text.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase12/phase12_1_results_draft.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase12/phase12_2_discussion_draft.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase12/phase12_3_limitations_contributions.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase12/phase12_4_final_conclusion.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/figures/fig01_official_macro_f1_ci.png",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/figures/fig02_official_mcc_ci.png",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/figures/fig03_fpr_fnr_tradeoff.png",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/figures/fig04_macro_f1_vs_training_cost.png",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/figures/fig05_official_vs_novel_macro_f1.png",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/figures/fig06_attack_family_miss_rate_ci.png",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_1_integrated_results_discussion_conclusion.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_1_integration_checklist.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_1_reference_verification.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_2_checkpoint.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_2_full_manuscript_draft.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_2_introduction_related_work_methodology.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_2_reference_addendum.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_3_abstract_keywords.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_3_audit_report.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_3_audited_full_manuscript.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_3_checkpoint.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_4_checkpoint.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_4_manuscript_with_figures_tables.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_4_placement_map.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_4_qa.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_ablation_plan.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_ablation_summary.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/phase13_imbalance_closure_note.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/tables/table01_final_performance_with_ci.csv",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/tables/table02_pairwise_effects_and_mcnemar.csv",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/tables/table03_performance_cost_tradeoff.csv",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/tables/table04_attack_family_miss_rate_ci.csv",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase13/tables/table11_4_novel_vector_sensitivity.csv",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase14/PHASE14_STEP1_VERIFICATION_AND_STEP2_INTERPRETATION.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase14/PHASE14_STEP3_VERIFICATION.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase14/PHASE14_STEP4_VERIFICATION_AND_INTERPRETATION.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/phase15/P15_02C2_VERIFICATION.md",
+      "passed": true
+    },
+    {
+      "path": "notebook/README_INDEX.md",
+      "passed": true
+    },
+    {
+      "path": "results/ablation/unsw_nb15/phase13_ablation/analysis_metadata.json",
+      "passed": true
+    },
+    {
+      "path": "results/ablation/unsw_nb15/phase13_ablation/comparability_audit.csv",
+      "passed": true
+    },
+    {
+      "path": "results/ablation/unsw_nb15/phase13_ablation/development_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/ablation/unsw_nb15/phase13_ablation/phase13_ablation_matrix.csv",
+      "passed": true
+    },
+    {
+      "path": "results/baselines/unsw_nb15/development_cv/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "path": "results/baselines/unsw_nb15/development_cv/phase6_summary.txt",
+      "passed": true
+    },
+    {
+      "path": "results/baselines/unsw_nb15/development_cv/tables/aggregate_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/baselines/unsw_nb15/development_cv/tables/fold_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/baselines/unsw_nb15/development_cv/tables/subset_tradeoff_summary.csv",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15/audit_report.txt",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15/categorical_train_test_shift.csv",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15/class_distribution.csv",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15/column_profile.csv",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15/dataset_summary.json",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15/duplicate_summary.json",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15/flagged_columns.csv",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15/infinite_values.csv",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15/label_attack_crosstab.csv",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15/missing_values.csv",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15/raw_file_checksums.csv",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15/schema_comparison.json",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15/suspicious_columns.csv",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15/train_test_overlap.json",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15_overlap/cross_split_conflicts.csv",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15_overlap/cross_split_overlap_by_attack.csv",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15_overlap/cross_split_overlap_vectors.csv",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15_overlap/overlap_consistency_report.txt",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15_overlap/overlap_consistency_summary.json",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15_overlap/within_test_conflicts.csv",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15_overlap/within_train_conflicts.csv",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15_views/test_overlap_rows.csv",
+      "passed": true
+    },
+    {
+      "path": "results/data_audit/unsw_nb15_views/view_summary.json",
+      "passed": true
+    },
+    {
+      "path": "results/eda/unsw_nb15/eda_summary.txt",
+      "passed": true
+    },
+    {
+      "path": "results/eda/unsw_nb15/figures/fig01_binary_class_distribution.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/eda/unsw_nb15/figures/fig01_binary_class_distribution.png",
+      "passed": true
+    },
+    {
+      "path": "results/eda/unsw_nb15/figures/fig02_attack_category_distribution.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/eda/unsw_nb15/figures/fig02_attack_category_distribution.png",
+      "passed": true
+    },
+    {
+      "path": "results/eda/unsw_nb15/figures/fig03_numeric_class_separation.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/eda/unsw_nb15/figures/fig03_numeric_class_separation.png",
+      "passed": true
+    },
+    {
+      "path": "results/eda/unsw_nb15/figures/fig04_numeric_correlation_heatmap.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/eda/unsw_nb15/figures/fig04_numeric_correlation_heatmap.png",
+      "passed": true
+    },
+    {
+      "path": "results/eda/unsw_nb15/tables/attack_category_distribution.csv",
+      "passed": true
+    },
+    {
+      "path": "results/eda/unsw_nb15/tables/binary_class_distribution.csv",
+      "passed": true
+    },
+    {
+      "path": "results/eda/unsw_nb15/tables/categorical_attack_rates_train.csv",
+      "passed": true
+    },
+    {
+      "path": "results/eda/unsw_nb15/tables/categorical_summary.csv",
+      "passed": true
+    },
+    {
+      "path": "results/eda/unsw_nb15/tables/high_correlation_pairs_train.csv",
+      "passed": true
+    },
+    {
+      "path": "results/eda/unsw_nb15/tables/numeric_feature_summary_train.csv",
+      "passed": true
+    },
+    {
+      "path": "results/eda/unsw_nb15/tables/numeric_target_association_train.csv",
+      "passed": true
+    },
+    {
+      "path": "results/ensemble/unsw_nb15/phase7_1_diversity/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "path": "results/ensemble/unsw_nb15/phase7_1_diversity/oof/all_features_oof_predictions.csv",
+      "passed": true
+    },
+    {
+      "path": "results/ensemble/unsw_nb15/phase7_1_diversity/oof/stable_17_features_oof_predictions.csv",
+      "passed": true
+    },
+    {
+      "path": "results/ensemble/unsw_nb15/phase7_1_diversity/phase7_1_summary.txt",
+      "passed": true
+    },
+    {
+      "path": "results/ensemble/unsw_nb15/phase7_1_diversity/tables/attack_category_miss_profile.csv",
+      "passed": true
+    },
+    {
+      "path": "results/ensemble/unsw_nb15/phase7_1_diversity/tables/fold_runtime.csv",
+      "passed": true
+    },
+    {
+      "path": "results/ensemble/unsw_nb15/phase7_1_diversity/tables/individual_oof_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/ensemble/unsw_nb15/phase7_1_diversity/tables/pairwise_diversity.csv",
+      "passed": true
+    },
+    {
+      "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/oof/all_features_ensemble_oof.csv",
+      "passed": true
+    },
+    {
+      "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/oof/stable_17_features_ensemble_oof.csv",
+      "passed": true
+    },
+    {
+      "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/phase7_2_summary.txt",
+      "passed": true
+    },
+    {
+      "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/aggregate_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/comparison_vs_random_forest.csv",
+      "passed": true
+    },
+    {
+      "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/fold_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/pooled_oof_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage1/stage1_metadata.json",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage1/stage1_summary.txt",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage1/subsets/candidate_feature_subsets.json",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage1/tables/consensus_feature_ranking.csv",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage1/tables/extra_trees_original_feature_ranking.csv",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage1/tables/extra_trees_transformed_feature_scores.csv",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage1/tables/filter_redundancy_decisions.csv",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage1/tables/l1_original_feature_ranking.csv",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage1/tables/l1_transformed_feature_scores.csv",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage1/tables/mutual_information_ranking.csv",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage2/rfecv_metadata.json",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage2/stability_summary.json",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage2/stage2_summary.txt",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage2/tables/pairwise_jaccard.csv",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage2/tables/rfecv_cv_curve.csv",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage2/tables/rfecv_original_feature_summary.csv",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage2/tables/rfecv_transformed_selection.csv",
+      "passed": true
+    },
+    {
+      "path": "results/feature_selection/unsw_nb15/stage2/tables/selection_stability.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase10_statistics/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase10_statistics/phase10_summary.txt",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/attack_family_miss_rate_ci.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/bootstrap_metric_ci.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/official_vs_novel_degradation.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/performance_cost_tradeoff.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/recomputed_point_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step1/attack_family_transitions.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step1/class_pairwise_transitions.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step1/PHASE14_STEP1_SUMMARY.md",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step3/PHASE14_STEP3_SUMMARY.md",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step3/proto_by_value.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step3/proto_group_composition.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step3/state_by_value.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step3/state_group_composition.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step3/sttl_by_value.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step3/sttl_group_composition.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step3/sttl_group_summary.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step4/ct_state_ttl_numeric_summary.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step4/dload_numeric_summary.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step4/fuzzers_pairwise_groups.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step4/PHASE14_STEP4_SUMMARY.md",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step4/proto_by_value.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step4/proto_group_composition.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step4/state_by_value.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step4/state_group_composition.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step4/sttl_by_value.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step4/sttl_group_composition.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step4/sttl_numeric_summary.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step4.zip",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step5/evidence_reconciliation.json",
+      "passed": true
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step5/SOURCE_HASHES.md",
+      "passed": true
+    },
+    {
+      "path": "results/final_evaluation/unsw_nb15/phase11_evaluation_closure/PHASE11_CHECKPOINT.md",
+      "passed": true
+    },
+    {
+      "path": "results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_confusion_matrices.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_final_evaluation_complete.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_per_class_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_evaluation/unsw_nb15/phase9_holdout/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "path": "results/final_evaluation/unsw_nb15/phase9_holdout/phase9_summary.txt",
+      "passed": true
+    },
+    {
+      "path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/attack_category_miss_profile.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/official_test_predictions.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/pairwise_error_counts.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig01_official_macro_f1_ci.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig01_official_macro_f1_ci.png",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig02_official_mcc_ci.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig02_official_mcc_ci.png",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig03_fpr_fnr_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig03_fpr_fnr_tradeoff.png",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig04_macro_f1_vs_training_cost.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig04_macro_f1_vs_training_cost.png",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig05_official_vs_novel_macro_f1.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig05_official_vs_novel_macro_f1.png",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig06_attack_family_miss_rate_ci.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig06_attack_family_miss_rate_ci.png",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/phase11_figure_captions.md",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/phase11_metadata.json",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/phase11_results_ready_text.md",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/tables/table01_final_performance_with_ci.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/tables/table02_pairwise_effects_and_mcnemar.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/tables/table03_performance_cost_tradeoff.csv",
+      "passed": true
+    },
+    {
+      "path": "results/final_reporting/unsw_nb15/phase11_results_figures/tables/table04_attack_family_miss_rate_ci.csv",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p15_01_inventory/p15_01_local_inventory.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p15_02_environment/p15_02_candidate_direct_dependencies.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p15_02_environment/p15_02_environment.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p15_02b_runtime_check/p15_02b_runtime_check.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p15_02c1_package_provenance/p15_02c1_distribution_paths.csv",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p15_02c1_package_provenance/p15_02c1_package_provenance.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p15_02c2_clean_env/install_stderr_tail.log",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p15_02c2_clean_env/install_stdout_tail.log",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p15_02c2_clean_env/p15_02c2_clean_env.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p15_02c2_clean_env/requirements-clean-py314-resolved-NOT-HASHED.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p15_02c2_clean_env.zip",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p15_03_dataset/p15_03_dataset_integrity.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p15_04_protocol/p15_04_protocol_integrity.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p15_04_protocol/P15_04_PROTOCOL_REPORT.md",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/requirements-observed-py314-NOT-ORIGINAL-TRAINING.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/p15_01_inventory.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/p15_03_dataset.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/protocol/p15_04_protocol_integrity.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/protocol/P15_04_PROTOCOL_REPORT.md",
+      "passed": true
+    },
+    {
+      "path": "results/tuning/unsw_nb15/phase8_controlled/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "path": "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+      "passed": true
+    },
+    {
+      "path": "results/tuning/unsw_nb15/phase8_controlled/phase8_summary.txt",
+      "passed": true
+    },
+    {
+      "path": "results/tuning/unsw_nb15/phase8_controlled/tables/rf17_grid_results.csv",
+      "passed": true
+    },
+    {
+      "path": "results/tuning/unsw_nb15/phase8_controlled/tables/rf42_grid_results.csv",
+      "passed": true
+    },
+    {
+      "path": "results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_base_oof_probabilities.csv",
+      "passed": true
+    },
+    {
+      "path": "results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_meta_grid_results.csv",
+      "passed": true
+    },
+    {
+      "path": "results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_threshold_sensitivity.csv",
+      "passed": true
+    },
+    {
+      "path": "DE-TAI-NCKHSV-15/assets/cnn.jpeg",
+      "passed": true
+    },
+    {
+      "path": "DE-TAI-NCKHSV-15/assets/Logo_PTIT_University.png",
+      "passed": true
+    },
+    {
+      "path": "DE-TAI-NCKHSV-15/chapters/chap-0.phan-mo-dau.tex",
+      "passed": true
+    },
+    {
+      "path": "DE-TAI-NCKHSV-15/chapters/chap-1-background.tex",
+      "passed": true
+    },
+    {
+      "path": "DE-TAI-NCKHSV-15/chapters/chap-2-method.tex",
+      "passed": true
+    },
+    {
+      "path": "DE-TAI-NCKHSV-15/chapters/chap-3.tex",
+      "passed": true
+    },
+    {
+      "path": "DE-TAI-NCKHSV-15/chapters/conclusion.tex",
+      "passed": true
+    },
+    {
+      "path": "DE-TAI-NCKHSV-15/figures/social-thumbnail.png",
+      "passed": true
+    },
+    {
+      "path": "DE-TAI-NCKHSV-15/main.tex",
+      "passed": true
+    },
+    {
+      "path": "DE-TAI-NCKHSV-15/pages/abbreviations.tex",
+      "passed": true
+    },
+    {
+      "path": "DE-TAI-NCKHSV-15/pages/acknowledgments.tex",
+      "passed": true
+    },
+    {
+      "path": "DE-TAI-NCKHSV-15/pages/declaration.tex",
+      "passed": true
+    },
+    {
+      "path": "DE-TAI-NCKHSV-15/refs.bib",
+      "passed": true
+    },
+    {
+      "path": "DE-TAI-NCKHSV-15/styles/settings.tex",
+      "passed": true
+    },
+    {
+      "path": "DE-TAI-NCKHSV-15/thesis.sty",
+      "passed": true
+    },
+    {
+      "path": "nckh_codex_handoff/HANDOFF_STATUS.json",
+      "passed": true
+    },
+    {
+      "path": "nckh_codex_handoff/NCKH_HANDOFF_NOTES.md",
+      "passed": true
+    },
+    {
+      "path": "nckh_codex_handoff/PREMATURE_ARTIFACT_RECLASSIFICATION.md",
+      "passed": true
+    },
+    {
+      "path": "nckh_codex_handoff/README_FIRST.md",
+      "passed": true
+    }
+  ],
+  "nature_registry": [
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-academic-search\\SKILL.md",
+      "name": "nature-academic-search",
+      "sha256": "3ed327e3e9c56cddfaa0e48ffb3503b1f9e27f917916013798ef57bf8131101a"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-citation\\SKILL.md",
+      "name": "nature-citation",
+      "sha256": "f0436639c2bcf966e8f8cdda6e06501b396bb32cc3b7cce57f67eb0cd7b5a44d"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-data\\SKILL.md",
+      "name": "nature-data",
+      "sha256": "4ef9c383411b069265901e9f157cb4d73861f42f6ddd28611084005e67eafa43"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-downloader\\SKILL.md",
+      "name": "nature-downloader",
+      "sha256": "0351f9069e77a4b027893592d295f3c511301bc7d2ec7d299ab49ee2c106be54"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-experiment-log\\SKILL.md",
+      "name": "nature-experiment-log",
+      "sha256": "1f7fffcbc950d4f60fcb5ad9f2aabe82246ebbd83bf29621a0e90c9ff4ec4b8b"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-figure\\SKILL.md",
+      "name": "nature-figure",
+      "sha256": "46f2cf74d473604ff9ad884893bbe2360b3431fec631009fce5c487945acf652"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-image2ppt\\SKILL.md",
+      "name": "nature-image2ppt",
+      "sha256": "0b49331f7b97e0751248c84506cada638f29ff44bb3023686f89a9f858748e9e"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-literature-pipeline\\SKILL.md",
+      "name": "nature-literature-pipeline",
+      "sha256": "1dcaa692457ec9c2be409cb7777f834a2db833788b2e9b680baf0e961126b01a"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-paper-card\\SKILL.md",
+      "name": "nature-paper-card",
+      "sha256": "a71e3dbc446523e415ed4b896bed8ea60e0c598fb8655c587679d719648b68c9"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-paper-to-patent\\SKILL.md",
+      "name": "nature-paper-to-patent",
+      "sha256": "b65243157addf3e4e38de4cb35136d95478c2c997bdd5600e6ae21f91f4d06f0"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-paper2ppt\\SKILL.md",
+      "name": "nature-paper2ppt",
+      "sha256": "a8d0fd14ca0863602cfc76305467d0f5a6ac2c104abedd7f7e86dfcf46bf04cf"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-polishing\\SKILL.md",
+      "name": "nature-polishing",
+      "sha256": "9391b2a2487306cf2ed560377d4bc10c339fd2c220a79db278cb7f9d31e79023"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-proposal-writer\\SKILL.md",
+      "name": "researchwrite",
+      "sha256": "9be8ae52f909969592529414fb6f5bb54059c8cbe520e78b53d22b297cef5e4a"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-reader\\SKILL.md",
+      "name": "nature-reader",
+      "sha256": "999a5c1b116558133d0389ce6c1bbc3dc9cf5242d1be2870358789769d97a84e"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-ref-verifier\\SKILL.md",
+      "name": "nature-ref-verifier",
+      "sha256": "6a975074d7a1c62c00dd9e8c7367cd2af0ef9d573d6d6ce5ea12f70d9320a516"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-response\\SKILL.md",
+      "name": "nature-response",
+      "sha256": "a8283db56e73879413311cbcde1db4c72dd4390bbe21ab2f62f1f968610b5de1"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-reviewer\\SKILL.md",
+      "name": "nature-reviewer",
+      "sha256": "977d5b3e452865e9903f2ae434907f805c64e2600665a993bc95a19e02820466"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-shared\\SKILL.md",
+      "name": "nature-shared",
+      "sha256": "3d914e73f023cab4f247d82f906a948307de8a867fd6c33df999badf67c5d5f2"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-statistics\\SKILL.md",
+      "name": "nature-statistics",
+      "sha256": "89d2a101fc45d7adf8ca327a6da4bda4a696d6364d7c36ead4f53413627a9b6f"
+    },
+    {
+      "path": "C:\\Users\\admin\\.codex\\skills\\nature-writing\\SKILL.md",
+      "name": "nature-writing",
+      "sha256": "ce7c4d20329b96b03b0f0c0bb744411b1b4deaa7a7b69b90757705a83c195b12"
+    }
+  ],
+  "latex_zip": {
+    "crc_error": null,
+    "entries": 15,
+    "has_docx": false,
+    "extraction_match": true
+  },
+  "docx": {
+    "crc_error": null,
+    "top_level_tables": 8,
+    "all_tables": 8,
+    "visual_qa": "NOT_PERFORMED"
+  },
+  "tools": {
+    "python": "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python311\\python.EXE",
+    "xelatex": null,
+    "lualatex": null,
+    "tectonic": null,
+    "libreoffice": null
+  },
+  "counts": {
+    "manifest": 172,
+    "manifest_pass": 172,
+    "preservation": 282,
+    "preservation_pass": 282
+  }
+}

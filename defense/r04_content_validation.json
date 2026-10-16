@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "Kich_ban_thuyet_trinh.md:literature/gap_matrix.md": true,
+    "Kich_ban_thuyet_trinh.md:results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv": true,
+    "Kich_ban_thuyet_trinh.md:.research_memory/RESEARCH_CANON.md": true,
+    "Kich_ban_thuyet_trinh.md:results/reproducibility/resume_2026_10_16/clean_replay_report.json": true,
+    "Kich_ban_thuyet_trinh.md:defense/Demo_runbook.md": true,
+    "Kich_ban_thuyet_trinh.md:release/RELEASE_BLOCKERS.md": true,
+    "Kich_ban_thuyet_trinh.md:results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv": true,
+    "Kich_ban_thuyet_trinh.md:defense/Hoi_dap_hoi_dong.md": true,
+    "Kich_ban_thuyet_trinh.md:results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json": true,
+    "Kich_ban_thuyet_trinh.md:proposal/researchwrite/nckh-ids/06_rq_method_output_gates.md": true,
+    "Kich_ban_thuyet_trinh.md:results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv": true,
+    "Kich_ban_thuyet_trinh.md:docs/CLAIM_EVIDENCE_MATRIX.md": true,
+    "Kich_ban_thuyet_trinh.md:docs/research/PHASE14_ERROR_ANALYSIS_CLOSURE.md": true,
+    "Kich_ban_thuyet_trinh.md:docs/research/ENSEMBLE_FRAMEWORK.md": true,
+    "Kich_ban_thuyet_trinh.md:docs/research/R04_ML_SMOKE_REPORT.md": true,
+    "Kich_ban_thuyet_trinh.md:literature/resume_r04_2026_10_16/SCOPED_READING_NOTES.md": true,
+    "Demo_runbook.md:results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv": true,
+    "Demo_runbook.md:docs/research/ENSEMBLE_FRAMEWORK.md": true,
+    "Demo_runbook.md:results/reproducibility/r04_ml_smoke_repaired/validation.json": true,
+    "Demo_runbook.md:docs/research/R04_ML_SMOKE_REPORT.md": true,
+    "Demo_runbook.md:results/figures/p16_paired_effects_2026_10_16/paired_effects.pdf": true,
+    "twelve_planned_positions": true,
+    "planned_twelve_minutes": true,
+    "runbook_actual_blocker": true,
+    "checklist_not_release": true
+  },
+  "passed": true,
+  "planned_duration_seconds": 720,
+  "scope": "Planned content/source/timing arithmetic; not PPTX/PDF,render,rehearsal or live inference"
+}

@@ -1,0 +1,241 @@
+{
+  "task": "P15-02C1 runtime package provenance (read-only audit)",
+  "generated_utc": "2026-10-10T18:37:28.719474+00:00",
+  "project_root": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH",
+  "python": "3.14.3",
+  "sys_executable": "C:\\Users\\admin\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+  "sys_prefix": "C:\\Users\\admin\\AppData\\Local\\Python\\pythoncore-3.14-64",
+  "sys_base_prefix": "C:\\Users\\admin\\AppData\\Local\\Python\\pythoncore-3.14-64",
+  "is_venv": false,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python_launcher_inventory": {
+    "returncode": 0,
+    "stdout": "-V:3.14 *        C:\\Users\\admin\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe\n -V:3.11          C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe\n -V:Astral/CPython3.14.5 C:\\Users\\admin\\AppData\\Roaming\\uv\\python\\cpython-3.14.5-windows-x86_64-none\\python.exe",
+    "stderr": ""
+  },
+  "pip_check": {
+    "returncode": 0,
+    "stdout": "No broken requirements found.",
+    "stderr": ""
+  },
+  "p15_02b_snapshot": {
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\results\\reproducibility\\p15_02b_runtime_check\\p15_02b_runtime_check.json",
+    "status": "loaded",
+    "observed_python": "3.14.3"
+  },
+  "effective_packages": {
+    "joblib": {
+      "package": "joblib",
+      "module": "joblib",
+      "resolved_metadata_version": "1.5.3",
+      "module_spec_origin": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\joblib\\__init__.py",
+      "module_search_locations": [
+        "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\joblib"
+      ],
+      "import_ok": true,
+      "imported_version": "1.5.3",
+      "module_file": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\joblib\\__init__.py"
+    },
+    "matplotlib": {
+      "package": "matplotlib",
+      "module": "matplotlib",
+      "resolved_metadata_version": "3.11.1",
+      "module_spec_origin": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\matplotlib\\__init__.py",
+      "module_search_locations": [
+        "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\matplotlib"
+      ],
+      "import_ok": true,
+      "imported_version": "3.11.1",
+      "module_file": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\matplotlib\\__init__.py"
+    },
+    "numpy": {
+      "package": "numpy",
+      "module": "numpy",
+      "resolved_metadata_version": "2.5.2",
+      "module_spec_origin": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\numpy\\__init__.py",
+      "module_search_locations": [
+        "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\numpy"
+      ],
+      "import_ok": true,
+      "imported_version": "2.5.2",
+      "module_file": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\numpy\\__init__.py"
+    },
+    "pandas": {
+      "package": "pandas",
+      "module": "pandas",
+      "resolved_metadata_version": "3.0.5",
+      "module_spec_origin": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\pandas\\__init__.py",
+      "module_search_locations": [
+        "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\pandas"
+      ],
+      "import_ok": true,
+      "imported_version": "3.0.5",
+      "module_file": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\pandas\\__init__.py"
+    },
+    "scikit-learn": {
+      "package": "scikit-learn",
+      "module": "sklearn",
+      "resolved_metadata_version": "1.9.0",
+      "module_spec_origin": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\sklearn\\__init__.py",
+      "module_search_locations": [
+        "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\sklearn"
+      ],
+      "import_ok": true,
+      "imported_version": "1.9.0",
+      "module_file": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\sklearn\\__init__.py"
+    },
+    "scipy": {
+      "package": "scipy",
+      "module": "scipy",
+      "resolved_metadata_version": "1.18.1",
+      "module_spec_origin": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\scipy\\__init__.py",
+      "module_search_locations": [
+        "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\scipy"
+      ],
+      "import_ok": true,
+      "imported_version": "1.18.1",
+      "module_file": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\scipy\\__init__.py"
+    },
+    "threadpoolctl": {
+      "package": "threadpoolctl",
+      "module": "threadpoolctl",
+      "resolved_metadata_version": "3.6.0",
+      "module_spec_origin": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\threadpoolctl.py",
+      "module_search_locations": [],
+      "import_ok": true,
+      "imported_version": "3.6.0",
+      "module_file": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\threadpoolctl.py"
+    },
+    "tzdata": {
+      "package": "tzdata",
+      "module": "tzdata",
+      "resolved_metadata_version": "2026.3",
+      "module_spec_origin": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\tzdata\\__init__.py",
+      "module_search_locations": [
+        "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\tzdata"
+      ],
+      "import_ok": true,
+      "imported_version": "2026.3",
+      "module_file": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\tzdata\\__init__.py"
+    }
+  },
+  "all_visible_distribution_records": {
+    "joblib": [
+      {
+        "name": "joblib",
+        "version": "1.5.3",
+        "metadata_dir": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\joblib-1.5.3.dist-info",
+        "install_root": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages"
+      }
+    ],
+    "matplotlib": [
+      {
+        "name": "matplotlib",
+        "version": "3.11.1",
+        "metadata_dir": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\matplotlib-3.11.1.dist-info",
+        "install_root": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages"
+      }
+    ],
+    "numpy": [
+      {
+        "name": "numpy",
+        "version": "2.4.6",
+        "metadata_dir": "C:\\Users\\admin\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\numpy-2.4.6.dist-info",
+        "install_root": "C:\\Users\\admin\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages"
+      },
+      {
+        "name": "numpy",
+        "version": "2.5.2",
+        "metadata_dir": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\numpy-2.5.2.dist-info",
+        "install_root": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages"
+      }
+    ],
+    "pandas": [
+      {
+        "name": "pandas",
+        "version": "3.0.3",
+        "metadata_dir": "C:\\Users\\admin\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\pandas-3.0.3.dist-info",
+        "install_root": "C:\\Users\\admin\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages"
+      },
+      {
+        "name": "pandas",
+        "version": "3.0.5",
+        "metadata_dir": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\pandas-3.0.5.dist-info",
+        "install_root": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages"
+      }
+    ],
+    "scikit-learn": [
+      {
+        "name": "scikit-learn",
+        "version": "1.9.0",
+        "metadata_dir": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\scikit_learn-1.9.0.dist-info",
+        "install_root": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages"
+      }
+    ],
+    "scipy": [
+      {
+        "name": "scipy",
+        "version": "1.18.1",
+        "metadata_dir": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\scipy-1.18.1.dist-info",
+        "install_root": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages"
+      }
+    ],
+    "threadpoolctl": [
+      {
+        "name": "threadpoolctl",
+        "version": "3.6.0",
+        "metadata_dir": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\threadpoolctl-3.6.0.dist-info",
+        "install_root": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages"
+      }
+    ],
+    "tzdata": [
+      {
+        "name": "tzdata",
+        "version": "2023.3",
+        "metadata_dir": "C:\\Users\\admin\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\tzdata-2023.3.dist-info",
+        "install_root": "C:\\Users\\admin\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages"
+      },
+      {
+        "name": "tzdata",
+        "version": "2026.3",
+        "metadata_dir": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages\\tzdata-2026.3.dist-info",
+        "install_root": "C:\\Users\\admin\\AppData\\Roaming\\Python\\Python314\\site-packages"
+      }
+    ]
+  },
+  "multiple_metadata_record_packages": {
+    "numpy": [
+      "2.4.6",
+      "2.5.2"
+    ],
+    "pandas": [
+      "3.0.3",
+      "3.0.5"
+    ],
+    "tzdata": [
+      "2023.3",
+      "2026.3"
+    ]
+  },
+  "known_snapshot_versions": {
+    "joblib": "1.5.3",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.1",
+    "threadpoolctl": "3.6.0"
+  },
+  "issues_or_unresolved": [
+    "Multiple dist-info records visible for numpy: ['2.4.6', '2.5.2']",
+    "Multiple dist-info records visible for pandas: ['3.0.3', '3.0.5']",
+    "Multiple dist-info records visible for tzdata: ['2023.3', '2026.3']"
+  ],
+  "interpretation": [
+    "Matching imports / pip check do not prove original model-training environment.",
+    "Multiple visible dist-info directories can reflect residue or overlapping site paths; inspect recorded locations before remediation.",
+    "This is an audit of the current runtime, not a fully hashed dependency lockfile or clean-install verification.",
+    "No package install, dataset access, or model training performed."
+  ],
+  "audit_status": "REVIEW_NEEDED"
+}

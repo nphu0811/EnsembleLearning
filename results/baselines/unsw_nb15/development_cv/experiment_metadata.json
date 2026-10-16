@@ -1,0 +1,136 @@
+{
+  "phase": 6,
+  "dataset": "UNSW-NB15",
+  "data_source": "official predefined training split",
+  "official_test_loaded": false,
+  "cv": {
+    "type": "StratifiedKFold",
+    "n_splits": 3,
+    "shuffle": true,
+    "random_state": 42
+  },
+  "models": [
+    "Logistic Regression",
+    "Decision Tree",
+    "Random Forest (strong conventional ensemble reference)"
+  ],
+  "subsets": {
+    "all_features": {
+      "feature_count": 42,
+      "features": [
+        "dur",
+        "proto",
+        "service",
+        "state",
+        "spkts",
+        "dpkts",
+        "sbytes",
+        "dbytes",
+        "rate",
+        "sttl",
+        "dttl",
+        "sload",
+        "dload",
+        "sloss",
+        "dloss",
+        "sinpkt",
+        "dinpkt",
+        "sjit",
+        "djit",
+        "swin",
+        "stcpb",
+        "dtcpb",
+        "dwin",
+        "tcprtt",
+        "synack",
+        "ackdat",
+        "smean",
+        "dmean",
+        "trans_depth",
+        "response_body_len",
+        "ct_srv_src",
+        "ct_state_ttl",
+        "ct_dst_ltm",
+        "ct_src_dport_ltm",
+        "ct_dst_sport_ltm",
+        "ct_dst_src_ltm",
+        "is_ftp_login",
+        "ct_ftp_cmd",
+        "ct_flw_http_mthd",
+        "ct_src_ltm",
+        "ct_srv_dst",
+        "is_sm_ips_ports"
+      ]
+    },
+    "stable_2plus_methods": {
+      "feature_count": 17,
+      "features": [
+        "ct_srv_dst",
+        "ct_state_ttl",
+        "dload",
+        "dttl",
+        "proto",
+        "state",
+        "sttl",
+        "ct_dst_ltm",
+        "dmean",
+        "dwin",
+        "is_sm_ips_ports",
+        "rate",
+        "service",
+        "swin",
+        "ct_dst_sport_ltm",
+        "ct_dst_src_ltm",
+        "dbytes"
+      ]
+    },
+    "rfecv_selected_original": {
+      "feature_count": 13,
+      "features": [
+        "ct_src_dport_ltm",
+        "ct_srv_dst",
+        "ct_state_ttl",
+        "dload",
+        "dmean",
+        "dttl",
+        "dwin",
+        "is_sm_ips_ports",
+        "sttl",
+        "swin",
+        "service",
+        "state",
+        "proto"
+      ]
+    },
+    "stable_and_rfecv": {
+      "feature_count": 12,
+      "features": [
+        "ct_srv_dst",
+        "ct_state_ttl",
+        "dload",
+        "dttl",
+        "proto",
+        "state",
+        "sttl",
+        "dmean",
+        "dwin",
+        "is_sm_ips_ports",
+        "service",
+        "swin"
+      ]
+    },
+    "stable_all_3_methods": {
+      "feature_count": 7,
+      "features": [
+        "ct_srv_dst",
+        "ct_state_ttl",
+        "dload",
+        "dttl",
+        "proto",
+        "state",
+        "sttl"
+      ]
+    }
+  },
+  "interpretation_warning": "Development CV only. Candidate feature subsets were discovered from the training split; final generalization claims are reserved for the untouched official test."
+}

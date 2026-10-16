@@ -1,0 +1,965 @@
+[
+  {
+    "id": "L01",
+    "doi": "10.1016/j.cosrev.2020.100357",
+    "title": "Ensemble learning for intrusion detection systems: A systematic mapping study and cross-benchmark evaluation",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-1821-6438",
+        "authenticated-orcid": false,
+        "given": "Bayu Adhi",
+        "family": "Tama",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9534-7397",
+        "authenticated-orcid": false,
+        "given": "Sunghoon",
+        "family": "Lim",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          2
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          2
+        ]
+      ]
+    },
+    "volume": "39",
+    "issue": null,
+    "page": "100357",
+    "container": [
+      "Computer Science Review"
+    ],
+    "type": "journal-article"
+  },
+  {
+    "id": "L02",
+    "doi": "10.1109/spw53761.2021.00009",
+    "title": "Troubleshooting an Intrusion Detection Dataset: the CICIDS2017 Case Study",
+    "authors": [
+      {
+        "given": "Gints",
+        "family": "Engelen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Vera",
+        "family": "Rimmer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wouter",
+        "family": "Joosen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          5
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          5
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "page": "7-12",
+    "container": [
+      "2021 IEEE Security and Privacy Workshops (SPW)"
+    ],
+    "type": "proceedings-article"
+  },
+  {
+    "id": "L03",
+    "doi": "10.1109/cns56114.2022.9947235",
+    "title": "Error Prevalence in NIDS datasets: A Case Study on CIC-IDS-2017 and CSE-CIC-IDS-2018",
+    "authors": [
+      {
+        "given": "Lisa",
+        "family": "Liu",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of New South Wales,Canberra"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gints",
+        "family": "Engelen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "imec-DistriNet,KU,Leuven"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Timothy",
+        "family": "Lynar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of New South Wales,Canberra"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Daryl",
+        "family": "Essam",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of New South Wales,Canberra"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wouter",
+        "family": "Joosen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "imec-DistriNet,KU,Leuven"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          3
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          3
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "page": "254-262",
+    "container": [
+      "2022 IEEE Conference on Communications and Network Security (CNS)"
+    ],
+    "type": "proceedings-article"
+  },
+  {
+    "id": "L04",
+    "doi": "10.1049/trit.2020.0073",
+    "title": "Feature selection approach using ensemble learning for network anomaly detection",
+    "authors": [
+      {
+        "family": "Doreswamy",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science Mangalore University Mangalore India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mohammad Kazim",
+        "family": "Hooshmand",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science Mangalore University Mangalore India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ibrahim",
+        "family": "Gad",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science Mangalore University Mangalore India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          11,
+          5
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          12
+        ]
+      ]
+    },
+    "volume": "5",
+    "issue": "4",
+    "page": "283-293",
+    "container": [
+      "CAAI Transactions on Intelligence Technology"
+    ],
+    "type": "journal-article"
+  },
+  {
+    "id": "L05",
+    "doi": "10.1016/j.jnca.2022.103560",
+    "title": "An optimized ensemble prediction model using AutoML based on soft voting classifier for network intrusion detection",
+    "authors": [
+      {
+        "given": "Murad Ali",
+        "family": "Khan",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2749-6344",
+        "authenticated-orcid": false,
+        "given": "Naeem",
+        "family": "Iqbal",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "family": "Imran",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Harun",
+        "family": "Jamil",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Do-Hyeun",
+        "family": "Kim",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          3
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          3
+        ]
+      ]
+    },
+    "volume": "212",
+    "issue": null,
+    "page": "103560",
+    "container": [
+      "Journal of Network and Computer Applications"
+    ],
+    "type": "journal-article"
+  },
+  {
+    "id": "L06",
+    "doi": "10.1007/s40747-023-01013-7",
+    "title": "A novel ensemble learning-based model for network intrusion detection",
+    "authors": [
+      {
+        "given": "Ngamba",
+        "family": "Thockchom",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7314-9645",
+        "authenticated-orcid": false,
+        "given": "Moirangthem Marjit",
+        "family": "Singh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Utpal",
+        "family": "Nandi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          3
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          10
+        ]
+      ]
+    },
+    "volume": "9",
+    "issue": "5",
+    "page": "5693-5714",
+    "container": [
+      "Complex &amp; Intelligent Systems"
+    ],
+    "type": "journal-article"
+  },
+  {
+    "id": "L07_preprint",
+    "doi": "10.2139/ssrn.4341598",
+    "title": "Duen: Dynamic Ensemble Handling Class Imbalance in Network Intrusion Detection",
+    "authors": [
+      {
+        "given": "Huajuan",
+        "family": "Ren",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Yonghe",
+        "family": "Tang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Weiyu",
+        "family": "Dong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Shuai",
+        "family": "Ren",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Liehui",
+        "family": "Jiang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "published-print": null,
+    "volume": null,
+    "issue": null,
+    "page": null,
+    "container": [],
+    "type": "posted-content"
+  },
+  {
+    "id": "L08",
+    "doi": "10.1007/s10207-023-00767-y",
+    "title": "Evaluating the impact of filter-based feature selection in intrusion detection systems",
+    "authors": [
+      {
+        "given": "Houssam",
+        "family": "Zouhri",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ali",
+        "family": "Idri",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ahmed",
+        "family": "Ratnani",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          10,
+          17
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          4
+        ]
+      ]
+    },
+    "volume": "23",
+    "issue": "2",
+    "page": "759-785",
+    "container": [
+      "International Journal of Information Security"
+    ],
+    "type": "journal-article"
+  },
+  {
+    "id": "L09",
+    "doi": "10.1109/access.2024.3472907",
+    "title": "Machine Learning in Network Intrusion Detection: A Cross-Dataset Generalization Study",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-6225-6680",
+        "authenticated-orcid": false,
+        "given": "Marco",
+        "family": "Cantone",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Electrical and Information Engineering, University of Cassino and Southern Latium, Cassino, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0840-7350",
+        "authenticated-orcid": false,
+        "given": "Claudio",
+        "family": "Marrocco",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electrical and Information Engineering, University of Cassino and Southern Latium, Cassino, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2895-6544",
+        "authenticated-orcid": false,
+        "given": "Alessandro",
+        "family": "Bria",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electrical and Information Engineering, University of Cassino and Southern Latium, Cassino, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "volume": "12",
+    "issue": null,
+    "page": "144489-144508",
+    "container": [
+      "IEEE Access"
+    ],
+    "type": "journal-article"
+  },
+  {
+    "id": "L10",
+    "doi": "10.1109/tnsm.2023.3298533",
+    "title": "Unknown, Atypical and Polymorphic Network Intrusion Detection: A Systematic Survey",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-7651-1024",
+        "authenticated-orcid": false,
+        "given": "Ulya",
+        "family": "Sabeel",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Faculty of Business and IT, University of Ontario Institute of Technology, Oshawa, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6107-7728",
+        "authenticated-orcid": false,
+        "given": "Shahram Shah",
+        "family": "Heydari",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Business and IT, University of Ontario Institute of Technology, Oshawa, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5960-6942",
+        "authenticated-orcid": false,
+        "given": "Khalil",
+        "family": "El-Khatib",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Business and IT, University of Ontario Institute of Technology, Oshawa, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Khalid",
+        "family": "Elgazzar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Engineering and Applied Science, University of Ontario Institute of Technology, Oshawa, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          2
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          2
+        ]
+      ]
+    },
+    "volume": "21",
+    "issue": "1",
+    "page": "1190-1212",
+    "container": [
+      "IEEE Transactions on Network and Service Management"
+    ],
+    "type": "journal-article"
+  },
+  {
+    "id": "L11",
+    "doi": "10.1016/j.dsm.2024.08.001",
+    "title": "Effects of feature selection and normalization on network intrusion detection",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-1795-552X",
+        "authenticated-orcid": false,
+        "given": "Mubarak Albarka",
+        "family": "Umar",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhanfang",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1397-0420",
+        "authenticated-orcid": false,
+        "given": "Khaled",
+        "family": "Shuaib",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yan",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          3
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          3
+        ]
+      ]
+    },
+    "volume": "8",
+    "issue": "1",
+    "page": "23-39",
+    "container": [
+      "Data Science and Management"
+    ],
+    "type": "journal-article"
+  },
+  {
+    "id": "L12",
+    "doi": "10.3390/computers14030082",
+    "title": "Ensemble Learning for Network Intrusion Detection Based on Correlation and Embedded Feature Selection Techniques",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-9434-2914",
+        "authenticated-orcid": false,
+        "given": "Ghalia",
+        "family": "Nassreddine",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Computer and Information Systems Department, Rafik Hariri University, Damour-Chouf 2010, Lebanon"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6748-7368",
+        "authenticated-orcid": false,
+        "given": "Mohamad",
+        "family": "Nassereddine",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Engineering, University of Wollongong in Dubai, Knowledge Village, Dubai P.O. Box 20183, United Arab Emirates"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9473-2365",
+        "authenticated-orcid": false,
+        "given": "Obada",
+        "family": "Al-Khatib",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Engineering, University of Wollongong in Dubai, Knowledge Village, Dubai P.O. Box 20183, United Arab Emirates"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          25
+        ]
+      ]
+    },
+    "published-print": null,
+    "volume": "14",
+    "issue": "3",
+    "page": "82",
+    "container": [
+      "Computers"
+    ],
+    "type": "journal-article"
+  }
+]

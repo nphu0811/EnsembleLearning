@@ -1,0 +1,5 @@
+column,train_unique,test_unique,unseen_in_train_count,unseen_in_train_values
+proto,133,131,0,
+service,13,13,0,
+state,9,7,2,ACC | CLO
+attack_cat,10,10,0,

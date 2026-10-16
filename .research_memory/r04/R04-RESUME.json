@@ -1,0 +1,13 @@
+{
+  "task": "R04-RESUME",
+  "status": "DONE_SCOPED",
+  "note": "174/174 prior artifact hashes and282/282 historical files match; ZIP15 entries and DOCX8 tables CRC PASS; skills registry inspected",
+  "timestamp": "2026-10-16T09:55:35.697539+00:00",
+  "artifacts": {
+    "results/reproducibility/resume_2026_10_16_r04/resume_audit.json": "bc7da36657c64cea1597fbaadc08ac7cc723a67774988c11a0cd7cdc9d04e34a",
+    "docs/R04_TASK_CONTRACTS.md": "d08c2f6230448e54b8d548b8ea8acc3f137058cb0fb1f7a7fc230ee6ad44cbac",
+    "tools/r04_reference_api_checks.py": "3bc3af50d852420a6a3384a4154727701c9dacd037b13dca8f19a776921e3732"
+  },
+  "changed_prior_artifacts": [],
+  "next_action": "Resolve six legacy references with field-level source evidence, then source reading and gap synthesis"
+}

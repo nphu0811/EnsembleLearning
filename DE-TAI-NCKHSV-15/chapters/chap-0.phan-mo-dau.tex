@@ -1,0 +1,18 @@
+\chapter*{Mở đầu}
+\addcontentsline{toc}{chapter}{Mở đầu}
+
+\begingroup
+  \setcounter{section}{0}
+  \setcounter{secnumdepth}{2}
+  \setcounter{tocdepth}{2}
+  \renewcommand{\thesection}{\arabic{section}.}
+  \renewcommand{\thesubsection}{\thesection\arabic{subsection}.}
+
+% \section{Lý do chọn đề tài}
+Trong kỷ nguyên số, thiết bị di động đã trở thành công cụ không thể thiếu trong đời sống hàng ngày. Hệ điều hành Android, với ưu điểm mã nguồn mở và khả năng tùy biến cao, hiện chiếm thị phần lớn nhất trên thị trường smartphone. Tuy nhiên, sự phổ biến này cũng khiến Android trở thành mục tiêu hấp dẫn của tội phạm mạng. Các loại phần mềm độc hại (malware) ngày càng gia tăng về số lượng và tinh vi về kỹ thuật, gây ra nhiều thiệt hại nghiêm trọng liên quan đến an toàn thông tin và quyền riêng tư của người dùng.
+
+Trong bối cảnh đó, việc nghiên cứu và phát triển các phương pháp phát hiện mã độc Android trở nên cấp thiết. Các giải pháp truyền thống dựa trên chữ ký (signature-based) không còn đủ mạnh mẽ để đối phó với sự bùng nổ của các biến thể mới và kỹ thuật che giấu phức tạp. Vì vậy, các phương pháp dựa trên học máy (Machine Learning) và học sâu (Deep Learning) ngày càng được quan tâm nhờ khả năng học và phát hiện mẫu độc hại dựa trên đặc trưng hành vi.
+
+Đề tài \textit{``Phát hiện mã độc Android bằng mô hình học sâu''} được thực hiện với mục tiêu xây dựng một hệ thống phát hiện mã độc hiệu quả, kết hợp dữ liệu từ nhiều nguồn (Drebin, CICAndMal2017, CICMalDroid2020), áp dụng các kỹ thuật tiền xử lý và cân bằng dữ liệu, triển khai nhiều mô hình ML/DL để so sánh và lựa chọn giải pháp tối ưu. Ngoài ra, đề tài còn phát triển một ứng dụng web tương tự VirusTotal, cho phép tải lên và phân tích APK, tích hợp cơ sở dữ liệu hash lớn, đồng thời cung cấp thêm các thông tin tĩnh chi tiết phục vụ nhà phân tích.
+
+Với những đóng góp này, nhóm nghiên cứu hy vọng đề tài không chỉ mang ý nghĩa học thuật mà còn có giá trị thực tiễn, hỗ trợ nâng cao hiệu quả phát hiện mã độc trên nền tảng Android và góp phần vào công tác đảm bảo an toàn thông tin.

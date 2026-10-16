@@ -1,0 +1,26 @@
+{
+  "train": {
+    "dataset": "train",
+    "full_duplicate_rows_including_all_copies": 0,
+    "full_duplicate_extra_rows": 0,
+    "feature_vector_duplicate_rows_including_all_copies": 84049,
+    "feature_vector_duplicate_extra_rows": 74301,
+    "feature_vector_columns_excluded": [
+      "attack_cat",
+      "id",
+      "label"
+    ]
+  },
+  "test": {
+    "dataset": "test",
+    "full_duplicate_rows_including_all_copies": 0,
+    "full_duplicate_extra_rows": 0,
+    "feature_vector_duplicate_rows_including_all_copies": 34704,
+    "feature_vector_duplicate_extra_rows": 28386,
+    "feature_vector_columns_excluded": [
+      "attack_cat",
+      "id",
+      "label"
+    ]
+  }
+}

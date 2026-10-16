@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-16",
+  "status": "BLOCKED_RUNTIME_RESOLVER_AND_RENDERER",
+  "preservation_count": 60,
+  "preservation_pass": true,
+  "failures": [],
+  "runtime_manifest": {
+    "artifactToolVersion": "2.8.94",
+    "bundleFormatVersion": 2,
+    "bundleVersion": "26.1013.11914",
+    "bundledPlugins": [
+      "plugins/openai-primary-runtime"
+    ],
+    "bundledSkills": [],
+    "libreOfficeVersion": null,
+    "nativeDependencies": [
+      "libheif",
+      "jxrlib",
+      "poppler",
+      "powershell",
+      "git"
+    ],
+    "nodeVersion": "v24.19.0",
+    "pnpmVersion": "11.25.0",
+    "pythonVersion": "3.12.14",
+    "skillsToRemove": [
+      "codex-primary-runtime/spreadsheets",
+      "codex-primary-runtime/slides",
+      "doc",
+      "docs",
+      "spreadsheet",
+      "slides"
+    ],
+    "targetArch": "x64",
+    "targetPlatform": "win32"
+  },
+  "bundled_soffice_count": 0,
+  "report_md_sha256": "a7cddcf5cb2eeaccd6d9ad2bbf678474a4bcda0481960a40512a67c3eda018b2",
+  "docx_created": false,
+  "render_executed": false,
+  "research_restarted": false
+}

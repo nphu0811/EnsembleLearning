@@ -1,0 +1,23 @@
+{
+  "task": "R04-FORM-AUDIT",
+  "status": "DONE_SCOPED",
+  "note": "Original DOCX58 blocks/97 cells captured;14/14 coverage checks PASS;working gap draft also checkpointed pending review repairs;no fill/render/admin approval",
+  "timestamp": "2026-10-16T10:02:21.314393+00:00",
+  "artifacts": {
+    "proposal/researchwrite/nckh-ids/template_audit_r04/field_coverage.csv": "b0f4c7d8ad20e27d71155e208907f5f42db562282e47246bddadf4aeb8812aa6",
+    "proposal/researchwrite/nckh-ids/template_audit_r04/original_body_snapshot.json": "f7eada6bafd150e0b22a83308c580915161714190c845d73e158a343838c61bd",
+    "proposal/researchwrite/nckh-ids/template_audit_r04/validation.json": "3e92f2b5ba7665384991636059787b039e0a67c309add6adedd72438e39608d0",
+    "tools/r04_template_coverage.py": "84a9e8641115b200156dfb59a6b65a158ca9d91fd19a41cc7bc49373573fa593",
+    "literature/gap_matrix.md": "9f5004faca395cb36ab64391b03d634607e9ff3220aa588a99730fd4411876f6",
+    "literature/resume_r04_2026_10_16/GAP_MATRIX_R04.md": "9f5004faca395cb36ab64391b03d634607e9ff3220aa588a99730fd4411876f6",
+    "literature/resume_r04_2026_10_16/gap_matrix_before_r04.md": "e118c4e3c091673d4dc42ceb88c94481ad97a112526324fadddf581217aad2c2"
+  },
+  "changed_prior_artifacts": [
+    {
+      "path": "literature/gap_matrix.md",
+      "before": "e118c4e3c091673d4dc42ceb88c94481ad97a112526324fadddf581217aad2c2",
+      "after": "9f5004faca395cb36ab64391b03d634607e9ff3220aa588a99730fd4411876f6"
+    }
+  ],
+  "next_action": "Apply literature/gap reviewer findings and validate before full content assembly; then safe TRAIN-only ML smoke feasibility"
+}

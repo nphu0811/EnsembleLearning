@@ -1,0 +1,54 @@
+{
+  "scope": "Isolated Python stdlib postprocessing replay; no model training or prediction",
+  "venv": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\results\\reproducibility\\resume_2026_10_16\\clean_stdlib_runtime",
+  "system_site_packages": false,
+  "pip_installed": false,
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\results\\reproducibility\\resume_2026_10_16\\clean_stdlib_runtime\\Scripts\\python.exe",
+        "-I",
+        "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\src\\analysis\\close_original_phase11.py",
+        "--project-root",
+        "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH",
+        "--outdir",
+        "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\results\\reproducibility\\resume_2026_10_16\\phase11_clean_replay"
+      ],
+      "returncode": 0,
+      "log": "clean_replay_0.log"
+    },
+    {
+      "argv": [
+        "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\results\\reproducibility\\resume_2026_10_16\\clean_stdlib_runtime\\Scripts\\python.exe",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\tests",
+        "-v"
+      ],
+      "returncode": 0,
+      "log": "clean_replay_1.log"
+    }
+  ],
+  "comparisons": [
+    {
+      "file": "phase11_confusion_matrices.csv",
+      "sha256": "de901884c029a327492a368e6b11fa44de90eeff27088b62c150d656c88a8617",
+      "byte_identical": true
+    },
+    {
+      "file": "phase11_final_evaluation_complete.csv",
+      "sha256": "a0a742b50860dd3a74c47453919b7ff276fbb579caafa431f81fc9c4c8f2278f",
+      "byte_identical": true
+    },
+    {
+      "file": "phase11_per_class_metrics.csv",
+      "sha256": "3988e15796beb44ca11c9a4a30b4d1aafe28a510a2c8ec1b2c788078affb0fd7",
+      "byte_identical": true
+    }
+  ],
+  "pass": true,
+  "training_reproduction": "NOT_PERFORMED"
+}

@@ -1,0 +1,7 @@
+dataset,column,dtype,unique_non_null,unique_ratio,review_reason
+train,id,int64,175341,1.0,identifier-like column name; very high cardinality / possibly identifier-like
+train,attack_cat,str,10,5.7e-05,potential target leakage for binary classification because it encodes attack category
+train,label,int64,2,1.1e-05,target column; must never be used as an input feature
+test,id,int64,82332,1.0,identifier-like column name; very high cardinality / possibly identifier-like
+test,attack_cat,str,10,0.000121,potential target leakage for binary classification because it encodes attack category
+test,label,int64,2,2.4e-05,target column; must never be used as an input feature

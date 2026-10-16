@@ -1,0 +1,4 @@
+sttl,fuzzers_support,both_caught,rf_caught_stack_missed,rf_missed_stack_caught,both_missed,rf_false_negatives,stacking_false_negatives,stacking_minus_rf_fn,rf_fnr_given_fuzzers_and_value,stacking_fnr_given_fuzzers_and_value
+254,6047,5246,180,47,574,621,754,133,0.10269555151314702,0.12468992889035886
+255,14,14,0,0,0,0,0,0,0.0,0.0
+62,1,1,0,0,0,0,0,0,0.0,0.0

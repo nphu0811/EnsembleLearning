@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "R04C01_capture_exists": true,
+    "R04C01_keyphrase_present": true,
+    "R04C02_capture_exists": true,
+    "R04C02_keyphrase_present": true,
+    "R04C03_capture_exists": true,
+    "R04C03_keyphrase_present": true,
+    "R04C04_capture_exists": true,
+    "R04C04_keyphrase_present": true,
+    "R04C05_capture_exists": true,
+    "R04C05_keyphrase_present": true
+  },
+  "passed": true,
+  "scope": "Saved source passage anchors only; substantive interpretation bounded in notes"
+}

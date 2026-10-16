@@ -1,0 +1,96 @@
+{
+  "phase": "7.2",
+  "dataset": "UNSW-NB15",
+  "official_test_loaded": false,
+  "outer_cv": {
+    "type": "StratifiedKFold",
+    "n_splits": 3,
+    "shuffle": true,
+    "random_state": 42
+  },
+  "stacking_inner_cv": {
+    "type": "StratifiedKFold",
+    "n_splits": 3,
+    "shuffle": true,
+    "random_state": 137
+  },
+  "configurations": {
+    "random_forest": "bagging reference",
+    "adaboost": "boosting reference",
+    "hard_voting_lrdtrf": "equal hard vote: LR + DT + RF",
+    "soft_voting_lrdtrf": "equal probability average: LR + DT + RF",
+    "stacking_lrdtrf": "LR + DT + RF base learners; Logistic Regression meta-learner"
+  },
+  "feature_tracks": {
+    "all_features": {
+      "count": 42,
+      "features": [
+        "dur",
+        "proto",
+        "service",
+        "state",
+        "spkts",
+        "dpkts",
+        "sbytes",
+        "dbytes",
+        "rate",
+        "sttl",
+        "dttl",
+        "sload",
+        "dload",
+        "sloss",
+        "dloss",
+        "sinpkt",
+        "dinpkt",
+        "sjit",
+        "djit",
+        "swin",
+        "stcpb",
+        "dtcpb",
+        "dwin",
+        "tcprtt",
+        "synack",
+        "ackdat",
+        "smean",
+        "dmean",
+        "trans_depth",
+        "response_body_len",
+        "ct_srv_src",
+        "ct_state_ttl",
+        "ct_dst_ltm",
+        "ct_src_dport_ltm",
+        "ct_dst_sport_ltm",
+        "ct_dst_src_ltm",
+        "is_ftp_login",
+        "ct_ftp_cmd",
+        "ct_flw_http_mthd",
+        "ct_src_ltm",
+        "ct_srv_dst",
+        "is_sm_ips_ports"
+      ]
+    },
+    "stable_17_features": {
+      "count": 17,
+      "features": [
+        "ct_srv_dst",
+        "ct_state_ttl",
+        "dload",
+        "dttl",
+        "proto",
+        "state",
+        "sttl",
+        "ct_dst_ltm",
+        "dmean",
+        "dwin",
+        "is_sm_ips_ports",
+        "rate",
+        "service",
+        "swin",
+        "ct_dst_sport_ltm",
+        "ct_dst_src_ltm",
+        "dbytes"
+      ]
+    }
+  },
+  "interpretation_warning": "Development CV only. No final generalization claim may be made until the official test is opened after configuration freezing."
+}

@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-10-16T09:48:24.106336+00:00",
+  "manifest_count": 172,
+  "source_checks": {
+    ".research_memory/RESEARCH_CANON.md": true,
+    "docs/CLAIM_EVIDENCE_MATRIX.md": true,
+    "proposal/researchwrite/nckh-ids/07_remaining_work_feasibility.md": true,
+    "docs/research/ENSEMBLE_FRAMEWORK.md": true,
+    "templates/original/Mau-De-cuong-NCKH-Sinh-vien-2026-7-trieu.docx": true,
+    "docs/TEMPLATE_REQUIREMENTS_MATRIX.md": true,
+    "proposal/researchwrite/nckh-ids/06_rq_method_output_gates.md": true,
+    "docs/research/DATA_CODE_AVAILABILITY.md": true,
+    ".research_memory/TASK_BOARD.md": true,
+    "release/RELEASE_BLOCKERS.md": true,
+    "defense/qa_validation_r02.json": true,
+    "template_budget_sum": true,
+    "reference_validation": true,
+    "P2_01_CD_cover_and_article": true,
+    "P2_02_retrospective_context": true,
+    "P2_03_reviewed_spacing": true
+  },
+  "scientific_outputs_unchanged": "282/282 post-audit PASS",
+  "status": "POST_AUDIT_PASS",
+  "post_audit": "results/reproducibility/resume_2026_10_16_r03_post/resume_audit.json",
+  "post_counts": {
+    "manifest": 172,
+    "manifest_pass": 172,
+    "preservation": 282,
+    "preservation_pass": 282
+  }
+}

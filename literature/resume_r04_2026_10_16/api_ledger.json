@@ -1,0 +1,469 @@
+[
+  {
+    "id": "L01",
+    "url": "https://api.crossref.org/works/10.1016/j.cosrev.2020.100357",
+    "time": "2026-10-16T09:53:53.834023+00:00",
+    "http_status": 200,
+    "path": "literature/resume_r04_2026_10_16/L01_crossref.json",
+    "sha256": "26e77c51ce2eccdff306ef5a09a1dc1757a15ba3797a9fefa08e6e90d997fa30",
+    "title": [
+      "Ensemble learning for intrusion detection systems: A systematic mapping study and cross-benchmark evaluation"
+    ],
+    "page": "100357",
+    "volume": "39",
+    "issue": null,
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          2
+        ]
+      ]
+    },
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-1821-6438",
+        "authenticated-orcid": false,
+        "given": "Bayu Adhi",
+        "family": "Tama",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9534-7397",
+        "authenticated-orcid": false,
+        "given": "Sunghoon",
+        "family": "Lim",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L02",
+    "url": "https://api.crossref.org/works/10.1109/spw53761.2021.00009",
+    "time": "2026-10-16T09:53:55.242733+00:00",
+    "http_status": 200,
+    "path": "literature/resume_r04_2026_10_16/L02_crossref.json",
+    "sha256": "4598c39aab470b5a3718e7c6cdc6caa4a372b298357b56b687262f274a3d6c51",
+    "title": [
+      "Troubleshooting an Intrusion Detection Dataset: the CICIDS2017 Case Study"
+    ],
+    "page": "7-12",
+    "volume": null,
+    "issue": null,
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          5
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Gints",
+        "family": "Engelen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Vera",
+        "family": "Rimmer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wouter",
+        "family": "Joosen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L03",
+    "url": "https://api.crossref.org/works/10.1109/cns56114.2022.9947235",
+    "time": "2026-10-16T09:53:56.046941+00:00",
+    "http_status": 200,
+    "path": "literature/resume_r04_2026_10_16/L03_crossref.json",
+    "sha256": "55e46aa65aafe8e38105b7fda27943fd5845b40fb90a45f33a935ed20eeb5c18",
+    "title": [
+      "Error Prevalence in NIDS datasets: A Case Study on CIC-IDS-2017 and CSE-CIC-IDS-2018"
+    ],
+    "page": "254-262",
+    "volume": null,
+    "issue": null,
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          3
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Lisa",
+        "family": "Liu",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of New South Wales,Canberra"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gints",
+        "family": "Engelen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "imec-DistriNet,KU,Leuven"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Timothy",
+        "family": "Lynar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of New South Wales,Canberra"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Daryl",
+        "family": "Essam",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of New South Wales,Canberra"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wouter",
+        "family": "Joosen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "imec-DistriNet,KU,Leuven"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L09",
+    "url": "https://api.crossref.org/works/10.1109/access.2024.3472907",
+    "time": "2026-10-16T09:53:56.860022+00:00",
+    "http_status": 200,
+    "path": "literature/resume_r04_2026_10_16/L09_crossref.json",
+    "sha256": "7e5fa83608cd93a42e7452f689e9bf4fb799922722bf987f09d400721ad3862b",
+    "title": [
+      "Machine Learning in Network Intrusion Detection: A Cross-Dataset Generalization Study"
+    ],
+    "page": "144489-144508",
+    "volume": "12",
+    "issue": null,
+    "published": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-6225-6680",
+        "authenticated-orcid": false,
+        "given": "Marco",
+        "family": "Cantone",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Electrical and Information Engineering, University of Cassino and Southern Latium, Cassino, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0840-7350",
+        "authenticated-orcid": false,
+        "given": "Claudio",
+        "family": "Marrocco",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electrical and Information Engineering, University of Cassino and Southern Latium, Cassino, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2895-6544",
+        "authenticated-orcid": false,
+        "given": "Alessandro",
+        "family": "Bria",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electrical and Information Engineering, University of Cassino and Southern Latium, Cassino, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L10",
+    "url": "https://api.crossref.org/works/10.1109/tnsm.2023.3298533",
+    "time": "2026-10-16T09:53:57.695048+00:00",
+    "http_status": 200,
+    "path": "literature/resume_r04_2026_10_16/L10_crossref.json",
+    "sha256": "3f8285854f8e0eb9ab593c71c71738ee556425baa75d03c0f510ef86f9c85655",
+    "title": [
+      "Unknown, Atypical and Polymorphic Network Intrusion Detection: A Systematic Survey"
+    ],
+    "page": "1190-1212",
+    "volume": "21",
+    "issue": "1",
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          2
+        ]
+      ]
+    },
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-7651-1024",
+        "authenticated-orcid": false,
+        "given": "Ulya",
+        "family": "Sabeel",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Faculty of Business and IT, University of Ontario Institute of Technology, Oshawa, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6107-7728",
+        "authenticated-orcid": false,
+        "given": "Shahram Shah",
+        "family": "Heydari",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Business and IT, University of Ontario Institute of Technology, Oshawa, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5960-6942",
+        "authenticated-orcid": false,
+        "given": "Khalil",
+        "family": "El-Khatib",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Business and IT, University of Ontario Institute of Technology, Oshawa, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Khalid",
+        "family": "Elgazzar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Engineering and Applied Science, University of Ontario Institute of Technology, Oshawa, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "L12",
+    "url": "https://api.crossref.org/works/10.3390/computers14030082",
+    "time": "2026-10-16T09:53:58.795975+00:00",
+    "http_status": 200,
+    "path": "literature/resume_r04_2026_10_16/L12_crossref.json",
+    "sha256": "9347a242d7a429800239c5658bc151d8f82dec84eece7f54c19ef15a8f7b4a4d",
+    "title": [
+      "Ensemble Learning for Network Intrusion Detection Based on Correlation and Embedded Feature Selection Techniques"
+    ],
+    "page": "82",
+    "volume": "14",
+    "issue": "3",
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          25
+        ]
+      ]
+    },
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-9434-2914",
+        "authenticated-orcid": false,
+        "given": "Ghalia",
+        "family": "Nassreddine",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Computer and Information Systems Department, Rafik Hariri University, Damour-Chouf 2010, Lebanon"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6748-7368",
+        "authenticated-orcid": false,
+        "given": "Mohamad",
+        "family": "Nassereddine",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Engineering, University of Wollongong in Dubai, Knowledge Village, Dubai P.O. Box 20183, United Arab Emirates"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9473-2365",
+        "authenticated-orcid": false,
+        "given": "Obada",
+        "family": "Al-Khatib",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Engineering, University of Wollongong in Dubai, Knowledge Village, Dubai P.O. Box 20183, United Arab Emirates"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  }
+]

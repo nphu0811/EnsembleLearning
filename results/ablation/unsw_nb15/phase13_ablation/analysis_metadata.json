@@ -1,0 +1,37 @@
+{
+  "study": "Original Phase 13 retrospective ablation synthesis",
+  "training_performed": false,
+  "official_test_rows_or_predictions_loaded": false,
+  "official_test_aggregate_metrics_reused": true,
+  "new_uncertainty_tests_performed": false,
+  "estimand": "pooled OOF; folds are not independent replications",
+  "limitations": [
+    "OOF rows may be dependent network flows.",
+    "S71/S72 RF scores are not interchangeable; predictions match, score arrays do not.",
+    "No component leave-one-out ablation is present.",
+    "Feature-selection candidates were derived from TRAIN before this CV."
+  ],
+  "python": "3.11.9",
+  "pandas": "3.0.5",
+  "inputs_sha256": {
+    "src/models/run_unsw_baseline_development.py": "463f0948d77d75ff18220d499c6a643263ce5d693e6b02af7b3d197a614f1ccf",
+    "src/models/run_unsw_diversity_oof.py": "69b779fe95c78b204f8dc55d5dd1c208d5cb7492711273ef3feee066b596660d",
+    "src/models/run_unsw_ensemble_phase7_2.py": "d2f22ea57172053c6b21dab4eda182bd2fcba23ce1182e725197ea43a826e1fb",
+    "results/ensemble/unsw_nb15/phase7_1_diversity/experiment_metadata.json": "28e0efd7230e67549950b316aec859ff7a44f0a7b7886faa92446048f727ab2f",
+    "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/experiment_metadata.json": "b325f80dc618820a33fc07a564284037192d23296168ff1a29e8b3ea4ce45db2",
+    "results/ensemble/unsw_nb15/phase7_1_diversity/oof/all_features_oof_predictions.csv": "681bbd9a2041785f0ab095defcdf8e68366ed21f8622a802adabc981babf9115",
+    "results/ensemble/unsw_nb15/phase7_1_diversity/oof/stable_17_features_oof_predictions.csv": "a9e205d73e3ccc52ad2dd95ac504072053f6cfdea8df127f547e2c930ebfe97d",
+    "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/oof/all_features_ensemble_oof.csv": "5a3f57b0f23daac8efdfffd28dd48e0e1718a87df0bebb38d722afba6e8dc314",
+    "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/oof/stable_17_features_ensemble_oof.csv": "2545b28146d2eb6c97d407c95ffa5aec5764578af650515af230dc4a7b341cd0",
+    "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/aggregate_metrics.csv": "291f25946954dd76842beebc9735b01bfbaa4788e0f66cd59032f40fec8ab462",
+    "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json": "cdda800318c5d2259e581bff5b194381be7434d654950377dd4b40fca50be0a6",
+    "results/tuning/unsw_nb15/phase8_controlled/tables/rf42_grid_results.csv": "e99a7607da5b58b7510890ec10f68d5f277809507e3fa1d5696d15b3c394f65d",
+    "results/tuning/unsw_nb15/phase8_controlled/tables/rf17_grid_results.csv": "ba41d5c708e18817c8946bb3c80cfd192beb3b065631c47cfc2ff18d85808746",
+    "results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_meta_grid_results.csv": "bd0c6d956177c50fe8bd6267befec4ea70d0e4a93a38f0bc0ba0e6d52c9bbc28",
+    "results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv": "8a3ddd6a9e5876180bb9b62547c22b0a73faabee53fec7b8eb507cf62a0ddb20",
+    "results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv": "17961b9e7e09e3d252a6e5700a257bcd13236d98dcbc45cf24f1e9b4587f963b",
+    "results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv": "3338849b204702597a05c271cb309f2928e9850a1e2d5dedc6a54548256f7d90",
+    "results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv": "0cf461624cc9b12ac0556a9d6effd36182c1a12d972e26c0b1f732a65e6b757f",
+    "results/data_audit/unsw_nb15/class_distribution.csv": "bcfdf28591031541229c2df0f543c9d798bc94c857517efb4d0f83523d433a85"
+  }
+}

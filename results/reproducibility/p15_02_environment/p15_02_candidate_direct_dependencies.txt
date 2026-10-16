@@ -1,0 +1,10 @@
+# P15-02 CANDIDATE dependencies only — NOT a validated lockfile.
+# Based on source imports and installed package metadata from the machine that ran the script.
+# Review against fresh-environment setup before claiming full reproducibility.
+joblib==1.5.3
+matplotlib==3.11.1
+numpy==2.5.2
+pandas==3.0.5
+scikit-learn==1.9.0
+scipy==1.18.1
+threadpoolctl==3.6.0

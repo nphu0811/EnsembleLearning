@@ -1,0 +1,241 @@
+[
+  {
+    "doi": "10.1109/MilCIS.2015.7348942",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.1080/19393555.2015.1125974",
+    "http_status": 200,
+    "file": "literature\\verification_2026_10_16\\crossref_02.json",
+    "title": [
+      "The evaluation of Network Anomaly Detection Systems: Statistical analysis of the UNSW-NB15 data set and the comparison with the KDD99 data set"
+    ],
+    "authors": [
+      {
+        "given": "Nour",
+        "family": "Moustafa",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jill",
+        "family": "Slay",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container": [
+      "Information Security Journal: A Global Perspective"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          11
+        ]
+      ]
+    },
+    "published_print": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          4
+        ]
+      ]
+    },
+    "published_online": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          11
+        ]
+      ]
+    },
+    "volume": "25",
+    "issue": "1-3",
+    "page": "18-31"
+  },
+  {
+    "doi": "10.1109/TBDATA.2017.2715166",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.1007/978-3-319-59439-2_5",
+    "http_status": 200,
+    "file": "literature\\verification_2026_10_16\\crossref_04.json",
+    "title": [
+      "Big Data Analytics for Intrusion Detection System: Statistical Decision-Making Using Finite Dirichlet Mixture Models"
+    ],
+    "authors": [
+      {
+        "given": "Nour",
+        "family": "Moustafa",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gideon",
+        "family": "Creech",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jill",
+        "family": "Slay",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container": [
+      "Data Analytics",
+      "Data Analytics and Decision Support for Cybersecurity"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "published_print": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "published_online": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          2
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "page": "127-156"
+  },
+  {
+    "doi": "10.1007/978-3-030-72802-1_9",
+    "http_status": 200,
+    "file": "literature\\verification_2026_10_16\\crossref_05.json",
+    "title": [
+      "NetFlow Datasets for Machine Learning-Based Network Intrusion Detection Systems"
+    ],
+    "authors": [
+      {
+        "given": "Mohanad",
+        "family": "Sarhan",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Siamak",
+        "family": "Layeghy",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nour",
+        "family": "Moustafa",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marius",
+        "family": "Portmann",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container": [
+      "Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering",
+      "Big Data Technologies and Applications"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "published_print": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "published_online": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          9
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "page": "117-135"
+  }
+]

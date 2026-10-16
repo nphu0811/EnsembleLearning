@@ -1,0 +1,15 @@
+{
+  "phase": 8,
+  "dataset": "UNSW-NB15",
+  "official_test_loaded": false,
+  "selection_metric": "Macro-F1",
+  "rf_cv_splits": 3,
+  "base_oof_cv_splits": 3,
+  "meta_cv_splits": 5,
+  "rf_grid_candidate_count": 12,
+  "meta_grid_candidate_count": 10,
+  "rf42_tuning_seconds": 4256.304590399988,
+  "rf17_tuning_seconds": 1287.44223830002,
+  "threshold_policy": "Threshold sweep is diagnostic only. No threshold is auto-selected; candidates remain at 0.5.",
+  "interpretation_warning": "This phase performs model selection on the official training split. CV scores may be optimistic after tuning and are not final test performance."
+}

@@ -1,0 +1,29 @@
+{
+  "sample_rows": 50000,
+  "candidate_original_feature_count": 20,
+  "transformed_feature_count": 169,
+  "selected_transformed_feature_count": 25,
+  "selected_original_feature_count": 13,
+  "selected_original_features": [
+    "ct_src_dport_ltm",
+    "ct_srv_dst",
+    "ct_state_ttl",
+    "dload",
+    "dmean",
+    "dttl",
+    "dwin",
+    "is_sm_ips_ports",
+    "sttl",
+    "swin",
+    "service",
+    "state",
+    "proto"
+  ],
+  "best_cv_macro_f1": 0.9217484310817753,
+  "cv_splits": 3,
+  "scoring": "f1_macro",
+  "step": 0.1,
+  "min_features_to_select": 10,
+  "estimator": "LogisticRegression(L2, liblinear)",
+  "note": "Wrapper result is estimator-dependent. Categorical dummy levels are mapped back to original features."
+}

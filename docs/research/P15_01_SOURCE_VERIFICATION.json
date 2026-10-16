@@ -1,0 +1,38 @@
+{
+  "phase": "canonical 15",
+  "task": "P15-01",
+  "archived_core_scripts": 14,
+  "post_audit_scripts": 4,
+  "total_known_scripts": 18,
+  "parsed_python_source_count": 18,
+  "old_inventory_files": 234,
+  "representative_paths_in_old_inventory": 28,
+  "older_inventory_timestamp": "2026-10-10 22:42:49 local snapshot",
+  "limits": [
+    "local machine state not verified",
+    "large data and OOF/prediction bytes not inspected",
+    "no runtime execution or environment verification",
+    "post-audit script placements unconfirmed"
+  ],
+  "completion": "PARTIAL pending local verification",
+  "source_sha256": {
+    "P03-A": "6d55a6a653cb9492ee3447b5e708f85cab8bac6ad10821769319e7f54b60debc",
+    "P03-B": "adc20a12ff4fb918a45e3c6a2001651828d026cc152fa1de8110481f8323d2e9",
+    "P03-C": "0712fe17b8b488c51eef134ea6ebaa8891459ff839aaf310d01a1bfdec848ec3",
+    "P04-A": "9d5c1e967997d871abcbfca0d33332d134b958a0822f53cdcc9b82ed4dfafd95",
+    "P05-A": "05a5914ade807c32049effa580e5fd862a5ec15a45ce00844c4e6f61505762d1",
+    "P05-B": "4c04d4a15e51e3d79487d089ee30bcccecbfcd7969eeaa8b0eedeb8cc249521e",
+    "P06-A": "463f0948d77d75ff18220d499c6a643263ce5d693e6b02af7b3d197a614f1ccf",
+    "P07-A": "69b779fe95c78b204f8dc55d5dd1c208d5cb7492711273ef3feee066b596660d",
+    "P07-B": "d2f22ea57172053c6b21dab4eda182bd2fcba23ce1182e725197ea43a826e1fb",
+    "P10-A": "76b11692154bff6004fac2153a80626779ef6468578aecfeb7f46102327f4bce",
+    "P11-A": "3e7d1369222ccdf452116e069a0db3df55e1d6d683d0f92f4e2bcde0800ae480",
+    "P11-B": "70b4352cee85651f19f6d6c7f75aba44f9c806c45ecd94b7e9e612804d931a58",
+    "P12-A": "b31b3a6599a9942d8aede51501aa37319dd7ea5d6efbbe90d96a0b252df367b9",
+    "P13-A": "e560da599ad2a70f55cfa06fcb866dfe05e6bc16ea804bad2f005d50f39f1cb9",
+    "P14-A": "e3893dc918ccbfc900b437245aa33acae0f4a24dd2364265717392f701f498ea",
+    "P14-B": "faf756bb55b1ee7e0ad807e891f41d71e656136a6d1c5378b3c78906b713dcad",
+    "P14-C": "943f9c21b5877673b6c07f4410b005ff605a9ff5972d22f1916b747a237b0eb2",
+    "P16-EARLY": "036f1ca6414dcadc128a84439613ecf58fd8327a769d24f4075b02e76eef8590"
+  }
+}

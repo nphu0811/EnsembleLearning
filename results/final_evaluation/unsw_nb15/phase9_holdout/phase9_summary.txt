@@ -1,0 +1,20 @@
+PHASE 9 — FINAL HOLDOUT SUMMARY
+====================================================================================
+
+IMPORTANT:
+- This is the first use of the official UNSW-NB15 TEST split.
+- All pipelines were frozen before the test was opened.
+- No tuning, feature selection, or threshold selection used TEST.
+
+Train rows: 175,341
+Official test rows: 82,332
+Novel-vector test rows: 73,791
+
+OFFICIAL TEST
+- stacking_42: Macro-F1=0.8638, MCC=0.7505, FPR=0.2665, FNR=0.0188, ROC-AUC=0.9783, PR-AUC=0.9837
+- random_forest_42: Macro-F1=0.8633, MCC=0.7509, FPR=0.2704, FNR=0.0162, ROC-AUC=0.9784, PR-AUC=0.9825
+- random_forest_17: Macro-F1=0.8607, MCC=0.7469, FPR=0.2763, FNR=0.0156, ROC-AUC=0.9747, PR-AUC=0.9797
+
+POST-TEST RULE:
+Do not alter the frozen pipelines because of these test results.
+Next phase performs statistical/error analysis on the saved predictions.

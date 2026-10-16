@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "RQ1_original_wording_preserved": true,
+    "RQ2_original_wording_preserved": true,
+    "RQ3_original_wording_preserved": true,
+    "RQ4_original_wording_preserved": true,
+    "RQ5_original_wording_preserved": true,
+    "partial_statuses_explicit": true
+  },
+  "pass": true,
+  "scope": "Frozen RQ wording and documentation structure only",
+  "repair_note": "First parser used an overescaped regex and failed before writing; replaced with explicit heading-line extraction."
+}

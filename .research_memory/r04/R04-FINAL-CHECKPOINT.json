@@ -1,0 +1,51 @@
+{
+  "task": "R04-FINAL-CHECKPOINT",
+  "status": "PARTIAL",
+  "note": "r04 advanced references11/12,gap/relatedwork,full content mapping and assembly,TRAIN-only software smoke45/45,defense content25/25;full argument review interrupted by quota;G0-G6 remain open;no final release",
+  "timestamp": "2026-10-16T10:14:01.032346+00:00",
+  "artifacts": {
+    "docs/RESUME_AUDIT_R04_2026-10-16.md": "a98010151ed571c3033244e7318421e39bf39a1d794cdd2cd65efadf763f9ee8",
+    "release/RELEASE_BLOCKERS.md": "6f9eee572d27ab570d4d708a000c54db183902b2637950b9db717569c95606b0",
+    "docs/ROADMAP_CURRENT.md": "fd823a11b65d8345414a033d2f19bc3e10c607333d24e7bbc35512e4d22ecb4f",
+    "docs/TEMPLATE_REQUIREMENTS_MATRIX.md": "8c6f5da55aa85747af71d275d922af92dc23a7c4a7bdfffd70c2482a6c5b5001",
+    "proposal/researchwrite/nckh-ids/state.json": "a44e2b132f2c013b0cb4e2d0f10cda1703ee35b79eaa327b6bd66347b59719ac"
+  },
+  "changed_prior_artifacts": [
+    {
+      "path": ".research_memory/DECISIONS.md",
+      "before": "48845c112e2c92347b3f01c3d9b78880f54975a94e551e29750cb960f5dafaf3",
+      "after": "f5486c60ab147cee421823c5cb80cf19d8c22b4d7f7f96b161625e95448d8a97"
+    },
+    {
+      "path": ".research_memory/ISSUE_LOG.md",
+      "before": "e27e159354249a3bbd99d9fcdea42ceda89b970b8357e88708232360fd52a9b5",
+      "after": "34a7044149f504f30a44ab9402f9dcbac0f369c2db6068888d87c15075c34588"
+    },
+    {
+      "path": ".research_memory/SKILL_USAGE_LOG.md",
+      "before": "190559a9dd3680c75ea432301cc7bfd408b1e3df27956048961330d914511ed5",
+      "after": "99d2bac39c3bcd67fd627457a1656460054e61ab546ef725980211d803fd42c2"
+    },
+    {
+      "path": "docs/ROADMAP_CURRENT.md",
+      "before": "65088f7c083f25a7ef16286f3bc9320fa3b1cf8ea184f81bfb4e7b960668a4b3",
+      "after": "fd823a11b65d8345414a033d2f19bc3e10c607333d24e7bbc35512e4d22ecb4f"
+    },
+    {
+      "path": "docs/TEMPLATE_REQUIREMENTS_MATRIX.md",
+      "before": "ad481733ccc22a231bbaae504e925bc9d64dd603e80a2d753bcdd2e95f493e6f",
+      "after": "8c6f5da55aa85747af71d275d922af92dc23a7c4a7bdfffd70c2482a6c5b5001"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/state.json",
+      "before": "171da6eaf08cd97b5a085946fbe0e3e2ca0c34312162e5bb794b5337c1cd6835",
+      "after": "a44e2b132f2c013b0cb4e2d0f10cda1703ee35b79eaa327b6bd66347b59719ac"
+    },
+    {
+      "path": "release/RELEASE_BLOCKERS.md",
+      "before": "0204fc07b4f7e7126c38d16e47ea08a65af4915c30d664a297ce5d0716b438c3",
+      "after": "6f9eee572d27ab570d4d708a000c54db183902b2637950b9db717569c95606b0"
+    }
+  ],
+  "next_action": "Validate r04 manifest first,then finish independent argument/form review of De_cuong_noi_dung_review_r04.md;continue P16/report or fullTRAIN reconstruction in isolated planned output;do not rerun completed smoke or frozen evaluation"
+}

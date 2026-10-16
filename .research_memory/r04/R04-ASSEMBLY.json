@@ -1,0 +1,24 @@
+{
+  "task": "R04-ASSEMBLY",
+  "status": "PARTIAL",
+  "note": "All proposal content assembled in original field order;10/10 initial checks,6/6 P2 repair checks;one evidence review saved;independent full argument review interrupted by usage limit;not DOCX/render/full gate",
+  "timestamp": "2026-10-16T10:08:31.967722+00:00",
+  "artifacts": {
+    "tools/r04_assemble_proposal.py": "18bd87fba1d90e06d20f93fe155a1f45b68acd2fd1085c7d7c83fa842d30c77d",
+    "tools/r04_train_only_smoke.py": "e97de5360bc4234489f3e19585e2a441de00f5e891ed87f22547ff45233b5eda",
+    "proposal/researchwrite/nckh-ids/drafts/De_cuong_noi_dung_review_r04.md": "dfef1dffa3fdd8efbb558b65a02cb13c443da8529c5efba169d6b7dc7ad47bac",
+    "proposal/researchwrite/nckh-ids/qa_logs/r04_assembly_validation.json": "d170c233fabf459e07c41a54f113839fa0e4f352ac35c6bd74672184b498703c",
+    "proposal/researchwrite/nckh-ids/qa_logs/r04_assembled_evidence_review.md": "7ce424afd30cc03c44e0f4ead2b4cee254c91e4a4af61b0b99f2a6efb18870f3",
+    "proposal/researchwrite/nckh-ids/qa_logs/r04_assembled_review_status.md": "b746d79e7face417a98e652703c9e34b323fc8568a4be12cedab74b239476d79",
+    "proposal/researchwrite/nckh-ids/qa_logs/r04_assembled_repairs.json": "87dbb33ccc144d2d09fccd143c2b7231e815b06860c1b05ee6ae6af641ff8925",
+    "docs/CLAIM_EVIDENCE_MATRIX.md": "94ce0df952621005c2aa612bacf9138e89f6f838bd42cc85670a816e030f847c"
+  },
+  "changed_prior_artifacts": [
+    {
+      "path": "docs/CLAIM_EVIDENCE_MATRIX.md",
+      "before": "298ead70f2cc68c32d8998ccc7fda14a7d5c35f587fe0721c151c6f7aff20abd",
+      "after": "94ce0df952621005c2aa612bacf9138e89f6f838bd42cc85670a816e030f847c"
+    }
+  ],
+  "next_action": "Finish isolated TRAIN-only smoke and checkpoint;full proposal argument review remains pending before DOCX authoring/render"
+}

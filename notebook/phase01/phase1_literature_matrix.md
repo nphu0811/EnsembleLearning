@@ -1,0 +1,19 @@
+# PHASE 1 — Literature Evidence Matrix v0.1
+
+> Status: first systematic pass. Papers are included only when metadata/source could be verified.
+> RQs/contributions remain provisional until the screening corpus is expanded and deduplicated.
+
+| ID | Paper | Year | Main focus | Dataset(s) | Key evidence for our project | Limitation / what remains |
+|---|---|---:|---|---|---|---|
+| L01 | Tama & Lim — Ensemble learning for intrusion detection systems: A systematic mapping study and cross-benchmark evaluation | 2021 | Ensemble mapping + benchmark | Multiple IDS datasets | Ensemble design depends on base-classifier and combiner choices; statistical comparison matters | Review predates newer dataset-quality/generalization work |
+| L02 | Engelen, Rimmer & Joosen — Troubleshooting an Intrusion Detection Dataset: the CICIDS2017 Case Study | 2021 | Dataset validity | CIC-IDS2017 | Found errors in attack simulation, flow construction, feature extraction and labeling; >20% of traces reconstructed/relabelled | Focused on CIC-IDS2017 |
+| L03 | Liu et al. — Error Prevalence in NIDS datasets | 2022 | Dataset validity | CIC-IDS2017, CSE-CIC-IDS2018 | Reports errors across dataset creation lifecycle and warns they destabilize benchmark findings | Does not answer which ML ensemble is best |
+| L04 | Doreswamy et al. — Feature selection approach using ensemble learning for network anomaly detection | 2020 | Ensemble feature selection | UNSW-NB15, NSL-KDD | Combining multiple FS methods can reduce features while retaining strong classification | Older datasets / does not center leakage-aware splitting |
+| L05 | Khan et al. — Optimized ensemble prediction using AutoML + soft voting | 2023 | Soft voting + FS + imbalance | UNSW-NB15, CIC-IDS2017 | Ensemble + correlation-based reduction + resampling already exists | Therefore simple “FS + voting” is weak novelty |
+| L06 | Thockchom et al. — A novel ensemble learning-based model for NIDS | 2023 | Stacking + Chi-square | KDD99, UNSW-NB15, CIC-IDS2017 | Heterogeneous base learners can complement one another; minority classes remain difficult | Remaining weaknesses on rare/attack-specific classes |
+| L07 | Ren et al. — DUEN: Dynamic ensemble handling class imbalance in NIDS | 2023 | Dynamic ensemble + imbalance | NIDS benchmarks | Class imbalance is important enough to motivate dedicated dynamic ensembles | More complex than likely necessary for student project |
+| L08 | Zouhri, Idri & Ratnani — Evaluating impact of filter-based FS in IDS | 2024 | Feature-selection comparison | CIC-IDS2017, CSE-CIC-IDS2018, CIC-ToN-IoT | 228 classifier variants; multivariate filters can reduce features without hurting detection | Primarily filter methods; not designed around ensemble-diversity |
+| L09 | Cantone, Marrocco & Bria — Machine Learning in NIDS: A Cross-Dataset Generalization Study | 2024 | Cross-dataset generalization | CIC-IDS2017, CSE-CIC-IDS2018, LycoS variants | Near-perfect within-dataset performance can collapse under cross-dataset testing | Cross-dataset alignment is harder than ordinary student experiments |
+| L10 | Sabeel et al. — Unknown, Atypical and Polymorphic NIDS: A Systematic Survey | 2024 | Unknown/atypical attack detection | Literature survey | Strong benchmark performance does not automatically imply detection of unknown/evolving attacks | Mostly broader ML/DL literature |
+| L11 | Effects of feature selection and normalization on NIDS | 2025 | FS + preprocessing + cost | CSE-CIC-IDS2018, UNSW-NB15 | FS/normalization affect performance and computation; modern datasets can be more challenging | Not specifically a diversity-aware ensemble study |
+| L12 | Ensemble Learning for NIDS Based on Correlation and Embedded FS | 2025 | Stacking + hybrid FS + SMOTE-Tomek | NSL-KDD, CIC-IDS | Shows stacking + hybrid FS + imbalance treatment is already being published | Again, combining known components alone is not enough novelty |

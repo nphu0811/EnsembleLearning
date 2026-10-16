@@ -1,0 +1,36 @@
+[
+  {
+    "id": "L04_wiley",
+    "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/trit.2020.0073",
+    "retrieved": "2026-10-16T09:42:54.621386+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "L10_comsoc",
+    "url": "https://www.comsoc.org/system/files/2024-03/Publications_Contents_Digest_2024_Mar.pdf",
+    "retrieved": "2026-10-16T09:42:54.624605+00:00",
+    "status": 200,
+    "final_url": "https://www.comsoc.org/system/files/2024-03/Publications_Contents_Digest_2024_Mar.pdf",
+    "content_type": "application/pdf",
+    "path": "literature/resume_r03_2026_10_16/L10_comsoc.pdf",
+    "bytes": 4552589,
+    "sha256": "fc06af335bbc6a0819370257d8fbd0b8646021eb2e7adadd36a12da9bb1a2272"
+  },
+  {
+    "id": "L11_uaeu",
+    "url": "https://research.uaeu.ac.ae/en/publications/effects-of-feature-selection-and-normalization-on-network-intrusi/",
+    "retrieved": "2026-10-16T09:42:54.625332+00:00",
+    "status": 200,
+    "final_url": "https://research.uaeu.ac.ae/en/publications/effects-of-feature-selection-and-normalization-on-network-intrusi/",
+    "content_type": "text/html;charset=UTF-8",
+    "path": "literature/resume_r03_2026_10_16/L11_uaeu.html",
+    "bytes": 61193,
+    "sha256": "06196591c3311f4ec10b000d441b979b42d969d148cca2f8e8b5002aeef6830b"
+  },
+  {
+    "id": "L12_author",
+    "url": "https://www.rhu.edu.lb/directories/nassreddine-ghalia",
+    "retrieved": "2026-10-16T09:42:54.625332+00:00",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1006)>"
+  }
+]

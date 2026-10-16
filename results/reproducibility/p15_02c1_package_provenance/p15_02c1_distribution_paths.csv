@@ -1,0 +1,12 @@
+﻿package,version,metadata_dir,install_root
+joblib,1.5.3,C:\Users\admin\AppData\Roaming\Python\Python314\site-packages\joblib-1.5.3.dist-info,C:\Users\admin\AppData\Roaming\Python\Python314\site-packages
+matplotlib,3.11.1,C:\Users\admin\AppData\Roaming\Python\Python314\site-packages\matplotlib-3.11.1.dist-info,C:\Users\admin\AppData\Roaming\Python\Python314\site-packages
+numpy,2.4.6,C:\Users\admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\numpy-2.4.6.dist-info,C:\Users\admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages
+numpy,2.5.2,C:\Users\admin\AppData\Roaming\Python\Python314\site-packages\numpy-2.5.2.dist-info,C:\Users\admin\AppData\Roaming\Python\Python314\site-packages
+pandas,3.0.3,C:\Users\admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas-3.0.3.dist-info,C:\Users\admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages
+pandas,3.0.5,C:\Users\admin\AppData\Roaming\Python\Python314\site-packages\pandas-3.0.5.dist-info,C:\Users\admin\AppData\Roaming\Python\Python314\site-packages
+scikit-learn,1.9.0,C:\Users\admin\AppData\Roaming\Python\Python314\site-packages\scikit_learn-1.9.0.dist-info,C:\Users\admin\AppData\Roaming\Python\Python314\site-packages
+scipy,1.18.1,C:\Users\admin\AppData\Roaming\Python\Python314\site-packages\scipy-1.18.1.dist-info,C:\Users\admin\AppData\Roaming\Python\Python314\site-packages
+threadpoolctl,3.6.0,C:\Users\admin\AppData\Roaming\Python\Python314\site-packages\threadpoolctl-3.6.0.dist-info,C:\Users\admin\AppData\Roaming\Python\Python314\site-packages
+tzdata,2023.3,C:\Users\admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\tzdata-2023.3.dist-info,C:\Users\admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages
+tzdata,2026.3,C:\Users\admin\AppData\Roaming\Python\Python314\site-packages\tzdata-2026.3.dist-info,C:\Users\admin\AppData\Roaming\Python\Python314\site-packages

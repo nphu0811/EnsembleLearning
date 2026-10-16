@@ -1,0 +1,34 @@
+UNSW-NB15 DUPLICATE / OVERLAP CONSISTENCY REPORT
+============================================================================
+
+IMPORTANT:
+- No raw row was deleted.
+- No feature was deleted.
+- This audit only determines whether duplicate/overlapping vectors
+  carry consistent labels and attack categories.
+
+WITHIN TRAIN
+Duplicate vector groups: 9,748
+Rows inside duplicate groups: 84,049
+Extra duplicate rows: 74,301
+Groups with conflicting labels: 229
+Groups with conflicting attack categories: 1,772
+
+WITHIN TEST
+Duplicate vector groups: 6,318
+Rows inside duplicate groups: 34,704
+Extra duplicate rows: 28,386
+Groups with conflicting labels: 6
+Groups with conflicting attack categories: 575
+
+CROSS TRAIN/TEST
+Unique overlapping vectors: 1,302
+Train rows involved: 10,279 (5.862%)
+Test rows involved: 8,541 (10.374%)
+Overlap vectors with different labels: 279
+Overlap vectors with different attack categories: 547
+
+NEXT:
+Use these results to decide whether duplicates should be preserved,
+removed only from training, or handled as a separate leakage-sensitivity
+evaluation track. Do not decide from duplicate count alone.

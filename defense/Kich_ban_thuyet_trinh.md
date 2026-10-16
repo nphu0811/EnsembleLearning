@@ -1,0 +1,20 @@
+# Kịch bản bảo vệ — bản nội dung r04
+
+INTERNAL_DRAFT. Chưa có slide PPTX/PDF tương ứng được render hoặc diễn tập. Mười hai vị trí dưới đây là kế hoạch nội dung, không phải slide artifact đã có. Thời lượng mục tiêu 12 phút; thời lượng hội đồng và thông tin cá nhân cần xác nhận. Giọng trình bày theo bản thảo học thuật hiện hành, chưa có mẫu văn phong cá nhân để đối chiếu.
+
+| Vị trí | Thời lượng | Lời trình bày dự kiến | Bằng chứng |
+|---|---:|---|---|
+|1. Phạm vi|0:30|Đề tài nghiên cứu học kết hợp cho phát hiện xâm nhập mạng. Thực nghiệm hiện có phân biệt Normal/Attack trên UNSW-NB15; đây là nghiên cứu benchmark offline.|`docs/research/ENSEMBLE_FRAMEWORK.md`|
+|2. Câu hỏi|0:55|Câu hỏi không đặt điều kiện stacking phải thắng. Chúng tôi xem lợi ích quan sát, chi phí và sai số của các pipeline đã khóa. Các RQ gốc và phần chưa trả lời được giữ rõ.|`proposal/researchwrite/nckh-ids/06_rq_method_output_gates.md`|
+|3. Prior work|0:55|Voting, stacking và chọn đặc trưng đã có trong các công trình trước. Giá trị hiện tại là case study có truy vết và phân tích đánh đổi; chưa chứng minh thuật toán mới hoặc khảo sát literature đầy đủ đến 2026.|`literature/gap_matrix.md`; `literature/resume_r04_2026_10_16/SCOPED_READING_NOTES.md`|
+|4. Dữ liệu|1:00|Official TRAIN có 175.341 mẫu, TEST có 82.332 mẫu; Attack là lớp 1. Loại id, label và attack_cat khỏi predictors. Official/novel-vector là hai view cùng benchmark, không phải external validation.|`docs/research/ENSEMBLE_FRAMEWORK.md`|
+|5. Pipeline|1:00|Ba final candidates là RF-42, Stacking-42 và RF-17, ngưỡng 0,5. Stacking dùng LR/DT/RF ở tầng nền, LR ở tầng kết hợp với internal CV. Không chọn lại candidate bằng kết quả holdout.|`results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json`|
+|6. Kết quả chính|1:25|Chưa đủ bằng chứng nói Stacking-42 vượt RF-42 tổng thể. Chênh Macro-F1 khoảng 0,000497; CI 95% từ khoảng −0,000312 đến 0,001309 chứa 0. Không suy tương đương thống kê; McNemar không kiểm định trực tiếp Macro-F1.|`results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv`|
+|7. FP/FN|1:00|Stacking giảm 142 báo động giả nhưng tăng 118 mẫu tấn công bị bỏ sót trên official TEST. Chưa có cost matrix vận hành để kết luận lựa chọn nào phù hợp mọi mạng.|`results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv`|
+|8. Feature và chi phí|0:55|RF-17/RF-42 thể hiện khác biệt giữa các pipeline. Chúng còn khác hyperparameters, nên không diễn giải đây là hiệu ứng nhân quả của riêng việc giảm số đặc trưng.|`results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv`|
+|9. Diversity và lỗi|0:55|Lỗi bổ sung được xem từ dự đoán OOF; diversity không bảo đảm gain. Bảng theo attack_cat mô tả nhóm tấn công mà binary detector bỏ sót, không phải multiclass prediction.|`docs/CLAIM_EVIDENCE_MATRIX.md`; `docs/research/PHASE14_ERROR_ANALYSIS_CLOSURE.md`|
+|10. Giới hạn|1:20|Feature selection dùng full TRAIN trước development CV; meta tuning chưa fully nested. Row bootstrap có điều kiện trên benchmark. Chưa có external/time validation, stability qua tái huấn luyện độc lập hoặc matched resampling.|`.research_memory/RESEARCH_CANON.md`|
+|11. Tái lập và demo|1:05|Ba CSV hậu xử lý tái lập giống từng byte. R04 có smoke fit/serialize/reload trên mẫu TRAIN trong venv sạch. Đây chưa phải full TRAIN reconstruction hoặc demo sản phẩm; model smoke không dùng trình diễn final.|`results/reproducibility/resume_2026_10_16/clean_replay_report.json`; `docs/research/R04_ML_SMOKE_REPORT.md`; `defense/Demo_runbook.md`|
+|12. Kết luận|1:00|Kết quả hỗ trợ đánh giá có giới hạn về các đánh đổi. Hồ sơ chỉ sẵn sàng nộp sau khi artifact, render, tái lập và điều kiện hành chính đạt. Các phần chưa đạt được giữ trong task board.|`release/RELEASE_BLOCKERS.md`; `defense/Hoi_dap_hoi_dong.md`|
+
+Tổng 12:00 là dự toán, chưa có measured rehearsal. Khi làm deck, dùng saved source-data và QA cho từng biểu đồ. Không dùng ảnh sinh thiếu nguồn số liệu. Khi rút thời lượng, giữ các giới hạn quyết định cách hiểu kết quả.

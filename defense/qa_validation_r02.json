@@ -1,0 +1,9 @@
+{
+  "question_count": 20,
+  "evidence_path_checks": 33,
+  "missing_paths": [],
+  "fp_fn_delta_checks": "PASS",
+  "status": "DRAFT_FOR_REVIEW",
+  "rehearsal_performed": false,
+  "full_defense_ready": false
+}

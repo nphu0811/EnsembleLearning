@@ -1,0 +1,4 @@
+file,relative_path,size_bytes,sha256
+UNSW_NB15_training-set.csv,data\raw\unsw-nb15\UNSW_NB15_training-set.csv,32293018,bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa
+UNSW_NB15_testing-set.csv,data\raw\unsw-nb15\UNSW_NB15_testing-set.csv,15380800,734fe6642edf758f7c94d7d9149426b49d202fe8e7bf0bef47392489c3c0a559
+NUSW-NB15_features.csv,data\raw\unsw-nb15\NUSW-NB15_features.csv,4044,c55f19cceebb6360dc50f44f8a5f246ccefbcf8a6c604ac1ad46e643869cafce

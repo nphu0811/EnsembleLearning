@@ -1,0 +1,8 @@
+# Observed current direct versions, for isolated software smoke only.
+# Not original training environment, not a hashed lockfile.
+numpy==2.4.6
+pandas==3.0.5
+scikit-learn==1.9.0
+scipy==1.17.1
+joblib==1.5.3
+threadpoolctl==3.6.0

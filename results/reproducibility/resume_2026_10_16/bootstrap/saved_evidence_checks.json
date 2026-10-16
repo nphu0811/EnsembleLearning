@@ -1,0 +1,341 @@
+{
+  "checks": [
+    {
+      "check": "P13 input hash",
+      "path": "src/models/run_unsw_baseline_development.py",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "src/models/run_unsw_diversity_oof.py",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "src/models/run_unsw_ensemble_phase7_2.py",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "results/ensemble/unsw_nb15/phase7_1_diversity/experiment_metadata.json",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/experiment_metadata.json",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "results/ensemble/unsw_nb15/phase7_1_diversity/oof/all_features_oof_predictions.csv",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "results/ensemble/unsw_nb15/phase7_1_diversity/oof/stable_17_features_oof_predictions.csv",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/oof/all_features_ensemble_oof.csv",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/oof/stable_17_features_ensemble_oof.csv",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/aggregate_metrics.csv",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "results/tuning/unsw_nb15/phase8_controlled/tables/rf42_grid_results.csv",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "results/tuning/unsw_nb15/phase8_controlled/tables/rf17_grid_results.csv",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_meta_grid_results.csv",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+      "pass": true
+    },
+    {
+      "check": "P13 input hash",
+      "path": "results/data_audit/unsw_nb15/class_distribution.csv",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/official_test/accuracy",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/official_test/balanced_accuracy",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/official_test/precision",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/official_test/recall_detection_rate",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/official_test/f1",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/official_test/macro_f1",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/official_test/false_positive_rate",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/official_test/false_negative_rate",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/official_test/mcc",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/official_test/closure_weighted_f1",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/novel_vector_test/accuracy",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/novel_vector_test/balanced_accuracy",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/novel_vector_test/precision",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/novel_vector_test/recall_detection_rate",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/novel_vector_test/f1",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/novel_vector_test/macro_f1",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/novel_vector_test/false_positive_rate",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/novel_vector_test/false_negative_rate",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/novel_vector_test/mcc",
+      "pass": true
+    },
+    {
+      "check": "random_forest_42/novel_vector_test/closure_weighted_f1",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/official_test/accuracy",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/official_test/balanced_accuracy",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/official_test/precision",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/official_test/recall_detection_rate",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/official_test/f1",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/official_test/macro_f1",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/official_test/false_positive_rate",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/official_test/false_negative_rate",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/official_test/mcc",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/official_test/closure_weighted_f1",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/novel_vector_test/accuracy",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/novel_vector_test/balanced_accuracy",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/novel_vector_test/precision",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/novel_vector_test/recall_detection_rate",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/novel_vector_test/f1",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/novel_vector_test/macro_f1",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/novel_vector_test/false_positive_rate",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/novel_vector_test/false_negative_rate",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/novel_vector_test/mcc",
+      "pass": true
+    },
+    {
+      "check": "stacking_42/novel_vector_test/closure_weighted_f1",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/official_test/accuracy",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/official_test/balanced_accuracy",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/official_test/precision",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/official_test/recall_detection_rate",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/official_test/f1",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/official_test/macro_f1",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/official_test/false_positive_rate",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/official_test/false_negative_rate",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/official_test/mcc",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/official_test/closure_weighted_f1",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/novel_vector_test/accuracy",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/novel_vector_test/balanced_accuracy",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/novel_vector_test/precision",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/novel_vector_test/recall_detection_rate",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/novel_vector_test/f1",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/novel_vector_test/macro_f1",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/novel_vector_test/false_positive_rate",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/novel_vector_test/false_negative_rate",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/novel_vector_test/mcc",
+      "pass": true
+    },
+    {
+      "check": "random_forest_17/novel_vector_test/closure_weighted_f1",
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "scope": "P13 input hashes and saved aggregate confusion metrics only; no model replay"
+}

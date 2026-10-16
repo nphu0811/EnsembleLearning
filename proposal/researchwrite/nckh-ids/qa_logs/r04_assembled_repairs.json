@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "C15_current_count": true,
+    "namespace_T": true,
+    "namespace_P": true,
+    "no_empty_issue": true,
+    "article_labels": true,
+    "no_fabricated_argument_review": true
+  },
+  "passed": true,
+  "post_repair_rescore": "NOT_PERFORMED",
+  "independent_argument_review": "NOT_COMPLETED_USAGE_LIMIT",
+  "scope": "Text/source consistency repairs; not full proposal/render gate"
+}

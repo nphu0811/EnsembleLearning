@@ -1,0 +1,121 @@
+\ProvidesPackage{thesis}
+\RequirePackage{fancyhdr}
+
+%----------------------------------------------------------------------------------------
+%	CÁC BIẾN THÔNG TIN
+%----------------------------------------------------------------------------------------
+\newcommand{\faculty}{Khoa Công nghệ Thông tin 2}
+\newcommand{\titlethesis}{Phát hiện và phân loại mã độc Android bằng các mô hình học sâu hiện đại}
+\newcommand{\studentname}{Đặng Phước Bảo}
+\newcommand{\studentnametwo}{Nguyễn Văn Tuân }
+\newcommand{\mssv}{N22DCAT006}
+\newcommand{\mssvtwo}{N22DCAT061}
+
+\newcommand{\supervisor}{ThS. Nguyễn Hoàng Thành}
+\newcommand{\major}{An toàn thông tin}
+\newcommand{\yearsubmit}{2025}
+\newcommand{\reporttype}{ĐỀ TÀI NGHIÊN CỨU KHOA HỌC SINH VIÊN}
+\newcommand{\datn}{ĐỀ TÀI NCKH SINH VIÊN}
+\newcommand{\maso}{15-SV-2025-TH2}
+
+\newcommand{\classid}{D22CQAT01-N}
+
+
+%----------------------------------------------------------------------------------------
+%	LỆNH TẠO TRANG BÌA
+%----------------------------------------------------------------------------------------
+\newcommand{\coverpage}{
+  \begin{titlepage}
+    \thispagestyle{empty}
+    % --- Vẽ khung ---
+    \begin{tikzpicture}[remember picture, overlay]
+      \draw[line width=0.75pt]
+        ($ (current page.north west) + (3.0cm,-2.0cm) $)
+        rectangle
+        ($ (current page.south east) + (-1.5cm,1.5cm) $);
+      \draw[line width=2.0pt]
+        ($ (current page.north west) + (3.15cm,-2.15cm) $)
+        rectangle
+        ($ (current page.south east) + (-1.65cm,1.65cm) $);
+    \end{tikzpicture}
+    \begin{center}
+      {\fontsize{14pt}{16pt}\selectfont BỘ KHOA HỌC VÀ CÔNG NGHỆ}\\[0.2cm]
+      {\fontsize{15pt}{17pt}\bfseries HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG}\\[0.1cm]
+      {\fontsize{15pt}{17pt}\bfseries CƠ SỞ TẠI TP.HỒ CHÍ MINH}\\[0.2cm]
+      {\fontsize{14pt}{16pt}\bfseries \faculty}\\
+      \textbf{-----------------------------------------}\\[1cm]
+      \includegraphics[scale=0.3]{assets/Logo_PTIT_University.png}\\[1cm]
+      %-- chỉnh font cho Đồ án tốt nghiệp đại học
+      {\fontsize{18pt}{24pt}\selectfont \bfseries \reporttype}\\[1cm]
+       {\fontsize{18pt}{30pt}\selectfont \bfseries
+        \parbox{14cm}{\centering Mã số đề tài: \maso}}\\[1cm]
+      %-- chỉnh font cho Tên đề tài
+      {\fontsize{20pt}{30pt}\selectfont \bfseries
+        \parbox{14cm}{\centering \titlethesis}}\\[3cm]
+
+      \begin{minipage}{0.8\textwidth}
+    \raggedright % = flushleft
+    {\fontsize{14pt}{16pt}\selectfont
+    \begin{tabular}{@{}l l l@{}}
+        \textbf{Sinh viên thực hiện:} & \studentname      & \mssv \\
+                                      & \studentnametwo     & \mssvtwo \\
+        \textbf{Lớp:}                 & \multicolumn{2}{l}{\classid} \\
+        \textbf{Ngành:}               & \multicolumn{2}{l}{\major} \\
+        \textbf{Giảng viên hướng dẫn:} & \multicolumn{2}{l}{\supervisor} \\
+    \end{tabular}}
+\end{minipage}
+      \vfill
+      {\fontsize{14pt}{16pt}\bfseries\selectfont TP. Hồ Chí Minh -- \yearsubmit}
+    \end{center}
+  \end{titlepage}
+}
+
+%----------------------------------------------------------------------------------------
+%	CÁC MÔI TRƯỜNG MỞ ĐẦU
+%----------------------------------------------------------------------------------------
+\newenvironment{declaration}{
+  \clearpage
+  \chapter*{Lời cam đoan}
+  \addcontentsline{toc}{chapter}{Lời cam đoan}
+  \quotation
+}{\par}
+
+\newenvironment{acknowledgments}{
+  \clearpage
+  \chapter*{Lời cảm ơn}
+  \addcontentsline{toc}{chapter}{Lời cảm ơn}
+  \quotation
+}{\par}
+
+\newenvironment{abstractvi}{
+  \clearpage
+  \chapter*{Tóm tắt}
+  \addcontentsline{toc}{chapter}{Tóm tắt}
+}{\par}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyheadoffset{0pt}
+\fancyfootoffset{0pt}
+\setlength{\headheight}{18pt} % tăng chút để đủ chỗ cho 12pt
+
+% Footer
+\fancyfoot[L]{\fontsize{12pt}{14pt}\selectfont \studentname; \studentnametwo}
+\fancyfoot[R]{\fontsize{12pt}{14pt}\selectfont \thepage}
+
+% Header
+\fancyhead[L]{\fontsize{12pt}{14pt}\selectfont \makebox[\textwidth][l]{\datn}}
+\fancyhead[R]{\fontsize{12pt}{14pt}\selectfont \nouppercase{\leftmark}}
+
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Áp dụng cho plain page (trang đầu chương)
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyhead[L]{\fontsize{12pt}{14pt}\selectfont \makebox[\textwidth][l]{\datn}}
+  \fancyfoot[L]{\fontsize{12pt}{14pt}\selectfont \studentname; \studentnametwo}
+  \fancyfoot[R]{\fontsize{12pt}{14pt}\selectfont \thepage}
+  \renewcommand{\footrulewidth}{0.4pt}
+}
+\fancyfoot[L]{\fontsize{12pt}{14pt}\selectfont \studentname; \studentnametwo}
+\fancyfoot[R]{\fontsize{12pt}{14pt}\selectfont \thepage}

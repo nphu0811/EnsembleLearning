@@ -1,0 +1,44 @@
+{
+  "task": "R04-REF",
+  "status": "DONE_SCOPED",
+  "note": "Five of six pending legacy entries resolved;11/12 metadata verified; L03 retained CHECK_SUGGESTED page conflict; U01/U03 open;28/28 bookkeeping checks PASS; no full P18 completion",
+  "timestamp": "2026-10-16T09:56:32.028481+00:00",
+  "artifacts": {
+    "literature/resume_r04_2026_10_16/api_ledger.json": "dc3ec84b9598be52fce3f5391656ae2dd67990208e1e3e066bad8d203324ab99",
+    "literature/resume_r04_2026_10_16/FIELD_VERIFICATION_REPORT.md": "f468aa1d42db2d27a17233cf68cac148e32463f540ba4ddca2b75ba8517051ce",
+    "literature/resume_r04_2026_10_16/L01_crossref.json": "26e77c51ce2eccdff306ef5a09a1dc1757a15ba3797a9fefa08e6e90d997fa30",
+    "literature/resume_r04_2026_10_16/L02_crossref.json": "4598c39aab470b5a3718e7c6cdc6caa4a372b298357b56b687262f274a3d6c51",
+    "literature/resume_r04_2026_10_16/L03_crossref.json": "55e46aa65aafe8e38105b7fda27943fd5845b40fb90a45f33a935ed20eeb5c18",
+    "literature/resume_r04_2026_10_16/L09_crossref.json": "7e5fa83608cd93a42e7452f689e9bf4fb799922722bf987f09d400721ad3862b",
+    "literature/resume_r04_2026_10_16/L10_crossref.json": "3f8285854f8e0eb9ab593c71c71738ee556425baa75d03c0f510ef86f9c85655",
+    "literature/resume_r04_2026_10_16/L12_crossref.json": "9347a242d7a429800239c5658bc151d8f82dec84eece7f54c19ef15a8f7b4a4d",
+    "literature/resume_r04_2026_10_16/legacy_verification_ledger.csv": "5a3c65b9cf5462c919d2d065dd7ff70b44558e172e6b1d0685d23551ff5cfb02",
+    "literature/resume_r04_2026_10_16/validation.json": "4472e395118dafdaac726976313e0dba523f4094fc54da9d91297da864fcff9b",
+    "literature/resume_r04_2026_10_16/web_capture_1.json": "50ead502d0d30dd59aa3a0834b1ec6d8c4ff9203de095ccdae4b2b922f05ba1e",
+    "literature/resume_r04_2026_10_16/web_capture_10.json": "9e94b88d9eada9c8c19844e039c6bb7fd730faa3d42f7a5dba9b35c1a5df9754",
+    "literature/resume_r04_2026_10_16/web_capture_2.json": "c575d9ea166829d0e03bb020eaabd65be925057db7be1abbf437c53c041ce545",
+    "literature/resume_r04_2026_10_16/web_capture_3.json": "fb01b36cdc5771d4ec944493d4d3fd438955086729c220b97074f14a872299b7",
+    "literature/resume_r04_2026_10_16/web_capture_4.json": "63259e2544b616ebad8e2608980694d2ba807d04e0835e5e0a3aa9d850961fe4",
+    "literature/resume_r04_2026_10_16/web_capture_5.json": "c317b3431cbc6a74be3a8cb11d2b30f1d8b96a6325a61c880532704b0dc65e1e",
+    "literature/resume_r04_2026_10_16/web_capture_6.json": "b30d598744b1baf52b97a3850d3e2dd3b251fa39271c5f3c94ddd63e405ea783",
+    "literature/resume_r04_2026_10_16/web_capture_7.json": "be3d252c2da99645968bf688c4d98c58ea5556cf8c0ffb05b4ca6b4f59c604c9",
+    "literature/resume_r04_2026_10_16/web_capture_8.json": "0edeb3633ee87a5c1bf9f0e06b57bd3e98dc0e90f75f2afc4a0ae09778004531",
+    "literature/resume_r04_2026_10_16/web_capture_9.json": "ce12a258d4d37c26a5a22d45ad52a86253ba0078893092669eb2641171b00f61",
+    "literature/literature_matrix.csv": "010e8304abce7b50996c1fc3fe92ebd7ad1a8ea85aa0870aa2e65efd46cbfc15",
+    "literature/refs_verified_subset.bib": "d49ced9bd383b1f19856a8bcdf2af5b8e926b5129855e4ec61c4a813875bd585",
+    "tools/r04_reconcile_references.py": "0f573c6f19a2f3af34c09b119f90b1d6e618366580b886e2d8c3ac58c07404a8"
+  },
+  "changed_prior_artifacts": [
+    {
+      "path": "literature/literature_matrix.csv",
+      "before": "5cdd950c560e3d44decf646d4f414bf4cff22fba9c92e4aaee120dee89be4dec",
+      "after": "010e8304abce7b50996c1fc3fe92ebd7ad1a8ea85aa0870aa2e65efd46cbfc15"
+    },
+    {
+      "path": "literature/refs_verified_subset.bib",
+      "before": "f717562ef38bdfe2aa5baf6c498fed63aaa2a067d52ca83bf81032d77acbc425",
+      "after": "d49ced9bd383b1f19856a8bcdf2af5b8e926b5129855e4ec61c4a813875bd585"
+    }
+  ],
+  "next_action": "Read selected source passages for validity/method comparisons; update gap and proposal foundation before drafting literature"
+}

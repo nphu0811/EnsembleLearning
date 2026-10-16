@@ -1,0 +1,48 @@
+{
+  "random_forest_42": {
+    "feature_track": "all_features",
+    "model": "RandomForestClassifier",
+    "hyperparameters": {
+      "max_features": 0.5,
+      "min_samples_leaf": 1,
+      "n_estimators": 300
+    },
+    "decision_threshold": 0.5
+  },
+  "stacking_42": {
+    "feature_track": "all_features",
+    "model": "StackingClassifier",
+    "base_learners": {
+      "logistic_regression": {
+        "C": 1.0,
+        "solver": "liblinear"
+      },
+      "decision_tree": {
+        "min_samples_leaf": 2
+      },
+      "random_forest": {
+        "max_features": 0.5,
+        "min_samples_leaf": 1,
+        "n_estimators": 300
+      }
+    },
+    "meta_learner": {
+      "model": "LogisticRegression",
+      "C": 0.5,
+      "class_weight": null,
+      "solver": "liblinear"
+    },
+    "inner_cv": 3,
+    "decision_threshold": 0.5
+  },
+  "random_forest_17": {
+    "feature_track": "stable_17_features",
+    "model": "RandomForestClassifier",
+    "hyperparameters": {
+      "max_features": 0.5,
+      "min_samples_leaf": 2,
+      "n_estimators": 150
+    },
+    "decision_threshold": 0.5
+  }
+}

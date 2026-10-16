@@ -1,0 +1,105 @@
+{
+  "task": "P15-02C2 isolated CURRENT-runtime smoke test, not original-training verification",
+  "generated_utc": "2026-10-10T19:11:46.612450+00:00",
+  "project_root": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH",
+  "host_python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+  "host_executable": "C:\\Users\\admin\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+  "venv": "D:\\NCKH_repro_py314",
+  "execute_requested": true,
+  "requirements_file": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\reproducibility\\requirements-observed-py314-NOT-ORIGINAL-TRAINING.txt",
+  "requirements_sha256": "1262cb939d623b050dd02179ed8702936d44df3a10e6336eb123b45374685bf3",
+  "required_min_free_bytes": 1500000000,
+  "available_bytes_on_target_drive": 132160704512,
+  "expected_versions": {
+    "joblib": "1.5.3",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.1",
+    "threadpoolctl": "3.6.0",
+    "tzdata": "2026.3"
+  },
+  "checkpoints": {
+    "requirement_pins_match": true,
+    "host_is_python_314": true,
+    "free_disk_above_threshold": true,
+    "venv_exists_before": false,
+    "create_venv": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "venv_pip_version": {
+      "returncode": 0,
+      "stdout": "pip 25.3 from D:\\NCKH_repro_py314\\Lib\\site-packages\\pip (python 3.14)\n\n",
+      "stderr": ""
+    },
+    "pip_install_returncode": 0,
+    "pip_check": {
+      "returncode": 0,
+      "stdout": "No broken requirements found.\n",
+      "stderr": ""
+    },
+    "pip_freeze_returncode": 0,
+    "smoke_returncode": 0,
+    "smoke_stderr": "",
+    "imported_packages": {
+      "executable": "D:\\NCKH_repro_py314\\Scripts\\python.exe",
+      "prefix": "D:\\NCKH_repro_py314",
+      "base_prefix": "C:\\Users\\admin\\AppData\\Local\\Python\\pythoncore-3.14-64",
+      "versions": {
+        "joblib": {
+          "version": "1.5.3",
+          "matches": true,
+          "origin": "D:\\NCKH_repro_py314\\Lib\\site-packages\\joblib\\__init__.py"
+        },
+        "matplotlib": {
+          "version": "3.11.1",
+          "matches": true,
+          "origin": "D:\\NCKH_repro_py314\\Lib\\site-packages\\matplotlib\\__init__.py"
+        },
+        "numpy": {
+          "version": "2.5.2",
+          "matches": true,
+          "origin": "D:\\NCKH_repro_py314\\Lib\\site-packages\\numpy\\__init__.py"
+        },
+        "pandas": {
+          "version": "3.0.5",
+          "matches": true,
+          "origin": "D:\\NCKH_repro_py314\\Lib\\site-packages\\pandas\\__init__.py"
+        },
+        "scikit-learn": {
+          "version": "1.9.0",
+          "matches": true,
+          "origin": "D:\\NCKH_repro_py314\\Lib\\site-packages\\sklearn\\__init__.py"
+        },
+        "scipy": {
+          "version": "1.18.1",
+          "matches": true,
+          "origin": "D:\\NCKH_repro_py314\\Lib\\site-packages\\scipy\\__init__.py"
+        },
+        "threadpoolctl": {
+          "version": "3.6.0",
+          "matches": true,
+          "origin": "D:\\NCKH_repro_py314\\Lib\\site-packages\\threadpoolctl.py"
+        },
+        "tzdata": {
+          "version": "2026.3",
+          "matches": true,
+          "origin": "D:\\NCKH_repro_py314\\Lib\\site-packages\\tzdata\\__init__.py"
+        }
+      }
+    },
+    "venv_isolated": true,
+    "all_pins_match": true,
+    "all_module_paths_within_venv": true,
+    "pip_check_pass": true
+  },
+  "limitations": [
+    "Does not establish original training environment",
+    "No model/dataset loading or retraining",
+    "Resolved dependency versions do not constitute a hash-locked supply-chain lock"
+  ],
+  "status": "PASS_CLEAN_ENV_CURRENT_ANALYSIS_ONLY"
+}

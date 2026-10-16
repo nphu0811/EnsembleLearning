@@ -1,0 +1,20 @@
+{
+  "phase": "5.1",
+  "dataset": "UNSW-NB15",
+  "source": "official predefined training split only",
+  "official_test_loaded": false,
+  "train_rows": 175341,
+  "selection_sample_rows": 100000,
+  "selection_sample_strategy": "stratified random sample from official training split",
+  "random_state": 42,
+  "original_feature_count": 42,
+  "top_k": 20,
+  "correlation_threshold": 0.95,
+  "methods": [
+    "Mutual Information + Spearman redundancy pruning",
+    "L1 Logistic Regression",
+    "Extra Trees feature importance",
+    "Consensus voting across methods"
+  ],
+  "note": "Candidate generation only. No subset is declared best. Final evaluation must occur in later CV/validation."
+}

@@ -1,0 +1,98 @@
+{
+  "status": "BLOCKED_RUNTIME_RESOLVER_AND_RENDERER",
+  "scope": "DOCX export only; no research rerun or confirmed-content revision",
+  "workspace": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH",
+  "skill": "C:\\Users\\admin\\.codex\\plugins\\cache\\openai-primary-runtime\\documents\\26.1013.11914\\skills\\documents\\SKILL.md",
+  "skill_sha256": "e3e5486c9e9f8c59ec89dd9de997bb76a4b65db7960d72437df2f5ed26a4df7f",
+  "loader_tools_exposed": [],
+  "documents_local_plugin_enabled": {
+    "enabled": true
+  },
+  "runtime_manifest": {
+    "artifactToolVersion": "2.8.94",
+    "bundleFormatVersion": 2,
+    "bundleVersion": "26.1013.11914",
+    "bundledPlugins": [
+      "plugins/openai-primary-runtime"
+    ],
+    "bundledSkills": [],
+    "libreOfficeVersion": null,
+    "nativeDependencies": [
+      "libheif",
+      "jxrlib",
+      "poppler",
+      "powershell",
+      "git"
+    ],
+    "nodeVersion": "v24.19.0",
+    "pnpmVersion": "11.25.0",
+    "pythonVersion": "3.12.14",
+    "skillsToRemove": [
+      "codex-primary-runtime/spreadsheets",
+      "codex-primary-runtime/slides",
+      "doc",
+      "docs",
+      "spreadsheet",
+      "slides"
+    ],
+    "targetArch": "x64",
+    "targetPlatform": "win32"
+  },
+  "native_executables": {
+    "heif-convert": "../../native/libheif/libheif/bin/heif-convert.exe",
+    "JxrDecApp": "../../native/jxrlib/jxrlib/bin/JxrDecApp.exe",
+    "pdfinfo": "../../native/poppler/Library/bin/pdfinfo.exe",
+    "pdftoppm": "../../native/poppler/Library/bin/pdftoppm.exe"
+  },
+  "runtime_env": {
+    "RUNTIME_NODE": null,
+    "RUNTIME_PYTHON": null,
+    "RUNTIME_NODE_MODULES": null,
+    "RUNTIME_BIN_DIR": null,
+    "CODEX_PRIMARY_RUNTIME_NODE_MODULES": null,
+    "CODEX_PRIMARY_RUNTIME_PYTHON": null,
+    "CODEX_PRIMARY_RUNTIME_ROOT": null
+  },
+  "managed_paths_exist": {
+    "dependencies/node/bin/node.exe": true,
+    "dependencies/python/python.exe": true,
+    "dependencies/node/node_modules/docx/package.json": true
+  },
+  "soffice_on_path": null,
+  "bundled_soffice_files": [],
+  "word_connected_sessions_observed": 0,
+  "public_plugin_lookup": "documents@openai-primary-runtime: plugin_not_found; not evidence that local built-in plugin is absent",
+  "template_zip_sha256": "8bdfa9a0f5a26f03115ac8435a851417d1ef48e98749d5f48dd52ae7de831bf0",
+  "template_zip_members": [
+    "main.tex",
+    "thesis.sty",
+    "refs.bib",
+    "styles/settings.tex",
+    "chapters/chap-0.phan-mo-dau.tex",
+    "chapters/chap-1-background.tex",
+    "chapters/chap-2-method.tex",
+    "chapters/conclusion.tex",
+    "chapters/chap-3.tex",
+    "pages/acknowledgments.tex",
+    "pages/declaration.tex",
+    "pages/abbreviations.tex",
+    "assets/Logo_PTIT_University.png",
+    "assets/cnn.jpeg",
+    "figures/social-thumbnail.png"
+  ],
+  "template_zip_docx_count": 0,
+  "main_manuscript_source": "notebook/phase13/phase13_4_manuscript_with_figures_tables.md",
+  "main_manuscript_sha256": "a7cddcf5cb2eeaccd6d9ad2bbf678474a4bcda0481960a40512a67c3eda018b2",
+  "content_status": "Existing integrated manuscript is a historical premature reporting draft, not a final approved report. Preserved without rewriting.",
+  "preservation": {
+    "manifest_rows": 60,
+    "all_byte_hash_checks_pass": true,
+    "main_images": 6,
+    "all_main_image_links_resolve": true
+  },
+  "docx_created": false,
+  "render_run": false,
+  "layout_verified": false,
+  "global_installs_performed": false,
+  "skill_files_modified": false
+}

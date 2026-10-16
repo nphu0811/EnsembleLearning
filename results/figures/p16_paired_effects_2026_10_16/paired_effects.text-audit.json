@@ -1,0 +1,10 @@
+{
+  "pdf": "results\\figures\\p16_paired_effects_2026_10_16\\paired_effects.pdf",
+  "auditable": true,
+  "minimum_required_pt": 5.0,
+  "minimum_found_pt": 8.0,
+  "text_run_count": 25,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "warnings": []
+}

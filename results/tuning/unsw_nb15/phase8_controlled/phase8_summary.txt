@@ -1,0 +1,29 @@
+PHASE 8 — CONTROLLED TUNING SUMMARY
+==================================================================================
+
+IMPORTANT:
+- Official TEST was not loaded.
+- Hyperparameter selection used TRAIN only.
+- Threshold sweep is diagnostic; deployment threshold remains 0.5.
+
+TUNED RANDOM FOREST — 42 FEATURES
+{"max_features": 0.5, "min_samples_leaf": 1, "n_estimators": 300}
+
+TUNED RANDOM FOREST — 17 FEATURES
+{"max_features": 0.5, "min_samples_leaf": 2, "n_estimators": 150}
+
+TUNED STACKING META LEARNER — 42 FEATURES
+{"C": 0.5, "class_weight": null}
+
+STACKING META THRESHOLD DIAGNOSTIC
+At threshold 0.50: Macro-F1=0.9535, FPR=0.0781, FNR=0.0222
+Highest development Macro-F1 in sweep occurs near threshold=0.52: Macro-F1=0.9537, FPR=0.0756, FNR=0.0233
+
+PREDECLARED FREEZE CANDIDATES
+- random_forest_42
+- stacking_42
+- random_forest_17
+
+NEXT:
+Review tuning stability and threshold trade-offs before freezing.
+Do not open the official test until the freeze decision is documented.

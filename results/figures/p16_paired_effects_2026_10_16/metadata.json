@@ -1,0 +1,16 @@
+{
+  "input": "results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+  "input_sha256": "3338849b204702597a05c271cb309f2928e9850a1e2d5dedc6a54548256f7d90",
+  "source_rows": 24,
+  "selected_rows": 4,
+  "selection_rule": "official_test; stacking_42 minus random_forest_42; all four stored metrics",
+  "omitted_rows": 20,
+  "omission_reason": "Other model/view contrasts outside this figure contract; preserved in source",
+  "transform": "All delta/CI values multiplied by 100; not relative percent change",
+  "new_bootstrap": false,
+  "training_or_prediction": false,
+  "width_mm": 183,
+  "height_mm": 100,
+  "script_sha256": "82bae85c1b4dd6a1d67b3f29c661142163a4ec6f90af18dc01d7384f42ced959",
+  "matplotlib_version": "3.11.1"
+}

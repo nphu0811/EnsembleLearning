@@ -1,0 +1,16 @@
+{
+  "artifact_manifest_entries": 148,
+  "manifest_hashes_passed": 148,
+  "preserved_historical_files": 282,
+  "legacy_final_records": 12,
+  "legacy_metadata_verified": 4,
+  "foundation_rechecks": [
+    7.8125,
+    7.75
+  ],
+  "partial_section_score_before_minor_edits": 7.5,
+  "defense_questions": 20,
+  "source_and_raw_frozen_unchanged": true,
+  "training_or_prediction": false,
+  "release": "NOT_READY_FOR_SUBMISSION"
+}

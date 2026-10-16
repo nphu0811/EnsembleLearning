@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.dll
+*.so
+*.dylib
+
+# Caches and logs
+.pytest_cache/
+.ipynb_checkpoints/
+*.log
+.kilo/
+.kilocode/
+
+# Virtual environments & runtimes
+venv/
+.venv/
+env/
+*_runtime/
+*runtime*/
+clean_stdlib_runtime/
+r04_ml_smoke_runtime/
+
+# Large Datasets (>100MB blocked by GitHub)
+data/raw/
+data/interim/
+data/processed/
+
+# OS generated files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6 @@
+group,support,sttl_min,sttl_q1,sttl_median,sttl_q3,sttl_max
+ALL_NORMAL,37000,0.0,31.0,62.0,254.0,254.0
+both_correct,26719,0.0,31.0,31.0,62.0,254.0
+stack_correct_rf_wrong,420,62.0,254.0,254.0,254.0,254.0
+rf_correct_stack_wrong,278,62.0,254.0,254.0,254.0,254.0
+both_wrong,9583,62.0,254.0,254.0,254.0,254.0

@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "original_order": true,
+    "admin_placeholders": true,
+    "domestic_labels_kept": true,
+    "report_copies": true,
+    "CD_conditions": true,
+    "no_pagination_conflict_reference": true,
+    "used_refs_verified": true,
+    "coverage_validation": true,
+    "explicit_non_docx": true,
+    "retrospective": true
+  },
+  "passed": true,
+  "scope": "Content/order/source coverage only; full-content review separate; no form/render/admin pass"
+}

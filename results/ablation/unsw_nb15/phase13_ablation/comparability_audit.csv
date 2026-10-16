@@ -1,0 +1,6 @@
+feature_track,n_s71,n_s72,n_matched,n_unique_keys,n_folds,shared_base_prediction_agreement,rf_probability_equals_score,contrast_id,comparability_status,reason
+all_features,175341.0,175341.0,175341.0,175341.0,3.0,"{""random_forest"": 1.0}",False,,,
+stable_17_features,175341.0,175341.0,175341.0,175341.0,3.0,"{""random_forest"": 1.0}",False,,,
+,,,,,,,,A5b_stacking_tuning_gain,NOT_COMPARABLE,Phase7.2 nested outer/inner CV differs from Phase8 five-fold meta CV on global base OOF; tuned RF also changes.
+,,,,,,,,A6a_synthetic_resampling,DESIGN_ONLY,No matched resampling branch exists; TRAIN Attack is 68.06% and TEST is locked.
+,,,,,,,,A4_RF42_vs_RF17_isolated_FS,NOT_COMPARABLE_AS_PURE_FS,Frozen Phase9 RF42 and RF17 differ in feature set and RF hyperparameters.

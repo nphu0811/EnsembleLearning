@@ -1,0 +1,111 @@
+{
+  "copied_originals": [
+    {
+      "source": "C:\\Users\\admin\\Downloads\\DE-TAI-NCKHSV-15.zip",
+      "destination": "templates/original/DE-TAI-NCKHSV-15.zip",
+      "sha256": "8bdfa9a0f5a26f03115ac8435a851417d1ef48e98749d5f48dd52ae7de831bf0",
+      "same_bytes": true
+    },
+    {
+      "source": "C:\\Users\\admin\\Downloads\\Mau-De-cuong-NCKH-Sinh-vien-2026-7-trieu.docx",
+      "destination": "templates/original/Mau-De-cuong-NCKH-Sinh-vien-2026-7-trieu.docx",
+      "sha256": "bedb06dcecfc40a4d04a9412022509f039f7c4e64e6d779aa13b7dc9ec3d26c7",
+      "same_bytes": true
+    }
+  ],
+  "zip_contains_docx": false,
+  "zip_entries": [
+    {
+      "entry": "main.tex",
+      "sha256": "7a8088ea6a15ab69211727dc1d47499abed96ae68fa7fcf34a47572738107a9a",
+      "existing_sha256": "7a8088ea6a15ab69211727dc1d47499abed96ae68fa7fcf34a47572738107a9a",
+      "existing_matches_zip": true
+    },
+    {
+      "entry": "thesis.sty",
+      "sha256": "2a16545dc3a8cd7ffd0fc8447ca5f4ec78b37f72d787a5371ecdef4760809f1a",
+      "existing_sha256": "2a16545dc3a8cd7ffd0fc8447ca5f4ec78b37f72d787a5371ecdef4760809f1a",
+      "existing_matches_zip": true
+    },
+    {
+      "entry": "refs.bib",
+      "sha256": "496e5b2420006b0a33037dc9899eeb74c0fd2c5606b5bcc173e4c5683351e41e",
+      "existing_sha256": "496e5b2420006b0a33037dc9899eeb74c0fd2c5606b5bcc173e4c5683351e41e",
+      "existing_matches_zip": true
+    },
+    {
+      "entry": "styles/settings.tex",
+      "sha256": "06d8e8b876903027251de646e903dbbe44764d3672544dcb44903c47558a3394",
+      "existing_sha256": "06d8e8b876903027251de646e903dbbe44764d3672544dcb44903c47558a3394",
+      "existing_matches_zip": true
+    },
+    {
+      "entry": "chapters/chap-0.phan-mo-dau.tex",
+      "sha256": "d9f54c76b6687075bd647f9ba6d568386ee036a47cc074bb78aa9d74923bbaa9",
+      "existing_sha256": "d9f54c76b6687075bd647f9ba6d568386ee036a47cc074bb78aa9d74923bbaa9",
+      "existing_matches_zip": true
+    },
+    {
+      "entry": "chapters/chap-1-background.tex",
+      "sha256": "bb947fc1fd5105433fd858b5d0250555b2bbfd284ed47623ba6510887cf4f2d3",
+      "existing_sha256": "bb947fc1fd5105433fd858b5d0250555b2bbfd284ed47623ba6510887cf4f2d3",
+      "existing_matches_zip": true
+    },
+    {
+      "entry": "chapters/chap-2-method.tex",
+      "sha256": "a6cb34d9e7c43e0a70e73a2c98a0643e389c46cf2d9da704980e062dc7880b02",
+      "existing_sha256": "a6cb34d9e7c43e0a70e73a2c98a0643e389c46cf2d9da704980e062dc7880b02",
+      "existing_matches_zip": true
+    },
+    {
+      "entry": "chapters/conclusion.tex",
+      "sha256": "13a4a4efd38aac00d28e40928870645fc572eb29b193e045479e1eea1705cb48",
+      "existing_sha256": "13a4a4efd38aac00d28e40928870645fc572eb29b193e045479e1eea1705cb48",
+      "existing_matches_zip": true
+    },
+    {
+      "entry": "chapters/chap-3.tex",
+      "sha256": "031d2130c9dbf22f7348273a7ea8318ebb998c0aa3290d911b24417cfaac7261",
+      "existing_sha256": "031d2130c9dbf22f7348273a7ea8318ebb998c0aa3290d911b24417cfaac7261",
+      "existing_matches_zip": true
+    },
+    {
+      "entry": "pages/acknowledgments.tex",
+      "sha256": "f352fd7f09002d11462e0227eb6ae20e5883805228afd2c83dc8f58ff4755a0b",
+      "existing_sha256": "f352fd7f09002d11462e0227eb6ae20e5883805228afd2c83dc8f58ff4755a0b",
+      "existing_matches_zip": true
+    },
+    {
+      "entry": "pages/declaration.tex",
+      "sha256": "1cd72dec19b8ef035ad623f367e2e6fcf73b293b0f6a763d186534e7faf6213f",
+      "existing_sha256": "1cd72dec19b8ef035ad623f367e2e6fcf73b293b0f6a763d186534e7faf6213f",
+      "existing_matches_zip": true
+    },
+    {
+      "entry": "pages/abbreviations.tex",
+      "sha256": "6e593bf32085ab10cb8db3cc6df9ae1026487bebe3e7e4acff2836ee8a279d8c",
+      "existing_sha256": "6e593bf32085ab10cb8db3cc6df9ae1026487bebe3e7e4acff2836ee8a279d8c",
+      "existing_matches_zip": true
+    },
+    {
+      "entry": "assets/Logo_PTIT_University.png",
+      "sha256": "2d804f4c34eb3b75925c4c5804cb3cb28936257ba65879a8c99e3d94dc2b7b9a",
+      "existing_sha256": "2d804f4c34eb3b75925c4c5804cb3cb28936257ba65879a8c99e3d94dc2b7b9a",
+      "existing_matches_zip": true
+    },
+    {
+      "entry": "assets/cnn.jpeg",
+      "sha256": "a8599e5473af3af917b3bbea2d0615857378879b6276c8478668be2befc33e7c",
+      "existing_sha256": "a8599e5473af3af917b3bbea2d0615857378879b6276c8478668be2befc33e7c",
+      "existing_matches_zip": true
+    },
+    {
+      "entry": "figures/social-thumbnail.png",
+      "sha256": "d3541d7bb57211a89a35869fc4f44302e4487309e377db97ad8b51e0961eb6c8",
+      "existing_sha256": "d3541d7bb57211a89a35869fc4f44302e4487309e377db97ad8b51e0961eb6c8",
+      "existing_matches_zip": true
+    }
+  ],
+  "docx_table_count": 8,
+  "scope": "ZIP and OOXML structural inspection; visual rendering NOT performed"
+}

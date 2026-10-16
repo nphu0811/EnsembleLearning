@@ -1,0 +1,70 @@
+{
+  "check_id": "P15-03A",
+  "generated_utc": "2026-10-16T02:14:30.174417+00:00",
+  "project_root": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH",
+  "python_executable": "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "python_version": "3.11.9",
+  "baseline_source": "Phase3 raw_file_checksums.csv (audit snapshot 2026-10-10); NOT UNSW official checksums",
+  "scope": "Original three raw CSV files only; no training or re-evaluation",
+  "files": [
+    {
+      "file": "UNSW_NB15_training-set.csv",
+      "relative_path": "data\\raw\\unsw-nb15\\UNSW_NB15_training-set.csv",
+      "status": "PASS",
+      "checks": {
+        "size_match": true,
+        "hash_match": true,
+        "rows_match": true,
+        "columns_match": true,
+        "labels_match": true,
+        "schema_valid": true
+      },
+      "problems": [],
+      "actual_size_bytes": 32293018,
+      "actual_sha256": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa",
+      "rows": 175341,
+      "columns": 45,
+      "label_counts": {
+        "0": 56000,
+        "1": 119341
+      }
+    },
+    {
+      "file": "UNSW_NB15_testing-set.csv",
+      "relative_path": "data\\raw\\unsw-nb15\\UNSW_NB15_testing-set.csv",
+      "status": "PASS",
+      "checks": {
+        "size_match": true,
+        "hash_match": true,
+        "rows_match": true,
+        "columns_match": true,
+        "labels_match": true,
+        "schema_valid": true
+      },
+      "problems": [],
+      "actual_size_bytes": 15380800,
+      "actual_sha256": "734fe6642edf758f7c94d7d9149426b49d202fe8e7bf0bef47392489c3c0a559",
+      "rows": 82332,
+      "columns": 45,
+      "label_counts": {
+        "0": 37000,
+        "1": 45332
+      }
+    },
+    {
+      "file": "NUSW-NB15_features.csv",
+      "relative_path": "data\\raw\\unsw-nb15\\NUSW-NB15_features.csv",
+      "status": "PASS",
+      "checks": {
+        "size_match": true,
+        "hash_match": true
+      },
+      "problems": [],
+      "actual_size_bytes": 4044,
+      "actual_sha256": "c55f19cceebb6360dc50f44f8a5f246ccefbcf8a6c604ac1ad46e643869cafce"
+    }
+  ],
+  "train_test_columns_identical": true,
+  "status": "PASS",
+  "warning": "A PASS validates local raw files against a historical audit, not the exact URL/location from which the files were originally downloaded."
+}

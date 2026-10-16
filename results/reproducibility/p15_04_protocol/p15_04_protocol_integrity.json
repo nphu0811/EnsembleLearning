@@ -1,0 +1,169 @@
+{
+  "check_id": "P15-04",
+  "generated_utc": "2026-10-16T01:28:05.453025+00:00",
+  "project_root": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH",
+  "scope": "Read-only code hashes + saved protocol manifests; no CSV data read; no model fit/predict",
+  "source_files": {
+    "src/features/select_unsw_features_stage1.py": {
+      "status": "MATCH",
+      "expected_sha256": "05a5914ade807c32049effa580e5fd862a5ec15a45ce00844c4e6f61505762d1",
+      "observed_sha256": "05a5914ade807c32049effa580e5fd862a5ec15a45ce00844c4e6f61505762d1"
+    },
+    "src/features/select_unsw_features_stage2.py": {
+      "status": "MATCH",
+      "expected_sha256": "4c04d4a15e51e3d79487d089ee30bcccecbfcd7969eeaa8b0eedeb8cc249521e",
+      "observed_sha256": "4c04d4a15e51e3d79487d089ee30bcccecbfcd7969eeaa8b0eedeb8cc249521e"
+    },
+    "src/models/run_unsw_baseline_development.py": {
+      "status": "MATCH",
+      "expected_sha256": "463f0948d77d75ff18220d499c6a643263ce5d693e6b02af7b3d197a614f1ccf",
+      "observed_sha256": "463f0948d77d75ff18220d499c6a643263ce5d693e6b02af7b3d197a614f1ccf"
+    },
+    "src/models/run_unsw_diversity_oof.py": {
+      "status": "MATCH",
+      "expected_sha256": "69b779fe95c78b204f8dc55d5dd1c208d5cb7492711273ef3feee066b596660d",
+      "observed_sha256": "69b779fe95c78b204f8dc55d5dd1c208d5cb7492711273ef3feee066b596660d"
+    },
+    "src/models/run_unsw_ensemble_phase7_2.py": {
+      "status": "MATCH",
+      "expected_sha256": "d2f22ea57172053c6b21dab4eda182bd2fcba23ce1182e725197ea43a826e1fb",
+      "observed_sha256": "d2f22ea57172053c6b21dab4eda182bd2fcba23ce1182e725197ea43a826e1fb"
+    },
+    "src/models/run_unsw_phase8_controlled_tuning.py": {
+      "status": "MATCH",
+      "expected_sha256": "76b11692154bff6004fac2153a80626779ef6468578aecfeb7f46102327f4bce",
+      "observed_sha256": "76b11692154bff6004fac2153a80626779ef6468578aecfeb7f46102327f4bce"
+    },
+    "src/models/run_unsw_phase9_final_holdout.py": {
+      "status": "MATCH",
+      "expected_sha256": "3e7d1369222ccdf452116e069a0db3df55e1d6d683d0f92f4e2bcde0800ae480",
+      "observed_sha256": "3e7d1369222ccdf452116e069a0db3df55e1d6d683d0f92f4e2bcde0800ae480"
+    }
+  },
+  "metadata": {
+    "stage2": {
+      "status": "LOADED",
+      "relative_path": "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json",
+      "sha256": "5a8fe201c88b49a2c018778f6d159a107b6fdfa810c05c1606e42e6d675244be"
+    },
+    "phase8": {
+      "status": "LOADED",
+      "relative_path": "results/tuning/unsw_nb15/phase8_controlled/experiment_metadata.json",
+      "sha256": "119bb09d1f85a75eac6aa2e4f897c6060911aed57b8a7076776806a352c32ba4"
+    },
+    "freeze": {
+      "status": "LOADED",
+      "relative_path": "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+      "sha256": "cdda800318c5d2259e581bff5b194381be7434d654950377dd4b40fca50be0a6"
+    },
+    "phase9": {
+      "status": "LOADED",
+      "relative_path": "results/final_evaluation/unsw_nb15/phase9_holdout/experiment_metadata.json",
+      "sha256": "661a2716706588f8684f09dac5f43dd81c38e2622dcba7b6783163f8a91be6ab"
+    }
+  },
+  "checks": {
+    "feature_subset_17": {
+      "status": "PASS",
+      "detail": "stable_2plus_methods count=17"
+    },
+    "phase8_official_test_not_loaded": {
+      "status": "PASS",
+      "detail": "Phase 8 metadata official_test_loaded=False"
+    },
+    "phase9_official_test_evaluated": {
+      "status": "PASS",
+      "detail": "Phase 9 metadata official_test_opened=True"
+    },
+    "official_split_sizes": {
+      "status": "PASS",
+      "detail": "train=175341; test=82332"
+    },
+    "three_frozen_models": {
+      "status": "PASS",
+      "detail": "models=['random_forest_17', 'random_forest_42', 'stacking_42']"
+    },
+    "manifest_unchanged_in_phase9": {
+      "status": "PASS",
+      "detail": "Phase 8 freeze_candidates JSON compared with Phase 9 experiment_metadata frozen_candidates"
+    },
+    "frozen_thresholds_0_5": {
+      "status": "PASS",
+      "detail": "All three final-model thresholds must equal 0.5"
+    },
+    "dataset_label": {
+      "status": "PASS",
+      "detail": "Both saved metadata records identify UNSW-NB15"
+    },
+    "source_matches_historical_audit": {
+      "status": "PASS",
+      "detail": "Seven critical script SHA-256 digests compared with audit snapshot; exact line evidence requires MATCH"
+    }
+  },
+  "code_evidence": [
+    {
+      "topic": "CV seed",
+      "path": "src/models/run_unsw_phase9_final_holdout.py",
+      "lines": "72-73",
+      "finding": "RANDOM_STATE=42; STACKING_INNER_RANDOM_STATE=137"
+    },
+    {
+      "topic": "Feature inputs",
+      "path": "src/models/run_unsw_phase9_final_holdout.py",
+      "lines": "222-232",
+      "finding": "Drops id, label, attack_cat from model features"
+    },
+    {
+      "topic": "Preprocessing",
+      "path": "src/models/run_unsw_phase9_final_holdout.py",
+      "lines": "270-325,332-403",
+      "finding": "Unknown categories ignored; preprocessing occurs inside sklearn Pipeline"
+    },
+    {
+      "topic": "Stacking internal CV",
+      "path": "src/models/run_unsw_phase9_final_holdout.py",
+      "lines": "466-509",
+      "finding": "StratifiedKFold inner CV; StackingClassifier predict_proba; passthrough=False"
+    },
+    {
+      "topic": "Frozen official evaluation",
+      "path": "src/models/run_unsw_phase9_final_holdout.py",
+      "lines": "932-943,991-1073",
+      "finding": "Loads official train/test, frozen manifest; fits frozen models only on train"
+    },
+    {
+      "topic": "RF and meta tuning",
+      "path": "src/models/run_unsw_phase8_controlled_tuning.py",
+      "lines": "462-483,603-610,638-662",
+      "finding": "Training-only GridSearchCV, base OOF predictions via cross_val_predict, meta-model tuning"
+    },
+    {
+      "topic": "Ensemble validation",
+      "path": "src/models/run_unsw_ensemble_phase7_2.py",
+      "lines": "428-449,675-725,1113-1127",
+      "finding": "Outer StratifiedKFold and nested internal StackingClassifier CV"
+    },
+    {
+      "topic": "Feature selection timing",
+      "path": "src/features/select_unsw_features_stage2.py",
+      "lines": "793-804,901-913",
+      "finding": "Stage2 features selected using full official TRAIN before development CV"
+    },
+    {
+      "topic": "Feature selection seed",
+      "path": "src/features/select_unsw_features_stage2.py",
+      "lines": "53-62",
+      "finding": "Stability seeds 11,23,42,71,101"
+    }
+  ],
+  "known_limitations": [
+    "Historical original-training Python and package versions UNKNOWN; current reference venv is not proof of original environment.",
+    "Feature selection is done on the entire official TRAIN before development CV; development scores can be optimistic (selection outside CV folds).",
+    "Stratified shuffled CV is not a time/session-group split. Original official train/test may have feature-vector overlap; do not claim independent temporal validation.",
+    "Static source checks plus metadata do NOT prove the original scripts executed exactly as currently stored, or that every data-leakage mode was excluded.",
+    "Meta learner tuning reuses saved base OOF features from the full training set; do not call this a completely nested unbiased CV estimate."
+  ],
+  "status": "STATIC_PROTOCOL_EVIDENCE_MATCH_WITH_CAVEATS",
+  "errors": [],
+  "note": "PASS of check items means static recorded protocol consistency; NOT independent end-to-end reproducibility or no-leakage certification."
+}

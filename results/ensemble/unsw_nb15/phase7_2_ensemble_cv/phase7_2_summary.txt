@@ -1,0 +1,41 @@
+PHASE 7.2 — ENSEMBLE DEVELOPMENT SUMMARY
+==================================================================================
+
+IMPORTANT:
+- Official TEST was not loaded.
+- All configurations used identical outer folds.
+- Stacking meta-model was trained only from INNER-CV predictions
+  generated inside each outer-training fold.
+
+POOLED OOF PERFORMANCE
+
+[all_features]
+- stacking_lrdtrf: Macro-F1=0.9515, MCC=0.9032, FPR=0.0805, FNR=0.0237, ROC-AUC=0.9935
+- random_forest: Macro-F1=0.9504, MCC=0.9016, FPR=0.0942, FNR=0.0182, ROC-AUC=0.9935
+- hard_voting_lrdtrf: Macro-F1=0.9473, MCC=0.8963, FPR=0.1094, FNR=0.0145, ROC-AUC=0.9690
+- soft_voting_lrdtrf: Macro-F1=0.9468, MCC=0.8941, FPR=0.0952, FNR=0.0225, ROC-AUC=0.9922
+- adaboost: Macro-F1=0.9252, MCC=0.8550, FPR=0.1632, FNR=0.0155, ROC-AUC=0.9868
+
+[stable_17_features]
+- stacking_lrdtrf: Macro-F1=0.9418, MCC=0.8839, FPR=0.0977, FNR=0.0278, ROC-AUC=0.9909
+- random_forest: Macro-F1=0.9413, MCC=0.8836, FPR=0.1096, FNR=0.0223, ROC-AUC=0.9911
+- hard_voting_lrdtrf: Macro-F1=0.9399, MCC=0.8813, FPR=0.1188, FNR=0.0194, ROC-AUC=0.9589
+- soft_voting_lrdtrf: Macro-F1=0.9389, MCC=0.8790, FPR=0.1135, FNR=0.0234, ROC-AUC=0.9898
+- adaboost: Macro-F1=0.9210, MCC=0.8483, FPR=0.1795, FNR=0.0123, ROC-AUC=0.9842
+
+COST
+- all_features / random_forest: fit=42.39s/fold, inference=0.014333 ms/sample, size=68.91 MB
+- all_features / soft_voting_lrdtrf: fit=58.69s/fold, inference=0.029986 ms/sample, size=69.44 MB
+- all_features / hard_voting_lrdtrf: fit=58.90s/fold, inference=0.033480 ms/sample, size=69.44 MB
+- all_features / adaboost: fit=77.14s/fold, inference=0.053976 ms/sample, size=0.10 MB
+- all_features / stacking_lrdtrf: fit=156.05s/fold, inference=0.032754 ms/sample, size=69.44 MB
+- stable_17_features / random_forest: fit=26.24s/fold, inference=0.012052 ms/sample, size=55.25 MB
+- stable_17_features / adaboost: fit=27.85s/fold, inference=0.033973 ms/sample, size=0.09 MB
+- stable_17_features / hard_voting_lrdtrf: fit=31.09s/fold, inference=0.027168 ms/sample, size=55.96 MB
+- stable_17_features / soft_voting_lrdtrf: fit=31.12s/fold, inference=0.018705 ms/sample, size=55.96 MB
+- stable_17_features / stacking_lrdtrf: fit=82.48s/fold, inference=0.018732 ms/sample, size=55.96 MB
+
+NEXT:
+Use performance + FPR/FNR + cost to freeze a very small number
+of candidate pipelines. Do NOT open the official test until the
+configuration decision is documented.

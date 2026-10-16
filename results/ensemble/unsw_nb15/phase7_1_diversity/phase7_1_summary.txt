@@ -1,0 +1,35 @@
+PHASE 7.1 — OOF DIVERSITY SUMMARY
+================================================================================
+
+IMPORTANT:
+- Official TEST was not loaded.
+- Each OOF prediction comes from a model that did not train on that row.
+- Diversity alone is not enough to select an ensemble member.
+
+INDIVIDUAL OOF PERFORMANCE
+- all_features / random_forest: Macro-F1=0.9504, MCC=0.9016, FPR=0.0942, FNR=0.0182
+- all_features / decision_tree: Macro-F1=0.9368, MCC=0.8738, FPR=0.0744, FNR=0.0463
+- all_features / adaboost: Macro-F1=0.9252, MCC=0.8550, FPR=0.1632, FNR=0.0155
+- all_features / logistic_regression: Macro-F1=0.9218, MCC=0.8498, FPR=0.1780, FNR=0.0121
+- stable_17_features / random_forest: Macro-F1=0.9413, MCC=0.8836, FPR=0.1096, FNR=0.0223
+- stable_17_features / decision_tree: Macro-F1=0.9296, MCC=0.8593, FPR=0.0844, FNR=0.0509
+- stable_17_features / logistic_regression: Macro-F1=0.9210, MCC=0.8493, FPR=0.1846, FNR=0.0096
+- stable_17_features / adaboost: Macro-F1=0.9210, MCC=0.8483, FPR=0.1795, FNR=0.0123
+
+PAIRWISE DIVERSITY
+- all_features / decision_tree + adaboost: disagree=0.0693, double-fault=0.0243, oracle=0.9757, Q=0.8976, error-corr=0.3761
+- all_features / logistic_regression + decision_tree: disagree=0.0717, double-fault=0.0243, oracle=0.9757, Q=0.8917, error-corr=0.3680
+- all_features / decision_tree + random_forest: disagree=0.0471, double-fault=0.0253, oracle=0.9747, Q=0.9573, error-corr=0.4989
+- all_features / logistic_regression + random_forest: disagree=0.0459, double-fault=0.0308, oracle=0.9692, Q=0.9723, error-corr=0.5639
+- all_features / random_forest + adaboost: disagree=0.0419, double-fault=0.0316, oracle=0.9684, Q=0.9773, error-corr=0.5926
+- all_features / logistic_regression + adaboost: disagree=0.0325, double-fault=0.0476, oracle=0.9524, Q=0.9881, error-corr=0.7287
+- stable_17_features / logistic_regression + decision_tree: disagree=0.0718, double-fault=0.0277, oracle=0.9723, Q=0.9019, error-corr=0.3971
+- stable_17_features / decision_tree + adaboost: disagree=0.0709, double-fault=0.0282, oracle=0.9718, Q=0.9062, error-corr=0.4059
+- stable_17_features / random_forest + adaboost: disagree=0.0454, double-fault=0.0352, oracle=0.9648, Q=0.9722, error-corr=0.5903
+- stable_17_features / decision_tree + random_forest: disagree=0.0406, double-fault=0.0356, oracle=0.9644, Q=0.9771, error-corr=0.6188
+- stable_17_features / logistic_regression + random_forest: disagree=0.0444, double-fault=0.0356, oracle=0.9644, Q=0.9738, error-corr=0.5985
+- stable_17_features / logistic_regression + adaboost: disagree=0.0229, double-fault=0.0541, oracle=0.9459, Q=0.9948, error-corr=0.8132
+
+NEXT:
+Use strength + diversity + cost together to define justified
+Voting/Stacking configurations for Phase 7.2.

@@ -1,0 +1,6 @@
+state,fuzzers_support,both_caught,rf_caught_stack_missed,rf_missed_stack_caught,both_missed,rf_false_negatives,stacking_false_negatives,stacking_minus_rf_fn,rf_fnr_given_fuzzers_and_value,stacking_fnr_given_fuzzers_and_value
+FIN,3703,3148,110,21,424,445,534,89,0.12017283283823926,0.14420739940588712
+INT,2317,2072,70,26,149,175,219,44,0.0755287009063444,0.09451877427708244
+REQ,32,32,0,0,0,0,0,0,0.0,0.0
+CON,9,8,0,0,1,1,1,0,0.1111111111111111,0.1111111111111111
+ACC,1,1,0,0,0,0,0,0,0.0,0.0

@@ -1,0 +1,57 @@
+{
+  "task": "R04-READ",
+  "status": "DONE_SCOPED",
+  "note": "Five source-linked claims anchored to actual passages;10/10 capture checks PASS;L06 selected Methods,L09 indexed Introduction,D01/D02 bounded domestic sources;no full-paper read claim",
+  "timestamp": "2026-10-16T09:58:26.183960+00:00",
+  "artifacts": {
+    "literature/resume_r04_2026_10_16/api_ledger.json": "dc3ec84b9598be52fce3f5391656ae2dd67990208e1e3e066bad8d203324ab99",
+    "literature/resume_r04_2026_10_16/FIELD_VERIFICATION_REPORT.md": "f468aa1d42db2d27a17233cf68cac148e32463f540ba4ddca2b75ba8517051ce",
+    "literature/resume_r04_2026_10_16/L01_crossref.json": "26e77c51ce2eccdff306ef5a09a1dc1757a15ba3797a9fefa08e6e90d997fa30",
+    "literature/resume_r04_2026_10_16/L02_crossref.json": "4598c39aab470b5a3718e7c6cdc6caa4a372b298357b56b687262f274a3d6c51",
+    "literature/resume_r04_2026_10_16/L03_crossref.json": "55e46aa65aafe8e38105b7fda27943fd5845b40fb90a45f33a935ed20eeb5c18",
+    "literature/resume_r04_2026_10_16/L09_crossref.json": "7e5fa83608cd93a42e7452f689e9bf4fb799922722bf987f09d400721ad3862b",
+    "literature/resume_r04_2026_10_16/L10_crossref.json": "3f8285854f8e0eb9ab593c71c71738ee556425baa75d03c0f510ef86f9c85655",
+    "literature/resume_r04_2026_10_16/L12_crossref.json": "9347a242d7a429800239c5658bc151d8f82dec84eece7f54c19ef15a8f7b4a4d",
+    "literature/resume_r04_2026_10_16/legacy_verification_ledger.csv": "5a3c65b9cf5462c919d2d065dd7ff70b44558e172e6b1d0685d23551ff5cfb02",
+    "literature/resume_r04_2026_10_16/reading_capture_1.json": "fa7ead71f7b92970662901dfcf7d80b8697a68e66b5f5ea550f509ec0ede14bb",
+    "literature/resume_r04_2026_10_16/reading_capture_2.json": "2388676c6c51170f46b28802a1024e2a309ac44be697d01b6ada403978a46344",
+    "literature/resume_r04_2026_10_16/reading_capture_3.json": "9780aeceaa2a709bdd2b53fe6910a5ee312eabe5bb2f76b2a5a868d46d451f57",
+    "literature/resume_r04_2026_10_16/reading_capture_4.json": "58e8860c7432bc978fdf378e607d2978a0eccefe7e604b1a099a39f79736d45e",
+    "literature/resume_r04_2026_10_16/reading_validation.json": "fb1fa40ff64c75bba3257c74d1ca7e1e35c7c84d8c480c78147c8d726632f367",
+    "literature/resume_r04_2026_10_16/SCOPED_READING_NOTES.md": "cd8f76b20f0ac300f180798a076fceeabe42c9e50d1271d09223938aba03a9e0",
+    "literature/resume_r04_2026_10_16/source_claim_map.csv": "278ef231b18926582e1d7074ac3795287039654d99d393d301cdcf0a7972b012",
+    "literature/resume_r04_2026_10_16/validation.json": "4472e395118dafdaac726976313e0dba523f4094fc54da9d91297da864fcff9b",
+    "literature/resume_r04_2026_10_16/web_capture_1.json": "50ead502d0d30dd59aa3a0834b1ec6d8c4ff9203de095ccdae4b2b922f05ba1e",
+    "literature/resume_r04_2026_10_16/web_capture_10.json": "9e94b88d9eada9c8c19844e039c6bb7fd730faa3d42f7a5dba9b35c1a5df9754",
+    "literature/resume_r04_2026_10_16/web_capture_2.json": "c575d9ea166829d0e03bb020eaabd65be925057db7be1abbf437c53c041ce545",
+    "literature/resume_r04_2026_10_16/web_capture_3.json": "fb01b36cdc5771d4ec944493d4d3fd438955086729c220b97074f14a872299b7",
+    "literature/resume_r04_2026_10_16/web_capture_4.json": "63259e2544b616ebad8e2608980694d2ba807d04e0835e5e0a3aa9d850961fe4",
+    "literature/resume_r04_2026_10_16/web_capture_5.json": "c317b3431cbc6a74be3a8cb11d2b30f1d8b96a6325a61c880532704b0dc65e1e",
+    "literature/resume_r04_2026_10_16/web_capture_6.json": "b30d598744b1baf52b97a3850d3e2dd3b251fa39271c5f3c94ddd63e405ea783",
+    "literature/resume_r04_2026_10_16/web_capture_7.json": "be3d252c2da99645968bf688c4d98c58ea5556cf8c0ffb05b4ca6b4f59c604c9",
+    "literature/resume_r04_2026_10_16/web_capture_8.json": "0edeb3633ee87a5c1bf9f0e06b57bd3e98dc0e90f75f2afc4a0ae09778004531",
+    "literature/resume_r04_2026_10_16/web_capture_9.json": "ce12a258d4d37c26a5a22d45ad52a86253ba0078893092669eb2641171b00f61",
+    "tools/r04_source_claim_map.py": "075f8feee9a3549d34b1f7d6867a2f0782ed697e0383b6650c4097a6153ecc94",
+    "proposal/researchwrite/nckh-ids/01_research_canon.md": "26e01f98175728bf59a95dda7cec06981b0ff0da69e93b71caec7cdb32e017a8",
+    "proposal/researchwrite/nckh-ids/02_evidence_table.md": "eb8d14756706c1d9b952cc2a2fa3365d201363c62e626d55b517bf3e95923138",
+    "proposal/researchwrite/nckh-ids/03_argument_map.md": "ae8d5c95324e32c899bae3a036ede62f86bcae72b8886cf6a0f00642429d8a6e"
+  },
+  "changed_prior_artifacts": [
+    {
+      "path": "proposal/researchwrite/nckh-ids/01_research_canon.md",
+      "before": "d86cc01e920285d9c4bc7ed22b9fb748d3ae940609285b294a7c05188a664e6e",
+      "after": "26e01f98175728bf59a95dda7cec06981b0ff0da69e93b71caec7cdb32e017a8"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/02_evidence_table.md",
+      "before": "2f8c30746f06b750f760dca8e1eff0736f5ff9d80a8ec3c50b65d63e9d8d2f44",
+      "after": "eb8d14756706c1d9b952cc2a2fa3365d201363c62e626d55b517bf3e95923138"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/03_argument_map.md",
+      "before": "5c8bfe738f3f07d56dbb7a8875cb71e1676c15b38d561a769a108b5e71243d35",
+      "after": "ae8d5c95324e32c899bae3a036ede62f86bcae72b8886cf6a0f00642429d8a6e"
+    }
+  ],
+  "next_action": "Update research gap matrix and draft related-work/background section without changing RQs or frozen evidence"
+}

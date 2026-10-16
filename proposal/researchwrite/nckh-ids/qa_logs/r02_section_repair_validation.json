@@ -1,0 +1,9 @@
+{
+  "partial_section_path_checks": 10,
+  "all_paths_exist": true,
+  "minor_findings_repaired": true,
+  "source_reports_preserved": true,
+  "review_score_before_minor_repairs": 7.5,
+  "full_proposal_review": "NOT_PERFORMED",
+  "docx_pdf_render": "NOT_PERFORMED"
+}

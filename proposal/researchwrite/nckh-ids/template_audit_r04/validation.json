@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "all_body_blocks_mapped": true,
+    "all_nonempty_mapped": true,
+    "eight_tables": true,
+    "content_sources_exist": true,
+    "budget_source_3m": true,
+    "budget_source_3_5m": true,
+    "budget_source_0_5m": true,
+    "budget_source_7m": true,
+    "report_03": true,
+    "software_02_A4": true,
+    "CD_cover": true,
+    "article_council": true,
+    "schedule": true,
+    "original_unchanged": true
+  },
+  "passed": true,
+  "body_blocks": 58,
+  "table_cells": 97,
+  "source_sha256": "bedb06dcecfc40a4d04a9412022509f039f7c4e64e6d779aa13b7dc9ec3d26c7",
+  "scope": "Read-only original OOXML and planned content coverage; not filled DOCX, render, official field confirmation or final G5"
+}

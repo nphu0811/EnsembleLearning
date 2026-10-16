@@ -1,0 +1,879 @@
+[
+  {
+    "id": "L01",
+    "query": "Ensemble learning for intrusion detection systems: A systematic mapping study and cross-benchmark evaluation",
+    "url": "https://api.crossref.org/works?query.bibliographic=Ensemble+learning+for+intrusion+detection+systems%3A+A+systematic+mapping+study+and+cross-benchmark+evaluation&rows=3",
+    "candidates": [
+      {
+        "title": "Ensemble learning for intrusion detection systems: A systematic mapping study and cross-benchmark evaluation",
+        "doi": "10.1016/j.cosrev.2020.100357",
+        "authors": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-1821-6438",
+            "authenticated-orcid": false,
+            "given": "Bayu Adhi",
+            "family": "Tama",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-9534-7397",
+            "authenticated-orcid": false,
+            "given": "Sunghoon",
+            "family": "Lim",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "year": {
+          "date-parts": [
+            [
+              2021,
+              2
+            ]
+          ]
+        },
+        "container": [
+          "Computer Science Review"
+        ],
+        "volume": "39",
+        "issue": null,
+        "page": "100357",
+        "score": 62.704945
+      },
+      {
+        "title": "MAWIFlow Benchmark: Realistic Flow-Based Evaluation for Network Intrusion Detection",
+        "doi": "10.5220/0014463900004061",
+        "authors": [
+          {
+            "given": "Joshua",
+            "family": "Schraven",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Institute of Artificial Intelligence, Helmut Schmidt University, Hamburg, Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Alexander",
+            "family": "Windmann",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Artificial Intelligence, Helmut Schmidt University, Hamburg, Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Oliver",
+            "family": "Niggemann",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Artificial Intelligence, Helmut Schmidt University, Hamburg, Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "year": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "container": [
+          "Proceedings of the 12th International Conference on Information Systems Security and Privacy"
+        ],
+        "volume": null,
+        "issue": null,
+        "page": "549-556",
+        "score": 36.920906
+      },
+      {
+        "title": "Table 1: Summary of related works on deep learning and ensemble-based intrusion detection systems.",
+        "doi": "10.7717/peerj-cs.3954/table-1",
+        "authors": null,
+        "year": {},
+        "container": null,
+        "volume": null,
+        "issue": null,
+        "page": null,
+        "score": 36.245205
+      }
+    ]
+  },
+  {
+    "id": "L02",
+    "query": "Troubleshooting an Intrusion Detection Dataset: the CICIDS2017 Case Study",
+    "url": "https://api.crossref.org/works?query.bibliographic=Troubleshooting+an+Intrusion+Detection+Dataset%3A+the+CICIDS2017+Case+Study&rows=3",
+    "candidates": [
+      {
+        "title": "Troubleshooting an Intrusion Detection Dataset: the CICIDS2017 Case Study",
+        "doi": "10.1109/spw53761.2021.00009",
+        "authors": [
+          {
+            "given": "Gints",
+            "family": "Engelen",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Vera",
+            "family": "Rimmer",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Wouter",
+            "family": "Joosen",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "year": {
+          "date-parts": [
+            [
+              2021,
+              5
+            ]
+          ]
+        },
+        "container": [
+          "2021 IEEE Security and Privacy Workshops (SPW)"
+        ],
+        "volume": null,
+        "issue": null,
+        "page": "7-12",
+        "score": 56.281563
+      },
+      {
+        "title": "Quantifying Domain Shift in DDoS Intrusion Detection: A Cross dataset Evaluation Using CICIDS2017 and a Controlled Testbed Dataset",
+        "doi": "10.2139/ssrn.7154702",
+        "authors": [
+          {
+            "given": "Muhammad",
+            "family": "Salman",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Sadiqa",
+            "family": "Arshad",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-7227-253X",
+            "authenticated-orcid": true,
+            "given": "Alina",
+            "family": "Mirza",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Imran",
+            "family": "Rashid",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "year": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        },
+        "container": null,
+        "volume": null,
+        "issue": null,
+        "page": null,
+        "score": 38.491512
+      },
+      {
+        "title": "Overview and Exploratory Analyses of CICIDS2017 Intrusion Detection Dataset",
+        "doi": "10.56705/ijodas.v4i3.80",
+        "authors": [
+          {
+            "given": "Akinyemi Moruff",
+            "family": "OYELAKIN",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "year": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              1
+            ]
+          ]
+        },
+        "container": [
+          "Indonesian Journal of Data and Science"
+        ],
+        "volume": "4",
+        "issue": "3",
+        "page": null,
+        "score": 37.73533
+      }
+    ]
+  },
+  {
+    "id": "L03",
+    "query": "Error Prevalence in NIDS datasets",
+    "url": "https://api.crossref.org/works?query.bibliographic=Error+Prevalence+in+NIDS+datasets&rows=3",
+    "candidates": [
+      {
+        "title": "Error Prevalence in NIDS datasets: A Case Study on CIC-IDS-2017 and CSE-CIC-IDS-2018",
+        "doi": "10.1109/cns56114.2022.9947235",
+        "authors": [
+          {
+            "given": "Lisa",
+            "family": "Liu",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of New South Wales,Canberra"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Gints",
+            "family": "Engelen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "imec-DistriNet,KU,Leuven"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Timothy",
+            "family": "Lynar",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of New South Wales,Canberra"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Daryl",
+            "family": "Essam",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of New South Wales,Canberra"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Wouter",
+            "family": "Joosen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "imec-DistriNet,KU,Leuven"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "year": {
+          "date-parts": [
+            [
+              2022,
+              10,
+              3
+            ]
+          ]
+        },
+        "container": [
+          "2022 IEEE Conference on Communications and Network Security (CNS)"
+        ],
+        "volume": null,
+        "issue": null,
+        "page": "254-262",
+        "score": 28.80792
+      },
+      {
+        "title": "Taxonomy and Epidemiology of Error in Radiology",
+        "doi": "10.1093/med/9780190665395.003.0002",
+        "authors": [
+          {
+            "given": "Michael A.",
+            "family": "Bruno",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "year": {
+          "date-parts": [
+            [
+              2019,
+              2
+            ]
+          ]
+        },
+        "container": [
+          "Error and Uncertainty in Diagnostic Radiology"
+        ],
+        "volume": null,
+        "issue": null,
+        "page": "29-74",
+        "score": 19.365059
+      },
+      {
+        "title": "Measuring the Complexity of Benchmark NIDS Datasets via Spectral Analysis",
+        "doi": "10.1109/eurospw61312.2024.00043",
+        "authors": [
+          {
+            "given": "Robert",
+            "family": "Flood",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Edinburgh,Edinburgh,United Kingdom"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "David",
+            "family": "Aspinall",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "University of Edinburgh,Edinburgh,United Kingdom"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "year": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              8
+            ]
+          ]
+        },
+        "container": [
+          "2024 IEEE European Symposium on Security and Privacy Workshops (EuroS&amp;amp;PW)"
+        ],
+        "volume": null,
+        "issue": null,
+        "page": "335-341",
+        "score": 18.926083
+      }
+    ]
+  },
+  {
+    "id": "L04",
+    "query": "Feature selection approach using ensemble learning for network anomaly detection",
+    "url": "https://api.crossref.org/works?query.bibliographic=Feature+selection+approach+using+ensemble+learning+for+network+anomaly+detection&rows=3",
+    "candidates": [
+      {
+        "title": "Feature selection approach using ensemble learning for network anomaly detection",
+        "doi": "10.1049/trit.2020.0073",
+        "authors": [
+          {
+            "family": "Doreswamy",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Computer Science Mangalore University Mangalore India"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Mohammad Kazim",
+            "family": "Hooshmand",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Computer Science Mangalore University Mangalore India"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Ibrahim",
+            "family": "Gad",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Computer Science Mangalore University Mangalore India"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "year": {
+          "date-parts": [
+            [
+              2020,
+              11,
+              5
+            ]
+          ]
+        },
+        "container": [
+          "CAAI Transactions on Intelligence Technology"
+        ],
+        "volume": "5",
+        "issue": "4",
+        "page": "283-293",
+        "score": 47.90569
+      },
+      {
+        "title": "Feature Selection",
+        "doi": "10.1201/b15088-13",
+        "authors": null,
+        "year": {
+          "date-parts": [
+            [
+              2013,
+              6,
+              18
+            ]
+          ]
+        },
+        "container": [
+          "Network Anomaly Detection"
+        ],
+        "volume": null,
+        "issue": null,
+        "page": "183-216",
+        "score": 45.24438
+      },
+      {
+        "title": "Ensemble-Based Network Anomaly Detection Using RFE and Information Gain for Optimized Feature Selection",
+        "doi": "10.31449/inf.v49i10.8387",
+        "authors": [
+          {
+            "given": "Nagamani",
+            "family": "Uddamari",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "P",
+            "family": "Sammulal",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "year": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              10
+            ]
+          ]
+        },
+        "container": [
+          "Informatica"
+        ],
+        "volume": "49",
+        "issue": "10",
+        "page": null,
+        "score": 44.210457
+      }
+    ]
+  },
+  {
+    "id": "L05",
+    "query": "Optimized ensemble prediction using AutoML soft voting intrusion detection Khan",
+    "url": "https://api.crossref.org/works?query.bibliographic=Optimized+ensemble+prediction+using+AutoML+soft+voting+intrusion+detection+Khan&rows=3",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "id": "L06",
+    "query": "A novel ensemble learning-based model for network intrusion detection system Thockchom",
+    "url": "https://api.crossref.org/works?query.bibliographic=A+novel+ensemble+learning-based+model+for+network+intrusion+detection+system+Thockchom&rows=3",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "id": "L07",
+    "query": "DUEN Dynamic ensemble class imbalance network intrusion detection",
+    "url": "https://api.crossref.org/works?query.bibliographic=DUEN+Dynamic+ensemble+class+imbalance+network+intrusion+detection&rows=3",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "id": "L08",
+    "query": "Evaluating impact filter based feature selection intrusion detection Zouhri Idri Ratnani",
+    "url": "https://api.crossref.org/works?query.bibliographic=Evaluating+impact+filter+based+feature+selection+intrusion+detection+Zouhri+Idri+Ratnani&rows=3",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "id": "L09",
+    "query": "Machine Learning in NIDS: A Cross-Dataset Generalization Study",
+    "url": "https://api.crossref.org/works?query.bibliographic=Machine+Learning+in+NIDS%3A+A+Cross-Dataset+Generalization+Study&rows=3",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "id": "L10",
+    "query": "Unknown Atypical Polymorphic Network Intrusion Detection Systematic Survey Sabeel",
+    "url": "https://api.crossref.org/works?query.bibliographic=Unknown+Atypical+Polymorphic+Network+Intrusion+Detection+Systematic+Survey+Sabeel&rows=3",
+    "candidates": [
+      {
+        "title": "Unknown, Atypical and Polymorphic Network Intrusion Detection: A Systematic Survey",
+        "doi": "10.1109/tnsm.2023.3298533",
+        "authors": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-7651-1024",
+            "authenticated-orcid": false,
+            "given": "Ulya",
+            "family": "Sabeel",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Faculty of Business and IT, University of Ontario Institute of Technology, Oshawa, Canada"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-6107-7728",
+            "authenticated-orcid": false,
+            "given": "Shahram Shah",
+            "family": "Heydari",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Faculty of Business and IT, University of Ontario Institute of Technology, Oshawa, Canada"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-5960-6942",
+            "authenticated-orcid": false,
+            "given": "Khalil",
+            "family": "El-Khatib",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Faculty of Business and IT, University of Ontario Institute of Technology, Oshawa, Canada"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Khalid",
+            "family": "Elgazzar",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Faculty of Engineering and Applied Science, University of Ontario Institute of Technology, Oshawa, Canada"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "year": {
+          "date-parts": [
+            [
+              2024,
+              2
+            ]
+          ]
+        },
+        "container": [
+          "IEEE Transactions on Network and Service Management"
+        ],
+        "volume": "21",
+        "issue": "1",
+        "page": "1190-1212",
+        "score": 63.62278
+      },
+      {
+        "title": "Building an Intrusion Detection System to Detect Atypical Cyberattack Flows",
+        "doi": "10.1109/access.2021.3093830",
+        "authors": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-7651-1024",
+            "authenticated-orcid": false,
+            "given": "Ulya",
+            "family": "Sabeel",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-6107-7728",
+            "authenticated-orcid": false,
+            "given": "Shahram Shah",
+            "family": "Heydari",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-5892-632X",
+            "authenticated-orcid": false,
+            "given": "Khalid",
+            "family": "Elgazzar",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-5960-6942",
+            "authenticated-orcid": false,
+            "given": "Khalil",
+            "family": "El-Khatib",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "year": {
+          "date-parts": [
+            [
+              2021
+            ]
+          ]
+        },
+        "container": [
+          "IEEE Access"
+        ],
+        "volume": "9",
+        "issue": null,
+        "page": "94352-94370",
+        "score": 36.602047
+      },
+      {
+        "title": "New Unknown Attack Detection with the Neural Network–Based IDS",
+        "doi": "10.1201/b16390-16",
+        "authors": null,
+        "year": {
+          "date-parts": [
+            [
+              2014,
+              1,
+              29
+            ]
+          ]
+        },
+        "container": [
+          "The State of the Art in Intrusion Prevention and Detection"
+        ],
+        "volume": null,
+        "issue": null,
+        "page": "277-302",
+        "score": 30.385641
+      }
+    ]
+  },
+  {
+    "id": "L11",
+    "query": "Effects of feature selection and normalization network intrusion detection",
+    "url": "https://api.crossref.org/works?query.bibliographic=Effects+of+feature+selection+and+normalization+network+intrusion+detection&rows=3",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "id": "L12",
+    "query": "Ensemble Learning for Network Intrusion Detection Based on Correlation and Embedded Feature Selection",
+    "url": "https://api.crossref.org/works?query.bibliographic=Ensemble+Learning+for+Network+Intrusion+Detection+Based+on+Correlation+and+Embedded+Feature+Selection&rows=3",
+    "error": "HTTP Error 429: Too Many Requests"
+  }
+]

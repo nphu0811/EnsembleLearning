@@ -1,0 +1,7 @@
+eval_view,model_a,model_b,a_wrong_b_correct,a_correct_b_wrong,discordant_total,p_exact_raw,p_holm,reject_h0_alpha_0_05,test_scope
+official_test,stacking_42,random_forest_42,491,515,1006,0.46837651914684564,0.46837651914684564,False,paired overall correctness / error rate
+official_test,stacking_42,random_forest_17,2285,2504,4789,0.0016290193402404439,0.0048870580207213314,True,paired overall correctness / error rate
+official_test,random_forest_42,random_forest_17,2353,2548,4901,0.005580540730697564,0.011161081461395128,True,paired overall correctness / error rate
+novel_vector_test,stacking_42,random_forest_42,480,515,995,0.2810842056883898,0.2810842056883898,False,paired overall correctness / error rate
+novel_vector_test,stacking_42,random_forest_17,2258,2412,4670,0.02515256073737252,0.07545768221211757,False,paired overall correctness / error rate
+novel_vector_test,random_forest_42,random_forest_17,2327,2446,4773,0.08762688350526474,0.17525376701052947,False,paired overall correctness / error rate

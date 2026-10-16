@@ -1,0 +1,51 @@
+PHASE 4 — UNSW-NB15 EDA SUMMARY
+========================================================================
+
+Train rows: 175,341
+Test rows : 82,332
+Novel-vector test: found (73,791 rows)
+
+Binary class proportions:
+- Train / Normal: 56,000 (31.94%)
+- Train / Attack: 119,341 (68.06%)
+- Test / Normal: 37,000 (44.94%)
+- Test / Attack: 45,332 (55.06%)
+
+Attack categories in train: 10
+Attack categories in test : 10
+
+Numeric features inspected: 39
+High-correlation numeric pairs (|Spearman rho| >= 0.9): 59
+
+Top numeric Normal–Attack separation (TRAIN only):
+- sttl: SMD=1.9430
+- ct_state_ttl: SMD=1.3973
+- ct_dst_sport_ltm: SMD=0.9340
+- rate: SMD=0.8692
+- ct_src_dport_ltm: SMD=0.7853
+- swin: SMD=-0.7636
+- ct_dst_src_ltm: SMD=0.7622
+- dload: SMD=-0.7346
+- dwin: SMD=-0.7260
+- dmean: SMD=-0.7100
+
+Strongest correlated numeric feature pairs (TRAIN only):
+- is_ftp_login ↔ ct_ftp_cmd: rho=1.0000
+- trans_depth ↔ ct_flw_http_mthd: rho=0.9996
+- tcprtt ↔ synack: rho=0.9968
+- tcprtt ↔ ackdat: rho=0.9937
+- swin ↔ dwin: rho=0.9902
+- dpkts ↔ dbytes: rho=0.9899
+- synack ↔ ackdat: rho=0.9844
+- dbytes ↔ dmean: rho=0.9631
+- dload ↔ dmean: rho=0.9629
+- rate ↔ sload: rho=0.9604
+
+IMPORTANT INTERPRETATION RULES
+- These are descriptive EDA findings, not feature-selection decisions.
+- Test data was not used to rank/select features.
+- Correlation does not prove redundancy or causation.
+- Rare attack categories require per-class analysis later.
+
+NEXT PHASE
+Phase 5 — formal feature selection performed inside TRAIN/CV only.

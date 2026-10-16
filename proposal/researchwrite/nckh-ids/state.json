@@ -1,0 +1,57 @@
+{
+  "project": "nckh-ids",
+  "mode": "hybrid",
+  "text_type": "student_research_proposal_2026",
+  "language": "vi",
+  "target_reader": "GVHD and NCKH council",
+  "current_round": 1,
+  "scores": [
+    {
+      "stage": "foundation_initial",
+      "methods": 7.3125,
+      "argument": 7.25,
+      "gate": "REPAIR"
+    },
+    {
+      "stage": "foundation_recheck",
+      "methods": 7.8125,
+      "argument": 7.75,
+      "gate": "PASS_SCOPED"
+    },
+    {
+      "stage": "partial_section_review",
+      "score": 7.5,
+      "gate": "KEEP_INTERNAL_DRAFT",
+      "minor_repairs_applied": true,
+      "post_repair_rescore": "NOT_PERFORMED"
+    }
+  ],
+  "technical_debts": [
+    "L03 page conflict and dataset U01/U03 warnings",
+    "Broader/full source reading and domestic detailed comparison",
+    "Full assembled argument/form review interrupted by usage limit",
+    "Filled DOCX/PDF and visual QA",
+    "Author/admin fields and acceptance of retrospective proposal",
+    "FullTRAIN model reconstruction/final inference;TRAIN subset smoke alone passed"
+  ],
+  "status": "revision",
+  "final_export_ready": false,
+  "r03": {
+    "draft": "proposal/researchwrite/nckh-ids/drafts/sections/ung_dung_san_pham_tien_do_r03.md",
+    "review": "proposal/researchwrite/nckh-ids/qa_logs/r03_products_section_review.md",
+    "status": "INTERNAL_PARTIAL_DRAFT; P2 repairs applied",
+    "section_review_score": 7.75,
+    "review_type": "Independent AI narrow section review",
+    "post_repair_rescore": "NOT_PERFORMED",
+    "full_proposal_qa": "NOT_PERFORMED",
+    "render": "NOT_PERFORMED"
+  },
+  "r04": {
+    "literature_metadata": "11/12verified;L03pageconflict",
+    "content_assembly": "drafts/De_cuong_noi_dung_review_r04.md",
+    "full_content_evidence_review": "qa_logs/r04_assembled_evidence_review.md",
+    "full_content_argument_review": "NOT_COMPLETED_USAGE_LIMIT;file absent",
+    "render": "NOT_PERFORMED",
+    "status": "INTERNAL_CONTENT_DRAFT;not full proposal acceptance"
+  }
+}

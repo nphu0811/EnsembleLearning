@@ -1,0 +1,35 @@
+PHASE 10 — STATISTICAL + FINAL ERROR ANALYSIS
+======================================================================================
+
+IMPORTANT:
+- No model training was performed.
+- All analyses use the frozen Phase-9 predictions.
+- McNemar evaluates paired correctness, not Macro-F1/MCC.
+- Bootstrap CIs quantify benchmark-sample uncertainty and do not
+  eliminate possible dependence among network flows.
+
+KEY OFFICIAL-TEST COMPARISON: STACKING-42 MINUS RF-42
+- macro_f1: delta=+0.000497, 95% CI=[-0.000312, +0.001309]
+- mcc: delta=-0.000413, 95% CI=[-0.001938, +0.001140]
+- false_positive_rate: delta=-0.003838, 95% CI=[-0.005243, -0.002432]
+- false_negative_rate: delta=+0.002603, 95% CI=[+0.001853, +0.003375]
+
+MCNEMAR: STACKING-42 VS RF-42
+- Stacking wrong / RF correct: 491
+- Stacking correct / RF wrong: 515
+- Exact raw p=0.468377
+- Holm-adjusted p=0.468377
+- Reject equal-error-rate null at alpha=.05: False
+
+OUTPUT TABLES:
+- recomputed_point_metrics.csv
+- bootstrap_metric_ci.csv
+- paired_bootstrap_differences.csv
+- mcnemar_holm.csv
+- attack_family_miss_rate_ci.csv
+- official_vs_novel_degradation.csv
+- performance_cost_tradeoff.csv
+
+NEXT:
+Interpret these statistical estimates together with Phase-9 cost and
+attack-family evidence, then answer the frozen research questions.

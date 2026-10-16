@@ -1,0 +1,11 @@
+# OBSERVED Python 3.14.3 package versions from P15-02C1, not the original model-training environment.
+# Candidate direct-dependency pins for an isolated smoke test; NOT a hash-locked full dependency graph.
+# This script intentionally uses only binary wheels and installs in a separate virtual environment.
+joblib==1.5.3
+matplotlib==3.11.1
+numpy==2.5.2
+pandas==3.0.5
+scikit-learn==1.9.0
+scipy==1.18.1
+threadpoolctl==3.6.0
+tzdata==2026.3

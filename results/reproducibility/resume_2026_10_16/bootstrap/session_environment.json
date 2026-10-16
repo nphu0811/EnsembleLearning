@@ -1,0 +1,25 @@
+{
+  "generated_utc": "2026-10-16T02:16:39.251856+00:00",
+  "python": "3.11.9",
+  "executable": "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "pandas": "3.0.5",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.0",
+    "matplotlib": "3.11.1",
+    "python-docx": "1.2.0",
+    "Pillow": "12.3.0"
+  },
+  "original_training_environment": "UNKNOWN",
+  "render_tools": {
+    "pdflatex": null,
+    "xelatex": null,
+    "latexmk": null,
+    "tectonic": null,
+    "soffice": null,
+    "pandoc": null
+  },
+  "test_returncode": 0
+}

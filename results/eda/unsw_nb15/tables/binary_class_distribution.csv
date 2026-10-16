@@ -1,0 +1,5 @@
+split,label,class_name,count,percentage
+Train,0,Normal,56000,31.93776697977085
+Train,1,Attack,119341,68.06223302022916
+Test,0,Normal,37000,44.939999028324344
+Test,1,Attack,45332,55.06000097167566

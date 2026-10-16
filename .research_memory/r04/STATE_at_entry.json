@@ -1,0 +1,784 @@
+{
+  "schema_version": "1.1",
+  "project": "Ensemble Learning for Network Intrusion Detection (NCKH)",
+  "last_updated": "2026-10-16T09:49:08.039612+00:00",
+  "local_session_date": "2026-10-16",
+  "timezone": "Asia/Saigon",
+  "phase": "P15_PARTIAL; P16/P18/P19_IN_PROGRESS",
+  "current_task": "P18/P01 remaining source checks and proposal literature/background sections after r03 checkpoint",
+  "completed_tasks": [
+    "BOOT-01",
+    "BOOT-02_STRUCTURAL",
+    "BOOT-03",
+    "BOOT-04",
+    "P15-R1",
+    "P15-R2_AGGREGATE_ONLY",
+    "P08-DOC",
+    "P19-DRAFT_SCOPED",
+    "P16-F1",
+    "BOOT-R02",
+    "P18-LEGACY_IDENTITY_SCOPED",
+    "P01-DOMESTIC_TOPIC_SCOPED",
+    "PROP-FOUND_BOUNDED_REVIEW",
+    "PROP-SECTION_INTERNAL_DRAFT",
+    "DEFENSE-QA_DRAFT",
+    "BOOT-R03_SCOPED",
+    "P18-FIELD-R03_SCOPED",
+    "PROP-PRODUCTS-R03_SCOPED"
+  ],
+  "blocked_tasks": [
+    {
+      "id": "REPORT-PDF",
+      "reason": "No TeX tool on PATH; IDS source content pending"
+    },
+    {
+      "id": "G5",
+      "reason": "Author administrative fields/signatures/applicability unconfirmed"
+    },
+    {
+      "id": "RELEASE",
+      "reason": "Critical G0-G6 gaps; see RELEASE_BLOCKERS.md"
+    },
+    {
+      "id": "PROP-DOCX",
+      "reason": "Partial prose exists; remaining sections/full review/admin acceptance and artifact dependency loader/render runtime still pending"
+    }
+  ],
+  "immutable_decisions": [
+    "UNSW official split, raw files preserved",
+    "Frozen RQ1-4 and secondary RQ5 inherited",
+    "RF42/Stack42/RF17 threshold0.5 preserved",
+    "No tuning/reselection after TEST",
+    "Historical training source/results preserved",
+    "FS full TRAIN before CV limitation retained",
+    "Template originals immutable"
+  ],
+  "artifact_manifest": [
+    {
+      "path": ".research_memory/CHANGELOG.md",
+      "sha256": "eec82f72124a40cb759ca60f7d9e53697f051804aa68cddadf603edfca5d4c04"
+    },
+    {
+      "path": ".research_memory/DECISIONS.md",
+      "sha256": "48845c112e2c92347b3f01c3d9b78880f54975a94e551e29750cb960f5dafaf3"
+    },
+    {
+      "path": ".research_memory/EVIDENCE_INDEX.csv",
+      "sha256": "e0dc3581d9872c008055eac3a7d62f417ff2aa4e4ee2ccff418379bb1660c6f8"
+    },
+    {
+      "path": ".research_memory/HANDOFF.md",
+      "sha256": "466dbbc14c5d2d5ac8c00363f1175057a9f28f505183333637d6df5e7a186634"
+    },
+    {
+      "path": ".research_memory/ISSUE_LOG.md",
+      "sha256": "e27e159354249a3bbd99d9fcdea42ceda89b970b8357e88708232360fd52a9b5"
+    },
+    {
+      "path": ".research_memory/RESEARCH_CANON.md",
+      "sha256": "2b394964de53702c9ec5067e34871f1003ea2d140b76bb7468fa659313feeb36"
+    },
+    {
+      "path": ".research_memory/SKILL_USAGE_LOG.md",
+      "sha256": "190559a9dd3680c75ea432301cc7bfd408b1e3df27956048961330d914511ed5"
+    },
+    {
+      "path": ".research_memory/TASK_BOARD.md",
+      "sha256": "ec82f94f0af99129b25bb20f1b899a6ac741215aeebfe7d39f5adc95a72f8fea"
+    },
+    {
+      "path": ".research_memory/checkpoint_r03.json",
+      "sha256": "37a9ccce0caf797b142f951daa0b232d32ccd9118c53810117e793f33a0ac50d"
+    },
+    {
+      "path": "defense/Hoi_dap_hoi_dong.md",
+      "sha256": "ab8f69d1d8ad03ef7caf648def5384fde9202896133dd8ae397904a36ee7e990"
+    },
+    {
+      "path": "defense/QA_PREPARATION_CONTRACT.md",
+      "sha256": "fe6d2ebd7a62e4471ce43f024bdeb5c368a35331d3b4fbd12306efaef700af73"
+    },
+    {
+      "path": "defense/qa_validation_r02.json",
+      "sha256": "fbb21e2809297915cb80b667c76f0e5f430af01f263bbfece6dc055f8afbaa17"
+    },
+    {
+      "path": "docs/CLAIM_EVIDENCE_MATRIX.md",
+      "sha256": "298ead70f2cc68c32d8998ccc7fda14a7d5c35f587fe0721c151c6f7aff20abd"
+    },
+    {
+      "path": "docs/P15_01_VERIFICATION.md",
+      "sha256": "85b48b7b0c8a3804a6d7842ef3a1042f6fecbde272dd300b804f76fc3736bdd5"
+    },
+    {
+      "path": "docs/P15_02_ENVIRONMENT_VERIFICATION.md",
+      "sha256": "c72b3f1b7f95e4eb2a603d9a72d5608f56bd2f6407f08a5acc9a9ff8eca3479d"
+    },
+    {
+      "path": "docs/P15_03B_SOURCE_AND_P15_04_SCOPE.md",
+      "sha256": "9d9459558394ce3b5ce7021d87df015f2df97e847dc88195c8fd3a301059a917"
+    },
+    {
+      "path": "docs/P15_04_SNAPSHOT_ONLY_EXAMPLE.md",
+      "sha256": "63be7feea1b3c0fcfd992008c0fd4212c8c8ff11f5357da5c98eb8434b26a6ae"
+    },
+    {
+      "path": "docs/PREMATURE_REPORTING_INVENTORY.csv",
+      "sha256": "529794bc1bd357f6441663e0ef418a5d91c3bd896a29690fed21d899a2fecf36"
+    },
+    {
+      "path": "docs/RESUME_AUDIT.md",
+      "sha256": "40bd17351afea47d2fecdb59b04fd24c957fcbeefe9f0c11d27a90e350be4e7e"
+    },
+    {
+      "path": "docs/RESUME_AUDIT_R02_2026-10-16.md",
+      "sha256": "dd60d2cb1e6ad0e5d2a1597f8520db093a4173434a12bba0c3110f21689a425a"
+    },
+    {
+      "path": "docs/RESUME_AUDIT_R03_2026-10-16.md",
+      "sha256": "f830f784e140ab325c10423c074867ede8ec5491102cabad4e98c1ccc6749027"
+    },
+    {
+      "path": "docs/ROADMAP_CURRENT.md",
+      "sha256": "65088f7c083f25a7ef16286f3bc9320fa3b1cf8ea184f81bfb4e7b960668a4b3"
+    },
+    {
+      "path": "docs/ROADMAP_PHASE_AUDIT_2026-10-07.md",
+      "sha256": "e1c44a44f78e6d769e1e3822c0b9774390e4740609df229f5e2f0e2e3dbcbdc8"
+    },
+    {
+      "path": "docs/ROADMAP_RECONCILIATION.md",
+      "sha256": "c0e8e36d544f056eb1da554a07197d81a5843f1c7ef7f6ed24eee77fcd644305"
+    },
+    {
+      "path": "docs/TAKEOVER_FILE_INVENTORY.csv",
+      "sha256": "fa96dabca648699c912f57c8b162c5543d9df804b78459651b667d96d7e5fb30"
+    },
+    {
+      "path": "docs/TAKEOVER_PRESERVATION_SHA256.csv",
+      "sha256": "fc499505512c1ea5020d2e189e790d2d57434a5a034d4e9d493ec2815866146a"
+    },
+    {
+      "path": "docs/TEMPLATE_FOLDER_REVIEW.md",
+      "sha256": "b4b0c9927e2ef1f634397c99b8a23461ee24227ebeacb08c486d847996c5a30d"
+    },
+    {
+      "path": "docs/TEMPLATE_MAPPING.md",
+      "sha256": "d9134c8204294085a529073a2b4bab0e6ae2032d17d28abae78617c68c105801"
+    },
+    {
+      "path": "docs/TEMPLATE_REQUIREMENTS_MATRIX.md",
+      "sha256": "ad481733ccc22a231bbaae504e925bc9d64dd603e80a2d753bcdd2e95f493e6f"
+    },
+    {
+      "path": "docs/research/DATA_CODE_AVAILABILITY.md",
+      "sha256": "7ce7b8ad2c7273aa951ec343c2dfc4f3c0237b7f997c2b83877b853b10a628f6"
+    },
+    {
+      "path": "docs/research/ENSEMBLE_FRAMEWORK.md",
+      "sha256": "5106199c66336bcca195f221bbf43c45baf339a526a15cbde92bec3fa17c6f83"
+    },
+    {
+      "path": "docs/research/P15_01_SCRIPT_IO_MATRIX.csv",
+      "sha256": "e0d48a07d5c1536eea403c774a63ae30a886deaa99e61fa3a4b7abe408cfb7ad"
+    },
+    {
+      "path": "docs/research/P15_01_SOURCE_VERIFICATION.json",
+      "sha256": "d9afd367e75137af1d28e47012d651707a2f74694972151b6a6c56026819c429"
+    },
+    {
+      "path": "docs/research/P15_03_DATASET_PROVENANCE.md",
+      "sha256": "cdd4b23eb48d923e1123f1f186fffb599a2cdb2f3df158f46fd36ed3173bed03"
+    },
+    {
+      "path": "docs/research/P16_PAIRED_EFFECT_CONTRACT.md",
+      "sha256": "707d16803e7629881ab870d473bafea8249b5d149e35be14ccde09fb0eb66b0d"
+    },
+    {
+      "path": "docs/research/PHASE14_ERROR_ANALYSIS_CLOSURE.md",
+      "sha256": "1f3aeba4c21029262b53f0dda79cc891525bd9d8102d8d886600c5250296164a"
+    },
+    {
+      "path": "docs/research/PHASE15_REPRODUCIBILITY_OPENING_CHECKLIST.md",
+      "sha256": "9fb8a6eae142c625d996285a2764c3bf94f255975405962466117dc3607c80c6"
+    },
+    {
+      "path": "docs/research/REPRODUCIBILITY_MAP.md",
+      "sha256": "b5cfcd8150ea649a21de5eecb86cbff7bfe58b76abc6eaff7381c5ec7a835b60"
+    },
+    {
+      "path": "docs/research/REPRODUCIBILITY_RUNBOOK.md",
+      "sha256": "52b04e897c3e11d31f0ef2b62de946c0faed06cd45fb9256e2081a0d54bd9120"
+    },
+    {
+      "path": "literature/gap_matrix.md",
+      "sha256": "e118c4e3c091673d4dc42ceb88c94481ad97a112526324fadddf581217aad2c2"
+    },
+    {
+      "path": "literature/literature_matrix.csv",
+      "sha256": "5cdd950c560e3d44decf646d4f414bf4cff22fba9c92e4aaee120dee89be4dec"
+    },
+    {
+      "path": "literature/refs_verified_subset.bib",
+      "sha256": "f717562ef38bdfe2aa5baf6c498fed63aaa2a067d52ca83bf81032d77acbc425"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/DOMESTIC_SOURCES.md",
+      "sha256": "c735bb6c199c9476b38c3c52e9f452ab0a3b31c1936fb0d6adbb9cab66123ea0"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L01_crossref_doi.json",
+      "sha256": "26e77c51ce2eccdff306ef5a09a1dc1757a15ba3797a9fefa08e6e90d997fa30"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L01_crossref_search.json",
+      "sha256": "519dc6e8f3571b15b34fb56e336709b7c8ee3bb7c3f1a76911be34148dd3299f"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L02_crossref_doi.json",
+      "sha256": "4598c39aab470b5a3718e7c6cdc6caa4a372b298357b56b687262f274a3d6c51"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L02_crossref_search.json",
+      "sha256": "6eab338788c4d8357c9d2404680401e2976e57475f3f8d2ae0d12a0d96f79fe6"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L03_crossref_doi.json",
+      "sha256": "372b4e544a0b3bde7385e9ad4851f8d29a8412043de6016f688e262dd02cb4f9"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L03_crossref_search.json",
+      "sha256": "6e112297a92e1713bd34dd5bca71fbb1621f9e30054d6666df93684e1e98e19e"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L04_crossref_doi.json",
+      "sha256": "5db2445e1404c2f62e7df5bf911da4e577b5f696c99af6848ca4d534969d9a7f"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L04_crossref_search.json",
+      "sha256": "bf9e3afba03ff04341e57f313a0faac10c854e17c1af13cd2b110d391f929b18"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L05_crossref_doi.json",
+      "sha256": "51e65e99f19bcc0ea4f731a29da5965936e815e1ef4682b43d9d0532de91fa46"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L06_crossref_doi.json",
+      "sha256": "95c3a7663311a48fc30343305ce1bc6aaa0eca1dd77856f584bf1eaac8575936"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L07_final_crossref_doi.json",
+      "sha256": "cce39fe44e46a9b71c59d78ddabf628f92449f89d74889eee82d3a86431d75cb"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L07_preprint_crossref_doi.json",
+      "sha256": "be382755df28967663013a2f6ad910c4e3c1ded6032888d169d3159852fe61ef"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L08_crossref_doi.json",
+      "sha256": "a5bd4e5c31b4de2f1c6a338402debcf102892eb3310d24387aac376bc0a69f48"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L09_crossref_doi.json",
+      "sha256": "cb210bf3a093e3ec47ebce278d1ac5d916d99293617c0e32c2626e90b3f9b7b6"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L10_crossref_doi.json",
+      "sha256": "3f8285854f8e0eb9ab593c71c71738ee556425baa75d03c0f510ef86f9c85655"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L10_crossref_search.json",
+      "sha256": "633f61109891bc16a5b485bbafe9a9564111d80b6a55c50820de3fb56c056884"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L11_crossref_doi.json",
+      "sha256": "18f0be825559249f592b064dab7151f1f5787b9865e7495170a1dcc5015cda6b"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L12_crossref_doi.json",
+      "sha256": "9347a242d7a429800239c5658bc151d8f82dec84eece7f54c19ef15a8f7b4a4d"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/READING_NOTES.md",
+      "sha256": "6df63b8b026e7a7db504bc47656c2d2f9ca74fe8a6b4cfe702fbbe6db11ca943"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/SEARCH_PROTOCOL_AND_QA.md",
+      "sha256": "89861547e7be912cfe0acd3fd44b9cbf7d11e51f3d110b659e26cc718f2c3796"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/doi_metadata.json",
+      "sha256": "0ad20277fb7fc4f013b2a6ed45f840205eed2c5abac5e87e6ec9b5d08c64fb41"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/legacy_candidates.json",
+      "sha256": "0547794cd3b5201047df2ce1172ecbc6049679304bd58334b0d1828b82cc2be9"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/legacy_verification_ledger.csv",
+      "sha256": "0719a20faa513dc96150ca74a2c8ef99218571288caf95cb25d67ef6c39e201b"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/legacy_working_references.bib",
+      "sha256": "b665cba05a7ff2ebea387491291200e46dfea4413dce456d90fe4a7583d7e250"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/validation.json",
+      "sha256": "ea78893d9c7c6cea86665f16cd766994b40f425ccabb28aecbc9731cb59383a8"
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/version_relations.json",
+      "sha256": "24c3294c3d0cff931a965181df69c1042a0b507683ffcc194dd9816758d4e7d6"
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/FIELD_CROSSCHECKS.md",
+      "sha256": "f93f1d4167be5f0158389aceef35ef1760cfba9011b11bfdfc5232a93a4b9f30"
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/L10_comsoc.pdf",
+      "sha256": "fc06af335bbc6a0819370257d8fbd0b8646021eb2e7adadd36a12da9bb1a2272"
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/L11_uaeu.html",
+      "sha256": "06196591c3311f4ec10b000d441b979b42d969d148cca2f8e8b5002aeef6830b"
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/fetch_ledger.json",
+      "sha256": "d8e8d0e15a5ef5e4dde090c1c0afe28d539836644445fb28fa14f4a5d5106161"
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/legacy_verification_ledger.csv",
+      "sha256": "8d2c5b73b310961a428d2b8085fd58d749ef41354365faae655550fc6881a055"
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/validation.json",
+      "sha256": "defa88e0fff5e8074e9a2e983d4827c7a1ad5972cd07a1f4c8351aebcb1ef7ef"
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_1.json",
+      "sha256": "755b6fc4dceebabb9aa2f146c157924c6166ee78ecbd29725fcc60e589ecd52f"
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_2.json",
+      "sha256": "1ead6a83edc0f88f6785340792ac6e299b068d7e6b4ecc90b50c05c806ddba75"
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_3.json",
+      "sha256": "b820b517a5d608bdd4ab2a42188b9a777d30a091bd34fbd90d665aaa7248ba9d"
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_4.json",
+      "sha256": "a2fb04eee46ed59e9ec368a20a17f07f2c9032f76abc1a5a2fe6b99381e3bb74"
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_5.json",
+      "sha256": "b5e81b155f09cf2eb509593f21229fa77060251dfccf17690733382be7d02e39"
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_6.json",
+      "sha256": "dba0b016a42f50d709e7af9f6421600d1d0faf6f6728aaefbf5a6da0a55e3ab8"
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_7.json",
+      "sha256": "da46c9069015105c057cff66eb6e523e81c01d557d3746f6620f74035c2f350e"
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_8.json",
+      "sha256": "ea127d53ce2abbaf3bfc945a09b470fa8166900930cce654963fa7a373b2cd82"
+    },
+    {
+      "path": "literature/verification_2026_10_16/VERIFICATION_REPORT.md",
+      "sha256": "3281b75ec5b5c8427b339e6518f15e3412d4983573b5a072c6f6ccba48aa606f"
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_01_retry.json",
+      "sha256": "e63c3fcab16ab728d1dafe465fa30160a6c29282bbcb91538ac8ca5e70f51a17"
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_02.json",
+      "sha256": "c6f547817e1001f138c2bee7985bf688802343e933dc9f8233fbbe96c9e35b2f"
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_03_retry.json",
+      "sha256": "b545081215dce383016ccf1decae9568b4b0f7bd1cc59e26b37f8e11441694a7"
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_04.json",
+      "sha256": "a535f845d74f914f60eb4ba1fa8ad290e1ccac47ee7fe7813e67a5930c3c83c3"
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_05.json",
+      "sha256": "8f9d2d042bad6d2fdc90b60099daf12513c2fae87b68b2918ca83439782218be"
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_summary.json",
+      "sha256": "ba57e51dd829ce0324e18ab5998ad4054fd9eaa0124ebadb5881a43e21d6de20"
+    },
+    {
+      "path": "literature/verification_2026_10_16/dataset_references.bib",
+      "sha256": "cf7ac97db6d8e3ff55b25100f405f95c5dd24b0e701aa45c7047f0c93a1c310f"
+    },
+    {
+      "path": "literature/verification_2026_10_16/reference_verification_ledger.csv",
+      "sha256": "a8bce520af6f6212a9e14b72ec283ede38b74784fcb65b87059717a44e6bd0a2"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/00_scope.md",
+      "sha256": "d0f8d9f2bba7bae12a93a9150bcf0df0094f64ff2e900e0cf63b826d9b18ce5d"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/01_research_canon.md",
+      "sha256": "d86cc01e920285d9c4bc7ed22b9fb748d3ae940609285b294a7c05188a664e6e"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/02_evidence_table.md",
+      "sha256": "2f8c30746f06b750f760dca8e1eff0736f5ff9d80a8ec3c50b65d63e9d8d2f44"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/03_argument_map.md",
+      "sha256": "5c8bfe738f3f07d56dbb7a8875cb71e1676c15b38d561a769a108b5e71243d35"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/04_section_contracts.md",
+      "sha256": "cf498f8173db79c7c1ab7966b030599d79bd170c5b8afb1be68505c17f238206"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/05_style_guide.md",
+      "sha256": "7920aee79a9963e1fac9588ace31f44a289b7d1c49f317902fbd32035b558385"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/06_rq_method_output_gates.md",
+      "sha256": "26c36f5d5d75c9076c6c361b5ac339190c76ebef306482fb6f97fb4161170819"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/07_remaining_work_feasibility.md",
+      "sha256": "d68163bdc94ea68df74c7b3e19756092fabed9e0627d518307e107d24963f836"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/drafts/sections/muc_tieu_noi_dung_phuong_phap_r02.md",
+      "sha256": "b46774817bafa12896c69ab67ae59bd0daed2e29a339a18b5f2f798b32c49333"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/drafts/sections/ung_dung_san_pham_tien_do_r03.md",
+      "sha256": "d6b7afa3f7552883cc250026415d81fd9ba935163c3d2199f924fd57d6ac4685"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/foundation_review_r02.md",
+      "sha256": "25c9e28d0cb14ac0806ab207a98892e7ef74f6ba80a2b3fe2aa95fbe9f1f14f3"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_argument_recheck.md",
+      "sha256": "b29c1d509816a32b8251737a3f20b4dadc718e744a7192aa229259bd9aa606be"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_argument_review.md",
+      "sha256": "43cd08a808f36defe4060922048c10e434282de9157e99691f593b763de4da76"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_mapping_validation.json",
+      "sha256": "d5cd109d909bcda6ad0293f91688dfa8b89d81e8af0cdae8bc7c2e94202fca96"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_methods_recheck.md",
+      "sha256": "b05dec71d8f0d560619a392cd4e44d72f63ae7c442db814d8022a0c0c571d5f8"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_methods_review.md",
+      "sha256": "264830c9e9ba4c40ab44760770df0626c7692afd15d3b79d1e3a5c24f5c44c13"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_section_repair_validation.json",
+      "sha256": "7690c661d9740e59a5bcdd6711451662e97b5b42287c1be3aba3a430a12e9fcb"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_section_review.md",
+      "sha256": "2d9885ec2e1fad7a50996bfdbe90b86e1e80b0f8801dc9ec5937d15c1d928f86"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r03_products_section_review.md",
+      "sha256": "0abc198654cce35e20d0a5acd69179d530fd216c987a0ec2b174292df1e2ba44"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r03_source_validation.json",
+      "sha256": "9c9ad0a4cdac4a66c038be968e38dfc4554c6c2e3ef40fa4e0ff75fafdd211e7"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/state.json",
+      "sha256": "171da6eaf08cd97b5a085946fbe0e3e2ca0c34312162e5bb794b5337c1cd6835"
+    },
+    {
+      "path": "release/RELEASE_BLOCKERS.md",
+      "sha256": "0204fc07b4f7e7126c38d16e47ea08a65af4915c30d664a297ce5d0716b438c3"
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/CAPTION_QA.md",
+      "sha256": "b041cc4446d72b491480493545f09abff5cca62aad810f57269e50b75f915321"
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/metadata.json",
+      "sha256": "6e3ca5b376242033a6867471cd143c2f7e065d0255ff3fab2ae7b695275f30eb"
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.alignment.json",
+      "sha256": "fcdd472d530869ec9389eafd63182f62caa96598aea8c0938c44be514053b6d5"
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.alignment.svg",
+      "sha256": "a7d7efd45b315ffddf26f33264b08f59d9ce1b821b17f57d41db3ffe596a6bed"
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.collision-audit.json",
+      "sha256": "7f812eb941c407f40efd285a54a59b793950db4f1a851d1f98767de6b5381942"
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.pdf",
+      "sha256": "b05a40f35751e1479a077e97a042b895e8832c5fd0482b875348ccc0a07fdc4b"
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.png",
+      "sha256": "6a9ce7198403e4930b9f80b4241fde33bb1244384987c8acf6070d77bc840e67"
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.svg",
+      "sha256": "d25d20e72a1beb9002f2f1ef5ea62093ba61975df345202630828a1b2f62394c"
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.text-audit.json",
+      "sha256": "d9b2aafdd6adcda26994885282722c4cc6abc7b33e15bc9600bee4abc5c14447"
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/source_data.csv",
+      "sha256": "480da392d2448b212933eb3a8739db0ff4dcc3a8dd9f390b82d1b5b781ac4112"
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/source_preflight.json",
+      "sha256": "3fd918881ebf5241acd8502d30d635b5811d7c0543bfa131ba814c5bf166b2c1"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/nature_skill_registry.csv",
+      "sha256": "ff9cb8769208867669417caaaed903b3ca338f6f2fdc44c8a70b6214f0811341"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/preservation_manifest.csv",
+      "sha256": "277613734ef70ef3bf3c88f5f9ea1ae05864e10b370904064c16bd4c67723f6a"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/proposal_template_structure.json",
+      "sha256": "dca16803fdf70cd0932a1de36b5fbe075c651d2655034b3dc78cb3cecd864571"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/saved_evidence_checks.json",
+      "sha256": "be69f35ef93665ae313d48bb802f984f36c6ab1dee7c722ceafb944344f0ca11"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/session_environment.json",
+      "sha256": "353f998be7ac193c88d25dea3ab6d26a8cf0ff3900d2389c5e42c540d0ae243d"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/template_audit.json",
+      "sha256": "88de166faa5ec4d88d7485b890c957a7ccbd75dc49563e610384c4d10c8580b0"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/unit_tests.log",
+      "sha256": "761dc7fdf1a25028df21e675676a258db5e622ed3c04c4f85d7e8aaad9add200"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/workspace_inventory.csv",
+      "sha256": "49351835d27f1a53d1c409c26ec5051a855886c4988cd921b5863d8796cac201"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/clean_replay_0.log",
+      "sha256": "27bfb5572979fae3876aee3f83cb14da46396e8db9b2e71ceb8ec3bb4ff83eed"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/clean_replay_1.log",
+      "sha256": "77c3998cf960e5462368015e04da375b05b22442d4c0d148470e06d176ba5411"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/clean_replay_report.json",
+      "sha256": "64f8c7c000e659adc817b150cc4ab49ce0dd1b7df8c955cf143f90ffd56d8856"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/p15_01_inventory.json",
+      "sha256": "48d92d97a054849c6f8f8811164716ae6d25a3ce2bea3f76bdc20dbc2340def0"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/p15_03_dataset.json",
+      "sha256": "3f28254552f2a91d0c8a638c379c2f7fd48b0f0082cbd8c4a28a5dff6b43a057"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/phase11_clean_replay/PHASE11_CHECKPOINT.md",
+      "sha256": "7a96a8e069a95dfe45962b0791e816f122cbe21adda8e1da75d0e553af24b3e9"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/phase11_clean_replay/phase11_confusion_matrices.csv",
+      "sha256": "de901884c029a327492a368e6b11fa44de90eeff27088b62c150d656c88a8617"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/phase11_clean_replay/phase11_final_evaluation_complete.csv",
+      "sha256": "a0a742b50860dd3a74c47453919b7ff276fbb579caafa431f81fc9c4c8f2278f"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/phase11_clean_replay/phase11_per_class_metrics.csv",
+      "sha256": "3988e15796beb44ca11c9a4a30b4d1aafe28a510a2c8ec1b2c788078affb0fd7"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/preservation_recheck.json",
+      "sha256": "58a33ca457070aedaff40c365a984e1e30c4fe58799f883ac499c96d09c0e4af"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/protocol/P15_04_PROTOCOL_REPORT.md",
+      "sha256": "327236f58d4515d8bbad87e76c09f15036fa3d1166cfac94f37d297ed3ca9870"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/protocol/p15_04_protocol_integrity.json",
+      "sha256": "93326634b7a40e4995ca9337452d6b060f1d38845d2f91598d96a132507efc70"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r02/preservation_final.json",
+      "sha256": "3594b38dc38538a0b54b678eca6d4dd05a359f8c63d6ac1196a2a3b34c17869f"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r02/previous_EVIDENCE_INDEX.csv",
+      "sha256": "62e45f0d9448bf2ac67b53f26697024521276bcda859438378129f397aad388d"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r02/previous_EXPERIMENT_REGISTRY.csv",
+      "sha256": "78f52f5515b1fa2ace6d7535e2245000b031918399c8651d5741d5417face613"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r02/resume_audit.json",
+      "sha256": "dbedc8e21d6fbb683179edf3aaf2823b5c681fcb8758f87a49899689baaa566e"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r03/resume_audit.json",
+      "sha256": "5001842075f97f89db12aa8cbe90d511c58b7f36f519b9e95b38b723a944225f"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r03_post/resume_audit.json",
+      "sha256": "544538ff07c0b499a6c6069d9b5e8c98077451498c363a74d349997a7db61446"
+    },
+    {
+      "path": "src/analysis/plot_p16_paired_effects.py",
+      "sha256": "82bae85c1b4dd6a1d67b3f29c661142163a4ec6f90af18dc01d7384f42ced959"
+    },
+    {
+      "path": "templates/original/DE-TAI-NCKHSV-15.zip",
+      "sha256": "8bdfa9a0f5a26f03115ac8435a851417d1ef48e98749d5f48dd52ae7de831bf0"
+    },
+    {
+      "path": "templates/original/Mau-De-cuong-NCKH-Sinh-vien-2026-7-trieu.docx",
+      "sha256": "bedb06dcecfc40a4d04a9412022509f039f7c4e64e6d779aa13b7dc9ec3d26c7"
+    },
+    {
+      "path": "templates/original/latex/assets/Logo_PTIT_University.png",
+      "sha256": "2d804f4c34eb3b75925c4c5804cb3cb28936257ba65879a8c99e3d94dc2b7b9a"
+    },
+    {
+      "path": "templates/original/latex/assets/cnn.jpeg",
+      "sha256": "a8599e5473af3af917b3bbea2d0615857378879b6276c8478668be2befc33e7c"
+    },
+    {
+      "path": "templates/original/latex/chapters/chap-0.phan-mo-dau.tex",
+      "sha256": "d9f54c76b6687075bd647f9ba6d568386ee036a47cc074bb78aa9d74923bbaa9"
+    },
+    {
+      "path": "templates/original/latex/chapters/chap-1-background.tex",
+      "sha256": "bb947fc1fd5105433fd858b5d0250555b2bbfd284ed47623ba6510887cf4f2d3"
+    },
+    {
+      "path": "templates/original/latex/chapters/chap-2-method.tex",
+      "sha256": "a6cb34d9e7c43e0a70e73a2c98a0643e389c46cf2d9da704980e062dc7880b02"
+    },
+    {
+      "path": "templates/original/latex/chapters/chap-3.tex",
+      "sha256": "031d2130c9dbf22f7348273a7ea8318ebb998c0aa3290d911b24417cfaac7261"
+    },
+    {
+      "path": "templates/original/latex/chapters/conclusion.tex",
+      "sha256": "13a4a4efd38aac00d28e40928870645fc572eb29b193e045479e1eea1705cb48"
+    },
+    {
+      "path": "templates/original/latex/figures/social-thumbnail.png",
+      "sha256": "d3541d7bb57211a89a35869fc4f44302e4487309e377db97ad8b51e0961eb6c8"
+    },
+    {
+      "path": "templates/original/latex/main.tex",
+      "sha256": "7a8088ea6a15ab69211727dc1d47499abed96ae68fa7fcf34a47572738107a9a"
+    },
+    {
+      "path": "templates/original/latex/pages/abbreviations.tex",
+      "sha256": "6e593bf32085ab10cb8db3cc6df9ae1026487bebe3e7e4acff2836ee8a279d8c"
+    },
+    {
+      "path": "templates/original/latex/pages/acknowledgments.tex",
+      "sha256": "f352fd7f09002d11462e0227eb6ae20e5883805228afd2c83dc8f58ff4755a0b"
+    },
+    {
+      "path": "templates/original/latex/pages/declaration.tex",
+      "sha256": "1cd72dec19b8ef035ad623f367e2e6fcf73b293b0f6a763d186534e7faf6213f"
+    },
+    {
+      "path": "templates/original/latex/refs.bib",
+      "sha256": "496e5b2420006b0a33037dc9899eeb74c0fd2c5606b5bcc173e4c5683351e41e"
+    },
+    {
+      "path": "templates/original/latex/styles/settings.tex",
+      "sha256": "06d8e8b876903027251de646e903dbbe44764d3672544dcb44903c47558a3394"
+    },
+    {
+      "path": "templates/original/latex/thesis.sty",
+      "sha256": "2a16545dc3a8cd7ffd0fc8447ca5f4ec78b37f72d787a5371ecdef4760809f1a"
+    },
+    {
+      "path": "tools/checkpoint_r03.py",
+      "sha256": "1f745426c9494a1ee4a5362231854bd937f99df8347f376d2c7de30616eab95d"
+    },
+    {
+      "path": "tools/fetch_reference_crosschecks_r03.py",
+      "sha256": "98537bb53b3afdcbdd86bc6ac6b32b7206fe81337df6af71cd1217149a3e996f"
+    },
+    {
+      "path": "tools/reconcile_reference_checks_r03.py",
+      "sha256": "2133f72fe4196cdf11eee4ab0fe86e33e39dae2a89e535dc4588773117c001fb"
+    },
+    {
+      "path": "tools/resume_audit_2026_10_16.py",
+      "sha256": "8f45daad4a711be048b07aadac287b2a9895deea614aa33303c2735b57ecd919"
+    },
+    {
+      "path": "tools/resume_checkpoint_audit.py",
+      "sha256": "75fe99880b22b3eb70e0578fbd79455e64440183fa4475f8a0941728d09148da"
+    }
+  ],
+  "next_action": "Read r03 section review; complete bounded proposal literature/background and 6 legacy metadata checks plus U01/U03; continue P16 frozen-table QA independently",
+  "last_gate_status": {
+    "bootstrap": "PASS_SCOPED",
+    "raw_integrity": "PASS",
+    "static_protocol": "PASS_WITH_CAVEATS",
+    "saved_evidence_checks": "79/79 PASS",
+    "unit_tests": "6/6 PASS",
+    "fresh_aggregate_replay": "3/3 byte-identical CSV; 6/6 tests PASS",
+    "preservation": "282/282 unchanged",
+    "figure_F1": "READY_FOR_REVIEW",
+    "bibliography": "3 metadata verified; 2 check suggested; 0 full text",
+    "release": "NOT_READY_FOR_SUBMISSION",
+    "resume_r02": "92/92 prior manifest and282/282 preservation PASS",
+    "legacy_literature": "6 VERIFIED_METADATA/6 pending;18/18 identity/bookkeeping checks",
+    "foundation_review": "PASS_SCOPED: methods7.8125; argument7.75",
+    "partial_section": "KEEP_INTERNAL_DRAFT7.5; P2 edits applied; no post-edit rescore",
+    "defense_qa": "20 questions;33 evidence paths; DRAFT_FOR_REVIEW",
+    "resume_r03": "146/148 prior hash matches;2 explained stale memory hashes;282/282 preserved",
+    "template_r03": "ZIP15 entries/extraction CRC PASS;DOCX8 tables CRC PASS;no visual QA",
+    "products_section": "INTERNAL_PARTIAL_DRAFT; independent section report + source checks; not full proposal",
+    "r03_post_audit": "172/172 checkpoint manifest PASS;282/282 historical preservation PASS;source/P2 checks16/16 PASS;section7.75 before minor repairs, no rescore"
+  },
+  "resume_command": "TIẾP TỤC NCKH; read .research_memory/HANDOFF.md and validate STATE artifact hashes before next task",
+  "training_performed_this_session": false,
+  "prediction_performed_this_session": false,
+  "original_training_environment": "UNKNOWN",
+  "model_artifact_available": false,
+  "background_work": "NONE",
+  "session_id": "2026-10-16-r02",
+  "checkpoint_validation_path": ".research_memory/checkpoint_r03.json"
+}

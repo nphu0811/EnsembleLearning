@@ -1,0 +1,586 @@
+{
+  "observed_at": "2026-10-16",
+  "tools": [
+    {
+      "name": "apply_patch",
+      "description": "The `apply_patch` tool can be used to edit files. This is a FREEFORM tool, so do not wrap the patch in JSON.\n\nexec tool declaration:\n```ts\ndeclare const tools: { apply_patch(input: string): Promise<unknown>; };\n```"
+    },
+    {
+      "name": "clock__curr_time",
+      "description": "Tools for reading and waiting on time.\n\nReturn the current time in UTC.\n\nexec tool declaration:\n```ts\ndeclare const tools: { clock__curr_time(args: {}): Promise<{\n  // Current UTC time formatted as YYYY-MM-DD HH:MM:SS UTC.\n  current_time: s"
+    },
+    {
+      "name": "create_goal",
+      "description": "Create a goal only when explicitly requested by the user or system/developer instructions; do not infer goals from ordinary tasks.\nSet token_budget only when an explicit token budget is requested. Fails if an unfinished goal exists; use upd"
+    },
+    {
+      "name": "exec_command",
+      "description": "Runs a command in a PTY, returning output or a session ID for ongoing interaction.\n\nWindows safety rules:\n- Do not compose destructive filesystem commands across shells. Do not enumerate paths in PowerShell and then pass them to `cmd /c`, b"
+    },
+    {
+      "name": "get_goal",
+      "description": "Get the current goal for this thread, including status, budgets, token and elapsed-time usage, and remaining token budget.\n\nexec tool declaration:\n```ts\ndeclare const tools: { get_goal(args: {}): Promise<unknown>; };\n```"
+    },
+    {
+      "name": "image_gen__imagegen",
+      "description": "Tools in the image_gen namespace.\n\nThe `image_gen.imagegen` tool enables image generation from descriptions and editing of existing images based on specific instructions. Use it when:\r\n\r\n- The user requests an image based on a scene descrip"
+    },
+    {
+      "name": "list_mcp_resource_templates",
+      "description": "Lists resource templates provided by MCP servers. Parameterized resource templates allow servers to share data that takes parameters and provides context to language models, such as files, database schemas, or application-specific informati"
+    },
+    {
+      "name": "list_mcp_resources",
+      "description": "Lists resources provided by MCP servers. Resources allow servers to share data that provides context to language models, such as files, database schemas, or application-specific information. Prefer resources over web search when possible.\n\n"
+    },
+    {
+      "name": "mcp__StitchMCP__apply_design_system",
+      "description": "Applies a design system to a list of screens. Use this tool when the user wants to update one or more screens to match the style of a design system.\nThis tool applies the selected design system's foundational design tokens (colors, fonts, s"
+    },
+    {
+      "name": "mcp__StitchMCP__create_design_system",
+      "description": "Creates a new design system for a project. Use this tool when the user wants to set or update the overall visual theme, style, or branding of the application.\nThis includes configuring:\n- Color Palette: Presets, custom primary colors, and s"
+    },
+    {
+      "name": "mcp__StitchMCP__create_design_system_from_design_md",
+      "description": "Creates a design system for a project, with user uploaded DESIGN.md file, and displays the design system in the UI.\n\n**Instructions for Tool Call:**\n*  Should call `upload_design_md` tool first to upload DESIGN.md to a Stitch project.\n\n\nexe"
+    },
+    {
+      "name": "mcp__StitchMCP__create_project",
+      "description": "Creates a new Stitch project. A project is a container for UI designs and frontend code.\n\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__StitchMCP__create_project(args: {\n  // Optional. The title of the project.\n  title?: string;"
+    },
+    {
+      "name": "mcp__StitchMCP__delete_project",
+      "description": "Deletes a specific Stitch project using its project name.\n\n**Instructions for Tool Call:**\n\n*  This action cannot be undone. Please confirm with \"yes\" or \"no\" to proceed.\n\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__StitchMCP_"
+    },
+    {
+      "name": "mcp__StitchMCP__edit_screens",
+      "description": "Edits existing screens within a project using a text prompt.\n\n**Instructions for Tool Call:**\n*  This action can take a few minutes to complete. Please be patient. DO NOT RETRY.\n*  If the tool call fails due to connection error, the process"
+    },
+    {
+      "name": "mcp__StitchMCP__generate_screen_from_text",
+      "description": "Generates a new screen within a project from a text prompt.\n\n**Instructions for Tool Call:**\n*  This action can take a few minutes to complete. Please be patient. DO NOT RETRY.\n*  If the tool fails with a timeout, don't retry. Instead, try "
+    },
+    {
+      "name": "mcp__StitchMCP__generate_variants",
+      "description": "Generates variants of existing screens within a project using a text prompt.\n\n**Instructions for Tool Call:**\n*  If the tool fails with a timeout, don't retry. Instead, try to get the screen with `get_screen` method every 30 seconds for up "
+    },
+    {
+      "name": "mcp__StitchMCP__get_project",
+      "description": "Retrieves the details of a specific Stitch project using its project name.\n\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__StitchMCP__get_project(args: {\n  // Required. Identifier. The resource name of the project to retrieve. Fo"
+    },
+    {
+      "name": "mcp__StitchMCP__get_screen",
+      "description": "Retrieves the details of a specific screen within a project.\n\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__StitchMCP__get_screen(args: {\n  // Required. Identifier. The resource name of the screen to retrieve. Format: `projects/"
+    },
+    {
+      "name": "mcp__StitchMCP__list_design_systems",
+      "description": "Lists all design systems for a given project.\n\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__StitchMCP__list_design_systems(args: {\n  // Optional. The project ID to list design systems for, example: '4044680601076201931', withou"
+    },
+    {
+      "name": "mcp__StitchMCP__list_projects",
+      "description": "Lists all Stitch projects accessible to the user. By default, it lists projects owned by the user.\n\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__StitchMCP__list_projects(args: {\n  // Optional. A filter to apply to the list of p"
+    },
+    {
+      "name": "mcp__StitchMCP__list_screens",
+      "description": "Lists all screens within a given Stitch project.\n\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__StitchMCP__list_screens(args: {\n  // Required. Identifier. The project ID to list screens for, example: '4044680601076201931', witho"
+    },
+    {
+      "name": "mcp__StitchMCP__update_design_system",
+      "description": "Updates a design system for a project. Use this tool when the user wants to change the overall visual theme, style, or branding of the application.\nThis includes configuring:\n- Color Palette: Presets, custom primary colors, and saturation l"
+    },
+    {
+      "name": "mcp__StitchMCP__upload_design_md",
+      "description": "Uploads DESIGN.md to a Stitch project. Use this tool when the user wants to create a design system from a DESIGN.md file.\n\n**Instructions for Tool Call:**\n*  Call `create_design_system_from_design_md` tool immediately after this tool to cre"
+    },
+    {
+      "name": "mcp__chrome_devtools__click",
+      "description": "Clicks on the provided element\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__click(args: {\n  // Set to true for double clicks. Default is false.\n  dblClick?: boolean;\n  // Whether to include a snapshot in the re"
+    },
+    {
+      "name": "mcp__chrome_devtools__close_page",
+      "description": "Closes the page by its index. The last open page cannot be closed.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__close_page(args: {\n  // The ID of the page to close. Call list_pages to list pages.\n  pageId: numb"
+    },
+    {
+      "name": "mcp__chrome_devtools__drag",
+      "description": "Drag an element onto another element\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__drag(args: {\n  // The uid of the element to drag\n  from_uid: string;\n  // Whether to include a snapshot in the response. Default"
+    },
+    {
+      "name": "mcp__chrome_devtools__emulate",
+      "description": "Emulates various features on the target page. Each call replaces all emulation settings (except extraHttpHeaders), so pass all desired settings in a single call.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__emu"
+    },
+    {
+      "name": "mcp__chrome_devtools__evaluate_script",
+      "description": "Evaluate JavaScript inside the target page. The source can be provided inline or loaded from a local file. Returns the response as JSON, so returned values have to be JSON-serializable.\n\nexec tool declaration:\n```ts\ndeclare const tools: { m"
+    },
+    {
+      "name": "mcp__chrome_devtools__fill",
+      "description": "Type text into an input, text area or select an option from a <select> element.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__fill(args: {\n  // Whether to include a snapshot in the response. Default is false.\n  "
+    },
+    {
+      "name": "mcp__chrome_devtools__fill_form",
+      "description": "Fill out multiple form elements (inputs, selects, checkboxes, radios) at once. ALWAYS prefer this tool over multiple individual 'fill' or 'click' calls when interacting with forms. It is significantly faster, more reliable, and reduces turn"
+    },
+    {
+      "name": "mcp__chrome_devtools__get_console_message",
+      "description": "Gets a console message by its ID. You can get all messages by calling list_console_messages.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__get_console_message(args: {\n  // The msgid of a console message on the p"
+    },
+    {
+      "name": "mcp__chrome_devtools__get_css_styles",
+      "description": "Retrieve matched CSS rules, inline styles (element.style), inherited styles, custom properties, and cascade wrappers (@layer, @media, @container, @scope) for an element identified by its UID.\nRules are ordered from highest to lowest cascade"
+    },
+    {
+      "name": "mcp__chrome_devtools__get_network_request",
+      "description": "Gets a network request by an optional reqid, if omitted returns the currently selected request in the DevTools Network panel. Useful for inspecting request headers (including 'Cookie') and response headers (including 'Set-Cookie' and direct"
+    },
+    {
+      "name": "mcp__chrome_devtools__handle_dialog",
+      "description": "If a browser dialog was opened, use this command to handle it\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__handle_dialog(args: {\n  // Whether to dismiss or accept the dialog\n  action: \"accept\" | \"dismiss\";\n  //"
+    },
+    {
+      "name": "mcp__chrome_devtools__hover",
+      "description": "Hover over the provided element\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__hover(args: {\n  // Whether to include a snapshot in the response. Default is false.\n  includeSnapshot?: boolean;\n  // Targets a speci"
+    },
+    {
+      "name": "mcp__chrome_devtools__lighthouse_audit",
+      "description": "Get Lighthouse scores, failing audits, and the DOM nodes they flag for accessibility, SEO, best practices, and agentic browsing. Full reports are saved to disk. This excludes performance. For performance audits, run performance_start_trace\n"
+    },
+    {
+      "name": "mcp__chrome_devtools__list_console_messages",
+      "description": "List all console messages for the target page since the last navigation.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__list_console_messages(args: {\n  // Set to true to return the preserved messages over the las"
+    },
+    {
+      "name": "mcp__chrome_devtools__list_network_requests",
+      "description": "Lists the most recent requests for the target page since the last navigation.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__list_network_requests(args: {\n  // Set to true to return the preserved requests over th"
+    },
+    {
+      "name": "mcp__chrome_devtools__list_pages",
+      "description": "Get a list of pages open in the browser.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__list_pages(args: {}): Promise<CallToolResult>; };\n```"
+    },
+    {
+      "name": "mcp__chrome_devtools__navigate_page",
+      "description": "Go to a URL, or back, forward, or reload. Use project URL if not specified otherwise.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__navigate_page(args: {\n  // Whether to auto accept or beforeunload dialogs trigg"
+    },
+    {
+      "name": "mcp__chrome_devtools__new_page",
+      "description": "Open a new tab and load a URL. Use project URL if not specified otherwise.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__new_page(args: {\n  // Whether to open the page in the background without bringing it to th"
+    },
+    {
+      "name": "mcp__chrome_devtools__performance_analyze_insight",
+      "description": "Provides more detailed information on a specific Performance Insight of an insight set that was highlighted in the results of a trace recording.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__performance_analyze_"
+    },
+    {
+      "name": "mcp__chrome_devtools__performance_start_trace",
+      "description": "Start a performance trace on the target webpage. Use to find frontend performance issues, Core Web Vitals (LCP, INP, CLS), and improve page load speed.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__performance_s"
+    },
+    {
+      "name": "mcp__chrome_devtools__performance_stop_trace",
+      "description": "Stop the active performance trace recording on the target webpage.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__performance_stop_trace(args: {\n  // The absolute file path, or a file path relative to the current"
+    },
+    {
+      "name": "mcp__chrome_devtools__press_key",
+      "description": "Press a key or key combination. Use this when other input methods like fill() cannot be used (e.g., keyboard shortcuts, navigation keys, or special key combinations).\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools"
+    },
+    {
+      "name": "mcp__chrome_devtools__resize_page",
+      "description": "Resizes the page's window so that the page has specified dimension\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__resize_page(args: {\n  // Page height\n  height: number;\n  // Targets a specific page by ID.\n  pageI"
+    },
+    {
+      "name": "mcp__chrome_devtools__screencast_start",
+      "description": "Starts recording a screencast (video) of the target page.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__screencast_start(args: {\n  // Output file path (.mp4). Uses mkdtemp to generate a unique path if not provid"
+    },
+    {
+      "name": "mcp__chrome_devtools__screencast_stop",
+      "description": "Stops the active screencast recording on the target page.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__screencast_stop(args: {\n  // Targets a specific page by ID.\n  pageId: number;\n}): Promise<CallToolResult>; "
+    },
+    {
+      "name": "mcp__chrome_devtools__select_page",
+      "description": "Select a page as a context for future tool calls.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__select_page(args: {\n  // Whether to focus the page and bring it to the top.\n  bringToFront?: boolean;\n  // The ID o"
+    },
+    {
+      "name": "mcp__chrome_devtools__take_heapsnapshot",
+      "description": "Capture a heap snapshot of the target page. Use to analyze the memory distribution of JavaScript objects and debug memory leaks.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__take_heapsnapshot(args: {\n  // A pat"
+    },
+    {
+      "name": "mcp__chrome_devtools__take_screenshot",
+      "description": "Take a screenshot of the page or element.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__take_screenshot(args: {\n  // The absolute path, or a path relative to the current working directory, to save the screenshot"
+    },
+    {
+      "name": "mcp__chrome_devtools__take_snapshot",
+      "description": "Take a text snapshot of the target page based on the a11y tree. The snapshot lists page elements along with a unique\nidentifier (uid). Always use the latest snapshot. Prefer taking a snapshot over taking a screenshot. The snapshot indicates"
+    },
+    {
+      "name": "mcp__chrome_devtools__type_text",
+      "description": "Type text using keyboard into a previously focused input\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__type_text(args: {\n  // Targets a specific page by ID.\n  pageId: number;\n  // Optional key to press after typ"
+    },
+    {
+      "name": "mcp__chrome_devtools__upload_file",
+      "description": "Upload a file through a provided element.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__upload_file(args: {\n  // One or more files paths to upload. File paths have to be local to the browser instance (not the MC"
+    },
+    {
+      "name": "mcp__chrome_devtools__wait_for",
+      "description": "Wait for the specified text to appear on the selected page.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__chrome_devtools__wait_for(args: {\n  // Targets a specific page by ID.\n  pageId: number;\n  // Non-empty list of texts. Reso"
+    },
+    {
+      "name": "mcp__codex_apps__codex_document_control_execute_document_command",
+      "description": "Use Codex Document Control to find connected document sessions, inspect the tools supported by a selected session, and execute one supported tool against that session. Call `list_document_sessions` first to choose the intended connected ses"
+    },
+    {
+      "name": "mcp__codex_apps__codex_document_control_get_document_tool_schemas",
+      "description": "Use Codex Document Control to find connected document sessions, inspect the tools supported by a selected session, and execute one supported tool against that session. Call `list_document_sessions` first to choose the intended connected ses"
+    },
+    {
+      "name": "mcp__codex_apps__codex_document_control_list_document_sessions",
+      "description": "Use Codex Document Control to find connected document sessions, inspect the tools supported by a selected session, and execute one supported tool against that session. Call `list_document_sessions` first to choose the intended connected ses"
+    },
+    {
+      "name": "mcp__codex_apps__hotline_get_local_hotline",
+      "description": "Look up local helpline information for the user based on country inferred from the conversation. You must use this tool before providing a suicide or self-harm helpline; do not use web search or guess.\n\nLook up local helpline information fo"
+    },
+    {
+      "name": "mcp__codex_apps__pets_adopt",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps.\n\nAdopt a shared ChatGPT pet from its opaque sharepet_ ID. Whe"
+    },
+    {
+      "name": "mcp__codex_apps__pets_create_pet",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps.\n\nConsume a completed prepare_pet_upload session by its upload"
+    },
+    {
+      "name": "mcp__codex_apps__pets_delete_pet",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps.\n\nPermanently delete one owned custom ChatGPT pet and its stor"
+    },
+    {
+      "name": "mcp__codex_apps__pets_get_pet_download_link",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps.\n\nGet a download URL for one built-in or owned custom ChatGPT "
+    },
+    {
+      "name": "mcp__codex_apps__pets_list_pets",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps.\n\nList one page of built-in and custom ChatGPT pet metadata pl"
+    },
+    {
+      "name": "mcp__codex_apps__pets_prepare_pet_upload",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps.\n\nPrepare a user-scoped ChatGPT pet sprite-sheet upload. First"
+    },
+    {
+      "name": "mcp__codex_apps__pets_select_pet",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps.\n\nPersist a built-in or owned custom ChatGPT pet as active by "
+    },
+    {
+      "name": "mcp__codex_apps__pets_share_pet",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps.\n\nCreate a share link for one owned custom ChatGPT pet. Person"
+    },
+    {
+      "name": "mcp__codex_apps__pets_unshare_pet",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps.\n\nStop sharing one owned custom ChatGPT pet and invalidate its"
+    },
+    {
+      "name": "mcp__codex_apps__pets_update_pet",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps.\n\nUpdate the name, description, sprite sheet, or any combinati"
+    },
+    {
+      "name": "mcp__codex_apps__pets_validate_pet_spritesheet",
+      "description": "Create and manage the user's animated companion pets inside ChatGPT Work mode. Use only for ChatGPT Pets, not real-world animal advice, generic pet images, or pets in other apps.\n\nValidate a ChatGPT pet PNG or WebP before creating an upload"
+    },
+    {
+      "name": "mcp__codex_apps__plugin_management_get_app_permissions",
+      "description": "Manage plugins, settings, permissions, and connections. Prefer available built-in tools or connected plugins when they fit the task. Proactively search for plugins when an external app, account, or service would materially help, even if the"
+    },
+    {
+      "name": "mcp__codex_apps__plugin_management_get_plugin_dependencies",
+      "description": "Manage plugins, settings, permissions, and connections. Prefer available built-in tools or connected plugins when they fit the task. Proactively search for plugins when an external app, account, or service would materially help, even if the"
+    },
+    {
+      "name": "mcp__codex_apps__plugin_management_search_plugins",
+      "description": "Manage plugins, settings, permissions, and connections. Prefer available built-in tools or connected plugins when they fit the task. Proactively search for plugins when an external app, account, or service would materially help, even if the"
+    },
+    {
+      "name": "mcp__codex_apps__plugin_management_suggest_plugins",
+      "description": "Manage plugins, settings, permissions, and connections. Prefer available built-in tools or connected plugins when they fit the task. Proactively search for plugins when an external app, account, or service would materially help, even if the"
+    },
+    {
+      "name": "mcp__codex_apps__plugin_management_uninstall_app",
+      "description": "Manage plugins, settings, permissions, and connections. Prefer available built-in tools or connected plugins when they fit the task. Proactively search for plugins when an external app, account, or service would materially help, even if the"
+    },
+    {
+      "name": "mcp__codex_apps__plugin_management_update_app_permissions",
+      "description": "Manage plugins, settings, permissions, and connections. Prefer available built-in tools or connected plugins when they fit the task. Proactively search for plugins when an external app, account, or service would materially help, even if the"
+    },
+    {
+      "name": "mcp__codex_apps__safety_settings_get_family_info",
+      "description": "For ChatGPT Parental Controls (your child or teen's settings, features, Study Mode, quiet hours, family setup) and Trusted Contact (setup, status, privacy). Read account state first. Before updates, read the child's controls; prepare only c"
+    },
+    {
+      "name": "mcp__codex_apps__safety_settings_get_parental_controls",
+      "description": "For ChatGPT Parental Controls (your child or teen's settings, features, Study Mode, quiet hours, family setup) and Trusted Contact (setup, status, privacy). Read account state first. Before updates, read the child's controls; prepare only c"
+    },
+    {
+      "name": "mcp__codex_apps__safety_settings_get_trusted_contact",
+      "description": "For ChatGPT Parental Controls (your child or teen's settings, features, Study Mode, quiet hours, family setup) and Trusted Contact (setup, status, privacy). Read account state first. Before updates, read the child's controls; prepare only c"
+    },
+    {
+      "name": "mcp__codex_apps__safety_settings_prepare_parental_control_update",
+      "description": "For ChatGPT Parental Controls (your child or teen's settings, features, Study Mode, quiet hours, family setup) and Trusted Contact (setup, status, privacy). Read account state first. Before updates, read the child's controls; prepare only c"
+    },
+    {
+      "name": "mcp__codex_apps__safety_settings_update_parental_control",
+      "description": "For ChatGPT Parental Controls (your child or teen's settings, features, Study Mode, quiet hours, family setup) and Trusted Contact (setup, status, privacy). Read account state first. Before updates, read the child's controls; prepare only c"
+    },
+    {
+      "name": "mcp__codex_apps__search_service_web_run",
+      "description": "Tool for accessing the internet.\n\n\n---\n\n## Examples of different commands available in this tool\n\nExamples of different commands available in this tool:\n* `system2_search_query`: {\"system2_search_query\": [{\"q\": \"What is the capital of Franc"
+    },
+    {
+      "name": "mcp__codex_apps__sites_add_custom_domain",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_change_site_slug",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_create_schedule",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_create_site",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_create_source_repository_write_credential",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_deploy_private_site_version",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_deploy_site_version",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_generate_siwc_bypass_token",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_get_deployment_status",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_get_environment_variables",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_get_site",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_get_site_version",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_get_site_worker_logs",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_list_custom_domains",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_list_site_versions",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_list_sites",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_read_database_overview",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_read_database_table_rows",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_refresh_custom_domain_status",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_remove_custom_domain",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_save_site_version",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_save_version_and_deploy_private",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_update_environment_variables",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_update_site_access",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__codex_apps__sites_update_site_metadata",
+      "description": "Use Sites to build or modify websites, including landing pages, portfolios, dashboards, portals, trackers, hubs, and internal tools. Use Sites skills for local implementation, source preparation, and artifact packaging. Use this connector f"
+    },
+    {
+      "name": "mcp__grapuco__add_module",
+      "description": "Create a new Module in a Spec Agent project. Use when you identify a new domain area during development.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__add_module(args: {\n  // Name of the new module\n  name: string;\n  // "
+    },
+    {
+      "name": "mcp__grapuco__add_use_case",
+      "description": "Create a new Use Case in a module. Use when you discover a new feature requirement during vibe coding.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__add_use_case(args: {\n  // Description of the use case\n  description?: "
+    },
+    {
+      "name": "mcp__grapuco__blast_radius",
+      "description": "Compute blast radius for a symbol: upstream callers, downstream callees, affected processes and routes, risk level (LOW/MEDIUM/HIGH/CRITICAL).\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__blast_radius(args: {\n  // Dire"
+    },
+    {
+      "name": "mcp__grapuco__bootstrap",
+      "description": "One-shot onboarding: returns repos, tool catalog, skill manifest, and recommended first moves. Call this once at session start. Pass workspaceId (from .grapuco/config.json) to auto-resolve related repos and spec projects.\n\nexec tool declara"
+    },
+    {
+      "name": "mcp__grapuco__check_dependencies",
+      "description": "Check if the current UseCase relies on other UseCases (e.g. Auth flow).\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__check_dependencies(args: { useCaseId: string; }): Promise<CallToolResult>; };\n```"
+    },
+    {
+      "name": "mcp__grapuco__check_staleness",
+      "description": "Check if a repository's code graph is stale vs current HEAD. Returns recommendation: none/incremental/full.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__check_staleness(args: {\n  // List of changed file paths\n  changed"
+    },
+    {
+      "name": "mcp__grapuco__detect_changes",
+      "description": "Analyze git diff to find impacted symbols, processes, routes, and risk level. Pass unified diff text.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__detect_changes(args: {\n  // Unified diff text (git diff output)\n  diff:"
+    },
+    {
+      "name": "mcp__grapuco__detect_tools",
+      "description": "Detect MCP tools, gRPC services, and JSON-RPC methods in the codebase.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__detect_tools(args: {\n  // Repo ID\n  repositoryId?: string;\n}): Promise<CallToolResult>; };\n```"
+    },
+    {
+      "name": "mcp__grapuco__get_active_task_context",
+      "description": "Get explicit requirements, steps, rules, and actors for the active Use Case to guide coding architecture.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__get_active_task_context(args: { useCaseId: string; }): Promise<Call"
+    },
+    {
+      "name": "mcp__grapuco__get_architecture",
+      "description": "Get the full architecture map (all nodes + edges) of a repository.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__get_architecture(args: { repositoryId?: string; }): Promise<CallToolResult>; };\n```"
+    },
+    {
+      "name": "mcp__grapuco__get_context",
+      "description": "RAG: Get rich context to explain a feature or code flow with related symbols and call chains. Costs 5 AI credits per query.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__get_context(args: {\n  // Feature or concept, e.g."
+    },
+    {
+      "name": "mcp__grapuco__get_data_flows",
+      "description": "List end-to-end data flow traces (API → Service → DB) for a repository. Shows how data moves through the system.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__get_data_flows(args: {\n  // Filter by HTTP path, e.g. \"/auth"
+    },
+    {
+      "name": "mcp__grapuco__get_dependencies",
+      "description": "Get full dependency graph (CALLS, IMPORTS, EXTENDS) of a specific code node.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__get_dependencies(args: {\n  // Node ID e.g. \"Function:src/auth/auth.service.ts:login\"\n  nodeId: s"
+    },
+    {
+      "name": "mcp__grapuco__get_erd",
+      "description": "Get the ERD (Entity-Relationship Diagram) in DBML format for a Spec Agent project. Returns the database schema design derived from business specifications. Use after list_projects to get a projectId.\n\nexec tool declaration:\n```ts\ndeclare co"
+    },
+    {
+      "name": "mcp__grapuco__get_impact_analysis",
+      "description": "Find all data flows that touch a specific file. Shows which API endpoints, DB operations, and workflows are affected when that file changes.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__get_impact_analysis(args: {\n  //"
+    },
+    {
+      "name": "mcp__grapuco__get_project_modules",
+      "description": "List all Modules and UseCases in a Business Project.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__get_project_modules(args: { projectId: string; }): Promise<CallToolResult>; };\n```"
+    },
+    {
+      "name": "mcp__grapuco__get_skill",
+      "description": "Get the full content of a Grapuco skill (step-by-step workflow guide). Use list_skills to see available skills first.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__get_skill(args: {\n  // Skill name, e.g. \"explore-codeba"
+    },
+    {
+      "name": "mcp__grapuco__get_symbol_context",
+      "description": "Get 360° context for a symbol: callers, callees, processes, heritage, DB access, routes, overrides. Costs 0 credits.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__get_symbol_context(args: {\n  // Symbol name (may be ambi"
+    },
+    {
+      "name": "mcp__grapuco__grapuco_help",
+      "description": "Get an overview of all available Grapuco tools and skills. Use this when you need guidance on which tool to use.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__grapuco_help(args: {\n  // Specific topic: \"explore\", \"edit\","
+    },
+    {
+      "name": "mcp__grapuco__list_projects",
+      "description": "List all Spec Agent (Business Analysis) projects for the current user. Call this first to discover available projects and their IDs before using get_project_modules or get_active_task_context.\n\nexec tool declaration:\n```ts\ndeclare const too"
+    },
+    {
+      "name": "mcp__grapuco__list_repositories",
+      "description": "List all indexed repositories for the current user. Call this first if unsure which repoId to use.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__list_repositories(args: { [key: string]: unknown; }): Promise<CallToolResu"
+    },
+    {
+      "name": "mcp__grapuco__list_skills",
+      "description": "List all available Grapuco skills (workflow guides). Each skill has step-by-step instructions for common tasks like exploring code, debugging, refactoring, etc.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__list_skills("
+    },
+    {
+      "name": "mcp__grapuco__list_workspaces",
+      "description": "List all Workspaces for the current user. A workspace groups related repositories and spec projects together.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__list_workspaces(args: { [key: string]: unknown; }): Promise<Cal"
+    },
+    {
+      "name": "mcp__grapuco__rename_symbol",
+      "description": "Preview or apply a safe multi-file rename. Returns graph edits, textual candidates, and conflicts.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__rename_symbol(args: {\n  // True = preview only, false = apply\n  dryRun?: b"
+    },
+    {
+      "name": "mcp__grapuco__save_use_case_draft",
+      "description": "Full rewrite of a Use Case including actors, flows, rules, and data entities. Returns a change summary. Use for comprehensive spec updates.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__save_use_case_draft(args: {\n  // "
+    },
+    {
+      "name": "mcp__grapuco__search_code",
+      "description": "Search for Functions, Classes, or Methods by name in the code graph.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__search_code(args: {\n  // Keyword, e.g. \"UserService\" or \"login\"\n  query: string;\n  // Repo ID — call lis"
+    },
+    {
+      "name": "mcp__grapuco__semantic_search",
+      "description": "Search code using natural language. Returns semantically relevant code symbols.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__semantic_search(args: {\n  // Max results (default: 5)\n  limit?: number;\n  // Natural language"
+    },
+    {
+      "name": "mcp__grapuco__semantic_search_docs",
+      "description": "Find business rules, constraints, or schemas relevant to what you are trying to implement.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__semantic_search_docs(args: { query: string; repositoryId?: string; }): Promise<Cal"
+    },
+    {
+      "name": "mcp__grapuco__update_erd",
+      "description": "Update the ERD (Entity-Relationship Diagram) in DBML format for a project. Use when database schema changes during coding.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__update_erd(args: {\n  // Full DBML code for the ERD"
+    },
+    {
+      "name": "mcp__grapuco__update_use_case",
+      "description": "Update fields of an existing Use Case (name, description, precondition, postcondition). Use this for lightweight spec updates during coding.\n\nexec tool declaration:\n```ts\ndeclare const tools: { mcp__grapuco__update_use_case(args: {\n  // Upd"
+    },
+    {
+      "name": "mcp__node_repl__js",
+      "description": "Use `js` for `node_repl` execution with persistent, redeclarable top-level bindings, `js_reset` to clear bindings, and `js_add_node_module_dir` to add package directories.\n\nUse Cases:\n- Control the in-app browser in conjunction with the Bro"
+    },
+    {
+      "name": "mcp__node_repl__js_add_node_module_dir",
+      "description": "Use `js` for `node_repl` execution with persistent, redeclarable top-level bindings, `js_reset` to clear bindings, and `js_add_node_module_dir` to add package directories.\n\nUse Cases:\n- Control the in-app browser in conjunction with the Bro"
+    },
+    {
+      "name": "mcp__node_repl__js_reset",
+      "description": "Use `js` for `node_repl` execution with persistent, redeclarable top-level bindings, `js_reset` to clear bindings, and `js_add_node_module_dir` to add package directories.\n\nUse Cases:\n- Control the in-app browser in conjunction with the Bro"
+    },
+    {
+      "name": "read_mcp_resource",
+      "description": "Read a specific resource from an MCP server given the server name and resource URI.\n\nexec tool declaration:\n```ts\ndeclare const tools: { read_mcp_resource(args: {\n  // MCP server name exactly as configured. Must match the 'server' field ret"
+    },
+    {
+      "name": "update_goal",
+      "description": "Update the existing goal.\nSet status to `paused` only at the user's explicit request to pause this goal, never on your own initiative. Ask if unclear; a later resume revokes that request. Report the returned status and stop goal work. Budge"
+    },
+    {
+      "name": "view_image",
+      "description": "View a local image file from the filesystem when visual inspection is needed. Use this for images already available on disk.\n\nexec tool declaration:\n```ts\ndeclare const tools: { view_image(args: {\n  // Image detail level. Defaults to `high`"
+    },
+    {
+      "name": "web__run",
+      "description": "Tools in the web namespace.\n\nTool for accessing the internet.\r\n\r\n\r\n---\r\n\r\n## Examples of different commands available in this tool\r\n\r\nExamples of different commands available in this tool:\r\n* `search_query`: {\"search_query\": [{\"q\": \"What is"
+    },
+    {
+      "name": "write_stdin",
+      "description": "Writes characters to an existing unified exec session and returns recent output.\n\nexec tool declaration:\n```ts\ndeclare const tools: { write_stdin(args: {\n  // Bytes to write to stdin. Defaults to empty, which polls without writing.\n  chars?"
+    }
+  ],
+  "exact_workspace_dependency_loader_found": false
+}

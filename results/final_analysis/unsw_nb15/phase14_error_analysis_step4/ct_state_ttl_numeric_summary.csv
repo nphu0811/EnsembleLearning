@@ -1,0 +1,6 @@
+error_group,support,min,q1,median,q3,p90,max,pct_equal_zero
+ALL_FUZZERS,6062,0.0,1.0,1.0,2.0,2.0,6.0,0.001979544704717915
+both_caught,5261,0.0,1.0,1.0,2.0,2.0,6.0,0.0022809351834252043
+rf_caught_stack_missed,180,1.0,1.0,1.0,2.0,2.0,2.0,0.0
+rf_missed_stack_caught,47,1.0,1.0,2.0,2.0,2.0,2.0,0.0
+both_missed,574,1.0,1.0,1.0,2.0,2.0,4.0,0.0

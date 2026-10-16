@@ -1,0 +1,28 @@
+{
+  "hypothesis": "Parallel tree probability summation order produces tiny floating point differences, not model serialization corruption",
+  "model_sha256": "70f34043cb360acaf8942c7c63f019be6425eac5f68708de9250cf6643532c1a",
+  "parallel_max_abs_diffs": [
+    2.220446049250313e-16,
+    2.220446049250313e-16,
+    2.220446049250313e-16,
+    2.220446049250313e-16,
+    2.220446049250313e-16
+  ],
+  "serial_exact_repeats": [
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "serial_reload_exact": true,
+  "parallel_vs_serial_max_abs": 2.220446049250313e-16,
+  "parallel_serial_labels_identical": true,
+  "probability_tolerance": {
+    "rtol": 1e-12,
+    "atol": 1e-12
+  },
+  "parallel_within_tolerance": true,
+  "scope": "Diagnostic using saved SMOKE model and same TRAIN validation subset only; no refit, no TEST, no scientific metric",
+  "hypothesis_supported": true
+}

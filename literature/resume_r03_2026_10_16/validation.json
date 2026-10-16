@@ -1,0 +1,40 @@
+{
+  "checks": {
+    "ledger_rows_12": true,
+    "unique_dois_12": true,
+    "verified_subset_6": true,
+    "matrix_status_matches": true,
+    "crossref_sources_exist": true,
+    "no_full_read_claim": true,
+    "L01_doi_title": true,
+    "L02_doi_title": true,
+    "L03_doi_title": true,
+    "L04_doi_title": true,
+    "L05_doi_title": true,
+    "L06_doi_title": true,
+    "L07_doi_title": true,
+    "L08_doi_title": true,
+    "L09_doi_title": true,
+    "L10_doi_title": true,
+    "L11_doi_title": true,
+    "L12_doi_title": true
+  },
+  "passed": true,
+  "verified": [
+    "L04",
+    "L05",
+    "L06",
+    "L07",
+    "L08",
+    "L11"
+  ],
+  "pending": [
+    "L01",
+    "L02",
+    "L03",
+    "L09",
+    "L10",
+    "L12"
+  ],
+  "scope": "Metadata bookkeeping and saved identity checks; not full-text or final P18 QA"
+}

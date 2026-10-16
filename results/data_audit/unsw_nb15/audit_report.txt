@@ -1,0 +1,49 @@
+UNSW-NB15 DATA AUDIT REPORT
+========================================================================
+
+IMPORTANT:
+- No cleaning was performed.
+- No feature was deleted.
+- No encoder/scaler/resampler/model was fitted.
+- Raw CSV files were not modified.
+
+1. SHAPE
+Train: 175,341 rows x 45 columns
+Test : 82,332 rows x 45 columns
+
+2. SCHEMA
+Same column set  : True
+Same column order: True
+Train-only cols  : []
+Test-only cols   : []
+
+3. MISSING / INFINITY
+Columns with missing values: 0
+Columns with infinity: 0
+
+4. DUPLICATES
+Train full duplicate extra rows: 0
+Test full duplicate extra rows : 0
+Train feature-vector duplicate extra rows: 74,301
+Test feature-vector duplicate extra rows : 28,386
+
+5. TARGET
+Train label distribution: {1: 119341, 0: 56000}
+Test label distribution : {1: 45332, 0: 37000}
+Train attack categories : 10
+Test attack categories  : 10
+
+6. TRAIN/TEST EXACT FEATURE-VECTOR OVERLAP
+Unique overlapping feature vectors: 1,302
+Train rows whose vector also appears in test: 10,279
+Test rows whose vector also appears in train: 8,541
+Excluded from overlap comparison: ['attack_cat', 'id', 'label']
+
+7. FLAGGED COLUMNS
+Flagged constant/NZV/high-cardinality rows: 4
+Suspicious-column audit rows: 6
+
+NEXT STEP:
+Review these findings BEFORE deciding what to clean/drop/encode/scale.
+
+Output directory: C:\Users\admin\Documents\ChatGPT\NCKH\results\data_audit\unsw_nb15

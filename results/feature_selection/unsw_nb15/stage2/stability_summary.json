@@ -1,0 +1,17 @@
+{
+  "filter": {
+    "mean_pairwise_jaccard": 0.8891774891774892,
+    "min_pairwise_jaccard": 0.8181818181818182,
+    "max_pairwise_jaccard": 1.0
+  },
+  "l1": {
+    "mean_pairwise_jaccard": 0.8623376623376624,
+    "min_pairwise_jaccard": 0.8181818181818182,
+    "max_pairwise_jaccard": 1.0
+  },
+  "extra_trees": {
+    "mean_pairwise_jaccard": 0.82909843779409,
+    "min_pairwise_jaccard": 0.7391304347826086,
+    "max_pairwise_jaccard": 0.9047619047619048
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "project": "Ensemble Learning for Network Intrusion Detection (NCKH)",
+  "last_updated": null,
+  "phase": "UNDETERMINED_REQUIRES_WORKSPACE_AUDIT",
+  "current_task": "Inspect existing workspace and validate phase artifacts",
+  "completed_tasks": [],
+  "blocked_tasks": [],
+  "immutable_decisions": [],
+  "artifact_manifest": [],
+  "next_action": "Run inventory, templates/skills discovery, and RESUME_AUDIT.md",
+  "last_gate_status": "NOT_RUN",
+  "resume_command": "TIẾP TỤC NCKH"
+}

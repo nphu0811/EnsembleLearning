@@ -1,0 +1,5 @@
+error_group,n,share_of_all_fuzzers
+both_caught,5261,0.8678653909600792
+rf_caught_stack_missed,180,0.029693170570768722
+rf_missed_stack_caught,47,0.007753216760145167
+both_missed,574,0.09468822170900693

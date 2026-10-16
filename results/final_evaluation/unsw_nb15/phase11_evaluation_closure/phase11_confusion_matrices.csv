@@ -1,0 +1,7 @@
+pipeline,eval_view,tn,fp,fn,tp,true_normal,true_attack,total
+random_forest_42,official_test,26997,10003,734,44598,37000,45332,82332
+random_forest_42,novel_vector_test,25985,9543,716,37547,35528,38263,73791
+stacking_42,official_test,27139,9861,852,44480,37000,45332,82332
+stacking_42,novel_vector_test,26138,9390,834,37429,35528,38263,73791
+random_forest_17,official_test,26776,10224,708,44624,37000,45332,82332
+random_forest_17,novel_vector_test,25849,9679,699,37564,35528,38263,73791
