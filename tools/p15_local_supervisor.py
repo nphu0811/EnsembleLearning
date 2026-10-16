@@ -37,6 +37,13 @@ def load_preflight():
 def read_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding='utf-8'))
 
+def sha256_stream(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open('rb') as reader:
+        for chunk in iter(lambda: reader.read(1024*1024), b''):
+            h.update(chunk)
+    return h.hexdigest()
+
 
 def safe_new_output(root: Path, raw: Path) -> Path:
     base = (root / 'results' / 'reproducibility').resolve(strict=True)
@@ -69,12 +76,35 @@ def check_pilot_evidence(path: Path, candidate: str, hashes: dict, interpreter: 
         d = read_json(path)
         return (d['mode'] == 'pilot' and d['candidate'] == candidate and d['result'] == 'PASS'
                 and d['source_hashes'] == hashes and d['python_executable'] == interpreter
-                and int(d['budget']['process_tree_rss_cap_bytes']) <= cap
+                and int(d['budget']['process_tree_rss_cap_bytes']) == cap
                 and d['worker_checks']['passed'] and d['release_certified'] is False
                 and d['peak_tree_rss_bytes'] < cap * 0.75)
     except (OSError, ValueError, TypeError, KeyError):
         return False
 
+
+def verify_worker_result(worker: dict, candidate: str, mode: str, worker_dir: Path,
+                         input_hashes: dict, package_versions: dict) -> bool:
+    """Verify worker claims against actual files before recording a PASS."""
+    if not (worker.get('passed') is True and worker.get('candidate') == candidate
+            and worker.get('mode') == mode and worker.get('input_sha256') == input_hashes
+            and worker.get('package_versions') == package_versions and worker.get('threshold') == 0.5
+            and worker.get('classes') == [0, 1]
+            and worker.get('train_rows') == (175341 if mode == 'full' else worker.get('train_rows'))):
+        return False
+    artifact = worker.get('artifact')
+    if mode == 'pilot':
+        return artifact is None and 1000 <= worker.get('train_rows', 0) <= 25000
+    if not isinstance(artifact, dict):
+        return False
+    filename = artifact.get('filename')
+    if filename != candidate + '_RECONSTRUCTED_FULL_TRAIN.joblib':
+        return False
+    path = worker_dir / filename
+    if path.is_symlink() or not path.is_file() or path.resolve() != path:
+        return False
+    return (path.stat().st_size > 0 and path.stat().st_size == artifact.get('bytes')
+            and sha256_stream(path) == artifact.get('sha256'))
 
 def resource_sample(psutil, pid: int, root: Path, cap: int, floor: int):
     """A failure to read resource counters means STOP, never presume safe."""
@@ -178,9 +208,15 @@ def main() -> int:
         return 2
     hashes = {k[len('sha256:'):]: v['observed']['sha256']
               for k,v in audit['checks'].items() if k.startswith('sha256:')}
-    if args.mode == 'full' and not check_pilot_evidence(args.pilot_report.resolve(strict=True), args.candidate, hashes, interpreter, cap):
-        print('NO_GO: matching successful pilot required; headroom <75% of cap or provenance mismatch.', file=sys.stderr)
-        return 2
+    if args.mode == 'full':
+        try:
+            valid_pilot=check_pilot_evidence(args.pilot_report.resolve(strict=True),
+                                             args.candidate, hashes, interpreter, cap)
+        except (OSError, ValueError):
+            valid_pilot=False
+        if not valid_pilot:
+            print('NO_GO: matching successful pilot required; headroom <75% of cap or provenance mismatch.', file=sys.stderr)
+            return 2
     # Explicit output remains separate from all frozen outputs. Path must not exist.
     out.mkdir(mode=0o700, exist_ok=False)
     (out/'worker').mkdir()
@@ -260,8 +296,8 @@ def main() -> int:
         if not last_reason and report.get('exit_code')==0 and details.exists():
             worker=read_json(details)
             report['worker_checks']=worker
-            if (samples >= 1 and peak > 0 and worker.get('passed')
-                    and worker.get('candidate')==args.candidate and worker.get('mode')==args.mode):
+            if (samples >= 1 and peak > 0 and verify_worker_result(worker,args.candidate,args.mode,
+                        out/'worker',hashes,env_details['versions'])):
                 report['result']='PASS'
         elif not last_reason:
             report['stop_reason']='WORKER_FAILED_OR_MISSING_VALIDATION'
