@@ -86,4 +86,4 @@ Không commit GitHub các model lớn hoặc raw UNSW data. Chỉ gửi nội du
 - `WORKER_FAILED_OR_MISSING_VALIDATION`: xem `worker.stderr.log` và `run_report.json`; đừng sử dụng artifact temp/dở dang.
 - Không sửa ngưỡng 0.5, không hạ số cây/folds, không chọn lại feature, không gọi TEST để làm cho số liệu giống lịch sử.
 
-**Tình trạng trong phiên chuẩn bị này:** 16 unit tests kiểm tra logic budget/guard/watcher/output/pilot đã đạt trên fixture không có data thật; chưa test end-to-end trên Windows hoặc giới hạn RAM thật. Tác giả cần chạy trong môi trường thực và báo cáo kết quả trước khi nâng trạng thái.
+**Tình trạng trong phiên chuẩn bị này:** 18 unit tests kiểm tra logic budget/guard/watcher/output/pilot đã đạt trên fixture không có data thật; chưa test end-to-end trên Windows hoặc giới hạn RAM thật. Tác giả cần chạy trong môi trường thực và báo cáo kết quả trước khi nâng trạng thái.
