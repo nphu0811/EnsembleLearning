@@ -58,6 +58,16 @@ def safe_new_output(root: Path, raw: Path) -> Path:
     return parent / candidate.name
 
 
+def timeout_policy_valid(minutes: float, mode: str) -> bool:
+    """20-minute bounded pilot; full may opt in to NO deadline via exactly 0."""
+    return (5 <= minutes <= 20) or (mode == 'full' and minutes == 0)
+
+
+def timeout_reached(elapsed_seconds: float, minutes: float) -> bool:
+    """0 explicitly disables ONLY the wall-time deadline, never the resource watchdog."""
+    return minutes > 0 and elapsed_seconds > minutes * 60
+
+
 def resource_budget(available: int, disk: int, cap: int, floor: int = MIN_FREE_FLOOR) -> dict:
     required = max(MIN_START, cap + floor + int(0.5 * GIB))
     checks = {
@@ -163,12 +173,14 @@ def main() -> int:
     p.add_argument('--pilot-report', type=Path, help='Mandatory successful matching pilot for --mode full')
     p.add_argument('--python', type=Path, default=Path(sys.executable), help='Python 3.11 with ML dependencies and psutil')
     p.add_argument('--max-tree-rss-gib', type=float, default=2.0)
-    p.add_argument('--timeout-min', type=float, default=20.0)
+    p.add_argument('--timeout-min', type=float, default=20.0,
+                   help='5-20 min; for --mode full ONLY: set 0 for no wall-time deadline (RAM/disk watchdog stays active)')
     p.add_argument('--cpu-cores', type=int, default=2)
     args = p.parse_args()
     if not (1000 <= args.pilot_rows <= 25000): p.error('pilot-rows must be 1,000–25,000; no TEST rows')
     if not (1 <= args.cpu_cores <= 2): p.error('cpu-cores must be 1 or 2')
-    if not (5 <= args.timeout_min <= 20): p.error('timeout-min must be between 5 and 20')
+    if not timeout_policy_valid(args.timeout_min, args.mode):
+        p.error('pilot timeout 5-20 min; full timeout 5-20 min or 0 for NO deadline (watchdog stays on)')
     cap = int(args.max_tree_rss_gib * GIB)
     if not (int(0.5 * GIB) <= cap <= int(3.5 * GIB)):
         p.error('tree RSS cap must be between 0.5 and 3.5 GiB')
@@ -224,7 +236,9 @@ def main() -> int:
       'source_hashes': hashes, 'python_executable':interpreter, 'package_versions':env_details['versions'],
       'git_head':audit['checks']['git_clean_tracked_files']['observed']['head'],
       'preflight': {'science_ok':science_ok,'canonical_9gib_gate_passed':audit['checks']['available_ram_ge_9gib']['pass']},
-      'budget':budgets, 'release_certified':False, 'peak_tree_rss_bytes':0,
+      'budget':budgets, 'wall_time_policy':{'timeout_min':args.timeout_min,
+        'enabled':args.timeout_min>0,'operator_opted_into_no_deadline':args.mode=='full' and args.timeout_min==0},
+      'release_certified':False, 'peak_tree_rss_bytes':0,
       'min_ram_seen_bytes':None,'worker_checks':{'passed':False},
       'timestamp_utc':datetime.now(timezone.utc).isoformat()}
     (out/'start.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
@@ -271,7 +285,7 @@ def main() -> int:
                 log.flush()
                 if sample['stop_reason']:
                     last_reason=sample['stop_reason'];break
-                if time.monotonic()-started > args.timeout_min*60:
+                if timeout_reached(time.monotonic()-started, args.timeout_min):
                     last_reason='TIMEOUT';break
                 time.sleep(0.5)
         if last_reason:stop_tree(psutil,proc.pid)
