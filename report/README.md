@@ -10,8 +10,9 @@ Folder này là **một chỗ duy nhất cho mã nguồn báo cáo IDS mới**, 
 - `chapters/methodology.tex`: UNSW-NB15, protocol, three frozen pipelines, OOF, uncertainty và limitations.
 - `chapters/results_discussion.tex`: official/novel results, paired CI, costs, Fuzzers/Generic, RQ1–RQ5; tham chiếu trực tiếp đến hai hình P16 dạng PDF trong `../results/figures/`, chưa visual QA sau build.
 - `chapters/conclusion.tex`: kết luận không khẳng định superiority/novelty, hướng nghiên cứu còn thiếu.
-- `references_verified.bib`: 11 legacy entries có verified metadata, L03/U01/U03 chưa đóng.
-- `BUILD.md`: hướng dẫn build, và `P17_SOURCE_QA_2026-10-16.md`: scoped check history.
+- `references_verified.bib`: 11 legacy entries có verified metadata; L03 còn xung đột số trang.
+- `references_dataset_checked.bib`: trích riêng U01 (Moustafa & Slay 2015) từ `literature/verification_2026_10_16/dataset_references.bib`, trang 1–6 đã được đối chiếu từ IEEE/University of Adelaide/DBLP.
+- `BUILD.md`: hướng dẫn build, và `P17_SOURCE_QA_2026-10-16.md`: scoped check history (trước cập nhật trích dẫn và hình). Bản QA đọc lại sau cập nhật: 78/78 source checks PASS, chưa PDF-render QA.
 
 Đây là **bản nguồn đầy đủ theo cấu trúc báo cáo để nội bộ review**, nhưng chưa chứng nhận khả năng build/render của chính source hoặc tính đúng mẫu trường. Xem `BUILD.md`.
 
