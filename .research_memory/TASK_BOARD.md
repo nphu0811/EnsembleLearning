@@ -123,3 +123,9 @@ Evidence: `.research_memory/r05/R05-ASSEMBLY-REVIEW.json`.
 - GitHub Actions `38916942038` PASS; PDF **37 A4 pages**, 12 bibitems, no duplicate labels, 0 Overfull or missing glyph; scope evidence `docs/research/P17_FIVE_CHAPTER_RESTRUCTURE_QA_2026-10-16.md`.
 - Native Nature Skills only present in user Windows Codex environment; ChatGPT did not load/execute `nature-writing`. Academic source-grounded revision and PDF postflight performed instead.
 - P17 remains PARTIAL overall due to approval, actual signatures and other release gates. No retraining or official TEST revisions.
+
+## P15 — GitHub read-only full-TRAIN preflight (16/10/2026)
+
+- `P15-FULLTRAIN-PREFLIGHT = DONE_SCOPED_CODE`: files `tools/p15_fulltrain_preflight.py`, `tests/test_p15_fulltrain_preflight.py` and `docs/research/P15_FULLTRAIN_PREFLIGHT_README.md` pushed to `main` (commit `c64f06e2f7be97a05cf9e5969a2f1679126dd5e4`). Six fixture tests passed in a separate Python runtime; remote paths and content verified by GitHub fetch.
+- No Windows/dataset-local preflight or full-TRAIN fitting has been run; the previous environment/capacity NO_GO and G3/P15 PARTIAL remain. Script never reads official TEST/trains and `training_authorized=false` by construction. No raw data/frozen result/script P9 modified.
+- Next: after `git pull --ff-only origin main` run the new unit tests and the read-only preflight from repo root, inspect JSON, then design/review the isolated watchdog runner before any full TRAIN operation.
