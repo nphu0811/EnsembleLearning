@@ -48,9 +48,18 @@ jobs:
             echo 'Blocking: missing font glyphs'
             exit 1
           fi
+          # Enforce requested 30-40 physical A4 pages. Prefer the actual PDF metadata.
           if command -v pdfinfo >/dev/null 2>&1; then
             pdfinfo report/main.pdf | grep -E 'Pages:|Page size:|File size:'
+            pages="$(pdfinfo report/main.pdf | awk '/^Pages:/ {print $2}')"
+          else
+            pages="$(grep -Eo 'Output written on main.xdv \\([0-9]+ pages' report/main.log | tail -n 1 | sed -E 's/.*\\(([0-9]+) pages/\\1/')"
           fi
+          if [[ -z "${pages:-}" ]] || (( pages < 30 || pages > 40 )); then
+            echo "Blocking: report must have 30-40 pages, found ${pages:-unknown}"
+            exit 1
+          fi
+          echo "P17 page-range QA PASS: ${pages} pages"
 
       - name: Upload PDF and compiler diagnostics
         if: always()

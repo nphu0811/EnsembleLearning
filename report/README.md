@@ -1,10 +1,14 @@
-# P17 — Báo cáo LaTeX đang biên soạn (WORKING, KHÔNG PHẢI BẢN NỘP)
+# P17 — Báo cáo khoa học theo phong cách biểu mẫu PTIT (WORKING / 40 TRANG)
 
 Folder này là **một chỗ duy nhất cho mã nguồn báo cáo IDS mới**, tách khỏi `templates/original/` và bản thảo/bằng chứng lịch sử ở `notebook/`. Không di chuyển hoặc xóa các thư mục hiện có khi chưa có quyết định cleanup từ người dùng.
 
 ## Artifact hiện có
 
-- `main.tex`: báo cáo XeLaTeX làm việc có bìa placeholder, tóm tắt, mục lục, 5 chương và bibliography.
+- `main.tex`: báo cáo XeLaTeX làm việc có bìa placeholder, tóm tắt, mục lục, 8 chương và bibliography.
+- `frontmatter.tex`: Lời cam đoan (chưa ký), lời cảm ơn có placeholder, tóm tắt, bảng viết tắt.
+- `chapters/theoretical_foundations.tex`: cơ sở lý thuyết IDS, LR, DT, RF, Voting/Stacking, OOF, FS và metrics.
+- `chapters/dataset_eda.tex`: hai tập UNSW-NB15, phân bố lớp, 4 hình EDA gốc, correlation/overlap.
+- `chapters/validity_discussion.tex`: paired correctness, error trade-off, giới hạn nested validation và reproducibility.
 - `chapters/introduction.tex`: bối cảnh, RQ gốc, động cơ và phạm vi đóng góp.
 - `chapters/related_work.tex`: công trình liên quan với claim bị giới hạn theo mức đọc thực tế.
 - `chapters/methodology.tex`: UNSW-NB15, protocol, three frozen pipelines, OOF, uncertainty và limitations.
@@ -15,7 +19,7 @@ Folder này là **một chỗ duy nhất cho mã nguồn báo cáo IDS mới**, 
 - `BUILD.md`: hướng dẫn build, và `P17_SOURCE_QA_2026-10-16.md`: scoped check history (trước cập nhật trích dẫn và hình). Bản QA đọc lại sau cập nhật: 78/78 source checks PASS, chưa PDF-render QA.
 - `P17_PDF_QA_2026-10-16.md`: XeLaTeX+BibTeX CI, 22 A4 pages, 12 bibliography entries, 2 figures, 5 results tables, 0 overfull / 0 missing glyph after layout fix; **scoped layout QA PASS**, institutional approval pending.
 
-Đây là **bản nguồn đầy đủ theo cấu trúc báo cáo để nội bộ review**, nhưng đã kiểm chứng build/render PDF (22 trang) trong CI; **chưa xác nhận đúng mẫu trường**. Xem `BUILD.md`.
+Đây là **bản nguồn học thuật 40 trang có QA PDF**, lấy tham khảo về hình thức từ báo cáo NetFlow 64 trang do người dùng cung cấp và từ asset/template gốc của dự án. **Chưa được trường/GVHD phê duyệt tính phù hợp biểu mẫu.** Xem `BUILD.md`.
 
 ## Provenance bắt buộc
 
@@ -33,7 +37,7 @@ Folder này là **một chỗ duy nhất cho mã nguồn báo cáo IDS mới**, 
 
 ## Gate chưa hoàn tất
 
-- Năm chương, tóm tắt và bibliography đã ghép vào bản nguồn làm việc; vẫn cần peer/source review, final citation verification và QA bản PDF render.
+- Tám chương, tóm tắt và bibliography đã ghép vào bản nguồn làm việc; vẫn cần peer/source review, final citation verification và QA bản PDF render.
 - XeLaTeX/BibTeX và PDF QA scoped đã PASS qua GitHub Actions; chưa nhận nghiệm thu/đối chiếu mẫu trường, chưa xác nhận thông tin hành chính.
 - P18 chưa đóng nguồn tham khảo L03/U01/U03; không bịa citation hoàn chỉnh.
 - Thông tin người thực hiện/GVHD/ngày/chữ ký vẫn cần xác nhận; không được điền theo ví dụ mẫu.
@@ -42,3 +46,10 @@ Folder này là **một chỗ duy nhất cho mã nguồn báo cáo IDS mới**, 
 ## Tính khoa học
 
 Stacking42 không chứng minh ưu thế toàn diện; RF17 có khác biệt hyperparameters; novel-vector vẫn thuộc official TEST; error analysis không causal; môi trường train gốc UNKNOWN; không dùng test để sửa model. File này là báo cáo lại số liệu lịch sử, **không sinh experiment mới**.
+
+## PTIT-style adaptation / length QA (2026-10-16)
+
+- See `P17_PTIT_40PAGE_QA_2026-10-16.md`: reviewed source and actual XeLaTeX/BibTeX PDF (40 physical A4 pages), 7 figures, 10 tables, 12 bibliography entries; 0 overfull, 0 missing glyphs and 0 text blocks outside page bounds.
+- Cover double border, PTIT logo sourced from `templates/original/latex/assets/Logo_PTIT_University.png`; carmine and cobalt accents align with original PTIT template. Do not copy sample group's names/ID/content.
+- `report/main.tex` is the sole current working entry point. The sample NetFlow PDF is not committed or redistributed.
+- CI enforces the requested range of 30–40 pages for future changes. Signed declaration and real student/adviser data still PENDING_HUMAN.

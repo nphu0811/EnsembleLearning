@@ -1,5 +1,12 @@
 # Release blockers ngày 16/10/2026
 
+## Cập nhật P17 báo cáo 40 trang theo mẫu tham khảo (mới nhất)
+
+- **G4 báo cáo kỹ thuật**: XeLaTeX/BibTeX 40 trang A4 PASS (CI `38907313697`), 7 hình/10 bảng/12 bibliography; không có Overfull hay thiếu glyph; đã xem PDF thật. Có logo PTIT, khung bìa, màu mục lục/biểu đồ và đầu/chân trang dựa trên mẫu người dùng cung cấp. Bài tham khảo chỉ dùng về hình thức, không chép kết quả hoặc danh tính.
+- **G5 quản trị** vẫn OPEN: đơn vị/lớp/tên người thực hiện/MSSV/GVHD/mã đề tài/chữ ký và xác nhận form chuẩn còn thiếu. P17 tổng thể PARTIAL; không tự tuyên bố đã nộp/được trường duyệt.
+- G0–G3, G6, original-training provenance và release rights không thay đổi. Xem `report/P17_PTIT_40PAGE_QA_2026-10-16.md`.
+
+
 ## Cập nhật P17 CI/PDF — 16/10/2026 (ưu tiên hiện hành)
 
 - **G4 technical PDF build/render: PASS trong phạm vi kỹ thuật**, không còn BUILD_BLOCKED trên máy: GitHub Actions run 38901027329 thành công, XeLaTeX + BibTeX; 22 trang A4, 12 bibliography items, 2 vector figures, 5 results tables; sau sửa 0 Overfull, 0 missing glyph, 0 text boundary outliers. Biên bản `report/P17_PDF_QA_2026-10-16.md`; CI mới block regression. Không gọi G4 final/approved vì bibliography L03 và mẫu chuẩn trường còn treo.

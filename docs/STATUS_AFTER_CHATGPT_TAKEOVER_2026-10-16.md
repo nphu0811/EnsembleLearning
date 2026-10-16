@@ -25,7 +25,7 @@
 | P14 | Error analysis | VERIFIED_REUSE_DESCRIPTIVE | Saved detailed profiles and reconciliation; associations not causal |
 | P15 | Reproducibility | PARTIAL | Raw hashes, protocol, postprocessing replay, R04 TRAIN-only smoke45/45; unknown original env; NO_GO full TRAIN model reconstruction |
 | P16 | Scientific figures | IN_PROGRESS | Historical paired forest plot; r05 error tradeoff & frozen tables; two ChatGPT independent scoped audits below |
-| P17 | Report writing | SCOPED_PDF_BUILD_QA_PASS / FORM_NOT_APPROVED | GitHub Actions build 22-page A4 XeLaTeX+BibTeX PDF successful; 12 bibliography entries, 2 vector figures, 5 results tables. Independent PDF render/text preflight after layout fix: 0 overfull vs 16 prior, 0 text outliers vs 4 prior. Institutional-template acceptance, official admin fields, and final signoff still pending. |
+| P17 | Report writing | 40P_PDF_SCOPED_QA_PASS / FORM_NOT_APPROVED | Reference-inspired PTIT styling: 8 chapters, 40 physical A4 pages, 7 figures and 10 tables, 12 bibliography items; XeLaTeX/BibTeX build+independent visual/text/page-boundary QA PASS, 0 overfull/0 missing glyphs. Author/student IDs/adviser and institutional form approval remain OPEN. |
 | P18 | Citation management | PARTIAL | 11/12 legacy metadata verified r04, U01 pages1–6 independently corroborated, U03 final 2019 vol5(4) corroborated; L03 page conflict disclosed with evidence favoring254–263, VOR PDF check open; final complete bibliography pending |
 | P19 | Data availability | IN_PROGRESS | Public GitHub repository confirmed; raw data not tracked; source/derived tables available; no root LICENSE or final model artifact; privacy/release/version/rights checks open |
 | P20 | Final review | TODO | G0–G6, completeness, rendered reports, inference demo and scientific limitations not all closed |
@@ -81,3 +81,7 @@
 ## P18 compiled-report reference QA (2026-10-16)
 
 `docs/research/P18_REPORT_BIBLIOGRAPHY_QA_2026-10-16.md` records real BibTeX output: 12/12 distinct citations/bibitems, 12 unique DOIs, 0 missing/uncited/duplicate keys, no final BibTeX or LaTeX undefined citation warnings. Status **DONE_SCOPED_REPORT_BIBLIOGRAPHY**, not full P18: L03 disputed pagination and non-exhaustive/full-text literature remain OPEN. No changed scientific result or bibliography source values.
+
+## P17 reformatted to 40 pages using sample report as layout reference (2026-10-16)
+
+User-provided `Bao_cao_NetFlow.pdf` inspected as a **64-page structural/visual reference only**. Current report has 8 evidence-bounded chapters, PTIT original logo (no third-party identity reused), double cover frame, carmine-linked TOC, blue accents, 4 original Phase4 EDA figures, 2 P16 figures, and OOF conceptual diagram. XeLaTeX CI run 38907313697 on commit `13f310f975fc2405abbf35bd433b35021f630367` returned 40 A4 pages with 0 overfull, 0 missing glyph, 12 bibliography entries and no out-of-page text. See `report/P17_PTIT_40PAGE_QA_2026-10-16.md`. This supersedes the 22-page *design status* only; preserved historical audit values remain valid for their old artifact. P17 still PARTIAL: administrative names, approved template/signature, P18 total and P20 final approval remain OPEN.

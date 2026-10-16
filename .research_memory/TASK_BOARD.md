@@ -110,3 +110,8 @@ Evidence: `.research_memory/r05/R05-ASSEMBLY-REVIEW.json`.
 
 - `P18-REPORT-BIB-QA = DONE_SCOPED`: independently checked all 12 cited keys against report sources, 12 distinct DOI entries and actual XeLaTeX/BibTeX `main.bbl` output; zero duplicate/unresolved/uncited, 0 warnings. See `docs/research/P18_REPORT_BIBLIOGRAPHY_QA_2026-10-16.md`.
 - P18 overall PARTIAL because L03 VOR page conflict, varying reading scopes and no exhaustive systematic search. P17 technical PDF QA scoped PASS, institutional final signoff pending.
+
+## P17 user-supplied NetFlow form reference — scoped closure (2026-10-16)
+
+- `P17-PTIT-STYLE-40P = DONE_SCOPED`: referenced the uploaded 64-page NetFlow report for page types/style only; 8 chapters, 40 physical A4 pages, 7 figures, 10 tables, 12 bibliography entries; actual GitHub Actions TeX artifact QA verified no overfull/missing character/out-of-bounds text. Evidence `report/P17_PTIT_40PAGE_QA_2026-10-16.md`; associated source commit `13f310f975fc2405abbf35bd433b35021f630367`.
+- G5 admin info, signoff and exact institutional form acceptance remain PENDING_HUMAN. No model retraining, no frozen result edits, no cleanup or identity copying.
