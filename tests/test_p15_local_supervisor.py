@@ -47,7 +47,7 @@ class SafetyTests(unittest.TestCase):
 
     def test_output_under_unique_reproducibility_dir(self):
         p=mod.safe_new_output(self.root,Path('results/reproducibility/p15_local_trialA'))
-        self.assertEqual(p.parent,self.root/'results/reproducibility')
+        self.assertEqual(p.parent.resolve(),(self.root/'results/reproducibility').resolve())
 
     def test_output_refuses_existing_folder(self):
         p=self.root/'results/reproducibility/p15_local_trialA'
