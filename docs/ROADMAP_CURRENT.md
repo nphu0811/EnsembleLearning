@@ -1,5 +1,9 @@
 # Roadmap hiện hành sau resume ngày 16/10/2026
 
+## Cập nhật r05 — 16/10/2026, ưu tiên hiện hành
+
+R04-ASSEMBLY missing independent full argument/form review đã hoàn tất bằng report r05 ở context riêng; baP1 và haiP2 sửa trong draft r05, reviewer recheck chấp nhận internal content;34/34 mechanical checks PASS. HaiP0 hành chính và filled/rendered DOCX/PDF vẫn OPEN. Xem qa_logs/r05_review_resolution.md dưới proposal/researchwrite/nckh-ids/. Phase0–20 và G0–G6 không tự DONE. FullTRAIN plan có input hashes/capacity/budget/isolation nhưng NO_GO do RAM headroom/runner chưa đạt, không fit mới. Public surface triage có finding paths/email/template fields, không cleanup hoặc push.
+
 Checkpoint r04 ưu tiên: docs/RESUME_AUDIT_R04_2026-10-16.md. REF11/12metadata verified,L03warning;source-linked readings,gap/relatedwork vàformcontentassembly có;fullargumentreviewpendingusage limit. FreshTRAINsubsetsoftware smoke45/45 khôngfinalmodelreproduction. Defense script/runbook/checklistdraft có,khôngslides/demo. P15/P01/P18/P17/G0–G6 khôngtựDONE. Task graph/contracts docs/R04_TASK_CONTRACTS.md,task JSON .research_memory/r04/.
 
 Checkpoint r03: docs/RESUME_AUDIT_R03_2026-10-16.md. P18 xác nhận metadata thêm L04/L11:6/12 legacy records verified,6 pending; U01/U03 giữ warning. Proposal có partial draft nhu cầu/sản phẩm/tiến độ/kinh phí theo form; chưa DOCX/PDF hoặc full proposal. Hai stale memory hashes vào phiên được audit riêng;282/282 historical files nguyên. DOCX có8 bảng (đính chính ghi chép9), ZIP15 entries không DOCX. Không mở lại experiment/model selection.

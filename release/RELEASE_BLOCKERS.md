@@ -1,5 +1,13 @@
 # Release blockers ngày 16/10/2026
 
+## Cập nhật r05 — 16/10/2026, ưu tiên hiện hành
+
+- Independent full argument/form content review đã hoàn tất; ARG-R05-01–05 addressed trong bản r05 và recheck riêng. Không còn blocker usage limit cho review này; không thay G4/G5 bằng reviewer judgment.
+- ARG-R05-00A/B vẫn OPEN: xác nhận tác giả/đơn vị và actual filled/rendered DOCX/PDF; P18L03/U01/U03 và report build/render còn thiếu.
+- G3 PARTIAL: fullTRAIN reconstruction plan-only NO_GO, khoảng1,48GiB RAM trống tại snapshot, chưa watchdog/runner; không training mới hoặc final demo.
+- Public sharing clearance PARTIAL: tracked/archive triage đọc633files/1165textunits; paths/email/template identity fields cần rà soát. Không xóa/untrack/history rewrite. Xem docs/PUBLIC_SURFACE_AUDIT_R05.md.
+- G0–G6 vẫn mở, NOT_READY_FOR_SUBMISSION; không FINAL_NCKH.zip.
+
 ## Cập nhật r04 — ưu tiên hiện hành
 
 - G0/G1/G2 vẫn PARTIAL; giữ FS ngoài development folds, meta tuning chưa fully nested, overlap và giới hạn RQ4/RQ5. Không thay khoa học bằng reviewer score.

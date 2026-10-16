@@ -1,0 +1,66 @@
+{
+  "task": "R05-ASSEMBLY-REVIEW",
+  "status": "DONE_SCOPED",
+  "note": "Independent full argument/form review and recheck saved;3P1/2P2 addressed in separate r05 draft;34/34 source-boundary checks;author/renderP0 open;no training or release closure",
+  "timestamp": "2026-10-16T11:03:09.971559+00:00",
+  "artifacts": {
+    "docs/R05_TASK_CONTRACT.md": "60fae9e205d8d28d0e3aa6a3e158c63a095fe25bedcdaeed4a19451bd89cdb87",
+    "docs/PUBLIC_SURFACE_AUDIT_R05.md": "8f2ee9c29fc57803bb3ea12d86a46255c2deaa53d64ace2d2f0d5483038527d4",
+    "docs/research/R05_FULL_TRAIN_RECONSTRUCTION_PLAN.md": "94f0977d0487a9791f2bcdcda8bb09883bc0da0251373945565740c9bd4aaa0d",
+    "docs/ROADMAP_CURRENT.md": "01c1db60b93ee0b5861e641f07485db94507d7c46388429e64b3b3a6c4e48ac9",
+    "release/RELEASE_BLOCKERS.md": "af5e0090b6b32ac2e474b2e0c2b8d87342da28887c78943e3d1db5ecd225a31b",
+    "proposal/researchwrite/nckh-ids/07_remaining_work_feasibility.md": "059fcdd405dcadc5873b9c412d4c8ba453d85a120069257ac4e103fbacafedd5",
+    "proposal/researchwrite/nckh-ids/state.json": "87f143cd89334e9b363c14ac37a51c81d3f0e7fe3ac36884abb990b9dfcb208f",
+    "proposal/researchwrite/nckh-ids/drafts/De_cuong_noi_dung_review_r05.md": "645ab3c1d0035708b6c6fcc34e65f64f8ad225d12f48c0a4a8f2942362d5b163",
+    "proposal/researchwrite/nckh-ids/qa_logs/r05_assembled_argument_review.md": "368996924d05576ad2d740ad3c4c7f395f93c1b97474be7e9b15f2051dfebdc0",
+    "proposal/researchwrite/nckh-ids/qa_logs/r05_assembled_argument_recheck.md": "0144da0ae80dbf6afe468ab09d30e7aa67fb3d5da199a932163d091382e0bca5",
+    "proposal/researchwrite/nckh-ids/qa_logs/r05_review_resolution.md": "7c6ac56be92626bc244ec403f3d9017c2c26fcc71eb77982ebf36c4e1c5be0db",
+    "proposal/researchwrite/nckh-ids/qa_logs/r05_validation_initial.json": "de04bc0b31a56dc849d8dc5bebae60194d9504cff1eea0b8c6ce2bbf246984a4",
+    "proposal/researchwrite/nckh-ids/qa_logs/r05_validation_repaired.json": "4d8562904d9c38085931d18ab1e09fd979644abf9a9efc0863c4fda17005dc78",
+    "proposal/researchwrite/nckh-ids/revision_briefs/r05_assembly_brief.md": "48692d317898dac264140e618a814c795984ef3d0e72dff4745ae8ebd36b0166",
+    "tools/r05_revise_proposal.py": "c993b11b855d1db4d896db4e30d3f7725cb8c3ddf2f15955e7b61089501e18d7",
+    "tools/r05_validate_proposal.py": "3100a433ddcdd496a2e673948a64da8b6691aa9d730cab12744bad57aa61a502",
+    "tools/r05_public_surface_audit.py": "ac5e79967dd40732e2f2b4c55fc8b80919540ab2458e0f7a5b968b7e51d6c113",
+    "results/reproducibility/resume_2026_10_16_r05/capacity_snapshot.json": "5d578e80814a930d34d45e16c5635ecafb817a83fd495148f1eacd278bcebcf6",
+    "results/reproducibility/resume_2026_10_16_r05/public_surface_audit.json": "d18489c66596b597f50147bda5e0e9700694f379b0828e212f1c24b3a3982446",
+    "results/reproducibility/resume_2026_10_16_r05/resume_audit.json": "a3a4c143fda53e5a3eaeca50ee45a75e9059f8e84926bc01e039fdc36b3a01d6"
+  },
+  "changed_prior_artifacts": [
+    {
+      "path": ".research_memory/DECISIONS.md",
+      "before": "f5486c60ab147cee421823c5cb80cf19d8c22b4d7f7f96b161625e95448d8a97",
+      "after": "4cc1289f912955fb533a4a296170e356351faaaa053a3b6b3358784e3e832117"
+    },
+    {
+      "path": ".research_memory/ISSUE_LOG.md",
+      "before": "34a7044149f504f30a44ab9402f9dcbac0f369c2db6068888d87c15075c34588",
+      "after": "0ec2a62d642a03c710cc3318a6d80861ca1e35ee9962f3ebb75957eb04a95568"
+    },
+    {
+      "path": ".research_memory/SKILL_USAGE_LOG.md",
+      "before": "99d2bac39c3bcd67fd627457a1656460054e61ab546ef725980211d803fd42c2",
+      "after": "9e102649bfcff069a236d1e3db328c538faf34a8f9e83b1466a4a82c8dcfc23e"
+    },
+    {
+      "path": "docs/ROADMAP_CURRENT.md",
+      "before": "fd823a11b65d8345414a033d2f19bc3e10c607333d24e7bbc35512e4d22ecb4f",
+      "after": "01c1db60b93ee0b5861e641f07485db94507d7c46388429e64b3b3a6c4e48ac9"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/07_remaining_work_feasibility.md",
+      "before": "d68163bdc94ea68df74c7b3e19756092fabed9e0627d518307e107d24963f836",
+      "after": "059fcdd405dcadc5873b9c412d4c8ba453d85a120069257ac4e103fbacafedd5"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/state.json",
+      "before": "a44e2b132f2c013b0cb4e2d0f10cda1703ee35b79eaa327b6bd66347b59719ac",
+      "after": "87f143cd89334e9b363c14ac37a51c81d3f0e7fe3ac36884abb990b9dfcb208f"
+    },
+    {
+      "path": "release/RELEASE_BLOCKERS.md",
+      "before": "6f9eee572d27ab570d4d708a000c54db183902b2637950b9db717569c95606b0",
+      "after": "af5e0090b6b32ac2e474b2e0c2b8d87342da28887c78943e3d1db5ecd225a31b"
+    }
+  ],
+  "next_action": "Continue P16 frozen-results tables and captions;then supported form/report sources;fullTRAIN plan remains NO_GO;do not rerun completed smoke"
+}

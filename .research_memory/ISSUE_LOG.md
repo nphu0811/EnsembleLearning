@@ -37,3 +37,7 @@ Use: ID | Severity | Issue | Evidence | Attempts | Resolution | Status.
 - QA-PARSER RESOLVED:initialr04validatorregexmissedheadingRQformat;explicitparse5headings+exactwordingchecks added,30/30final.
 - CHECKPOINT-GUARD RESOLVED:FORMcheckpointrejectedundeclaredworkinggapchange;declaredartifactsandreran,no silenthashrefresh.
 - DISPLAY RESOLVED:rootrewrotedefensecontentdraftswithreadableVietnamese spacing,rechecked25/25source/timing;notpresentationvisualQA.
+
+## r05 execution issues
+
+Proposal revision first RQ parser included header; assertion stopped before output; anchored RQ1–5 repaired. Citation validator initial33/34 failed qualifier/convention parsing; exact documented placeholders and Proposed model qualifier handled, repaired34/34; initial JSON preserved. Capacity command used unsupported ConvertTo-Json -Property once; corrected PSCustomObject command produced real snapshot. No research results modified; no smoke rerun.

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="340.15748pt" height="184.251969pt" viewBox="0 0 340.15748 184.251969" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-16T18:05:45.407145</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 184.251969 
+L 340.15748 184.251969 
+L 340.15748 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 91.84252 138.188976 
+L 326.551181 138.188976 
+L 326.551181 31.322835 
+L 91.84252 31.322835 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 209.19685 71.281479 
+L 133.449964 71.281479 
+L 133.449964 51.766792 
+L 209.19685 51.766792 
+z
+" clip-path="url(#p82f3150d55)" style="fill: #3c7286"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 209.19685 117.745019 
+L 272.141446 117.745019 
+L 272.141446 98.230332 
+L 209.19685 98.230332 
+z
+" clip-path="url(#p82f3150d55)" style="fill: #c17f45"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m761f9bbaf4" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m761f9bbaf4" x="102.511095" y="138.188976" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="102.511095" y="151.741222" transform="rotate(-0 102.511095 151.741222)">−200</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m761f9bbaf4" x="155.853973" y="138.188976" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="155.853973" y="151.741222" transform="rotate(-0 155.853973 151.741222)">−100</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m761f9bbaf4" x="209.19685" y="138.188976" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="209.19685" y="151.741222" transform="rotate(-0 209.19685 151.741222)">0</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m761f9bbaf4" x="262.539728" y="138.188976" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="262.539728" y="151.741222" transform="rotate(-0 262.539728 151.741222)">100</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m761f9bbaf4" x="315.882606" y="138.188976" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="315.882606" y="151.741222" transform="rotate(-0 315.882606 151.741222)">200</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle" x="209.19685" y="168.187512" transform="rotate(-0 209.19685 168.187512)">Change in count (Stacking-42 minus RF-42)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6"/>
+     <g id="text_7">
+      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end" x="83.84252" y="64.800259" transform="rotate(-0 83.84252 64.800259)">False positives</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_7"/>
+     <g id="text_8">
+      <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end" x="83.84252" y="111.263799" transform="rotate(-0 83.84252 111.263799)">False negatives</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_8">
+    <path d="M 209.19685 138.188976 
+L 209.19685 31.322835 
+" clip-path="url(#p82f3150d55)" style="fill: none; stroke: #777777; stroke-width: 0.7; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 91.84252 138.188976 
+L 326.551181 138.188976 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: end" x="128.449964" y="63.853237" transform="rotate(-0 128.449964 63.853237)">-142</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="277.141446" y="110.316777" transform="rotate(-0 277.141446 110.316777)">+118</text>
+   </g>
+  </g>
+  <g id="text_11">
+   <text style="font-size: 9px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start" x="91.84252" y="17.607364" transform="rotate(-0 91.84252 17.607364)">Fewer false alarms, more missed attacks</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p82f3150d55">
+   <rect x="91.84252" y="31.322835" width="234.708661" height="106.866142"/>
+  </clipPath>
+ </defs>
+</svg>

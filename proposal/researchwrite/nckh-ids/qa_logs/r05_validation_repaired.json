@@ -1,0 +1,110 @@
+{
+  "checks": {
+    "r04_review_target_preserved": true,
+    "independent_report_frozen": true,
+    "original_docx_preserved": true,
+    "five_questions_parsed_from_original": true,
+    "rq1_exact_original_once": true,
+    "rq1_in_proposal_crosswalk": true,
+    "rq2_exact_original_once": true,
+    "rq2_in_proposal_crosswalk": true,
+    "rq3_exact_original_once": true,
+    "rq3_in_proposal_crosswalk": true,
+    "rq4_exact_original_once": true,
+    "rq4_in_proposal_crosswalk": true,
+    "rq5_exact_original_once": true,
+    "rq5_in_proposal_crosswalk": true,
+    "citation_tokens_parsed_and_resolved": true,
+    "all_used_paper_metadata_verified": true,
+    "no_L03_citation": true,
+    "paper_appendix_matches_used_ids": true,
+    "cited_dois_present_unchanged": true,
+    "all_explicit_local_source_paths_exist": true,
+    "inherited_smoke_45_checks_reused": true,
+    "inherited_smoke_only_TRAIN_reads": true,
+    "reconstruction_plan_input_hashes_current": true,
+    "plan_contains_exact_input_hashes": true,
+    "three_frozen_candidates_threshold_05": true,
+    "original_form_region_order": true,
+    "sample_money_and_total_preserved": true,
+    "sample_30_weeks_preserved_not_remaining_schedule": true,
+    "pending_admin_and_original_form_conditions_retained": true,
+    "explicit_non_submission_and_no_retrospective_approval": true,
+    "smoke_final_model_and_environment_distinction": true,
+    "PR_AUC_implementation_named": true,
+    "remaining_products_have_bounded_dependency_plan": true,
+    "public_audit_includes_both_share_archives_and_original_docx": true
+  },
+  "passed": true,
+  "count": 34,
+  "total": 34,
+  "scope": "Mechanical source/citation/frozen-boundary checks only; independent semantic recheck separate; NOT DOCX render, paper full-text verification, training reproduction or submission acceptance",
+  "unresolved_citations": [],
+  "resolver_convention_placeholders": [
+    "[T:Lxx]",
+    "[T:Dxx]",
+    "[T:Nx]",
+    "[P:Sx]"
+  ],
+  "explicit_paths_checked": [
+    ".research_memory/RESEARCH_CANON.md",
+    ".research_memory/TASK_BOARD.md",
+    "defense/Demo_runbook.md",
+    "defense/Final_QA_Checklist.md",
+    "defense/Kich_ban_thuyet_trinh.md",
+    "defense/qa_validation_r02.json",
+    "defense/r04_content_validation.json",
+    "docs/CLAIM_EVIDENCE_MATRIX.md",
+    "docs/TEMPLATE_REQUIREMENTS_MATRIX.md",
+    "docs/research/DATA_CODE_AVAILABILITY.md",
+    "docs/research/ENSEMBLE_FRAMEWORK.md",
+    "docs/research/R04_ML_SMOKE_REPORT.md",
+    "docs/research/R05_FULL_TRAIN_RECONSTRUCTION_PLAN.md",
+    "literature/gap_matrix.md",
+    "literature/refs_verified_subset.bib",
+    "literature/resume_r02_2026_10_16/DOMESTIC_SOURCES.md",
+    "literature/resume_r02_2026_10_16/READING_NOTES.md",
+    "literature/resume_r04_2026_10_16/SCOPED_READING_NOTES.md",
+    "literature/resume_r04_2026_10_16/legacy_verification_ledger.csv",
+    "proposal/researchwrite/nckh-ids/06_rq_method_output_gates.md",
+    "proposal/researchwrite/nckh-ids/07_remaining_work_feasibility.md",
+    "release/RELEASE_BLOCKERS.md",
+    "results/reproducibility/r04_ml_smoke_repaired/validation.json",
+    "results/reproducibility/resume_2026_10_16/protocol/P15_04_PROTOCOL_REPORT.md",
+    "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+    "templates/original/Mau-De-cuong-NCKH-Sinh-vien-2026-7-trieu.docx"
+  ],
+  "missing_paths": [],
+  "used_paper_ids": [
+    "L01",
+    "L02",
+    "L04",
+    "L05",
+    "L06",
+    "L07",
+    "L08",
+    "L09",
+    "L11",
+    "L12"
+  ],
+  "input_hashes": {
+    "data/raw/unsw-nb15/UNSW_NB15_training-set.csv": {
+      "expected": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa",
+      "actual": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa"
+    },
+    "src/models/run_unsw_phase9_final_holdout.py": {
+      "expected": "3e7d1369222ccdf452116e069a0db3df55e1d6d683d0f92f4e2bcde0800ae480",
+      "actual": "3e7d1369222ccdf452116e069a0db3df55e1d6d683d0f92f4e2bcde0800ae480"
+    },
+    "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json": {
+      "expected": "cdda800318c5d2259e581bff5b194381be7434d654950377dd4b40fca50be0a6",
+      "actual": "cdda800318c5d2259e581bff5b194381be7434d654950377dd4b40fca50be0a6"
+    },
+    "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json": {
+      "expected": "5a8fe201c88b49a2c018778f6d159a107b6fdfa810c05c1606e42e6d675244be",
+      "actual": "5a8fe201c88b49a2c018778f6d159a107b6fdfa810c05c1606e42e6d675244be"
+    }
+  },
+  "draft_sha256": "645ab3c1d0035708b6c6fcc34e65f64f8ad225d12f48c0a4a8f2942362d5b163",
+  "semantic_acceptance": "See independent r05_assembled_argument_recheck.md; P0 author/form/render remain OPEN"
+}

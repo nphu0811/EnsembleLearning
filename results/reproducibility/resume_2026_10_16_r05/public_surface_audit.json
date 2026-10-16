@@ -1,0 +1,1614 @@
+{
+  "scope": "Current git tracked files and readable nested archive text; no remote history audit, OCR, binary secret detection or privacy certification",
+  "tracked_files": 633,
+  "scanned_text_units": 1165,
+  "categories": {
+    "local_user_path": 79,
+    "email_candidate": 14,
+    "private_key_header": 0,
+    "credential_candidate": 0,
+    "template_identity_field": 27
+  },
+  "findings": [
+    {
+      "path": ".research_memory/HANDOFF.md",
+      "category": "local_user_path",
+      "lines": [
+        207
+      ],
+      "sha256": "1613a94f3d2cfb1aaeb394222bd7ce79de4fbc4fde17aaf23f77f80dae9a797e",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": ".research_memory/HANDOFF.md",
+      "category": "template_identity_field",
+      "lines": [
+        211
+      ],
+      "sha256": "1613a94f3d2cfb1aaeb394222bd7ce79de4fbc4fde17aaf23f77f80dae9a797e",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": ".research_memory/SKILL_USAGE_LOG.md",
+      "category": "local_user_path",
+      "lines": [
+        9,
+        24,
+        25,
+        26,
+        34,
+        35,
+        40,
+        41,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "sha256": "99d2bac39c3bcd67fd627457a1656460054e61ab546ef725980211d803fd42c2",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "DE-TAI-NCKHSV-15/thesis.sty",
+      "category": "template_identity_field",
+      "lines": [
+        11,
+        12,
+        60,
+        61
+      ],
+      "sha256": "2a16545dc3a8cd7ffd0fc8447ca5f4ec78b37f72d787a5371ecdef4760809f1a",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "MASTER_PROMPT.md",
+      "category": "template_identity_field",
+      "lines": [
+        25
+      ],
+      "sha256": "81053d27300fc49096bc551e010700297f2c489ef539cf05f8a33d34d279774a",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::.research_memory/HANDOFF.md",
+      "category": "local_user_path",
+      "lines": [
+        207
+      ],
+      "sha256": "1613a94f3d2cfb1aaeb394222bd7ce79de4fbc4fde17aaf23f77f80dae9a797e",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::.research_memory/HANDOFF.md",
+      "category": "template_identity_field",
+      "lines": [
+        211
+      ],
+      "sha256": "1613a94f3d2cfb1aaeb394222bd7ce79de4fbc4fde17aaf23f77f80dae9a797e",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::.research_memory/SKILL_USAGE_LOG.md",
+      "category": "local_user_path",
+      "lines": [
+        9,
+        24,
+        25,
+        26,
+        34,
+        35,
+        40,
+        41,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "sha256": "99d2bac39c3bcd67fd627457a1656460054e61ab546ef725980211d803fd42c2",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::DE-TAI-NCKHSV-15/thesis.sty",
+      "category": "template_identity_field",
+      "lines": [
+        11,
+        12,
+        60,
+        61
+      ],
+      "sha256": "2a16545dc3a8cd7ffd0fc8447ca5f4ec78b37f72d787a5371ecdef4760809f1a",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::MASTER_PROMPT.md",
+      "category": "template_identity_field",
+      "lines": [
+        25
+      ],
+      "sha256": "81053d27300fc49096bc551e010700297f2c489ef539cf05f8a33d34d279774a",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::docs/ROADMAP_RECONCILIATION.md",
+      "category": "local_user_path",
+      "lines": [
+        13,
+        14
+      ],
+      "sha256": "c0e8e36d544f056eb1da554a07197d81a5843f1c7ef7f6ed24eee77fcd644305",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::docs/TEMPLATE_REQUIREMENTS_MATRIX.md",
+      "category": "local_user_path",
+      "lines": [
+        7
+      ],
+      "sha256": "8c6f5da55aa85747af71d275d922af92dc23a7c4a7bdfffd70c2482a6c5b5001",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::docs/TEMPLATE_REQUIREMENTS_MATRIX.md",
+      "category": "template_identity_field",
+      "lines": [
+        17
+      ],
+      "sha256": "8c6f5da55aa85747af71d275d922af92dc23a7c4a7bdfffd70c2482a6c5b5001",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::exports/docx_export_2026_10_16/DOCX_RUNTIME_DIAGNOSTIC.md",
+      "category": "local_user_path",
+      "lines": [
+        8,
+        9
+      ],
+      "sha256": "6586a9fd3f5003d2a43a368efccef4c3b8c3a91dedcf7377aadcdfe3179b9c75",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::exports/docx_export_2026_10_16/DOCX_RUNTIME_DIAGNOSTIC.md",
+      "category": "email_candidate",
+      "lines": [
+        8
+      ],
+      "sha256": "6586a9fd3f5003d2a43a368efccef4c3b8c3a91dedcf7377aadcdfe3179b9c75",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::exports/docx_export_2026_10_16/diagnostics.json",
+      "category": "local_user_path",
+      "lines": [
+        4,
+        5
+      ],
+      "sha256": "4bc0e6682b5d9d54f22c047affe59c8adfd56d47b46b37292b6123d00bb09fca",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::exports/docx_export_2026_10_16/preserve_and_diagnose.py",
+      "category": "local_user_path",
+      "lines": [
+        19,
+        20,
+        65
+      ],
+      "sha256": "8f35bca38825b1f98f1e17b0d7f0bd4661cc98fe19ae9a359458eae4f5e8fb2b",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::exports/docx_export_2026_10_16/sources/docs/TEMPLATE_REQUIREMENTS_MATRIX.md",
+      "category": "local_user_path",
+      "lines": [
+        5
+      ],
+      "sha256": "f1cbba90650d63f8d2e31bd7043c377ca35fedcefc91932d05e366017f8ef457",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::exports/docx_export_2026_10_16/sources/docs/TEMPLATE_REQUIREMENTS_MATRIX.md",
+      "category": "template_identity_field",
+      "lines": [
+        13
+      ],
+      "sha256": "f1cbba90650d63f8d2e31bd7043c377ca35fedcefc91932d05e366017f8ef457",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::exports/docx_export_2026_10_16/sources/notebook/phase13/phase13_ablation_plan.md",
+      "category": "local_user_path",
+      "lines": [
+        25
+      ],
+      "sha256": "e01b32e1f966c207f52da38152d01f2d6c19b77705bb69ee97ab91c19bf53594",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::literature/resume_r03_2026_10_16/web_capture_4.json",
+      "category": "email_candidate",
+      "lines": [
+        1
+      ],
+      "sha256": "a2fb04eee46ed59e9ec368a20a17f07f2c9032f76abc1a5a2fe6b99381e3bb74",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::literature/resume_r03_2026_10_16/web_capture_6.json",
+      "category": "email_candidate",
+      "lines": [
+        1
+      ],
+      "sha256": "dba0b016a42f50d709e7af9f6421600d1d0faf6f6728aaefbf5a6da0a55e3ab8",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::literature/resume_r04_2026_10_16/reading_capture_4.json",
+      "category": "email_candidate",
+      "lines": [
+        1
+      ],
+      "sha256": "58e8860c7432bc978fdf378e607d2978a0eccefe7e604b1a099a39f79736d45e",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::literature/resume_r04_2026_10_16/web_capture_1.json",
+      "category": "email_candidate",
+      "lines": [
+        1
+      ],
+      "sha256": "50ead502d0d30dd59aa3a0834b1ec6d8c4ff9203de095ccdae4b2b922f05ba1e",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::literature/resume_r04_2026_10_16/web_capture_3.json",
+      "category": "email_candidate",
+      "lines": [
+        1
+      ],
+      "sha256": "fb01b36cdc5771d4ec944493d4d3fd438955086729c220b97074f14a872299b7",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::literature/resume_r04_2026_10_16/web_capture_7.json",
+      "category": "email_candidate",
+      "lines": [
+        1
+      ],
+      "sha256": "be3d252c2da99645968bf688c4d98c58ea5556cf8c0ffb05b4ca6b4f59c604c9",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::notebook/phase13/phase13_ablation_plan.md",
+      "category": "local_user_path",
+      "lines": [
+        25
+      ],
+      "sha256": "e01b32e1f966c207f52da38152d01f2d6c19b77705bb69ee97ab91c19bf53594",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::proposal/researchwrite/nckh-ids/drafts/De_cuong_noi_dung_review_r04.md",
+      "category": "template_identity_field",
+      "lines": [
+        47,
+        48,
+        120,
+        126
+      ],
+      "sha256": "dfef1dffa3fdd8efbb558b65a02cb13c443da8529c5efba169d6b7dc7ad47bac",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::proposal/researchwrite/nckh-ids/drafts/sections/ung_dung_san_pham_tien_do_r03.md",
+      "category": "template_identity_field",
+      "lines": [
+        44
+      ],
+      "sha256": "d6b7afa3f7552883cc250026415d81fd9ba935163c3d2199f924fd57d6ac4685",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::proposal/researchwrite/nckh-ids/qa_logs/r02_argument_review.md",
+      "category": "local_user_path",
+      "lines": [
+        7
+      ],
+      "sha256": "43cd08a808f36defe4060922048c10e434282de9157e99691f593b763de4da76",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::proposal/researchwrite/nckh-ids/qa_logs/r03_products_section_review.md",
+      "category": "local_user_path",
+      "lines": [
+        7
+      ],
+      "sha256": "0abc198654cce35e20d0a5acd69179d530fd216c987a0ec2b174292df1e2ba44",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::proposal/researchwrite/nckh-ids/qa_logs/r04_assembled_evidence_review.md",
+      "category": "local_user_path",
+      "lines": [
+        5
+      ],
+      "sha256": "7ce424afd30cc03c44e0f4ead2b4cee254c91e4a4af61b0b99f2a6efb18870f3",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::proposal/researchwrite/nckh-ids/qa_logs/r04_lit_argument_review.md",
+      "category": "local_user_path",
+      "lines": [
+        7
+      ],
+      "sha256": "5dd572c0df4786828eef7296b8d2ff8d894f6bea8650a6aa4125db6235f9aa68",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::proposal/researchwrite/nckh-ids/qa_logs/r04_lit_evidence_review.md",
+      "category": "local_user_path",
+      "lines": [
+        7
+      ],
+      "sha256": "2a47c33acbd7d370f92650db04c2fae0db632423381046cbc150b070472992de",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::proposal/researchwrite/nckh-ids/template_audit_r04/original_body_snapshot.json",
+      "category": "template_identity_field",
+      "lines": [
+        163,
+        169,
+        193,
+        199,
+        763,
+        768,
+        772,
+        778
+      ],
+      "sha256": "f7eada6bafd150e0b22a83308c580915161714190c845d73e158a343838c61bd",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::templates/original/Mau-De-cuong-NCKH-Sinh-vien-2026-7-trieu.docx::word/document.xml",
+      "category": "template_identity_field",
+      "lines": [
+        2
+      ],
+      "sha256": "ef3c5aa3fb567ac6e7df10f751b7bb55cd1b741ee6eb770444c77fdcce160539",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::templates/original/latex/thesis.sty",
+      "category": "template_identity_field",
+      "lines": [
+        11,
+        12,
+        60,
+        61
+      ],
+      "sha256": "2a16545dc3a8cd7ffd0fc8447ca5f4ec78b37f72d787a5371ecdef4760809f1a",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::tools/checkpoint_r03.py",
+      "category": "local_user_path",
+      "lines": [
+        53,
+        54
+      ],
+      "sha256": "1f745426c9494a1ee4a5362231854bd937f99df8347f376d2c7de30616eab95d",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::tools/r04_assemble_proposal.py",
+      "category": "template_identity_field",
+      "lines": [
+        49,
+        50,
+        67
+      ],
+      "sha256": "18bd87fba1d90e06d20f93fe155a1f45b68acd2fd1085c7d7c83fa842d30c77d",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::tools/resume_audit_2026_10_16.py",
+      "category": "local_user_path",
+      "lines": [
+        65,
+        66,
+        115
+      ],
+      "sha256": "8f45daad4a711be048b07aadac287b2a9895deea614aa33303c2735b57ecd919",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::proposal/researchwrite/nckh-ids/template_audit_r04/field_coverage.csv",
+      "category": "template_identity_field",
+      "lines": [
+        26,
+        27,
+        31,
+        32,
+        57
+      ],
+      "sha256": "b0f4c7d8ad20e27d71155e208907f5f42db562282e47246bddadf4aeb8812aa6",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/data_audit/unsw_nb15/audit_report.txt",
+      "category": "local_user_path",
+      "lines": [
+        49
+      ],
+      "sha256": "ff6ce5807195c6d4ed8dc4f3a786d2e246f541c60d5f7107c43524f005d031a3",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/final_analysis/unsw_nb15/phase10_statistics/experiment_metadata.json",
+      "category": "local_user_path",
+      "lines": [
+        5
+      ],
+      "sha256": "e6bdb3df9d8184619624733b31b6b4c76d45bce0ae75eccd8463bf826363aef4",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/p15_01_inventory/p15_01_local_inventory.json",
+      "category": "local_user_path",
+      "lines": [
+        3
+      ],
+      "sha256": "e929587991bfb6e74e25c7be11e9f9c8e569810b63254746e0b48a7d515f8763",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/p15_02c1_package_provenance/p15_02c1_distribution_paths.csv",
+      "category": "local_user_path",
+      "lines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "sha256": "0990fd11eb2c72d76ca7ce04932aa0e096f41dc991c5c359908b9deea388fbc1",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/p15_02c1_package_provenance/p15_02c1_package_provenance.json",
+      "category": "local_user_path",
+      "lines": [
+        4,
+        6,
+        7,
+        8,
+        13,
+        22,
+        31,
+        33,
+        37,
+        43,
+        45,
+        49,
+        55,
+        57,
+        61,
+        67,
+        69,
+        73,
+        79,
+        81,
+        85,
+        91,
+        93,
+        97,
+        103,
+        107,
+        113,
+        115,
+        119,
+        127,
+        128,
+        135,
+        136,
+        143,
+        144,
+        149,
+        150,
+        157,
+        158,
+        163,
+        164,
+        171,
+        172,
+        179,
+        180,
+        187,
+        188,
+        195,
+        196,
+        201,
+        202
+      ],
+      "sha256": "7362bdef0ded893c5453751ea6484cd380a945f82559d81e95b4b4d9a717ce68",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/p15_02c2_clean_env/p15_02c2_clean_env.json",
+      "category": "local_user_path",
+      "lines": [
+        4,
+        6,
+        9,
+        50
+      ],
+      "sha256": "872c354a1ca32a4a13fd43cf8b2490b238bc631b4e8c816f7918a9a979e19437",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/p15_03_dataset/p15_03_dataset_integrity.json",
+      "category": "local_user_path",
+      "lines": [
+        4
+      ],
+      "sha256": "26134b1073d4c662801f4cec8d5a11e3efb124141e59c3d46abe25c63fea4461",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/p15_04_protocol/p15_04_protocol_integrity.json",
+      "category": "local_user_path",
+      "lines": [
+        4
+      ],
+      "sha256": "0ad9e4ee6dafdc3242ee2f74120048e92a8452beef1a69919ca826d9193814da",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/r04_ml_smoke/run_metadata.json",
+      "category": "local_user_path",
+      "lines": [
+        5
+      ],
+      "sha256": "31619415795cbd92e6ec20a82a036f1a70354368aef8c1c81e77685e3d09bedb",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/r04_ml_smoke_repaired/run_metadata.json",
+      "category": "local_user_path",
+      "lines": [
+        5
+      ],
+      "sha256": "0610a6a0b62df9f6bb01a62a43a80a704067c4a74c9f35d25c926cc2798ce70c",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/resume_2026_10_16/bootstrap/nature_skill_registry.csv",
+      "category": "local_user_path",
+      "lines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "sha256": "ff9cb8769208867669417caaaed903b3ca338f6f2fdc44c8a70b6214f0811341",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/resume_2026_10_16/bootstrap/proposal_template_structure.json",
+      "category": "template_identity_field",
+      "lines": [
+        130,
+        135,
+        155,
+        160,
+        428,
+        429,
+        432
+      ],
+      "sha256": "dca16803fdf70cd0932a1de36b5fbe075c651d2655034b3dc78cb3cecd864571",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/resume_2026_10_16/bootstrap/session_environment.json",
+      "category": "local_user_path",
+      "lines": [
+        4
+      ],
+      "sha256": "353f998be7ac193c88d25dea3ab6d26a8cf0ff3900d2389c5e42c540d0ae243d",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/resume_2026_10_16/bootstrap/template_audit.json",
+      "category": "local_user_path",
+      "lines": [
+        4,
+        10
+      ],
+      "sha256": "88de166faa5ec4d88d7485b890c957a7ccbd75dc49563e610384c4d10c8580b0",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/resume_2026_10_16/clean_replay_report.json",
+      "category": "local_user_path",
+      "lines": [
+        3,
+        9,
+        11,
+        13,
+        15,
+        22,
+        28
+      ],
+      "sha256": "64f8c7c000e659adc817b150cc4ab49ce0dd1b7df8c955cf143f90ffd56d8856",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/resume_2026_10_16/p15_01_inventory.json",
+      "category": "local_user_path",
+      "lines": [
+        3
+      ],
+      "sha256": "48d92d97a054849c6f8f8811164716ae6d25a3ce2bea3f76bdc20dbc2340def0",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/resume_2026_10_16/p15_03_dataset.json",
+      "category": "local_user_path",
+      "lines": [
+        4,
+        5
+      ],
+      "sha256": "3f28254552f2a91d0c8a638c379c2f7fd48b0f0082cbd8c4a28a5dff6b43a057",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/resume_2026_10_16/protocol/p15_04_protocol_integrity.json",
+      "category": "local_user_path",
+      "lines": [
+        4
+      ],
+      "sha256": "93326634b7a40e4995ca9337452d6b060f1d38845d2f91598d96a132507efc70",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/resume_2026_10_16_r02/resume_audit.json",
+      "category": "local_user_path",
+      "lines": [
+        378,
+        383,
+        388,
+        393,
+        398,
+        403,
+        408,
+        413,
+        418,
+        423,
+        428,
+        433,
+        438,
+        443,
+        448,
+        453,
+        458,
+        463,
+        468,
+        473
+      ],
+      "sha256": "dbedc8e21d6fbb683179edf3aaf2823b5c681fcb8758f87a49899689baaa566e",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/resume_2026_10_16_r03/resume_audit.json",
+      "category": "local_user_path",
+      "lines": [
+        2026,
+        2031,
+        2036,
+        2041,
+        2046,
+        2051,
+        2056,
+        2061,
+        2066,
+        2071,
+        2076,
+        2081,
+        2086,
+        2091,
+        2096,
+        2101,
+        2106,
+        2111,
+        2116,
+        2121,
+        2139
+      ],
+      "sha256": "5001842075f97f89db12aa8cbe90d511c58b7f36f519b9e95b38b723a944225f",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/resume_2026_10_16_r03_post/resume_audit.json",
+      "category": "local_user_path",
+      "lines": [
+        2170,
+        2175,
+        2180,
+        2185,
+        2190,
+        2195,
+        2200,
+        2205,
+        2210,
+        2215,
+        2220,
+        2225,
+        2230,
+        2235,
+        2240,
+        2245,
+        2250,
+        2255,
+        2260,
+        2265,
+        2283
+      ],
+      "sha256": "544538ff07c0b499a6c6069d9b5e8c98077451498c363a74d349997a7db61446",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/resume_2026_10_16_r04/resume_audit.json",
+      "category": "local_user_path",
+      "lines": [
+        2182,
+        2187,
+        2192,
+        2197,
+        2202,
+        2207,
+        2212,
+        2217,
+        2222,
+        2227,
+        2232,
+        2237,
+        2242,
+        2247,
+        2252,
+        2257,
+        2262,
+        2267,
+        2272,
+        2277,
+        2295
+      ],
+      "sha256": "bc7da36657c64cea1597fbaadc08ac7cc723a67774988c11a0cd7cdc9d04e34a",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip::results/reproducibility/resume_2026_10_16_r04_post/resume_audit.json",
+      "category": "local_user_path",
+      "lines": [
+        2728,
+        2733,
+        2738,
+        2743,
+        2748,
+        2753,
+        2758,
+        2763,
+        2768,
+        2773,
+        2778,
+        2783,
+        2788,
+        2793,
+        2798,
+        2803,
+        2808,
+        2813,
+        2818,
+        2823,
+        2841
+      ],
+      "sha256": "78c2074edb31590a39ae22ae3f8e85101f789359b71a14c0cc38499b39ba595c",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "docs/ROADMAP_RECONCILIATION.md",
+      "category": "local_user_path",
+      "lines": [
+        13,
+        14
+      ],
+      "sha256": "c0e8e36d544f056eb1da554a07197d81a5843f1c7ef7f6ed24eee77fcd644305",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "docs/TEMPLATE_REQUIREMENTS_MATRIX.md",
+      "category": "local_user_path",
+      "lines": [
+        7
+      ],
+      "sha256": "8c6f5da55aa85747af71d275d922af92dc23a7c4a7bdfffd70c2482a6c5b5001",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "docs/TEMPLATE_REQUIREMENTS_MATRIX.md",
+      "category": "template_identity_field",
+      "lines": [
+        17
+      ],
+      "sha256": "8c6f5da55aa85747af71d275d922af92dc23a7c4a7bdfffd70c2482a6c5b5001",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "exports/docx_export_2026_10_16/DOCX_RUNTIME_DIAGNOSTIC.md",
+      "category": "local_user_path",
+      "lines": [
+        8,
+        9
+      ],
+      "sha256": "6586a9fd3f5003d2a43a368efccef4c3b8c3a91dedcf7377aadcdfe3179b9c75",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "exports/docx_export_2026_10_16/DOCX_RUNTIME_DIAGNOSTIC.md",
+      "category": "email_candidate",
+      "lines": [
+        8
+      ],
+      "sha256": "6586a9fd3f5003d2a43a368efccef4c3b8c3a91dedcf7377aadcdfe3179b9c75",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "exports/docx_export_2026_10_16/diagnostics.json",
+      "category": "local_user_path",
+      "lines": [
+        4,
+        5
+      ],
+      "sha256": "4bc0e6682b5d9d54f22c047affe59c8adfd56d47b46b37292b6123d00bb09fca",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "exports/docx_export_2026_10_16/preserve_and_diagnose.py",
+      "category": "local_user_path",
+      "lines": [
+        19,
+        20,
+        65
+      ],
+      "sha256": "8f35bca38825b1f98f1e17b0d7f0bd4661cc98fe19ae9a359458eae4f5e8fb2b",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "exports/docx_export_2026_10_16/sources/docs/TEMPLATE_REQUIREMENTS_MATRIX.md",
+      "category": "local_user_path",
+      "lines": [
+        5
+      ],
+      "sha256": "f1cbba90650d63f8d2e31bd7043c377ca35fedcefc91932d05e366017f8ef457",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "exports/docx_export_2026_10_16/sources/docs/TEMPLATE_REQUIREMENTS_MATRIX.md",
+      "category": "template_identity_field",
+      "lines": [
+        13
+      ],
+      "sha256": "f1cbba90650d63f8d2e31bd7043c377ca35fedcefc91932d05e366017f8ef457",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "exports/docx_export_2026_10_16/sources/notebook/phase13/phase13_ablation_plan.md",
+      "category": "local_user_path",
+      "lines": [
+        25
+      ],
+      "sha256": "e01b32e1f966c207f52da38152d01f2d6c19b77705bb69ee97ab91c19bf53594",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_4.json",
+      "category": "email_candidate",
+      "lines": [
+        1
+      ],
+      "sha256": "a2fb04eee46ed59e9ec368a20a17f07f2c9032f76abc1a5a2fe6b99381e3bb74",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_6.json",
+      "category": "email_candidate",
+      "lines": [
+        1
+      ],
+      "sha256": "dba0b016a42f50d709e7af9f6421600d1d0faf6f6728aaefbf5a6da0a55e3ab8",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/reading_capture_4.json",
+      "category": "email_candidate",
+      "lines": [
+        1
+      ],
+      "sha256": "58e8860c7432bc978fdf378e607d2978a0eccefe7e604b1a099a39f79736d45e",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/web_capture_1.json",
+      "category": "email_candidate",
+      "lines": [
+        1
+      ],
+      "sha256": "50ead502d0d30dd59aa3a0834b1ec6d8c4ff9203de095ccdae4b2b922f05ba1e",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/web_capture_3.json",
+      "category": "email_candidate",
+      "lines": [
+        1
+      ],
+      "sha256": "fb01b36cdc5771d4ec944493d4d3fd438955086729c220b97074f14a872299b7",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/web_capture_7.json",
+      "category": "email_candidate",
+      "lines": [
+        1
+      ],
+      "sha256": "be3d252c2da99645968bf688c4d98c58ea5556cf8c0ffb05b4ca6b4f59c604c9",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "notebook/phase13/phase13_ablation_plan.md",
+      "category": "local_user_path",
+      "lines": [
+        25
+      ],
+      "sha256": "e01b32e1f966c207f52da38152d01f2d6c19b77705bb69ee97ab91c19bf53594",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/drafts/De_cuong_noi_dung_review_r04.md",
+      "category": "template_identity_field",
+      "lines": [
+        47,
+        48,
+        120,
+        126
+      ],
+      "sha256": "dfef1dffa3fdd8efbb558b65a02cb13c443da8529c5efba169d6b7dc7ad47bac",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/drafts/sections/ung_dung_san_pham_tien_do_r03.md",
+      "category": "template_identity_field",
+      "lines": [
+        44
+      ],
+      "sha256": "d6b7afa3f7552883cc250026415d81fd9ba935163c3d2199f924fd57d6ac4685",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_argument_review.md",
+      "category": "local_user_path",
+      "lines": [
+        7
+      ],
+      "sha256": "43cd08a808f36defe4060922048c10e434282de9157e99691f593b763de4da76",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r03_products_section_review.md",
+      "category": "local_user_path",
+      "lines": [
+        7
+      ],
+      "sha256": "0abc198654cce35e20d0a5acd69179d530fd216c987a0ec2b174292df1e2ba44",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r04_assembled_evidence_review.md",
+      "category": "local_user_path",
+      "lines": [
+        5
+      ],
+      "sha256": "7ce424afd30cc03c44e0f4ead2b4cee254c91e4a4af61b0b99f2a6efb18870f3",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r04_lit_argument_review.md",
+      "category": "local_user_path",
+      "lines": [
+        7
+      ],
+      "sha256": "5dd572c0df4786828eef7296b8d2ff8d894f6bea8650a6aa4125db6235f9aa68",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r04_lit_evidence_review.md",
+      "category": "local_user_path",
+      "lines": [
+        7
+      ],
+      "sha256": "2a47c33acbd7d370f92650db04c2fae0db632423381046cbc150b070472992de",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/template_audit_r04/field_coverage.csv",
+      "category": "template_identity_field",
+      "lines": [
+        26,
+        27,
+        31,
+        32,
+        57
+      ],
+      "sha256": "b0f4c7d8ad20e27d71155e208907f5f42db562282e47246bddadf4aeb8812aa6",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/template_audit_r04/original_body_snapshot.json",
+      "category": "template_identity_field",
+      "lines": [
+        163,
+        169,
+        193,
+        199,
+        763,
+        768,
+        772,
+        778
+      ],
+      "sha256": "f7eada6bafd150e0b22a83308c580915161714190c845d73e158a343838c61bd",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/data_audit/unsw_nb15/audit_report.txt",
+      "category": "local_user_path",
+      "lines": [
+        49
+      ],
+      "sha256": "ff6ce5807195c6d4ed8dc4f3a786d2e246f541c60d5f7107c43524f005d031a3",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase10_statistics/experiment_metadata.json",
+      "category": "local_user_path",
+      "lines": [
+        5
+      ],
+      "sha256": "e6bdb3df9d8184619624733b31b6b4c76d45bce0ae75eccd8463bf826363aef4",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/p15_01_inventory/p15_01_local_inventory.json",
+      "category": "local_user_path",
+      "lines": [
+        3
+      ],
+      "sha256": "e929587991bfb6e74e25c7be11e9f9c8e569810b63254746e0b48a7d515f8763",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/p15_02c1_package_provenance/p15_02c1_distribution_paths.csv",
+      "category": "local_user_path",
+      "lines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "sha256": "0990fd11eb2c72d76ca7ce04932aa0e096f41dc991c5c359908b9deea388fbc1",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/p15_02c1_package_provenance/p15_02c1_package_provenance.json",
+      "category": "local_user_path",
+      "lines": [
+        4,
+        6,
+        7,
+        8,
+        13,
+        22,
+        31,
+        33,
+        37,
+        43,
+        45,
+        49,
+        55,
+        57,
+        61,
+        67,
+        69,
+        73,
+        79,
+        81,
+        85,
+        91,
+        93,
+        97,
+        103,
+        107,
+        113,
+        115,
+        119,
+        127,
+        128,
+        135,
+        136,
+        143,
+        144,
+        149,
+        150,
+        157,
+        158,
+        163,
+        164,
+        171,
+        172,
+        179,
+        180,
+        187,
+        188,
+        195,
+        196,
+        201,
+        202
+      ],
+      "sha256": "7362bdef0ded893c5453751ea6484cd380a945f82559d81e95b4b4d9a717ce68",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/p15_02c2_clean_env.zip::p15_02c2_clean_env/p15_02c2_clean_env.json",
+      "category": "local_user_path",
+      "lines": [
+        4,
+        6,
+        9,
+        50
+      ],
+      "sha256": "872c354a1ca32a4a13fd43cf8b2490b238bc631b4e8c816f7918a9a979e19437",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/p15_02c2_clean_env/p15_02c2_clean_env.json",
+      "category": "local_user_path",
+      "lines": [
+        4,
+        6,
+        9,
+        50
+      ],
+      "sha256": "872c354a1ca32a4a13fd43cf8b2490b238bc631b4e8c816f7918a9a979e19437",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/p15_03_dataset/p15_03_dataset_integrity.json",
+      "category": "local_user_path",
+      "lines": [
+        4
+      ],
+      "sha256": "26134b1073d4c662801f4cec8d5a11e3efb124141e59c3d46abe25c63fea4461",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/p15_04_protocol/p15_04_protocol_integrity.json",
+      "category": "local_user_path",
+      "lines": [
+        4
+      ],
+      "sha256": "0ad9e4ee6dafdc3242ee2f74120048e92a8452beef1a69919ca826d9193814da",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/r04_ml_smoke/run_metadata.json",
+      "category": "local_user_path",
+      "lines": [
+        5
+      ],
+      "sha256": "31619415795cbd92e6ec20a82a036f1a70354368aef8c1c81e77685e3d09bedb",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/r04_ml_smoke_repaired/run_metadata.json",
+      "category": "local_user_path",
+      "lines": [
+        5
+      ],
+      "sha256": "0610a6a0b62df9f6bb01a62a43a80a704067c4a74c9f35d25c926cc2798ce70c",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/nature_skill_registry.csv",
+      "category": "local_user_path",
+      "lines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "sha256": "ff9cb8769208867669417caaaed903b3ca338f6f2fdc44c8a70b6214f0811341",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/proposal_template_structure.json",
+      "category": "template_identity_field",
+      "lines": [
+        130,
+        135,
+        155,
+        160,
+        428,
+        429,
+        432
+      ],
+      "sha256": "dca16803fdf70cd0932a1de36b5fbe075c651d2655034b3dc78cb3cecd864571",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/session_environment.json",
+      "category": "local_user_path",
+      "lines": [
+        4
+      ],
+      "sha256": "353f998be7ac193c88d25dea3ab6d26a8cf0ff3900d2389c5e42c540d0ae243d",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/template_audit.json",
+      "category": "local_user_path",
+      "lines": [
+        4,
+        10
+      ],
+      "sha256": "88de166faa5ec4d88d7485b890c957a7ccbd75dc49563e610384c4d10c8580b0",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/clean_replay_report.json",
+      "category": "local_user_path",
+      "lines": [
+        3,
+        9,
+        11,
+        13,
+        15,
+        22,
+        28
+      ],
+      "sha256": "64f8c7c000e659adc817b150cc4ab49ce0dd1b7df8c955cf143f90ffd56d8856",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/p15_01_inventory.json",
+      "category": "local_user_path",
+      "lines": [
+        3
+      ],
+      "sha256": "48d92d97a054849c6f8f8811164716ae6d25a3ce2bea3f76bdc20dbc2340def0",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/p15_03_dataset.json",
+      "category": "local_user_path",
+      "lines": [
+        4,
+        5
+      ],
+      "sha256": "3f28254552f2a91d0c8a638c379c2f7fd48b0f0082cbd8c4a28a5dff6b43a057",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/protocol/p15_04_protocol_integrity.json",
+      "category": "local_user_path",
+      "lines": [
+        4
+      ],
+      "sha256": "93326634b7a40e4995ca9337452d6b060f1d38845d2f91598d96a132507efc70",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r02/resume_audit.json",
+      "category": "local_user_path",
+      "lines": [
+        378,
+        383,
+        388,
+        393,
+        398,
+        403,
+        408,
+        413,
+        418,
+        423,
+        428,
+        433,
+        438,
+        443,
+        448,
+        453,
+        458,
+        463,
+        468,
+        473
+      ],
+      "sha256": "dbedc8e21d6fbb683179edf3aaf2823b5c681fcb8758f87a49899689baaa566e",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r03/resume_audit.json",
+      "category": "local_user_path",
+      "lines": [
+        2026,
+        2031,
+        2036,
+        2041,
+        2046,
+        2051,
+        2056,
+        2061,
+        2066,
+        2071,
+        2076,
+        2081,
+        2086,
+        2091,
+        2096,
+        2101,
+        2106,
+        2111,
+        2116,
+        2121,
+        2139
+      ],
+      "sha256": "5001842075f97f89db12aa8cbe90d511c58b7f36f519b9e95b38b723a944225f",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r03_post/resume_audit.json",
+      "category": "local_user_path",
+      "lines": [
+        2170,
+        2175,
+        2180,
+        2185,
+        2190,
+        2195,
+        2200,
+        2205,
+        2210,
+        2215,
+        2220,
+        2225,
+        2230,
+        2235,
+        2240,
+        2245,
+        2250,
+        2255,
+        2260,
+        2265,
+        2283
+      ],
+      "sha256": "544538ff07c0b499a6c6069d9b5e8c98077451498c363a74d349997a7db61446",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r04/resume_audit.json",
+      "category": "local_user_path",
+      "lines": [
+        2182,
+        2187,
+        2192,
+        2197,
+        2202,
+        2207,
+        2212,
+        2217,
+        2222,
+        2227,
+        2232,
+        2237,
+        2242,
+        2247,
+        2252,
+        2257,
+        2262,
+        2267,
+        2272,
+        2277,
+        2295
+      ],
+      "sha256": "bc7da36657c64cea1597fbaadc08ac7cc723a67774988c11a0cd7cdc9d04e34a",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r04_post/resume_audit.json",
+      "category": "local_user_path",
+      "lines": [
+        2728,
+        2733,
+        2738,
+        2743,
+        2748,
+        2753,
+        2758,
+        2763,
+        2768,
+        2773,
+        2778,
+        2783,
+        2788,
+        2793,
+        2798,
+        2803,
+        2808,
+        2813,
+        2818,
+        2823,
+        2841
+      ],
+      "sha256": "78c2074edb31590a39ae22ae3f8e85101f789359b71a14c0cc38499b39ba595c",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "templates/original/DE-TAI-NCKHSV-15.zip::thesis.sty",
+      "category": "template_identity_field",
+      "lines": [
+        11,
+        12,
+        60,
+        61
+      ],
+      "sha256": "2a16545dc3a8cd7ffd0fc8447ca5f4ec78b37f72d787a5371ecdef4760809f1a",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "templates/original/Mau-De-cuong-NCKH-Sinh-vien-2026-7-trieu.docx::word/document.xml",
+      "category": "template_identity_field",
+      "lines": [
+        2
+      ],
+      "sha256": "ef3c5aa3fb567ac6e7df10f751b7bb55cd1b741ee6eb770444c77fdcce160539",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "templates/original/latex/thesis.sty",
+      "category": "template_identity_field",
+      "lines": [
+        11,
+        12,
+        60,
+        61
+      ],
+      "sha256": "2a16545dc3a8cd7ffd0fc8447ca5f4ec78b37f72d787a5371ecdef4760809f1a",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "tools/checkpoint_r03.py",
+      "category": "local_user_path",
+      "lines": [
+        53,
+        54
+      ],
+      "sha256": "1f745426c9494a1ee4a5362231854bd937f99df8347f376d2c7de30616eab95d",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "tools/r04_assemble_proposal.py",
+      "category": "template_identity_field",
+      "lines": [
+        49,
+        50,
+        67
+      ],
+      "sha256": "18bd87fba1d90e06d20f93fe155a1f45b68acd2fd1085c7d7c83fa842d30c77d",
+      "status": "TRIAGE_ONLY"
+    },
+    {
+      "path": "tools/resume_audit_2026_10_16.py",
+      "category": "local_user_path",
+      "lines": [
+        65,
+        66,
+        115
+      ],
+      "sha256": "8f45daad4a711be048b07aadac287b2a9895deea614aa33303c2735b57ecd919",
+      "status": "TRIAGE_ONLY"
+    }
+  ],
+  "archives": [
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip",
+      "entries": 321,
+      "sha256": "8ea8dac8d3c926737697346dcd2982a376398a8206b3b859c5b76deed264d424"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_CODE_DOCS.zip::templates/original/Mau-De-cuong-NCKH-Sinh-vien-2026-7-trieu.docx",
+      "entries": 12,
+      "sha256": "bedb06dcecfc40a4d04a9412022509f039f7c4e64e6d779aa13b7dc9ec3d26c7"
+    },
+    {
+      "path": "NCKH_SHARE_FOR_REVIEW/NCKH_RESULTS.zip",
+      "entries": 244,
+      "sha256": "537747c4abbcc89868ff7a3c8f999b6277a7f6e73c5bd95ad5cf9dc0a57af010"
+    },
+    {
+      "path": "results/final_analysis/unsw_nb15/phase14_error_analysis_step4.zip",
+      "entries": 12,
+      "sha256": "c15a2f51b09ef803c38f00da5caac4b79d0dd8a823d79a8aa0d98da9a4db85fc"
+    },
+    {
+      "path": "results/reproducibility/p15_02c2_clean_env.zip",
+      "entries": 5,
+      "sha256": "0d7742be8958ac19694c2c4b2f5854cff173ee4da27ec52a9196b655d92b8c87"
+    },
+    {
+      "path": "templates/original/DE-TAI-NCKHSV-15.zip",
+      "entries": 15,
+      "sha256": "8bdfa9a0f5a26f03115ac8435a851417d1ef48e98749d5f48dd52ae7de831bf0"
+    },
+    {
+      "path": "templates/original/Mau-De-cuong-NCKH-Sinh-vien-2026-7-trieu.docx",
+      "entries": 12,
+      "sha256": "bedb06dcecfc40a4d04a9412022509f039f7c4e64e6d779aa13b7dc9ec3d26c7"
+    }
+  ],
+  "skipped": [],
+  "redaction": "Only paths, line numbers, categories, hashes. No matched values copied.",
+  "mutations": "NONE"
+}

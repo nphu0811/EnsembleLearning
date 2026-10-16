@@ -29,7 +29,6 @@
   "technical_debts": [
     "L03 page conflict and dataset U01/U03 warnings",
     "Broader/full source reading and domestic detailed comparison",
-    "Full assembled argument/form review interrupted by usage limit",
     "Filled DOCX/PDF and visual QA",
     "Author/admin fields and acceptance of retrospective proposal",
     "FullTRAIN model reconstruction/final inference;TRAIN subset smoke alone passed"
@@ -53,5 +52,17 @@
     "full_content_argument_review": "NOT_COMPLETED_USAGE_LIMIT;file absent",
     "render": "NOT_PERFORMED",
     "status": "INTERNAL_CONTENT_DRAFT;not full proposal acceptance"
+  },
+  "r05": {
+    "content_assembly": "drafts/De_cuong_noi_dung_review_r05.md",
+    "independent_argument_review": "qa_logs/r05_assembled_argument_review.md",
+    "independent_recheck": "qa_logs/r05_assembled_argument_recheck.md",
+    "validation": "qa_logs/r05_validation_repaired.json",
+    "disposition": "DONE_SCOPED internal content repair; NOT_READY_FOR_SUBMISSION",
+    "open_findings": [
+      "ARG-R05-00A author/institution input",
+      "ARG-R05-00B filled DOCX/PDF and visual QA"
+    ],
+    "render": "NOT_PERFORMED"
   }
 }

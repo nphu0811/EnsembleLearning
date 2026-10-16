@@ -45,3 +45,9 @@ Owner: session agent within explicit autonomous user authorization. Không thay 
 - D22: newfreshvenvTRAINsubsetsoftware smoke,notfullreconstruction;noTEST. Capacity/sourcepathcontractprecededfit;SMOKE_ONLYmodelartifactsneverfinaldemo.
 - D23: initialRF17bitwiseassertionfailrootcausedvia5parallel/5serialrepeats;1e-12numeric+exactlabelssoftware acceptance repair,not scientific equivalence margin. Preservefailureanddiagnosis;rerun45/45.
 - D24: fullcontentargumentreviewquota failureblocks thatreviewonly;completeindependentsoftware/defensecontent tasks;do notinventrevieworusepartialscoreascompletion.
+
+## r05 decisions
+
+- D25: freeze separate-context AI argument review before reconciliation; preserve r04 draft/review and create r05 revision. ThreeP1/twoP2 addressed and recheck accepted only internal content; author/renderP0 remain open. Evidence qa_logs/r05_review_resolution.md.
+- D26: keep software smoke45/45 distinct from absent final/fullTRAIN model, add planning-only reconstruction contract and NO_GO resource gate; no TEST read/fit or new scientific claim.
+- D27: read-only tracked/archive public triage, no cleanup or history rewrite. Pattern findings require review, not assumed secrets; no automatic approval/publish.

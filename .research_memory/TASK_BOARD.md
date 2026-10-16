@@ -93,3 +93,9 @@ Evidence: `.research_memory/r04/R04-DEFENSE-CONTENT.json`.
 PARTIAL — r04 advanced references11/12,gap/relatedwork,full content mapping and assembly,TRAIN-only software smoke45/45,defense content25/25;full argument review interrupted by quota;G0-G6 remain open;no final release
 
 Evidence: `.research_memory/r04/R04-FINAL-CHECKPOINT.json`.
+
+## r05 R05-ASSEMBLY-REVIEW
+
+DONE_SCOPED — Independent full argument/form review and recheck saved;3P1/2P2 addressed in separate r05 draft;34/34 source-boundary checks;author/renderP0 open;no training or release closure
+
+Evidence: `.research_memory/r05/R05-ASSEMBLY-REVIEW.json`.

@@ -1,0 +1,3 @@
+error,RF42_count,Stack42_count,delta_Stack42_minus_RF42,class_denominator
+fp,10003,9861,-142,37000
+fn,734,852,118,45332

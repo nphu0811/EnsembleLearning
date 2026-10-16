@@ -1,5 +1,17 @@
 # Tách tiến độ đã thực hiện khỏi công việc còn lại
 
+## Checkpoint supplement r05 — ưu tiên cho hiện trạng phần mềm
+
+Ngày 16/10/2026. Các hàng và mô tả nguồn lực bên dưới là foundation trước smoke R04, giữ làm chronology. Không dùng câu “chưa có model artifact” phía dưới để phủ nhận ba SMOKE_ONLY artifacts thật.
+
+- A aggregate replay đã PASS; không rerun chỉ để đổi trạng thái.
+- B có bước trung gian mới: fresh venv TRAIN-only fit/serialize/reload 2.000/500 dòng disjoint, repaired validation45/45 PASS; `docs/research/R04_ML_SMOKE_REPORT.md` và `results/reproducibility/r04_ml_smoke_repaired/{validation,run_metadata}.json`. Đây không fullTRAIN reconstruction; original environment UNKNOWN. Initial failure và repair được giữ.
+- C chưa có model final/fullTRAIN hợp lệ và learned preprocessing/schema cho final inference. Không dùng SMOKE_ONLY thay sản phẩm cuối. Script720 giây/runbook/checklist đã có dạng draft ở defense, chưa PPTX/PDF/rehearsal/finaldemo.
+- Capacity/budget/output-isolation mới ở `docs/research/R05_FULL_TRAIN_RECONSTRUCTION_PLAN.md`: PLAN_ONLY/NO_GO, snapshot RAM trống khoảng1,48 GiB, chưa đạt headroom đề xuất; runner/watchdog chưa có. Không chạy full job hoặc giả định ngân sách mẫu chi trả compute.
+- Phân công, dependency, resources/gates và failure actions cho mọi sản phẩm nằm trong phụ lục `drafts/De_cuong_noi_dung_review_r05.md`. Dates/owners/admin chưa xác nhận. Giữ lịch/kinh phí nguyên mẫu và G3/G4/G5/G6 chưa đóng.
+
+## Foundation lịch sử trước smoke
+
 Hồ sơ đang được phục hồi từ nghiên cứu đã có kết quả. Không mô tả nó như một đề cương được lập/phê duyệt trước thí nghiệm. Nếu cơ sở yêu cầu đề cương hoàn toàn trước thực nghiệm, tính chấp nhận của hồ sơ phục hồi cần tác giả/GVHD xác nhận; AI không cấp phê duyệt hồi tố.
 
 ## Gate phần mềm và reproducibility riêng biệt

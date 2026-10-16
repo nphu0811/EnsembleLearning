@@ -1,0 +1,16 @@
+% Generated from frozen aggregate CSV. NOT COMPILED OR VISUALLY VERIFIED.
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{lrrrrrr}
+\hline
+Model & Macro-F1 & MCC & FPR & FNR & FP & FN \\
+\hline
+RF-42 & 0.863343 & 0.750910 & 0.270351 & 0.016192 & 10003 & 734 \\
+Stacking-42 & 0.863840 & 0.750497 & 0.266514 & 0.018795 & 9861 & 852 \\
+RF-17 & 0.860673 & 0.746881 & 0.276324 & 0.015618 & 10224 & 708 \\
+\hline
+\end{tabular}
+\caption{Frozen official holdout, Attack=1, n=82332, threshold 0.5. Stacking-42 reduces FP by 142 and increases FN by 118 relative to RF-42. See source-data manifest and the conditional uncertainty table; no overall superiority or equivalence is established.}
+\label{tab:r05-official-performance}
+\end{table}

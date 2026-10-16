@@ -48,3 +48,5 @@ r04 R04-ML-SMOKE: Fresh venv pip check PASS;TRAIN-only three frozen builders fit
 r04 R04-DEFENSE-CONTENT: Drafted12-position720-second defense script,evidence walkthrough/final inference dependency runbook and G0-G6 checklist;source/timing validation PASS;not slides/render/rehearsal or live demo
 
 r04 R04-FINAL-CHECKPOINT: r04 advanced references11/12,gap/relatedwork,full content mapping and assembly,TRAIN-only software smoke45/45,defense content25/25;full argument review interrupted by quota;G0-G6 remain open;no final release
+
+r05 R05-ASSEMBLY-REVIEW: Independent full argument/form review and recheck saved;3P1/2P2 addressed in separate r05 draft;34/34 source-boundary checks;author/renderP0 open;no training or release closure

@@ -1,0 +1,8 @@
+{
+  "logical_processors": 8,
+  "total_ram_bytes": 12554305536,
+  "free_ram_kib": 1554996,
+  "disk_free_bytes": 28612861952,
+  "captured_utc": "2026-10-16T10:58:39.7144016Z",
+  "scope": "Observed host capacity only; no training launched"
+}

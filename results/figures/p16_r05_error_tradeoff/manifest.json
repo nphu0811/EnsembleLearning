@@ -1,0 +1,27 @@
+{
+  "source": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+  "source_sha256": "8a3ddd6a9e5876180bb9b62547c22b0a73faabee53fec7b8eb507cf62a0ddb20",
+  "source_before_after_match": true,
+  "observed_deltas": [
+    -142,
+    118
+  ],
+  "python": "3.11.9",
+  "matplotlib": "3.11.1",
+  "selected_backend": "python",
+  "size_mm": [
+    120,
+    65
+  ],
+  "dpi": 600,
+  "alignment_verdict": "NOT APPLICABLE",
+  "scope": "single observed paired count contrast; no repeated-training inference",
+  "outputs": {
+    "alignment.json": "51fc915d42d74e6c15a48af68624513d3787030da2001969f71d0d74946a7858",
+    "CAPTION.md": "e3ba5c7c24376b5e33243bbcd4519ccd06da29d5ae1b988f90037687106af4f3",
+    "error_tradeoff.pdf": "064967a939962cba0fb1b6b0ca1d7445cc7caee6795750d789a2e22f831e88d5",
+    "error_tradeoff.png": "e4ea51e49b7cfff3ff352e2d075cd2a01a49120959df1ec723876eb8e9a6f3d7",
+    "error_tradeoff.svg": "590417e30e0f258e51273f4540c3ec75cb84806e9e1ac76cd1f9c8019d7e8c6c",
+    "source_data.csv": "f207caf6d860646c85ff763344625b99f74025abf3c1aa2b43201f1bf126ab44"
+  }
+}

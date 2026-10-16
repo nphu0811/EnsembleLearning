@@ -1,3 +1,13 @@
+# Checkpoint r05 / R05-ASSEMBLY-REVIEW —16/10/2026
+
+DONE_SCOPED: Independent full argument/form review and recheck saved;3P1/2P2 addressed in separate r05 draft;34/34 source-boundary checks;author/renderP0 open;no training or release closure
+
+Evidence `.research_memory/r05/R05-ASSEMBLY-REVIEW.json`. Next: Continue P16 frozen-results tables and captions;then supported form/report sources;fullTRAIN plan remains NO_GO;do not rerun completed smoke
+
+Preserve r03 canon/RQs/threshold/data/results. No background work after session. Full r05 ledger and task board are authoritative; older entries below are historical.
+
+---
+
 # R04 restart essentials —16/10/2026
 
 Final session status PARTIAL, not release-ready. Read docs/RESUME_AUDIT_R04_2026-10-16.md and .research_memory/r04/R04-FINAL-CHECKPOINT.json plus the current STATE manifest. Exact first command: `python tools/resume_checkpoint_audit.py --out-dir results/reproducibility/NEXT_UNIQUE_SESSION` (new outdir required).

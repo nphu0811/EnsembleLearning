@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "three_unique_official_models": true,
+    "cost_join_exact_candidates": true,
+    "random_forest_42_frozen_rows_threshold_features": true,
+    "random_forest_42_metrics_from_confusion": true,
+    "random_forest_42_cost_inference_units": true,
+    "stacking_42_frozen_rows_threshold_features": true,
+    "stacking_42_metrics_from_confusion": true,
+    "stacking_42_cost_inference_units": true,
+    "random_forest_17_frozen_rows_threshold_features": true,
+    "random_forest_17_metrics_from_confusion": true,
+    "random_forest_17_cost_inference_units": true,
+    "four_unique_paired_effect_rows": true,
+    "macro_f1_delta_from_official_aggregates": true,
+    "macro_f1_CI_semantics": true,
+    "mcc_delta_from_official_aggregates": true,
+    "mcc_CI_semantics": true,
+    "false_positive_rate_delta_from_official_aggregates": true,
+    "false_positive_rate_CI_semantics": true,
+    "false_negative_rate_delta_from_official_aggregates": true,
+    "false_negative_rate_CI_semantics": true,
+    "FP_FN_tradeoff_direction": true,
+    "official_performance_CSV_tokens_preserved": true,
+    "historical_cost_CSV_tokens_preserved": true,
+    "stack_minus_rf42_CSV_tokens_preserved": true,
+    "inputs_unchanged": true
+  },
+  "passed": true,
+  "total": 25,
+  "passed_count": 25,
+  "scope": "New source table numeric/join/unit/traceability QA only; no model evaluation or visual/PDF acceptance"
+}

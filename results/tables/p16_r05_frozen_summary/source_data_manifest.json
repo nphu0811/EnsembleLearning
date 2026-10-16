@@ -1,0 +1,27 @@
+{
+  "inputs": {
+    "metrics": {
+      "path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "sha256": "8a3ddd6a9e5876180bb9b62547c22b0a73faabee53fec7b8eb507cf62a0ddb20"
+    },
+    "cost": {
+      "path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+      "sha256": "17961b9e7e09e3d252a6e5700a257bcd13236d98dcbc45cf24f1e9b4587f963b"
+    },
+    "paired": {
+      "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "sha256": "3338849b204702597a05c271cb309f2928e9850a1e2d5dedc6a54548256f7d90"
+    }
+  },
+  "outputs": {
+    "historical_cost.csv": "17961b9e7e09e3d252a6e5700a257bcd13236d98dcbc45cf24f1e9b4587f963b",
+    "official_performance.csv": "c742b4ebd612697b5bd815e6077bf95cd86d435333045c9090e4cc68320c8a4e",
+    "official_performance.tex": "ab78b06be9503921187532f7948f9ff1d4bde144142efa4762aa0c630e2fa10a",
+    "stack_minus_rf42.csv": "480da392d2448b212933eb3a8739db0ff4dcc3a8dd9f390b82d1b5b781ac4112",
+    "TABLES_AND_CAPTIONS.md": "6651ed82301dd7ff523992a7fa70af5cb83c20ae26938e98eff7f04760f49ccf"
+  },
+  "raw_or_predictions_read": false,
+  "new_training_or_bootstrap": false,
+  "render": "NOT_PERFORMED; no TeX engine available",
+  "frozen_limitations": "FS/meta not fully nested; row dependence; unknown historical environment; RF17 joint-pipeline contrast"
+}
