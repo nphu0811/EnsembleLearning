@@ -16,7 +16,7 @@ git pull --ff-only origin main
 git check-ignore --no-index .venv-p15-local/Lib/site-packages/joblib/__init__.py
 
 # Remove ONLY from Git index; --cached means leave working files on disk.
-git rm -r --cached -- .venv-p15-local
+git rm -r -q --cached -- .venv-p15-local
 
 # The locally installed Python MUST still exist.
 Test-Path .\.venv-p15-local\Scripts\python.exe
