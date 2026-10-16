@@ -15,6 +15,7 @@ __pycache__/
 .kilocode/
 
 # Virtual environments & runtimes
+.venv-p15-local/
 venv/
 .venv/
 env/
@@ -37,3 +38,6 @@ results/reproducibility/r04_ml_smoke/smoke_models/
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# P15 reconstructed serialized models stay local (large binaries)
+results/reproducibility/p15_local_*/worker/*_RECONSTRUCTED_FULL_TRAIN.joblib
