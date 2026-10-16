@@ -77,3 +77,7 @@
 - Rerun: https://github.com/nphu0811/EnsembleLearning/actions/runs/38901027329 (XeLaTeX/BibTeX build PASS, 22 A4 pages, no missing characters, **0 overfull**, 4 underfull minor warnings, **0 text bounding-box boundary outliers**; 12 bibliography entries and expected model statistics present). Inspection used actual PDF artifact from CI, `fitz` text and page geometry, 22-page contact sheet plus close-up four relevant pages.
 - Formal scoped QA record: `report/P17_PDF_QA_2026-10-16.md`. New workflow gate blocks future Overfull/Missing glyph, not merely compilation failure.
 - **Scope:** technically rendered standalone working report, not original institutional template with admin data, no claim P17 full DONE or release G4 final acceptance. Original training model/environment not reproduced; P15 still PARTIAL.
+
+## P18 compiled-report reference QA (2026-10-16)
+
+`docs/research/P18_REPORT_BIBLIOGRAPHY_QA_2026-10-16.md` records real BibTeX output: 12/12 distinct citations/bibitems, 12 unique DOIs, 0 missing/uncited/duplicate keys, no final BibTeX or LaTeX undefined citation warnings. Status **DONE_SCOPED_REPORT_BIBLIOGRAPHY**, not full P18: L03 disputed pagination and non-exhaustive/full-text literature remain OPEN. No changed scientific result or bibliography source values.

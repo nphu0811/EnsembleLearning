@@ -105,3 +105,8 @@ Evidence: `.research_memory/r05/R05-ASSEMBLY-REVIEW.json`.
 - REPORT source = 5 chapters + main entry; 12 BibTeX sources; 2 P16 figures linked; exact frozen performance numbers unchanged.
 - GitHub Actions 38900247221 (first SUCCESS but 16 Overfull); patch cb556fc; run 38901027329 SUCCESS, 0 Overfull, 0 missing glyph, 22 A4 pages. Independent extracted-PDF QA at `report/P17_PDF_QA_2026-10-16.md`.
 - G4 technical build/layout = DONE_SCOPED; P17 full = PARTIAL pending administrative form and institutional signoff. No final model/fullTRAIN reproduction and no source data cleanup performed.
+
+## P18 report bibliography closure checkpoint (2026-10-16)
+
+- `P18-REPORT-BIB-QA = DONE_SCOPED`: independently checked all 12 cited keys against report sources, 12 distinct DOI entries and actual XeLaTeX/BibTeX `main.bbl` output; zero duplicate/unresolved/uncited, 0 warnings. See `docs/research/P18_REPORT_BIBLIOGRAPHY_QA_2026-10-16.md`.
+- P18 overall PARTIAL because L03 VOR page conflict, varying reading scopes and no exhaustive systematic search. P17 technical PDF QA scoped PASS, institutional final signoff pending.
