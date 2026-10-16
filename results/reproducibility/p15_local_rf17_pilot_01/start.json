@@ -1,0 +1,47 @@
+{
+  "mode": "pilot",
+  "candidate": "random_forest_17",
+  "result": "INCOMPLETE",
+  "source_hashes": {
+    "data/raw/unsw-nb15/UNSW_NB15_training-set.csv": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa",
+    "src/models/run_unsw_phase9_final_holdout.py": "3e7d1369222ccdf452116e069a0db3df55e1d6d683d0f92f4e2bcde0800ae480",
+    "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json": "cdda800318c5d2259e581bff5b194381be7434d654950377dd4b40fca50be0a6",
+    "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json": "5a8fe201c88b49a2c018778f6d159a107b6fdfa810c05c1606e42e6d675244be"
+  },
+  "python_executable": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\.venv-p15-local\\Scripts\\python.exe",
+  "package_versions": {
+    "pandas": "3.0.5",
+    "numpy": "2.4.6",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0",
+    "psutil": "7.2.2"
+  },
+  "git_head": "7596bded6cff1b7f7e71e5ed44ee9a68c3d27226",
+  "preflight": {
+    "science_ok": true,
+    "canonical_9gib_gate_passed": false
+  },
+  "budget": {
+    "checks": {
+      "memory_start": true,
+      "disk_start": true,
+      "cap_is_bounded": true,
+      "floor_protected": true
+    },
+    "passed": true,
+    "observed_available_bytes": 7474434048,
+    "required_available_bytes": 4294967296,
+    "disk_free_bytes": 30552637440,
+    "process_tree_rss_cap_bytes": 2147483648,
+    "min_system_available_bytes": 1610612736
+  },
+  "release_certified": false,
+  "peak_tree_rss_bytes": 0,
+  "min_ram_seen_bytes": null,
+  "worker_checks": {
+    "passed": false
+  },
+  "timestamp_utc": "2026-10-16T16:11:02.850064+00:00"
+}
