@@ -40,6 +40,14 @@ jobs:
             echo 'Blocking: unresolved citations/references/labels in final log'
             exit 1
           fi
+          if grep -Fq 'Overfull \hbox' report/main.log; then
+            echo 'Blocking: overfull boxes, inspect PDF layout'
+            exit 1
+          fi
+          if grep -Fq 'Missing character:' report/main.log; then
+            echo 'Blocking: missing font glyphs'
+            exit 1
+          fi
           if command -v pdfinfo >/dev/null 2>&1; then
             pdfinfo report/main.pdf | grep -E 'Pages:|Page size:|File size:'
           fi

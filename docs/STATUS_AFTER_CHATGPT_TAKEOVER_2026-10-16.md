@@ -25,7 +25,7 @@
 | P14 | Error analysis | VERIFIED_REUSE_DESCRIPTIVE | Saved detailed profiles and reconciliation; associations not causal |
 | P15 | Reproducibility | PARTIAL | Raw hashes, protocol, postprocessing replay, R04 TRAIN-only smoke45/45; unknown original env; NO_GO full TRAIN model reconstruction |
 | P16 | Scientific figures | IN_PROGRESS | Historical paired forest plot; r05 error tradeoff & frozen tables; two ChatGPT independent scoped audits below |
-| P17 | Report writing | DRAFT_SOURCE_READY / PDF_QA_OPEN | `report/main.tex` + 5 chapter `.tex` sources + 12 BibTeX entries (11 legacy metadata-verified + U01 dataset paper); figures linked; 78/78 source checks; no full XeLaTeX/BibTeX build/render or institutional-form acceptance |
+| P17 | Report writing | SCOPED_PDF_BUILD_QA_PASS / FORM_NOT_APPROVED | GitHub Actions build 22-page A4 XeLaTeX+BibTeX PDF successful; 12 bibliography entries, 2 vector figures, 5 results tables. Independent PDF render/text preflight after layout fix: 0 overfull vs 16 prior, 0 text outliers vs 4 prior. Institutional-template acceptance, official admin fields, and final signoff still pending. |
 | P18 | Citation management | PARTIAL | 11/12 legacy metadata verified r04, U01 pages1–6 independently corroborated, U03 final 2019 vol5(4) corroborated; L03 page conflict disclosed with evidence favoring254–263, VOR PDF check open; final complete bibliography pending |
 | P19 | Data availability | IN_PROGRESS | Public GitHub repository confirmed; raw data not tracked; source/derived tables available; no root LICENSE or final model artifact; privacy/release/version/rights checks open |
 | P20 | Final review | TODO | G0–G6, completeness, rendered reports, inference demo and scientific limitations not all closed |
@@ -68,3 +68,12 @@
 - **P19:** `docs/research/DATA_CODE_AVAILABILITY_PUBLIC_UPDATE_2026-10-16.md`: repository now public, but missing root license, raw dataset not committed, SMOKE_ONLY models must not be mistaken for full TRAIN models.
 - **Cleanup scope:** strictly advice only per user. No deletion, moving, untracking or history rewriting performed.
 - **Next safe work:** run actual XeLaTeX/BibTeX for working report and visually QA pages/figures; align with preserved original institutional template without inventing admin fields; continue resolving remaining citation and release gates. P15 fullTRAIN reconstruction still NO_GO, no retuning official TEST.
+
+## P17 production-style PDF build/QA checkpoint (2026-10-16)
+
+- Reproducible CI workflow: `.github/workflows/p17-latex.yml`, user desktop does not need XeLaTeX; XeLaTeX+BibTeX executed in GitHub Action TeX Live container.
+- Baseline run: https://github.com/nphu0811/EnsembleLearning/actions/runs/38900247221 (22 A4 pages, compile PASS; 16 overfull hbox warnings, max170.67429pt, 4 PDF text blocks outside page safe x-boundary; 12 BibTeX records).
+- Layout fix commit: `cb556fc8d5b587708e747afce0d3024a482833c1` (`xurl` + `\\path{}` and emergency stretch; 5 TeX source files; no scientific numbers altered).
+- Rerun: https://github.com/nphu0811/EnsembleLearning/actions/runs/38901027329 (XeLaTeX/BibTeX build PASS, 22 A4 pages, no missing characters, **0 overfull**, 4 underfull minor warnings, **0 text bounding-box boundary outliers**; 12 bibliography entries and expected model statistics present). Inspection used actual PDF artifact from CI, `fitz` text and page geometry, 22-page contact sheet plus close-up four relevant pages.
+- Formal scoped QA record: `report/P17_PDF_QA_2026-10-16.md`. New workflow gate blocks future Overfull/Missing glyph, not merely compilation failure.
+- **Scope:** technically rendered standalone working report, not original institutional template with admin data, no claim P17 full DONE or release G4 final acceptance. Original training model/environment not reproduced; P15 still PARTIAL.
