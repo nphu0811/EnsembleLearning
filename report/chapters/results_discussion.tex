@@ -44,6 +44,13 @@ Stacking-42 có Macro-F1 nhỉnh hơn RF-42 về mặt số học, nhưng MCC th
 
 RF-17 có Macro-F1 thấp hơn RF-42 khoảng 0,002670; đổi lại, thời gian và dung lượng mô hình lịch sử giảm đáng kể (Mục~\ref{sec:chi-phi}). RF-17 đồng thời sử dụng siêu tham số Random Forest khác RF-42, nên so sánh này là \emph{đánh đổi giữa hai pipeline}, không phải thí nghiệm chỉ thay duy nhất số đặc trưng.
 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{../results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf}
+\caption{Chênh lệch số lượng lỗi Stacking-42 trừ RF-42 trên cùng official TEST: FP giảm 142 mẫu và FN tăng 118 mẫu. Số lượng quan sát trên benchmark cố định, không phải sai khác trung bình qua nhiều lần huấn luyện.}
+\label{fig:delta-fp-fn}
+\end{figure}
+
 \section{Khoảng tin cậy và kiểm định cặp}
 \label{sec:bat-dinh}
 
@@ -67,6 +74,13 @@ FNR      & +0.002603 & +0.001853 & +0.003375 \\
 Khoảng tin cậy của chênh lệch Macro-F1 và MCC chứa 0. Do đó, kết quả \emph{không cung cấp bằng chứng đủ mạnh cho ưu thế tổng thể} của Stacking-42 so với RF-42 trên hai thước đo này; điều này \emph{không} chứng minh hai mô hình tương đương thống kê. McNemar exact với hiệu chỉnh Holm trên \emph{đúng/sai tổng thể của các cặp dự đoán} cho $p_{\mathrm{Holm}}=0.468377$ trong cùng phép so sánh; McNemar không phải kiểm định trực tiếp chênh lệch Macro-F1.
 
 CI của FPR nằm hoàn toàn phía âm và CI của FNR nằm hoàn toàn phía dương. Các khoảng tin cậy này phản ánh biến động do lấy mẫu lại \emph{các dòng benchmark đã lưu}, không phải độ ổn định qua các lần huấn luyện độc lập, session độc lập hay dữ liệu ngoài bộ UNSW-NB15. Hình forest plot và bảng số liệu nguồn được lưu trong \texttt{results/figures/p16\_paired\_effects\_2026\_10\_16}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{../results/figures/p16_paired_effects_2026_10_16/paired_effects.pdf}
+\caption{Bốn hiệu số Stacking-42 trừ RF-42 và CI 95\% paired bootstrap đã lưu. Giá trị trục ngang là hiệu số nhân 100 (không phải phần trăm thay đổi tương đối). CI của Macro-F1 và MCC chứa 0; FPR giảm, FNR tăng.}
+\label{fig:paired-metrics}
+\end{figure}
 
 \section{Chi phí mô hình và số đặc trưng}
 \label{sec:chi-phi}
