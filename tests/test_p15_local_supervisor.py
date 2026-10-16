@@ -106,6 +106,32 @@ class SafetyTests(unittest.TestCase):
         try:self.assertEqual(mod.resource_sample(ps,123,self.root,2*G,mod.MIN_FREE_FLOOR)['stop_reason'],'AVAILABLE_RAM_FLOOR')
         finally:mod.shutil.disk_usage=original
 
+    def test_worker_validation_fails_on_missing_artifact(self):
+        import hashlib
+        kwargs=dict(candidate='random_forest_17',mode='full',worker_dir=self.root,
+                    input_hashes={'train':'abc'},package_versions={'sklearn':'1'})
+        w={'passed':True,'candidate':'random_forest_17','mode':'full','train_rows':175341,
+           'classes':[0,1],'threshold':0.5,'input_sha256':{'train':'abc'},
+           'package_versions':{'sklearn':'1'},
+           'artifact':{'filename':'random_forest_17_RECONSTRUCTED_FULL_TRAIN.joblib',
+                       'bytes':2,'sha256':'0'}}
+        self.assertFalse(mod.verify_worker_result(w,**kwargs))
+        path=self.root/w['artifact']['filename']
+        path.write_bytes(b'fake-model-bytes-fixture-only')
+        w['artifact']['bytes']=len(path.read_bytes())
+        w['artifact']['sha256']=hashlib.sha256(path.read_bytes()).hexdigest()
+        self.assertTrue(mod.verify_worker_result(w,**kwargs))
+        path.write_bytes(b'tampered')
+        self.assertFalse(mod.verify_worker_result(w,**kwargs))
+
+    def test_pilot_cannot_claim_serialized_final_artifact(self):
+        w={'passed':True,'candidate':'random_forest_17','mode':'pilot','train_rows':10000,
+           'classes':[0,1],'threshold':0.5,'input_sha256':{},'package_versions':{},
+           'artifact':{'filename':'bad.joblib'}}
+        self.assertFalse(mod.verify_worker_result(w,'random_forest_17','pilot',self.root,{},{}))
+        del w['artifact']
+        self.assertTrue(mod.verify_worker_result(w,'random_forest_17','pilot',self.root,{},{}))
+
     def test_watchdog_kills_child_process_forced_stop(self):
         import subprocess
         import psutil
