@@ -28,6 +28,12 @@ data/raw/
 data/interim/
 data/processed/
 
+# Overlapping / review copies excluded from git tracking
+NCKH_SHARE_FOR_REVIEW/
+exports/docx_export_2026_10_16/sources/
+DE-TAI-NCKHSV-15/
+results/reproducibility/r04_ml_smoke/smoke_models/
+
 # OS generated files
 .DS_Store
 Thumbs.db
