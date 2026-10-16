@@ -105,18 +105,34 @@
 \renewcommand{\listtablename}{DANH SÁCH BẢNG}
 \tableofcontents
 \clearpage
+\input{abbreviations}
+\clearpage
 \listoffigures
 \clearpage
 \listoftables
 \clearpage
 
 \pagenumbering{arabic}
+\chapter{CƠ SỞ LÝ THUYẾT}
+\label{chap:ly-thuyet}
 \input{chapters/introduction}
 \input{chapters/theoretical_foundations}
 \input{chapters/related_work}
+
+\chapter{DỮ LIỆU VÀ QUY TRÌNH TIỀN XỬ LÝ}
+\label{chap:dataset-eda}
 \input{chapters/dataset_eda}
+
+\chapter{XÂY DỰNG MÔ HÌNH VÀ THIẾT KẾ THỰC NGHIỆM}
+\label{chap:phuong-phap}
 \input{chapters/methodology}
+
+\chapter{KẾT QUẢ THỰC NGHIỆM VÀ ĐÁNH GIÁ}
+\label{chap:ket-qua-thao-luan}
 \input{chapters/results_discussion}
+
+\chapter{THẢO LUẬN VÀ HƯỚNG PHÁT TRIỂN}
+\label{chap:ban-luan}
 \input{chapters/validity_discussion}
 \input{chapters/conclusion}
 
