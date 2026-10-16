@@ -129,3 +129,9 @@ Evidence: `.research_memory/r05/R05-ASSEMBLY-REVIEW.json`.
 - `P15-FULLTRAIN-PREFLIGHT = DONE_SCOPED_CODE`: files `tools/p15_fulltrain_preflight.py`, `tests/test_p15_fulltrain_preflight.py` and `docs/research/P15_FULLTRAIN_PREFLIGHT_README.md` pushed to `main` (commit `c64f06e2f7be97a05cf9e5969a2f1679126dd5e4`). Six fixture tests passed in a separate Python runtime; remote paths and content verified by GitHub fetch.
 - No Windows/dataset-local preflight or full-TRAIN fitting has been run; the previous environment/capacity NO_GO and G3/P15 PARTIAL remain. Script never reads official TEST/trains and `training_authorized=false` by construction. No raw data/frozen result/script P9 modified.
 - Next: after `git pull --ff-only origin main` run the new unit tests and the read-only preflight from repo root, inspect JSON, then design/review the isolated watchdog runner before any full TRAIN operation.
+
+## 16/10/2026 — P15 Windows preflight (author-reported)
+
+- **P15-WINDOWS-PREFLIGHT = DONE_SCOPED_USER_EVIDENCE:** Author ran six fixture unit tests (6/6 PASS) and a read-only preflight (11/12 PASS); evidence recorded in `docs/research/P15_LOCAL_PREFLIGHT_USER_RUN_2026-10-16.md`. This is reported console output, not an independent runner execution.
+- **RAM gate FAILED:** available 2,157,973,504 bytes (~2.01 GiB) vs conservative 9-GiB threshold. Other 11 gates pass, including hashes, schema, versions, tracked Git cleanliness and disk. `training_authorized=false`, `reconstruction_status=NOT_RUN`. **G3/P15 still PARTIAL; no full-TRAIN fitting.**
+- Next: do not try fitting or bypass memory guard. Continue independent P16/P18 tasks until a proper host and reviewed watchdog runner exist; then re-check on the execution host. Existing published 5-chapter PDF remains unchanged.
