@@ -1,0 +1,54 @@
+% P17 WORKING STANDALONE REPORT ENTRY POINT
+% Compile from project/report with XeLaTeX, then BibTeX, then XeLaTeX twice.
+% Original template templates/original/ is PRESERVED, not overwritten.
+% This is NOT institutional-template-approved, NOT proof of final research readiness.
+\documentclass[a4paper,12pt,oneside]{report}
+\usepackage{fontspec}
+\IfFontExistsTF{TeX Gyre Termes}{\setmainfont{TeX Gyre Termes}}{\setmainfont{DejaVu Serif}}
+\usepackage[vietnamese]{babel}
+\usepackage[a4paper,left=30mm,right=25mm,top=25mm,bottom=25mm]{geometry}
+\usepackage{amsmath,graphicx,array}
+\usepackage{setspace}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\setstretch{1.25}
+
+\begin{document}
+\begin{titlepage}
+\centering
+{\large BÁO CÁO NGHIÊN CỨU KHOA HỌC\par}
+\vspace{2.6cm}
+{\LARGE\bfseries NGHIÊN CỨU ENSEMBLE LEARNING CHO BÀI TOÁN PHÁT HIỆN XÂM NHẬP MẠNG\par}
+\vspace{2.0cm}
+{\large Phạm vi thực nghiệm: phát hiện nhị phân Normal/Attack trên UNSW-NB15\par}
+\vfill
+\begin{flushleft}
+Đơn vị: \textbf{[CẦN XÁC NHẬN]}\\[0.4em]
+Sinh viên thực hiện: \textbf{[CẦN XÁC NHẬN]}\\[0.4em]
+Giảng viên hướng dẫn: \textbf{[CẦN XÁC NHẬN]}\\[0.4em]
+Thời gian và địa điểm nộp: \textbf{[CẦN XÁC NHẬN]}
+\end{flushleft}
+\vspace{1cm}
+{\itshape Bản nguồn làm việc, chưa phải hồ sơ được phê duyệt hoặc sẵn sàng nộp\par}
+\end{titlepage}
+
+\chapter*{Tóm tắt}
+\addcontentsline{toc}{chapter}{Tóm tắt}
+Nghiên cứu so sánh các mô hình học máy đơn và Stacking cho phát hiện xâm nhập nhị phân trên official UNSW-NB15, sử dụng bộ chỉ số Macro-F1, MCC, FPR, FNR, chi phí cùng phân tích thống kê cặp. Trên 82\,332 mẫu official TEST, Stacking-42 đạt Macro-F1 là 0.863840 so với 0.863343 của RF-42, song CI 95\% paired bootstrap của chênh lệch Macro-F1 chứa 0. Stacking-42 giảm 142 báo động giả nhưng bỏ sót thêm 118 tấn công. RF-17 có mức giảm nhỏ về Macro-F1 so với RF-42, đồng thời giảm chi phí quan sát; so sánh RF-17/RF-42 còn khác siêu tham số nên không thể quy chênh lệch cho riêng số feature. Kết quả nhấn mạnh việc công khai đánh đổi lỗi, kiểm toán dữ liệu và giới hạn của protocol. Feature Selection trước development CV, thiếu external/temporal validation và chưa tái lập full TRAIN hạn chế kết luận về tính ổn định và khả năng triển khai thực tế.
+
+\noindent\textbf{Từ khóa:} Network Intrusion Detection, Ensemble Learning, Stacking, Random Forest, UNSW-NB15, Macro-F1, MCC.
+
+\tableofcontents
+\listoftables
+\clearpage
+
+\input{chapters/introduction}
+\input{chapters/related_work}
+\input{chapters/methodology}
+\input{chapters/results_discussion}
+\input{chapters/conclusion}
+
+\clearpage
+\bibliographystyle{plain}
+\bibliography{references_verified}
+\end{document}
