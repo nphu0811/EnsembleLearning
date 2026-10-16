@@ -53,7 +53,7 @@ jobs:
             pdfinfo report/main.pdf | grep -E 'Pages:|Page size:|File size:'
             pages="$(pdfinfo report/main.pdf | awk '/^Pages:/ {print $2}')"
           else
-            pages="$(grep -Eo 'Output written on main.xdv \\([0-9]+ pages' report/main.log | tail -n 1 | sed -E 's/.*\\(([0-9]+) pages/\\1/')"
+            pages="$(grep -Eo 'Output written on main.xdv \([0-9]+ pages' report/main.log | tail -n 1 | sed -E 's/.*\(([0-9]+) pages/\1/')"
           fi
           if [[ -z "${pages:-}" ]] || (( pages < 30 || pages > 40 )); then
             echo "Blocking: report must have 30-40 pages, found ${pages:-unknown}"
