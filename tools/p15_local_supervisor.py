@@ -101,7 +101,7 @@ def verify_worker_result(worker: dict, candidate: str, mode: str, worker_dir: Pa
     if filename != candidate + '_RECONSTRUCTED_FULL_TRAIN.joblib':
         return False
     path = worker_dir / filename
-    if path.is_symlink() or not path.is_file() or path.resolve() != path:
+    if path.is_symlink() or not path.is_file() or path.resolve().parent != worker_dir.resolve():
         return False
     return (path.stat().st_size > 0 and path.stat().st_size == artifact.get('bytes')
             and sha256_stream(path) == artifact.get('sha256'))
