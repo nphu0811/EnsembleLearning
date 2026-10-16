@@ -87,3 +87,15 @@ Không commit GitHub các model lớn hoặc raw UNSW data. Chỉ gửi nội du
 - Không sửa ngưỡng 0.5, không hạ số cây/folds, không chọn lại feature, không gọi TEST để làm cho số liệu giống lịch sử.
 
 **Tình trạng trong phiên chuẩn bị này:** 18 unit tests kiểm tra logic budget/guard/watcher/output/pilot đã đạt trên fixture không có data thật; chưa test end-to-end trên Windows hoặc giới hạn RAM thật. Tác giả cần chạy trong môi trường thực và báo cáo kết quả trước khi nâng trạng thái.
+
+## 8. Tùy chọn full không giới hạn thời gian (17/10/2026)
+
+**Lưu ý cập nhật:** RF-17 full đã PASS theo log tác giả; RF-42 full lần đầu `p15_local_rf42_full_01` dừng đúng 20 phút với `TIMEOUT` và RAM chỉ khoảng 461 MiB RSS đỉnh, nên **không phải thiếu RAM**. Ba pilot vẫn PASS, Stacking full chưa chạy. Theo yêu cầu mới của tác giả, đã thêm lựa chọn **`--timeout-min 0` chỉ cho `--mode full`**, không thay ngưỡng watchdog RAM/đĩa/heartbeat. Lượt cũ giữ nguyên `INCOMPLETE`. Không sửa giả định thời gian từ roadmap R05 đã đóng băng; tài liệu ngoại lệ vận hành tại [P15_RF42_TIMEOUT_RECOVERY_NO_DEADLINE_2026-10-17.md](P15_RF42_TIMEOUT_RECOVERY_NO_DEADLINE_2026-10-17.md).
+
+Sau khi `git pull --ff-only origin main`, môi trường và unit tests đạt, RAM trống đủ >=4GiB, laptop cắm sạc/tắt sleep, tác giả có thể chạy script tuần tự, **dừng ngay khi model trước không PASS**:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\p15_run_remaining_full_windows.ps1
+```
+
+Script này chạy RF-42 full trong `p15_local_rf42_full_02`, sau đó mới chạy Stacking-42 full trong `p15_local_stack_full_01`; cả hai **không có wall-clock timeout**. Theo dõi log `resources.csv`; có thể nhấn Ctrl+C để yêu cầu dừng khi cần (sẽ thành INCOMPLETE). Không đăng `.joblib` lên Git. Nếu muốn chạy thủ công từng lệnh, xem tài liệu ngoại lệ được liên kết ở trên. Chú ý phần §5 phía trên mô tả giới hạn 20 phút gốc (trước cập nhật) và không áp dụng cho script/flag mới.
