@@ -27,7 +27,7 @@ Checkpoint hiện hành r03: `docs/RESUME_AUDIT_R03_2026-10-16.md`. Prior manife
 | P16-REST | QA remaining evidence figures/tables | TODO | Existing drafts require explicit contracts | NOT_RUN |
 | P15-ML | Clean ML reproduction / model artifact | TODO | Current original env UNKNOWN | NOT_RUN; isolated run plan required |
 | PROP-DOCX | Fill original DOCX + render | BLOCKED tool/content | Original located, preserved | Runtime loader unavailable; verified literature/admin pending |
-| REPORT | IDS LaTeX report + PDF | DONE_SCOPED_PDF_BUILD_QA | `report/main.tex`; `report/P17_PDF_QA_2026-10-16.md`; Actions 38901027329; commit cb556fc | G4 technical XeLaTeX/BibTeX+render QA PASS; institutional template/admin/final release gates OPEN |
+| REPORT | IDS LaTeX report + PDF | DONE_SCOPED_5CH_37P_BUILD | `report/main.tex`; `docs/research/P17_FIVE_CHAPTER_RESTRUCTURE_QA_2026-10-16.md`; run 38916942038 | 5 chapters / 37 pages, abstract removed, acronym glossary after TOC; all source/code-internal references absent from PDF; CI PASS; institutional signoff and signatures OPEN |
 | DEFENSE-QA | Prepare evidence-grounded council questions | DONE_SCOPED | defense/Hoi_dap_hoi_dong.md; qa_validation_r02.json |20 questions,33 paths checked; DRAFT_FOR_REVIEW |
 | DEFENSE | Slides, script, inference demo and final rehearsal | TODO | MASTER requirements | Depends on evidence/report/model; Q&A draft exists |
 | RELEASE | G0–G6 and final checksum package | BLOCKED | release/RELEASE_BLOCKERS.md | NOT_READY_FOR_SUBMISSION |
@@ -115,3 +115,11 @@ Evidence: `.research_memory/r05/R05-ASSEMBLY-REVIEW.json`.
 
 - `P17-PTIT-STYLE-40P = DONE_SCOPED`: referenced the uploaded 64-page NetFlow report for page types/style only; 8 chapters, 40 physical A4 pages, 7 figures, 10 tables, 12 bibliography entries; actual GitHub Actions TeX artifact QA verified no overfull/missing character/out-of-bounds text. Evidence `report/P17_PTIT_40PAGE_QA_2026-10-16.md`; associated source commit `13f310f975fc2405abbf35bd433b35021f630367`.
 - G5 admin info, signoff and exact institutional form acceptance remain PENDING_HUMAN. No model retraining, no frozen result edits, no cleanup or identity copying.
+
+## P17 báo cáo 5 chương — phiên bản hiện hành (16/10/2026)
+
+- User requested structure aligned with uploaded NetFlow 5-chapter reference, while preserving original Ensemble Learning experiments. Source assembled into 5 top-level chapters; chapter fragments remain as sections and retain historic content not copied from example.
+- Removed abstract; placed substantive acronym table after table of contents. User-visible PDF has no `notebook/`, `results/`, `.md`, `.json`, `SMOKE_ONLY` project text; training process and results remain described.
+- GitHub Actions `38916942038` PASS; PDF **37 A4 pages**, 12 bibitems, no duplicate labels, 0 Overfull or missing glyph; scope evidence `docs/research/P17_FIVE_CHAPTER_RESTRUCTURE_QA_2026-10-16.md`.
+- Native Nature Skills only present in user Windows Codex environment; ChatGPT did not load/execute `nature-writing`. Academic source-grounded revision and PDF postflight performed instead.
+- P17 remains PARTIAL overall due to approval, actual signatures and other release gates. No retraining or official TEST revisions.
