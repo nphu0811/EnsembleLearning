@@ -1,5 +1,4 @@
-% Phase 4 EDA evidence; TRAIN-only descriptive, TEST counts for audit only.
-\chapter{Bộ dữ liệu UNSW-NB15 và phân tích dữ liệu}
+
 \label{chap:dataset-eda}
 
 \section{Nguồn dữ liệu và quy mô bản ghi}
@@ -19,7 +18,7 @@ Sự khác biệt tỷ lệ Attack giữa TRAIN (68,06\%) và TEST (55,06\%) là
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.86\textwidth]{../results/eda/unsw_nb15/figures/fig01_binary_class_distribution.pdf}
-\caption{Phân bố nhãn Normal/Attack trong official TRAIN và TEST, tái sử dụng hình EDA đã lưu ở Phase 4.}
+\caption{Phân bố nhãn Normal/Attack trong official TRAIN và TEST, biểu đồ phân bố lớp từ kết quả khảo sát dữ liệu.}
 \label{fig:eda-binary}
 \end{figure}
 
@@ -43,21 +42,21 @@ Các giá trị SMD lớn về độ lớn trong bảng EDA gồm \texttt{sttl} 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.96\textwidth]{../results/eda/unsw_nb15/figures/fig03_numeric_class_separation.pdf}
-\caption{Khảo sát mức tách biệt Normal/Attack ở một số feature số trên TRAIN (Phase 4). Không dùng biểu đồ này để suy ra quan hệ nhân quả.}
+\caption{Khảo sát mức tách biệt Normal/Attack ở một số feature số trên tập huấn luyện. Không dùng biểu đồ này để suy ra quan hệ nhân quả.}
 \label{fig:eda-separation}
 \end{figure}
 
 \section{Tương quan giữa các đặc trưng}
-Trong EDA TRAIN, có 59 cặp feature số đạt $|\rho_{\mathrm{Spearman}}|\geq0,9$. Ví dụ, cặp \texttt{is\_ftp\_login} và \texttt{ct\_ftp\_cmd} có $\rho=1,0000$; \texttt{trans\_depth} và \texttt{ct\_flw\_http\_mthd} có $\rho\approx0,9996$; \texttt{tcprtt} và \texttt{synack} có $\rho\approx0,9968$. Các cặp liên hệ mạnh có thể chứa thông tin trùng lắp trong tập mẫu, nhưng một hệ số tương quan đơn lẻ không cho biết mô hình cây sẽ phụ thuộc vào cặp đó tới mức nào.
+Trên tập huấn luyện, có 59 cặp feature số đạt $|\rho_{\mathrm{Spearman}}|\geq0,9$. Ví dụ, cặp \texttt{is\_ftp\_login} và \texttt{ct\_ftp\_cmd} có $\rho=1,0000$; \texttt{trans\_depth} và \texttt{ct\_flw\_http\_mthd} có $\rho\approx0,9996$; \texttt{tcprtt} và \texttt{synack} có $\rho\approx0,9968$. Các cặp liên hệ mạnh có thể chứa thông tin trùng lắp trong tập mẫu, nhưng một hệ số tương quan đơn lẻ không cho biết mô hình cây sẽ phụ thuộc vào cặp đó tới mức nào.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.96\textwidth]{../results/eda/unsw_nb15/figures/fig04_numeric_correlation_heatmap.pdf}
-\caption{Ma trận tương quan các feature số từ Phase 4. Mối tương quan mạnh không tự chứng minh hai biến là tương đương về cơ chế hay có thể loại bỏ không làm mất thông tin.}
+\caption{Ma trận tương quan các feature số trên tập huấn luyện. Mối tương quan mạnh không tự chứng minh hai biến là tương đương về cơ chế hay có thể loại bỏ không làm mất thông tin.}
 \label{fig:eda-correlation}
 \end{figure}
 
-Trong bài toán Feature Selection, danh sách cặp tương quan có thể là một trong các nguồn bằng chứng để đề xuất feature candidates, nhưng lựa chọn chính thức còn cần kết hợp kết quả từ filter, embedded và wrapper. Điều quan trọng là giữ phần EDA mô tả tách khỏi quyết định lựa chọn trên validation, không lặng lẽ dùng thông tin từ official TEST để xếp hạng feature.
+Đối với bước lựa chọn đặc trưng, danh sách cặp tương quan có thể là một trong các nguồn bằng chứng để đề xuất feature candidates, nhưng lựa chọn chính thức còn cần kết hợp kết quả từ filter, embedded và wrapper. Điều quan trọng là giữ phần EDA mô tả tách khỏi quyết định lựa chọn trên validation, không lặng lẽ dùng thông tin từ official TEST để xếp hạng feature.
 
 \section{Kiểm toán overlap và các view đánh giá}
 Quy trình audit kiểm tra vector của 42 feature đã sử dụng cho phân loại nhị phân. Có 8\,541 dòng official TEST trùng vector với ít nhất một dòng official TRAIN; phần còn lại gồm 73\,791 dòng được đặt tên \emph{novel-vector view}. Số 8\,541 là \emph{số dòng TEST}, không nhất thiết là số vector riêng biệt hay số session bị giao cắt. Các lớp có thể có giá trị feature giống nhau vì cách lượng hóa và tiền xử lý; vì vậy không được tuyên bố mọi trường hợp trùng vector đều là leakage cùng phiên.

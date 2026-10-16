@@ -1,23 +1,22 @@
-% P17 WORKING CONCLUSION, based on frozen evidence only.
-\chapter{Kết luận và hướng tiếp tục}
+\section{Kết luận và định hướng phát triển}
 \label{chap:ket-luan}
 
-\section{Tổng kết kết quả}
+\subsection{Tổng kết kết quả}
 Trên official UNSW-NB15 TEST gồm 82\,332 dòng, Stacking-42 đạt Macro-F1 khoảng 0.863840 so với 0.863343 của RF-42, trong khi MCC của Stacking-42 khoảng 0.750497, thấp hơn rất nhẹ so với 0.750910 của RF-42. Chênh lệch Macro-F1 Stacking-42 trừ RF-42 là khoảng $+0.000497$; khoảng tin cậy 95\% paired bootstrap đã lưu gồm 0. Những bằng chứng này \emph{không xác nhận ưu thế tổng thể} của Stacking-42 trên Macro-F1/MCC, và cũng không chứng minh hai mô hình tương đương về mặt thống kê.
 
 Stacking-42 giảm 142 dự đoán báo động giả (FP) nhưng tăng 118 trường hợp bỏ sót tấn công (FN) so với RF-42. Phân tích hậu nghiệm cho thấy xu hướng lỗi khác nhau theo từng attack family: Stacking-42 có thêm 133 FN ở Fuzzers nhưng giảm 43 FN ở Generic. Những con số đó thuộc mô hình \emph{binary} và nhãn thật của các nhóm, không phải khả năng dự đoán multiclass hay bằng chứng về nguyên nhân từ các feature riêng lẻ.
 
 RF-17 có Macro-F1 thấp hơn RF-42 một lượng nhỏ, đổi lại các số đo lịch sử cho thấy thời gian train ngắn hơn và ước lượng dung lượng mô hình giảm. Tuy nhiên, đây là so sánh \emph{pipeline-level} vì RF-17 không chỉ giảm đặc trưng mà còn thay đổi siêu tham số Random Forest. Không thể quy trực tiếp mọi thay đổi cho riêng Feature Selection.
 
-\section{Đóng góp trong phạm vi đã chứng minh}
+\subsection{Đóng góp trong phạm vi đã chứng minh}
 Đóng góp có thể bảo vệ ở thời điểm hiện tại là một chuỗi thực nghiệm trên benchmark có nguồn và cấu hình đóng băng, có kiểm toán dữ liệu, đối chiếu mô hình học máy đơn và ensemble, phân tích sai số bổ sung, khoảng tin cậy cho chênh lệch theo cặp, đánh đổi FP/FN và chi phí. Kết quả không thuận lợi của Voting và sự thiếu ưu thế rõ ràng của Stacking là thành phần của kết luận khoa học, không bị loại vì không hỗ trợ một giả thuyết chiến thắng.
 
 Báo cáo cũng ghi nhận các giới hạn của phép đo: sai lệch tiềm tàng do Feature Selection trước development CV, meta tuning chưa fully nested, vector TRAIN/TEST bị trùng, benchmark flow có thể phụ thuộc lẫn nhau, thiếu temporal/external validation và thiếu bằng chứng ổn định qua các lần tái huấn luyện độc lập. Việc công khai những giới hạn này góp phần tránh suy diễn vượt mức về khả năng tổng quát hoặc tính mới của thuật toán.
 
-\section{Công việc còn thiếu và hướng nghiên cứu}
+\subsection{Công việc còn thiếu và hướng nghiên cứu}
 Với RQ1, cần một nghiên cứu mới có nhiều lần huấn luyện độc lập, cùng tài nguyên và môi trường đã khóa để kiểm tra tính ổn định của hiệu số. Với RQ2, cần thí nghiệm matched và nested feature selection, giữ các tham số còn lại cố định để tách tác động của chính Feature Selection. Với RQ3, có thể kiểm tra giả thuyết về cơ chế bổ sung sai số bằng phân tích độc lập thay vì chỉ dùng profile hậu nghiệm. Với RQ4, cần nguồn có thông tin thời gian/session hoặc một external benchmark đáng tin cậy để đánh giá ngoài official split. Với RQ5, có thể thiết kế đối chứng resampling/class-weight bên trong training folds, nhưng không được dựa vào official TEST hiện tại để chọn phương án thắng.
 
-Về phần mềm, nguồn code, checksum, aggregate replay và tập con TRAIN đã hỗ trợ một số kiểm tra tính tái lập. Tuy nhiên, môi trường huấn luyện gốc chưa biết chắc, bản tái dựng full TRAIN chưa thực hiện và mô hình cuối dạng serialized chưa được xác minh. Do đó chưa thể công bố đã tái lập end-to-end hay có hệ thống phát hiện xâm nhập triển khai thực tế. Các artifact smoke \texttt{SMOKE\_ONLY} không phải mô hình huấn luyện cuối và không được dùng làm inference demo đại diện cho final results.
+Mã nguồn xử lý, huấn luyện và tổng hợp chỉ số tạo điều kiện kiểm tra quy trình thực nghiệm và tính nhất quán của các kết quả. Tuy nhiên, môi trường huấn luyện gốc chưa biết chắc, bản tái dựng full TRAIN chưa thực hiện và mô hình cuối dạng serialized chưa được xác minh. Do đó chưa thể công bố đã tái lập end-to-end hay có hệ thống phát hiện xâm nhập triển khai thực tế. Các artifact smoke \texttt{SMOKE\_ONLY} không phải mô hình huấn luyện cuối và không được dùng làm inference demo đại diện cho final results.
 
-\section{Kết luận cuối}
+\subsection{Kết luận cuối}
 Trong phạm vi benchmark và thí nghiệm đã khóa, kết quả chủ yếu nhấn mạnh nhu cầu so sánh Ensemble Learning một cách có kiểm soát, trình bày đầy đủ loại lỗi và độ bất định, thay vì chọn mô hình chỉ bởi một điểm Accuracy hoặc Macro-F1 nhỉnh hơn về mặt số học. Việc bổ sung Stacking đem lại một đánh đổi FP/FN cụ thể nhưng không xác lập ưu thế tổng thể trước RF-42. Các đóng góp có thể truy vết nằm ở cách đánh giá và diễn giải kết quả, không phải một cam kết superiority, novelty hoặc deployment chưa được kiểm chứng.

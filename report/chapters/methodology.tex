@@ -1,18 +1,16 @@
-% P17 WORKING draft from frozen source and P15 audits; NOT COMPILED/RENDERED.
-% This does NOT modify or justify rerunning the historical experiments.
-\chapter{Phương pháp nghiên cứu}
+
 \label{chap:phuong-phap}
 
 \section{Thiết kế và tập dữ liệu}
-Nghiên cứu đánh giá các pipeline học máy và Ensemble Learning cho phát hiện xâm nhập mạng trên bộ dữ liệu UNSW-NB15\cite{moustafa2015unsw}\footnote{Trang nguồn chính thức: \url{https://research.unsw.edu.au/projects/unsw-nb15-dataset}, truy cập ngày 16/10/2026. URL tải lịch sử của bản local chưa được ghi nhận.}. Nhiệm vụ đã được kiểm chứng trong chuỗi thí nghiệm cuối là \textbf{phân loại nhị phân}, với Normal = 0 và Attack = 1; các kết quả theo \texttt{attack\_cat} sau đó chỉ là phân tích nhóm tấn công bị bỏ sót, \emph{không phải mô hình đa lớp}. Mục tiêu là đánh giá performance, lỗi bổ sung, chi phí và độ bất định, không tuyên bố phát minh thuật toán Ensemble Learning mới.
+Nghiên cứu đánh giá các pipeline học máy và Ensemble Learning cho phát hiện xâm nhập mạng trên bộ dữ liệu UNSW-NB15\cite{moustafa2015unsw}. Nhiệm vụ đã được kiểm chứng trong chuỗi thí nghiệm cuối là \textbf{phân loại nhị phân}, với Normal = 0 và Attack = 1; các kết quả theo \texttt{attack\_cat} sau đó chỉ là phân tích nhóm tấn công bị bỏ sót, \emph{không phải mô hình đa lớp}. Mục tiêu là đánh giá performance, lỗi bổ sung, chi phí và độ bất định, không tuyên bố phát minh thuật toán Ensemble Learning mới.
 
 Hai tập official của UNSW-NB15 được giữ nguyên: TRAIN có 175\,341 dòng (56\,000 Normal và 119\,341 Attack), TEST có 82\,332 dòng (37\,000 Normal và 45\,332 Attack). Không gộp rồi chia ngẫu nhiên lại hai tập này. Biến \texttt{id}, \texttt{label} và \texttt{attack\_cat} bị loại khỏi predictors nhị phân; 42 biến còn lại tạo thành track toàn bộ đặc trưng. Bản kiểm toán dữ liệu ghi nhận 8\,541 dòng TEST trùng vector 42 đặc trưng với ít nhất một dòng TRAIN; 73\,791 dòng TEST còn lại tạo \emph{novel-vector sensitivity view}. Đây vẫn là phần của chính official TEST, không phải external, temporal hoặc session split mới.
 
 \section{Feature selection và preprocessing}
-Track 17 feature ổn định lấy từ danh sách đã lưu của official TRAIN, bên cạnh track 42 feature. Manifest chính xác là \path{results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json}. Các phép biến đổi có tham số học được được đặt trong \texttt{sklearn.Pipeline} theo thiết kế nguồn. Một giới hạn bắt buộc là stable feature selection được thực hiện trên \emph{toàn bộ official TRAIN trước development cross-validation}, không lặp hoàn toàn bên trong từng outer fold. Vì vậy điểm development CV có thể lạc quan hơn kết quả của quy trình feature selection nested thật. Chúng tôi không tuyên bố loại trừ mọi dạng leakage.
+Track 17 feature ổn định lấy từ danh sách đã lưu của official TRAIN, bên cạnh track 42 feature. Tập đặc trưng được chọn giữ nguyên trong các lượt huấn luyện và so sánh tiếp theo. Các phép biến đổi có tham số học được được đặt trong \texttt{sklearn.Pipeline} theo thiết kế nguồn. Một giới hạn bắt buộc là stable feature selection được thực hiện trên \emph{toàn bộ official TRAIN trước development cross-validation}, không lặp hoàn toàn bên trong từng outer fold. Vì vậy điểm development CV có thể lạc quan hơn kết quả của quy trình feature selection nested thật. Chúng tôi không tuyên bố loại trừ mọi dạng leakage.
 
 \section{Các pipeline được khóa trước final evaluation}
-Freeze manifest \path{results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json} lưu ba candidate và threshold 0,5.
+Ba cấu hình cuối và ngưỡng phân loại 0,5 được xác định trước bước đánh giá cuối trên tập TEST.
 
 \begin{table}[htbp]
 \centering
@@ -34,10 +32,22 @@ Stacking sử dụng dự đoán \emph{out-of-fold} của các base learners đ�
 
 RF-17 khác RF-42 cả số feature \emph{và} tham số Random Forest (số cây, kích thước lá), nên mọi chênh lệch giữa chúng là \emph{pipeline-level performance--cost trade-off}, không phải ablation tách biệt nhân quả của số lượng đặc trưng.
 
+
+\section{Các bước triển khai và huấn luyện}
+Quá trình thực nghiệm được thực hiện bằng Python với thư viện \texttt{scikit-learn}. Đối với mỗi cấu hình, chương trình tiến hành thống nhất các bước sau:
+\begin{enumerate}
+\item Đọc hai tập TRAIN và TEST chính thức, tách cột nhãn \texttt{label}, đồng thời loại \texttt{id} và \texttt{attack\_cat} khỏi các biến đầu vào.
+\item Xây dựng chuỗi tiền xử lý thích hợp với đặc trưng số và đặc trưng phân loại, bảo đảm tham số biến đổi chỉ được ước lượng từ phần dữ liệu huấn luyện được phép.
+\item Huấn luyện các mô hình cơ sở; với Stacking, sử dụng dự đoán ngoài fold để xây dựng tập đầu vào cho bộ phân loại tầng kết hợp.
+\item Lựa chọn và cố định cấu hình theo kết quả phát triển mô hình trên TRAIN. Sau đó huấn luyện lại bằng toàn bộ TRAIN và dự đoán trên official TEST với ngưỡng 0,5.
+\item Tính confusion matrix, Precision, Recall, Macro-F1, MCC, FPR, FNR và thời gian thực thi; xuất dự đoán cùng các bảng chỉ số để phân tích đối chiếu.
+\end{enumerate}
+Các bước này mô tả đúng trình tự triển khai. Mã nguồn Python đi kèm báo cáo là căn cứ để kiểm tra chi tiết thao tác tiền xử lý, đối tượng mô hình và lệnh đánh giá.
+
 \section{Final evaluation, uncertainty và sai số}
-Sau khi đóng băng cấu hình và threshold 0,5, các pipeline được huấn luyện trên official TRAIN và đánh giá cuối trên official TEST. Các số liệu final được lưu tại \path{results/final_evaluation/unsw_nb15/phase9_holdout/}. Không dùng TEST để chọn lại mô hình, tối ưu ngưỡng hay sửa feature set. Attack là positive class: $\mathrm{FPR}=\mathrm{FP}/(\mathrm{TN}+\mathrm{FP})$, $\mathrm{FNR}=\mathrm{FN}/(\mathrm{TP}+\mathrm{FN})$, Detection Rate = $1-\mathrm{FNR}$. Cùng với Macro-F1 và MCC, nghiên cứu còn lưu ROC-AUC và trường \texttt{pr\_auc}; trường sau được mã nguồn tính bằng \texttt{average\_precision\_score}, vì vậy phải diễn giải là Average Precision (AP), không tự coi là phương pháp tích phân PR-AUC khác.
+Sau khi đóng băng cấu hình và threshold 0,5, các pipeline được huấn luyện trên official TRAIN và đánh giá cuối trên official TEST. Kết quả dự đoán và các chỉ số đánh giá được trình bày trong Chương~\ref{chap:ket-qua-thao-luan}. Không dùng TEST để chọn lại mô hình, tối ưu ngưỡng hay sửa feature set. Attack là positive class: $\mathrm{FPR}=\mathrm{FP}/(\mathrm{TN}+\mathrm{FP})$, $\mathrm{FNR}=\mathrm{FN}/(\mathrm{TP}+\mathrm{FN})$, Detection Rate = $1-\mathrm{FNR}$. Cùng với Macro-F1 và MCC, nghiên cứu còn lưu ROC-AUC và trường \texttt{pr\_auc}; trường sau được mã nguồn tính bằng \texttt{average\_precision\_score}, vì vậy phải diễn giải là Average Precision (AP), không tự coi là phương pháp tích phân PR-AUC khác.
 
 Chênh lệch metric giữa các model được phân tích bằng paired bootstrap 10\,000 lần lấy mẫu lại các dòng benchmark; CI có điều kiện trên benchmark rows, \emph{không} đại diện repeated-training variability. McNemar exact với điều chỉnh Holm được dùng cho \emph{paired overall correctness}, không phải kiểm định trực tiếp Macro-F1. Các phân tích lỗi theo \texttt{attack\_cat}, \texttt{proto}, \texttt{state}, \texttt{sttl}, \texttt{dload} là mô tả hậu nghiệm; không dùng để suy ra quan hệ nhân quả hay tạo threshold mới.
 
 \section{Các giới hạn về tái lập và tính hợp lệ}
-P15 đã kiểm tra hash local của ba file dữ liệu, sự nhất quán source/freeze, replay hậu xử lý aggregate và smoke fit/serialize/reload trên mẫu con official TRAIN ở một môi trường cô lập. Smoke dùng 2\,000 TRAIN và 500 validation, \emph{không phải tái lập mô hình cuối bằng full TRAIN}. Môi trường huấn luyện lịch sử vẫn UNKNOWN; model serialization gốc chưa được xác minh. Các nguồn mẫu phụ thuộc cùng benchmark, overlap giữa train/test, feature selection trước CV, meta tuning không fully nested, thiếu temporal/external validation và thiếu matched resampling comparison hạn chế khả năng khái quát. Tất cả các giới hạn phải theo đến phần Kết quả, không được xóa bằng cách chạy tuning lại trên official TEST.
+Việc kiểm tra tính toàn vẹn dữ liệu, sự nhất quán giữa cấu hình và mã nguồn, cùng khả năng tính lại chỉ số từ dự đoán giúp tăng tính kiểm chứng của thí nghiệm. Tuy nhiên, thông tin môi trường thư viện tại lần huấn luyện đầu tiên chưa được lưu đầy đủ; vì vậy chưa thể khẳng định kết quả của cả ba mô hình đã được tái lập hoàn toàn bằng một lần huấn luyện độc lập.

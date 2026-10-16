@@ -1,7 +1,5 @@
-% P17 — WORKING CHAPTER. Source-based reconstruction from frozen aggregates.
-% Read report/README.md for provenance. NOT COMPILED / NOT FULL REPORT.
 % Integrate with the institutional report template only after its original copy is preserved.
-\chapter{Kết quả thực nghiệm và thảo luận}
+
 \label{chap:ket-qua-thao-luan}
 
 \section{Phạm vi đánh giá và cách đọc các chỉ số}
@@ -73,7 +71,7 @@ FNR      & +0.002603 & +0.001853 & +0.003375 \\
 
 Khoảng tin cậy của chênh lệch Macro-F1 và MCC chứa 0. Do đó, kết quả \emph{không cung cấp bằng chứng đủ mạnh cho ưu thế tổng thể} của Stacking-42 so với RF-42 trên hai thước đo này; điều này \emph{không} chứng minh hai mô hình tương đương thống kê. McNemar exact với hiệu chỉnh Holm trên \emph{đúng/sai tổng thể của các cặp dự đoán} cho $p_{\mathrm{Holm}}=0.468377$ trong cùng phép so sánh; McNemar không phải kiểm định trực tiếp chênh lệch Macro-F1.
 
-CI của FPR nằm hoàn toàn phía âm và CI của FNR nằm hoàn toàn phía dương. Các khoảng tin cậy này phản ánh biến động do lấy mẫu lại \emph{các dòng benchmark đã lưu}, không phải độ ổn định qua các lần huấn luyện độc lập, session độc lập hay dữ liệu ngoài bộ UNSW-NB15. Hình forest plot và bảng số liệu nguồn được lưu trong \path{results/figures/p16_paired_effects_2026_10_16}.
+CI của FPR nằm hoàn toàn phía âm và CI của FNR nằm hoàn toàn phía dương. Các khoảng tin cậy này phản ánh biến động do lấy mẫu lại \emph{các dòng benchmark đã lưu}, không phải độ ổn định qua các lần huấn luyện độc lập, session độc lập hay dữ liệu ngoài bộ UNSW-NB15. Hình~\ref{fig:paired-metrics} mô tả trực quan các hiệu số cùng khoảng tin cậy 95\%.
 
 \begin{figure}[htbp]
 \centering
@@ -146,21 +144,3 @@ RF-17       & 0.860673 & 0.855723 \\
 \end{table}
 
 Cả ba pipeline có Macro-F1 thấp hơn trên nhóm novel-vector. Tập con này được xác định bằng cách loại những dòng TEST có vector 42 đặc trưng trùng với ít nhất một vector TRAIN; 8\,541 dòng TEST thuộc nhóm overlap theo cách định nghĩa này. Đây là một \emph{sensitivity analysis} trong cùng benchmark, không thay cho đánh giá external, temporal, day hoặc session split. Vì vậy, câu hỏi RQ4 về độ nhạy với \emph{split protocol} chưa được trả lời đầy đủ.
-
-\section{Tổng hợp theo câu hỏi nghiên cứu và các giới hạn}
-\label{sec:rq-limitations}
-
-\textbf{RQ1 --- Hiệu quả ensemble:} chưa chứng minh cải thiện tổng thể hoặc ổn định qua nhiều lần huấn luyện của Stacking-42 so với RF-42. Kết quả cặp cho thấy dịch chuyển FP/FN rõ ràng trên holdout đã lưu.
-
-\textbf{RQ2 --- Feature selection:} bảng so sánh RF-17 và RF-42 hỗ trợ mô tả đánh đổi hiệu năng--chi phí của \emph{cả pipeline}; không có đối chứng tách biệt tác động nhân quả của chỉ số feature vì cấu hình mô hình cũng khác nhau.
-
-\textbf{RQ3 --- Complementarity:} các bảng OOF diversity và ensemble ở development hỗ trợ phân tích \emph{liên hệ mô tả} giữa sai số của base learners và kết quả kết hợp. Complementary errors không bảo đảm Stacking vượt mô hình đơn; các kết quả voting kém hơn vẫn phải được báo cáo.
-
-\textbf{RQ4 --- Robustness:} novel-vector cho thấy một hướng kiểm tra độ nhạy nhưng không phải temporal/group/external validation. RQ4 mới được trả lời một phần.
-
-\textbf{RQ5 phụ --- Class imbalance:} chưa có thí nghiệm controlled resampling so sánh matched, do đó không thể khẳng định SMOTE hay kỹ thuật sampling tương đương hiệu quả hoặc không hiệu quả trong nghiên cứu này.
-
-\textbf{Giới hạn phương pháp:} (i) lựa chọn stable features trên toàn official TRAIN trước development CV có thể làm điểm CV lạc quan; (ii) lựa chọn/tuning meta-model chưa fully nested; (iii) có vector trùng giữa official TRAIN và TEST và các dòng network-flow không được chứng minh độc lập ở cấp session; (iv) paired bootstrap là trên dòng benchmark chứ không phải repeated-training stability; (v) môi trường training lịch sử chưa xác minh trực tiếp và chưa có final serialized model hợp lệ; (vi) không có kiểm tra external deployment/multiclass. Các giới hạn này không được xóa hoặc sửa kết quả official TEST sau khi đã quan sát.
-
-\section{Kết luận chương}
-Trong giới hạn official UNSW-NB15 holdout đã khóa, Stacking-42 làm giảm báo động giả nhưng đồng thời tăng số tấn công bị bỏ sót so với RF-42. Bằng chứng thống kê hiện có chưa xác nhận một cải thiện tổng thể về Macro-F1/MCC. RF-17 thể hiện khả năng giảm chi phí của một cấu hình pipeline khác với mức giảm nhỏ của Macro-F1. Giá trị khoa học hiện có nằm ở đối chiếu có truy vết, phân tích sai số, độ bất định và công bố giới hạn, thay vì tuyên bố một thuật toán ensemble mới hoặc khả năng triển khai ngoài benchmark đã được xác minh.

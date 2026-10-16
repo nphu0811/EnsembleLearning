@@ -1,34 +1,34 @@
 % P17 WORKING INTRODUCTION — frozen RQs and documented data; no prospective approval claim.
-\chapter{Giới thiệu}
+\section{Bối cảnh và mục tiêu nghiên cứu}
 \label{chap:gioi-thieu}
 
-\section{Bối cảnh và động cơ}
+\subsection{Bối cảnh và động cơ}
 Hệ thống phát hiện xâm nhập mạng (Network Intrusion Detection System, NIDS) nhằm nhận diện lưu lượng có dấu hiệu tấn công từ các quan sát mạng. Các bộ phân loại học máy có thể phát hiện những mẫu phức tạp trong dữ liệu flow, nhưng điểm số cao trên một benchmark không tự bảo đảm hiệu quả trong các bối cảnh triển khai khác nhau. Cách tạo và làm sạch dữ liệu, lựa chọn đặc trưng, chia tập và các loại sai số có thể ảnh hưởng đáng kể đến diễn giải thí nghiệm.
 
 Ensemble Learning kết hợp dự đoán từ nhiều bộ phân loại. Tổng quan hệ thống của Tama và Lim nhấn mạnh hai khía cạnh thiết kế là lựa chọn mô hình thành viên và phương pháp kết hợp \cite{legacyL01}. Những thành phần như Voting, Stacking hay Feature Selection đã xuất hiện trong công trình liên quan, vì vậy \emph{chỉ áp dụng chúng không thể tự xem là một thuật toán mới} \cite{legacyL04,legacyL05,legacyL06,legacyL12}. Giá trị của so sánh cần đến từ protocol có truy vết, thước đo thể hiện đúng loại lỗi, đối chiếu chi phí và cách diễn giải độ bất định.
 
-\section{Vấn đề nghiên cứu}
+\subsection{Vấn đề nghiên cứu}
 Nghiên cứu tập trung vào bài toán nhị phân \textbf{Normal/Attack} của UNSW-NB15. Hai tập TRAIN và TEST chính thức được giữ riêng; các mô hình được lựa chọn từ quá trình development trên TRAIN và đánh giá cuối bằng cấu hình đã khóa. Nghiên cứu không tuyên bố phát triển detector đa lớp hoặc kiểm nghiệm trên dữ liệu triển khai độc lập.
 
 Một giả định cần kiểm tra là liệu việc có nhiều base learners khác nhau và sai số bổ sung có thực sự đem lại cải thiện tổng thể so với một mô hình đơn mạnh, hay chỉ làm thay đổi đánh đổi giữa báo động giả (FP) và tấn công bỏ sót (FN). Ngoài chất lượng dự đoán, nghiên cứu quan tâm đến chi phí huấn luyện và suy luận cùng tác động của lựa chọn đặc trưng. Đây là case study có kiểm toán trên một benchmark, không phải chứng minh tính ưu việt chung của Ensemble Learning.
 
-\section{Câu hỏi nghiên cứu được giữ nguyên}
-Các câu hỏi gốc được lưu tại \path{notebook/phase01/phase1_frozen_research_design_v1.md} và được diễn giải theo phạm vi bằng chứng hiện có:
+\subsection{Các vấn đề nghiên cứu}
+Để đánh giá chất lượng và giới hạn của các mô hình phát hiện xâm nhập, nghiên cứu tập trung vào năm vấn đề sau:
 
 \begin{description}
 \item[RQ1 --- Hiệu quả Ensemble:] Liệu ensemble có cải thiện \emph{ổn định} so với mô hình học máy đơn trong một protocol đánh giá tương ứng? Điều kiện ổn định qua nhiều lần huấn luyện vẫn chưa được kiểm chứng.
 \item[RQ2 --- Đặc trưng và chi phí:] Các chiến lược Feature Selection liên quan thế nào đến hiệu năng phát hiện, nhận diện tấn công và chi phí của những pipeline đã nghiên cứu? Phân tích cuối chưa tách được tác động riêng của số feature.
 \item[RQ3 --- Sai số bổ sung:] Mức cải thiện quan sát có liên hệ thế nào với mẫu sai số bổ sung giữa các base learners? Bằng chứng hiện có chủ yếu mang tính mô tả, không thiết lập nhân quả.
-\item[RQ4 --- Độ nhạy protocol:] Model ranking/performance nhạy thế nào với cách chia dữ liệu? Novel-vector sensitivity thuộc cùng tập TEST nên chưa kiểm chứng đối chứng temporal/day/scenario.
-\item[RQ5 phụ --- Xử lý mất cân bằng:] Các phương án xử lý mất cân bằng ảnh hưởng thế nào tới recall, Macro-F1 và FN? Chưa có thí nghiệm matched resampling để trả lời đầy đủ.
+\item[RQ4 --- Độ nhạy protocol:] Thứ hạng và chất lượng mô hình thay đổi như thế nào khi xem xét riêng các mẫu không trùng vector với tập TRAIN?
+\item[RQ5 phụ --- Xử lý mất cân bằng:] Các phương án xử lý mất cân bằng có liên quan như thế nào đến Recall, Macro-F1 và số lượng tấn công bị bỏ sót?
 \end{description}
 
-Những câu hỏi này không được viết lại sau khi quan sát official TEST, và không có bằng chứng để gọi các giả thuyết sau kết quả là \emph{preregistered}. Trạng thái trả lời từng RQ được thảo luận trong Chương~\ref{chap:ket-qua-thao-luan}.
+Năm vấn đề trên được phân tích bằng giao thức thực nghiệm ở Chương~\ref{chap:phuong-phap} và các kết quả ở Chương~\ref{chap:ket-qua-thao-luan}.
 
-\section{Mục tiêu và đóng góp có thể kiểm chứng}
+\subsection{Mục tiêu và đóng góp nghiên cứu}
 Phần nghiên cứu đã có bằng chứng gồm: (i) xây dựng và lưu quy trình đánh giá có official holdout; (ii) đối chiếu Random Forest với Stacking, kèm Diversity/OOF và cả kết quả Voting không thuận lợi; (iii) phân tích đánh đổi hiệu năng--chi phí của hai track feature; (iv) đánh giá Macro-F1, MCC, FPR, FNR và chênh lệch theo cặp; (v) phân tích chi tiết sai số FP/FN và attack-family trong phạm vi nhị phân.
 
 Các kết quả đó có thể có giá trị thực nghiệm và phương pháp luận trong phạm vi một case study; \emph{không} đủ cơ sở để khẳng định một thuật toán Ensemble Learning mới, ưu thế tổng thể có ý nghĩa thống kê, hoặc khả năng khái quát ngoài UNSW-NB15. Phần đối chiếu chi tiết với prior work được giới hạn trong những nguồn đã có bằng chứng đọc và kiểm tra metadata; chưa phải tổng quan hệ thống đầy đủ của lĩnh vực.
 
-\section{Cấu trúc báo cáo}
-Chương~\ref{chap:tong-quan} mô tả các hướng công trình có liên quan và khoảng thiếu bằng chứng. Chương~\ref{chap:phuong-phap} trình bày protocol đã thực hiện, mô hình khóa và các giới hạn thiết kế. Chương~\ref{chap:ket-qua-thao-luan} tổng hợp kết quả, khoảng tin cậy, sai số và thảo luận các RQ. Chương~\ref{chap:ket-luan} kết luận ở phạm vi có bằng chứng và trình bày công việc chưa giải quyết.
+\subsection{Bố cục báo cáo}
+Chương~\ref{chap:ly-thuyet} trình bày cơ sở lý thuyết và các hướng nghiên cứu liên quan. Chương~\ref{chap:dataset-eda} giới thiệu dữ liệu và quy trình tiền xử lý. Chương~\ref{chap:phuong-phap} mô tả mô hình và cách thực hiện thí nghiệm. Chương~\ref{chap:ket-qua-thao-luan} phân tích kết quả huấn luyện và kiểm thử. Chương~\ref{chap:ban-luan} thảo luận về ý nghĩa, hạn chế và hướng phát triển của nghiên cứu.

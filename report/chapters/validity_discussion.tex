@@ -1,5 +1,4 @@
-% P17 discussion: evidence-bound, no new experiment, no causal mechanism claim
-\chapter{Bàn luận về thiết kế thực nghiệm và tính hợp lệ}
+
 \label{chap:ban-luan}
 
 \section{Tại sao điểm số tổng thể chưa đủ}
@@ -35,16 +34,16 @@ Paired bootstrap tạo phân bố hiệu số từ cùng các dòng TEST, giữ 
 Một phép bootstrap trên dòng không tái tạo sự ngẫu nhiên của quá trình tối ưu mô hình. Để đo ổn định do train, cần nhiều lần fit độc lập, có quản lý seed và khả năng so sánh đúng điều kiện compute. Để đo tổng quát hóa giữa các mạng, cần nhiều benchmark độc lập hoặc thiết kế theo thời gian/session. Không được gọi CI hiện tại là độ tin cậy triển khai ngoài dữ liệu hoặc dùng nó thay cho quá trình tái huấn luyện mô hình.
 
 \section{Giới hạn tái lập đầy đủ}
-P15 đã có bằng chứng về checksum dữ liệu local, kiểm tra protocol, khôi phục aggregate postprocessing từ dự đoán đã khóa và smoke fit/serialize/reload trên một phần TRAIN. Những phép kiểm tra này bảo vệ phần mềm và quá trình phân tích, nhưng môi trường Python và thư viện tại lần huấn luyện lịch sử chưa được lưu trực tiếp. Bản model cuối ở dạng serialized cũng không được xác minh tồn tại. Như vậy chưa thể tạo một inference demo đảm bảo đúng pipeline cuối từ những file smoke hiện có.
+Để xem xét tính tái lập, nghiên cứu kiểm tra tính toàn vẹn của dữ liệu, đối chiếu cấu hình mô hình và thử tính lại các chỉ số từ dự đoán. Đây là những điều kiện cần để kết quả có thể được kiểm chứng, nhưng không thay thế việc huấn luyện lại mô hình cuối trên một môi trường được xác định rõ. Những phép kiểm tra này bảo vệ phần mềm và quá trình phân tích, nhưng môi trường Python và thư viện tại lần huấn luyện lịch sử chưa được lưu trực tiếp. Bản model cuối ở dạng serialized cũng không được xác minh tồn tại. Như vậy chưa thể tạo một inference demo đảm bảo đúng pipeline cuối từ các đối tượng mô hình đã được kiểm thử trên dữ liệu con.
 
-Các model đánh dấu \texttt{SMOKE\_ONLY} được tạo từ tập con nhỏ nhằm kiểm tra khả năng xây dựng, lưu và tải mô hình. Sử dụng chúng làm demo nhận diện cuối rồi gắn kết quả official TEST sẽ làm sai quan hệ giữa model artifact và số liệu. Trong báo cáo, cần giữ phân biệt ba tầng: mã nguồn có thể chạy, phép phân tích aggregate có thể replay và huấn luyện mô hình cuối có thể tái dựng. Hai tầng đầu đã có bằng chứng theo phạm vi, tầng cuối vẫn là gate mở.
+Các mô hình kiểm thử kỹ thuật được xây dựng trên tập con TRAIN chỉ nhằm xác minh chương trình có thể huấn luyện, lưu và khôi phục đối tượng mô hình. Chúng không thể thay cho các mô hình huấn luyện trên toàn TRAIN hoặc dùng để khẳng định lại hiệu năng trên bộ kiểm thử chính thức.
 
 \section{Tính hợp lệ bên ngoài và định hướng nghiên cứu tiếp}
 Official UNSW-NB15 TEST không phải một benchmark external độc lập với quá trình hình thành bộ dữ liệu. Novel-vector view là tập con của chính official TEST, không đại diện phép kiểm tra temporal split, day split hay host-separated validation. Vì vậy việc tất cả model mất một phần Macro-F1 trên novel-vector view chỉ chứng minh độ nhạy theo định nghĩa chọn dòng đó, không mô tả lỗi trên traffic tương lai.
 
 Một hướng tiếp tục đáng tin cậy là khóa trước các câu hỏi mới, định nghĩa đơn vị độc lập (session/host/time), huấn luyện trên một split có thể kiểm chứng, đánh giá external nếu có quyền truy cập và đối chiếu các số đo vận hành như FPR theo khối lượng traffic. Những thí nghiệm này phải được đặt thành nghiên cứu kế tiếp có train/test mới, không sửa frozen predictions hay threshold của nghiên cứu hiện tại. Việc công khai các giới hạn giữ cho báo cáo có giá trị học thuật ngay cả khi không có cải thiện rõ rệt của Stacking so với RF.
 
-\section{Ánh xạ câu hỏi nghiên cứu với bằng chứng}
+\section{Mức độ trả lời các mục tiêu nghiên cứu}
 \begin{table}[htbp]\centering
 \small
 \caption{Mức độ trả lời các câu hỏi nghiên cứu bằng artifact hiện có.}
