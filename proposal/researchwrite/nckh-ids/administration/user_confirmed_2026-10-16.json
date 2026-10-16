@@ -1,0 +1,39 @@
+{
+  "audit_date": "2026-10-16",
+  "user_specified_document_date": "2026-10-10",
+  "report_title": "Nghiên cứu Ensemble Learning cho bài toán phát hiện xâm nhập mạng",
+  "topic_code": "09-SV-2026-CNTT2",
+  "class": "E23CQCE01-N",
+  "students": [
+    {
+      "full_name": "Dương Ngọc Phú",
+      "student_id": "N23DCDK055"
+    },
+    {
+      "full_name": "Phạm Thế Vỹ",
+      "student_id": "N23DCCN205"
+    },
+    {
+      "full_name": "Vũ Văn Kiên",
+      "student_id": "N23DCDT029"
+    },
+    {
+      "full_name": "Lê Hoàng Nguyên Quân",
+      "student_id": "N23DCDT042"
+    }
+  ],
+  "supervisor": "Lê Ngọc Hiếu",
+  "school": "Học viện Công nghệ Bưu chính Viễn thông, Cơ sở tại TP. Hồ Chí Minh",
+  "faculty": "Khoa Công nghệ Thông tin 2",
+  "faculty_evidence": "Existing project PTIT template and supplied sample report; not supplied again in the user metadata message",
+  "major": null,
+  "signatures_provided": false,
+  "signature_images_provided": false,
+  "publication_release_clearance": "NOT_VERIFIED",
+  "source": "Direct user-supplied administrative facts in current conversation; no identity extracted from the NetFlow comparison report",
+  "open_fields": [
+    "Ngành học nếu mẫu bắt buộc",
+    "Chữ ký tự tay thực tế",
+    "Phê duyệt GVHD, đơn vị và mẫu nộp"
+  ]
+}
