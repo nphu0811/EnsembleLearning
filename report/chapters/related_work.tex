@@ -1,0 +1,26 @@
+% P17 WORKING RELATED WORK. Claims bounded by r02/r04 reading notes and 11 metadata-verified entries.
+\chapter{Công trình liên quan và vị trí của nghiên cứu}
+\label{chap:tong-quan}
+
+\section{Ensemble Learning trong NIDS}
+Tama và Lim khảo sát có hệ thống hướng Ensemble Learning cho Intrusion Detection và đặt trọng tâm vào base classifier, cách kết hợp và tính phụ thuộc của đánh giá theo benchmark \cite{legacyL01}. Kết quả tổng quan này là cơ sở lựa chọn câu hỏi so sánh thực nghiệm, không thể thay bằng nhận định đơn giản rằng kết hợp nhiều classifier chắc chắn làm hiệu năng tăng.
+
+Các cấu hình kết hợp đã được nghiên cứu theo nhiều hướng: soft voting có thành phần tìm cấu hình tự động \cite{legacyL05}, heterogeneous stacking với các base learners và meta learner được mô tả trong phần phương pháp của Thockchom và cộng sự \cite{legacyL06}, và hướng kết hợp lựa chọn đặc trưng với ensemble \cite{legacyL04,legacyL12}. Các nghiên cứu có phương pháp và tập dữ liệu khác nhau không được coi là baseline matched cho official UNSW-NB15 của đề tài. Việc tồn tại những công trình này giới hạn tuyên bố novelty: đóng góp được định vị ở kiểm toán case study, sự minh bạch về loại lỗi, bằng chứng cặp và chi phí, \emph{không} phải tạo ra Stacking hay Feature Selection.
+
+\section{Feature Selection, chuẩn hóa và mất cân bằng}
+Việc giảm số đặc trưng có thể thay đổi chất lượng và chi phí của pipeline, nhưng phải tách việc chọn feature khỏi khâu đánh giá nếu muốn ước lượng hiệu ứng thật sự của chiến lược lựa chọn. Các nghiên cứu về filter-based Feature Selection trong IDS \cite{legacyL08}, đặc trưng và chuẩn hóa \cite{legacyL11}, cũng như embedded/correlation selection \cite{legacyL12} là những nguồn đặt phạm vi cho câu hỏi RQ2, không phải bằng chứng rằng RF-17 của chúng tôi cải thiện nhờ \emph{chỉ} loại feature.
+
+Đối với dữ liệu mất cân bằng, nghiên cứu DUEN xem xét dynamic ensemble cùng thành phần xử lý phân bố lớp \cite{legacyL07}. Do đề tài hiện không có so sánh matched resampling/no-resampling dưới cùng điều kiện, không thể kết luận các kỹ thuật cân bằng mẫu là vô ích hoặc có hiệu quả nhân quả từ những kết quả được lưu. Đây vẫn là giới hạn của RQ5.
+
+\section{Chất lượng dữ liệu và khả năng khái quát}
+Engelen và cộng sự phân tích lỗi và quá trình xử lý trong một bộ dữ liệu IDS khác (CICIDS2017) \cite{legacyL02}; bài học phương pháp luận là cần kiểm toán pipeline và chất lượng dữ liệu, \emph{không} chuyển nguyên các lỗi CICIDS2017 sang UNSW-NB15. Cantone và cộng sự nhấn mạnh sự khác biệt giữa đánh giá trong cùng một dataset và đánh giá cross-dataset \cite{legacyL09}. Nghiên cứu của chúng tôi mới có official holdout cùng một phần novel-vector subset; đó không phải external validation hoặc phép đo generalization cross-dataset.
+
+Khảo sát về các loại tấn công chưa biết, không điển hình và biến đổi hình thái \cite{legacyL10} gợi ý yêu cầu đọc kết quả tổng thể trong mối liên hệ với các dạng tấn công khác nhau. Nhưng phân tích \texttt{attack\_cat} ở đây là \emph{nhóm nhãn thật của binary detector}, không phải đo khả năng dự đoán nhãn tấn công đa lớp hoặc unknown-attack deployment.
+
+\section{Bối cảnh nghiên cứu tại Việt Nam}
+Các nguồn học thuật/tổ chức trong nước đã được lưu trong hồ sơ literature r02/r04, trong đó có thông báo của Trường Đại học Lạc Hồng về chủ đề học máy phối hợp và tiền xử lý cho phát hiện xâm nhập mạng, cùng một bản tóm tắt luận án tại Đại học Công nghệ, ĐHQGHN có đề cập soft voting và stacking. Hai loại nguồn này chỉ hỗ trợ sự hiện diện của hướng nghiên cứu, \emph{không} chứng minh đã bảo vệ thành công, kết quả thực nghiệm cụ thể hoặc một khảo sát đại diện cho toàn bộ nghiên cứu trong nước. Chúng chưa được thêm vào BibTeX như publication chính thức trong bản báo cáo làm việc này.
+
+\section{Khoảng trống bằng chứng và giới hạn tổng quan}
+So sánh ensemble cần báo cáo trung thực khả năng mô hình tốt hơn \emph{hoặc không tốt hơn} baseline, mức thay đổi giữa FP và FN, quan hệ giữa diversity và gain, cùng chi phí của cấu hình đã chọn. Đối với UNSW-NB15, đề tài có saved official test, paired effects và phân tích hậu nghiệm, nhưng chưa có chứng cứ repeated training stability, nested FS ablation độc lập, temporal split, external validation và matched resampling. Do vậy những mục chưa có bằng chứng được trình bày như \emph{khoảng thiếu của nghiên cứu này}, không được biến thành khẳng định rằng toàn bộ lĩnh vực chưa từng nghiên cứu chúng.
+
+Danh mục tham khảo ở \texttt{report/references\_verified.bib} chỉ chép nguyên 11 legacy metadata records được phân loại verified tại r04. L03 còn xung đột về pagination nên không đưa vào; U01/U03 có cảnh báo về metadata và chưa được dùng để mở rộng claim. Metadata được kiểm chứng \emph{không} đồng nghĩa toàn văn của tất cả các bài đã được đọc. Trạng thái Literature Review và Citation Management vì vậy tiếp tục là PARTIAL.
