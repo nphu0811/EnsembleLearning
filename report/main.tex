@@ -1,56 +1,127 @@
-% P17 WORKING STANDALONE REPORT ENTRY POINT
-% Compile from project/report with XeLaTeX, then BibTeX, then XeLaTeX twice.
-% Original template templates/original/ is PRESERVED, not overwritten.
-% This is NOT institutional-template-approved, NOT proof of final research readiness.
+% P17 PTIT-inspired working research report. Reference: user-provided Bao_cao_NetFlow.pdf.
+% Borrow structure/academic typesetting only, not any other team's content, names or results.
+% Do not overwrite templates/original, frozen experiment outputs or historical research notes.
 \documentclass[a4paper,12pt,oneside]{report}
 \usepackage{fontspec}
 \IfFontExistsTF{TeX Gyre Termes}{\setmainfont{TeX Gyre Termes}}{\setmainfont{DejaVu Serif}}
 \usepackage[vietnamese]{babel}
-\usepackage[a4paper,left=30mm,right=25mm,top=25mm,bottom=25mm]{geometry}
-\usepackage{amsmath,graphicx,array}
+\usepackage[a4paper,top=23mm,bottom=23mm,left=30mm,right=23mm,headheight=17pt,headsep=8mm,footskip=11mm]{geometry}
+\usepackage{xcolor}
+\definecolor{researchred}{RGB}{150,0,23}
+\definecolor{researchblue}{RGB}{0,71,171}
+\definecolor{slateblue}{RGB}{40,66,92}
+\usepackage{amsmath,amssymb,graphicx,array,booktabs,longtable,tabularx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
 \usepackage{setspace}
 \usepackage{xurl}
-\usepackage{hyperref}
+\usepackage[unicode,colorlinks=true,linkcolor=researchred,citecolor=researchblue,urlcolor=researchred]{hyperref}
 \emergencystretch=5em
-\hypersetup{hidelinks}
-\setstretch{1.25}
+\setstretch{1.27}
+\setlength{\parindent}{15pt}
+\setlength{\parskip}{5pt}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+
+% Neutral body and section hierarchy; carmine accent from original PTIT template.
+\titleformat{\chapter}[block]{\normalfont\bfseries\centering\fontsize{15}{20}\selectfont\color{slateblue}}{Chương \thechapter.}{0.8em}{\MakeUppercase}
+\titleformat{name=\chapter,numberless}[block]{\normalfont\bfseries\centering\fontsize{15}{20}\selectfont\color{slateblue}}{}{0em}{}
+\titlespacing*{\chapter}{0pt}{7pt}{16pt}
+\titleformat{\section}{\normalfont\bfseries\fontsize{13}{17}\selectfont\color{slateblue}}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\normalfont\bfseries\fontsize{12}{16}\selectfont}{\thesubsection}{0.8em}{}
+\captionsetup{font=small,labelfont={bf,color=slateblue},labelsep=period}
+\renewcommand{\cftchappresnum}{Chương~}
+\setlength{\cftchapnumwidth}{6em}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftfigpresnum}{Hình~}
+\setlength{\cftfignumwidth}{4em}
+\renewcommand{\cfttabpresnum}{Bảng~}
+\setlength{\cfttabnumwidth}{4em}
+\makeatletter
+\let\originalcontentsline\contentsline
+\makeatother
+
+% Header/footer aligned with the PDF reference; no unconfirmed student identity.
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\color{slateblue} ĐỀ TÀI NCKH SINH VIÊN}
+\fancyhead[R]{\footnotesize\color{slateblue} ENSEMBLE LEARNING -- NIDS}
+\fancyfoot[L]{\footnotesize\color{slateblue} BẢN THẢO NGHIÊN CỨU -- CHỜ DUYỆT}
+\fancyfoot[R]{\footnotesize\color{slateblue} \thepage}
+\renewcommand{\headrulewidth}{0.35pt}
+\renewcommand{\footrulewidth}{0.35pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyhead[L]{\footnotesize\color{slateblue} ĐỀ TÀI NCKH SINH VIÊN}\fancyfoot[L]{\footnotesize\color{slateblue} BẢN THẢO -- CHỜ DUYỆT}\fancyfoot[R]{\footnotesize\color{slateblue} \thepage}\renewcommand{\headrulewidth}{0.35pt}\renewcommand{\footrulewidth}{0.35pt}}
 
 \begin{document}
 \begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+\draw[slateblue,line width=.55pt] ($(current page.north west)+(2.0cm,-1.45cm)$) rectangle ($(current page.south east)+(-1.75cm,1.45cm)$);
+\draw[researchred!70,line width=1.1pt] ($(current page.north west)+(2.18cm,-1.62cm)$) rectangle ($(current page.south east)+(-1.92cm,1.62cm)$);
+\end{tikzpicture}
 \centering
-{\large BÁO CÁO NGHIÊN CỨU KHOA HỌC\par}
-\vspace{2.6cm}
-{\LARGE\bfseries NGHIÊN CỨU ENSEMBLE LEARNING CHO BÀI TOÁN PHÁT HIỆN XÂM NHẬP MẠNG\par}
-\vspace{2.0cm}
-{\large Phạm vi thực nghiệm: phát hiện nhị phân Normal/Attack trên UNSW-NB15\par}
+{\fontsize{12}{16}\selectfont BỘ KHOA HỌC VÀ CÔNG NGHỆ\par}
+{\fontsize{13}{17}\selectfont\bfseries HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG\par}
+{\fontsize{13}{17}\selectfont\bfseries CƠ SỞ TẠI TP. HỒ CHÍ MINH\par}
+{\fontsize{11}{15}\selectfont Khoa/đơn vị: \textbf{[CẦN XÁC NHẬN]}\par}
+\vspace{4mm}
+{\color{researchred}\rule{0.35\textwidth}{0.6pt}\par}
+\vspace{8mm}
+\includegraphics[width=25mm]{../templates/original/latex/assets/Logo_PTIT_University.png}
+\vspace{9mm}
+
+{\large\bfseries ĐỀ TÀI NGHIÊN CỨU KHOA HỌC SINH VIÊN\par}
+\vspace{6mm}
+{\normalsize Mã số đề tài: \textbf{[CẦN XÁC NHẬN]}\par}
+\vspace{11mm}
+{\color{researchred}\fontsize{18}{23}\selectfont\bfseries NGHIÊN CỨU ENSEMBLE LEARNING\\[3mm] CHO BÀI TOÁN PHÁT HIỆN XÂM NHẬP MẠNG\par}
+\vspace{6mm}
+{\color{slateblue}\normalsize Thực nghiệm phân loại nhị phân trên UNSW-NB15\par}
 \vfill
-\begin{flushleft}
-Đơn vị: \textbf{[CẦN XÁC NHẬN]}\\[0.4em]
-Sinh viên thực hiện: \textbf{[CẦN XÁC NHẬN]}\\[0.4em]
-Giảng viên hướng dẫn: \textbf{[CẦN XÁC NHẬN]}\\[0.4em]
-Thời gian và địa điểm nộp: \textbf{[CẦN XÁC NHẬN]}
-\end{flushleft}
-\vspace{1cm}
-{\itshape Bản nguồn làm việc, chưa phải hồ sơ được phê duyệt hoặc sẵn sàng nộp\par}
+\begin{minipage}{0.80\linewidth}
+\raggedright
+\begin{tabular}{@{}p{.37\linewidth}p{.57\linewidth}@{}}
+\textbf{Sinh viên thực hiện:} & \textbf{[CẦN XÁC NHẬN]}\\[5pt]
+\textbf{Mã số sinh viên:} & \textbf{[CẦN XÁC NHẬN]}\\[5pt]
+\textbf{Lớp, ngành:} & \textbf{[CẦN XÁC NHẬN]}\\[5pt]
+\textbf{Giảng viên hướng dẫn:} & \textbf{[CẦN XÁC NHẬN]}\\
+\end{tabular}
+\end{minipage}
+\vfill
+{\normalsize\bfseries TP. Hồ Chí Minh -- 2026\par}
 \end{titlepage}
 
-\chapter*{Tóm tắt}
-\addcontentsline{toc}{chapter}{Tóm tắt}
-Nghiên cứu so sánh các mô hình học máy đơn và Stacking cho phát hiện xâm nhập nhị phân trên official UNSW-NB15, sử dụng bộ chỉ số Macro-F1, MCC, FPR, FNR, chi phí cùng phân tích thống kê cặp. Trên 82\,332 mẫu official TEST, Stacking-42 đạt Macro-F1 là 0.863840 so với 0.863343 của RF-42, song CI 95\% paired bootstrap của chênh lệch Macro-F1 chứa 0. Stacking-42 giảm 142 báo động giả nhưng bỏ sót thêm 118 tấn công. RF-17 có mức giảm nhỏ về Macro-F1 so với RF-42, đồng thời giảm chi phí quan sát; so sánh RF-17/RF-42 còn khác siêu tham số nên không thể quy chênh lệch cho riêng số feature. Kết quả nhấn mạnh việc công khai đánh đổi lỗi, kiểm toán dữ liệu và giới hạn của protocol. Feature Selection trước development CV, thiếu external/temporal validation và chưa tái lập full TRAIN hạn chế kết luận về tính ổn định và khả năng triển khai thực tế.
-
-\noindent\textbf{Từ khóa:} Network Intrusion Detection, Ensemble Learning, Stacking, Random Forest, UNSW-NB15, Macro-F1, MCC.
-
+\pagenumbering{roman}
+\input{frontmatter}
+\clearpage
+\renewcommand{\contentsname}{MỤC LỤC}
+\renewcommand{\listfigurename}{DANH SÁCH HÌNH VẼ}
+\renewcommand{\listtablename}{DANH SÁCH BẢNG}
 \tableofcontents
+\clearpage
+\listoffigures
+\clearpage
 \listoftables
 \clearpage
 
+\pagenumbering{arabic}
 \input{chapters/introduction}
+\input{chapters/theoretical_foundations}
 \input{chapters/related_work}
+\input{chapters/dataset_eda}
 \input{chapters/methodology}
 \input{chapters/results_discussion}
+\input{chapters/validity_discussion}
 \input{chapters/conclusion}
 
 \clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Tài liệu tham khảo}
 \bibliographystyle{plain}
 \bibliography{references_verified,references_dataset_checked}
 \end{document}
