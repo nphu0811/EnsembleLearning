@@ -1,0 +1,121 @@
+{
+  "scope": "P15_LOCAL_ARTIFACT_READONLY_QA; NOT original model or scientific TEST validation",
+  "training_performed": false,
+  "official_test_opened": false,
+  "run_names": {
+    "random_forest_17": "p15_local_rf17_full_01",
+    "random_forest_42": "p15_local_rf42_full_02",
+    "stacking_42": "p15_local_stack_full_01"
+  },
+  "results": {
+    "random_forest_17": {
+      "candidate": "random_forest_17",
+      "checks": {
+        "supervisor_and_worker_pass": true,
+        "identity_and_full_train": true,
+        "frozen_input_hashes": true,
+        "frozen_threshold_and_classes": true,
+        "features_and_order": true,
+        "environment_match": true,
+        "clean_execution": true,
+        "not_original_model": true,
+        "local_artifact_filename": true,
+        "local_sha256_and_length": true,
+        "random_forest_17_pipeline": true,
+        "random_forest_17_forest_type": true,
+        "random_forest_17_preprocess_fitted": true,
+        "random_forest_17_hyperparameters": true,
+        "random_forest_17_fitted_trees": true,
+        "ordered_probe": true,
+        "proba_shape_and_finite": true,
+        "proba_normalized": true,
+        "class_order": true,
+        "hash_stable_after_reload": true
+      },
+      "claimed_artifact_sha256": "b2751bfc6677a724bcadc85070e5848c0f183c3c81d508b5e4cdae82287c8818",
+      "claimed_artifact_bytes": 22169429,
+      "passed": true
+    },
+    "random_forest_42": {
+      "candidate": "random_forest_42",
+      "checks": {
+        "supervisor_and_worker_pass": true,
+        "identity_and_full_train": true,
+        "frozen_input_hashes": true,
+        "frozen_threshold_and_classes": true,
+        "features_and_order": true,
+        "environment_match": true,
+        "clean_execution": true,
+        "not_original_model": true,
+        "local_artifact_filename": true,
+        "local_sha256_and_length": true,
+        "random_forest_42_pipeline": true,
+        "random_forest_42_forest_type": true,
+        "random_forest_42_preprocess_fitted": true,
+        "random_forest_42_hyperparameters": true,
+        "random_forest_42_fitted_trees": true,
+        "ordered_probe": true,
+        "proba_shape_and_finite": true,
+        "proba_normalized": true,
+        "class_order": true,
+        "hash_stable_after_reload": true
+      },
+      "claimed_artifact_sha256": "9509b1561e50488c756ac986595da4efd9f75a8ede6a8fc4c1f04f15ce85ef8d",
+      "claimed_artifact_bytes": 42207326,
+      "passed": true
+    },
+    "stacking_42": {
+      "candidate": "stacking_42",
+      "checks": {
+        "supervisor_and_worker_pass": true,
+        "identity_and_full_train": true,
+        "frozen_input_hashes": true,
+        "frozen_threshold_and_classes": true,
+        "features_and_order": true,
+        "environment_match": true,
+        "clean_execution": true,
+        "not_original_model": true,
+        "local_artifact_filename": true,
+        "local_sha256_and_length": true,
+        "stack_type": true,
+        "stack_fitted_base_count": true,
+        "stack_schema": true,
+        "stack_cv_frozen": true,
+        "stack_meta_fit": true,
+        "stack_execution_parameters": true,
+        "stack_base_names": true,
+        "stack_lr": true,
+        "stack_dt": true,
+        "stack_rf_pipeline": true,
+        "stack_rf_forest_type": true,
+        "stack_rf_preprocess_fitted": true,
+        "stack_rf_hyperparameters": true,
+        "stack_rf_fitted_trees": true,
+        "ordered_probe": true,
+        "proba_shape_and_finite": true,
+        "proba_normalized": true,
+        "class_order": true,
+        "hash_stable_after_reload": true
+      },
+      "claimed_artifact_sha256": "cb0d9b6c50ca19f83982a7bdf5d952d468cb6de9412234791db03efaee594995",
+      "claimed_artifact_bytes": 42368839,
+      "passed": true
+    }
+  },
+  "passed": true,
+  "environment": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0",
+    "psutil": "7.2.2"
+  },
+  "frozen_input_sha256": {
+    "data/raw/unsw-nb15/UNSW_NB15_training-set.csv": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa",
+    "src/models/run_unsw_phase9_final_holdout.py": "3e7d1369222ccdf452116e069a0db3df55e1d6d683d0f92f4e2bcde0800ae480",
+    "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json": "cdda800318c5d2259e581bff5b194381be7434d654950377dd4b40fca50be0a6",
+    "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json": "5a8fe201c88b49a2c018778f6d159a107b6fdfa810c05c1606e42e6d675244be"
+  }
+}
