@@ -3,7 +3,7 @@ name: Build NCKH report revision V2
 on:
   push:
     branches:
-      - codex/revision-v2-2026-10-17
+      - main
     paths:
       - "report/main_revision_v2_2026_10_17.tex"
       - "report/chapters/*v2_2026_10_17.tex"
@@ -47,9 +47,11 @@ jobs:
           TEXT="exports/report_revision_v2_2026_10_17/pdf_extracted.txt"
           INFO="exports/report_revision_v2_2026_10_17/pdfinfo.txt"
           QA="docs/research/REPORT_REVISION_V2_QA_2026-10-17.md"
+          NORMALIZED="$RUNNER_TEMP/pdf_extracted_normalized.txt"
           test -s "$PDF"
           pdfinfo "$PDF" | tee "$INFO"
           pdftotext -layout "$PDF" "$TEXT"
+          tr -d '[:space:]' < "$TEXT" > "$NORMALIZED"
           pages=$(awk '/^Pages:/ {print $2}' "$INFO")
           if [ "$pages" -lt 35 ] || [ "$pages" -gt 80 ]; then
             echo "::error title=Unexpected PDF page count::$pages"
@@ -58,8 +60,8 @@ jobs:
           for required in "RQ1" "RQ2" "RQ3" "RQ4" "RQ5" "0.950387" "0.947325" \
             "0.946758" "0.951484" "0.863840" "0.858125" "0.857473" \
             "scikit-learn 1.9.0" "Fuzzers" "Worms"; do
-            if ! grep -F -q "$required" "$TEXT"; then
-              echo "::error title=Missing PDF content::$required"
+            if ! grep -F -q "$required" "$NORMALIZED"; then
+              echo "::error title=Missing PDF content::$required is absent after removing extraction whitespace"
               exit 1
             fi
             echo "Required PDF content found: $required"
