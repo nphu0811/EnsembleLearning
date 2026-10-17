@@ -1,0 +1,34 @@
+{
+  "scope": "Targeted DOI lookup and publisher related-article follow-up; not systematic screening",
+  "date": "2026-10-17",
+  "queries": [
+    "Exact DOI L06/L12/L03",
+    "Machine Learning in Network Intrusion Detection Cross-Dataset Cantone full text",
+    "UNSW-NB15 stacking random forest ensemble feature selection official split",
+    "Exact L08 DOI lawful full text",
+    "Exact L03 publisher VOR"
+  ],
+  "new_papers": [
+    "N01:10.1007/s11227-025-07609-9",
+    "N02:10.1186/s40537-024-00994-7",
+    "N03:10.1007/s12083-025-02172-9"
+  ],
+  "preflight": {
+    "PubMed": "OK",
+    "Crossref": "OK",
+    "arXiv": "TLS_CERTIFICATE_VERIFY_FAILED"
+  },
+  "access_failures": {
+    "L03": "IEEE VOR direct202empty; webabstract418; unresolved",
+    "L09": "urllibTLS failure; Windows defaultTLS403; no certificate bypass",
+    "Springer_direct": "3038byte JS challenge, not full text",
+    "Crossref_N02": "initial429; successful single retry after other work"
+  },
+  "full_text_body_read": [
+    "L06 selected publisher sections",
+    "L12 selected publisher PDF pages",
+    "N02 selected publisher sections"
+  ],
+  "no_new_whole_paper_read_claim": true,
+  "primary_sources_only_for_method_claims": true
+}

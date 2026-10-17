@@ -63,3 +63,8 @@ Owner: session agent within explicit autonomous user authorization. Không thay 
 - D33. P19reviewinventory/READMEdo notgrantlicenses orcloseG0-G6. DeferfinalP20paneluntilitsfixedpacket/inputconditionscanbesatisfied. No humanreviewendorsement claimed.
 
 - D34. Preserve three already tracked historical SMOKE_ONLY binaries; flag P19 release inventory FAIL and absent code license. No new model binaries, deletion or history rewrite. Evidence initial commit c4ed771 and review_inventory validation.
+
+
+##17/10/2026 P18deep
+
+D35. Treat targeted7paper/3selected-sectionreading as PARTIAL,not fullcorpus. D36. Protocol mismatch and prior hybridFS+stacking+UNSW evidence prevent novelty/superiority inflation. D37. Preserve published L12score/scope drift and L03VORconflict; noexternalpaper/projectmetriccorrection. D38. Ignore localfullsourcecaptures inGit; do notuseHTTP200challengeasfulltext;retainfetchfailures andsuccessfulCrossrefretry.

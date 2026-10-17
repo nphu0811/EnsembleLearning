@@ -1,0 +1,519 @@
+{
+  "checks": [
+    {
+      "check": "unique paper IDs",
+      "passed": true
+    },
+    {
+      "check": "unique normalized DOIs",
+      "passed": true
+    },
+    {
+      "check": "24 unique claims",
+      "passed": true
+    },
+    {
+      "check": "all comparison axes explicit L06",
+      "passed": true
+    },
+    {
+      "check": "no whole-paper-read upgrade L06",
+      "passed": true
+    },
+    {
+      "check": "all comparison axes explicit L12",
+      "passed": true
+    },
+    {
+      "check": "no whole-paper-read upgrade L12",
+      "passed": true
+    },
+    {
+      "check": "all comparison axes explicit N02",
+      "passed": true
+    },
+    {
+      "check": "no whole-paper-read upgrade N02",
+      "passed": true
+    },
+    {
+      "check": "all comparison axes explicit L08",
+      "passed": true
+    },
+    {
+      "check": "no whole-paper-read upgrade L08",
+      "passed": true
+    },
+    {
+      "check": "all comparison axes explicit L09",
+      "passed": true
+    },
+    {
+      "check": "no whole-paper-read upgrade L09",
+      "passed": true
+    },
+    {
+      "check": "all comparison axes explicit N01",
+      "passed": true
+    },
+    {
+      "check": "no whole-paper-read upgrade N01",
+      "passed": true
+    },
+    {
+      "check": "all comparison axes explicit N03",
+      "passed": true
+    },
+    {
+      "check": "no whole-paper-read upgrade N03",
+      "passed": true
+    },
+    {
+      "check": "L12 valid PDF signature",
+      "passed": true
+    },
+    {
+      "check": "L12 23 pages",
+      "passed": true
+    },
+    {
+      "check": "L12 DOI identity",
+      "passed": true
+    },
+    {
+      "check": "L12 explicit CC BY notice",
+      "passed": true
+    },
+    {
+      "check": "known paper C01",
+      "passed": true
+    },
+    {
+      "check": "explicit status C01",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C01",
+      "passed": true
+    },
+    {
+      "check": "anchor found C01",
+      "passed": true
+    },
+    {
+      "check": "known paper C02",
+      "passed": true
+    },
+    {
+      "check": "explicit status C02",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C02",
+      "passed": true
+    },
+    {
+      "check": "anchor found C02",
+      "passed": true
+    },
+    {
+      "check": "known paper C03",
+      "passed": true
+    },
+    {
+      "check": "explicit status C03",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C03",
+      "passed": true
+    },
+    {
+      "check": "anchor found C03",
+      "passed": true
+    },
+    {
+      "check": "known paper C04",
+      "passed": true
+    },
+    {
+      "check": "explicit status C04",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C04",
+      "passed": true
+    },
+    {
+      "check": "anchor found C04",
+      "passed": true
+    },
+    {
+      "check": "known paper C05",
+      "passed": true
+    },
+    {
+      "check": "explicit status C05",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C05",
+      "passed": true
+    },
+    {
+      "check": "anchor found C05",
+      "passed": true
+    },
+    {
+      "check": "known paper C06",
+      "passed": true
+    },
+    {
+      "check": "explicit status C06",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C06",
+      "passed": true
+    },
+    {
+      "check": "anchor found C06",
+      "passed": true
+    },
+    {
+      "check": "known paper C07",
+      "passed": true
+    },
+    {
+      "check": "explicit status C07",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C07",
+      "passed": true
+    },
+    {
+      "check": "anchor found C07",
+      "passed": true
+    },
+    {
+      "check": "known paper C08",
+      "passed": true
+    },
+    {
+      "check": "explicit status C08",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C08",
+      "passed": true
+    },
+    {
+      "check": "anchor found C08",
+      "passed": true
+    },
+    {
+      "check": "known paper C09",
+      "passed": true
+    },
+    {
+      "check": "explicit status C09",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C09",
+      "passed": true
+    },
+    {
+      "check": "anchor found C09",
+      "passed": true
+    },
+    {
+      "check": "known paper C10",
+      "passed": true
+    },
+    {
+      "check": "explicit status C10",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C10",
+      "passed": true
+    },
+    {
+      "check": "anchor found C10",
+      "passed": true
+    },
+    {
+      "check": "known paper C11",
+      "passed": true
+    },
+    {
+      "check": "explicit status C11",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C11",
+      "passed": true
+    },
+    {
+      "check": "anchor found C11",
+      "passed": true
+    },
+    {
+      "check": "known paper C12",
+      "passed": true
+    },
+    {
+      "check": "explicit status C12",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C12",
+      "passed": true
+    },
+    {
+      "check": "anchor found C12",
+      "passed": true
+    },
+    {
+      "check": "known paper C13",
+      "passed": true
+    },
+    {
+      "check": "explicit status C13",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C13",
+      "passed": true
+    },
+    {
+      "check": "anchor found C13",
+      "passed": true
+    },
+    {
+      "check": "known paper C14",
+      "passed": true
+    },
+    {
+      "check": "explicit status C14",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C14",
+      "passed": true
+    },
+    {
+      "check": "anchor found C14",
+      "passed": true
+    },
+    {
+      "check": "known paper C15",
+      "passed": true
+    },
+    {
+      "check": "explicit status C15",
+      "passed": true
+    },
+    {
+      "check": "source physical page C15",
+      "passed": true
+    },
+    {
+      "check": "anchor found C15",
+      "passed": true
+    },
+    {
+      "check": "known paper C16",
+      "passed": true
+    },
+    {
+      "check": "explicit status C16",
+      "passed": true
+    },
+    {
+      "check": "source physical page C16",
+      "passed": true
+    },
+    {
+      "check": "anchor found C16",
+      "passed": true
+    },
+    {
+      "check": "known paper C17",
+      "passed": true
+    },
+    {
+      "check": "explicit status C17",
+      "passed": true
+    },
+    {
+      "check": "source physical page C17",
+      "passed": true
+    },
+    {
+      "check": "anchor found C17",
+      "passed": true
+    },
+    {
+      "check": "known paper C18",
+      "passed": true
+    },
+    {
+      "check": "explicit status C18",
+      "passed": true
+    },
+    {
+      "check": "source physical page C18",
+      "passed": true
+    },
+    {
+      "check": "anchor found C18",
+      "passed": true
+    },
+    {
+      "check": "known paper C19",
+      "passed": true
+    },
+    {
+      "check": "explicit status C19",
+      "passed": true
+    },
+    {
+      "check": "source physical page C19",
+      "passed": true
+    },
+    {
+      "check": "anchor found C19",
+      "passed": true
+    },
+    {
+      "check": "known paper C20",
+      "passed": true
+    },
+    {
+      "check": "explicit status C20",
+      "passed": true
+    },
+    {
+      "check": "source physical page C20",
+      "passed": true
+    },
+    {
+      "check": "anchor found C20",
+      "passed": true
+    },
+    {
+      "check": "known paper C21",
+      "passed": true
+    },
+    {
+      "check": "explicit status C21",
+      "passed": true
+    },
+    {
+      "check": "source physical page C21",
+      "passed": true
+    },
+    {
+      "check": "anchor found C21",
+      "passed": true
+    },
+    {
+      "check": "known paper C22",
+      "passed": true
+    },
+    {
+      "check": "explicit status C22",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C22",
+      "passed": true
+    },
+    {
+      "check": "anchor found C22",
+      "passed": true
+    },
+    {
+      "check": "known paper C23",
+      "passed": true
+    },
+    {
+      "check": "explicit status C23",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C23",
+      "passed": true
+    },
+    {
+      "check": "anchor found C23",
+      "passed": true
+    },
+    {
+      "check": "known paper C24",
+      "passed": true
+    },
+    {
+      "check": "explicit status C24",
+      "passed": true
+    },
+    {
+      "check": "correct DOI present in capture C24",
+      "passed": true
+    },
+    {
+      "check": "anchor found C24",
+      "passed": true
+    },
+    {
+      "check": "observed table5a anchor value",
+      "passed": true
+    },
+    {
+      "check": "observed nearby prose value",
+      "passed": true
+    },
+    {
+      "check": "observed comparison value",
+      "passed": true
+    },
+    {
+      "check": "reporting discrepancy retained",
+      "passed": true
+    },
+    {
+      "check": "new DOI exact identity N02",
+      "passed": true
+    },
+    {
+      "check": "new paper title corroborated N02",
+      "passed": true
+    },
+    {
+      "check": "new DOI exact identity N01",
+      "passed": true
+    },
+    {
+      "check": "new paper title corroborated N01",
+      "passed": true
+    },
+    {
+      "check": "new DOI exact identity N03",
+      "passed": true
+    },
+    {
+      "check": "new paper title corroborated N03",
+      "passed": true
+    }
+  ],
+  "pass_count": 127,
+  "fail_count": 0,
+  "paper_count": 7,
+  "selected_body_read_count": 3,
+  "abstract_or_prior_scope_count": 4,
+  "new_claims": 24,
+  "scope": "Source-anchor, identity, coverage and observed reporting-discrepancy checks, not independent experimental reproduction or peer review."
+}

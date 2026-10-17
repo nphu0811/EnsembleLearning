@@ -1,3 +1,15 @@
+# P18 deep verification — current17/10/2026
+
+| Task | Status | Evidence |
+|---|---|---|
+| P18-DEEP-CLOSEST-METHODS | DONE_SCOPED_SELECTED_SECTIONS |7papers/3selected-bodyreads/24assertions;qa_03 136PASS0FAIL;deepverificationreport |
+| P18 overall | PARTIAL |L03VOR,4access-limitedrows,fullclaimreading/noveltysearchremain |
+| P19-SAFE-DRAFT | NEXT |Inventorythreehistoricalsmokemodels;allowlistinternalpackage,noindexcleanup |
+| P20 | DEFERRED |Preparepacket/rubriconlywhenP18/P19boundedinputsready;noactualpanel |
+
+P15andfrozenPDF/resultsunchanged;priorcheckpointsbelowretained.
+---
+
 # Current task checkpoint — 17/10/2026
 
 | Task | Status | Fresh evidence |

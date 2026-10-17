@@ -1,0 +1,13 @@
+{
+  "input_commit": "7c3530e40dd34eb63b9c7fde6b4eecda817e5a74",
+  "status": "DONE_SCOPED_SELECTED_SECTIONS; P18PARTIAL",
+  "qa": "136PASS0FAIL",
+  "shortlist": 7,
+  "body_selected_reads": 3,
+  "claim_map_entries": 24,
+  "whole_paper_read_claims": 0,
+  "training": false,
+  "official_test_opened": false,
+  "report_or_bibliography_changed": false,
+  "next": "P19safeartifactinventoryandallowlistinternaldraft"
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "id": "L06",
+    "url": "https://link.springer.com/content/pdf/10.1007/s40747-023-01013-7.pdf",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "resolved_url": "https://link.springer.com/content/pdf/10.1007/s40747-023-01013-7.pdf",
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/L06.html",
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "bytes": 3038,
+    "is_pdf": false,
+    "status": "CAPTURED_LOCAL_ONLY",
+    "acceptance": "NON_PDF_RESPONSE_NOT_FULL_TEXT; HTTP success alone rejected"
+  },
+  {
+    "id": "L12",
+    "url": "https://mdpi-res.com/d_attachment/computers/computers-14-00082/article_deploy/computers-14-00082.pdf",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "resolved_url": "https://mdpi-res.com/d_attachment/computers/computers-14-00082/article_deploy/computers-14-00082.pdf",
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/L12.pdf",
+    "sha256": "6a92888aaac96cff568c0b09e4f50f485e4f5744d84287d0397404ff4c692852",
+    "bytes": 2600055,
+    "is_pdf": true,
+    "status": "CAPTURED_LOCAL_ONLY",
+    "pages": 23
+  },
+  {
+    "id": "L09",
+    "url": "https://iris.unicas.it/retrieve/a40146bd-61d7-4a77-98c7-cf72f480c839/2024%20-%20Machine%20Learning%20in%20Network%20Intrusion%20Detection%20-%20A%20Cross-Dataset%20Generalization%20Study.pdf",
+    "status": "FETCH_FAILED",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)>"
+  },
+  {
+    "id": "L08_preview",
+    "url": "https://link.springer.com/article/10.1007/s10207-023-00767-y",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "resolved_url": "https://link.springer.com/article/10.1007/s10207-023-00767-y",
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/L08_preview.html",
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "bytes": 3038,
+    "is_pdf": false,
+    "status": "CAPTURED_LOCAL_ONLY",
+    "acceptance": "NON_PDF_RESPONSE_NOT_FULL_TEXT; HTTP success alone rejected"
+  },
+  {
+    "id": "N01_preview",
+    "url": "https://link.springer.com/article/10.1007/s11227-025-07609-9",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "resolved_url": "https://link.springer.com/article/10.1007/s11227-025-07609-9",
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/N01_preview.html",
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "bytes": 3038,
+    "is_pdf": false,
+    "status": "CAPTURED_LOCAL_ONLY",
+    "acceptance": "NON_PDF_RESPONSE_NOT_FULL_TEXT; HTTP success alone rejected"
+  },
+  {
+    "id": "N03_preview",
+    "url": "https://link.springer.com/article/10.1007/s12083-025-02172-9",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "resolved_url": "https://link.springer.com/article/10.1007/s12083-025-02172-9",
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/N03_preview.html",
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "bytes": 3038,
+    "is_pdf": false,
+    "status": "CAPTURED_LOCAL_ONLY",
+    "acceptance": "NON_PDF_RESPONSE_NOT_FULL_TEXT; HTTP success alone rejected"
+  },
+  {
+    "id": "L03_VOR",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9947235",
+    "http_status": 202,
+    "content_type": "text/html; charset=UTF-8",
+    "resolved_url": "https://ieeexplore.ieee.org/document/9947235/;jsessionid=[REDACTED_EPHEMERAL_ROUTE]",
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/L03_VOR.html",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "is_pdf": false,
+    "status": "CAPTURED_LOCAL_ONLY",
+    "redaction": "Anonymous session routing identifier omitted; raw response hash retained",
+    "acceptance": "NON_PDF_RESPONSE_NOT_FULL_TEXT; HTTP success alone rejected"
+  }
+]

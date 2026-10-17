@@ -1,0 +1,134 @@
+[
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/L03_VOR.html",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/L06.html",
+    "bytes": 3038,
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/L06_conclusion_N02_split.web.txt",
+    "bytes": 34335,
+    "sha256": "46307b22030da460626e39ba6cbfcc761deb24ef2347571f2ea18b1312052fc1",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/L06_results.web.txt",
+    "bytes": 36122,
+    "sha256": "fb29ea8e76d0f6fbb53f18eb32d64ea86ea629a13a853e35df25c742e992953f",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/L06_tables_conclusion.web.txt",
+    "bytes": 35431,
+    "sha256": "d46fb0557a7166fc597b31392af2497031234940c5d7094c76f6e658fa6bbe28",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/L08_preview.html",
+    "bytes": 3038,
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/L09_methods.web.txt",
+    "bytes": 224,
+    "sha256": "f549dd32d7f0beb4429c51b753786276a0bbaf60b6f7ffdea2059c54ffe4702c",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/L12.pages.json",
+    "bytes": 76880,
+    "sha256": "6de3251785a6d54f8ae074fdf3cc20733f34cd140d9ddbb4746dafa96565456a",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/L12.pdf",
+    "bytes": 2600055,
+    "sha256": "6a92888aaac96cff568c0b09e4f50f485e4f5744d84287d0397404ff4c692852",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/L12_p16.png",
+    "bytes": 150718,
+    "sha256": "991495453b47151b5ca610bf49fbbeac7119d47bf1608f22f987f5896c48007b",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/L12_p17.png",
+    "bytes": 201378,
+    "sha256": "515e942250cc656ad8cc5e4191847101071a166d151b7c7b51161876516518e3",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/L12_p18.png",
+    "bytes": 139024,
+    "sha256": "5f49981089b6985bb542a5180b69ef4813e1112e4c85965578003edd7ae1ec98",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/N01_preview.html",
+    "bytes": 3038,
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/N02_bmc.html",
+    "bytes": 3038,
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/N02_methods_results.web.txt",
+    "bytes": 30809,
+    "sha256": "ff57257b70a54b81b89bfd9c87d44058d49e9b4f6981aa9cb9bd9db4969c7c12",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/N02_pdf.html",
+    "bytes": 3038,
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/N02_stacking.web.txt",
+    "bytes": 30047,
+    "sha256": "995eeed54f2351951602a0a9de67c038cb0990239855519fb767e8a22b561ade",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/N03_preview.html",
+    "bytes": 3038,
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/publisher_L06_methods.web.txt",
+    "bytes": 37487,
+    "sha256": "c072c337e17cfbec513a9fc9f78bcc9ab13ab0fce8993aab211f683aa3fd093f",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/publisher_N01_N03_previews.web.txt",
+    "bytes": 28536,
+    "sha256": "74bba2368bbf2376edbf04bea796b1ec3bd0e70908ced922ae26bc5d29d42af1",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/publisher_N02_split.web.txt",
+    "bytes": 35718,
+    "sha256": "0a517a51c4bfddf3341f895930f9a1be7a545241d4fd47b5a384daf1d452652b",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  },
+  {
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/publisher_new_metadata.web.txt",
+    "bytes": 31219,
+    "sha256": "01322c9b28e45b63ab6320982b0f1a8f628e3578978d88a61cf3e3120ac1527e",
+    "distribution": "LOCAL_READING_ONLY; not in draft package or Git"
+  }
+]

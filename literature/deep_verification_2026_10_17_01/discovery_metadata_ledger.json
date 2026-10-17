@@ -1,0 +1,126 @@
+[
+  {
+    "id": "N01",
+    "doi": "10.1007/s11227-025-07609-9",
+    "url": "https://api.crossref.org/works/10.1007/s11227-025-07609-9",
+    "http_status": 200,
+    "path": "literature/deep_verification_2026_10_17_01/N01_crossref.json",
+    "sha256": "689e34a51c7b67fc810e9b021fe587f84c3b8a8a8e9deefcc12199c090789b62",
+    "title": [
+      "A multivariate filter feature selection and stacking-based ensemble learning algorithm for network intrusion detection"
+    ],
+    "authors": [
+      {
+        "given": "Seyedeh Maryam",
+        "family": "Hashemi Jouybari",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alireza",
+        "family": "Janbaz",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ahmad",
+        "family": "Esfandiari",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          9
+        ]
+      ]
+    },
+    "container": [
+      "The Journal of Supercomputing"
+    ],
+    "volume": "81",
+    "page": null,
+    "article_number": "1129",
+    "status": "DOI_IDENTITY_RETURNED"
+  },
+  {
+    "id": "N02",
+    "doi": "10.1186/s40537-024-00994-7",
+    "url": "https://api.crossref.org/works/10.1186/s40537-024-00994-7",
+    "status": "FETCH_FAILED",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "id": "N03",
+    "doi": "10.1007/s12083-025-02172-9",
+    "url": "https://api.crossref.org/works/10.1007/s12083-025-02172-9",
+    "http_status": 200,
+    "path": "literature/deep_verification_2026_10_17_01/N03_crossref.json",
+    "sha256": "3ea539de26b6385c6f70baa9402e38b18287f9f6e2608b4ac6196f5a01a0e8f4",
+    "title": [
+      "An autonomous intrusion detection framework leveraging multi-layered stacking ensemble architectures with dynamic machine learning-driven feature subset optimisation"
+    ],
+    "authors": [
+      {
+        "given": "Faraj",
+        "family": "Chishti",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Geetanjali",
+        "family": "Rathee",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "container": [
+      "Peer-to-Peer Networking and Applications"
+    ],
+    "volume": "19",
+    "page": null,
+    "article_number": "37",
+    "status": "DOI_IDENTITY_RETURNED"
+  }
+]

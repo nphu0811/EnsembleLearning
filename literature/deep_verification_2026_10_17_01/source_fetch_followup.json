@@ -1,0 +1,38 @@
+[
+  {
+    "id": "L06_canonical",
+    "url": "https://link.springernature.com/content/pdf/10.1007/s40747-023-01013-7.pdf",
+    "status": "FETCH_FAILED",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "N02_pdf",
+    "url": "https://link.springer.com/content/pdf/10.1186/s40537-024-00994-7.pdf",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "resolved_url": "https://link.springer.com/content/pdf/10.1186/s40537-024-00994-7.pdf",
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/N02_pdf.html",
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "bytes": 3038,
+    "is_pdf": false,
+    "status": "NON_PDF_RESPONSE_NOT_FULLTEXT"
+  },
+  {
+    "id": "N02_bmc",
+    "url": "https://journalofbigdata.springeropen.com/articles/10.1186/s40537-024-00994-7",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "resolved_url": "https://journalofbigdata.springeropen.com/articles/10.1186/s40537-024-00994-7",
+    "path": "literature/deep_verification_2026_10_17_01/local_sources/N02_bmc.html",
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "bytes": 3038,
+    "is_pdf": false,
+    "status": "NON_PDF_RESPONSE_NOT_FULLTEXT"
+  },
+  {
+    "id": "L09_preprint",
+    "url": "https://arxiv.org/pdf/2402.10974",
+    "status": "FETCH_FAILED",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)>"
+  }
+]

@@ -1,0 +1,2039 @@
+{
+  "source_head": "7c3530e40dd34eb63b9c7fde6b4eecda817e5a74",
+  "checks": [
+    {
+      "path": ".gitignore",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/CHANGELOG.md",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/DECISIONS.md",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/EVIDENCE_INDEX.csv",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/HANDOFF.md",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/ISSUE_LOG.md",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/RESEARCH_CANON.md",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/SKILL_USAGE_LOG.md",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/TASK_BOARD.md",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/checkpoint_r03.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/p16_2026_10_17/STATE_at_entry.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/p16_2026_10_17/checkpoint.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/p16_2026_10_17/failure_history.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/p16_2026_10_17/figure_source_preflight.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/p16_2026_10_17/final_validation.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/p16_2026_10_17/report_display_source_map.csv",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/r04/R04-ASSEMBLY.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/r04/R04-DEFENSE-CONTENT.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/r04/R04-FINAL-CHECKPOINT.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/r04/R04-FORM-AUDIT.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/r04/R04-GAP-LIT.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/r04/R04-ML-SMOKE.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/r04/R04-READ.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/r04/R04-REF.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/r04/R04-RESUME.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/r04/R04-SMOKE-PLAN.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/r04/STATE_at_entry.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/r05/R05-ASSEMBLY-REVIEW.json",
+      "passed": true
+    },
+    {
+      "path": ".research_memory/r05/STATE_at_entry.json",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "passed": true
+    },
+    {
+      "path": "defense/Demo_runbook.md",
+      "passed": true
+    },
+    {
+      "path": "defense/Final_QA_Checklist.md",
+      "passed": true
+    },
+    {
+      "path": "defense/Hoi_dap_hoi_dong.md",
+      "passed": true
+    },
+    {
+      "path": "defense/Kich_ban_thuyet_trinh.md",
+      "passed": true
+    },
+    {
+      "path": "defense/QA_PREPARATION_CONTRACT.md",
+      "passed": true
+    },
+    {
+      "path": "defense/qa_validation_r02.json",
+      "passed": true
+    },
+    {
+      "path": "defense/r04_content_validation.json",
+      "passed": true
+    },
+    {
+      "path": "docs/CLAIM_EVIDENCE_MATRIX.md",
+      "passed": true
+    },
+    {
+      "path": "docs/P15_01_VERIFICATION.md",
+      "passed": true
+    },
+    {
+      "path": "docs/P15_02_ENVIRONMENT_VERIFICATION.md",
+      "passed": true
+    },
+    {
+      "path": "docs/P15_03B_SOURCE_AND_P15_04_SCOPE.md",
+      "passed": true
+    },
+    {
+      "path": "docs/P15_04_SNAPSHOT_ONLY_EXAMPLE.md",
+      "passed": true
+    },
+    {
+      "path": "docs/PREMATURE_REPORTING_INVENTORY.csv",
+      "passed": true
+    },
+    {
+      "path": "docs/PUBLIC_SURFACE_AUDIT_R05.md",
+      "passed": true
+    },
+    {
+      "path": "docs/R04_TASK_CONTRACTS.md",
+      "passed": true
+    },
+    {
+      "path": "docs/R05_TASK_CONTRACT.md",
+      "passed": true
+    },
+    {
+      "path": "docs/RESUME_AUDIT.md",
+      "passed": true
+    },
+    {
+      "path": "docs/RESUME_AUDIT_2026-10-17_P16.md",
+      "passed": true
+    },
+    {
+      "path": "docs/RESUME_AUDIT_R02_2026-10-16.md",
+      "passed": true
+    },
+    {
+      "path": "docs/RESUME_AUDIT_R03_2026-10-16.md",
+      "passed": true
+    },
+    {
+      "path": "docs/RESUME_AUDIT_R04_2026-10-16.md",
+      "passed": true
+    },
+    {
+      "path": "docs/ROADMAP_CURRENT.md",
+      "passed": true
+    },
+    {
+      "path": "docs/ROADMAP_PHASE_AUDIT_2026-10-07.md",
+      "passed": true
+    },
+    {
+      "path": "docs/ROADMAP_RECONCILIATION.md",
+      "passed": true
+    },
+    {
+      "path": "docs/TAKEOVER_FILE_INVENTORY.csv",
+      "passed": true
+    },
+    {
+      "path": "docs/TAKEOVER_PRESERVATION_SHA256.csv",
+      "passed": true
+    },
+    {
+      "path": "docs/TEMPLATE_FOLDER_REVIEW.md",
+      "passed": true
+    },
+    {
+      "path": "docs/TEMPLATE_MAPPING.md",
+      "passed": true
+    },
+    {
+      "path": "docs/TEMPLATE_REQUIREMENTS_MATRIX.md",
+      "passed": true
+    },
+    {
+      "path": "docs/research/DATA_CODE_AVAILABILITY.md",
+      "passed": true
+    },
+    {
+      "path": "docs/research/ENSEMBLE_FRAMEWORK.md",
+      "passed": true
+    },
+    {
+      "path": "docs/research/P15_01_SCRIPT_IO_MATRIX.csv",
+      "passed": true
+    },
+    {
+      "path": "docs/research/P15_01_SOURCE_VERIFICATION.json",
+      "passed": true
+    },
+    {
+      "path": "docs/research/P15_03_DATASET_PROVENANCE.md",
+      "passed": true
+    },
+    {
+      "path": "docs/research/P16_COMPREHENSIVE_QA_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "path": "docs/research/P16_PAIRED_EFFECT_CONTRACT.md",
+      "passed": true
+    },
+    {
+      "path": "docs/research/P18_CURRENT_REPORT_READING_BOUNDARIES_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "path": "docs/research/P19_RELEASE_READINESS_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "path": "docs/research/PHASE14_ERROR_ANALYSIS_CLOSURE.md",
+      "passed": true
+    },
+    {
+      "path": "docs/research/PHASE15_REPRODUCIBILITY_OPENING_CHECKLIST.md",
+      "passed": true
+    },
+    {
+      "path": "docs/research/R04_ML_SMOKE_CONTRACT.md",
+      "passed": true
+    },
+    {
+      "path": "docs/research/R04_ML_SMOKE_REPORT.md",
+      "passed": true
+    },
+    {
+      "path": "docs/research/R04_SMOKE_REPAIR.md",
+      "passed": true
+    },
+    {
+      "path": "docs/research/R05_FULL_TRAIN_RECONSTRUCTION_PLAN.md",
+      "passed": true
+    },
+    {
+      "path": "docs/research/REPRODUCIBILITY_MAP.md",
+      "passed": true
+    },
+    {
+      "path": "docs/research/REPRODUCIBILITY_RUNBOOK.md",
+      "passed": true
+    },
+    {
+      "path": "literature/gap_matrix.md",
+      "passed": true
+    },
+    {
+      "path": "literature/literature_matrix.csv",
+      "passed": true
+    },
+    {
+      "path": "literature/refs_verified_subset.bib",
+      "passed": true
+    },
+    {
+      "path": "literature/report_audit_2026_10_17_01/citation_claim_contexts.json",
+      "passed": true
+    },
+    {
+      "path": "literature/report_audit_2026_10_17_01/reference_reading_ledger.csv",
+      "passed": true
+    },
+    {
+      "path": "literature/report_audit_2026_10_17_01/source_manifest.json",
+      "passed": true
+    },
+    {
+      "path": "literature/report_audit_2026_10_17_01/validation.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/DOMESTIC_SOURCES.md",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L01_crossref_doi.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L01_crossref_search.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L02_crossref_doi.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L02_crossref_search.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L03_crossref_doi.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L03_crossref_search.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L04_crossref_doi.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L04_crossref_search.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L05_crossref_doi.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L06_crossref_doi.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L07_final_crossref_doi.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L07_preprint_crossref_doi.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L08_crossref_doi.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L09_crossref_doi.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L10_crossref_doi.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L10_crossref_search.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L11_crossref_doi.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/L12_crossref_doi.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/READING_NOTES.md",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/SEARCH_PROTOCOL_AND_QA.md",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/doi_metadata.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/legacy_candidates.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/legacy_verification_ledger.csv",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/legacy_working_references.bib",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/validation.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r02_2026_10_16/version_relations.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/FIELD_CROSSCHECKS.md",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/L10_comsoc.pdf",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/L11_uaeu.html",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/fetch_ledger.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/legacy_verification_ledger.csv",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/validation.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_1.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_2.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_3.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_4.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_5.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_6.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_7.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r03_2026_10_16/web_capture_8.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/FIELD_VERIFICATION_REPORT.md",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/GAP_MATRIX_R04.md",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/L01_crossref.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/L02_crossref.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/L03_crossref.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/L09_crossref.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/L10_crossref.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/L12_crossref.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/SCOPED_READING_NOTES.md",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/api_ledger.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/gap_matrix_before_r04.md",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/legacy_verification_ledger.csv",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/reading_capture_1.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/reading_capture_2.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/reading_capture_3.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/reading_capture_4.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/reading_validation.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/source_claim_map.csv",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/validation.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/web_capture_1.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/web_capture_10.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/web_capture_2.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/web_capture_3.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/web_capture_4.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/web_capture_5.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/web_capture_6.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/web_capture_7.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/web_capture_8.json",
+      "passed": true
+    },
+    {
+      "path": "literature/resume_r04_2026_10_16/web_capture_9.json",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/VERIFICATION_REPORT.md",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_01_retry.json",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_02.json",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_03_retry.json",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_04.json",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_05.json",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/crossref_summary.json",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/dataset_references.bib",
+      "passed": true
+    },
+    {
+      "path": "literature/verification_2026_10_16/reference_verification_ledger.csv",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/00_scope.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/01_research_canon.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/02_evidence_table.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/03_argument_map.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/04_section_contracts.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/05_style_guide.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/06_rq_method_output_gates.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/07_remaining_work_feasibility.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/drafts/De_cuong_noi_dung_review_r04.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/drafts/De_cuong_noi_dung_review_r05.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/drafts/sections/muc_tieu_noi_dung_phuong_phap_r02.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/drafts/sections/tong_quan_luan_cu_r04.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/drafts/sections/ung_dung_san_pham_tien_do_r03.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/foundation_review_r02.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_argument_recheck.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_argument_review.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_mapping_validation.json",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_methods_recheck.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_methods_review.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_section_repair_validation.json",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r02_section_review.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r03_products_section_review.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r03_source_validation.json",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r04_assembled_evidence_review.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r04_assembled_repairs.json",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r04_assembled_review_status.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r04_assembly_validation.json",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r04_lit_argument_review.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r04_lit_evidence_review.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r04_lit_repairs.json",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r04_literature_validation.json",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r05_assembled_argument_recheck.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r05_assembled_argument_review.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r05_review_resolution.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r05_validation_initial.json",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/qa_logs/r05_validation_repaired.json",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/revision_briefs/r05_assembly_brief.md",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/state.json",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/template_audit_r04/field_coverage.csv",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/template_audit_r04/original_body_snapshot.json",
+      "passed": true
+    },
+    {
+      "path": "proposal/researchwrite/nckh-ids/template_audit_r04/validation.json",
+      "passed": true
+    },
+    {
+      "path": "release/RELEASE_BLOCKERS.md",
+      "passed": true
+    },
+    {
+      "path": "release/review_inventory_2026_10_17_01/review_inventory.csv",
+      "passed": true
+    },
+    {
+      "path": "release/review_inventory_2026_10_17_01/validation.json",
+      "passed": true
+    },
+    {
+      "path": "release/review_inventory_2026_10_17_02/review_inventory.csv",
+      "passed": true
+    },
+    {
+      "path": "release/review_inventory_2026_10_17_02/validation.json",
+      "passed": true
+    },
+    {
+      "path": "reproducibility/requirements-p16-qa-py311-NOT-TRAINING.txt",
+      "passed": true
+    },
+    {
+      "path": "reproducibility/requirements-r04-smoke-py311-NOT-ORIGINAL.txt",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/CAPTION_QA.md",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/metadata.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.alignment.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.collision-audit.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.text-audit.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/source_data.csv",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_paired_effects_2026_10_16/source_preflight.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/FAILURE.md",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/attack_family_wilson.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/attack_family_wilson.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/attack_family_wilson.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/attack_family_wilson.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/fpr_fnr_tradeoff.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/fpr_fnr_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/fpr_fnr_tradeoff.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/fpr_fnr_tradeoff.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/macro_f1_ci.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/macro_f1_ci.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/macro_f1_ci.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/macro_f1_ci.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/mcc_ci.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/mcc_ci.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/mcc_ci.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/mcc_ci.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/performance_cost.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/performance_cost.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/performance_cost.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/performance_cost.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/source_attack_category_distribution.csv",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/source_attack_family_miss_rate_ci.csv",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/source_bootstrap_metric_ci.csv",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/source_cost_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/source_recomputed_point_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/FAILURE.md",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/attack_family_wilson.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/attack_family_wilson.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/attack_family_wilson.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/attack_family_wilson.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/category_distribution.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/category_distribution.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/category_distribution.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/category_distribution.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/figure_inventory.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/fpr_fnr_tradeoff.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/fpr_fnr_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/fpr_fnr_tradeoff.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/fpr_fnr_tradeoff.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/macro_f1_ci.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/macro_f1_ci.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/macro_f1_ci.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/macro_f1_ci.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/mcc_ci.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/mcc_ci.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/mcc_ci.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/mcc_ci.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/performance_cost.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/performance_cost.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/performance_cost.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/performance_cost.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/source_attack_category_distribution.csv",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/source_attack_family_miss_rate_ci.csv",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/source_bootstrap_metric_ci.csv",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/source_cost_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/source_manifest.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/source_recomputed_point_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/category_distribution.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/category_distribution.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/category_distribution.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/category_distribution.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/figure_inventory.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/fpr_fnr_tradeoff.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/fpr_fnr_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/fpr_fnr_tradeoff.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/fpr_fnr_tradeoff.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/macro_f1_ci.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/macro_f1_ci.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/macro_f1_ci.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/macro_f1_ci.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/mcc_ci.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/mcc_ci.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/mcc_ci.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/mcc_ci.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/performance_cost.alignment.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/performance_cost.pdf",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/performance_cost.png",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/performance_cost.svg",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/source_attack_category_distribution.csv",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/source_attack_family_miss_rate_ci.csv",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/source_bootstrap_metric_ci.csv",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/source_cost_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/source_manifest.json",
+      "passed": true
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/source_recomputed_point_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/audit.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/derived_metric_identities.csv",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/display_inventory.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/error_tradeoff.preview.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig01_binary_class_distribution.preview.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig01_official_macro_f1_ci.preview.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig02_attack_category_distribution.preview.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig02_official_mcc_ci.preview.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig03_fpr_fnr_tradeoff.preview.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig03_numeric_class_separation.preview.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig04_macro_f1_vs_training_cost.preview.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig04_numeric_correlation_heatmap.preview.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig05_official_vs_novel_macro_f1.preview.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig06_attack_family_miss_rate_ci.preview.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/paired_effects.preview.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/pdf_inventory.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/source_manifest.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_01/error_tradeoff.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_01/fig01_binary_class_distribution.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_01/fig01_official_macro_f1_ci.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_01/fig02_attack_category_distribution.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_01/fig03_numeric_class_separation.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_01/fig04_numeric_correlation_heatmap.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_01/paired_effects.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/error_tradeoff.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/error_tradeoff.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/error_tradeoff.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig01_binary_class_distribution.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig01_binary_class_distribution.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig01_binary_class_distribution.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig01_official_macro_f1_ci.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig01_official_macro_f1_ci.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig01_official_macro_f1_ci.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig02_attack_category_distribution.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig02_attack_category_distribution.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig02_attack_category_distribution.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig02_official_mcc_ci.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig02_official_mcc_ci.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig02_official_mcc_ci.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig03_fpr_fnr_tradeoff.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig03_fpr_fnr_tradeoff.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig03_fpr_fnr_tradeoff.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig03_numeric_class_separation.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig03_numeric_class_separation.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig03_numeric_class_separation.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig04_macro_f1_vs_training_cost.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig04_macro_f1_vs_training_cost.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig04_macro_f1_vs_training_cost.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig04_numeric_correlation_heatmap.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig04_numeric_correlation_heatmap.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig04_numeric_correlation_heatmap.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig05_official_vs_novel_macro_f1.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig05_official_vs_novel_macro_f1.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig05_official_vs_novel_macro_f1.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig06_attack_family_miss_rate_ci.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig06_attack_family_miss_rate_ci.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig06_attack_family_miss_rate_ci.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/paired_effects.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/paired_effects.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/paired_effects.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/summary.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_report_pdf_2026_10_17_01/contact_01_09.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_report_pdf_2026_10_17_01/contact_10_18.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_report_pdf_2026_10_17_01/contact_19_27.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_report_pdf_2026_10_17_01/contact_28_36.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_report_pdf_2026_10_17_01/contact_37_37.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_report_pdf_2026_10_17_01/pdf_audit.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/attack_family_wilson.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/attack_family_wilson.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/attack_family_wilson.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/category_distribution.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/category_distribution.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/category_distribution.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/fpr_fnr_tradeoff.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/fpr_fnr_tradeoff.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/fpr_fnr_tradeoff.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/macro_f1_ci.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/macro_f1_ci.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/macro_f1_ci.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/mcc_ci.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/mcc_ci.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/mcc_ci.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/performance_cost.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/performance_cost.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/performance_cost.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/summary.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/attack_family_wilson.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/attack_family_wilson.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/attack_family_wilson.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/category_distribution.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/category_distribution.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/category_distribution.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/contact.png",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/fpr_fnr_tradeoff.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/fpr_fnr_tradeoff.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/fpr_fnr_tradeoff.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/macro_f1_ci.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/macro_f1_ci.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/macro_f1_ci.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/mcc_ci.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/mcc_ci.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/mcc_ci.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/performance_cost.collision.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/performance_cost.collision.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/performance_cost.text.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/summary.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/r04_ml_smoke/run_metadata.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/r04_ml_smoke/schema.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/r04_ml_smoke/smoke_models/random_forest_17_SMOKE_ONLY.joblib",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/r04_ml_smoke/smoke_models/random_forest_42_SMOKE_ONLY.joblib",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/r04_ml_smoke/smoke_models/stacking_42_SMOKE_ONLY.joblib",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/r04_ml_smoke/validation.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/r04_ml_smoke_repaired/run_metadata.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/r04_ml_smoke_repaired/schema.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/r04_ml_smoke_repaired/smoke_models/random_forest_17_SMOKE_ONLY.joblib",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/r04_ml_smoke_repaired/smoke_models/random_forest_42_SMOKE_ONLY.joblib",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/r04_ml_smoke_repaired/smoke_models/stacking_42_SMOKE_ONLY.joblib",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/r04_ml_smoke_repaired/validation.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/r04_smoke_roundtrip_diagnosis/diagnosis.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/nature_skill_registry.csv",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/preservation_manifest.csv",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/proposal_template_structure.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/saved_evidence_checks.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/session_environment.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/template_audit.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/unit_tests.log",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/bootstrap/workspace_inventory.csv",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/clean_replay_0.log",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/clean_replay_1.log",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/clean_replay_report.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/p15_01_inventory.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/p15_03_dataset.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/phase11_clean_replay/PHASE11_CHECKPOINT.md",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/phase11_clean_replay/phase11_confusion_matrices.csv",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/phase11_clean_replay/phase11_final_evaluation_complete.csv",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/phase11_clean_replay/phase11_per_class_metrics.csv",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/preservation_recheck.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/protocol/P15_04_PROTOCOL_REPORT.md",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16/protocol/p15_04_protocol_integrity.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r02/preservation_final.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r02/previous_EVIDENCE_INDEX.csv",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r02/previous_EXPERIMENT_REGISTRY.csv",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r02/resume_audit.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r03/resume_audit.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r03_post/resume_audit.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r04/ml_smoke.log",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r04/ml_smoke_repaired.log",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r04/pip_smoke_install.log",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r04/resume_audit.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r04/smoke_resolved_requirements.txt",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r04_post/resume_audit.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r05/capacity_snapshot.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r05/public_surface_audit.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_16_r05/resume_audit.json",
+      "passed": true
+    },
+    {
+      "path": "results/reproducibility/resume_2026_10_17_p16/resume_audit.json",
+      "passed": true
+    },
+    {
+      "path": "src/analysis/plot_p16_paired_effects.py",
+      "passed": true
+    },
+    {
+      "path": "templates/original/DE-TAI-NCKHSV-15.zip",
+      "passed": true
+    },
+    {
+      "path": "templates/original/Mau-De-cuong-NCKH-Sinh-vien-2026-7-trieu.docx",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/assets/Logo_PTIT_University.png",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/assets/cnn.jpeg",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/chapters/chap-0.phan-mo-dau.tex",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/chapters/chap-1-background.tex",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/chapters/chap-2-method.tex",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/chapters/chap-3.tex",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/chapters/conclusion.tex",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/figures/social-thumbnail.png",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/main.tex",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/pages/abbreviations.tex",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/pages/acknowledgments.tex",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/pages/declaration.tex",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/refs.bib",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/styles/settings.tex",
+      "passed": true
+    },
+    {
+      "path": "templates/original/latex/thesis.sty",
+      "passed": true
+    },
+    {
+      "path": "tools/checkpoint_r03.py",
+      "passed": true
+    },
+    {
+      "path": "tools/fetch_reference_crosschecks_r03.py",
+      "passed": true
+    },
+    {
+      "path": "tools/p16_figure_preflight.py",
+      "passed": true
+    },
+    {
+      "path": "tools/p16_frozen_results_audit.py",
+      "passed": true
+    },
+    {
+      "path": "tools/p16_report_pdf_audit.py",
+      "passed": true
+    },
+    {
+      "path": "tools/p16_standalone_figures.py",
+      "passed": true
+    },
+    {
+      "path": "tools/p18_current_report_citation_audit.py",
+      "passed": true
+    },
+    {
+      "path": "tools/p19_review_inventory.py",
+      "passed": true
+    },
+    {
+      "path": "tools/r04_assemble_proposal.py",
+      "passed": true
+    },
+    {
+      "path": "tools/r04_checkpoint.py",
+      "passed": true
+    },
+    {
+      "path": "tools/r04_diagnose_smoke_roundtrip.py",
+      "passed": true
+    },
+    {
+      "path": "tools/r04_reconcile_references.py",
+      "passed": true
+    },
+    {
+      "path": "tools/r04_reference_api_checks.py",
+      "passed": true
+    },
+    {
+      "path": "tools/r04_source_claim_map.py",
+      "passed": true
+    },
+    {
+      "path": "tools/r04_template_coverage.py",
+      "passed": true
+    },
+    {
+      "path": "tools/r04_train_only_smoke.py",
+      "passed": true
+    },
+    {
+      "path": "tools/r04_validate_defense_content.py",
+      "passed": true
+    },
+    {
+      "path": "tools/r04_validate_literature.py",
+      "passed": true
+    },
+    {
+      "path": "tools/r05_checkpoint.py",
+      "passed": true
+    },
+    {
+      "path": "tools/r05_public_surface_audit.py",
+      "passed": true
+    },
+    {
+      "path": "tools/r05_revise_proposal.py",
+      "passed": true
+    },
+    {
+      "path": "tools/r05_validate_proposal.py",
+      "passed": true
+    },
+    {
+      "path": "tools/reconcile_reference_checks_r03.py",
+      "passed": true
+    },
+    {
+      "path": "tools/resume_audit_2026_10_16.py",
+      "passed": true
+    },
+    {
+      "path": "tools/resume_checkpoint_audit.py",
+      "passed": true
+    }
+  ],
+  "pass_count": 508,
+  "fail_count": 0
+}

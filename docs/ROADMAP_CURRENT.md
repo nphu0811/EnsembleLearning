@@ -1,3 +1,8 @@
+# P18 deep verification update —17/10/2026
+
+P18 remainsPARTIAL. SelectedMethods/results/limitationsread for3closestpapers in7papershortlist;136source/identitychecksPASS,24assertionsmapped. NewN02priorartusesUNSW+MI-Boruta+stackingbutmergedrandomsplit;nohead-to-headscoreclaim. L12notUNSWandpublishedreportingscopeconflictretained. L03VORunavailable,U01/U03verifiedscopeunchanged. See docs/research/P18_DEEP_METHODS_VERIFICATION_2026-10-17.md. P19safeallowlistinternaldraftnext;P20deferred. P15DONE_SCOPED_RECONSTRUCTION;P16DONE_SCOPED_AUDIT_WITH_OPEN_PRINT_FINDINGS;approved37pagePDFuntouched.
+---
+
 # Current roadmap checkpoint 17/10/2026 — P16/P18/P19
 
 P15 remains DONE_SCOPED_RECONSTRUCTION;no additionalTRAINfitting. P16 savedsummary2132checks and actualauthorPDF178checksPASS;all37pages rendered/contact-reviewed;17displaymap saved. Six independent183mmPDF/SVG/600dpiPNG alternatives passedtext6/6andcollision6/6. P16 overall IN_PROGRESS because unchangedapprovedPDF hasfont/118dpiheatmap/snapshot-agefindings, and historical6/12collisionflags remain. See docs/research/P16_COMPREHENSIVE_QA_2026-10-17.md.

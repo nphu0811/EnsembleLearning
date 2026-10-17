@@ -1,0 +1,82 @@
+[
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-academic-search\\SKILL.md",
+    "sha256": "3ed327e3e9c56cddfaa0e48ffb3503b1f9e27f917916013798ef57bf8131101a"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-citation\\SKILL.md",
+    "sha256": "f0436639c2bcf966e8f8cdda6e06501b396bb32cc3b7cce57f67eb0cd7b5a44d"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-data\\SKILL.md",
+    "sha256": "4ef9c383411b069265901e9f157cb4d73861f42f6ddd28611084005e67eafa43"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-downloader\\SKILL.md",
+    "sha256": "0351f9069e77a4b027893592d295f3c511301bc7d2ec7d299ab49ee2c106be54"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-experiment-log\\SKILL.md",
+    "sha256": "1f7fffcbc950d4f60fcb5ad9f2aabe82246ebbd83bf29621a0e90c9ff4ec4b8b"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-figure\\SKILL.md",
+    "sha256": "46f2cf74d473604ff9ad884893bbe2360b3431fec631009fce5c487945acf652"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-image2ppt\\SKILL.md",
+    "sha256": "0b49331f7b97e0751248c84506cada638f29ff44bb3023686f89a9f858748e9e"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-literature-pipeline\\SKILL.md",
+    "sha256": "1dcaa692457ec9c2be409cb7777f834a2db833788b2e9b680baf0e961126b01a"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-paper-card\\SKILL.md",
+    "sha256": "a71e3dbc446523e415ed4b896bed8ea60e0c598fb8655c587679d719648b68c9"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-paper-to-patent\\SKILL.md",
+    "sha256": "b65243157addf3e4e38de4cb35136d95478c2c997bdd5600e6ae21f91f4d06f0"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-paper2ppt\\SKILL.md",
+    "sha256": "a8d0fd14ca0863602cfc76305467d0f5a6ac2c104abedd7f7e86dfcf46bf04cf"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-polishing\\SKILL.md",
+    "sha256": "9391b2a2487306cf2ed560377d4bc10c339fd2c220a79db278cb7f9d31e79023"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-proposal-writer\\SKILL.md",
+    "sha256": "9be8ae52f909969592529414fb6f5bb54059c8cbe520e78b53d22b297cef5e4a"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-reader\\SKILL.md",
+    "sha256": "999a5c1b116558133d0389ce6c1bbc3dc9cf5242d1be2870358789769d97a84e"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-ref-verifier\\SKILL.md",
+    "sha256": "6a975074d7a1c62c00dd9e8c7367cd2af0ef9d573d6d6ce5ea12f70d9320a516"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-response\\SKILL.md",
+    "sha256": "a8283db56e73879413311cbcde1db4c72dd4390bbe21ab2f62f1f968610b5de1"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-reviewer\\SKILL.md",
+    "sha256": "977d5b3e452865e9903f2ae434907f805c64e2600665a993bc95a19e02820466"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-shared\\SKILL.md",
+    "sha256": "3d914e73f023cab4f247d82f906a948307de8a867fd6c33df999badf67c5d5f2"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-statistics\\SKILL.md",
+    "sha256": "89d2a101fc45d7adf8ca327a6da4bda4a696d6364d7c36ead4f53413627a9b6f"
+  },
+  {
+    "path": "C:\\Users\\admin\\.codex\\skills\\nature-writing\\SKILL.md",
+    "sha256": "ce7c4d20329b96b03b0f0c0bb744411b1b4deaa7a7b69b90757705a83c195b12"
+  }
+]

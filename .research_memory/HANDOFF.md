@@ -1,3 +1,15 @@
+# Current P18 deep-verification checkpoint — 17/10/2026
+
+Resumed7c3530e with clean main, origin equal and508/508manifestmatches. No P15training or P16bookkeeping rerun. New targeted shortlist has7papers; selected Methods/experimental/results/limitations sections read for L06,L12,N02. This is NOT7wholepapers or12fulltextreads. New2024MI-Boruta/stacking/UNSW prior work N02 is a close neighbor; its mergedTRAIN/TEST random80/20protocol differs from current officialholdout. L12usesNSL-KDD/CIC,notUNSW. L06publisherresults/limitations reading expanded beyond prior r04Methods. Four other rows retainabstract/priorreading/accesslimits.
+
+Evidence docs/research/P18_DEEP_METHODS_VERIFICATION_2026-10-17.md and literature/deep_verification_2026_10_17_01/. qa_03has136PASS/0FAIL,7papermatrix,24sourceassertions,3newDOImetadatarecords. qa_01hasonecapture-pointerFAIL; correctpublisherstackingcaptureadded;qa_02andqa_03pass. These tests proveanchors/identity/coverage,notexternalexperimentvalidity. L12publishedaccuracydrift0.9997/table5a,0.9992/prose,99.99%/comparison retained asPARTIALscope/reportingdiscrepancy;pp16-18visuallychecked. No convenient score selected, no corrections toexternalpaper orprojectresults.
+
+L08,N01,N03fullMethods unavailable in authorizedroutes used. L09institutionalPDF TLSfail/defaultWindowsTLS403;preprintnot substituted. L03VORdirect202empty/web418,conflict254-262vs254-263stillopen. U01/U03scopedfollowupreused,notrerun. Rawfullpapers/captures/pageimages in ignoredlocal_sources/,notGit/publicdraft. Metadata/query/accessledgers+hashes committed. CompanionP16/P17addendumseparate;approved37pagePDFandbibliographyuntouched.
+
+Phase states remainP15DONE_SCOPED_RECONSTRUCTION,P16DONE_SCOPED_AUDIT_WITH_OPEN_PRINT_FINDINGS,P18/P19PARTIAL,P20DEFERRED. NEXT exacttask: P19read-onlyinventory3trackedSMOKE_ONLYartifacts (path/size/SHA/tracking/initialcommit),then build INTERNAL_REVIEW_ONLYallowlistdraft withoutmodels/rawdata/thirdpartyfulltexts or indexcleanup. No LICENSEchoice,noFINALarchive. Prepare fixed reviewpacket/rubric after boundedP19evidence;do notclaimP20panel.
+
+---
+
 # Current checkpoint 17/10/2026 — P16 actual-PDF audit, P18/P19 scoped progress
 
 This section supersedes the historical r05/r04 status below. P15 is DONE_SCOPED_RECONSTRUCTION. DO NOT TRAIN AGAIN. Three reconstructed full-TRAIN models are locally available; original historical model identity/environment remains UNKNOWN. Saved acceptance 69/69 true and three run PASS rechecked; historical full-run consistency75/75 is inherited, not rerun. The old STATE snapshot is in .research_memory/p16_2026_10_17/STATE_at_entry.json.

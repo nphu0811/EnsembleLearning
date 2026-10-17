@@ -51,3 +51,8 @@ Entry stale manifest267/285,known author-deletedhistoricalZIP281/282reconciled i
 ## P19 inventory finding, current 17/10/2026
 
 The tracked review snapshot flags three historical SMOKE_ONLY.joblib files under results/reproducibility/r04_ml_smoke_repaired/smoke_models/. All three were tracked in initial commit c4ed771. No new model binary is staged; no files were loaded or removed. Inventory passed=false and code license is absent. Keep this release blocker; it is separate from accepted local P15 full-TRAIN reconstructions. Do not treat the final new-file staging check as a passing whole-repository release inventory. See release/review_inventory_2026_10_17_01/validation.json and the final review inventory snapshot.
+
+
+##17/10/2026 P18deep
+
+P18deep qa_01 126PASS1FAIL: C10capture did notincludeactualfive-foldparagraph. Retrieved correctpublisherstackingsection,updatedcapturepointer only;qa_02 127PASS,qa_03 136PASSafternewmetadatachecks. DirectSpringerresponses3038bytechallenge;L09TLS/403;L03empty/418;N02Crossref429thenretry200. NoTLSbypass. L12score andRF/XGBdescriptionsconflicts remainPARTIAL.

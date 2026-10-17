@@ -55,3 +55,8 @@ r05 R05-ASSEMBLY-REVIEW: Independent full argument/form review and recheck saved
 ## 17/10/2026
 
 Actual37pagePDF and savedsummaryP16QA,17displaymap,sixindependentstandalonefigurealternatives withfailurehistory;P18offline12ref/24contextaudit;P19README/QAenv/availabilityreview/reviewinventory;currentmemoryreconciledwithoutrewritinghistoricalsnapshots. NoTRAINfit,TESTCSV,predictionCSV,modeldeserialize,frozendata/result/reportchange orFINALarchive.
+
+
+##17/10/2026 P18deep
+
+17/10/2026 P18deep: new selected-sectionreads,7papermatrix,24claimmap,3newmetadatarecords,136QAchecks,report/addendum. No bibliography/PDF/frozenresult/modelchanges.
