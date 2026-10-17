@@ -56,3 +56,8 @@ The tracked review snapshot flags three historical SMOKE_ONLY.joblib files under
 ##17/10/2026 P18deep
 
 P18deep qa_01 126PASS1FAIL: C10capture did notincludeactualfive-foldparagraph. Retrieved correctpublisherstackingsection,updatedcapturepointer only;qa_02 127PASS,qa_03 136PASSafternewmetadatachecks. DirectSpringerresponses3038bytechallenge;L09TLS/403;L03empty/418;N02Crossref429thenretry200. NoTLSbypass. L12score andRF/XGBdescriptionsconflicts remainPARTIAL.
+
+
+##17/10/2026 P19safe
+
+Noartifactmissing/hashfailurein3smokeinventory;allintroducedc4ed771. Publicrights/codeLICENSEand3trackedbinaryreleasehygienegapremain. Allowlistdraftdoesnotrequireindexcleanup. HistoricalZIPdeletionab88db8unchanged. LocalthirdpartyfulltextcapturesandinternalZIPexcludedbyignore. QApassisboundedinternalpackagecheck,notpublicapprovalorcomprehensivesecretscertification.

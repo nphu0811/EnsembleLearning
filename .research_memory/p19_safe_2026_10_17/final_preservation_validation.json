@@ -1,0 +1,107 @@
+{
+  "scope": "final preservation/scope checks only; not scientific acceptance or public readiness",
+  "pass": 25,
+  "fail": 0,
+  "checks": [
+    {
+      "check": "protected src/analysis/plot_p16_paired_effects.py",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/DE-TAI-NCKHSV-15.zip",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/Mau-De-cuong-NCKH-Sinh-vien-2026-7-trieu.docx",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/latex/assets/Logo_PTIT_University.png",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/latex/assets/cnn.jpeg",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/latex/chapters/chap-0.phan-mo-dau.tex",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/latex/chapters/chap-1-background.tex",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/latex/chapters/chap-2-method.tex",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/latex/chapters/chap-3.tex",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/latex/chapters/conclusion.tex",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/latex/figures/social-thumbnail.png",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/latex/main.tex",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/latex/pages/abbreviations.tex",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/latex/pages/acknowledgments.tex",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/latex/pages/declaration.tex",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/latex/refs.bib",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/latex/styles/settings.tex",
+      "passed": true
+    },
+    {
+      "check": "protected templates/original/latex/thesis.sty",
+      "passed": true
+    },
+    {
+      "check": "approved PDF unchanged",
+      "passed": true
+    },
+    {
+      "check": "internal archive unchanged",
+      "passed": true
+    },
+    {
+      "check": "internal archive ignored",
+      "passed": true
+    },
+    {
+      "check": "no staged deletions",
+      "passed": true
+    },
+    {
+      "check": "no staged binaries or frozen evidence",
+      "passed": true
+    },
+    {
+      "check": "main branch",
+      "passed": true
+    },
+    {
+      "check": "expected P18 source commit",
+      "passed": true
+    }
+  ]
+}

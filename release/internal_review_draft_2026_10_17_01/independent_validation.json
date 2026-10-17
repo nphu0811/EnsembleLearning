@@ -1,0 +1,491 @@
+{
+  "checks": [
+    {
+      "check": "local smoke equals committed bytes random_forest_17",
+      "passed": true
+    },
+    {
+      "check": "independent smoke metadata SHA random_forest_17",
+      "passed": true
+    },
+    {
+      "check": "local smoke equals committed bytes random_forest_42",
+      "passed": true
+    },
+    {
+      "check": "independent smoke metadata SHA random_forest_42",
+      "passed": true
+    },
+    {
+      "check": "local smoke equals committed bytes stacking_42",
+      "passed": true
+    },
+    {
+      "check": "independent smoke metadata SHA stacking_42",
+      "passed": true
+    },
+    {
+      "check": "independent CRC",
+      "passed": true
+    },
+    {
+      "check": "entry count46",
+      "passed": true
+    },
+    {
+      "check": "manifestrows45",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions README.md",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions docs/research/P15_FULL_TRAIN_RECONSTRUCTION_SCOPED_CLOSURE_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions docs/research/P16_COMPREHENSIVE_QA_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions docs/research/P16_P17_COMPANION_ADDENDUM_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions docs/research/P18_DEEP_METHODS_VERIFICATION_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions docs/research/P18_CURRENT_REPORT_READING_BOUNDARIES_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions docs/research/P19_RELEASE_READINESS_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions release/INTERNAL_REVIEW_DRAFT_POLICY_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions defense/P20_REVIEW_PACKET_SETUP_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions release/RELEASE_BLOCKERS.md",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions literature/deep_verification_2026_10_17_01/READING_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions literature/deep_verification_2026_10_17_01/verification_ledger.csv",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions literature/deep_verification_2026_10_17_01/qa_03/literature_comparison_matrix.csv",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions literature/deep_verification_2026_10_17_01/qa_03/claim_to_source_map.csv",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions literature/deep_verification_2026_10_17_01/qa_03/published_reporting_discrepancy.json",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions results/final_evaluation/unsw_nb15/phase9_holdout/tables/attack_category_miss_profile.csv",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions results/final_evaluation/unsw_nb15/phase9_holdout/tables/pairwise_error_counts.csv",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions results/final_analysis/unsw_nb15/phase10_statistics/tables/bootstrap_metric_ci.csv",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions results/figures/p16_paired_effects_2026_10_16/paired_effects.pdf",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions results/figures/p16_paired_effects_2026_10_16/source_data.csv",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions results/figures/p16_r05_error_tradeoff/source_data.csv",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.pdf",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions results/figures/p16_standalone_2026_10_17_03/source_attack_family_miss_rate_ci.csv",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions report/main.tex",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions report/frontmatter.tex",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions report/abbreviations.tex",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions report/references_verified.bib",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions report/references_dataset_checked.bib",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions report/chapters/introduction.tex",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions report/chapters/theoretical_foundations.tex",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions report/chapters/related_work.tex",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions report/chapters/dataset_eda.tex",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions report/chapters/methodology.tex",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions report/chapters/results_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions report/chapters/validity_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions report/chapters/conclusion.tex",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions reproducibility/requirements-p16-qa-py311-NOT-TRAINING.txt",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions approved_report/Bao_cao_37p_UNCHANGED.pdf",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions INTERNAL_REVIEW_ONLY.txt",
+      "passed": true
+    },
+    {
+      "check": "independent package exclusions DRAFT_MANIFEST.csv",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash README.md",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash docs/research/P15_FULL_TRAIN_RECONSTRUCTION_SCOPED_CLOSURE_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash docs/research/P16_COMPREHENSIVE_QA_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash docs/research/P16_P17_COMPANION_ADDENDUM_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash docs/research/P18_DEEP_METHODS_VERIFICATION_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash docs/research/P18_CURRENT_REPORT_READING_BOUNDARIES_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash docs/research/P19_RELEASE_READINESS_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash release/INTERNAL_REVIEW_DRAFT_POLICY_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash defense/P20_REVIEW_PACKET_SETUP_2026-10-17.md",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash release/RELEASE_BLOCKERS.md",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash literature/deep_verification_2026_10_17_01/READING_PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash literature/deep_verification_2026_10_17_01/verification_ledger.csv",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash literature/deep_verification_2026_10_17_01/qa_03/literature_comparison_matrix.csv",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash literature/deep_verification_2026_10_17_01/qa_03/claim_to_source_map.csv",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash literature/deep_verification_2026_10_17_01/qa_03/published_reporting_discrepancy.json",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/attack_category_miss_profile.csv",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/pairwise_error_counts.csv",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash results/final_analysis/unsw_nb15/phase10_statistics/tables/bootstrap_metric_ci.csv",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash results/figures/p16_paired_effects_2026_10_16/paired_effects.pdf",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash results/figures/p16_paired_effects_2026_10_16/source_data.csv",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash results/figures/p16_r05_error_tradeoff/source_data.csv",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.pdf",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash results/figures/p16_standalone_2026_10_17_03/source_attack_family_miss_rate_ci.csv",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash report/main.tex",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash report/frontmatter.tex",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash report/abbreviations.tex",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash report/references_verified.bib",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash report/references_dataset_checked.bib",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash report/chapters/introduction.tex",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash report/chapters/theoretical_foundations.tex",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash report/chapters/related_work.tex",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash report/chapters/dataset_eda.tex",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash report/chapters/methodology.tex",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash report/chapters/results_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash report/chapters/validity_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash report/chapters/conclusion.tex",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash reproducibility/requirements-p16-qa-py311-NOT-TRAINING.txt",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash approved_report/Bao_cao_37p_UNCHANGED.pdf",
+      "passed": true
+    },
+    {
+      "check": "independent ZIP byte hash INTERNAL_REVIEW_ONLY.txt",
+      "passed": true
+    },
+    {
+      "check": "approvedPDF exact identity",
+      "passed": true
+    },
+    {
+      "check": "NOT AUTHORIZED label",
+      "passed": true
+    },
+    {
+      "check": "immutable original src/analysis/plot_p16_paired_effects.py",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/DE-TAI-NCKHSV-15.zip",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/Mau-De-cuong-NCKH-Sinh-vien-2026-7-trieu.docx",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/latex/assets/Logo_PTIT_University.png",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/latex/assets/cnn.jpeg",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/latex/chapters/chap-0.phan-mo-dau.tex",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/latex/chapters/chap-1-background.tex",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/latex/chapters/chap-2-method.tex",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/latex/chapters/chap-3.tex",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/latex/chapters/conclusion.tex",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/latex/figures/social-thumbnail.png",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/latex/main.tex",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/latex/pages/abbreviations.tex",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/latex/pages/acknowledgments.tex",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/latex/pages/declaration.tex",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/latex/refs.bib",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/latex/styles/settings.tex",
+      "passed": true
+    },
+    {
+      "check": "immutable original templates/original/latex/thesis.sty",
+      "passed": true
+    },
+    {
+      "check": "workingapprovedPDF unchanged",
+      "passed": true
+    }
+  ],
+  "pass_count": 121,
+  "fail_count": 0,
+  "scope": "Independent ZIP/manifest/committed smoke byte and protected-input checks; not public release authorization"
+}

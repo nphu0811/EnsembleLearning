@@ -1,0 +1,20 @@
+{
+  "task": "P19_SAFE_INTERNAL_DRAFT",
+  "status": "DONE_SCOPED_INTERNAL_REVIEW_ONLY;P19PARTIAL;PUBLICBLOCKED",
+  "source_commit": "ccfde4e56176a212e8108b3de5a3cf869f7861ce",
+  "mechanical_pass": 245,
+  "mechanical_fail": 0,
+  "independent_pass": 121,
+  "independent_fail": 0,
+  "path_unit_tests_pass": 3,
+  "zip_entries": 46,
+  "manifest_rows": 45,
+  "training": false,
+  "bootstrap": false,
+  "official_test_opened": false,
+  "model_deserialized": false,
+  "artifact_deleted": false,
+  "index_cleanup": false,
+  "report_bibliography_changed": false,
+  "P20": "PREPARATION_ONLY;DEFERRED_FINAL_PANEL"
+}

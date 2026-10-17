@@ -1,3 +1,17 @@
+# P19 safe draft and P20 preparation — current17/10/2026
+
+| Task | Status | Evidence |
+|---|---|---|
+| P19-SMOKE-INVENTORY | DONE_SCOPED_READ_ONLY |3paths/size/SHA/Gitblob/introductioncommit/metadata;no deserialize ordelete |
+| P19-INTERNAL-ALLOWLIST-DRAFT | DONE_SCOPED_INTERNAL_REVIEW_ONLY |46ZIPentries;245mechanical+121independentchecksPASS;3path testsPASS |
+| P19 public release | PARTIAL/BLOCKED_RIGHTS |NoLICENSE;model/data/report/template/thirdpartyrightsundecided;noFINAL |
+| P20 packet/rubric preparation | DONE_SCOPED_SETUP |defense/P20_REVIEW_PACKET_SETUP_2026-10-17.md;no reviewerreport |
+| P20 full panel | DEFERRED |Neutralfrozenpacket/sourceaccess/finalinputsremain |
+
+P18selectedbodyreads3of7shortlist;136checksPASS. P15/P16statespreserved;approvedreportandfrozenresultsunchanged.
+
+---
+
 # P18 deep verification — current17/10/2026
 
 | Task | Status | Evidence |

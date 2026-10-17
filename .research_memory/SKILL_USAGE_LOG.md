@@ -70,3 +70,9 @@ Actual registry inspected via resume audit; researchwrite registered name at C:/
 ##17/10/2026 P18deep
 
 17/10/2026 P18deep actualskills: nature-academic-search SKILL/manifest2.0.0,coretools/routing,wf1/wf2,source-tiers,dedup loaded;preflightexecuted2/3reachable(arXivTLSfail);officialweb/Crossref fallback,DOIdedup,3newidentitychecks. nature-reader SKILL2.1.1 andgrounding-rules branchsource-linkedquestions: L06selectedpublisherMethods/results/conclusion,L12PDFpp5-20selected,N02publisherMethod/results/limitations,notfull-papertranslation. nature-ref-verifier SKILL/manifest1.0.1+common-patterns fromsameconversationreused,3DOImetadatafieldcrosschecks,L03VORattemptfailretained,U01/U03closedchecksnotrerun. PDFread-onlyworkflow appliedlocalL12pageextraction/render/visualpp16-18. nature-downloaderSKILLinspectedroutingonly,notexecuted;noSIrequested/fetched. researchwritenotusedbecausenoproposaldrafting;noNaturepanelorhumanreviewclaimed.
+
+
+##17/10/2026 P19safe/P20prep actualusage
+
+nature-data SKILL/manifest2.2.0/corestance/coreworkflow/FAIRmetadatareferencesloadedinconversation,reusedwithcoreworkflowreread:read-onlydataset/model/sourceavailabilityclassification,smokeprovenanceinventory,rightsdecisionlist,allowlistinternalmanifest. OutputP19safeaudit,245mechanical/121independentQA,3pathunit tests. NoarchivalDOI/license/publicauthorizationinvented.
+nature-reviewer SKILLandtechnical-concern-taxonomy.md/domain-specific-review-gates.md(Engineeringsection)readforPREPARATIONONLY. Adaptedfiveaxes,evidencepointer/severity/blockingrubric,3futureemphasisbriefs,neutralpacket/isolationconditionsandquestionlist. NOactualreviewerreport,panel,pre-revieworindependenthumanendorsementclaimed. Researchwritenotappliedbecauseproposaldraftingnotundertaken. No subagents. ActualscopedP18skillsasrecordedinpriorentry;fulltexts/ZIPremainlocalignored.

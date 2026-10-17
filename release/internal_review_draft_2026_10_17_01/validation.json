@@ -1,0 +1,1244 @@
+{
+  "source_commit": "ccfde4e56176a212e8108b3de5a3cf869f7861ce",
+  "scope": "INTERNAL_REVIEW_ONLY; NO_PUBLIC_RELEASE_AUTHORIZATION",
+  "checks": [
+    {
+      "check": "smoke tracked random_forest_17",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "smoke bytes match original metadata random_forest_17",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "smoke hash match original metadata random_forest_17",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "smoke source TRAIN-only random_forest_17",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "smoke tracked random_forest_42",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "smoke bytes match original metadata random_forest_42",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "smoke hash match original metadata random_forest_42",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "smoke source TRAIN-only random_forest_42",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "smoke tracked stacking_42",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "smoke bytes match original metadata stacking_42",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "smoke hash match original metadata stacking_42",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "smoke source TRAIN-only stacking_42",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "historical ZIP still absent and untracked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path docs/research/P15_FULL_TRAIN_RECONSTRUCTION_SCOPED_CLOSURE_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash docs/research/P15_FULL_TRAIN_RECONSTRUCTION_SCOPED_CLOSURE_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path docs/research/P16_COMPREHENSIVE_QA_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash docs/research/P16_COMPREHENSIVE_QA_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path docs/research/P16_P17_COMPANION_ADDENDUM_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash docs/research/P16_P17_COMPANION_ADDENDUM_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path docs/research/P18_DEEP_METHODS_VERIFICATION_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash docs/research/P18_DEEP_METHODS_VERIFICATION_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path docs/research/P18_CURRENT_REPORT_READING_BOUNDARIES_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash docs/research/P18_CURRENT_REPORT_READING_BOUNDARIES_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path docs/research/P19_RELEASE_READINESS_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash docs/research/P19_RELEASE_READINESS_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path release/INTERNAL_REVIEW_DRAFT_POLICY_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash release/INTERNAL_REVIEW_DRAFT_POLICY_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path defense/P20_REVIEW_PACKET_SETUP_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash defense/P20_REVIEW_PACKET_SETUP_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path release/RELEASE_BLOCKERS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash release/RELEASE_BLOCKERS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path literature/deep_verification_2026_10_17_01/READING_PROTOCOL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash literature/deep_verification_2026_10_17_01/READING_PROTOCOL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path literature/deep_verification_2026_10_17_01/verification_ledger.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash literature/deep_verification_2026_10_17_01/verification_ledger.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path literature/deep_verification_2026_10_17_01/qa_03/literature_comparison_matrix.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash literature/deep_verification_2026_10_17_01/qa_03/literature_comparison_matrix.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path literature/deep_verification_2026_10_17_01/qa_03/claim_to_source_map.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash literature/deep_verification_2026_10_17_01/qa_03/claim_to_source_map.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path literature/deep_verification_2026_10_17_01/qa_03/published_reporting_discrepancy.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash literature/deep_verification_2026_10_17_01/qa_03/published_reporting_discrepancy.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path results/final_evaluation/unsw_nb15/phase9_holdout/tables/attack_category_miss_profile.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/attack_category_miss_profile.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path results/final_evaluation/unsw_nb15/phase9_holdout/tables/pairwise_error_counts.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/pairwise_error_counts.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path results/final_analysis/unsw_nb15/phase10_statistics/tables/bootstrap_metric_ci.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash results/final_analysis/unsw_nb15/phase10_statistics/tables/bootstrap_metric_ci.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path results/figures/p16_paired_effects_2026_10_16/paired_effects.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash results/figures/p16_paired_effects_2026_10_16/paired_effects.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path results/figures/p16_paired_effects_2026_10_16/source_data.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash results/figures/p16_paired_effects_2026_10_16/source_data.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path results/figures/p16_r05_error_tradeoff/source_data.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash results/figures/p16_r05_error_tradeoff/source_data.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path results/figures/p16_standalone_2026_10_17_03/source_attack_family_miss_rate_ci.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash results/figures/p16_standalone_2026_10_17_03/source_attack_family_miss_rate_ci.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path report/main.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash report/main.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path report/frontmatter.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash report/frontmatter.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path report/abbreviations.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash report/abbreviations.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path report/references_verified.bib",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash report/references_verified.bib",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path report/references_dataset_checked.bib",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash report/references_dataset_checked.bib",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path report/chapters/introduction.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash report/chapters/introduction.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path report/chapters/theoretical_foundations.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash report/chapters/theoretical_foundations.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path report/chapters/related_work.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash report/chapters/related_work.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path report/chapters/dataset_eda.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash report/chapters/dataset_eda.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path report/chapters/methodology.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash report/chapters/methodology.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path report/chapters/results_discussion.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash report/chapters/results_discussion.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path report/chapters/validity_discussion.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash report/chapters/validity_discussion.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path report/chapters/conclusion.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash report/chapters/conclusion.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safe allowlist path reproducibility/requirements-p16-qa-py311-NOT-TRAINING.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "copied file hash reproducibility/requirements-p16-qa-py311-NOT-TRAINING.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "approved PDF exact identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP CRC",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP exact allowlist",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP no duplicate entries",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP explicit internal labels",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe docs/research/P15_FULL_TRAIN_RECONSTRUCTION_SCOPED_CLOSURE_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash docs/research/P15_FULL_TRAIN_RECONSTRUCTION_SCOPED_CLOSURE_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe docs/research/P16_COMPREHENSIVE_QA_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash docs/research/P16_COMPREHENSIVE_QA_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe docs/research/P16_P17_COMPANION_ADDENDUM_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash docs/research/P16_P17_COMPANION_ADDENDUM_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe docs/research/P18_DEEP_METHODS_VERIFICATION_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash docs/research/P18_DEEP_METHODS_VERIFICATION_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe docs/research/P18_CURRENT_REPORT_READING_BOUNDARIES_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash docs/research/P18_CURRENT_REPORT_READING_BOUNDARIES_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe docs/research/P19_RELEASE_READINESS_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash docs/research/P19_RELEASE_READINESS_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe release/INTERNAL_REVIEW_DRAFT_POLICY_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash release/INTERNAL_REVIEW_DRAFT_POLICY_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe defense/P20_REVIEW_PACKET_SETUP_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash defense/P20_REVIEW_PACKET_SETUP_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe release/RELEASE_BLOCKERS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash release/RELEASE_BLOCKERS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe literature/deep_verification_2026_10_17_01/READING_PROTOCOL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash literature/deep_verification_2026_10_17_01/READING_PROTOCOL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe literature/deep_verification_2026_10_17_01/verification_ledger.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash literature/deep_verification_2026_10_17_01/verification_ledger.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe literature/deep_verification_2026_10_17_01/qa_03/literature_comparison_matrix.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash literature/deep_verification_2026_10_17_01/qa_03/literature_comparison_matrix.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe literature/deep_verification_2026_10_17_01/qa_03/claim_to_source_map.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash literature/deep_verification_2026_10_17_01/qa_03/claim_to_source_map.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe literature/deep_verification_2026_10_17_01/qa_03/published_reporting_discrepancy.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash literature/deep_verification_2026_10_17_01/qa_03/published_reporting_discrepancy.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe results/final_evaluation/unsw_nb15/phase9_holdout/tables/attack_category_miss_profile.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/attack_category_miss_profile.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe results/final_evaluation/unsw_nb15/phase9_holdout/tables/pairwise_error_counts.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/pairwise_error_counts.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe results/final_analysis/unsw_nb15/phase10_statistics/tables/bootstrap_metric_ci.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash results/final_analysis/unsw_nb15/phase10_statistics/tables/bootstrap_metric_ci.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe results/figures/p16_paired_effects_2026_10_16/paired_effects.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash results/figures/p16_paired_effects_2026_10_16/paired_effects.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe results/figures/p16_paired_effects_2026_10_16/source_data.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash results/figures/p16_paired_effects_2026_10_16/source_data.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe results/figures/p16_r05_error_tradeoff/source_data.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash results/figures/p16_r05_error_tradeoff/source_data.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe results/figures/p16_standalone_2026_10_17_03/source_attack_family_miss_rate_ci.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash results/figures/p16_standalone_2026_10_17_03/source_attack_family_miss_rate_ci.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe report/main.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash report/main.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe report/frontmatter.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash report/frontmatter.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe report/abbreviations.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash report/abbreviations.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe report/references_verified.bib",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash report/references_verified.bib",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe report/references_dataset_checked.bib",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash report/references_dataset_checked.bib",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe report/chapters/introduction.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash report/chapters/introduction.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe report/chapters/theoretical_foundations.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash report/chapters/theoretical_foundations.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe report/chapters/related_work.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash report/chapters/related_work.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe report/chapters/dataset_eda.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash report/chapters/dataset_eda.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe report/chapters/methodology.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash report/chapters/methodology.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe report/chapters/results_discussion.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash report/chapters/results_discussion.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe report/chapters/validity_discussion.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash report/chapters/validity_discussion.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe report/chapters/conclusion.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash report/chapters/conclusion.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe reproducibility/requirements-p16-qa-py311-NOT-TRAINING.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash reproducibility/requirements-p16-qa-py311-NOT-TRAINING.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe approved_report/Bao_cao_37p_UNCHANGED.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash approved_report/Bao_cao_37p_UNCHANGED.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry safe INTERNAL_REVIEW_ONLY.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "ZIP entry hash INTERNAL_REVIEW_ONLY.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manifest copy exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "limited known-token/private-key pattern triage",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "source unchanged after package README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package docs/research/P15_FULL_TRAIN_RECONSTRUCTION_SCOPED_CLOSURE_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package docs/research/P16_COMPREHENSIVE_QA_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package docs/research/P16_P17_COMPANION_ADDENDUM_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package docs/research/P18_DEEP_METHODS_VERIFICATION_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package docs/research/P18_CURRENT_REPORT_READING_BOUNDARIES_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package docs/research/P19_RELEASE_READINESS_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package release/INTERNAL_REVIEW_DRAFT_POLICY_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package defense/P20_REVIEW_PACKET_SETUP_2026-10-17.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package release/RELEASE_BLOCKERS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package literature/deep_verification_2026_10_17_01/READING_PROTOCOL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package literature/deep_verification_2026_10_17_01/verification_ledger.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package literature/deep_verification_2026_10_17_01/qa_03/literature_comparison_matrix.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package literature/deep_verification_2026_10_17_01/qa_03/claim_to_source_map.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package literature/deep_verification_2026_10_17_01/qa_03/published_reporting_discrepancy.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package results/final_evaluation/unsw_nb15/phase9_holdout/tables/attack_category_miss_profile.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package results/final_evaluation/unsw_nb15/phase9_holdout/tables/pairwise_error_counts.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package results/final_analysis/unsw_nb15/phase10_statistics/tables/bootstrap_metric_ci.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package results/figures/p16_paired_effects_2026_10_16/paired_effects.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package results/figures/p16_paired_effects_2026_10_16/source_data.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package results/figures/p16_r05_error_tradeoff/source_data.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package results/figures/p16_standalone_2026_10_17_03/source_attack_family_miss_rate_ci.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package report/main.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package report/frontmatter.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package report/abbreviations.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package report/references_verified.bib",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package report/references_dataset_checked.bib",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package report/chapters/introduction.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package report/chapters/theoretical_foundations.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package report/chapters/related_work.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package report/chapters/dataset_eda.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package report/chapters/methodology.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package report/chapters/results_discussion.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package report/chapters/validity_discussion.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package report/chapters/conclusion.tex",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source unchanged after package reproducibility/requirements-p16-qa-py311-NOT-TRAINING.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "smoke unchanged after package random_forest_17",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "smoke unchanged after package random_forest_42",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "smoke unchanged after package stacking_42",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Git index unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "approved PDF unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no final archive",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "pass_count": 245,
+  "fail_count": 0,
+  "smoke_artifacts": 3,
+  "package_manifest_rows": 45,
+  "zip_entries": 46,
+  "archive_relative_path": "release/internal_review_draft_2026_10_17_01/INTERNAL_REVIEW_ONLY_NCKH_DRAFT.zip",
+  "archive_sha256": "2334bfc706a3781b0156b8c9180a3f5b592e4e85a64febf2c21c4fb2afa87fe5",
+  "archive_bytes": 533069,
+  "code_license_present": false,
+  "models_deserialized": false,
+  "index_cleanup": false,
+  "public_release_status": "BLOCKED_RIGHTS_AND_SCIENTIFIC_ADMIN_GATES",
+  "limitations": "Review dossier only; no runnable training environment. Pattern triage is not a comprehensive secret audit. Source captures are local and excluded."
+}

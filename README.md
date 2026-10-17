@@ -83,3 +83,12 @@ confirmed archival DOI or final release tag. See
 No FINAL_NCKH.zip, external panel endorsement, production IDS or live demo readiness
 is claimed. Administrative acceptance/signatures, proposal DOCX/PDF, defense slides
 and remaining scientific/release checks are distinct gates.
+
+The [P18 selected-section investigation](docs/research/P18_DEEP_METHODS_VERIFICATION_2026-10-17.md)
+adds a seven-paper comparison with explicit full-text access/reading limits.
+The [safe P19 draft audit](docs/research/P19_SAFE_RELEASE_AUDIT_2026-10-17.md)
+provides a local allowlist review ZIP and smoke-artifact inventory without deleting
+tracked files. This draft is INTERNAL_REVIEW_ONLY and not authorized for public
+release. Its manifests and checks are tracked; the ZIP and copied contents stay
+local. [P20 setup](defense/P20_REVIEW_PACKET_SETUP_2026-10-17.md) prepares evidence
+and a rubric; the final reviewer panel remains DEFERRED.

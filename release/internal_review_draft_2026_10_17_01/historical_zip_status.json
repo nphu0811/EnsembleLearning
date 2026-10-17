@@ -1,0 +1,7 @@
+{
+  "path": "results/reproducibility/p15_02c2_clean_env.zip",
+  "exists_in_HEAD_checkout": false,
+  "tracked": false,
+  "deletion_commit": "ab88db808dc19fb913fe35a5823f72da14360177",
+  "status": "HISTORICAL_DELETION_RECORDED; NOT_RESTORED_OR_PACKAGED"
+}

@@ -1,3 +1,9 @@
+# P19 safe-release update —17/10/2026
+
+P19PARTIAL:3trackedhistoricalsmokemodelsread-onlyinventoried,Gitblob/local/metadatahashesagree. Noindexcleanupneededforallowlistdraft. Local INTERNAL_REVIEW_ONLY ZIP46entries,245mechanical+121independentchecksPASS,3path testsPASS;notpublicauthorized,norunnabletrainingrelease,noFINAL. Code/data/model/report/template/thirdpartyrightsremain. docs/research/P19_SAFE_RELEASE_AUDIT_2026-10-17.md and trackedmanifestshowexactscope. P20rubric/setupready,fullpanelDEFERRED. P18sevenpaper/3selectedbodyreads remainsPARTIAL;L03VOR/accessgapsopen. P15DONE_SCOPED_RECONSTRUCTION,P16DONE_SCOPED_AUDIT_WITH_OPEN_PRINT_FINDINGS. NoPDF/bib/frozenresultchanges.
+
+---
+
 # P18 deep verification update —17/10/2026
 
 P18 remainsPARTIAL. SelectedMethods/results/limitationsread for3closestpapers in7papershortlist;136source/identitychecksPASS,24assertionsmapped. NewN02priorartusesUNSW+MI-Boruta+stackingbutmergedrandomsplit;nohead-to-headscoreclaim. L12notUNSWandpublishedreportingscopeconflictretained. L03VORunavailable,U01/U03verifiedscopeunchanged. See docs/research/P18_DEEP_METHODS_VERIFICATION_2026-10-17.md. P19safeallowlistinternaldraftnext;P20deferred. P15DONE_SCOPED_RECONSTRUCTION;P16DONE_SCOPED_AUDIT_WITH_OPEN_PRINT_FINDINGS;approved37pagePDFuntouched.

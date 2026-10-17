@@ -68,3 +68,10 @@ Owner: session agent within explicit autonomous user authorization. Không thay 
 ##17/10/2026 P18deep
 
 D35. Treat targeted7paper/3selected-sectionreading as PARTIAL,not fullcorpus. D36. Protocol mismatch and prior hybridFS+stacking+UNSW evidence prevent novelty/superiority inflation. D37. Preserve published L12score/scope drift and L03VORconflict; noexternalpaper/projectmetriccorrection. D38. Ignore localfullsourcecaptures inGit; do notuseHTTP200challengeasfulltext;retainfetchfailures andsuccessfulCrossrefretry.
+
+
+##17/10/2026 P19safe
+
+- D39. BuildexplicitallowlistinternalreviewdossierwithoutGitindexcleanup;preserve3historicalsmokemodelphysicalcopiesandhistory. Pullingadeletioncommitcanremoveothercheckoutcopies,soavoidunnecessarycleanup.
+- D40. KeepactualZIP/copycontentslocalignored;publishonlymanifest/QA. Includeauthor-approvedPDFonlyinlocalinternalcopy;noimpliedpublicright. No LICENSE invented.
+- D41. Mechanical245+independent121PASSand3pathtestsdonotclosepublicrelease. Currentdossierisnotrunnableenvironmentorfinalblindpacket. PrepareP20rubriconly,fullpanelDEFERRED.

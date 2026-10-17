@@ -1,3 +1,11 @@
+# Current17/10/2026 — internaldraftvalidated,publicreleaseNOTAUTHORIZED
+
+P19safeallowlistdraft245checks+independent121checksPASS;3path testsPASS. This doesNOTclosepublicreleasegates. ThreeexistingtrackedSMOKE_ONLYmodelsremainpreserved,excludedfromdraft;noLICENSEchosen. Author/rightsholderdecisionsrequiredforcodeownership/license,modelredistribution,data/derivedoutputs,report/institutionaltemplate/logo/thirdpartyassets. ArchiveislocalINTERNAL_REVIEW_ONLY,46entries,notFINAL_NCKH. See docs/research/P19_SAFE_RELEASE_AUDIT_2026-10-17.md.
+
+P18targetedreadingadds3selected-bodyreads/7papers/24claims/136QAPASS,butL03VOR/fulltextaccess/noveltycoveragegapsremain. P16printfindingsandpre-P15page33snapshotdisclosedincompanionaddendum,PDFunchanged. P15historicalidentity/environmentUNKNOWNseparatefromacceptedreconstruction. Proposalform/institutional/signatures/defenseslides/demo/G0-G6remain. P20onlysetup/rubricprepared;NOpanelcompleted.
+
+---
+
 # Current release findings — 17/10/2026 after P16 actual-PDF QA
 
 P15DONE_SCOPED_RECONSTRUCTION does notcloseG3historicalidentityorG0-G6. Savedsummary2132/2132,actualPDF178/178andP18offline119/119PASS areboundedQA. Sixnewstandalonefigures passtext/collisionaudits. Approved37pagePDF unchanged.

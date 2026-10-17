@@ -5,7 +5,7 @@
   "local_session_date": "2026-10-17",
   "timezone": "Asia/Saigon",
   "phase": "P15_DONE_SCOPED_RECONSTRUCTION;P16_DONE_SCOPED_AUDIT_WITH_OPEN_PRINT_FINDINGS;P18_P19_PARTIAL;P20_DEFERRED",
-  "current_task": "P18_DEEP_DONE_SCOPED;P19_SAFE_DRAFT_NEXT",
+  "current_task": "P18_P19_CHECKPOINT_SAVED;PUBLICRIGHTS_AND_SOURCEACCESS_OPEN",
   "completed_tasks": [
     "BOOT-01",
     "BOOT-02_STRUCTURAL",
@@ -38,7 +38,10 @@
     "P16_SUMMARY_AND_ACTUAL_PDF_AUDIT_SCOPED",
     "P16_SIX_STANDALONE_ALTERNATIVES_SCOPED",
     "P18_CURRENT_REPORT_OFFLINE_AUDIT_SCOPED",
-    "P18_DEEP_SELECTED_SECTIONS_SCOPED"
+    "P18_DEEP_SELECTED_SECTIONS_SCOPED",
+    "P19_SMOKE_INVENTORY_SCOPED",
+    "P19_ALLOWLIST_INTERNAL_DRAFT_SCOPED",
+    "P20_PACKET_RUBRIC_PREPARATION_ONLY"
   ],
   "blocked_tasks": [
     {
@@ -82,23 +85,23 @@
     },
     {
       "path": ".research_memory/CHANGELOG.md",
-      "sha256": "48c0402f5d06240c6093c556461368c72c634b6e6638d30fb974b878300033c5"
+      "sha256": "4cb871a295a30003fbc721dc9672a6e5ab7d4f18032f11a7b219697197da83fb"
     },
     {
       "path": ".research_memory/DECISIONS.md",
-      "sha256": "1169560f71b2cb61d33661d7482d2da14db58eab4cd9473fbd268421da84d31a"
+      "sha256": "b08b946500540d9fbfd82414e7dc751f0b28272dabe88f736c3ba828ea804a7c"
     },
     {
       "path": ".research_memory/EVIDENCE_INDEX.csv",
-      "sha256": "0cc50356bf92ba4634eb276a95fcac997e4daa753d95e020950519fb8597adcd"
+      "sha256": "f4460dcfa0a8d14b22bc448d58e9c585dd44c81e8ca3921fbf55df7acd7fa2db"
     },
     {
       "path": ".research_memory/HANDOFF.md",
-      "sha256": "2699552d1c171fadbb333fe38815adaba524ab2ac22aeef2104ab29860377fa5"
+      "sha256": "82d42c2bbc6da4703bee4fc985fbe851894db61bad1ca21075373c7443b86db8"
     },
     {
       "path": ".research_memory/ISSUE_LOG.md",
-      "sha256": "0c12ae6144ea80e32475bb7c4b2dfe3618cd69f5cb4589b2457998dc54b02a9b"
+      "sha256": "9363926554dd3298233d7f8950bbef3e23d534e99e0fe7338eeaeec3f82c7497"
     },
     {
       "path": ".research_memory/RESEARCH_CANON.md",
@@ -106,11 +109,11 @@
     },
     {
       "path": ".research_memory/SKILL_USAGE_LOG.md",
-      "sha256": "0290f63ec7ceaad86fb31c009c2eceafe9b9b6a259a0f6fa9100823a3e088926"
+      "sha256": "6adbf3e84521e8e84d0a24233d7e996496cf0e08b66791fd13f8ddc9d2b31f8e"
     },
     {
       "path": ".research_memory/TASK_BOARD.md",
-      "sha256": "e4fe72e82ee41faaece3c82329725c5386fadbd590564f0a437145c461a02cc1"
+      "sha256": "a0e80c9724b1bfc8fcbddfec5823277d8cc0fd75fdb9f9e2523c324699ee7ab2"
     },
     {
       "path": ".research_memory/checkpoint_r03.json",
@@ -147,6 +150,18 @@
     {
       "path": ".research_memory/p18_deep_2026_10_17/checkpoint.json",
       "sha256": "66413d8ddb5d97c5d3519f618fd8909f216927dc1ab7a72eb60097029d5a478a"
+    },
+    {
+      "path": ".research_memory/p19_safe_2026_10_17/STATE_at_entry.json",
+      "sha256": "f7902c45883934c0f62790cf1d63526153d58a3b1fda05d3a1eb5a54c0bd5d34"
+    },
+    {
+      "path": ".research_memory/p19_safe_2026_10_17/checkpoint.json",
+      "sha256": "be42ae63c47b2290e061e9960dcce6ba62f62200835a8cf20ec8c5a54a96428b"
+    },
+    {
+      "path": ".research_memory/p19_safe_2026_10_17/final_preservation_validation.json",
+      "sha256": "54a67ab3dd47c68c9e70af77da54c3e400a3d8bded87e16fa316e3d3f46d8406"
     },
     {
       "path": ".research_memory/r04/R04-ASSEMBLY.json",
@@ -202,7 +217,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "870ad354fdcf1745b0c328a12f7337cb303d9d7622c8a3b2b80c3ae5c7374077"
+      "sha256": "82f503849b947fc19f21ae1f2fa222beea4ac58ea02dfde6d5197b41054f1bce"
     },
     {
       "path": "defense/Demo_runbook.md",
@@ -219,6 +234,10 @@
     {
       "path": "defense/Kich_ban_thuyet_trinh.md",
       "sha256": "0838f290f4e5b402f0e4d07901ac5e3a87dc09cb7909f41cf998a940b1d59d23"
+    },
+    {
+      "path": "defense/P20_REVIEW_PACKET_SETUP_2026-10-17.md",
+      "sha256": "68f512f2c45020e1499cbef6abc17cfb50d205c46275c5e42e3b72665f80219e"
     },
     {
       "path": "defense/QA_PREPARATION_CONTRACT.md",
@@ -290,7 +309,7 @@
     },
     {
       "path": "docs/ROADMAP_CURRENT.md",
-      "sha256": "9fb0b49ca5bfc97a0720ffcc94971edc56dc65817aac80f190b1f2a0817b883f"
+      "sha256": "dc494308adc299711989e8d6e41cbad2c6511117c88aa82498d94e068a50bb75"
     },
     {
       "path": "docs/ROADMAP_PHASE_AUDIT_2026-10-07.md",
@@ -363,6 +382,10 @@
     {
       "path": "docs/research/P19_RELEASE_READINESS_2026-10-17.md",
       "sha256": "6beffd0edde393e860e9b60f321ffbede5123e8c38d51d9b6148ac9eabb3a697"
+    },
+    {
+      "path": "docs/research/P19_SAFE_RELEASE_AUDIT_2026-10-17.md",
+      "sha256": "588ff47b076b2ee5e7e439c5eb86e7a14ce5bfc9df48c6977b3c9a1b5bf067fc"
     },
     {
       "path": "docs/research/PHASE14_ERROR_ANALYSIS_CLOSURE.md",
@@ -1021,8 +1044,32 @@
       "sha256": "3e92f2b5ba7665384991636059787b039e0a67c309add6adedd72438e39608d0"
     },
     {
+      "path": "release/INTERNAL_REVIEW_DRAFT_POLICY_2026-10-17.md",
+      "sha256": "55df4bb1e1b6f0add57b883fa7168c807a690401190e5ed430f8814803d55c38"
+    },
+    {
       "path": "release/RELEASE_BLOCKERS.md",
-      "sha256": "811360cecbf5ff78f08fbed9433323b85450cdfebd9f0b24b305ef952d3edf45"
+      "sha256": "92547529c068b7c266ad8ad931dae723da08fba39400b6679129cdab9211d66b"
+    },
+    {
+      "path": "release/internal_review_draft_2026_10_17_01/draft_manifest.csv",
+      "sha256": "7a7d1ad00e24ef0638c4eff02990b0f0aa040acf7c16667e8fb8732aad06828a"
+    },
+    {
+      "path": "release/internal_review_draft_2026_10_17_01/historical_zip_status.json",
+      "sha256": "21af8c47206d05b61cc95de82638b647150ec8f09226363eb5f6dda50fb9b708"
+    },
+    {
+      "path": "release/internal_review_draft_2026_10_17_01/independent_validation.json",
+      "sha256": "7c08d32b01593c01a5365ca69e1469bd2cccee31c80dd4157e7e12a77e472468"
+    },
+    {
+      "path": "release/internal_review_draft_2026_10_17_01/smoke_artifact_inventory.csv",
+      "sha256": "4647031c1630fd54902c0ebde640fdae49a81dc8734533e38cc931b9b12b0fc7"
+    },
+    {
+      "path": "release/internal_review_draft_2026_10_17_01/validation.json",
+      "sha256": "0c137ec1c90a33a3e30b9cf457744bcef6bf63ac4d755a746835c5a7a1e6ffd7"
     },
     {
       "path": "release/review_inventory_2026_10_17_01/review_inventory.csv",
@@ -2141,6 +2188,10 @@
       "sha256": "2a16545dc3a8cd7ffd0fc8447ca5f4ec78b37f72d787a5371ecdef4760809f1a"
     },
     {
+      "path": "tests/test_p19_safe_review_paths.py",
+      "sha256": "ec60c369d4af87c9134882ea20019641672db211b30d544247325535b69fe78c"
+    },
+    {
       "path": "tools/checkpoint_r03.py",
       "sha256": "1f745426c9494a1ee4a5362231854bd937f99df8347f376d2c7de30616eab95d"
     },
@@ -2175,6 +2226,10 @@
     {
       "path": "tools/p19_review_inventory.py",
       "sha256": "a980f46cbe9faef6fb3355b603049dc79f38ad764ab13e175a1472f0946e0308"
+    },
+    {
+      "path": "tools/p19_safe_review_draft.py",
+      "sha256": "d06bcf76ab11b7f23550b4c73c60ffed33534cf1f9a5c834befa0444da496758"
     },
     {
       "path": "tools/r04_assemble_proposal.py",
@@ -2245,7 +2300,7 @@
       "sha256": "75fe99880b22b3eb70e0578fbd79455e64440183fa4475f8a0941728d09148da"
     }
   ],
-  "next_action": "P19 inventory three tracked smoke binaries read-only; build allowlist INTERNAL_REVIEW_ONLY draft; no untrack/delete or LICENSE choice",
+  "next_action": "Obtain lawful remaining full-text/VOR and author rights decisions; preserve models/index/report; P20neutralpacket and finalinputs before panel",
   "last_gate_status": {
     "bootstrap": "PASS_SCOPED",
     "raw_integrity": "PASS",
@@ -2256,7 +2311,7 @@
     "preservation": "282/282 unchanged",
     "figure_F1": "READY_FOR_REVIEW",
     "bibliography": "3 metadata verified; 2 check suggested; 0 full text",
-    "release": "NOT_READY_FOR_SUBMISSION",
+    "release": "NOT_READY_FOR_SUBMISSION;INTERNAL_REVIEW_ONLY_ARCHIVE_NOT_PUBLIC_AUTHORIZED",
     "resume_r02": "92/92 prior manifest and282/282 preservation PASS",
     "legacy_literature": "11/12VERIFIED_METADATA;L03CHECK_SUGGESTED pageconflict;U01/U03open",
     "foundation_review": "PASS_SCOPED: methods7.8125; argument7.75",
@@ -2283,9 +2338,9 @@
     "P15": "DONE_SCOPED_RECONSTRUCTION;69/69savedacceptance;3runPASS",
     "P16": "2132summary+178actualPDFPASS;newfigures6text/6collisionPASS;historicalcollision6FAILandprint/snapshotfindingsopen",
     "P18": "PARTIAL;7papers3selectedbodyreads24assertions;136traceabilityidentitychecksPASS;L03VOR/access/noveltygapsremain",
-    "P19": "PARTIAL; tracked review inventory FAIL:3legacy SMOKE_ONLY joblib; no code LICENSE; no new model binaries staged",
-    "P20": "DEFERRED_FINAL_PANEL_INPUT_GATES",
-    "current_checkpoint_integrity": "1172 PASS / 0 FAIL; not overall release readiness",
+    "P19": "PARTIAL;internaldraft245+121checksPASS,3pathtestsPASS;publicrights/codeLICENSE/3trackedmodelsremainopen",
+    "P20": "DEFERRED;setup/rubric/questionsprepared,noactualreviewerreports",
+    "current_checkpoint_integrity": "555/555 current artifact SHA256 matches;25/25 final preservation/scope checks; not overall release readiness",
     "release_inventory": "FAIL_3_PREEXISTING_SMOKE_BINARIES; finalsnapshot871files; no code LICENSE"
   },
   "resume_command": "python -X utf8 tools/resume_checkpoint_audit.py --out-dir results/reproducibility/NEW_UNIQUE_SESSION",
@@ -2295,7 +2350,7 @@
   "model_artifact_available": true,
   "background_work": "NONE",
   "session_id": "2026-10-17-p16",
-  "checkpoint_validation_path": ".research_memory/p18_deep_2026_10_17/checkpoint.json",
+  "checkpoint_validation_path": ".research_memory/p19_safe_2026_10_17/checkpoint.json",
   "execution_scope_r04": "Only2000officialTRAINfitrows/500TRAINvalidation software smoke;no officialTESTCSV read,no scientific performance metrics,no tuning;threeSMOKE_ONLYmodels",
   "smoke_model_artifact_available": true,
   "smoke_model_scope": "Not fullTRAIN/final inference models;not substitute for final demo",
