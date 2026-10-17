@@ -10,6 +10,7 @@ on:
       - "tools/p21_pilot_worker.py"
       - "tools/p21_pilot_supervisor.py"
       - "tests/test_p21_pilot_guards.py"
+      - "tests/test_p21_pilot_split_synthetic.py"
       - ".github/workflows/p21-train-only-protocol-audit.yml"
   workflow_dispatch:
 
@@ -54,3 +55,16 @@ jobs:
           PY
       - name: Verify P21 contract and three frozen historical file hashes
         run: python tools/p21_protocol_validator.py
+
+  synthetic_group_split:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install ML libraries for synthetic-only split validation
+        run: python -m pip install --disable-pip-version-check numpy pandas scikit-learn
+      - name: Group-disjoint split tests on fabricated rows (NO TRAIN, TEST OR FIT)
+        run: python -m unittest discover -s tests -p "test_p21_pilot_split_synthetic.py" -v
