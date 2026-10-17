@@ -4,8 +4,8 @@
   "last_updated": "2026-10-18",
   "local_session_date": "2026-10-17",
   "timezone": "Asia/Saigon",
-  "phase": "P15_DONE_SCOPED_RECONSTRUCTION;P16_AUDIT_SCOPED_WITH_OPEN_PRINT_FINDINGS;P17_V2_47P_QA_PASS_AUTHOR_REVIEW_PENDING;P18_P19_PARTIAL;P20_PRE_REVIEW_QA_PASS_WITH_ERRATUM_FINAL_DEFERRED",
-  "current_task": "POST_V2_SCIENTIFIC_REVIEW_AND_AUTHOR_PDF_SIGNOFF_PENDING;P18_P19_RIGHTS_AND_SOURCE_ACCESS_OPEN",
+  "phase": "P15_DONE_SCOPED_RECONSTRUCTION;P16_AUDIT_SCOPED_WITH_OPEN_PRINT_FINDINGS;P17_V2_47P_QA_PASS_AUTHOR_REVIEW_PENDING;P18_P19_PARTIAL;P20_PRE_REVIEW_QA_PASS_WITH_ERRATUM_FINAL_DEFERRED;P21_RF42_PILOT_CODE_READY_NOT_RUN",
+  "current_task": "P21_USER_OPT_IN_FOR_BOUNDED_RF42_SMOKE_PENDING;P20_POST_V2_SCIENTIFIC_REVIEW_STILL_OPEN",
   "completed_tasks": [
     "BOOT-01",
     "BOOT-02_STRUCTURAL",
@@ -2300,7 +2300,7 @@
       "sha256": "75fe99880b22b3eb70e0578fbd79455e64440183fa4475f8a0941728d09148da"
     }
   ],
-  "next_action": "Check exact sha256 of 47-page V2 PDF; request NotebookLM source-cited RQ1-RQ5/manuscript critical audit; verify findings against frozen repo evidence; adjudicate 9 P20 concern groups against V2; resolve print/admin/rights blockers without retraining or TEST retuning",
+  "next_action": "If user explicitly chooses resource smoke pilot, run tools/p21_pilot_supervisor.py with --authorize I_AUTHORIZE_TRAIN_ONLY_P21_RF42_PILOT and new results/controlled_extensions/p21_train_only_pilot_rf42_* output; inspect log/report and never auto-retry. RF42 8k smoke only, no validation score or official TEST. Later build selector/weight/Stacking pilots and obtain distinct author approval before full 5-seed P21. P20/P18/P19 gates remain open.",
   "last_gate_status": {
     "bootstrap": "PASS_SCOPED",
     "raw_integrity": "PASS",
