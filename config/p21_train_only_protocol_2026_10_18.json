@@ -1,0 +1,295 @@
+{
+  "protocol_id": "P21_TRAIN_ONLY_CONTROLLED_EXTENSION_V1",
+  "version": 1,
+  "status": "DESIGN_ONLY_AUTHOR_PREFLIGHT_APPROVAL_PENDING",
+  "first_experiment_executed": false,
+  "training_authorized": false,
+  "new_experiment_is_post_hoc_relative_to_historical_test": true,
+  "scope": "TRAIN_REUSED_POST_HOC_CONTROLLED_EXTENSION; TRAIN-derived internal validation only; no independent external confirmation",
+  "source": {
+    "raw_train": "data/raw/unsw-nb15/UNSW_NB15_training-set.csv",
+    "sha256": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa",
+    "expected_rows": 175341,
+    "expected_original_features": 42,
+    "label": "label",
+    "positive_label": 1,
+    "excluded_predictors": [
+      "id",
+      "label",
+      "attack_cat"
+    ],
+    "categorical_predictors": [
+      "proto",
+      "service",
+      "state"
+    ],
+    "historical_read_only_hashes": {
+      "src/models/run_unsw_phase9_final_holdout.py": "3e7d1369222ccdf452116e069a0db3df55e1d6d683d0f92f4e2bcde0800ae480",
+      "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json": "cdda800318c5d2259e581bff5b194381be7434d654950377dd4b40fca50be0a6",
+      "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json": "5a8fe201c88b49a2c018778f6d159a107b6fdfa810c05c1606e42e6d675244be"
+    }
+  },
+  "split": {
+    "group_by": "exact_original_42_predictor_vector_only",
+    "group_construction": "deterministic normalized typed-feature fingerprint with collision safeguards",
+    "cv": "StratifiedGroupKFold",
+    "n_splits": 5,
+    "fold_for_validation": 0,
+    "shuffle": true,
+    "seed": 20261018,
+    "target_validation_fraction": 0.2,
+    "valid_fraction_bounds": [
+      0.18,
+      0.22
+    ],
+    "class_proportion_max_deviation_percentage_points": 2,
+    "require_no_row_or_group_overlap": true,
+    "allow_auto_fallback": false
+  },
+  "replication": {
+    "seeds": [
+      1103,
+      2207,
+      3301,
+      4409,
+      5501
+    ],
+    "fit_rows_per_replication": 60000,
+    "sample_method": "stratified_without_replacement_from_fit_pool",
+    "same_fit_rows_across_all_arms_within_seed": true,
+    "shared_validation_across_seeds": true,
+    "completed_seeds_required_for_full_results": 5
+  },
+  "feature_selector": {
+    "primary_track": "train_subset_stable_top17",
+    "never_reuse_historical_full_train_stable17_for_primary": true,
+    "refit_within_each_replication_fit_only": true,
+    "selectors": [
+      "mutual_information_filter_redundancy",
+      "l1_logistic",
+      "extra_trees"
+    ],
+    "selection_seeds": [
+      11,
+      23,
+      42,
+      71,
+      101
+    ],
+    "subsample_rows_per_selector_seed": 35000,
+    "top_k_per_method": 20,
+    "stable_frequency_min": 0.6,
+    "method_vote_threshold_for_stable": 2,
+    "output_k": 17,
+    "ranking_tie_breaker": [
+      "stable_method_votes_desc",
+      "mean_selection_frequency_desc",
+      "feature_name_asc"
+    ],
+    "handle_fewer_than_k_stable": "fill_to_k_by_preregistered_ranking_and_report_count",
+    "reuse_only_within_same_seed": true
+  },
+  "model": {
+    "decision_threshold": 0.5,
+    "common_rf": {
+      "n_estimators": 150,
+      "min_samples_leaf": 2,
+      "max_features": 0.5,
+      "bootstrap": true,
+      "n_jobs": 1
+    },
+    "preprocessing": {
+      "one_hot_encoder_unknown": "ignore",
+      "fit_with_training_only": true,
+      "scaler_for_lr": "StandardScaler"
+    },
+    "stacking_lite": {
+      "base_learners": [
+        "logistic_regression",
+        "decision_tree",
+        "random_forest"
+      ],
+      "base_lr": {
+        "C": 1,
+        "solver": "liblinear"
+      },
+      "base_dt": {
+        "min_samples_leaf": 2
+      },
+      "base_rf_matches_common_rf": true,
+      "meta_lr": {
+        "C": 0.5,
+        "solver": "liblinear",
+        "class_weight": null
+      },
+      "inner_cv": 3,
+      "inner_cv_shuffle": true,
+      "inner_cv_seed": 137,
+      "stack_method": "predict_proba",
+      "passthrough": false,
+      "n_jobs": 1
+    }
+  },
+  "arms": [
+    {
+      "id": "A0_RF42_NONE",
+      "role": [
+        "RQ1",
+        "RQ2",
+        "RQ5"
+      ],
+      "learner": "rf",
+      "track": "all42",
+      "class_weight": null,
+      "resampling": "none"
+    },
+    {
+      "id": "A1_RF17_NONE",
+      "role": [
+        "RQ2"
+      ],
+      "learner": "rf",
+      "track": "train_subset_stable_top17",
+      "class_weight": null,
+      "resampling": "none"
+    },
+    {
+      "id": "A2_RF42_BALANCED",
+      "role": [
+        "RQ5"
+      ],
+      "learner": "rf",
+      "track": "all42",
+      "class_weight": "balanced",
+      "resampling": "none"
+    },
+    {
+      "id": "A3_RF42_OVERSAMPLE",
+      "role": [
+        "RQ5"
+      ],
+      "learner": "rf",
+      "track": "all42",
+      "class_weight": null,
+      "resampling": "train_minority_random_oversample_to_majority"
+    },
+    {
+      "id": "A4_STACK42_NONE",
+      "role": [
+        "RQ1"
+      ],
+      "learner": "stacking_lite",
+      "track": "all42",
+      "class_weight": null,
+      "resampling": "none"
+    }
+  ],
+  "outcomes": {
+    "RQ1": {
+      "comparison": [
+        "A4_STACK42_NONE",
+        "A0_RF42_NONE"
+      ],
+      "primary": [
+        "macro_f1_difference"
+      ],
+      "secondary": [
+        "mcc",
+        "fpr",
+        "fnr",
+        "fp",
+        "fn",
+        "fit_time"
+      ],
+      "interpretation": "paired_seed_variability_with_common_validation_not_independent_external_test"
+    },
+    "RQ2": {
+      "comparison": [
+        "A1_RF17_NONE",
+        "A0_RF42_NONE"
+      ],
+      "primary": [
+        "macro_f1_difference"
+      ],
+      "secondary": [
+        "mcc",
+        "attack_recall",
+        "fpr",
+        "fnr",
+        "fit_time",
+        "predict_time",
+        "peak_rss",
+        "model_size_bytes"
+      ],
+      "interpretation": "matched_model_hyperparameters_differ_in_training_only_feature_track"
+    },
+    "RQ5": {
+      "comparisons": [
+        [
+          "A2_RF42_BALANCED",
+          "A0_RF42_NONE"
+        ],
+        [
+          "A3_RF42_OVERSAMPLE",
+          "A0_RF42_NONE"
+        ]
+      ],
+      "co_primary": [
+        "attack_fnr_difference",
+        "macro_f1_difference"
+      ],
+      "secondary": [
+        "attack_recall",
+        "attack_precision",
+        "fpr",
+        "mcc",
+        "fp",
+        "fn",
+        "time"
+      ],
+      "interpretation": "weighting_vs_resampling_interventions_on_same_fit_pool"
+    }
+  },
+  "runtime": {
+    "platform": "Windows_local_12GiB",
+    "python": "3.11.9",
+    "n_jobs": 1,
+    "blas_threads": 1,
+    "worker_concurrency": 1,
+    "process_tree_rss_cap_gib": 2,
+    "system_available_floor_gib": 1.5,
+    "min_available_ram_at_start_gib": 4,
+    "min_free_disk_gib": 10,
+    "monitoring_interval_seconds": 0.5,
+    "smoke_fit_rows_max": 20000,
+    "smoke_is_scientific_evaluation": false,
+    "max_rf_fit_minutes": 30,
+    "max_stacking_fit_minutes": 90,
+    "automatic_retry": false,
+    "pilot_required": true,
+    "author_explicit_opt_in_required": true
+  },
+  "governance": {
+    "forbid_paths_containing": [
+      "UNSW_NB15_testing-set.csv",
+      "final_evaluation",
+      "phase9_holdout",
+      "phase10_statistics"
+    ],
+    "forbid_original_stage2_main": true,
+    "forbid_original_p9_main": true,
+    "forbid_writing_under": [
+      "report",
+      "results/final_evaluation",
+      "results/tuning",
+      "results/feature_selection",
+      "results/reproducibility",
+      "data/raw"
+    ],
+    "new_output_prefix": "results/controlled_extensions/p21_train_only_",
+    "freeze_original_p15_and_pdf_v2": true,
+    "publish_full_data_or_model_binaries": false,
+    "output_dir_must_not_preexist": true,
+    "only_request_pdf_v3_after_author_review": true
+  }
+}
