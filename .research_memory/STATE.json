@@ -4,8 +4,8 @@
   "last_updated": "2026-10-18",
   "local_session_date": "2026-10-17",
   "timezone": "Asia/Saigon",
-  "phase": "P15_DONE_SCOPED_RECONSTRUCTION;P16_AUDIT_SCOPED_WITH_OPEN_PRINT_FINDINGS;P17_V2_47P_QA_PASS_AUTHOR_REVIEW_PENDING;P18_P19_PARTIAL;P20_PRE_REVIEW_QA_PASS_WITH_ERRATUM_FINAL_DEFERRED;P21_RF42_PILOT_CODE_READY_NOT_RUN",
-  "current_task": "P21_USER_OPT_IN_FOR_BOUNDED_RF42_SMOKE_PENDING;P20_POST_V2_SCIENTIFIC_REVIEW_STILL_OPEN",
+  "phase": "P15_DONE_SCOPED_RECONSTRUCTION;P16_AUDIT_SCOPED_WITH_OPEN_PRINT_FINDINGS;P17_V2_47P_QA_PASS_AUTHOR_REVIEW_PENDING;P18_P19_PARTIAL;P20_PRE_REVIEW_QA_PASS_WITH_ERRATUM_FINAL_DEFERRED;P21_RF42_PILOT_PASS_RESOURCE_SMOKE_ONLY;P21_REMAINING_PILOTS_PENDING",
+  "current_task": "P21_8K_RF42_RESOURCE_PILOT_ACCEPTED;P21_TRAIN_FIT_ONLY_SELECTOR_PILOT_NEXT;P20_REVIEW_OPEN",
   "completed_tasks": [
     "BOOT-01",
     "BOOT-02_STRUCTURAL",
@@ -2300,7 +2300,7 @@
       "sha256": "75fe99880b22b3eb70e0578fbd79455e64440183fa4475f8a0941728d09148da"
     }
   ],
-  "next_action": "If user explicitly chooses resource smoke pilot, run tools/p21_pilot_supervisor.py with --authorize I_AUTHORIZE_TRAIN_ONLY_P21_RF42_PILOT and new results/controlled_extensions/p21_train_only_pilot_rf42_* output; inspect log/report and never auto-retry. RF42 8k smoke only, no validation score or official TEST. Later build selector/weight/Stacking pilots and obtain distinct author approval before full 5-seed P21. P20/P18/P19 gates remain open.",
+  "next_action": "RF42 8k TRAIN smoke author-run PASS and metadata QA 14/14; only scoped resource pilot, no RQ accuracy metrics. Implement pilot for fit-only 17-feature selection with synthetic leakage tests and a separate supervised RAM cap; do NOT auto-start models or evaluate validation. Next dedicated class-weight, oversample and stacking pilots, each author-authorized, then request separate consent before 5-seed 60k RQ experiment; preserve P9/P15 TEST and PDF V2.",
   "last_gate_status": {
     "bootstrap": "PASS_SCOPED",
     "raw_integrity": "PASS",
