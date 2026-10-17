@@ -1,3 +1,17 @@
+## P21 RF42 author pilot PASS — 18/10/2026
+
+| Item | Status | Evidence and next |
+|---|---|---|
+| Author-host `p21_train_only_pilot_rf42_01` | **PASS_RESOURCE_SMOKE_ONLY** | Commit `34bcdeac`: 8k TRAIN fit; 51.86s wall; peak process RSS 371728384B; min available RAM4333109248B; TRAIN 175341; internal grouped split 140272/35069; no validation scoring, TEST, artifacts |
+| Independent committed-report QA | **14/14 checks PASS** | `tools/p21_verify_pilot_reports.py`, 5 negative/positive fixture tests, [CI 39062897494](https://github.com/nphu0811/EnsembleLearning/actions/runs/39062897494) all jobs SUCCESS |
+| P21 selector17 pilot | **NEXT/NOT_IMPLEMENTED** | Leakage-safe train-fit-only selector5x(35k sample) resource pilot; no validation fitting and no preexisting global stable17 |
+| P21 balanced/oversample/Stack-Lite pilot | **NEXT/NOT_IMPLEMENTED** | Distinct bounded author opt-in and resource reports; RF42 pilot does not imply safe Stacking |
+| P21 scientific 5x5 arm matrix | **BLOCKED—AUTHOR_OPT_IN_AND_PILOT_SUITE** | No new RQ metrics, no full 60k fit authorized |
+| P21 PDF V3 | **NOT_AUTHORIZED** | Preserve PDF V2 47 pages and frozen P9/P15, open P18/P19/P20 review rights |
+
+Status evidence: `docs/research/P21_RF42_PILOT_AUTHOR_RESULT_ACCEPTANCE_2026-10-18.md`.
+
+---
 ## P21-RF42-PILOT PREPARED, NOT EXECUTED — 18/10/2026
 
 | Task | Status | Evidence/next |
