@@ -1,0 +1,302 @@
+{
+  "scope": "P20-PRE AI-simulated INTERNAL scientific review; not human peer review or institutional approval",
+  "disposition": "P20_PRE_REVIEW_COMPLETED_WITH_OPEN_CONCERNS",
+  "source_reviewers_commit": "b3acf2e2f8ad15bdf4b11bb9450927a57309d968",
+  "review_packet_manifest_sha256": "c0f0b3828ba16ce8312b489915cc4c56c9fc7c771dbeefe1d7a9bb78938b62b7",
+  "freeze_index": "defense/p20_pre_2026_10_17_01/review_reports_frozen.json",
+  "reviewer_recommendations": {
+    "A": "MAJOR_REVISION_REQUIRED",
+    "B": "MAJOR_REVISION_REQUIRED",
+    "C": "MAJOR_REVISION_REQUIRED"
+  },
+  "individual_concern_count": 17,
+  "individual_major_count": 8,
+  "individual_minor_count": 9,
+  "group_count": 9,
+  "consensus_group_count": 5,
+  "conclusions": "All three recommend MAJOR_REVISION_REQUIRED for the manuscript. No local concern marked blocking=true; publication/narrative readiness differs from the validity of the narrow descriptive case study. No original reviewer item was changed or closed.",
+  "review_boundary": "Only GitHub-committed reports and available repository files checked in this continuation. Original 80 copied local packet files are git-ignored and unavailable to this reviewer for full local-validator execution. A/B first frozen post-push, reviewer C previously frozen. Process-level isolation is described in dispatch but not externally proven.",
+  "concerns": [
+    {
+      "id": "P20-PRE-G01",
+      "category": "MAJOR",
+      "topic": "Development OOF/diversity/voting quantitative evidence absent from approved manuscript",
+      "why_it_matters": "Claims discuss development OOF, diversity, voting (including negative results), but bounded PDF omits corresponding selected numerical exhibits.",
+      "reviewer_concern_ids": [
+        "A-M2",
+        "B-M2",
+        "C-M3"
+      ],
+      "consensus": true,
+      "status": "OPEN",
+      "resolution_route": "DOCUMENT",
+      "acceptance_test": "Create a separately reviewed source-linked companion with development OOF base-model, pairwise-diversity and voting tables, preserving all negative values and distinguishing DEVELOPMENT-only metrics from official TEST; request permission before changing the approved PDF.",
+      "supporting_source_paths": [
+        "results/ensemble/unsw_nb15/phase7_1_diversity/tables/pairwise_diversity.csv",
+        "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/pooled_oof_metrics.csv"
+      ],
+      "original_reviewer_severities": [
+        {
+          "id": "A-M2",
+          "severity": "MAJOR",
+          "evidence_status": "VERIFIED",
+          "blocking": false
+        },
+        {
+          "id": "B-M2",
+          "severity": "MAJOR",
+          "evidence_status": "VERIFIED",
+          "blocking": false
+        },
+        {
+          "id": "C-M3",
+          "severity": "MAJOR",
+          "evidence_status": "VERIFIED",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "id": "P20-PRE-G02",
+      "category": "MAJOR",
+      "topic": "Approved 37-page PDF states P15 full TRAIN not reconstructed, but later audit records 3 accepted local artifacts",
+      "why_it_matters": "The PDF was written against an earlier snapshot; newer P15 status must be reconciled in a dated companion without claiming original historical binary identity.",
+      "reviewer_concern_ids": [
+        "A-M3",
+        "B-M1",
+        "C-M2"
+      ],
+      "consensus": true,
+      "status": "OPEN",
+      "resolution_route": "DOCUMENT",
+      "acceptance_test": "Date-stamp a P15 addendum referring to 3 run reports and 69/69 author-host artifact checks, explicitly distinguish rebuilt TRAIN-only artifacts from historical originals; do not edit accepted PDF without author approval.",
+      "supporting_source_paths": [
+        "report/chapters/conclusion.tex",
+        "results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json"
+      ],
+      "original_reviewer_severities": [
+        {
+          "id": "A-M3",
+          "severity": "MAJOR",
+          "evidence_status": "VERIFIED",
+          "blocking": false
+        },
+        {
+          "id": "B-M1",
+          "severity": "MAJOR",
+          "evidence_status": "PARTIAL",
+          "blocking": false
+        },
+        {
+          "id": "C-M2",
+          "severity": "MAJOR",
+          "evidence_status": "PARTIAL",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "id": "P20-PRE-G03",
+      "category": "MAJOR",
+      "topic": "Frozen 17-feature selection lineage/preprocessing/configuration insufficiently explained in manuscript",
+      "why_it_matters": "Methods should trace stability selection, categorical preprocessor and frozen hyperparameters; RF17 vs RF42 is pipeline comparison not isolated feature-count causality.",
+      "reviewer_concern_ids": [
+        "A-M1",
+        "C-m1"
+      ],
+      "consensus": true,
+      "status": "OPEN",
+      "resolution_route": "DOCUMENT",
+      "acceptance_test": "Provide source-anchored lineage with 17 ordered feature names, selection rules, seeds, exact categorical processing, chosen hyperparameters and pre-CV selection limits; no model fit/reselection.",
+      "supporting_source_paths": [
+        "src/features/select_unsw_features_stage2.py",
+        "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json"
+      ],
+      "original_reviewer_severities": [
+        {
+          "id": "A-M1",
+          "severity": "MAJOR",
+          "evidence_status": "VERIFIED",
+          "blocking": false
+        },
+        {
+          "id": "C-m1",
+          "severity": "MINOR",
+          "evidence_status": "VERIFIED",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "id": "P20-PRE-G04",
+      "category": "MAJOR",
+      "topic": "Originality and contribution framing relative to closest prior methods",
+      "why_it_matters": "A bounded IDS benchmark/error/cost audit is evidenced; algorithmic novelty or field-wide SOTA is not.",
+      "reviewer_concern_ids": [
+        "C-M1"
+      ],
+      "consensus": false,
+      "status": "OPEN",
+      "resolution_route": "DOCUMENT",
+      "acceptance_test": "Prepare a claim-to-source comparison with L06/L12/N02 and reading-scope flags; state methodological components are prior art and highlight qualified empirical contribution without declaring superiority across unmatched protocols.",
+      "supporting_source_paths": [
+        "report/chapters/related_work.tex",
+        "literature_reported_facts.csv"
+      ],
+      "original_reviewer_severities": [
+        {
+          "id": "C-M1",
+          "severity": "MAJOR",
+          "evidence_status": "PARTIAL",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "id": "P20-PRE-G05",
+      "category": "MINOR",
+      "topic": "Bootstrap stratification, statistical estimand and comparison family reporting",
+      "why_it_matters": "Explain benchmark-row stratified joint patterns, percentile intervals, Holm family and inferential unit; failure to reject is not equivalence.",
+      "reviewer_concern_ids": [
+        "A-m2",
+        "B-m1",
+        "C-m2"
+      ],
+      "consensus": true,
+      "status": "OPEN",
+      "resolution_route": "DOCUMENT",
+      "acceptance_test": "Add source-checked statistical-methods companion with actual bootstrap unit/resampling mechanism, multiplicity family and non-equivalence warning; never recompute official results.",
+      "supporting_source_paths": [
+        "src/analysis/run_unsw_phase10_statistics.py",
+        "report/chapters/validity_discussion.tex"
+      ],
+      "original_reviewer_severities": [
+        {
+          "id": "A-m2",
+          "severity": "MINOR",
+          "evidence_status": "VERIFIED",
+          "blocking": false
+        },
+        {
+          "id": "B-m1",
+          "severity": "MINOR",
+          "evidence_status": "VERIFIED",
+          "blocking": false
+        },
+        {
+          "id": "C-m2",
+          "severity": "MINOR",
+          "evidence_status": "VERIFIED",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "id": "P20-PRE-G06",
+      "category": "MINOR",
+      "topic": "Batch-average prediction time must not be marketed as per-request deployment latency",
+      "why_it_matters": "The measured ms/sample is batch computation average under one environment; not online end-to-end latency.",
+      "reviewer_concern_ids": [
+        "A-m4",
+        "B-m3"
+      ],
+      "consensus": true,
+      "status": "OPEN",
+      "resolution_route": "DOCUMENT",
+      "acceptance_test": "Correct captions/defense wording in companion to batch-average pipeline inference including preprocessing/label transformation and historical environment uncertainty.",
+      "supporting_source_paths": [
+        "results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+        "src/models/run_unsw_phase9_final_holdout.py"
+      ],
+      "original_reviewer_severities": [
+        {
+          "id": "A-m4",
+          "severity": "MINOR",
+          "evidence_status": "VERIFIED",
+          "blocking": false
+        },
+        {
+          "id": "B-m3",
+          "severity": "MINOR",
+          "evidence_status": "VERIFIED",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "id": "P20-PRE-G07",
+      "category": "MINOR",
+      "topic": "Diagram/list sequence can imply TEST opened before frozen selection",
+      "why_it_matters": "Distinguish early dataset file integrity/inventory from fitting, development selection and one-time holdout evaluation.",
+      "reviewer_concern_ids": [
+        "A-m1"
+      ],
+      "consensus": false,
+      "status": "OPEN",
+      "resolution_route": "DOCUMENT",
+      "acceptance_test": "Add chronology diagram tied to actual source and frozen plan; do not claim TEST was never read for audit, only that TEST not used for tuning; no historical rewriting.",
+      "supporting_source_paths": [
+        "report/chapters/methodology.tex",
+        "src/models/run_unsw_phase9_final_holdout.py"
+      ],
+      "original_reviewer_severities": [
+        {
+          "id": "A-m1",
+          "severity": "MINOR",
+          "evidence_status": "VERIFIED",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "id": "P20-PRE-G08",
+      "category": "MINOR",
+      "topic": "Within-partition duplicates and label-conflict sensitivity not fully quantified in manuscript",
+      "why_it_matters": "Cross-split overlap and within-split repetitions have separate meanings; neither proves complete absence of leakage.",
+      "reviewer_concern_ids": [
+        "A-m3"
+      ],
+      "consensus": false,
+      "status": "OPEN",
+      "resolution_route": "DOCUMENT",
+      "acceptance_test": "Link duplicate count/group and label-conflict source tables in appendix, retain caveat about flow/session dependence and do not delete flows retrospectively.",
+      "supporting_source_paths": [
+        "results/data_audit/unsw_nb15_overlap/overlap_consistency_summary.json",
+        "report/chapters/dataset_eda.tex"
+      ],
+      "original_reviewer_severities": [
+        {
+          "id": "A-m3",
+          "severity": "MINOR",
+          "evidence_status": "VERIFIED",
+          "blocking": false
+        }
+      ]
+    },
+    {
+      "id": "P20-PRE-G09",
+      "category": "MINOR",
+      "topic": "Attack-family uncertainty and small-support classes underrepresented in compact report table",
+      "why_it_matters": "A grouped table can hide subgroup differences; the existing Wilson intervals and nine-family sample sizes should remain available.",
+      "reviewer_concern_ids": [
+        "B-m2"
+      ],
+      "consensus": false,
+      "status": "OPEN",
+      "resolution_route": "DOCUMENT",
+      "acceptance_test": "Create companion full nine-family support/FN/miss-rate/Wilson table linked to saved source, mark sparse support and no multiclass claim.",
+      "supporting_source_paths": [
+        "results/final_analysis/unsw_nb15/phase10_statistics/tables/attack_family_miss_rate_ci.csv",
+        "report/chapters/results_discussion.tex"
+      ],
+      "original_reviewer_severities": [
+        {
+          "id": "B-m2",
+          "severity": "MINOR",
+          "evidence_status": "VERIFIED",
+          "blocking": false
+        }
+      ]
+    }
+  ]
+}
