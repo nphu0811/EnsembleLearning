@@ -1,3 +1,19 @@
+## 2026-10-18 P21 Selector17 resource pilot accepted
+
+| Work item | State | Evidence and next |
+|---|---|---|
+| P21 supervised RF42 resource pilot | **DONE_SCOPED** | 8k TRAIN FIT; no validation scoring |
+| P21 3-method selector17 pilot | **DONE_SCOPED** | Author b8820ed; 8k FIT, selection sample4667/seed, 15 selector calls, selected17 (eligible stable18), RSS381898752B, 57.547s wall |
+| P21 selector report metadata QA | **PASS 15/15** | \`tools/p21_verify_selector_pilot_reports.py\` +7 negative tests; [CI39068091845](https://github.com/nphu0811/EnsembleLearning/actions/runs/39068091845) SUCCESS (37+7 unit/synthetic tests;29 static checks). Evidence \`docs/research/P21_SELECTOR17_AUTHOR_PILOT_ACCEPTANCE_2026-10-18.md\` |
+| P21 RQ5 weight/oversample pilot | **NEXT / NOT IMPLEMENTED / NOT AUTHORIZED** | Require matched RF42 NONE/BALANCED/fit-only minority random oversampling, same FIT source and watchdog, avoid validation scores |
+| P21 RQ1 Stacking-Lite pilot | **PENDING / NOT AUTHORIZED** | Three-fold inner CV, separate time/RSS feasibility |
+| P21 full scientific 5-seed/5-arm matrix | **BLOCKED / NOT AUTHORIZED** | Author opt-in only after all pilots/resource review; new separate TRAIN-derived internal validation, no TEST |
+| PDF V3, P20-FINAL | **NOT AUTHORIZED / OPEN** | Preserve V2 47 pages/P9/P15/reviewer evidence and release gates |
+
+Historical checkpoints below are not the latest P21 state.
+
+---
+
 ## P21 selector17 pilot ready — 18/10/2026
 
 | Task | State | Evidence / next |
