@@ -1,0 +1,69 @@
+
+
+
+\section{Tại sao điểm số tổng thể chưa đủ}
+Trong NIDS, việc chọn một pipeline chỉ theo Macro-F1 hoặc Accuracy có thể dẫn tới hiểu nhầm mục tiêu sử dụng. Official TEST chứa 37\,000 dòng Normal và 45\,332 dòng Attack. Với cùng tập này, Stacking-42 giảm số FP từ 10\,003 xuống 9\,861 nhưng tăng FN từ 734 lên 852 so với RF-42. Nếu người vận hành đặt chi phí FN lớn hơn nhiều chi phí FP thì đánh đổi này có thể không mong muốn; trong một môi trường quá tải bởi cảnh báo giả, việc giảm FP lại có giá trị riêng. Tuy nhiên, nghiên cứu không đo chi phí thực tế nên chỉ mô tả đánh đổi, không gọi một pipeline là tốt nhất cho mọi tình huống.
+
+Số ít trường hợp Stacking sửa lỗi của RF và số trường hợp ngược lại còn cho phép nhìn sâu hơn vào kết luận thống kê. Trong bảng paired correctness có 71\,104 mẫu hai mô hình đều đúng, 10\,222 mẫu đều sai, 491 mẫu RF-42 đúng nhưng Stacking-42 sai và 515 mẫu Stacking-42 đúng nhưng RF-42 sai. Sự cân bằng tương đối giữa hai ô sai khác này giải thích vì sao kiểm định về \emph{tính đúng tổng thể} không cho thấy một ưu thế rõ, dù FP/FN theo từng lớp đổi theo những hướng khác nhau.
+
+\begin{table}[htbp]\centering
+\caption{Tính đúng/sai của RF-42 và Stacking-42 theo từng cặp dự đoán, official TEST.}
+\label{tab:paired-correctness}
+\begin{tabular}{p{0.36\linewidth}rr}\toprule
+ & Stacking đúng & Stacking sai\\\midrule
+RF đúng & 71\,104 & 491\\
+RF sai & 515 & 10\,222\\\bottomrule
+\end{tabular}
+\end{table}
+
+Các ô tính đúng/sai chỉ chứa nhãn đúng/sai tổng thể, trong khi confusion matrix còn phân biệt Normal/Attack. Vì vậy McNemar về hai ô discordant không thể thay thế kiểm tra FPR/FNR hoặc Macro-F1. Việc một phép kiểm định không bác bỏ giả thuyết không đồng nghĩa chứng minh hai mô hình tương đương; nó chỉ phản ánh sức mạnh bằng chứng trong phép thử và dữ liệu được dùng.
+
+\section{Sai số theo nhóm tấn công}
+Trên 6\,062 mẫu Fuzzers thật, RF-42 bỏ sót 621 trong khi Stacking-42 bỏ sót 754, tức Stacking tăng 133 FN. Trên Generic có 18\,871 mẫu, RF-42 bỏ sót 57 và Stacking-42 bỏ sót 14, nghĩa là Stacking giảm 43 FN. Hai thay đổi ngược hướng cho thấy một metric gộp toàn bộ Attack có thể che ảnh hưởng không đồng đều giữa các nhóm.
+
+Vì mô hình được huấn luyện cho binary Normal/Attack, đây là phân nhóm những nhãn thật phục vụ phân tích hậu nghiệm. Không được diễn giải các đếm FN thành bảng multiclass accuracy. Đặc trưng \texttt{sttl}, \texttt{proto}, \texttt{state} và các biến khác có thể đồng xuất hiện với mẫu bị dự đoán khác nhau, nhưng việc cùng xuất hiện chưa xác định feature là nguyên nhân. Muốn kiểm tra cơ chế cần một đối chứng có thể can thiệp và không làm thay đổi định nghĩa mẫu hoặc vô tình nhìn lại official TEST trong khâu thiết kế.
+
+\section{Vai trò và giới hạn của Feature Selection}
+Hai track 42 và 17 feature được so sánh dưới những cấu hình final khác nhau. RF-42 dùng 300 trees và \texttt{min\_samples\_leaf}=1; RF-17 dùng 150 trees và \texttt{min\_samples\_leaf}=2. Khi RF-17 có thời gian train thấp hơn, lợi ích quan sát được có thể do cả số cây, kích thước lá, số feature lẫn các tương tác giữa chúng. Một thí nghiệm ablation chuẩn để tách nguyên nhân phải giữ các tham số còn lại cố định, dùng cùng seed/protocol và lặp lại việc chọn feature bên trong vòng đánh giá.
+
+Trong dự án, stable 17 features được chọn từ toàn TRAIN trước development CV. Official TEST không được dùng trực tiếp để ra danh sách, nhưng điểm CV sau bước chọn toàn TRAIN có thể vẫn lạc quan vì phép chọn đã thấy nhãn của một số fold trước khi chúng làm validation. Đây là giới hạn nghiêm túc, cần đặt ngay cạnh các kết luận về feature selection, không chỉ chép ở phần cuối. Dữ liệu đã lưu không đủ chứng minh rằng một quy trình nested được triển khai đầy đủ.
+
+\section{Sự khác biệt giữa kiểm định, bootstrap và độ ổn định}
+Paired bootstrap tạo phân bố hiệu số từ cùng các dòng TEST, giữ quan hệ ghép cặp của hai model. Đối với Macro-F1, CI 95\% của Stacking-42 trừ RF-42 là [-0,000312; 0,001309]; với MCC là [-0,001938; 0,001140]. Hai khoảng chứa 0. Trong khi đó, CI FPR nằm hoàn toàn phía âm và CI FNR nằm hoàn toàn phía dương. Bốn nhận xét phải được giữ cùng nhau: bằng chứng ủng hộ sự thay đổi loại lỗi trên benchmark, không khẳng định một chiến thắng về hiệu năng tổng quát.
+
+Một phép bootstrap trên dòng không tái tạo sự ngẫu nhiên của quá trình tối ưu mô hình. Để đo ổn định do train, cần nhiều lần fit độc lập, có quản lý seed và khả năng so sánh đúng điều kiện compute. Để đo tổng quát hóa giữa các mạng, cần nhiều benchmark độc lập hoặc thiết kế theo thời gian/session. Không được gọi CI hiện tại là độ tin cậy triển khai ngoài dữ liệu hoặc dùng nó thay cho quá trình tái huấn luyện mô hình.
+
+\section{Giới hạn tái lập và kiểm tra artifact mới nhất}
+Phải phân biệt \emph{mô hình lịch sử} tạo ra các điểm official TEST và \emph{mô hình tái dựng} từ cấu hình đã khóa. Do lịch sử không lưu đầy đủ environment/package lock hay đối tượng model gốc, hiện chưa thể chứng minh hai loại artifact đồng nhất bitwise hoặc kiểm chứng lại scientific TEST metrics từ model gốc.
+
+Tính đến 17/10/2026, nhóm đã tái dựng riêng RF-17, RF-42 và Stacking-42 trên \textbf{175\,341 dòng official TRAIN}, với đúng frozen settings và threshold $0.5$. Cả ba run reports đều ghi PASS. Kiểm tra độc lập trên laptop của nhóm xác nhận cả ba serialized \texttt{joblib} tồn tại, khớp SHA-256/kích thước, có thể tải lại và chạy kiểm tra \texttt{predict\_proba} trên 16 dòng \emph{TRAIN-derived}, với tổng cộng 69/69 phép kiểm artifact đạt. Đây là \emph{P15 DONE\_SCOPED\_RECONSTRUCTION}, không phải model lịch sử hay phép kiểm định scientific TEST lần thứ hai. Việc tái dựng diễn ra trong môi trường Python 3.11.9, scikit-learn 1.9.0; phiên bản thư viện gốc vẫn không xác định trực tiếp.
+
+Mô hình smoke huấn luyện trên tập con TRAIN trước đó chỉ kiểm thử kỹ thuật và không thay thế ba artifact full TRAIN. Bằng chứng trên laptop tác giả khác với việc bên phản biện độc lập tiếp nhận, kiểm tra model bytes hoặc chấp thuận hệ thống IDS triển khai thật. Các điểm số official TEST/chi phí lịch sử trong Chương 4 được giữ nguyên, không bị thay bằng các số đo của lần P15 mới.
+
+\section{Tính hợp lệ bên ngoài và định hướng nghiên cứu tiếp}
+Official UNSW-NB15 TEST không phải một benchmark external độc lập với quá trình hình thành bộ dữ liệu. Novel-vector view là tập con của chính official TEST, không đại diện phép kiểm tra temporal split, day split hay host-separated validation. Vì vậy việc tất cả model mất một phần Macro-F1 trên novel-vector view chỉ chứng minh độ nhạy theo định nghĩa chọn dòng đó, không mô tả lỗi trên traffic tương lai.
+
+Một hướng tiếp tục đáng tin cậy là khóa trước các câu hỏi mới, định nghĩa đơn vị độc lập (session/host/time), huấn luyện trên một split có thể kiểm chứng, đánh giá external nếu có quyền truy cập và đối chiếu các số đo vận hành như FPR theo khối lượng traffic. Những thí nghiệm này phải được đặt thành nghiên cứu kế tiếp có train/test mới, không sửa frozen predictions hay threshold của nghiên cứu hiện tại. Việc công khai các giới hạn giữ cho báo cáo có giá trị học thuật ngay cả khi không có cải thiện rõ rệt của Stacking so với RF.
+
+\section{Tổng hợp kết luận theo câu hỏi nghiên cứu}
+\label{sec:revision-rq-map}
+Các phân tích và kết quả định lượng được trình bày riêng ở
+Mục~\ref{sec:revision-rq-all} (Chương~\ref{chap:ket-qua-thao-luan}).
+Bảng~\ref{tab:rq-evidence} tóm tắt câu trả lời thay vì chỉ liệt kê
+những nguồn chưa có.
+
+\begin{table}[htbp]\centering
+\small
+\caption{Câu trả lời theo phạm vi đã có bằng chứng, không phải kết luận giả định.}
+\label{tab:rq-evidence}
+\begin{tabularx}{\linewidth}{p{0.12\linewidth}X p{0.23\linewidth}}\toprule
+RQ & Kết quả trực tiếp từ thí nghiệm & Điều chưa xác nhận\\\midrule
+RQ1 & Stacking không thể hiện ưu thế tổng thể rõ trên official TEST; bớt 142 FP nhưng thêm 118 FN. & Độ ổn định qua nhiều lần train.\\
+RQ2 & RF-17 có chi phí lịch sử thấp hơn RF-42, Macro-F1 giảm $0.002670$, FN giảm 26 nhưng FP tăng 221. & Tác động riêng của FS.\\
+RQ3 & Base learners có double-fault/error correlation khác nhau; Voting kém RF, Stacking chỉ nhỉnh nhẹ ở development. & Cơ chế nhân quả do diversity.\\
+RQ4 & Cả ba giảm Macro-F1 trên novel-vector view; thứ hạng giữ nguyên. & Tổng quát ngoài benchmark.\\
+RQ5 & TRAIN nhiều Attack hơn Normal; giữa các pipeline có đánh đổi FPR/FNR. & Hiệu quả riêng của weight/resampling.\\\bottomrule
+\end{tabularx}
+\end{table}
+
+Do hai câu hỏi RQ1 và RQ5 đòi hỏi điều kiện thực nghiệm chưa được thiết lập, câu trả lời khoa học là \emph{chưa xác nhận ổn định/cơ chế} chứ không tự bổ sung bằng chứng. Các hạn chế về thiết kế không làm mất giá trị của các thống kê mô tả đã được khóa.
