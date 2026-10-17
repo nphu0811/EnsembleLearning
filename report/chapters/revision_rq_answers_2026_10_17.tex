@@ -1,0 +1,64 @@
+
+\section{Bằng chứng development: Voting, OOF và diversity}
+\label{sec:revision-development}
+Tất cả số liệu trong Bảng~\ref{tab:rev-dev} là \emph{pooled out-of-fold} trên official TRAIN với outer \texttt{StratifiedKFold} ba fold (seed 42), và inner Stacking ba fold (seed 137). Đây là dữ liệu development trước final tuning, không phải chỉ số official TEST; feature selection trước outer CV còn nguy cơ lạc quan.
+
+\begin{table}[htbp]\centering\small
+\caption{Development pooled OOF trên track 42 biến. FPR/FNR tính bằng \%; giữ cả Voting bất lợi.}
+\label{tab:rev-dev}
+\begin{tabular}{lrrrr}\toprule
+Cấu hình development & Macro-F1 & MCC & FPR (\%) & FNR (\%)\\\midrule
+Random Forest & 0.950387 & 0.901580 & 9.4214 & 1.8217\\
+Hard Voting (LR/DT/RF) & 0.947325 & 0.896278 & 10.9357 & 1.4530\\
+Soft Voting (LR/DT/RF) & 0.946758 & 0.894101 & 9.5232 & 2.2457\\
+Stacking (LR/DT/RF) & 0.951484 & 0.903201 & 8.0536 & 2.3688\\\bottomrule
+\end{tabular}
+\end{table}
+Stacking cao hơn RF đơn khoảng $0.001096$ Macro-F1 và $0.001621$ MCC ở development nhưng đồng thời FPR giảm 1.368 điểm phần trăm và FNR tăng 0.547 điểm phần trăm. Hard/Soft Voting có Macro-F1 thấp hơn RF. Điều này không chứng minh một ensemble thắng ổn định hoặc giải thích nhân quả một cơ chế.
+
+Các bản ghi diversity OOF cho track 42 cho thấy LR/RF có double-fault $0.030814$, error correlation $0.563855$; DT/RF có double-fault $0.025345$, error correlation $0.498922$. Các base learner không hoàn toàn trùng lỗi; song pairwise oracle/correlation không bảo đảm Voting hoặc meta learner tận dụng phần bù lỗi đó.
+
+\section{Trả lời cụ thể năm câu hỏi nghiên cứu}
+\label{sec:revision-rq-all}
+
+\subsection{RQ1: Ensemble có cải thiện ổn định so với mô hình đơn?}
+\label{sec:revision-rq1}
+\textbf{Trả lời: chưa có cơ sở kết luận cải thiện ổn định; trên official TEST chưa xác nhận superiority tổng thể của Stacking.}
+Kết quả development Stacking nhỉnh hơn RF ($0.951484$ so với $0.950387$ Macro-F1), nhưng trên official TEST Stacking-42 chỉ tăng $0.000497$ Macro-F1 và giảm $0.000413$ MCC so với RF-42. CI 95\% paired bootstrap của hai hiệu số lần lượt $[-0.000312;\,0.001309]$ và $[-0.001938;\,0.001140]$ đều chứa 0. Kiểm định McNemar exact được Holm điều chỉnh có $p=0.468377$ trên tính đúng tổng thể; không chứng minh hai pipeline bằng nhau về mặt thống kê. Trên 82\,332 dòng TEST, Stacking giảm 142 FP nhưng tăng 118 FN.
+Một lượt fitting mỗi candidate và bootstrap trên những dòng đã dự đoán không đo biến thiên theo các lần huấn luyện độc lập. Ba model full TRAIN được tái dựng P15 không phải một repeated-training study. Vì vậy phần ổn định qua seed/run là \emph{chưa kiểm chứng}, khác với khẳng định ensemble không có ích trong mọi hoàn cảnh.
+
+\subsection{RQ2: Feature Selection thay đổi chất lượng và chi phí ra sao?}
+\label{sec:revision-rq2}
+\textbf{Trả lời: hai pipeline thể hiện trade-off định lượng nhưng không thể quy nguyên nhân riêng cho giảm số feature.}
+Track stable17 được chọn trên TRAIN với 5 seed và quy tắc ổn định 3/5 trong tối thiểu hai phương pháp; đó không là bằng chứng ổn định hiệu năng dự đoán. Official TEST: RF-17 đạt Macro-F1 $0.860673$ và MCC $0.746881$, so với RF-42 lần lượt $0.863343$ và $0.750910$. RF-17 có 708 FN (so với 734) nhưng 10\,224 FP (so với 10\,003).
+Trong số đo lịch sử, RF-17 train $57.255$ giây, kích thước ước lượng $105.044$ MiB; RF-42 train $371.244$ giây, $205.490$ MiB. RF-42 mất thời gian train khoảng $6.48$ lần và RF-17 nhỏ hơn khoảng $48.88$\%. Tuy nhiên RF-17 còn dùng 150 cây và leaf tối thiểu 2, RF-42 dùng 300 cây và leaf tối thiểu 1; đây là so sánh cấu hình, \emph{không} là matched feature-count ablation. FS trên toàn TRAIN trước development CV cũng có selection optimism risk.
+
+\subsection{RQ3: Sai số bổ sung có liên hệ với kết quả Ensemble?}
+\label{sec:revision-rq3}
+\textbf{Trả lời: có sai số bổ sung ở base learners nhưng quan hệ với gain chỉ mang tính mô tả.}
+Trong development, error correlation DT/RF là $0.498922$, LR/RF là $0.563855$; double-fault của hai cặp lần lượt $0.025345$ và $0.030814$. Hard Voting ($0.947325$) và Soft Voting ($0.946758$) có Macro-F1 thấp hơn RF ($0.950387$), Stacking ($0.951484$) chỉ nhỉnh hơn; diversity quan sát không tự bảo đảm ensemble cải thiện.
+Trên official TEST có $71\,104$ mẫu cả RF-42 và Stacking-42 đúng; $10\,222$ mẫu cùng sai; 491 mẫu RF đúng/Stack sai; 515 mẫu RF sai/Stack đúng. Đây là paired correctness của \emph{final models}, không phải diversity giữa các base learners ở development và không xác lập cơ chế sửa lỗi nhân quả.
+
+\subsection{RQ4: Mô hình thay đổi khi loại vector TEST trùng TRAIN?}
+\label{sec:revision-rq4}
+\textbf{Trả lời: Macro-F1 giảm ở cả ba pipeline, nhưng thứ hạng không đảo trong hai view được lưu.}
+Trong 82\,332 dòng official TEST có 8\,541 dòng trùng vector 42 feature với TRAIN; novel-vector view còn 73\,791 dòng.
+\begin{table}[htbp]\centering\small
+\caption{RQ4: Macro-F1 trong cùng official TEST, không phải validation độc lập.}
+\label{tab:rev-rq4}
+\begin{tabular}{lrrr}\toprule
+Pipeline & Official & Novel-vector & Chênh lệch\\\midrule
+Stacking-42 & 0.863840 & 0.858125 & $-0.005715$\\
+RF-42 & 0.863343 & 0.857473 & $-0.005870$\\
+RF-17 & 0.860673 & 0.855723 & $-0.004950$\\\bottomrule
+\end{tabular}
+\end{table}
+Stacking-42 vẫn đứng trên RF-42 và RF-17 theo Macro-F1 nhưng khoảng cách nhỏ. Đây là phân tích sensitivity theo exact-vector overlap trong cùng TEST, không chứng minh temporal/host/session split hoặc external generalization.
+
+\subsection{RQ5: Xử lý mất cân bằng ảnh hưởng lỗi như thế nào?}
+\label{sec:revision-rq5}
+\textbf{Trả lời: quan sát được phân bố lớp và đánh đổi lỗi; tác động nhân quả riêng của class weighting hoặc resampling chưa được xác định.}
+Official TRAIN có 56\,000 Normal (31.94\%) và 119\,341 Attack (68.06\%); official TEST có 37\,000 Normal (44.94\%) và 45\,332 Attack (55.06\%). Dù Attack là đa số trong TRAIN, các \emph{attack families} có hỗ trợ rất khác nhau. Trên official TEST, RF-42 có FPR 27.0351\%, FNR 1.6192\%; Stacking-42 lần lượt 26.6514\%, 1.8795\%; RF-17 là 27.6324\%, 1.5618\%.
+Trong tuning có so sánh \texttt{class\_weight=None/balanced} cho meta learner, nhưng Stacking cuối chọn None. Không có thí nghiệm matched weight/no-weight hoặc SMOTE/no-SMOTE cố định các điều kiện còn lại, nên không thể gán thay đổi Recall, Macro-F1 hay FNR cho biện pháp cân bằng lớp. Đây là giới hạn của RQ5; kiểm tra nhân quả cần protocol mới trên training folds, không retune TEST lịch sử.
+
+\noindent\textbf{Tóm lược kết luận RQ1--RQ5:} RQ1 chưa chứng minh stable superiority; RQ2 xác lập trade-off của hai cấu hình, không cô lập feature count; RQ3 cho thấy lỗi bổ sung nhưng không xác lập cơ chế; RQ4 xác lập độ nhạy và thứ hạng trên novel-vector subset; RQ5 ghi nhận lỗi/phân bố nhưng chưa có đối chứng class-imbalance. Đây là các câu trả lời đúng \emph{phạm vi bằng chứng hiện có}, không phải năm giả thuyết đều được xác nhận.
