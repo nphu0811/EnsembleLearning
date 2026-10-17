@@ -1,4 +1,5 @@
 
+\clearpage % start the evidence/results block on a new page; avoid split sentence
 \section{Bằng chứng development: Voting, OOF và diversity}
 \label{sec:revision-development}
 Tất cả số liệu trong Bảng~\ref{tab:rev-dev} là \emph{pooled out-of-fold} trên official TRAIN với outer \texttt{StratifiedKFold} ba fold (seed 42), và inner Stacking ba fold (seed 137). Đây là dữ liệu development trước final tuning, không phải chỉ số official TEST; feature selection trước outer CV còn nguy cơ lạc quan.
