@@ -1,3 +1,22 @@
+# CHECKPOINT HIỆN HÀNH — 18/10/2026: PDF V2 đạt QA, chờ phản biện lại bản thảo
+
+**Nguồn có ưu tiên cao nhất cho tiến độ P15–P20 hiện hành:** checkpoint này; các bản dưới là lịch sử, không dùng làm trạng thái mới nhất. Commit nguồn build: `964216c720bac26d6aea838ad03931238ebbece6`; [GitHub Actions V2 PASS](https://github.com/nphu0811/EnsembleLearning/actions/runs/38999397120). PDF hiện có tại `exports/report_revision_v2_2026_10_17/Bao_cao_NCKH_EnsembleLearning_REVISION_V2.pdf`: **47 trang A4**, SHA256 `5300f9de92a7fc3834294b015382acfff80c9f0384ef9d6a32419e2bf72b52f3`. PDF gốc 37 trang, SHA256 `8734ccdd5ef6a3495df55a0196bef2d71ae8d16f893fefd9882559a4c857218b`, không thay đổi. Biên bản `docs/research/REPORT_REVISION_V2_PRINT_FIX_VERIFIED_2026-10-17.md`.
+
+| Phase | Trạng thái ưu tiên hiện hành | Phần chưa hoàn tất |
+|---|---|---|
+| P15 | **DONE_SCOPED_RECONSTRUCTION**: RF17, RF42, Stacking42 full official TRAIN, 3/3 PASS, 69/69 author-host artifact checks | Original historical environment/bitwise identity và release/demo acceptance chưa xác nhận; không train hoặc mở lại TEST |
+| P16 | **DONE_SCOPED_AUDIT_WITH_OPEN_PRINT_FINDINGS** | V2 47 trang đã sửa bố cục và qua XeLaTeX QA, nhưng heatmap gốc hiệu dụng ~118dpi và chất lượng chữ nhỏ vẫn cần xem ở cỡ in |
+| P17 | **REVISION_V2_PDF_TECH_QA_PASS / AUTHOR_FINAL_REVIEW_PENDING** | 5 chương, RQ1–RQ5 tích hợp trong **một PDF**; cần tác giả kiểm nội dung, mẫu biểu, thông tin hành chính và ký duyệt, không tự tuyên bố sẵn sàng nộp |
+| P18 | **PARTIAL**: 7 bài đối chiếu, đọc các mục liên quan của 3 bài, 136 kiểm tra scoped PASS | L03 publisher VOR/phân trang, paper chưa tiếp cận toàn văn, giới hạn novelty/metadata và kiểm chứng nội dung sâu |
+| P19 | **PARTIAL / INTERNAL_REVIEW_ONLY**: allowlist/ZIP nội bộ được QA | LICENSE, quyền phân phối code/model/data/PDF và 3 smoke joblib Git-tracked chưa quyết định; không công bố release |
+| P20 | **PRE_REVIEW_QA_ACCEPTED_WITH_ERRATUM; FINAL_DEFERRED** | 3 reviewer AI, 17 concerns → 9 nhóm đều OPEN trong register; local P20 complete 1400 PASS/1 literal anchor FAIL được giải trình A-Q11, 0 unresolved. **Chưa adjudicate/review lại PDF V2**; không phải 3 reviewer là người thật hay P20 final |
+
+**Thứ tự công việc đúng tiếp theo:** (1) tác giả đưa **duy nhất PDF V2 chính xác** vào NotebookLM để yêu cầu phản biện theo trang và tách rõ lỗi chắc chắn/thiếu minh chứng/ngoài phạm vi; không dùng tóm tắt tự động làm bằng chứng; (2) triage từng phát hiện, kiểm chứng với source/result frozen trong Git; (3) chạy `P20-PRE post-V2` hoặc vòng reviewer mô phỏng mới độc lập trên đúng SHA của V2, phân xử từng G01–G09, giữ concern OPEN nếu chưa đạt acceptance test; (4) kiểm tra chất lượng in và thông tin nộp/chữ ký, quyền trích dẫn/tài liệu; (5) chỉ đóng final/gates theo bằng chứng. **Không retrain, không retune/đọc lại official TEST hoặc sửa số liệu để đạt claim.**
+
+**Cảnh báo trạng thái lịch sử:** các dòng phía dưới ghi `P17 37 trang`, `P20 chỉ chuẩn bị`, `P15 chưa full TRAIN` hoặc `G4 chưa build PDF` là checkpoint trước các cập nhật này. G0–G6 tổng thể **không** tự được nâng PASS; `NOT_READY_FOR_UNCONDITIONAL_SUBMISSION` vẫn đúng về kiểm định khoa học/phê duyệt.
+
+---
+
 
 # 17/10/2026 — revised five-chapter PDF integrates RQ1-RQ5
 
