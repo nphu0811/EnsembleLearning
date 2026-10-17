@@ -52,27 +52,28 @@ jobs:
           pdftotext -layout "$PDF" "$TEXT"
           pages=$(awk '/^Pages:/ {print $2}' "$INFO")
           if [ "$pages" -lt 35 ] || [ "$pages" -gt 80 ]; then
-            echo "Unexpected V2 page count: $pages"
+            echo "::error title=Unexpected PDF page count::$pages"
             exit 1
           fi
           for required in "RQ1" "RQ2" "RQ3" "RQ4" "RQ5" "0.950387" "0.947325" \
             "0.946758" "0.951484" "0.863840" "0.858125" "0.857473" \
             "scikit-learn 1.9.0" "Fuzzers" "Worms"; do
-            grep -F -q "$required" "$TEXT" || {
-              echo "Required manuscript content missing from PDF: $required"
+            if ! grep -F -q "$required" "$TEXT"; then
+              echo "::error title=Missing PDF content::$required"
               exit 1
-            }
+            fi
+            echo "Required PDF content found: $required"
           done
           if grep -F -q "??" "$TEXT"; then
-            echo "Unresolved reference marker found in extracted PDF text"
+            echo "::error title=Unresolved reference marker::Found ?? in extracted PDF text"
             exit 1
           fi
           if grep -E -q "Citation .*undefined|Reference .*undefined|There were undefined references|Missing character:" "$LOG"; then
-            echo "Unresolved citation/reference or missing glyph warning in LaTeX log"
+            echo "::error title=LaTeX citation or glyph warning::Inspect the uploaded LaTeX log"
             exit 1
           fi
           if grep -F -q -e "Overfull \hbox" -e "Overfull \vbox" "$LOG"; then
-            echo "Overfull box warning in LaTeX log; inspect and repair the layout"
+            echo "::error title=LaTeX overfull box::Inspect the uploaded LaTeX log"
             exit 1
           fi
           sha=$(sha256sum "$PDF" | awk '{print $1}')
