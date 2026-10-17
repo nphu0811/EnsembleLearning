@@ -46,3 +46,10 @@ Thumbs.db
 
 # P15 reconstructed serialized models stay local (large binaries)
 results/reproducibility/p15_local_*/worker/*_RECONSTRUCTED_FULL_TRAIN.joblib
+# P21 monitored local pilot transient files
+results/controlled_extensions/p21_train_only_pilot_rf42_*/go.signal
+results/controlled_extensions/p21_train_only_pilot_rf42_*/heartbeat
+results/controlled_extensions/p21_train_only_pilot_rf42_*/worker.stdout.log
+results/controlled_extensions/p21_train_only_pilot_rf42_*/worker.stderr.log
+results/controlled_extensions/p21_train_only_pilot_rf42_*/resources.csv
+results/controlled_extensions/**/*.joblib
