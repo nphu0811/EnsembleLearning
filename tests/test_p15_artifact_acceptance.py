@@ -70,7 +70,7 @@ class ArtifactAcceptanceSafetyTests(unittest.TestCase):
             mod.audit_csv_access(
                 "open", (str(mod.ROOT / "data/interim/unsw/test.csv"), "r", 0)
             )
-        mod.audit_csv_access("open", (str(mod.TRAIN), "r", 0)
+        mod.audit_csv_access("open", (str(mod.TRAIN), "r", 0))
 
     def test_no_joblib_or_scikit_learn_import_at_module_load(self):
         self.assertIn("verify_one", vars(mod))
