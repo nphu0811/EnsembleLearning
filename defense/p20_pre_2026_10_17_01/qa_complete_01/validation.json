@@ -1,0 +1,5626 @@
+{
+  "phase": "complete",
+  "passed": 1400,
+  "failed": 1,
+  "accepted_exception_count": 1,
+  "accepted_exceptions": [
+    {
+      "check": "A-Q11 pointer1 literal anchor",
+      "classification": "ACCEPTED_DOCUMENTED_CITATION_ERRATUM",
+      "original_anchor": "split,label_name,count,percentage",
+      "actual_header": "split,label,class_name,count,percentage",
+      "source_path": "results/eda/unsw_nb15/tables/binary_class_distribution.csv",
+      "erratum": "defense/p20_pre_2026_10_17_01/REVIEWER_A_Q11_CITATION_ERRATUM_2026-10-17.md"
+    }
+  ],
+  "unresolved_failed": 0,
+  "unresolved_failures": [],
+  "status": "PASS_WITH_DOCUMENTED_CITATION_ERRATUM",
+  "checks": [
+    {
+      "check": "immutable manifest SHA",
+      "passed": true
+    },
+    {
+      "check": "manifest entries",
+      "passed": true
+    },
+    {
+      "check": "unique packet paths",
+      "passed": true
+    },
+    {
+      "check": "safe path notebook/phase01/phase1_frozen_research_design_v1.md",
+      "passed": true
+    },
+    {
+      "check": "copy hash notebook/phase01/phase1_frozen_research_design_v1.md",
+      "passed": true
+    },
+    {
+      "check": "original preserved notebook/phase01/phase1_frozen_research_design_v1.md",
+      "passed": true
+    },
+    {
+      "check": "safe path report/chapters/conclusion.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/chapters/conclusion.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/chapters/conclusion.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/chapters/dataset_eda.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/chapters/dataset_eda.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/chapters/dataset_eda.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/chapters/introduction.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/chapters/introduction.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/chapters/introduction.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/chapters/methodology.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/chapters/methodology.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/chapters/methodology.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/chapters/related_work.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/chapters/related_work.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/chapters/related_work.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/chapters/results_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/chapters/results_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/chapters/results_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/chapters/theoretical_foundations.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/chapters/theoretical_foundations.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/chapters/theoretical_foundations.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/chapters/validity_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/chapters/validity_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/chapters/validity_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/main.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/main.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/main.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/references_verified.bib",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/references_verified.bib",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/references_verified.bib",
+      "passed": true
+    },
+    {
+      "check": "safe path results/baselines/unsw_nb15/development_cv/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/baselines/unsw_nb15/development_cv/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/baselines/unsw_nb15/development_cv/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/baselines/unsw_nb15/development_cv/tables/aggregate_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/baselines/unsw_nb15/development_cv/tables/aggregate_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/baselines/unsw_nb15/development_cv/tables/aggregate_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/baselines/unsw_nb15/development_cv/tables/fold_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/baselines/unsw_nb15/development_cv/tables/fold_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/baselines/unsw_nb15/development_cv/tables/fold_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/data_audit/unsw_nb15/dataset_summary.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/data_audit/unsw_nb15/dataset_summary.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/data_audit/unsw_nb15/dataset_summary.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/data_audit/unsw_nb15/duplicate_summary.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/data_audit/unsw_nb15/duplicate_summary.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/data_audit/unsw_nb15/duplicate_summary.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/data_audit/unsw_nb15/raw_file_checksums.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/data_audit/unsw_nb15/raw_file_checksums.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/data_audit/unsw_nb15/raw_file_checksums.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/data_audit/unsw_nb15/train_test_overlap.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/data_audit/unsw_nb15/train_test_overlap.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/data_audit/unsw_nb15/train_test_overlap.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/data_audit/unsw_nb15_overlap/cross_split_overlap_by_attack.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/data_audit/unsw_nb15_overlap/cross_split_overlap_by_attack.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/data_audit/unsw_nb15_overlap/cross_split_overlap_by_attack.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/data_audit/unsw_nb15_overlap/overlap_consistency_summary.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/data_audit/unsw_nb15_overlap/overlap_consistency_summary.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/data_audit/unsw_nb15_overlap/overlap_consistency_summary.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/data_audit/unsw_nb15_views/view_summary.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/data_audit/unsw_nb15_views/view_summary.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/data_audit/unsw_nb15_views/view_summary.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/eda/unsw_nb15/tables/attack_category_distribution.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/eda/unsw_nb15/tables/attack_category_distribution.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/eda/unsw_nb15/tables/attack_category_distribution.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/eda/unsw_nb15/tables/binary_class_distribution.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/eda/unsw_nb15/tables/binary_class_distribution.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/eda/unsw_nb15/tables/binary_class_distribution.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/ensemble/unsw_nb15/phase7_1_diversity/tables/individual_oof_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/ensemble/unsw_nb15/phase7_1_diversity/tables/individual_oof_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/ensemble/unsw_nb15/phase7_1_diversity/tables/individual_oof_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/ensemble/unsw_nb15/phase7_1_diversity/tables/pairwise_diversity.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/ensemble/unsw_nb15/phase7_1_diversity/tables/pairwise_diversity.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/ensemble/unsw_nb15/phase7_1_diversity/tables/pairwise_diversity.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/ensemble/unsw_nb15/phase7_2_ensemble_cv/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/ensemble/unsw_nb15/phase7_2_ensemble_cv/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/ensemble/unsw_nb15/phase7_2_ensemble_cv/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/aggregate_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/aggregate_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/aggregate_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/pooled_oof_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/pooled_oof_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/pooled_oof_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/feature_selection/unsw_nb15/stage1/stage1_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/feature_selection/unsw_nb15/stage1/stage1_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/feature_selection/unsw_nb15/stage1/stage1_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/feature_selection/unsw_nb15/stage2/rfecv_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/feature_selection/unsw_nb15/stage2/rfecv_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/feature_selection/unsw_nb15/stage2/rfecv_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/feature_selection/unsw_nb15/stage2/stability_summary.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/feature_selection/unsw_nb15/stage2/stability_summary.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/feature_selection/unsw_nb15/stage2/stability_summary.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/feature_selection/unsw_nb15/stage2/tables/selection_stability.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/feature_selection/unsw_nb15/stage2/tables/selection_stability.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/feature_selection/unsw_nb15/stage2/tables/selection_stability.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "check": "safe path results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.pdf",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.pdf",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.pdf",
+      "passed": true
+    },
+    {
+      "check": "safe path results/figures/p16_standalone_2026_10_17_03/category_distribution.pdf",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/figures/p16_standalone_2026_10_17_03/category_distribution.pdf",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/figures/p16_standalone_2026_10_17_03/category_distribution.pdf",
+      "passed": true
+    },
+    {
+      "check": "safe path results/figures/p16_standalone_2026_10_17_03/fpr_fnr_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/figures/p16_standalone_2026_10_17_03/fpr_fnr_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/figures/p16_standalone_2026_10_17_03/fpr_fnr_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "check": "safe path results/figures/p16_standalone_2026_10_17_03/macro_f1_ci.pdf",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/figures/p16_standalone_2026_10_17_03/macro_f1_ci.pdf",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/figures/p16_standalone_2026_10_17_03/macro_f1_ci.pdf",
+      "passed": true
+    },
+    {
+      "check": "safe path results/figures/p16_standalone_2026_10_17_03/mcc_ci.pdf",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/figures/p16_standalone_2026_10_17_03/mcc_ci.pdf",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/figures/p16_standalone_2026_10_17_03/mcc_ci.pdf",
+      "passed": true
+    },
+    {
+      "check": "safe path results/figures/p16_standalone_2026_10_17_03/performance_cost.pdf",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/figures/p16_standalone_2026_10_17_03/performance_cost.pdf",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/figures/p16_standalone_2026_10_17_03/performance_cost.pdf",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase10_statistics/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase10_statistics/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase10_statistics/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase10_statistics/tables/attack_family_miss_rate_ci.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase10_statistics/tables/attack_family_miss_rate_ci.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase10_statistics/tables/attack_family_miss_rate_ci.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase10_statistics/tables/bootstrap_metric_ci.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase10_statistics/tables/bootstrap_metric_ci.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase10_statistics/tables/bootstrap_metric_ci.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase10_statistics/tables/official_vs_novel_degradation.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase10_statistics/tables/official_vs_novel_degradation.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase10_statistics/tables/official_vs_novel_degradation.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase10_statistics/tables/performance_cost_tradeoff.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase10_statistics/tables/performance_cost_tradeoff.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase10_statistics/tables/performance_cost_tradeoff.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase14_error_analysis_step1/attack_family_transitions.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase14_error_analysis_step1/attack_family_transitions.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase14_error_analysis_step1/attack_family_transitions.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase14_error_analysis_step1/class_pairwise_transitions.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase14_error_analysis_step1/class_pairwise_transitions.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase14_error_analysis_step1/class_pairwise_transitions.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_confusion_matrices.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_confusion_matrices.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_confusion_matrices.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_final_evaluation_complete.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_final_evaluation_complete.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_final_evaluation_complete.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_per_class_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_per_class_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_per_class_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_evaluation/unsw_nb15/phase9_holdout/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_evaluation/unsw_nb15/phase9_holdout/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_evaluation/unsw_nb15/phase9_holdout/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_evaluation/unsw_nb15/phase9_holdout/tables/attack_category_miss_profile.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/attack_category_miss_profile.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_evaluation/unsw_nb15/phase9_holdout/tables/attack_category_miss_profile.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_evaluation/unsw_nb15/phase9_holdout/tables/pairwise_error_counts.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/pairwise_error_counts.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_evaluation/unsw_nb15/phase9_holdout/tables/pairwise_error_counts.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/reproducibility/p15_local_rf17_full_01/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/reproducibility/p15_local_rf17_full_01/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/reproducibility/p15_local_rf17_full_01/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/reproducibility/p15_local_rf42_full_02/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/reproducibility/p15_local_rf42_full_02/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/reproducibility/p15_local_rf42_full_02/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/reproducibility/p15_local_stack_full_01/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/reproducibility/p15_local_stack_full_01/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/reproducibility/p15_local_stack_full_01/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/tuning/unsw_nb15/phase8_controlled/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/tuning/unsw_nb15/phase8_controlled/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/tuning/unsw_nb15/phase8_controlled/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/tuning/unsw_nb15/phase8_controlled/tables/rf17_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/tuning/unsw_nb15/phase8_controlled/tables/rf17_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/tuning/unsw_nb15/phase8_controlled/tables/rf17_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/tuning/unsw_nb15/phase8_controlled/tables/rf42_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/tuning/unsw_nb15/phase8_controlled/tables/rf42_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/tuning/unsw_nb15/phase8_controlled/tables/rf42_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_meta_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_meta_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_meta_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_threshold_sensitivity.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_threshold_sensitivity.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_threshold_sensitivity.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path src/analysis/close_original_phase11.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/analysis/close_original_phase11.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/analysis/close_original_phase11.py",
+      "passed": true
+    },
+    {
+      "check": "safe path src/analysis/run_unsw_phase10_statistics.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/analysis/run_unsw_phase10_statistics.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/analysis/run_unsw_phase10_statistics.py",
+      "passed": true
+    },
+    {
+      "check": "safe path src/features/select_unsw_features_stage1.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/features/select_unsw_features_stage1.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/features/select_unsw_features_stage1.py",
+      "passed": true
+    },
+    {
+      "check": "safe path src/features/select_unsw_features_stage2.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/features/select_unsw_features_stage2.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/features/select_unsw_features_stage2.py",
+      "passed": true
+    },
+    {
+      "check": "safe path src/models/run_unsw_baseline_development.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/models/run_unsw_baseline_development.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/models/run_unsw_baseline_development.py",
+      "passed": true
+    },
+    {
+      "check": "safe path src/models/run_unsw_diversity_oof.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/models/run_unsw_diversity_oof.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/models/run_unsw_diversity_oof.py",
+      "passed": true
+    },
+    {
+      "check": "safe path src/models/run_unsw_ensemble_phase7_2.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/models/run_unsw_ensemble_phase7_2.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/models/run_unsw_ensemble_phase7_2.py",
+      "passed": true
+    },
+    {
+      "check": "safe path src/models/run_unsw_phase8_controlled_tuning.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/models/run_unsw_phase8_controlled_tuning.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/models/run_unsw_phase8_controlled_tuning.py",
+      "passed": true
+    },
+    {
+      "check": "safe path src/models/run_unsw_phase9_final_holdout.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/models/run_unsw_phase9_final_holdout.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/models/run_unsw_phase9_final_holdout.py",
+      "passed": true
+    },
+    {
+      "check": "safe path approved_report.pdf",
+      "passed": true
+    },
+    {
+      "check": "copy hash approved_report.pdf",
+      "passed": true
+    },
+    {
+      "check": "original preserved approved_report.pdf",
+      "passed": true
+    },
+    {
+      "check": "safe path approved_report_pages.txt",
+      "passed": true
+    },
+    {
+      "check": "copy hash approved_report_pages.txt",
+      "passed": true
+    },
+    {
+      "check": "safe path literature_scope.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash literature_scope.json",
+      "passed": true
+    },
+    {
+      "check": "safe path literature_reported_facts.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash literature_reported_facts.csv",
+      "passed": true
+    },
+    {
+      "check": "no forbidden classes",
+      "passed": true
+    },
+    {
+      "check": "no prior review or audit conclusions",
+      "passed": true
+    },
+    {
+      "check": "fixed dispatch input COMMON_REVIEW_RULES.md",
+      "passed": true
+    },
+    {
+      "check": "fixed dispatch input BRIEF_A.md",
+      "passed": true
+    },
+    {
+      "check": "fixed dispatch input BRIEF_B.md",
+      "passed": true
+    },
+    {
+      "check": "fixed dispatch input BRIEF_C.md",
+      "passed": true
+    },
+    {
+      "check": "fixed dispatch input packet_02/manifest.csv",
+      "passed": true
+    },
+    {
+      "check": "fixed dispatch input packet_02/receipt.json",
+      "passed": true
+    },
+    {
+      "check": "context fork none",
+      "passed": true
+    },
+    {
+      "check": "briefs preassigned",
+      "passed": true
+    },
+    {
+      "check": "three frozen reports",
+      "passed": true
+    },
+    {
+      "check": "A frozen reviewer_A/report.md",
+      "passed": true
+    },
+    {
+      "check": "A frozen reviewer_A/report.json",
+      "passed": true
+    },
+    {
+      "check": "A packet identity",
+      "passed": true
+    },
+    {
+      "check": "A reviewer ID",
+      "passed": true
+    },
+    {
+      "check": "A recommendation",
+      "passed": true
+    },
+    {
+      "check": "A questions>=10",
+      "passed": true
+    },
+    {
+      "check": "A taxonomy12",
+      "passed": true
+    },
+    {
+      "check": "A common axes5",
+      "passed": true
+    },
+    {
+      "check": "A unique concern IDs",
+      "passed": true
+    },
+    {
+      "check": "A-M1 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "A-M1 concern",
+      "passed": true
+    },
+    {
+      "check": "A-M1 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "A-M1 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "A-M1 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "A-M1 issue_key",
+      "passed": true
+    },
+    {
+      "check": "A-M1 severity",
+      "passed": true
+    },
+    {
+      "check": "A-M1 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "A-M1 open concern",
+      "passed": true
+    },
+    {
+      "check": "A-M1 resolution route",
+      "passed": true
+    },
+    {
+      "check": "A-M1 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer4 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer4 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer4 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer5 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer5 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer5 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer6 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer6 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M1 pointer6 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M2 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "A-M2 concern",
+      "passed": true
+    },
+    {
+      "check": "A-M2 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "A-M2 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "A-M2 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "A-M2 issue_key",
+      "passed": true
+    },
+    {
+      "check": "A-M2 severity",
+      "passed": true
+    },
+    {
+      "check": "A-M2 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "A-M2 open concern",
+      "passed": true
+    },
+    {
+      "check": "A-M2 resolution route",
+      "passed": true
+    },
+    {
+      "check": "A-M2 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer4 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer4 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer4 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer5 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer5 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer5 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer6 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer6 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer6 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer7 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer7 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M2 pointer7 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M3 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "A-M3 concern",
+      "passed": true
+    },
+    {
+      "check": "A-M3 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "A-M3 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "A-M3 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "A-M3 issue_key",
+      "passed": true
+    },
+    {
+      "check": "A-M3 severity",
+      "passed": true
+    },
+    {
+      "check": "A-M3 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "A-M3 open concern",
+      "passed": true
+    },
+    {
+      "check": "A-M3 resolution route",
+      "passed": true
+    },
+    {
+      "check": "A-M3 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer4 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer4 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer4 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer5 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer5 locator",
+      "passed": true
+    },
+    {
+      "check": "A-M3 pointer5 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m1 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "A-m1 concern",
+      "passed": true
+    },
+    {
+      "check": "A-m1 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "A-m1 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "A-m1 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "A-m1 issue_key",
+      "passed": true
+    },
+    {
+      "check": "A-m1 severity",
+      "passed": true
+    },
+    {
+      "check": "A-m1 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "A-m1 open concern",
+      "passed": true
+    },
+    {
+      "check": "A-m1 resolution route",
+      "passed": true
+    },
+    {
+      "check": "A-m1 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-m1 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m1 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m1 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m1 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m1 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m1 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m1 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m1 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m1 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m1 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m1 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m1 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m1 pointer4 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m1 pointer4 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m1 pointer4 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m2 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "A-m2 concern",
+      "passed": true
+    },
+    {
+      "check": "A-m2 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "A-m2 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "A-m2 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "A-m2 issue_key",
+      "passed": true
+    },
+    {
+      "check": "A-m2 severity",
+      "passed": true
+    },
+    {
+      "check": "A-m2 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "A-m2 open concern",
+      "passed": true
+    },
+    {
+      "check": "A-m2 resolution route",
+      "passed": true
+    },
+    {
+      "check": "A-m2 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-m2 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m2 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m2 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m2 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m2 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m2 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m2 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m2 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m2 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m2 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m2 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m2 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m2 pointer4 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m2 pointer4 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m2 pointer4 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m3 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "A-m3 concern",
+      "passed": true
+    },
+    {
+      "check": "A-m3 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "A-m3 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "A-m3 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "A-m3 issue_key",
+      "passed": true
+    },
+    {
+      "check": "A-m3 severity",
+      "passed": true
+    },
+    {
+      "check": "A-m3 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "A-m3 open concern",
+      "passed": true
+    },
+    {
+      "check": "A-m3 resolution route",
+      "passed": true
+    },
+    {
+      "check": "A-m3 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-m3 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m3 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m3 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m3 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m3 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m3 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m3 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m3 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m3 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m3 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m3 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m3 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m4 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "A-m4 concern",
+      "passed": true
+    },
+    {
+      "check": "A-m4 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "A-m4 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "A-m4 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "A-m4 issue_key",
+      "passed": true
+    },
+    {
+      "check": "A-m4 severity",
+      "passed": true
+    },
+    {
+      "check": "A-m4 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "A-m4 open concern",
+      "passed": true
+    },
+    {
+      "check": "A-m4 resolution route",
+      "passed": true
+    },
+    {
+      "check": "A-m4 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-m4 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m4 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m4 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m4 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m4 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m4 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m4 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m4 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m4 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-m4 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-m4 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "A-m4 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q01 question",
+      "passed": true
+    },
+    {
+      "check": "A-Q01 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-Q01 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q01 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q01 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q01 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q01 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q01 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q01 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q01 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q01 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q02 question",
+      "passed": true
+    },
+    {
+      "check": "A-Q02 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-Q02 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q02 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q02 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q02 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q02 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q02 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q03 question",
+      "passed": true
+    },
+    {
+      "check": "A-Q03 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-Q03 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q03 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q03 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q03 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q03 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q03 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q03 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q03 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q03 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q04 question",
+      "passed": true
+    },
+    {
+      "check": "A-Q04 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-Q04 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q04 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q04 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q04 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q04 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q04 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q04 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q04 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q04 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q05 question",
+      "passed": true
+    },
+    {
+      "check": "A-Q05 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-Q05 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q05 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q05 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q05 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q05 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q05 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q05 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q05 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q05 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q05 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q05 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q05 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q06 question",
+      "passed": true
+    },
+    {
+      "check": "A-Q06 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-Q06 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q06 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q06 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q06 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q06 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q06 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q06 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q06 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q06 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q07 question",
+      "passed": true
+    },
+    {
+      "check": "A-Q07 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-Q07 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q07 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q07 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q07 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q07 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q07 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q07 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q07 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q07 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q08 question",
+      "passed": true
+    },
+    {
+      "check": "A-Q08 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-Q08 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q08 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q08 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q08 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q08 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q08 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q08 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q08 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q08 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q09 question",
+      "passed": true
+    },
+    {
+      "check": "A-Q09 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-Q09 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q09 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q09 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q09 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q09 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q09 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q10 question",
+      "passed": true
+    },
+    {
+      "check": "A-Q10 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-Q10 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q10 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q10 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q10 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q10 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q10 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q10 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q10 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q10 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q11 question",
+      "passed": true
+    },
+    {
+      "check": "A-Q11 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-Q11 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q11 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q11 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q11 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q11 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q11 pointer1 literal anchor",
+      "passed": false
+    },
+    {
+      "check": "A-Q11 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q11 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q11 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q12 question",
+      "passed": true
+    },
+    {
+      "check": "A-Q12 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-Q12 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q12 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q12 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q12 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q12 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q12 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q12 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q12 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q12 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q13 question",
+      "passed": true
+    },
+    {
+      "check": "A-Q13 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-Q13 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q13 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q13 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q13 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q13 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q13 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q14 question",
+      "passed": true
+    },
+    {
+      "check": "A-Q14 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-Q14 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q14 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q14 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q14 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q14 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q14 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q14 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q14 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q14 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q15 question",
+      "passed": true
+    },
+    {
+      "check": "A-Q15 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-Q15 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q15 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q15 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q15 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q15 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q15 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q15 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q15 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q15 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q16 question",
+      "passed": true
+    },
+    {
+      "check": "A-Q16 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "A-Q16 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q16 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q16 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q16 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q16 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q16 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "A-Q16 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "A-Q16 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "A-Q16 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B frozen reviewer_B/report.md",
+      "passed": true
+    },
+    {
+      "check": "B frozen reviewer_B/report.json",
+      "passed": true
+    },
+    {
+      "check": "B packet identity",
+      "passed": true
+    },
+    {
+      "check": "B reviewer ID",
+      "passed": true
+    },
+    {
+      "check": "B recommendation",
+      "passed": true
+    },
+    {
+      "check": "B questions>=10",
+      "passed": true
+    },
+    {
+      "check": "B taxonomy12",
+      "passed": true
+    },
+    {
+      "check": "B common axes5",
+      "passed": true
+    },
+    {
+      "check": "B unique concern IDs",
+      "passed": true
+    },
+    {
+      "check": "B-M1 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "B-M1 concern",
+      "passed": true
+    },
+    {
+      "check": "B-M1 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "B-M1 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "B-M1 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "B-M1 issue_key",
+      "passed": true
+    },
+    {
+      "check": "B-M1 severity",
+      "passed": true
+    },
+    {
+      "check": "B-M1 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "B-M1 open concern",
+      "passed": true
+    },
+    {
+      "check": "B-M1 resolution route",
+      "passed": true
+    },
+    {
+      "check": "B-M1 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-M1 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-M1 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-M1 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-M1 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-M1 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-M1 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-M1 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-M1 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "B-M1 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-M1 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-M1 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "B-M1 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-M1 pointer4 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-M1 pointer4 locator",
+      "passed": true
+    },
+    {
+      "check": "B-M1 pointer4 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-M2 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "B-M2 concern",
+      "passed": true
+    },
+    {
+      "check": "B-M2 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "B-M2 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "B-M2 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "B-M2 issue_key",
+      "passed": true
+    },
+    {
+      "check": "B-M2 severity",
+      "passed": true
+    },
+    {
+      "check": "B-M2 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "B-M2 open concern",
+      "passed": true
+    },
+    {
+      "check": "B-M2 resolution route",
+      "passed": true
+    },
+    {
+      "check": "B-M2 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer4 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer4 locator",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer4 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer5 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer5 locator",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer5 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer6 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer6 locator",
+      "passed": true
+    },
+    {
+      "check": "B-M2 pointer6 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-m1 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "B-m1 concern",
+      "passed": true
+    },
+    {
+      "check": "B-m1 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "B-m1 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "B-m1 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "B-m1 issue_key",
+      "passed": true
+    },
+    {
+      "check": "B-m1 severity",
+      "passed": true
+    },
+    {
+      "check": "B-m1 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "B-m1 open concern",
+      "passed": true
+    },
+    {
+      "check": "B-m1 resolution route",
+      "passed": true
+    },
+    {
+      "check": "B-m1 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-m1 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-m1 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-m1 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-m1 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-m1 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-m1 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-m1 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-m1 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "B-m1 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-m1 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-m1 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "B-m1 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-m1 pointer4 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-m1 pointer4 locator",
+      "passed": true
+    },
+    {
+      "check": "B-m1 pointer4 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-m2 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "B-m2 concern",
+      "passed": true
+    },
+    {
+      "check": "B-m2 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "B-m2 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "B-m2 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "B-m2 issue_key",
+      "passed": true
+    },
+    {
+      "check": "B-m2 severity",
+      "passed": true
+    },
+    {
+      "check": "B-m2 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "B-m2 open concern",
+      "passed": true
+    },
+    {
+      "check": "B-m2 resolution route",
+      "passed": true
+    },
+    {
+      "check": "B-m2 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-m2 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-m2 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-m2 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-m2 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-m2 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-m2 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-m2 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-m2 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "B-m2 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-m2 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-m2 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "B-m2 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-m3 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "B-m3 concern",
+      "passed": true
+    },
+    {
+      "check": "B-m3 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "B-m3 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "B-m3 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "B-m3 issue_key",
+      "passed": true
+    },
+    {
+      "check": "B-m3 severity",
+      "passed": true
+    },
+    {
+      "check": "B-m3 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "B-m3 open concern",
+      "passed": true
+    },
+    {
+      "check": "B-m3 resolution route",
+      "passed": true
+    },
+    {
+      "check": "B-m3 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-m3 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-m3 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-m3 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-m3 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-m3 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-m3 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-m3 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-m3 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "B-m3 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-m3 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-m3 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "B-m3 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q01 question",
+      "passed": true
+    },
+    {
+      "check": "B-Q01 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-Q01 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q01 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q01 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q01 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q01 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q01 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q02 question",
+      "passed": true
+    },
+    {
+      "check": "B-Q02 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-Q02 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q02 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q02 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q02 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q02 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q02 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q02 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q02 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q02 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q03 question",
+      "passed": true
+    },
+    {
+      "check": "B-Q03 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-Q03 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q03 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q03 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q04 question",
+      "passed": true
+    },
+    {
+      "check": "B-Q04 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-Q04 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q04 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q04 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q04 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q04 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q04 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q05 question",
+      "passed": true
+    },
+    {
+      "check": "B-Q05 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-Q05 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q05 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q05 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q05 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q05 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q05 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q06 question",
+      "passed": true
+    },
+    {
+      "check": "B-Q06 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-Q06 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q06 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q06 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q06 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q06 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q06 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q06 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q06 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q06 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q07 question",
+      "passed": true
+    },
+    {
+      "check": "B-Q07 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-Q07 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q07 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q07 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q07 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q07 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q07 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q08 question",
+      "passed": true
+    },
+    {
+      "check": "B-Q08 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-Q08 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q08 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q08 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q08 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q08 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q08 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q08 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q08 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q08 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q09 question",
+      "passed": true
+    },
+    {
+      "check": "B-Q09 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-Q09 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q09 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q09 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q09 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q09 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q09 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q10 question",
+      "passed": true
+    },
+    {
+      "check": "B-Q10 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-Q10 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q10 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q10 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q11 question",
+      "passed": true
+    },
+    {
+      "check": "B-Q11 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-Q11 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q11 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q11 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q11 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q11 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q11 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q12 question",
+      "passed": true
+    },
+    {
+      "check": "B-Q12 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-Q12 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q12 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q12 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q12 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q12 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q12 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q13 question",
+      "passed": true
+    },
+    {
+      "check": "B-Q13 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-Q13 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q13 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q13 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q13 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q13 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q13 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q13 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q13 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q13 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q14 question",
+      "passed": true
+    },
+    {
+      "check": "B-Q14 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-Q14 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q14 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q14 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q14 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q14 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q14 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q14 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q14 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q14 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q15 question",
+      "passed": true
+    },
+    {
+      "check": "B-Q15 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-Q15 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q15 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q15 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q15 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q15 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q15 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q15 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q15 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q15 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q16 question",
+      "passed": true
+    },
+    {
+      "check": "B-Q16 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "B-Q16 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q16 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q16 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q16 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q16 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q16 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "B-Q16 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "B-Q16 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "B-Q16 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C frozen reviewer_C/report.md",
+      "passed": true
+    },
+    {
+      "check": "C frozen reviewer_C/report.json",
+      "passed": true
+    },
+    {
+      "check": "C packet identity",
+      "passed": true
+    },
+    {
+      "check": "C reviewer ID",
+      "passed": true
+    },
+    {
+      "check": "C recommendation",
+      "passed": true
+    },
+    {
+      "check": "C questions>=10",
+      "passed": true
+    },
+    {
+      "check": "C taxonomy12",
+      "passed": true
+    },
+    {
+      "check": "C common axes5",
+      "passed": true
+    },
+    {
+      "check": "C unique concern IDs",
+      "passed": true
+    },
+    {
+      "check": "C-M1 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "C-M1 concern",
+      "passed": true
+    },
+    {
+      "check": "C-M1 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "C-M1 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "C-M1 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "C-M1 issue_key",
+      "passed": true
+    },
+    {
+      "check": "C-M1 severity",
+      "passed": true
+    },
+    {
+      "check": "C-M1 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "C-M1 open concern",
+      "passed": true
+    },
+    {
+      "check": "C-M1 resolution route",
+      "passed": true
+    },
+    {
+      "check": "C-M1 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer4 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer4 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer4 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer5 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer5 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer5 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer6 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer6 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M1 pointer6 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M2 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "C-M2 concern",
+      "passed": true
+    },
+    {
+      "check": "C-M2 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "C-M2 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "C-M2 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "C-M2 issue_key",
+      "passed": true
+    },
+    {
+      "check": "C-M2 severity",
+      "passed": true
+    },
+    {
+      "check": "C-M2 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "C-M2 open concern",
+      "passed": true
+    },
+    {
+      "check": "C-M2 resolution route",
+      "passed": true
+    },
+    {
+      "check": "C-M2 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer4 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer4 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer4 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer5 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer5 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M2 pointer5 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M3 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "C-M3 concern",
+      "passed": true
+    },
+    {
+      "check": "C-M3 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "C-M3 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "C-M3 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "C-M3 issue_key",
+      "passed": true
+    },
+    {
+      "check": "C-M3 severity",
+      "passed": true
+    },
+    {
+      "check": "C-M3 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "C-M3 open concern",
+      "passed": true
+    },
+    {
+      "check": "C-M3 resolution route",
+      "passed": true
+    },
+    {
+      "check": "C-M3 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer4 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer4 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer4 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer5 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer5 locator",
+      "passed": true
+    },
+    {
+      "check": "C-M3 pointer5 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-m1 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "C-m1 concern",
+      "passed": true
+    },
+    {
+      "check": "C-m1 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "C-m1 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "C-m1 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "C-m1 issue_key",
+      "passed": true
+    },
+    {
+      "check": "C-m1 severity",
+      "passed": true
+    },
+    {
+      "check": "C-m1 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "C-m1 open concern",
+      "passed": true
+    },
+    {
+      "check": "C-m1 resolution route",
+      "passed": true
+    },
+    {
+      "check": "C-m1 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-m1 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-m1 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-m1 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-m1 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-m1 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-m1 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-m1 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-m1 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "C-m1 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-m1 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-m1 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "C-m1 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-m1 pointer4 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-m1 pointer4 locator",
+      "passed": true
+    },
+    {
+      "check": "C-m1 pointer4 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-m2 claim_pointer",
+      "passed": true
+    },
+    {
+      "check": "C-m2 concern",
+      "passed": true
+    },
+    {
+      "check": "C-m2 why_it_matters",
+      "passed": true
+    },
+    {
+      "check": "C-m2 acceptance_test",
+      "passed": true
+    },
+    {
+      "check": "C-m2 severity_rationale",
+      "passed": true
+    },
+    {
+      "check": "C-m2 issue_key",
+      "passed": true
+    },
+    {
+      "check": "C-m2 severity",
+      "passed": true
+    },
+    {
+      "check": "C-m2 blocking calibration",
+      "passed": true
+    },
+    {
+      "check": "C-m2 open concern",
+      "passed": true
+    },
+    {
+      "check": "C-m2 resolution route",
+      "passed": true
+    },
+    {
+      "check": "C-m2 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-m2 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-m2 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-m2 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-m2 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-m2 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-m2 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-m2 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-m2 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "C-m2 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-m2 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-m2 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "C-m2 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-m2 pointer4 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-m2 pointer4 locator",
+      "passed": true
+    },
+    {
+      "check": "C-m2 pointer4 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q01 question",
+      "passed": true
+    },
+    {
+      "check": "C-Q01 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-Q01 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q01 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q01 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q01 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q01 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q01 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q02 question",
+      "passed": true
+    },
+    {
+      "check": "C-Q02 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-Q02 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q02 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q02 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q02 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q02 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q02 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q02 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q02 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q02 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q03 question",
+      "passed": true
+    },
+    {
+      "check": "C-Q03 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-Q03 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q03 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q03 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q03 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q03 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q03 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q04 question",
+      "passed": true
+    },
+    {
+      "check": "C-Q04 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-Q04 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q04 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q04 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q04 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q04 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q04 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q04 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q04 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q04 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q05 question",
+      "passed": true
+    },
+    {
+      "check": "C-Q05 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-Q05 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q05 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q05 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q05 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q05 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q05 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q06 question",
+      "passed": true
+    },
+    {
+      "check": "C-Q06 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-Q06 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q06 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q06 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q06 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q06 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q06 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q06 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q06 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q06 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q07 question",
+      "passed": true
+    },
+    {
+      "check": "C-Q07 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-Q07 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q07 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q07 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q07 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q07 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q07 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q07 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q07 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q07 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q08 question",
+      "passed": true
+    },
+    {
+      "check": "C-Q08 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-Q08 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q08 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q08 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q08 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q08 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q08 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q08 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q08 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q08 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q09 question",
+      "passed": true
+    },
+    {
+      "check": "C-Q09 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-Q09 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q09 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q09 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q09 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q09 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q09 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q10 question",
+      "passed": true
+    },
+    {
+      "check": "C-Q10 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-Q10 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q10 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q10 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q10 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q10 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q10 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q11 question",
+      "passed": true
+    },
+    {
+      "check": "C-Q11 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-Q11 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q11 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q11 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q11 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q11 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q11 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q11 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q11 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q11 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q11 pointer3 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q11 pointer3 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q11 pointer3 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q12 question",
+      "passed": true
+    },
+    {
+      "check": "C-Q12 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-Q12 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q12 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q12 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q12 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q12 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q12 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q12 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q12 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q12 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q13 question",
+      "passed": true
+    },
+    {
+      "check": "C-Q13 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-Q13 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q13 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q13 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q13 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q13 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q13 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q14 question",
+      "passed": true
+    },
+    {
+      "check": "C-Q14 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "C-Q14 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q14 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q14 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q14 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q14 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q14 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "C-Q14 pointer2 in packet",
+      "passed": true
+    },
+    {
+      "check": "C-Q14 pointer2 locator",
+      "passed": true
+    },
+    {
+      "check": "C-Q14 pointer2 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "all local concerns retained",
+      "passed": true
+    },
+    {
+      "check": "no local concern mapped twice",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G01 valid category",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G01 open",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G01 acceptance",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G01 consensus honesty",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G02 valid category",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G02 open",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G02 acceptance",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G02 consensus honesty",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G03 valid category",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G03 open",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G03 acceptance",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G03 consensus honesty",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G04 valid category",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G04 open",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G04 acceptance",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G04 consensus honesty",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G05 valid category",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G05 open",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G05 acceptance",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G05 consensus honesty",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G06 valid category",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G06 open",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G06 acceptance",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G06 consensus honesty",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G07 valid category",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G07 open",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G07 acceptance",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G07 consensus honesty",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G08 valid category",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G08 open",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G08 acceptance",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G08 consensus honesty",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G09 valid category",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G09 open",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G09 acceptance",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE-G09 consensus honesty",
+      "passed": true
+    },
+    {
+      "check": "20to30 defense questions",
+      "passed": true
+    },
+    {
+      "check": "DQ01 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ01 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ01 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ01 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ01 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ02 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ02 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ02 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ02 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ02 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ02 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ02 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ02 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ03 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ03 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ03 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ03 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ03 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ04 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ04 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ04 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ04 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ04 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ05 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ05 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ05 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ05 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ05 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ05 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ05 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ05 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ06 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ06 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ06 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ06 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ06 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ07 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ07 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ07 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ07 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ07 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ07 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ07 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ07 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ08 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ08 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ08 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ08 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ08 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ08 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ08 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ08 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ09 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ09 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ09 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ09 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ09 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ09 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ09 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ09 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ10 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ10 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ10 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ10 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ10 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ10 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ10 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ10 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ11 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ11 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ11 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ11 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ11 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ12 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ12 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ12 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ12 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ12 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ13 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ13 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ13 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ13 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ13 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ14 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ14 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ14 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ14 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ14 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ15 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ15 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ15 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ15 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ15 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ15 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ15 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ15 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ16 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ16 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ16 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ16 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ16 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ17 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ17 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ17 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ17 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ17 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ18 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ18 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ18 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ18 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ18 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ19 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ19 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ19 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ19 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ19 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ20 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ20 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ20 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ20 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ20 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ20 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ20 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ20 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ21 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ21 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ21 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ21 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ21 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ21 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ21 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ21 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ22 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ22 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ22 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ22 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ22 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ22 pointer1 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ22 pointer1 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ22 pointer1 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ23 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ23 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ23 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ23 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ23 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ24 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ24 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ24 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ24 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ24 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ25 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ25 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ25 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ25 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ25 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ26 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ26 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ26 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ26 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ26 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "DQ27 answer",
+      "passed": true
+    },
+    {
+      "check": "DQ27 nonempty pointers",
+      "passed": true
+    },
+    {
+      "check": "DQ27 pointer0 in packet",
+      "passed": true
+    },
+    {
+      "check": "DQ27 pointer0 locator",
+      "passed": true
+    },
+    {
+      "check": "DQ27 pointer0 literal anchor",
+      "passed": true
+    },
+    {
+      "check": "P20-PRE disposition",
+      "passed": true
+    }
+  ],
+  "boundary": "Traceability/structure/preservation only; not independent scientific correctness, original model bytes or public release approval."
+}
