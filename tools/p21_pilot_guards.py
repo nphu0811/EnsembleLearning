@@ -79,3 +79,27 @@ def within_resource_budget(available_ram: int, disk_free: int, cap: int,
 
 def within_pilot_size(n: int) -> bool:
     return 1000 <= n <= 20000
+
+
+def safe_new_selector_output(root: Path, raw: Path) -> Path:
+    """New P21 selector-only pilot dir; never reuse or traverse existing output."""
+    base = (root / "results" / "controlled_extensions").resolve(strict=True)
+    candidate = raw if raw.is_absolute() else root / raw
+    if candidate.exists() or candidate.is_symlink():
+        raise ValueError("Selector pilot output exists; use a fresh directory")
+    parent = candidate.parent.resolve(strict=True)
+    if (parent != base or
+            not candidate.name.startswith("p21_train_only_pilot_selector17_") or
+            candidate.name in {"", ".", ".."}):
+        raise ValueError("Selector output must be a direct p21_train_only_pilot_selector17_* directory")
+    return parent / candidate.name
+
+
+def validate_selector_worker_scope(out: Path, root: Path = ROOT) -> None:
+    base = (root / "results" / "controlled_extensions").resolve(strict=True)
+    resolved = out.resolve(strict=True)
+    if (out.is_symlink() or resolved.name != "worker" or
+            resolved.parent.parent != base or
+            not resolved.parent.name.startswith("p21_train_only_pilot_selector17_") or
+            resolved.parent.is_symlink()):
+        raise PermissionError("Selector worker may only use its own watched P21 pilot directory")
