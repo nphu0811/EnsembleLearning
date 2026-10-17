@@ -1,0 +1,64 @@
+name: Build NCKH five-chapter RQ revision PDF
+
+on:
+  push:
+    paths:
+      - "report/main_revision_2026_10_17.tex"
+      - "report/chapters/*_revision_2026_10_17.tex"
+      - "report/chapters/revision_*_2026_10_17.tex"
+      - "report/references_revision_2026_10_17.bib"
+      - ".github/workflows/build-nckh-revision-pdf.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install XeLaTeX and PDF inspection tools
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
+            texlive-xetex texlive-latex-extra texlive-fonts-recommended \
+            texlive-lang-other latexmk poppler-utils
+      - name: Build separate PDF revision with original report intact
+        working-directory: report
+        run: |
+          mkdir -p ../exports/report_revision_2026_10_17
+          latexmk -xelatex -bibtex -interaction=nonstopmode -halt-on-error \
+            -file-line-error -outdir=../exports/report_revision_2026_10_17 \
+            main_revision_2026_10_17.tex
+          cp ../exports/report_revision_2026_10_17/main_revision_2026_10_17.pdf \
+            ../exports/report_revision_2026_10_17/Bao_cao_NCKH_EnsembleLearning_REVISION_2026-10-17.pdf
+      - name: Check submission PDF includes all RQ answers and revised provenance
+        run: |
+          set -e
+          PDF="exports/report_revision_2026_10_17/Bao_cao_NCKH_EnsembleLearning_REVISION_2026-10-17.pdf"
+          test -s "$PDF"
+          pdfinfo "$PDF" | tee exports/report_revision_2026_10_17/pdfinfo.txt
+          pdftotext -layout "$PDF" exports/report_revision_2026_10_17/pdf_extracted.txt
+          for q in "RQ1" "RQ2" "RQ3" "RQ4" "RQ5" "0.950387" "0.947325" "0.863840" "175" "Alsaffar"; do
+            grep -F -q "$q" exports/report_revision_2026_10_17/pdf_extracted.txt || { echo "Missing PDF content: $q"; exit 1; }
+          done
+          if grep -F -q "bản tái dựng full TRAIN chưa thực hiện" exports/report_revision_2026_10_17/pdf_extracted.txt; then
+            echo "Stale P15 claim remains in revised PDF"; exit 1
+          fi
+          pages=$(pdfinfo "$PDF" | awk '/^Pages:/ {print $2}')
+          if [ "$pages" -lt 37 ] || [ "$pages" -gt 65 ]; then
+            echo "Unexpected revised PDF page count $pages"; exit 1
+          fi
+          echo "Revised PDF QA PASS: $pages pages; answers RQ1-RQ5 present"
+      - name: Upload only the revised PDF and build log (no source/data/model binaries)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: NCKH_EnsembleLearning_5Chapter_Revision_RQ1-RQ5_2026-10-17
+          path: |
+            exports/report_revision_2026_10_17/Bao_cao_NCKH_EnsembleLearning_REVISION_2026-10-17.pdf
+            exports/report_revision_2026_10_17/main_revision_2026_10_17.log
+            exports/report_revision_2026_10_17/pdfinfo.txt
+          if-no-files-found: warn
