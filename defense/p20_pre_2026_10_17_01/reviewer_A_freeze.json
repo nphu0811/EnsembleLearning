@@ -1,0 +1,17 @@
+{
+  "reviewer": "A",
+  "source_commit": "b3acf2e2f8ad15bdf4b11bb9450927a57309d968",
+  "files": [
+    {
+      "path": "reviewer_A/report.md",
+      "sha256": "262fe582071c4b38dfee0c899fbca46d2e0b1ea072bc6fbf4e385de29bc9462b",
+      "bytes": 61089
+    },
+    {
+      "path": "reviewer_A/report.json",
+      "sha256": "3b42abb6516154c610632ccb82a1e4b00bfeb8d0c7f2ae3a94c6d5b3a2037448",
+      "bytes": 59272
+    }
+  ],
+  "freeze_scope": "First explicit digest snapshot; review authored by Codex reviewer-A context before token cutoff; NOT new reviewer work; filesystem not OS-isolated"
+}
