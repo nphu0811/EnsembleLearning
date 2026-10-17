@@ -1,11 +1,11 @@
 {
   "schema_version": "1.1",
   "project": "Ensemble Learning for Network Intrusion Detection (NCKH)",
-  "last_updated": "2026-10-17",
+  "last_updated": "2026-10-18",
   "local_session_date": "2026-10-17",
   "timezone": "Asia/Saigon",
-  "phase": "P15_DONE_SCOPED_RECONSTRUCTION;P16_DONE_SCOPED_AUDIT_WITH_OPEN_PRINT_FINDINGS;P18_P19_PARTIAL;P20_DEFERRED",
-  "current_task": "P18_P19_CHECKPOINT_SAVED;PUBLICRIGHTS_AND_SOURCEACCESS_OPEN",
+  "phase": "P15_DONE_SCOPED_RECONSTRUCTION;P16_AUDIT_SCOPED_WITH_OPEN_PRINT_FINDINGS;P17_V2_47P_QA_PASS_AUTHOR_REVIEW_PENDING;P18_P19_PARTIAL;P20_PRE_REVIEW_QA_PASS_WITH_ERRATUM_FINAL_DEFERRED",
+  "current_task": "POST_V2_SCIENTIFIC_REVIEW_AND_AUTHOR_PDF_SIGNOFF_PENDING;P18_P19_RIGHTS_AND_SOURCE_ACCESS_OPEN",
   "completed_tasks": [
     "BOOT-01",
     "BOOT-02_STRUCTURAL",
@@ -2300,7 +2300,7 @@
       "sha256": "75fe99880b22b3eb70e0578fbd79455e64440183fa4475f8a0941728d09148da"
     }
   ],
-  "next_action": "Obtain lawful remaining full-text/VOR and author rights decisions; preserve models/index/report; P20neutralpacket and finalinputs before panel",
+  "next_action": "Check exact sha256 of 47-page V2 PDF; request NotebookLM source-cited RQ1-RQ5/manuscript critical audit; verify findings against frozen repo evidence; adjudicate 9 P20 concern groups against V2; resolve print/admin/rights blockers without retraining or TEST retuning",
   "last_gate_status": {
     "bootstrap": "PASS_SCOPED",
     "raw_integrity": "PASS",
