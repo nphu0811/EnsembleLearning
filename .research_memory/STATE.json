@@ -4,8 +4,8 @@
   "last_updated": "2026-10-18",
   "local_session_date": "2026-10-17",
   "timezone": "Asia/Saigon",
-  "phase": "P15_DONE_SCOPED_RECONSTRUCTION;P16_AUDIT_SCOPED_WITH_OPEN_PRINT_FINDINGS;P17_V2_47P_QA_PASS_AUTHOR_REVIEW_PENDING;P18_P19_PARTIAL;P20_PRE_REVIEW_QA_PASS_WITH_ERRATUM_FINAL_DEFERRED;P21_RF42_PILOT_PASS_RESOURCE_SMOKE_ONLY;P21_REMAINING_PILOTS_PENDING;P21_SELECTOR17_PILOT_CODE_READY_NO_HOST_RUN",
-  "current_task": "P21_SELECTOR17_PILOT_SOURCE_QA_GREEN;USER_HOST_RUN_OPT_IN_PENDING;NO_SCIENTIFIC_RQ_FITS",
+  "phase": "P15_DONE_SCOPED_RECONSTRUCTION;P16_AUDIT_SCOPED_WITH_OPEN_PRINT_FINDINGS;P17_V2_47P_QA_PASS_AUTHOR_REVIEW_PENDING;P18_P19_PARTIAL;P20_PRE_REVIEW_QA_PASS_WITH_ERRATUM_FINAL_DEFERRED;P21_RF42_PILOT_PASS_RESOURCE_SMOKE_ONLY;P21_REMAINING_PILOTS_PENDING;P21_SELECTOR17_PILOT_PASS_RESOURCE_SMOKE_ONLY;P21_RQ5_PILOTS_PENDING",
+  "current_task": "P21_RF42_AND_SELECTOR17_RESOURCE_PILOTS_SCOPED_PASS;NEXT_PREPARE_RQ5_WEIGHT_OVERSAMPLE_PILOT;FULL_RQ_MATRIX_NOT_AUTHORIZED",
   "completed_tasks": [
     "BOOT-01",
     "BOOT-02_STRUCTURAL",
@@ -2300,7 +2300,7 @@
       "sha256": "75fe99880b22b3eb70e0578fbd79455e64440183fa4475f8a0941728d09148da"
     }
   ],
-  "next_action": "Author may pull main and run tools/p21_selector_pilot_supervisor.py with exact I_AUTHORIZE_TRAIN_ONLY_P21_SELECTOR17_PILOT and unique new selector17 pilot output. Review RAM/time/fit-only 15-selector metadata, avoid validation scoring, TEST and model artifacts. Next separate weighting/oversample and Stacking-Lite resource pilots; never automatically run 5-seed P21 experiment or alter 47-page PDF V2.",
+  "next_action": "P21 selector17 author-run 8k FIT/15 selector calls PASS and reported evidence 15/15 consistency checks (CI39068091845). Next implement synthetic-audited, separately author-opt-in RQ5 RF42 class_weight balanced and Normal-minority fit-only random oversampling resource pilots, then Stacking-Lite pilot. No full 5seed 60k RQ science or validation scoring/official TEST until separate explicit authorization; preserve PDF V2/P9/P15.",
   "last_gate_status": {
     "bootstrap": "PASS_SCOPED",
     "raw_integrity": "PASS",
