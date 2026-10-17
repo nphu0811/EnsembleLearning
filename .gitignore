@@ -27,6 +27,7 @@ tmp/pdfs/
 literature/**/local_sources/
 release/**/draft_contents/
 release/**/INTERNAL_REVIEW_ONLY*.zip
+defense/p20_pre_2026_10_17_01/packet*/local_contents/
 
 # Large Datasets (>100MB blocked by GitHub)
 data/raw/

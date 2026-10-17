@@ -1,0 +1,866 @@
+{
+  "reviewer": "C",
+  "scope": {
+    "label": "AI_SIMULATED_INTERNAL_SCIENTIFIC_CRITICISM_ONLY; P20_PRE; NOT_HUMAN_COUNCIL; NOT_FINAL_ACCEPTANCE",
+    "emphasis": "Tính mới khoa học, phạm vi prior art, độ tin cậy tham khảo, sự nhất quán claim/bằng chứng và định vị công bố.",
+    "source_basis": "Chỉ packet_02/local_contents, manifest.csv, receipt.json, COMMON_REVIEW_RULES.md và BRIEF_C.md; installed skills chỉ là hướng dẫn.",
+    "pdf_pages": 37,
+    "pages_read": "Đọc nội dung PDF trực tiếp, đối chiếu approved_report_pages.txt; xem trực quan các trang vật lý 11, 17, 25, 28. main.tex xác định các chương đang dùng. PDF không có abstract riêng.",
+    "manifest_verification": {
+      "expected_entries": 80,
+      "actual_entries": 80,
+      "sha256_matches": true,
+      "file_hash_and_size_mismatches": 0
+    },
+    "input_hash_verification": "Cả ba P15 run report có ba source/config/subset SHA256 trùng các bytes trong packet. Hash TRAIN chỉ đối chiếu với raw_file_checksums.csv, không mở hoặc xác minh raw bytes.",
+    "evidence_boundary": "Không truy cập Internet, full text bên ngoài, raw/prediction CSV hoặc model bytes; không chạy/import mã ML, train, bootstrap hoặc sửa packet. Literature notes là tóm lược phụ theo locator, không phải toàn văn hay thí nghiệm được reviewer tái lập.",
+    "isolation": "Invocation riêng với brief C; không đọc báo cáo khác, shared ledger, synthesis, research memory hoặc QA ngoài gói. Cùng filesystem nên đây không phải cách ly bằng quyền OS hoặc xác nhận độc lập của con người."
+  },
+  "packet_manifest_sha256": "c0f0b3828ba16ce8312b489915cc4c56c9fc7c771dbeefe1d7a9bb78938b62b7",
+  "overall_assessment": "Bản báo cáo có nền tảng để bảo vệ một case study IDS nhị phân có kiểm toán. Kết quả trung tâm là thay đổi FP/FN của Stacking, không phải thuật toán mới, chiến thắng tổng thể hay khả năng triển khai. Các giới hạn phương pháp đã được thừa nhận khá tốt. Tuy nhiên, luận điểm công bố còn thiếu đối chiếu prior art gần nhất, phần bằng chứng development được nhận là đóng góp chưa hiện rõ trong PDF, và trạng thái tái lập chưa đồng bộ với host record P15. Cần sửa lớn về hồ sơ và lập luận trước khi dùng như manuscript hoàn chỉnh; không nhất thiết cần huấn luyện mới để giữ kết luận hẹp hiện tại.",
+  "criteria_assessment": {
+    "originality": "Tính mới thuật toán không được tuyên bố và không được chứng minh. Giá trị khả dĩ là case study kết hợp kiểm toán, paired effects, loại lỗi và chi phí; cần C-M1 để làm rõ giá trị bổ sung so với L06/L12/N02.",
+    "scientific_importance": "Bài học về chênh lệch metric nhỏ che đổi loại lỗi có ý nghĩa trong đánh giá IDS. Tầm quan trọng hiện ở mức thực nghiệm trên một benchmark, chưa có bằng chứng cho kết luận rộng về hệ thống mạng hoặc Ensemble Learning nói chung.",
+    "interdisciplinary_readership": "Phù hợp nhất với độc giả IDS/ML thực nghiệm, người xây benchmark và nghiên cứu reproducibility. Độc giả rộng hơn có thể quan tâm cách đọc FP/FN và bất định; mức quan tâm liên ngành rộng chưa được xác lập.",
+    "technical_soundness": "Các đếm và effect chính khớp bảng đóng băng đã đọc; ranh giới TRAIN/TEST, binary/attack-family, CI/McNemar và confound FS được nêu. Độ phụ thuộc flow, selector/meta tuning chưa fully nested và thiếu repeated training giới hạn suy luận, nhưng đã được khai báo. Không xác nhận model bytes hoặc tái lập end-to-end từ packet này.",
+    "readability_for_nonspecialists": "Bố cục, phương trình và giải thích FP/FN khá rõ. Không có abstract riêng để đánh giá. Các chi tiết preprocessing/stable feature, design bootstrap và bằng chứng development cần đưa gần nhận định chính hơn; các thuật ngữ Anh-Việt có thể được nhất quán thêm."
+  },
+  "strengths": [
+    {
+      "id": "C-S1",
+      "strength": "Định vị đóng góp trung thực. Báo cáo nhận các thành phần ensemble/FS đã có, giữ nhiệm vụ binary và không biến thiếu thí nghiệm của đề tài thành khoảng trống toàn lĩnh vực.",
+      "evidence": [
+        {
+          "path": "report/chapters/introduction.tex",
+          "locator": "PDF vật lý 10, mục 1.1.1",
+          "anchor": "chỉ áp dụng chúng không thể tự xem là một thuật toán mới"
+        },
+        {
+          "path": "report/chapters/related_work.tex",
+          "locator": "PDF vật lý 17 đến 18, mục 1.3.4",
+          "anchor": "khoảng thiếu của nghiên cứu này"
+        }
+      ]
+    },
+    {
+      "id": "C-S2",
+      "strength": "Kết quả chính được trình bày qua đánh đổi cụ thể. Đếm RF/Stacking tương thích với bảng confusion matrix, CI Macro-F1 chứa 0, và kết luận không gọi p không có ý nghĩa là bằng chứng tương đương.",
+      "evidence": [
+        {
+          "path": "results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_confusion_matrices.csv",
+          "locator": "official_test, RF-42 và Stacking-42",
+          "anchor": "stacking_42,official_test,27139,9861,852,44480"
+        },
+        {
+          "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+          "locator": "official_test, stacking_42/random_forest_42, macro_f1",
+          "anchor": "-0.0003118042125941106,0.0013089503250197615"
+        },
+        {
+          "path": "report/chapters/conclusion.tex",
+          "locator": "PDF vật lý 34, mục 5.8.1",
+          "anchor": "không xác nhận ưu thế tổng thể"
+        },
+        {
+          "path": "report/chapters/conclusion.tex",
+          "locator": "PDF vật lý 34, mục 5.8.1",
+          "anchor": "không chứng minh hai mô hình tương đương"
+        }
+      ]
+    },
+    {
+      "id": "C-S3",
+      "strength": "Các confound và ranh giới đánh giá được khai báo ngay trong phương pháp. FS trước development CV, meta tuning chưa fully nested và RF-17 đổi cả feature lẫn siêu tham số đều được nêu rõ.",
+      "evidence": [
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "PDF vật lý 24, mục 3.2",
+          "anchor": "toàn bộ official TRAIN trước development cross-validation"
+        },
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "PDF vật lý 25, mục 3.3",
+          "anchor": "RF-17 khác RF-42 cả số feature"
+        },
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "PDF vật lý 24 đến 25, mục 3.3",
+          "anchor": "phần meta tuning chưa hoàn toàn nested"
+        }
+      ]
+    },
+    {
+      "id": "C-S4",
+      "strength": "Đơn vị dự đoán, overlap và phân nhóm attack được phân biệt hợp lý. Novel-vector không được gọi external validation; attack_cat chỉ dùng nhãn thật hậu nghiệm.",
+      "evidence": [
+        {
+          "path": "report/chapters/dataset_eda.tex",
+          "locator": "PDF vật lý 23, mục 2.5",
+          "anchor": "Số 8\\,541 là \\emph{số dòng TEST}"
+        },
+        {
+          "path": "report/chapters/results_discussion.tex",
+          "locator": "PDF vật lý 30, mục 4.6",
+          "anchor": "Novel-vector \\emph{không} phải bộ dữ liệu kiểm thử độc lập."
+        },
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "PDF vật lý 24, mục 3.1",
+          "anchor": "không phải mô hình đa lớp"
+        }
+      ]
+    }
+  ],
+  "concerns": [
+    {
+      "id": "C-M1",
+      "severity": "MAJOR",
+      "blocking": false,
+      "axis": "novelty-significance",
+      "issue_key": "prior-art-contribution-discrimination",
+      "claim_pointer": "PDF vật lý 11, mục 1.1.4 và vật lý 17 đến 18, mục 1.3. Đóng góp thực nghiệm và phương pháp luận được định vị bằng kiểm toán case study.",
+      "evidence_status": "PARTIAL",
+      "evidence": [
+        {
+          "path": "report/chapters/introduction.tex",
+          "locator": "PDF vật lý 11, mục 1.1.4",
+          "anchor": "Các kết quả đó có thể có giá trị thực nghiệm và phương pháp luận"
+        },
+        {
+          "path": "report/chapters/related_work.tex",
+          "locator": "PDF vật lý 17, mục 1.3.1",
+          "anchor": "đóng góp được định vị ở kiểm toán case study"
+        },
+        {
+          "path": "literature_reported_facts.csv",
+          "locator": "L06, C01 và C02",
+          "anchor": "Uses a random80/20 split"
+        },
+        {
+          "path": "literature_reported_facts.csv",
+          "locator": "L12, C15, PDF nguồn trang 5 đến 9 theo catalog",
+          "anchor": "SMOTE-TOMEK"
+        },
+        {
+          "path": "literature_reported_facts.csv",
+          "locator": "N02, C08, Methodology/Data description theo catalog",
+          "anchor": "Merges original partitions"
+        },
+        {
+          "path": "literature_reported_facts.csv",
+          "locator": "N02, C10, Stacked ensemble theo catalog",
+          "anchor": "RF/XGB/Catboost"
+        },
+        {
+          "path": "literature_scope.json",
+          "locator": "N02, sections_read",
+          "anchor": "MI-Boruta/Stacked ensemble"
+        }
+      ],
+      "concern": "Tổng quan hiện chỉ liệt kê các họ phương pháp, chưa cho thấy phần đóng góp thực nghiệm khác gì các công trình gần nhất đã có trong chính catalog. N02 có MI-Boruta và stacked ensemble nhưng không hiện diện trong chương tổng quan hoặc danh mục 12 tài liệu của PDF. Các khác biệt đã biết của L06, L12 và N02 về dữ liệu, split, FS và tầng meta chưa được đặt cạnh protocol hiện tại. Vì vậy giá trị bổ sung cho một bài công bố còn chưa được lập luận rõ. Đây là thiếu đối chiếu cụ thể, không phải bằng chứng rằng tác giả tuyên bố phát minh Stacking hoặc rằng lĩnh vực chưa làm các kiểm toán này.",
+      "why_it_matters": "Một case study có thể đáng công bố vì bài học thực nghiệm dù không có thuật toán mới. Tuy nhiên người đọc cần biết thông tin nào thực sự bổ sung cho prior art và thông tin nào là thực hành đánh giá đã biết.",
+      "acceptance_test": "Thêm bảng đối chiếu có phạm vi với L06, L12 và N02, nêu dataset/nhiệm vụ/split/FS/meta learner/phạm vi đọc và bài học riêng của nghiên cứu. Gắn DOI N02 10.1186/s40537-024-00994-7 với mô tả có căn cứ và ghi các trường thư mục chưa xác minh trong gói. Không xếp hạng bằng điểm khác protocol, không chứng nhận nesting của bài trước nếu catalog chưa xác nhận, và không suy ra novelty toàn lĩnh vực từ bảng này.",
+      "resolution_route": "DOCUMENT",
+      "status": "OPEN",
+      "severity_rationale": "Thiếu mắt xích quan trọng để đánh giá tính mới và vị trí công bố, nhưng không làm sai các đếm lỗi của case study."
+    },
+    {
+      "id": "C-M2",
+      "severity": "MAJOR",
+      "blocking": false,
+      "axis": "reproducibility",
+      "issue_key": "reproducibility-status-time-scope-mismatch",
+      "claim_pointer": "PDF vật lý 35, mục 5.8.3 nói bản tái dựng full TRAIN chưa thực hiện; vật lý 33, mục 5.5 chỉ mô tả mô hình kiểm thử trên tập con.",
+      "evidence_status": "PARTIAL",
+      "evidence": [
+        {
+          "path": "report/chapters/conclusion.tex",
+          "locator": "PDF vật lý 35, mục 5.8.3",
+          "anchor": "bản tái dựng full TRAIN chưa thực hiện"
+        },
+        {
+          "path": "report/chapters/validity_discussion.tex",
+          "locator": "PDF vật lý 33, mục 5.5",
+          "anchor": "Bản model cuối ở dạng serialized cũng không được xác minh tồn tại."
+        },
+        {
+          "path": "results/reproducibility/p15_local_rf17_full_01/run_report.json",
+          "locator": "worker_checks.train_rows và artifact.scope",
+          "anchor": "RECONSTRUCTED_FULL_TRAIN; NOT original trained artifact"
+        },
+        {
+          "path": "results/reproducibility/p15_local_rf42_full_02/run_report.json",
+          "locator": "worker_checks",
+          "anchor": "\"train_rows\": 175341"
+        },
+        {
+          "path": "results/reproducibility/p15_local_stack_full_01/run_report.json",
+          "locator": "worker_checks.no_test_evaluation",
+          "anchor": "\"no_test_evaluation\": true"
+        },
+        {
+          "path": "results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+          "locator": "scope",
+          "anchor": "P15_LOCAL_ARTIFACT_READONLY_QA; NOT original model or scientific TEST validation"
+        }
+      ],
+      "concern": "Trạng thái tái lập trong báo cáo không phản ánh ba run report P15 của máy tác giả. Cả ba hồ sơ ghi mode full, PASS và 175341 dòng TRAIN; hồ sơ QA cũng ghi nhận kiểm tra artifact tái dựng. Không thể giữ nguyên câu khẳng định chưa tái dựng full TRAIN mà thiếu mốc phiên bản hoặc phạm vi. Ngược lại, các record P15 không phải model bytes và không xác nhận môi trường gốc, tính đồng nhất với model lịch sử hay hiệu năng TEST.",
+      "why_it_matters": "Tái lập là một phần quan trọng của định vị kiểm toán. Gộp model lịch sử chưa có, kiểm thử trên tập con và tái dựng full TRAIN thành một trạng thái làm người đọc đánh giá sai mức bằng chứng đang có.",
+      "acceptance_test": "Đối chiếu các mục 3.6, 5.5 và 5.8.3 theo cùng mốc dữ liệu. Tách rõ môi trường/model lịch sử chưa xác minh, P15 full-TRAIN reconstruction được host report ghi nhận, QA trên TRAIN-derived probe, và chưa xác nhận tái lập khoa học trên TEST. Ghi P15 là bằng chứng do tác giả lưu; chỉ nâng lên xác minh model bytes khi có quy trình riêng được phê duyệt. Không thay bảng hiệu năng hoặc chi phí lịch sử bằng số P15.",
+      "resolution_route": "DOCUMENT",
+      "status": "OPEN",
+      "severity_rationale": "Sai khác về trạng thái tái lập ảnh hưởng đáng kể khả năng kiểm chứng và cách định vị đóng góp; chưa bác bỏ các kết quả khoa học đã lưu."
+    },
+    {
+      "id": "C-M3",
+      "severity": "MAJOR",
+      "blocking": false,
+      "axis": "claim-moderation",
+      "issue_key": "development-diversity-voting-evidence-not-presented",
+      "claim_pointer": "PDF vật lý 11, mục 1.1.4; vật lý 33, Bảng 5.2 RQ3; vật lý 34, mục 5.8.2 nhận Diversity/OOF và kết quả Voting không thuận lợi là phần đóng góp.",
+      "evidence_status": "VERIFIED",
+      "evidence": [
+        {
+          "path": "report/chapters/conclusion.tex",
+          "locator": "PDF vật lý 34, mục 5.8.2",
+          "anchor": "Kết quả không thuận lợi của Voting"
+        },
+        {
+          "path": "report/chapters/validity_discussion.tex",
+          "locator": "PDF vật lý 33, Bảng 5.2, RQ3",
+          "anchor": "Diversity, OOF, voting, stacking"
+        },
+        {
+          "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/pooled_oof_metrics.csv",
+          "locator": "all_features, hard_voting_lrdtrf",
+          "anchor": "0.9473245884056625"
+        },
+        {
+          "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/pooled_oof_metrics.csv",
+          "locator": "all_features, random_forest",
+          "anchor": "0.9503873654153012"
+        },
+        {
+          "path": "results/ensemble/unsw_nb15/phase7_1_diversity/tables/pairwise_diversity.csv",
+          "locator": "all_features, decision_tree/random_forest, error_correlation",
+          "anchor": "0.49892194038858895"
+        },
+        {
+          "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/experiment_metadata.json",
+          "locator": "interpretation_warning",
+          "anchor": "Development CV only."
+        }
+      ],
+      "concern": "Phần đóng góp nhấn mạnh sai số bổ sung, Diversity/OOF và báo cáo kết quả Voting không thuận lợi, nhưng PDF không trình bày bảng hay giá trị development diversity/voting. Các bảng và hình của Chương 4 tập trung vào ba candidate cuối, còn Bảng 5.1 là paired correctness của RF và Stacking trên TEST, không thay thế diversity giữa các base learners. Gói có sẵn các bảng development nên độc giả không cần chỉ dựa vào một câu khẳng định rằng kết quả không thuận lợi đã được báo cáo.",
+      "why_it_matters": "RQ3 và việc không chọn lọc kết quả thuận lợi là một phần của giá trị case study. Khi không thấy số liệu development và bước chọn mô hình, người đọc không đánh giá được liên hệ giữa diversity quan sát và quyết định ensemble.",
+      "acceptance_test": "Thêm bảng tóm tắt development RF/hard voting/soft voting/stacking với thước đo và protocol, kèm ít nhất một đối chiếu diversity thực có và đường dẫn nguồn. Chỉ rõ đây là development configurations trước final tuning, không ghép trực tiếp điểm OOF của chúng với điểm holdout của candidate cuối để suy ra hiệu ứng. Trình bày liên hệ mô tả và không đổi thành kết luận nhân quả.",
+      "resolution_route": "DOCUMENT",
+      "status": "OPEN",
+      "severity_rationale": "Bằng chứng cho một đóng góp và RQ được nêu ở phần mở đầu chưa được mang vào bản báo cáo; có thể khắc phục từ các bảng đã khóa mà không tạo thí nghiệm mới."
+    },
+    {
+      "id": "C-m1",
+      "severity": "MINOR",
+      "blocking": false,
+      "axis": "writing-clarity",
+      "issue_key": "methods-feature-and-preprocessing-definition",
+      "claim_pointer": "PDF vật lý 24 đến 25, mục 3.2 và 3.4 mô tả track 17 feature và preprocessing bằng ngôn ngữ tổng quát.",
+      "evidence_status": "VERIFIED",
+      "evidence": [
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "PDF vật lý 24, mục 3.2",
+          "anchor": "Track 17 feature ổn định lấy từ danh sách đã lưu"
+        },
+        {
+          "path": "src/features/select_unsw_features_stage2.py",
+          "locator": "configuration",
+          "anchor": "STABILITY_MIN_FREQUENCY = 0.60"
+        },
+        {
+          "path": "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json",
+          "locator": "stable_2plus_methods",
+          "anchor": "\"stable_2plus_methods\""
+        },
+        {
+          "path": "src/models/run_unsw_phase9_final_holdout.py",
+          "locator": "make_ohe",
+          "anchor": "handle_unknown=\"ignore\""
+        },
+        {
+          "path": "src/models/run_unsw_phase9_final_holdout.py",
+          "locator": "make_lr_pipeline",
+          "anchor": "scale_numeric=True"
+        }
+      ],
+      "concern": "Bản văn chưa định nghĩa ngắn gọn stable 17 được tạo thế nào hoặc chỉ ra danh sách/thứ tự; chưa nêu rõ one-hot cho proto/service/state, xử lý category mới và việc chuẩn hóa số chỉ dùng ở LR. Tên stable có thể bị nhầm với độ ổn định của hiệu năng qua nhiều lần train. Mã và các tập con đã lưu làm các chi tiết này có thể kiểm tra được, nên đây là thiếu trình bày cục bộ.",
+      "why_it_matters": "Độc giả không chuyên cần phân biệt ổn định của selector trên các mẫu TRAIN với ổn định của detector. Một bản mô tả ngắn cũng giúp đối chiếu phương pháp với prior art.",
+      "acceptance_test": "Bổ sung công thức/quy tắc stable trong từng phương pháp rồi bỏ phiếu ít nhất hai phương pháp, năm seed và phạm vi TRAIN; dẫn danh sách 17 theo thứ tự, cùng bảng preprocessing theo base learner. Phân biệt số feature gốc với số cột sau one-hot, và giữ cảnh báo FS trước outer CV.",
+      "resolution_route": "DOCUMENT",
+      "status": "OPEN",
+      "severity_rationale": "Làm phương pháp dễ đọc và tra cứu hơn; nguồn triển khai cần thiết đã có trong gói và không xuất hiện sai kết quả do thiếu đoạn mô tả này."
+    },
+    {
+      "id": "C-m2",
+      "severity": "MINOR",
+      "blocking": false,
+      "axis": "statistical-rigor",
+      "issue_key": "bootstrap-stratification-and-multiplicity-reporting",
+      "claim_pointer": "PDF vật lý 26, mục 3.5; vật lý 28, mục 4.3 và Bảng 4.2 mô tả paired bootstrap 10000 lần và Holm.",
+      "evidence_status": "VERIFIED",
+      "evidence": [
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "PDF vật lý 26, mục 3.5",
+          "anchor": "paired bootstrap 10\\,000 lần lấy mẫu lại các dòng benchmark"
+        },
+        {
+          "path": "src/analysis/run_unsw_phase10_statistics.py",
+          "locator": "bootstrap_metric_arrays",
+          "anchor": "Stratified paired bootstrap conditional on observed Normal/Attack counts."
+        },
+        {
+          "path": "src/analysis/run_unsw_phase10_statistics.py",
+          "locator": "percentile_ci",
+          "anchor": "np.nanpercentile("
+        },
+        {
+          "path": "results/final_analysis/unsw_nb15/phase10_statistics/experiment_metadata.json",
+          "locator": "bootstrap.random_seed",
+          "anchor": "\"random_seed\": 20260928"
+        },
+        {
+          "path": "src/analysis/run_unsw_phase10_statistics.py",
+          "locator": "mcnemar_table, vòng lặp theo view trước holm_adjust",
+          "anchor": "for view in EVAL_VIEWS:"
+        }
+      ],
+      "concern": "Mô tả bootstrap chưa nói rõ phân tầng theo nhãn thật, giữ cố định số Normal/Attack và lấy multinomial trên joint prediction patterns. Chưa nêu percentile CI, seed 20260928 và họ Holm gồm ba cặp trong từng evaluation view. Đây là bổ sung định nghĩa estimand và cách tính, không phải phát hiện sai CI.",
+      "why_it_matters": "Người đọc có thể thực hiện paired row bootstrap không phân tầng rồi chờ tái tạo chính xác các CI đã công bố. Định nghĩa conditional-on-rows hiện có vẫn cần thêm điều kiện cố định số lớp và phạm vi multiplicity.",
+      "acceptance_test": "Bổ sung một đoạn Methods đúng theo bootstrap_metric_arrays, percentile_ci và mcnemar_table, phân biệt CI từng metric chưa hiệu chỉnh đồng thời với McNemar được Holm theo view. Giữ các khoảng và p đã lưu, giữ giới hạn phụ thuộc dòng và không suy ra tương đương từ p không có ý nghĩa.",
+      "resolution_route": "DOCUMENT",
+      "status": "OPEN",
+      "severity_rationale": "Thiếu chi tiết kỹ thuật cục bộ trong báo cáo; mã và metadata đã cho phép nhận diện đầy đủ quy trình, và kết luận hiện tại đã thận trọng."
+    }
+  ],
+  "unsupported_claims": [
+    {
+      "claim": "bản tái dựng full TRAIN chưa thực hiện",
+      "status": "CURRENT_MANUSCRIPT_STATEMENT_NEEDS_TIME_AND_SCOPE_CORRECTION",
+      "evidence": [
+        {
+          "path": "report/chapters/conclusion.tex",
+          "locator": "PDF vật lý 35, mục 5.8.3",
+          "anchor": "bản tái dựng full TRAIN chưa thực hiện"
+        },
+        {
+          "path": "results/reproducibility/p15_local_rf17_full_01/run_report.json",
+          "locator": "worker_checks.train_rows và artifact.scope",
+          "anchor": "RECONSTRUCTED_FULL_TRAIN; NOT original trained artifact"
+        },
+        {
+          "path": "results/reproducibility/p15_local_rf42_full_02/run_report.json",
+          "locator": "worker_checks",
+          "anchor": "\"train_rows\": 175341"
+        },
+        {
+          "path": "results/reproducibility/p15_local_stack_full_01/run_report.json",
+          "locator": "worker_checks.no_test_evaluation",
+          "anchor": "\"no_test_evaluation\": true"
+        }
+      ],
+      "assessment": "Không phù hợp với trạng thái được ba host record P15 khai báo; sửa theo C-M2, không nâng host record thành xác minh model bytes."
+    },
+    {
+      "claim": "Diversity/OOF và Voting không thuận lợi là phần đóng góp đã trình bày",
+      "status": "SUPPORTED_IN_PACKET_BUT_INSUFFICIENTLY_PRESENTED_IN_PDF",
+      "evidence": [
+        {
+          "path": "report/chapters/conclusion.tex",
+          "locator": "PDF vật lý 34, mục 5.8.2",
+          "anchor": "Kết quả không thuận lợi của Voting"
+        },
+        {
+          "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/pooled_oof_metrics.csv",
+          "locator": "all_features, hard_voting_lrdtrf",
+          "anchor": "0.9473245884056625"
+        },
+        {
+          "path": "results/ensemble/unsw_nb15/phase7_1_diversity/tables/pairwise_diversity.csv",
+          "locator": "all_features, decision_tree/random_forest, error_correlation",
+          "anchor": "0.49892194038858895"
+        }
+      ],
+      "assessment": "Có nguồn bảng tương ứng, nhưng PDF cần đưa bằng chứng định lượng vào theo C-M3."
+    },
+    {
+      "claim": "Thuật toán mới, superiority tổng thể, equivalence từ p không có ý nghĩa, field-wide gap, external validation hoặc triển khai thực tế",
+      "status": "NOT_ASSERTED_AS_ESTABLISHED_BY_CURRENT_MANUSCRIPT",
+      "evidence": [
+        {
+          "path": "report/chapters/conclusion.tex",
+          "locator": "PDF vật lý 34, mục 5.8.1",
+          "anchor": "không xác nhận ưu thế tổng thể"
+        },
+        {
+          "path": "report/chapters/results_discussion.tex",
+          "locator": "PDF vật lý 30, mục 4.6",
+          "anchor": "Novel-vector \\emph{không} phải bộ dữ liệu kiểm thử độc lập."
+        },
+        {
+          "path": "report/chapters/related_work.tex",
+          "locator": "PDF vật lý 18, mục 1.3.4",
+          "anchor": "không được biến thành khẳng định rằng toàn bộ lĩnh vực"
+        },
+        {
+          "path": "report/chapters/conclusion.tex",
+          "locator": "PDF vật lý 35, mục 5.8.3",
+          "anchor": "chưa thể công bố đã tái lập end-to-end"
+        }
+      ],
+      "assessment": "Không quy các giả thuyết mở rộng này thành lỗi factual của bản hiện tại. Chúng vẫn chưa được hỗ trợ nếu sau này muốn nâng phạm vi."
+    }
+  ],
+  "document_repairs": [
+    {
+      "concern_ids": [
+        "C-M1"
+      ],
+      "action": "Thêm bảng prior-art có phạm vi đọc, protocol và đóng góp empirical, bao gồm N02 đã có catalog; chỉ dùng facts có locator, không tạo bảng SOTA không matched."
+    },
+    {
+      "concern_ids": [
+        "C-M2"
+      ],
+      "action": "Cập nhật nhất quán trạng thái tái lập ở Methods/Discussion/Conclusion, tách model gốc, P15 reconstruction, host QA và scientific TEST validation."
+    },
+    {
+      "concern_ids": [
+        "C-M3"
+      ],
+      "action": "Đưa development voting/diversity và rationale chọn candidate vào PDF từ bảng đóng băng; phân biệt development và final tuning."
+    },
+    {
+      "concern_ids": [
+        "C-m1",
+        "C-m2"
+      ],
+      "action": "Bổ sung selector/preprocessing và chi tiết bootstrap/Holm đã có trong source; giữ mọi bảng frozen và kết luận thống kê."
+    }
+  ],
+  "new_experiments_needed": [
+    {
+      "for_claim": "Cải thiện ổn định qua các lần huấn luyện, phần chưa trả lời của RQ1",
+      "required_for_current_narrow_case_study": false,
+      "action": "Chỉ sau phê duyệt protocol mới, nhiều fit được khóa seed/compute, tuning thích hợp và evaluation mới; các fold/10000 bootstrap không là repeated training.",
+      "evidence": [
+        {
+          "path": "report/chapters/introduction.tex",
+          "locator": "PDF vật lý 10 đến 11, mục 1.1.3, RQ1",
+          "anchor": "Điều kiện ổn định qua nhiều lần huấn luyện vẫn chưa được kiểm chứng."
+        }
+      ]
+    },
+    {
+      "for_claim": "Tác động nhân quả của riêng Feature Selection, phần chưa trả lời của RQ2",
+      "required_for_current_narrow_case_study": false,
+      "action": "Matched ablation với siêu tham số còn lại cố định và selector/tuning nested trong training folds; không sửa hoặc chọn lại theo TEST hiện tại.",
+      "evidence": [
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "PDF vật lý 25, mục 3.3",
+          "anchor": "RF-17 khác RF-42 cả số feature"
+        },
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "PDF vật lý 24, mục 3.2",
+          "anchor": "toàn bộ official TRAIN trước development cross-validation"
+        }
+      ]
+    },
+    {
+      "for_claim": "Generalization theo host/session/time hoặc external deployment",
+      "required_for_current_narrow_case_study": false,
+      "action": "Nguồn dữ liệu có metadata và quyền truy cập phù hợp, đơn vị độc lập được định nghĩa trước, split và preprocessing được khóa; không xem novel-vector là phép thử mới.",
+      "evidence": [
+        {
+          "path": "report/chapters/results_discussion.tex",
+          "locator": "PDF vật lý 30, mục 4.6",
+          "anchor": "Novel-vector \\emph{không} phải bộ dữ liệu kiểm thử độc lập."
+        },
+        {
+          "path": "report/chapters/dataset_eda.tex",
+          "locator": "PDF vật lý 23, mục 2.5",
+          "anchor": "Số 8\\,541 là \\emph{số dòng TEST}"
+        }
+      ]
+    },
+    {
+      "for_claim": "Hiệu quả riêng của resampling/class-weight hoặc cơ chế diversity gây gain",
+      "required_for_current_narrow_case_study": false,
+      "action": "Đối chứng mới có điều kiện khớp, thực hiện trong training folds; kiểm tra trên dữ liệu đánh giá mới phù hợp sau khi phê duyệt. Chỉ quan sát profile lỗi không đủ chứng minh cơ chế.",
+      "evidence": [
+        {
+          "path": "report/chapters/related_work.tex",
+          "locator": "PDF vật lý 17, mục 1.3.2",
+          "anchor": "không có so sánh matched resampling/no-resampling"
+        },
+        {
+          "path": "report/chapters/validity_discussion.tex",
+          "locator": "PDF vật lý 32, mục 5.2",
+          "anchor": "việc cùng xuất hiện chưa xác định feature là nguyên nhân"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "C-Q01",
+      "question": "Nếu phải diễn đạt đóng góp công bố bằng một câu, thông tin mới nào của case study vượt việc áp dụng Stacking/FS đã có, và bảng nào chứng minh thông tin đó?",
+      "evidence": [
+        {
+          "path": "report/chapters/introduction.tex",
+          "locator": "PDF vật lý 11, mục 1.1.4",
+          "anchor": "Các kết quả đó có thể có giá trị thực nghiệm và phương pháp luận"
+        },
+        {
+          "path": "report/chapters/related_work.tex",
+          "locator": "PDF vật lý 17, mục 1.3.1",
+          "anchor": "đóng góp được định vị ở kiểm toán case study"
+        }
+      ]
+    },
+    {
+      "id": "C-Q02",
+      "question": "L06 dùng random80/20, L12 dùng NSL-KDD/CICIDS2017 và N02 gộp các partition trước random split. Vì sao các điểm đã công bố của họ không thể xếp hạng trực tiếp với official TEST của đề tài?",
+      "evidence": [
+        {
+          "path": "literature_reported_facts.csv",
+          "locator": "L06, C01 và C02",
+          "anchor": "Uses a random80/20 split"
+        },
+        {
+          "path": "literature_reported_facts.csv",
+          "locator": "L12, C15, PDF nguồn trang 5 đến 9 theo catalog",
+          "anchor": "SMOTE-TOMEK"
+        },
+        {
+          "path": "literature_reported_facts.csv",
+          "locator": "N02, C08, Methodology/Data description theo catalog",
+          "anchor": "Merges original partitions"
+        }
+      ]
+    },
+    {
+      "id": "C-Q03",
+      "question": "Với N02 đã có MI-Boruta và stacked ensemble, khác biệt phương pháp nào chỉ là lựa chọn thành phần, và bài học thực nghiệm nào của đề tài đáng trình bày riêng?",
+      "evidence": [
+        {
+          "path": "literature_reported_facts.csv",
+          "locator": "N02, C10, Stacked ensemble theo catalog",
+          "anchor": "RF/XGB/Catboost"
+        },
+        {
+          "path": "literature_reported_facts.csv",
+          "locator": "N02, C09",
+          "anchor": "MI and Boruta selected sets are intersected"
+        }
+      ]
+    },
+    {
+      "id": "C-Q04",
+      "question": "Đối với L08 chỉ có abstract, L09 giữ phạm vi Introduction từ lần đọc trước, N01 và N03 chỉ abstract/identity, những câu nào được phép viết và những khẳng định Methods nào phải để chưa xác minh?",
+      "evidence": [
+        {
+          "path": "literature_scope.json",
+          "locator": "record L08, sections_read",
+          "anchor": "Publisher abstract and access notice only"
+        },
+        {
+          "path": "literature_scope.json",
+          "locator": "record L09, sections_read",
+          "anchor": "no new full final Methods/results read"
+        },
+        {
+          "path": "literature_scope.json",
+          "locator": "N01, sections_read",
+          "anchor": "Publisher abstract/identity/access notice only"
+        }
+      ]
+    },
+    {
+      "id": "C-Q05",
+      "question": "Tại sao -142 FP và +118 FN chưa đủ kết luận lợi ích tác nghiệp tổng thể, và thông tin về chi phí/prevalence nào cần có trước khi chọn pipeline cho một mạng cụ thể?",
+      "evidence": [
+        {
+          "path": "report/chapters/results_discussion.tex",
+          "locator": "PDF vật lý 27, mục 4.2",
+          "anchor": "đồng thời tăng \\textbf{118 FN}"
+        },
+        {
+          "path": "report/chapters/results_discussion.tex",
+          "locator": "PDF vật lý 27, mục 4.2",
+          "anchor": "chưa có ma trận chi phí tác nghiệp"
+        }
+      ]
+    },
+    {
+      "id": "C-Q06",
+      "question": "CI Macro-F1 chứa 0 và McNemar không có ý nghĩa trả lời hai câu hỏi khác nhau thế nào, và vì sao chúng không chứng minh RF-42 và Stacking-42 tương đương?",
+      "evidence": [
+        {
+          "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+          "locator": "official_test, stacking_42/random_forest_42, macro_f1",
+          "anchor": "-0.0003118042125941106,0.0013089503250197615"
+        },
+        {
+          "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+          "locator": "official_test, stacking_42/random_forest_42",
+          "anchor": "0.46837651914684564"
+        },
+        {
+          "path": "report/chapters/conclusion.tex",
+          "locator": "PDF vật lý 34, mục 5.8.1",
+          "anchor": "không xác nhận ưu thế tổng thể"
+        }
+      ]
+    },
+    {
+      "id": "C-Q07",
+      "question": "Bằng chứng cụ thể nào nối diversity giữa base learners với kết quả Voting/Stacking, và vì sao error correlation thấp hơn hoặc oracle tốt hơn chưa bảo đảm meta learner học được quy tắc sửa lỗi?",
+      "evidence": [
+        {
+          "path": "results/ensemble/unsw_nb15/phase7_1_diversity/tables/pairwise_diversity.csv",
+          "locator": "all_features, decision_tree/random_forest, error_correlation",
+          "anchor": "0.49892194038858895"
+        },
+        {
+          "path": "results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/pooled_oof_metrics.csv",
+          "locator": "all_features, hard_voting_lrdtrf",
+          "anchor": "0.9473245884056625"
+        },
+        {
+          "path": "report/chapters/validity_discussion.tex",
+          "locator": "PDF vật lý 33, Bảng 5.2, RQ3",
+          "anchor": "Diversity, OOF, voting, stacking"
+        }
+      ]
+    },
+    {
+      "id": "C-Q08",
+      "question": "Stable 17 nghĩa là ổn định theo selector/mẫu TRAIN hay ổn định hiệu năng detector? Hãy giải thích năm seed, ngưỡng 0.60 và quy tắc chọn ít nhất hai phương pháp mà không gọi chúng là các mạng độc lập.",
+      "evidence": [
+        {
+          "path": "src/features/select_unsw_features_stage2.py",
+          "locator": "configuration",
+          "anchor": "STABILITY_MIN_FREQUENCY = 0.60"
+        },
+        {
+          "path": "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json",
+          "locator": "stable_2plus_methods",
+          "anchor": "\"stable_2plus_methods\""
+        },
+        {
+          "path": "src/features/select_unsw_features_stage2.py",
+          "locator": "configuration",
+          "anchor": "SEEDS = [11, 23, 42, 71, 101]"
+        }
+      ]
+    },
+    {
+      "id": "C-Q09",
+      "question": "Vì sao official TEST vẫn là holdout có ích dù FS đã nhìn toàn TRAIN, trong khi development CV của RF-17 không thể được gọi fully nested hoặc unbiased?",
+      "evidence": [
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "PDF vật lý 24, mục 3.2",
+          "anchor": "toàn bộ official TRAIN trước development cross-validation"
+        },
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "PDF vật lý 24, mục 3.2",
+          "anchor": "không lặp hoàn toàn bên trong từng outer fold"
+        }
+      ]
+    },
+    {
+      "id": "C-Q10",
+      "question": "Nếu muốn kết luận riêng về hiệu quả giảm feature, đối chứng tối thiểu nào phải giữ cố định số cây, kích thước lá và quy trình tuning; vì sao số đo lịch sử hiện tại không đủ cho kết luận đó?",
+      "evidence": [
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "PDF vật lý 25, mục 3.3",
+          "anchor": "RF-17 khác RF-42 cả số feature"
+        },
+        {
+          "path": "report/chapters/results_discussion.tex",
+          "locator": "PDF vật lý 30, mục 4.4",
+          "anchor": "chi phí quan sát của những cấu hình cụ thể trong lần chạy lịch sử"
+        }
+      ]
+    },
+    {
+      "id": "C-Q11",
+      "question": "Sau khi đọc P15, nhóm sẽ phân biệt model lịch sử, reconstruction full TRAIN, QA trên TRAIN-derived probe và tái lập hiệu năng TEST bằng những nhãn bằng chứng nào?",
+      "evidence": [
+        {
+          "path": "report/chapters/conclusion.tex",
+          "locator": "PDF vật lý 35, mục 5.8.3",
+          "anchor": "bản tái dựng full TRAIN chưa thực hiện"
+        },
+        {
+          "path": "results/reproducibility/p15_local_rf17_full_01/run_report.json",
+          "locator": "worker_checks.train_rows và artifact.scope",
+          "anchor": "RECONSTRUCTED_FULL_TRAIN; NOT original trained artifact"
+        },
+        {
+          "path": "results/reproducibility/p15_local_stack_full_01/run_report.json",
+          "locator": "worker_checks.no_test_evaluation",
+          "anchor": "\"no_test_evaluation\": true"
+        },
+        {
+          "path": "results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+          "locator": "scope",
+          "anchor": "P15_LOCAL_ARTIFACT_READONLY_QA; NOT original model or scientific TEST validation"
+        }
+      ]
+    },
+    {
+      "id": "C-Q12",
+      "question": "Nếu raw hash trong host report trùng checksum record và mã/config trùng manifest, điều gì đã được xác nhận và điều gì vẫn chưa biết khi reviewer không có raw bytes hoặc model bytes?",
+      "evidence": [
+        {
+          "path": "results/data_audit/unsw_nb15/raw_file_checksums.csv",
+          "locator": "UNSW_NB15_training-set.csv, sha256",
+          "anchor": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa"
+        },
+        {
+          "path": "results/reproducibility/p15_local_rf42_full_02/run_report.json",
+          "locator": "source_hashes",
+          "anchor": "\"source_hashes\""
+        },
+        {
+          "path": "results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+          "locator": "scope",
+          "anchor": "P15_LOCAL_ARTIFACT_READONLY_QA; NOT original model or scientific TEST validation"
+        }
+      ]
+    },
+    {
+      "id": "C-Q13",
+      "question": "Bootstrap phân tầng cố định số Normal/Attack ước lượng bất định gì, bỏ qua nguồn biến thiên nào, và phải đổi thiết kế ra sao nếu sau này muốn suy luận theo host/session?",
+      "evidence": [
+        {
+          "path": "src/analysis/run_unsw_phase10_statistics.py",
+          "locator": "bootstrap_metric_arrays",
+          "anchor": "Stratified paired bootstrap conditional on observed Normal/Attack counts."
+        },
+        {
+          "path": "results/final_analysis/unsw_nb15/phase10_statistics/experiment_metadata.json",
+          "locator": "bootstrap.interpretation",
+          "anchor": "does not establish independent network-flow sampling."
+        }
+      ]
+    },
+    {
+      "id": "C-Q14",
+      "question": "Novel-vector thấp điểm hơn nhưng vẫn thuộc official TEST. Cần thiết kế tương lai nào để phân biệt hiệu ứng thành phần lớp, vector overlap và generalization theo thời gian mà không chọn lại mô hình từ TEST đã dùng?",
+      "evidence": [
+        {
+          "path": "report/chapters/results_discussion.tex",
+          "locator": "PDF vật lý 30, mục 4.6",
+          "anchor": "Novel-vector \\emph{không} phải bộ dữ liệu kiểm thử độc lập."
+        },
+        {
+          "path": "report/chapters/dataset_eda.tex",
+          "locator": "PDF vật lý 23, mục 2.5",
+          "anchor": "Số 8\\,541 là \\emph{số dòng TEST}"
+        },
+        {
+          "path": "report/chapters/validity_discussion.tex",
+          "locator": "PDF vật lý 33, mục 5.6",
+          "anchor": "có train/test mới"
+        }
+      ]
+    }
+  ],
+  "taxonomy_coverage": {
+    "novelty-significance": {
+      "status": "applicable",
+      "assessment": "C-M1; đóng góp thực nghiệm cần phân biệt prior art."
+    },
+    "mechanism-evidence": {
+      "status": "applicable",
+      "assessment": "RQ3 ở mức mô tả; manuscript không khẳng định cơ chế đã chứng minh."
+    },
+    "experimental-design": {
+      "status": "applicable",
+      "assessment": "Official holdout có ích; FS/meta tuning/confound và thiếu lặp train được khai báo, không coi là lỗi mới phát hiện."
+    },
+    "statistical-rigor": {
+      "status": "applicable",
+      "assessment": "C-m2; CI/McNemar được diễn giải thận trọng, không suy equivalence."
+    },
+    "reproducibility": {
+      "status": "applicable",
+      "assessment": "C-M2; hash source xác nhận, raw/model bytes không trong phạm vi."
+    },
+    "clinical-validity": {
+      "status": "not applicable",
+      "assessment": "Không có nghiên cứu hoặc tuyên bố lâm sàng."
+    },
+    "ethical-governance": {
+      "status": "not assessable",
+      "assessment": "Gói không cung cấp hồ sơ quyền/phê duyệt để reviewer xác minh độc lập; không suy ra vi phạm hoặc yêu cầu clinical ethics cho benchmark này."
+    },
+    "data-resource-quality": {
+      "status": "applicable",
+      "assessment": "Có aggregate audit/overlap và checksum record; raw không được đọc, không độc lập xác nhận chất lượng raw."
+    },
+    "figures-and-tables": {
+      "status": "applicable",
+      "assessment": "CI/đơn vị/denominator chính rõ; C-M3 cần hiện số liệu development đã nhận là đóng góp."
+    },
+    "writing-clarity": {
+      "status": "applicable",
+      "assessment": "C-m1 và C-M2; không có abstract riêng."
+    },
+    "claim-moderation": {
+      "status": "applicable",
+      "assessment": "Nhìn chung tốt; C-M3 xử lý liên kết claim và bằng chứng hiện trong PDF."
+    },
+    "causal-vs-correlative": {
+      "status": "applicable",
+      "assessment": "FS pipeline comparison và profile hậu nghiệm không được tác giả gọi nhân quả."
+    }
+  },
+  "recommendation": {
+    "decision": "MAJOR_REVISION_REQUIRED",
+    "rationale": "Sửa C-M1, C-M2 và C-M3 để báo cáo có luận điểm công bố kiểm tra được và trạng thái bằng chứng thống nhất. Chưa có căn cứ bác bỏ case study hẹp, nhưng chưa nên xem bản PDF hiện tại là manuscript hoàn chỉnh.",
+    "conditions": "Sau sửa tài liệu, có thể xem xét như case study IDS/ML với hạn chế. Không bắt buộc thí nghiệm mới để giữ kết luận hẹp, nhưng mọi tuyên bố tăng phạm vi cần protocol mới. Không đề xuất quyết định tạp chí cụ thể.",
+    "audience": "Nhà nghiên cứu IDS và ML thực nghiệm, benchmark evaluation và reproducibility; có thể dùng làm tài liệu phương pháp cho người học.",
+    "p20_final_closure": false
+  },
+  "skills_read": [
+    {
+      "skill": "nature-reviewer",
+      "path": "C:/Users/admin/.codex/skills/nature-reviewer/SKILL.md",
+      "references": [
+        "references/reviewer-workflow.md",
+        "references/technical-concern-taxonomy.md",
+        "references/domain-specific-review-gates.md (phần Engineering và nguyên tắc chung)",
+        "references/qa-checklist.md",
+        "references/editorial criteria and processes.md"
+      ]
+    },
+    {
+      "skill": "nature-statistics",
+      "path": "C:/Users/admin/.codex/skills/nature-statistics/SKILL.md",
+      "references": [
+        "references/statistical-reporting.md",
+        "references/common-failure-modes.md",
+        "references/reviewer-checklist.md"
+      ]
+    }
+  ]
+}

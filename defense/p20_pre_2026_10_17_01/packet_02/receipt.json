@@ -1,0 +1,17 @@
+{
+  "source_commit": "b85f44180e5055b00e286c2464eebfd1b0f1b46d",
+  "manifest_sha256": "c0f0b3828ba16ce8312b489915cc4c56c9fc7c771dbeefe1d7a9bb78938b62b7",
+  "entries": 80,
+  "label": "INTERNAL_REVIEW_ONLY;P20_PRE;NOT_PUBLIC_RELEASE",
+  "excluded": [
+    "raw data",
+    "row-level predictions",
+    "model binaries",
+    "third-party full texts",
+    "prior reviewer/QA conclusions"
+  ],
+  "official_test_read": false,
+  "training": false,
+  "bootstrap": false,
+  "report_changed": false
+}

@@ -1,0 +1,33 @@
+{
+  "stage": "BEFORE_DISPATCH",
+  "source_commit": "b85f44180e5055b00e286c2464eebfd1b0f1b46d",
+  "fork_turns": "none",
+  "process_boundary": "Separate agent invocations; shared filesystem, no OS-level access sandbox",
+  "all_briefs_fixed_before_reports": true,
+  "inputs": [
+    {
+      "path": "COMMON_REVIEW_RULES.md",
+      "sha256": "fa313a543dd4c6d6ce9dcb7631a2c79579eee0495da8956a7abe5a627bc71167"
+    },
+    {
+      "path": "BRIEF_A.md",
+      "sha256": "9b1815d142bcfa3a284bdbb610de7b707d96b289cc5b1448f0cd85851d44c46f"
+    },
+    {
+      "path": "BRIEF_B.md",
+      "sha256": "b4846816ec97c77e7a258a05071034df347a65475e1f379d49a98c8775518c6d"
+    },
+    {
+      "path": "BRIEF_C.md",
+      "sha256": "d4216a7d5730fe8598397fb3ca865dd53b86849ac771f05b4da9e559baaa9829"
+    },
+    {
+      "path": "packet_02/manifest.csv",
+      "sha256": "c0f0b3828ba16ce8312b489915cc4c56c9fc7c771dbeefe1d7a9bb78938b62b7"
+    },
+    {
+      "path": "packet_02/receipt.json",
+      "sha256": "d276480844ef9cd3af89a01beeb13fa46067b89561444ccc4bf9b8a34f1f2acc"
+    }
+  ]
+}

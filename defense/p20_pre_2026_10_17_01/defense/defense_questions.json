@@ -1,0 +1,461 @@
+{
+  "status": "DRAFT_DEFENSE_PREPARATION;NOT_P20_FINAL",
+  "questions": [
+    {
+      "id": "DQ01",
+      "theme": "scope",
+      "difficulty": "MEDIUM",
+      "question": "Công trình thực sự giải quyết bài toán nào?",
+      "answer": "Phân loại nhị phân Normal=0 và Attack=1 trên UNSW-NB15. attack_cat chỉ dùng phân tích lỗi theo nhãn thật. Chúng tôi không có detector đa lớp, thử nghiệm live IDS hoặc chứng minh thuật toán ensemble mới.",
+      "evidence": [
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "Thiết kế và tập dữ liệu",
+          "anchor": "Normal = 0 và Attack = 1"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ02",
+      "theme": "split",
+      "difficulty": "MEDIUM",
+      "question": "TRAIN và TEST được tổ chức thế nào, TEST có được dùng chọn ngưỡng không?",
+      "answer": "Giữ official TRAIN 175.341 dòng và TEST 82.332 dòng. TEST có 37.000 Normal và 45.332 Attack. Cấu hình và threshold 0,5 đã khóa trước final evaluation; vòng phản biện này chỉ đọc summaries, không mở raw TEST hoặc dự đoán từng dòng.",
+      "evidence": [
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "Thiết kế và tập dữ liệu",
+          "anchor": "TRAIN có 175\\,341 dòng"
+        },
+        {
+          "path": "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+          "locator": "All candidates decision_threshold",
+          "anchor": "\"decision_threshold\": 0.5"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ03",
+      "theme": "overlap",
+      "difficulty": "HARD",
+      "question": "8.541 dòng trùng TRAIN có khiến toàn bộ kết quả vô hiệu không?",
+      "answer": "Đó là overlap theo vector 42 predictors, không tự chứng minh mọi hình thức leakage hay làm mọi hàng TEST vô giá trị. Chúng tôi báo cáo official view và sensitivity view 73.791 novel-vector rows. Hai view phụ thuộc nhau, không phải hai thí nghiệm độc lập. Novel-vector cũng không chứng minh unseen attack families.",
+      "evidence": [
+        {
+          "path": "results/data_audit/unsw_nb15_views/view_summary.json",
+          "locator": "overlapping_test_rows/novel_vector_test_rows",
+          "anchor": "\"overlapping_test_rows\": 8541"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ04",
+      "theme": "feature_selection",
+      "difficulty": "HARD",
+      "question": "Feature selection có hoàn toàn nested và leakage-free không?",
+      "answer": "Không. Stable features được chọn trên toàn bộ official TRAIN trước development CV. Vì vậy điểm CV có nguy cơ lạc quan. Final TEST không được dùng fit selector theo source, nhưng điều đó không biến development selection thành fully nested. Muốn đo lợi ích quy trình FS phải có nghiên cứu nested mới được phê duyệt, không sửa bảng hiện tại.",
+      "evidence": [
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "Feature selection và preprocessing",
+          "anchor": "toàn bộ official TRAIN trước development cross-validation"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ05",
+      "theme": "stacking",
+      "difficulty": "HARD",
+      "question": "OOF stacking khác với meta học từ dự đoán in-sample ở đâu?",
+      "answer": "P9 dựng StackingClassifier với các base pipeline LR, DT, RF và cv=inner_cv; inner StratifiedKFold có 3 folds. predict_proba của các clone trong CV tạo đầu vào meta LR, passthrough=False. OOF tránh để mỗi base dự đoán đúng hàng mà nó fit trong bước tạo meta inputs; nó không tự loại mọi thiên lệch ở bước chọn base/siêu tham số.",
+      "evidence": [
+        {
+          "path": "src/models/run_unsw_phase9_final_holdout.py",
+          "locator": "make_stacking_42",
+          "anchor": "cv=inner_cv"
+        },
+        {
+          "path": "src/models/run_unsw_phase9_final_holdout.py",
+          "locator": "make_stacking_42",
+          "anchor": "passthrough=False"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ06",
+      "theme": "selection_bias",
+      "difficulty": "HARD",
+      "question": "Tại sao có OOF vẫn chưa được gọi là fully nested model selection?",
+      "answer": "OOF là một ranh giới fit của stacking. Base/config selection và meta hyperparameter search có thể dùng thông tin phát triển chung. Báo cáo đã ghi meta tuning chưa fully nested; không thể coi CV đánh giá lại sau selection là unbiased outer test. Muốn khắc phục phải thiết kế outer/inner selection mới với holdout hợp lệ riêng.",
+      "evidence": [
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "Các pipeline được khóa",
+          "anchor": "meta tuning chưa hoàn toàn nested"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ07",
+      "theme": "ablation",
+      "difficulty": "HARD",
+      "question": "Có thể nói giảm 42 xuống 17 feature làm mô hình nhanh hơn 6,48 lần không?",
+      "answer": "Không thể quy riêng cho feature count. RF42 có 300 cây, min_samples_leaf=1; RF17 có 150 cây, min_samples_leaf=2. Kết quả là trade-off giữa hai pipeline cùng thay feature và hyperparameters. Cần matched hoặc factorial experiment để phân biệt các tác động, chưa được phép chạy trong checkpoint này.",
+      "evidence": [
+        {
+          "path": "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+          "locator": "random_forest_42/random_forest_17",
+          "anchor": "\"n_estimators\": 150"
+        },
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "Comparison caveat",
+          "anchor": "pipeline-level performance--cost trade-off"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ08",
+      "theme": "imbalance",
+      "difficulty": "HARD",
+      "question": "Nghiên cứu đã chứng minh resampling không cần thiết chưa?",
+      "answer": "Chưa. TRAIN nghiêng về Attack và TEST có prevalence khác. Meta frozen dùng class_weight=None; một trường class_weight hoặc một tìm kiếm meta không là controlled imbalance ablation. RQ5 chưa có đối chứng matched về sampling/weighting trong folds. Không dùng official TEST để lựa chọn SMOTE hay class weight mới.",
+      "evidence": [
+        {
+          "path": "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+          "locator": "stacking_42 meta_learner",
+          "anchor": "\"class_weight\": null"
+        },
+        {
+          "path": "report/chapters/conclusion.tex",
+          "locator": "Công việc còn thiếu",
+          "anchor": "Với RQ5"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ09",
+      "theme": "threshold",
+      "difficulty": "HARD",
+      "question": "FPR cao có cho phép hạ hoặc nâng ngưỡng ngay để cứu kết quả không?",
+      "answer": "Không. Threshold hiện là 0,5 cho cả ba candidate. Phân tích hậu nghiệm có thể giải thích hạn chế nhưng không được chọn threshold theo TEST. Một operating point khác cần validation và contract mới; không gắn score mới vào kết quả frozen.",
+      "evidence": [
+        {
+          "path": "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+          "locator": "decision_threshold",
+          "anchor": "\"decision_threshold\": 0.5"
+        },
+        {
+          "path": "report/chapters/methodology.tex",
+          "locator": "Final evaluation",
+          "anchor": "Không dùng TEST để chọn lại mô hình"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ10",
+      "theme": "accuracy",
+      "difficulty": "MEDIUM",
+      "question": "Accuracy khoảng 87% đã đủ để gọi IDS tốt chưa?",
+      "answer": "Chưa. RF42 accuracy=0.869589, attack Recall=0.983808, nhưng FPR=27.0351%. Recall cao đi cùng lượng báo động giả lớn. Chưa có prevalence vận hành, chi phí cảnh báo hoặc điều kiện network thực để kết luận utility.",
+      "evidence": [
+        {
+          "path": "results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_final_evaluation_complete.csv",
+          "locator": "random_forest_42 official_test",
+          "anchor": "0.869588981198076"
+        },
+        {
+          "path": "results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_confusion_matrices.csv",
+          "locator": "random_forest_42 official_test",
+          "anchor": "26997,10003,734,44598"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ11",
+      "theme": "metrics",
+      "difficulty": "MEDIUM",
+      "question": "Macro F1 và Weighted F1 trả lời các câu hỏi nào?",
+      "answer": "Macro F1 cho hai lớp trọng số bằng nhau; Weighted F1 dùng support của từng lớp. RF42 có Macro F1=0.863343 và Weighted F1=0.866300; Stacking có 0.863840 và 0.866742. Không đổi F1 Attack hoặc F1 không ghi averaging của external paper thành Macro F1.",
+      "evidence": [
+        {
+          "path": "results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_final_evaluation_complete.csv",
+          "locator": "official_test macro_f1/weighted_f1",
+          "anchor": "0.8662999857580319"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ12",
+      "theme": "error_cost",
+      "difficulty": "HARD",
+      "question": "Giảm 142 FP nhưng tăng 118 FN có phải cải thiện tổng thể?",
+      "answer": "Đây là trade-off quan sát. RF42 FP=10.003, FN=734; Stacking FP=9.861, FN=852. Không có ma trận chi phí hay trọng số attack-family vận hành nên chưa quy thành lợi ích tổng thể. Ít lỗi tổng cộng hơn về số học không tự đồng nghĩa tốt hơn về an ninh.",
+      "evidence": [
+        {
+          "path": "results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_confusion_matrices.csv",
+          "locator": "RF42 and stacking official_test",
+          "anchor": "stacking_42,official_test,27139,9861,852,44480"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ13",
+      "theme": "paired_CI",
+      "difficulty": "HARD",
+      "question": "CI chứa 0 chứng minh hai mô hình tương đương hay Stacking tốt hơn không?",
+      "answer": "Không cho cả hai. Delta Macro F1 Stacking-RF42=0.000496689894; CI95% [-0.000311804213, 0.001308950325]. Chưa đủ bằng chứng superiority trên thước đo này. Equivalence cần biên thực tiễn định trước và phép suy luận phù hợp; không được tạo biên hậu nghiệm để hợp thức hóa.",
+      "evidence": [
+        {
+          "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+          "locator": "official_test stacking_42 vs random_forest_42 macro_f1",
+          "anchor": "-0.0003118042125941106"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ14",
+      "theme": "McNemar",
+      "difficulty": "HARD",
+      "question": "McNemar p=0,468377 có phải p-value cho chênh lệch Macro F1?",
+      "answer": "Không. Exact two-sided McNemar dùng 491 và 515 trường hợp discordant về đúng/sai tổng thể, p Holm=0,46837651914684564. Nó kiểm tra paired correctness, không trực tiếp Macro F1, MCC hoặc equivalence. Cần giữ riêng paired metric CI.",
+      "evidence": [
+        {
+          "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+          "locator": "official_test stacking_42 vs random_forest_42",
+          "anchor": "491,515,1006,0.46837651914684564"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ15",
+      "theme": "multiplicity",
+      "difficulty": "HARD",
+      "question": "Holm có điều chỉnh mọi CI và mọi phân tích hậu nghiệm không?",
+      "answer": "Không. Holm ở bảng McNemar áp dụng ba pairwise correctness comparisons trong mỗi evaluation view theo implementation. CI bootstrap metric là pointwise; hai view dùng chung nhiều dòng, attack-family và các profile là exploratory. Không tuyên bố toàn bộ tập phát hiện đã được familywise control.",
+      "evidence": [
+        {
+          "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+          "locator": "three pairs per view",
+          "anchor": "p_exact_raw,p_holm"
+        },
+        {
+          "path": "results/final_analysis/unsw_nb15/phase10_statistics/experiment_metadata.json",
+          "locator": "mcnemar",
+          "anchor": "\"familywise_correction\": \"Holm\""
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ16",
+      "theme": "bootstrap_unit",
+      "difficulty": "HARD",
+      "question": "10.000 bootstrap draws có nghĩa 10.000 lần tái huấn luyện độc lập không?",
+      "answer": "Không. Source dùng stratified paired multinomial bootstrap trên joint prediction patterns của benchmark đã khóa, giữ ghép cặp và support theo lớp. CI có điều kiện trên rows và mô hình đã fit. Không định lượng độ bất định do huấn luyện lại, model selection hoặc session/host dependence; không nhân n thực nghiệm lên 10.000.",
+      "evidence": [
+        {
+          "path": "results/final_analysis/unsw_nb15/phase10_statistics/experiment_metadata.json",
+          "locator": "bootstrap type and interpretation",
+          "anchor": "stratified paired multinomial bootstrap over joint prediction patterns"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ17",
+      "theme": "attack_family",
+      "difficulty": "HARD",
+      "question": "Tại sao không gọi bảng Fuzzers/Generic là kết quả multiclass?",
+      "answer": "Model vẫn dự đoán Normal/Attack. Bảng phân nhóm FN theo nhãn thật attack_cat sau dự đoán binary. Stacking tăng 133 FN ở Fuzzers và giảm 43 ở Generic so RF42, cho thấy tác động không đồng đều. Không đánh giá đúng loại tấn công được dự đoán.",
+      "evidence": [
+        {
+          "path": "report/chapters/results_discussion.tex",
+          "locator": "Phân tích lỗi theo họ tấn công",
+          "anchor": "6062  & 621 & 754 & +133"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ18",
+      "theme": "rare_attack",
+      "difficulty": "HARD",
+      "question": "RF17 không bỏ sót Worms có chứng minh phát hiện hoàn hảo họ này không?",
+      "answer": "Không. Chỉ có 44 Worms trong benchmark; RF17 FN=0 nhưng Wilson95% miss-rate upper=0,08029560375848066. Đây vẫn là row-based interval có giả định, không bảo đảm cho Worms ngoài benchmark hoặc session độc lập.",
+      "evidence": [
+        {
+          "path": "results/final_analysis/unsw_nb15/phase10_statistics/tables/attack_family_miss_rate_ci.csv",
+          "locator": "official_test Worms random_forest_17",
+          "anchor": "official_test,Worms,random_forest_17,44,0,0.0,0.0,0.08029560375848066"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ19",
+      "theme": "generalization",
+      "difficulty": "HARD",
+      "question": "Novel-vector có tương đương unknown attacks, temporal hay external validation không?",
+      "answer": "Không. Novel-vector chỉ khác đúng vector predictors của TRAIN. Nhãn attack families, môi trường và phân bố có thể cùng nguồn. Cả official và novel-view vẫn thuộc một TEST; chưa có time/session/host split hoặc network mới. Tuyên bố zero-day hay transfer sẽ vượt evidence.",
+      "evidence": [
+        {
+          "path": "results/data_audit/unsw_nb15_views/view_summary.json",
+          "locator": "purpose",
+          "anchor": "Secondary leakage/repetition sensitivity evaluation only; does not replace official test."
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ20",
+      "theme": "runtime",
+      "difficulty": "HARD",
+      "question": "Có thể dùng thời gian lịch sử để cam kết tốc độ real-time không?",
+      "answer": "Không. Các số train lịch sử RF42=371,244s, Stacking=980,170s, RF17=57,255s; inference là thời gian batch chia số mẫu, không latency end-to-end từng flow. Original environment UNKNOWN và chưa đo capture/feature extraction, tải, jitter hoặc hardware vận hành. P15 timings ở môi trường tái dựng là provenance khác.",
+      "evidence": [
+        {
+          "path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+          "locator": "pipeline timing rows",
+          "anchor": "371.2439486999938"
+        },
+        {
+          "path": "results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+          "locator": "inference column",
+          "anchor": "inference_ms_per_sample"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ21",
+      "theme": "reproducibility",
+      "difficulty": "HARD",
+      "question": "P15 đã hoàn tất mà trang 33 nói chưa có full TRAIN artifact, trả lời thế nào?",
+      "answer": "Trang 33 là snapshot trước reconstruction. P15 hiện có ba reconstructed full-TRAIN artifacts đã qua author-host acceptance 69/69. Chúng không chứng minh giống binary lịch sử hay tái lập TEST scores trong môi trường gốc. Dùng companion status note, không sửa PDF đã duyệt và không gán score lịch sử cho artifact mới.",
+      "evidence": [
+        {
+          "path": "results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+          "locator": "scope",
+          "anchor": "NOT original model or scientific TEST validation"
+        },
+        {
+          "path": "report/chapters/conclusion.tex",
+          "locator": "Công việc còn thiếu",
+          "anchor": "bản tái dựng full TRAIN chưa thực hiện"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ22",
+      "theme": "references",
+      "difficulty": "HARD",
+      "question": "L06, L12 và N02 đã đủ để tuyên bố thuật toán của đề tài mới không?",
+      "answer": "Chưa. Ghi chép nguồn cho thấy L06 có Chi-square và stacking; N02 MI-Boruta, RF/XGB/Catboost tới MLP trên UNSW; L12 hybrid FS/SMOTE-Tomek/stacking nhưng không phải UNSW. Khác learner/config/protocol không tự là methodological novelty. Phần đọc là selected sections; N01/N03 chỉ abstract nên không tự dựng Methods của họ.",
+      "evidence": [
+        {
+          "path": "literature_reported_facts.csv",
+          "locator": "L06 C02/C03;N02 C09/C10;L12 C15",
+          "anchor": "MI and Boruta selected sets are intersected"
+        },
+        {
+          "path": "literature_scope.json",
+          "locator": "reading_status records",
+          "anchor": "PARTIAL_SELECTED_FULLTEXT_SECTIONS_READ"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ23",
+      "theme": "protocol_comparison",
+      "difficulty": "HARD",
+      "question": "Tại sao không so điểm đề tài trực tiếp với paper N02?",
+      "answer": "N02 mô tả gộp TRAIN/TEST rồi random80/20, khác official holdout của đề tài. Task binary/multiclass, averaging, preprocessing và scope đo chi phí còn khác. Chúng tôi dùng bài để xác định prior art và thiết kế, không lập bảng xếp hạng thắng/thua qua score không matched.",
+      "evidence": [
+        {
+          "path": "literature_reported_facts.csv",
+          "locator": "N02 Methodology/Data description C08",
+          "anchor": "aggregated the training and testing datasets"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ24",
+      "theme": "contribution",
+      "difficulty": "HARD",
+      "question": "Nếu không có thuật toán mới, đóng góp có thể bảo vệ là gì?",
+      "answer": "Một case study thực nghiệm có kiểm toán trên UNSW-NB15. Điểm có evidence là chuỗi source/config/results đã khóa, đối chiếu RF/ensemble, error complementarity và giới hạn của nó, paired metric uncertainty, FP/FN và cost trade-off, overlap sensitivity và reconstructed-artifact provenance. Chưa đủ để quảng bá SOTA hoặc phương pháp mới; giá trị công bố còn cần đánh giá theo venue và bằng chứng bổ sung.",
+      "evidence": [
+        {
+          "path": "report/chapters/conclusion.tex",
+          "locator": "Đóng góp trong phạm vi đã chứng minh",
+          "anchor": "một chuỗi thực nghiệm trên benchmark"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ25",
+      "theme": "new_study",
+      "difficulty": "HARD",
+      "question": "Những thiếu sót nào không thể sửa bằng câu chữ?",
+      "answer": "Tính ổn định qua independent training, isolated causal effect của FS, matched imbalance comparison, external/session/time generalization và deployment cost cần nghiên cứu mới. Tài liệu có thể giới hạn claim và ghi đúng status, không tạo dữ liệu cho các câu hỏi này. Mọi nghiên cứu tiếp phải có protocol và holdout hợp lệ được phê duyệt, không tái sử dụng TEST hiện tại để chọn thắng.",
+      "evidence": [
+        {
+          "path": "report/chapters/conclusion.tex",
+          "locator": "Công việc còn thiếu và hướng nghiên cứu",
+          "anchor": "thí nghiệm matched và nested feature selection"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ26",
+      "theme": "negative_results",
+      "difficulty": "MEDIUM",
+      "question": "Vì sao phải giữ Voting không tốt bằng RF và Stacking chưa thắng rõ?",
+      "answer": "Đó là bằng chứng trả lời RQ1 trong scope đã làm. Chọn chỉ điểm thuận lợi sẽ thay đổi câu hỏi thành tìm mô hình thắng. Báo cáo giữ cả kết quả Voting không thuận lợi và kết luận Stacking không xác lập superiority tổng thể. Development CV không thay final holdout và cũng không phải training-repeat replication.",
+      "evidence": [
+        {
+          "path": "report/chapters/conclusion.tex",
+          "locator": "Đóng góp trong phạm vi đã chứng minh",
+          "anchor": "Kết quả không thuận lợi của Voting"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    },
+    {
+      "id": "DQ27",
+      "theme": "deployment",
+      "difficulty": "HARD",
+      "question": "Có thể trình diễn live inference bằng official TEST và công bố gói hiện tại chưa?",
+      "answer": "Chưa trong contract này. Không mở official TEST/prediction CSV và không có live demo được nghiệm thu. Demo tương lai cần dữ liệu thử hợp lệ, schema và provenance của reconstructed artifact theo contract riêng. Quyền code/license, data/model và tài liệu bên thứ ba cần quyết định của chủ sở hữu; manifest nội bộ không cấp quyền phát hành.",
+      "evidence": [
+        {
+          "path": "results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+          "locator": "scope",
+          "anchor": "P15_LOCAL_ARTIFACT_READONLY_QA"
+        }
+      ],
+      "status": "DRAFT_SOURCE_GROUNDED;NOT_REHEARSED"
+    }
+  ],
+  "evidence_basis": "Fixed packet_02. Source summaries only, no new predictions, statistics or model execution."
+}

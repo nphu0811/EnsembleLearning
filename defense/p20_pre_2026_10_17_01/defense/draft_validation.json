@@ -1,0 +1,10 @@
+{
+  "checks_pass": 65,
+  "checks_fail": 0,
+  "questions": 27,
+  "scope": "Exact evidence substrings and nonempty answer drafts; no claim that every prose inference is validated",
+  "slide_count": 13,
+  "planned_seconds": 720,
+  "pptx_created": false,
+  "rehearsal": false
+}

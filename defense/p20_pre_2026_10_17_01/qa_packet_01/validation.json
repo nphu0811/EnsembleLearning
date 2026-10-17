@@ -1,0 +1,1008 @@
+{
+  "phase": "packet",
+  "passed": 250,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "immutable manifest SHA",
+      "passed": true
+    },
+    {
+      "check": "manifest entries",
+      "passed": true
+    },
+    {
+      "check": "unique packet paths",
+      "passed": true
+    },
+    {
+      "check": "safe path notebook/phase01/phase1_frozen_research_design_v1.md",
+      "passed": true
+    },
+    {
+      "check": "copy hash notebook/phase01/phase1_frozen_research_design_v1.md",
+      "passed": true
+    },
+    {
+      "check": "original preserved notebook/phase01/phase1_frozen_research_design_v1.md",
+      "passed": true
+    },
+    {
+      "check": "safe path report/chapters/conclusion.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/chapters/conclusion.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/chapters/conclusion.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/chapters/dataset_eda.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/chapters/dataset_eda.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/chapters/dataset_eda.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/chapters/introduction.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/chapters/introduction.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/chapters/introduction.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/chapters/methodology.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/chapters/methodology.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/chapters/methodology.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/chapters/related_work.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/chapters/related_work.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/chapters/related_work.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/chapters/results_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/chapters/results_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/chapters/results_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/chapters/theoretical_foundations.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/chapters/theoretical_foundations.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/chapters/theoretical_foundations.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/chapters/validity_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/chapters/validity_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/chapters/validity_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/main.tex",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/main.tex",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/main.tex",
+      "passed": true
+    },
+    {
+      "check": "safe path report/references_verified.bib",
+      "passed": true
+    },
+    {
+      "check": "copy hash report/references_verified.bib",
+      "passed": true
+    },
+    {
+      "check": "original preserved report/references_verified.bib",
+      "passed": true
+    },
+    {
+      "check": "safe path results/baselines/unsw_nb15/development_cv/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/baselines/unsw_nb15/development_cv/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/baselines/unsw_nb15/development_cv/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/baselines/unsw_nb15/development_cv/tables/aggregate_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/baselines/unsw_nb15/development_cv/tables/aggregate_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/baselines/unsw_nb15/development_cv/tables/aggregate_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/baselines/unsw_nb15/development_cv/tables/fold_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/baselines/unsw_nb15/development_cv/tables/fold_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/baselines/unsw_nb15/development_cv/tables/fold_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/data_audit/unsw_nb15/dataset_summary.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/data_audit/unsw_nb15/dataset_summary.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/data_audit/unsw_nb15/dataset_summary.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/data_audit/unsw_nb15/duplicate_summary.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/data_audit/unsw_nb15/duplicate_summary.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/data_audit/unsw_nb15/duplicate_summary.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/data_audit/unsw_nb15/raw_file_checksums.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/data_audit/unsw_nb15/raw_file_checksums.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/data_audit/unsw_nb15/raw_file_checksums.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/data_audit/unsw_nb15/train_test_overlap.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/data_audit/unsw_nb15/train_test_overlap.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/data_audit/unsw_nb15/train_test_overlap.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/data_audit/unsw_nb15_overlap/cross_split_overlap_by_attack.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/data_audit/unsw_nb15_overlap/cross_split_overlap_by_attack.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/data_audit/unsw_nb15_overlap/cross_split_overlap_by_attack.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/data_audit/unsw_nb15_overlap/overlap_consistency_summary.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/data_audit/unsw_nb15_overlap/overlap_consistency_summary.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/data_audit/unsw_nb15_overlap/overlap_consistency_summary.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/data_audit/unsw_nb15_views/view_summary.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/data_audit/unsw_nb15_views/view_summary.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/data_audit/unsw_nb15_views/view_summary.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/eda/unsw_nb15/tables/attack_category_distribution.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/eda/unsw_nb15/tables/attack_category_distribution.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/eda/unsw_nb15/tables/attack_category_distribution.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/eda/unsw_nb15/tables/binary_class_distribution.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/eda/unsw_nb15/tables/binary_class_distribution.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/eda/unsw_nb15/tables/binary_class_distribution.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/ensemble/unsw_nb15/phase7_1_diversity/tables/individual_oof_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/ensemble/unsw_nb15/phase7_1_diversity/tables/individual_oof_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/ensemble/unsw_nb15/phase7_1_diversity/tables/individual_oof_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/ensemble/unsw_nb15/phase7_1_diversity/tables/pairwise_diversity.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/ensemble/unsw_nb15/phase7_1_diversity/tables/pairwise_diversity.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/ensemble/unsw_nb15/phase7_1_diversity/tables/pairwise_diversity.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/ensemble/unsw_nb15/phase7_2_ensemble_cv/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/ensemble/unsw_nb15/phase7_2_ensemble_cv/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/ensemble/unsw_nb15/phase7_2_ensemble_cv/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/aggregate_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/aggregate_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/aggregate_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/pooled_oof_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/pooled_oof_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/ensemble/unsw_nb15/phase7_2_ensemble_cv/tables/pooled_oof_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/feature_selection/unsw_nb15/stage1/stage1_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/feature_selection/unsw_nb15/stage1/stage1_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/feature_selection/unsw_nb15/stage1/stage1_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/feature_selection/unsw_nb15/stage2/rfecv_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/feature_selection/unsw_nb15/stage2/rfecv_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/feature_selection/unsw_nb15/stage2/rfecv_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/feature_selection/unsw_nb15/stage2/stability_summary.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/feature_selection/unsw_nb15/stage2/stability_summary.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/feature_selection/unsw_nb15/stage2/stability_summary.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/feature_selection/unsw_nb15/stage2/tables/selection_stability.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/feature_selection/unsw_nb15/stage2/tables/selection_stability.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/feature_selection/unsw_nb15/stage2/tables/selection_stability.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "check": "safe path results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.pdf",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.pdf",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.pdf",
+      "passed": true
+    },
+    {
+      "check": "safe path results/figures/p16_standalone_2026_10_17_03/category_distribution.pdf",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/figures/p16_standalone_2026_10_17_03/category_distribution.pdf",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/figures/p16_standalone_2026_10_17_03/category_distribution.pdf",
+      "passed": true
+    },
+    {
+      "check": "safe path results/figures/p16_standalone_2026_10_17_03/fpr_fnr_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/figures/p16_standalone_2026_10_17_03/fpr_fnr_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/figures/p16_standalone_2026_10_17_03/fpr_fnr_tradeoff.pdf",
+      "passed": true
+    },
+    {
+      "check": "safe path results/figures/p16_standalone_2026_10_17_03/macro_f1_ci.pdf",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/figures/p16_standalone_2026_10_17_03/macro_f1_ci.pdf",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/figures/p16_standalone_2026_10_17_03/macro_f1_ci.pdf",
+      "passed": true
+    },
+    {
+      "check": "safe path results/figures/p16_standalone_2026_10_17_03/mcc_ci.pdf",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/figures/p16_standalone_2026_10_17_03/mcc_ci.pdf",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/figures/p16_standalone_2026_10_17_03/mcc_ci.pdf",
+      "passed": true
+    },
+    {
+      "check": "safe path results/figures/p16_standalone_2026_10_17_03/performance_cost.pdf",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/figures/p16_standalone_2026_10_17_03/performance_cost.pdf",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/figures/p16_standalone_2026_10_17_03/performance_cost.pdf",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase10_statistics/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase10_statistics/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase10_statistics/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase10_statistics/tables/attack_family_miss_rate_ci.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase10_statistics/tables/attack_family_miss_rate_ci.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase10_statistics/tables/attack_family_miss_rate_ci.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase10_statistics/tables/bootstrap_metric_ci.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase10_statistics/tables/bootstrap_metric_ci.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase10_statistics/tables/bootstrap_metric_ci.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase10_statistics/tables/official_vs_novel_degradation.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase10_statistics/tables/official_vs_novel_degradation.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase10_statistics/tables/official_vs_novel_degradation.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase10_statistics/tables/performance_cost_tradeoff.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase10_statistics/tables/performance_cost_tradeoff.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase10_statistics/tables/performance_cost_tradeoff.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase14_error_analysis_step1/attack_family_transitions.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase14_error_analysis_step1/attack_family_transitions.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase14_error_analysis_step1/attack_family_transitions.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_analysis/unsw_nb15/phase14_error_analysis_step1/class_pairwise_transitions.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_analysis/unsw_nb15/phase14_error_analysis_step1/class_pairwise_transitions.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_analysis/unsw_nb15/phase14_error_analysis_step1/class_pairwise_transitions.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_confusion_matrices.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_confusion_matrices.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_confusion_matrices.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_final_evaluation_complete.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_final_evaluation_complete.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_final_evaluation_complete.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_per_class_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_per_class_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_evaluation/unsw_nb15/phase11_evaluation_closure/phase11_per_class_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_evaluation/unsw_nb15/phase9_holdout/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_evaluation/unsw_nb15/phase9_holdout/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_evaluation/unsw_nb15/phase9_holdout/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_evaluation/unsw_nb15/phase9_holdout/tables/attack_category_miss_profile.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/attack_category_miss_profile.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_evaluation/unsw_nb15/phase9_holdout/tables/attack_category_miss_profile.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/final_evaluation/unsw_nb15/phase9_holdout/tables/pairwise_error_counts.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/final_evaluation/unsw_nb15/phase9_holdout/tables/pairwise_error_counts.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/final_evaluation/unsw_nb15/phase9_holdout/tables/pairwise_error_counts.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/reproducibility/p15_local_artifact_qa_01/artifact_acceptance.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/reproducibility/p15_local_rf17_full_01/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/reproducibility/p15_local_rf17_full_01/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/reproducibility/p15_local_rf17_full_01/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/reproducibility/p15_local_rf42_full_02/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/reproducibility/p15_local_rf42_full_02/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/reproducibility/p15_local_rf42_full_02/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/reproducibility/p15_local_stack_full_01/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/reproducibility/p15_local_stack_full_01/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/reproducibility/p15_local_stack_full_01/run_report.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/tuning/unsw_nb15/phase8_controlled/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/tuning/unsw_nb15/phase8_controlled/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/tuning/unsw_nb15/phase8_controlled/experiment_metadata.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json",
+      "passed": true
+    },
+    {
+      "check": "safe path results/tuning/unsw_nb15/phase8_controlled/tables/rf17_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/tuning/unsw_nb15/phase8_controlled/tables/rf17_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/tuning/unsw_nb15/phase8_controlled/tables/rf17_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/tuning/unsw_nb15/phase8_controlled/tables/rf42_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/tuning/unsw_nb15/phase8_controlled/tables/rf42_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/tuning/unsw_nb15/phase8_controlled/tables/rf42_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_meta_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_meta_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_meta_grid_results.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_threshold_sensitivity.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_threshold_sensitivity.csv",
+      "passed": true
+    },
+    {
+      "check": "original preserved results/tuning/unsw_nb15/phase8_controlled/tables/stacking42_threshold_sensitivity.csv",
+      "passed": true
+    },
+    {
+      "check": "safe path src/analysis/close_original_phase11.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/analysis/close_original_phase11.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/analysis/close_original_phase11.py",
+      "passed": true
+    },
+    {
+      "check": "safe path src/analysis/run_unsw_phase10_statistics.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/analysis/run_unsw_phase10_statistics.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/analysis/run_unsw_phase10_statistics.py",
+      "passed": true
+    },
+    {
+      "check": "safe path src/features/select_unsw_features_stage1.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/features/select_unsw_features_stage1.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/features/select_unsw_features_stage1.py",
+      "passed": true
+    },
+    {
+      "check": "safe path src/features/select_unsw_features_stage2.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/features/select_unsw_features_stage2.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/features/select_unsw_features_stage2.py",
+      "passed": true
+    },
+    {
+      "check": "safe path src/models/run_unsw_baseline_development.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/models/run_unsw_baseline_development.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/models/run_unsw_baseline_development.py",
+      "passed": true
+    },
+    {
+      "check": "safe path src/models/run_unsw_diversity_oof.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/models/run_unsw_diversity_oof.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/models/run_unsw_diversity_oof.py",
+      "passed": true
+    },
+    {
+      "check": "safe path src/models/run_unsw_ensemble_phase7_2.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/models/run_unsw_ensemble_phase7_2.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/models/run_unsw_ensemble_phase7_2.py",
+      "passed": true
+    },
+    {
+      "check": "safe path src/models/run_unsw_phase8_controlled_tuning.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/models/run_unsw_phase8_controlled_tuning.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/models/run_unsw_phase8_controlled_tuning.py",
+      "passed": true
+    },
+    {
+      "check": "safe path src/models/run_unsw_phase9_final_holdout.py",
+      "passed": true
+    },
+    {
+      "check": "copy hash src/models/run_unsw_phase9_final_holdout.py",
+      "passed": true
+    },
+    {
+      "check": "original preserved src/models/run_unsw_phase9_final_holdout.py",
+      "passed": true
+    },
+    {
+      "check": "safe path approved_report.pdf",
+      "passed": true
+    },
+    {
+      "check": "copy hash approved_report.pdf",
+      "passed": true
+    },
+    {
+      "check": "original preserved approved_report.pdf",
+      "passed": true
+    },
+    {
+      "check": "safe path approved_report_pages.txt",
+      "passed": true
+    },
+    {
+      "check": "copy hash approved_report_pages.txt",
+      "passed": true
+    },
+    {
+      "check": "safe path literature_scope.json",
+      "passed": true
+    },
+    {
+      "check": "copy hash literature_scope.json",
+      "passed": true
+    },
+    {
+      "check": "safe path literature_reported_facts.csv",
+      "passed": true
+    },
+    {
+      "check": "copy hash literature_reported_facts.csv",
+      "passed": true
+    },
+    {
+      "check": "no forbidden classes",
+      "passed": true
+    },
+    {
+      "check": "no prior review or audit conclusions",
+      "passed": true
+    },
+    {
+      "check": "fixed dispatch input COMMON_REVIEW_RULES.md",
+      "passed": true
+    },
+    {
+      "check": "fixed dispatch input BRIEF_A.md",
+      "passed": true
+    },
+    {
+      "check": "fixed dispatch input BRIEF_B.md",
+      "passed": true
+    },
+    {
+      "check": "fixed dispatch input BRIEF_C.md",
+      "passed": true
+    },
+    {
+      "check": "fixed dispatch input packet_02/manifest.csv",
+      "passed": true
+    },
+    {
+      "check": "fixed dispatch input packet_02/receipt.json",
+      "passed": true
+    },
+    {
+      "check": "context fork none",
+      "passed": true
+    },
+    {
+      "check": "briefs preassigned",
+      "passed": true
+    }
+  ],
+  "boundary": "Traceability/structure/preservation checks. Not proof of scientific correctness or public release authorization."
+}

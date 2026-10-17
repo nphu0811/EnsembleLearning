@@ -1,0 +1,8 @@
+{
+  "status": "FAILED_BEFORE_REVIEW_DISPATCH",
+  "exception": "AssertionError in path guard",
+  "cause": "Overbroad qa_ substring excluded the factual author-host artifact_acceptance.json evidence in p15_local_artifact_qa_01",
+  "partial_local_directory": "packet/local_contents",
+  "repair": "Remove generic qa_ substring while retaining explicit-source allowlist. Build a fresh packet_02 without overwriting partial attempt01",
+  "model_or_result_modified": false
+}

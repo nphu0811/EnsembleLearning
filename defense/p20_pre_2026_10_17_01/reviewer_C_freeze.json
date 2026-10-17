@@ -1,0 +1,15 @@
+{
+  "reviewer": "C",
+  "frozen_at_utc": "2026-10-17T01:32:03.885632+00:00",
+  "agent_task": "/root/reviewer_c",
+  "files": [
+    {
+      "path": "reviewer_C/report.md",
+      "sha256": "6dd1a84d4474534462fc6e1644c14b174df7fa5b6222fe76c877195da84f065a"
+    },
+    {
+      "path": "reviewer_C/report.json",
+      "sha256": "fa96aab77ff7b488346996312f5c3daa0a36b1034fd80f31f2d0a410b49a09a5"
+    }
+  ]
+}
