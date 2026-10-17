@@ -158,6 +158,8 @@ def main() -> int:
     result = run_audit()
     print(json.dumps({k: result[k] for k in
                       ("scope", "passed", "failed", "local_only_skipped_count", "reviewer_qa")}, ensure_ascii=False))
+    if result["failed"]:
+        print(json.dumps({"failed_checks": [x for x in result["checks"] if not x["passed"]]}, ensure_ascii=False))
     if args.out is not None:
         if args.out.exists():
             p.error("Refuse to overwrite existing QA output")
