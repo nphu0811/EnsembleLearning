@@ -42,8 +42,8 @@ jobs:
           ]:
               data = Path(name).read_bytes()
               print('CRLF normalized diagnostic', name,
-                    'LF count', data.count(b'\\n'),
-                    'CRLF SHA256', sha256(data.replace(b'\\r\\n', b'\\n').replace(b'\\n', b'\\r\\n')).hexdigest())
+                    'LF count', data.count(b'\n'),
+                    'CRLF SHA256', sha256(data.replace(b'\r\n', b'\n').replace(b'\n', b'\r\n')).hexdigest())
           PY
       - name: Verify P21 contract and three frozen historical file hashes
         run: python tools/p21_protocol_validator.py
