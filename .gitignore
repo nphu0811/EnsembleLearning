@@ -53,3 +53,10 @@ results/controlled_extensions/p21_train_only_pilot_rf42_*/worker.stdout.log
 results/controlled_extensions/p21_train_only_pilot_rf42_*/worker.stderr.log
 results/controlled_extensions/p21_train_only_pilot_rf42_*/resources.csv
 results/controlled_extensions/**/*.joblib
+
+# P21 selector17 supervised pilot transient/local-only records
+results/controlled_extensions/p21_train_only_pilot_selector17_*/go.signal
+results/controlled_extensions/p21_train_only_pilot_selector17_*/heartbeat
+results/controlled_extensions/p21_train_only_pilot_selector17_*/worker.stdout.log
+results/controlled_extensions/p21_train_only_pilot_selector17_*/worker.stderr.log
+results/controlled_extensions/p21_train_only_pilot_selector17_*/resources.csv
