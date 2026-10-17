@@ -1,3 +1,19 @@
+# CHECKPOINT ƯU TIÊN 18/10/2026 — SAU PDF V2 VÀ P20-PRE
+
+| Task | Trạng thái hiện hành | Bằng chứng/next exact action |
+|---|---|---|
+| P17 V2 manuscript | **DONE_SCOPED_TECHNICAL_BUILD; AUTHOR_REVIEW_PENDING** | 47-page A4 5-chapter PDF; SHA256 `5300f9de92a7fc3834294b015382acfff80c9f0384ef9d6a32419e2bf72b52f3`; successful [CI](https://github.com/nphu0811/EnsembleLearning/actions/runs/38999397120), `docs/research/REPORT_REVISION_V2_PRINT_FIX_VERIFIED_2026-10-17.md`. Original 37-page PDF unchanged |
+| P20-PRE 3 AI reviewer QA | **DONE_SCOPED_WITH_DOCUMENTED_CITATION_ERRATUM** | `defense/p20_pre_2026_10_17_01/qa_complete_01/validation.json`: 1400 PASS, one strict A-Q11 anchor FAIL documented, zero unresolved; 17 concerns clustered to 9 OPEN groups |
+| P20 POST-V2 REVIEW | **NEXT / NOT_RUN** | Have NotebookLM inspect exactly final V2 PDF, retain page-anchored issues, then replay source-grounded reviewer acceptance against V2 on all 9 groups without editing reviewer originals; P20 final remains DEFERRED |
+| P16 final print presentation | **OPEN_FINDINGS** | Inspect actual printed size; ~118dpi inherited heatmap and small print remain to be considered; V2 mechanical overfull checks PASS |
+| P18 overall | **PARTIAL** | Follow up L03 publisher pagination and lawful text gaps; no unsupported novelty claims |
+| P19 overall | **PARTIAL/BLOCKED_RIGHTS** | LICENSE/rights for publication, model/data/third parties; do not distribute Git-tracked smoke binaries or internal-only archive |
+| G0–G6 and final submission | **OPEN, not automatically authorized** | Author approval, academic validity, institutional form/signatures and final review release decision separate from a passing PDF build |
+
+**NEXT EXACT ACTION**: NotebookLM critical review of uploaded `Bao_cao_NCKH_EnsembleLearning_REVISION_V2.pdf` ONLY (check source filename/date), with page citations and 9-group reviewer concerns; classify severity and refer results to `P20 POST-V2`. Preserve all frozen experiment results and original P20 reviewer evidence. All sections below this checkpoint are historical snapshots, not the latest priority.
+
+---
+
 # P19 safe draft and P20 preparation — current17/10/2026
 
 | Task | Status | Evidence |
