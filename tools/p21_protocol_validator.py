@@ -204,10 +204,10 @@ def static_audit(verify_train: bool = False) -> dict:
             # from the Windows CRLF worktree. Require BOTH exact hashes.
             data = path.read_bytes()
             repo_hash = hashlib.sha256(data).hexdigest()
-            crlf_data = data.replace(b"\\r\\n", b"\\n").replace(b"\\n", b"\\r\\n")
+            crlf_data = data.replace(b"\r\n", b"\n").replace(b"\n", b"\r\n")
             crlf_hash = hashlib.sha256(crlf_data).hexdigest()
             valid = (repo_hash == EXPECTED_GIT_LF[rel] and
-                     crlf_hash == expected and b"\\r\\n" not in data)
+                     crlf_hash == expected and b"\r\n" not in data)
             checks.append({"id": "frozen_git_lf_and_author_crlf_sha256:" + rel,
                            "pass": valid})
         else:
