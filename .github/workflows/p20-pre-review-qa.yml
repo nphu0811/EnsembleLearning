@@ -5,6 +5,7 @@ on:
     paths:
       - "tools/p20_verify_committed_reviews.py"
       - "tools/p20_validate_pre_review.py"
+      - "tests/test_p20_anchor_erratum.py"
       - "defense/p20_pre_2026_10_17_01/reviewer_*/**"
       - "defense/p20_pre_2026_10_17_01/review_reports_frozen.json"
       - "defense/p20_pre_2026_10_17_01/synthesis/**"
@@ -27,6 +28,10 @@ jobs:
         run: |
           python -m py_compile tools/p20_verify_committed_reviews.py
           python -m py_compile tools/p20_validate_pre_review.py
+          python -m py_compile tests/test_p20_anchor_erratum.py
+      - name: Test strict citation exception boundaries
+        run: |
+          python -m unittest discover -s tests -p "test_p20_anchor_erratum.py" -v
       - name: Audit committed reviewer report hashes, concern map and source anchors
         run: |
           python tools/p20_verify_committed_reviews.py --out "$RUNNER_TEMP/p20-review-qa.json"
