@@ -1,3 +1,10 @@
+
+# 17/10/2026 — revised five-chapter PDF integrates RQ1-RQ5
+
+**NEW VERSION approved for author-side drafting**: a separate single-file PDF of 45 physical A4 pages has been built by XeLaTeX with direct quantified answers to all RQ1–RQ5, OOF/Voting/Diversity and prior art, and corrected P15 reconstruction provenance in the five chapters. See `docs/research/P20_RQ1_RQ5_INTEGRATED_PDF_REVISION_QA_2026-10-17.md` and successful Action `38994119619`. Original user-approved 37-page PDF/source and frozen model/evaluation results unchanged. RQ1 stable gain across training runs, RQ2 isolated causal feature effect, RQ3 diversity mechanism, RQ5 matched class-imbalance interventions all remain unverified; RQ4 result scoped to same TEST vector-overlap subset. **Revised PDF is pending user content approval; P20-final and release gates still open.**
+
+---
+
 # P19 safe-release update —17/10/2026
 
 P19PARTIAL:3trackedhistoricalsmokemodelsread-onlyinventoried,Gitblob/local/metadatahashesagree. Noindexcleanupneededforallowlistdraft. Local INTERNAL_REVIEW_ONLY ZIP46entries,245mechanical+121independentchecksPASS,3path testsPASS;notpublicauthorized,norunnabletrainingrelease,noFINAL. Code/data/model/report/template/thirdpartyrightsremain. docs/research/P19_SAFE_RELEASE_AUDIT_2026-10-17.md and trackedmanifestshowexactscope. P20rubric/setupready,fullpanelDEFERRED. P18sevenpaper/3selectedbodyreads remainsPARTIAL;L03VOR/accessgapsopen. P15DONE_SCOPED_RECONSTRUCTION,P16DONE_SCOPED_AUDIT_WITH_OPEN_PRINT_FINDINGS. NoPDF/bib/frozenresultchanges.
