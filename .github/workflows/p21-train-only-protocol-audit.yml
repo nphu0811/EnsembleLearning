@@ -33,5 +33,17 @@ jobs:
           sha256sum results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json
           sha256sum results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json
           git ls-files --eol results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json
+          python - <<'PY'
+          from pathlib import Path
+          from hashlib import sha256
+          for name in [
+              'results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json',
+              'results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json',
+          ]:
+              data = Path(name).read_bytes()
+              print('CRLF normalized diagnostic', name,
+                    'LF count', data.count(b'\\n'),
+                    'CRLF SHA256', sha256(data.replace(b'\\r\\n', b'\\n').replace(b'\\n', b'\\r\\n')).hexdigest())
+          PY
       - name: Verify P21 contract and three frozen historical file hashes
         run: python tools/p21_protocol_validator.py
