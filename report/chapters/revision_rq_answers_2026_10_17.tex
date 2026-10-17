@@ -3,7 +3,7 @@
 \label{sec:revision-development}
 Tất cả số liệu trong Bảng~\ref{tab:rev-dev} là \emph{pooled out-of-fold} trên official TRAIN với outer \texttt{StratifiedKFold} ba fold (seed 42), và inner Stacking ba fold (seed 137). Đây là dữ liệu development trước final tuning, không phải chỉ số official TEST; feature selection trước outer CV còn nguy cơ lạc quan.
 
-\begin{table}[htbp]\centering\small
+\begin{table}[H]\centering\small
 \caption{Development pooled OOF trên track 42 biến. FPR/FNR tính bằng \%; giữ cả Voting bất lợi.}
 \label{tab:rev-dev}
 \begin{tabular}{lrrrr}\toprule
@@ -43,7 +43,7 @@ Trên official TEST có $71\,104$ mẫu cả RF-42 và Stacking-42 đúng; $10\,
 \label{sec:revision-rq4}
 \textbf{Trả lời: Macro-F1 giảm ở cả ba pipeline, nhưng thứ hạng không đảo trong hai view được lưu.}
 Trong 82\,332 dòng official TEST có 8\,541 dòng trùng vector 42 feature với TRAIN; novel-vector view còn 73\,791 dòng.
-\begin{table}[htbp]\centering\small
+\begin{table}[H]\centering\small
 \caption{RQ4: Macro-F1 trong cùng official TEST, không phải validation độc lập.}
 \label{tab:rev-rq4}
 \begin{tabular}{lrrr}\toprule
