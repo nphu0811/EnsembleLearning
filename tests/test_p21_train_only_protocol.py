@@ -61,6 +61,22 @@ class P21TrainOnlyContractTests(unittest.TestCase):
         self.assertFalse(MOD.verify_dual_eol_bytes(lf, "0" * 64, author_hash))
         self.assertFalse(MOD.verify_dual_eol_bytes(crlf, git_hash, "0" * 64))
 
+    def test_actual_tracked_json_accepts_windows_byte_representation(self):
+        for rel, git_hash in MOD.EXPECTED_GIT_LF.items():
+            with self.subTest(file=rel):
+                lf_data = (ROOT / rel).read_bytes()
+                self.assertTrue(
+                    MOD.verify_dual_eol_bytes(
+                        lf_data, git_hash, MOD.EXPECTED_FROZEN[rel]
+                    )
+                )
+                windows_bytes = lf_data.replace(b"\n", b"\r\n")
+                self.assertTrue(
+                    MOD.verify_dual_eol_bytes(
+                        windows_bytes, git_hash, MOD.EXPECTED_FROZEN[rel]
+                    )
+                )
+
     def test_reject_train_to_test_path_switch(self):
         p = copy.deepcopy(SOURCE)
         p["source"]["raw_train"] = "data/raw/unsw-nb15/UNSW_NB15_testing-set.csv"
