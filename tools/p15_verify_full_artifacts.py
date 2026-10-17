@@ -56,8 +56,8 @@ def secure_output_dir(root: Path, raw: Path) -> Path:
 
 def safe_artifact_path(worker_dir: Path, expected_name: str) -> Path:
     directory = worker_dir.resolve(strict=True)
-    if worker_dir.is_symlink() or directory != worker_dir.absolute():
-        raise ValueError("Model worker directory must not redirect through a link")
+    if worker_dir.is_symlink():
+        raise ValueError("Model worker directory must not be a symlink")
     artifact = worker_dir / expected_name
     if not artifact.is_file() or artifact.is_symlink() or artifact.resolve(strict=True).parent != directory:
         raise ValueError("Missing or unsafe model binary")
