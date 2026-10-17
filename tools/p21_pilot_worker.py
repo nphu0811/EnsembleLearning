@@ -43,9 +43,8 @@ def fingerprint_and_split(frame, features, seed):
         # Check a 64-bit hash never merges two different vectors.
         dup = X.loc[duplicate].copy()
         dup["_p21_group_hash"] = hashes.loc[duplicate].to_numpy()
-        if (dup.groupby("_p21_group_hash", sort=False, dropna=False)
-                .apply(lambda g: len(g.drop(columns=["_p21_group_hash"]).drop_duplicates()),
-                       include_groups=True).gt(1).any()):
+        if (dup.groupby("_p21_group_hash", sort=False, dropna=False)[features]
+                .nunique(dropna=False).gt(1).any(axis=1).any()):
             raise ValueError("Hash collision: different vectors mapped to same group")
     y = frame["label"].to_numpy(dtype=int)
     skf = StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=seed)
