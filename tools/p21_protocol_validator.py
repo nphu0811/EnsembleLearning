@@ -42,6 +42,23 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def verify_dual_eol_bytes(data: bytes, git_lf_hash: str, windows_crlf_hash: str) -> bool:
+    """Accept exactly LF or CRLF bytes, each matching its independently frozen digest.
+
+    GitHub's checkout uses LF, whereas the author's unchanged Windows worktree
+    uses CRLF. A text/metadata change, mixed line endings or stray CR fails.
+    No source file is modified by this function.
+    """
+    lf_bytes = data.replace(b"\r\n", b"\n")
+    crlf_bytes = lf_bytes.replace(b"\n", b"\r\n")
+    if b"\r" in lf_bytes or data not in (lf_bytes, crlf_bytes):
+        return False
+    return (
+        hashlib.sha256(lf_bytes).hexdigest() == git_lf_hash
+        and hashlib.sha256(crlf_bytes).hexdigest() == windows_crlf_hash
+    )
+
+
 def validate_contract(config: dict) -> list[dict]:
     checks = []
 
@@ -199,15 +216,14 @@ def static_audit(verify_train: bool = False) -> dict:
     checks = validate_contract(config)
     for rel, expected in EXPECTED_FROZEN.items():
         path = ROOT / rel
-        if rel in EXPECTED_GIT_LF and path.is_file():
-            # Git stores LF; the author-host provenance record was created
-            # from the Windows CRLF worktree. Require BOTH exact hashes.
-            data = path.read_bytes()
-            repo_hash = hashlib.sha256(data).hexdigest()
-            crlf_data = data.replace(b"\r\n", b"\n").replace(b"\n", b"\r\n")
-            crlf_hash = hashlib.sha256(crlf_data).hexdigest()
-            valid = (repo_hash == EXPECTED_GIT_LF[rel] and
-                     crlf_hash == expected and b"\r\n" not in data)
+        if rel in EXPECTED_GIT_LF:
+            # Git checkout (LF) and author Windows checkout (CRLF) hold the
+            # same JSON content. Verify BOTH digests from either exact variant;
+            # never rewrite frozen source files or accept changed JSON.
+            valid = (
+                path.is_file() and
+                verify_dual_eol_bytes(path.read_bytes(), EXPECTED_GIT_LF[rel], expected)
+            )
             checks.append({"id": "frozen_git_lf_and_author_crlf_sha256:" + rel,
                            "pass": valid})
         else:
