@@ -1,0 +1,31 @@
+name: P21 TRAIN-only study protocol static QA
+
+on:
+  push:
+    paths:
+      - "config/p21_train_only_protocol_2026_10_18.json"
+      - "tools/p21_protocol_validator.py"
+      - "tests/test_p21_train_only_protocol.py"
+      - ".github/workflows/p21-train-only-protocol-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  protocol_only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile fixture-safe audit module (NO model training)
+        run: |
+          python -m py_compile tools/p21_protocol_validator.py
+          python -m py_compile tests/test_p21_train_only_protocol.py
+      - name: Run ten synthetic protocol tests (NO raw TRAIN/TEST)
+        run: python -m unittest discover -s tests -p "test_p21_train_only_protocol.py" -v
+      - name: Verify P21 contract and three frozen historical file hashes
+        run: python tools/p21_protocol_validator.py
