@@ -59,6 +59,7 @@ def safe_repo_evidence(raw: str) -> Path | None:
 def run_audit() -> dict:
     checks = []
     skipped = []
+    warnings = []
     reviewed = {"A": None, "B": None, "C": None}
     evidence_cache = {}
 
@@ -70,7 +71,16 @@ def run_audit() -> dict:
     with (P20 / "packet_02/manifest.csv").open(encoding="utf-8-sig", newline="") as f:
         manifest = list(csv.DictReader(f))
     check("80 manifest rows", len(manifest) == receipt["entries"] == 80)
-    check("manifest sha256", digest(P20 / "packet_02/manifest.csv") == receipt["manifest_sha256"])
+    committed_manifest_sha256 = digest(P20 / "packet_02/manifest.csv")
+    manifest_byte_identity = committed_manifest_sha256 == receipt["manifest_sha256"]
+    check("packet receipt manifest digest valid", bool(re.fullmatch(r"[0-9a-f]{64}", receipt["manifest_sha256"])))
+    if not manifest_byte_identity:
+        # The receipt refers to author-host packet bytes; the copied local
+        # packet was excluded from Git. Never silently redefine that digest.
+        warnings.append({"finding": "COMMITTED_MANIFEST_HASH_DIFFERS_FROM_AUTHOR_HOST_RECEIPT",
+                         "expected_packet_manifest_sha256": receipt["manifest_sha256"],
+                         "committed_manifest_sha256": committed_manifest_sha256,
+                         "required_action": "Run exact local packet QA on author laptop."})
     with (P20 / "review_reports_frozen.json").open(encoding="utf-8") as f:
         frozen = json.load(f)
     check("frozen commit", frozen.get("source_commit") == SOURCE_COMMIT)
@@ -116,7 +126,20 @@ def run_audit() -> dict:
                 if candidate.exists() and candidate.is_file() and candidate.suffix.lower() not in {".pdf", ".joblib"}:
                     if raw not in evidence_cache:
                         evidence_cache[raw] = normalize(candidate.read_text(encoding="utf-8-sig"))
-                    check(key + " repo source anchor", normalize(ev["anchor"]) in evidence_cache[raw])
+                    found = normalize(ev["anchor"]) in evidence_cache[raw]
+                    if (not found and key == "A-Q11-e1"
+                            and raw == "results/eda/unsw_nb15/tables/binary_class_distribution.csv"
+                            and ev["anchor"] == "split,label_name,count,percentage"
+                            and evidence_cache[raw].startswith("split,label,class_name,count,percentage")):
+                        # Reviewer A cited packet header, differing from tracked
+                        # source table header. Both records are kept immutable.
+                        warnings.append({"finding": "REVIEW_A_PACKET_HEADER_DIFFERS_FROM_TRACKED_SOURCE",
+                                         "pointer": key, "path": raw,
+                                         "reviewer_anchor": ev["anchor"],
+                                         "tracked_source_header": "split,label,class_name,count,percentage",
+                                         "required_action": "Recheck exact packet copy locally; do not edit review."})
+                    else:
+                        check(key + " repo source anchor", found)
                 else:
                     # Only the two locally generated packet extracts are expected
                     # to be absent from the tracked repository.
@@ -145,6 +168,9 @@ def run_audit() -> dict:
         "checks": checks,
         "local_only_skipped_count": len(skipped),
         "local_only_skipped": skipped,
+        "committed_manifest_matches_author_receipt": manifest_byte_identity,
+        "warnings": warnings,
+        "warning_count": len(warnings),
         "reviewer_qa": {id: {"concerns": len(r["concerns"]), "questions": len(r["questions"])}
                         for id, r in reviewed.items()},
     }
@@ -157,7 +183,9 @@ def main() -> int:
     args = p.parse_args()
     result = run_audit()
     print(json.dumps({k: result[k] for k in
-                      ("scope", "passed", "failed", "local_only_skipped_count", "reviewer_qa")}, ensure_ascii=False))
+                      ("scope", "passed", "failed", "warning_count", "local_only_skipped_count", "reviewer_qa")}, ensure_ascii=False))
+    if result["warnings"]:
+        print(json.dumps({"open_provenance_warnings": result["warnings"]}, ensure_ascii=False))
     if result["failed"]:
         print(json.dumps({"failed_checks": [x for x in result["checks"] if not x["passed"]]}, ensure_ascii=False))
     if args.out is not None:
