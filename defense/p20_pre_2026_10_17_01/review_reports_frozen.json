@@ -1,0 +1,56 @@
+{
+  "status": "FROZEN_SOURCE_REPORTS_FROM_GITHUB",
+  "source_commit": "b3acf2e2f8ad15bdf4b11bb9450927a57309d968",
+  "packet_manifest_sha256": "c0f0b3828ba16ce8312b489915cc4c56c9fc7c771dbeefe1d7a9bb78938b62b7",
+  "reports": [
+    {
+      "reviewer": "A",
+      "source_commit": "b3acf2e2f8ad15bdf4b11bb9450927a57309d968",
+      "files": [
+        {
+          "path": "reviewer_A/report.md",
+          "sha256": "262fe582071c4b38dfee0c899fbca46d2e0b1ea072bc6fbf4e385de29bc9462b",
+          "bytes": 61089
+        },
+        {
+          "path": "reviewer_A/report.json",
+          "sha256": "3b42abb6516154c610632ccb82a1e4b00bfeb8d0c7f2ae3a94c6d5b3a2037448",
+          "bytes": 59272
+        }
+      ]
+    },
+    {
+      "reviewer": "B",
+      "source_commit": "b3acf2e2f8ad15bdf4b11bb9450927a57309d968",
+      "files": [
+        {
+          "path": "reviewer_B/report.md",
+          "sha256": "a291a09ca8571ab6487216e396ddc83e436997045fb0eb1fd585846ec8a9e7b2",
+          "bytes": 42707
+        },
+        {
+          "path": "reviewer_B/report.json",
+          "sha256": "c7fa50854f1d2b58953aa6b6357ae06f574273598b890ff4515dd85426d053dd",
+          "bytes": 54968
+        }
+      ]
+    },
+    {
+      "reviewer": "C",
+      "source_commit": "b3acf2e2f8ad15bdf4b11bb9450927a57309d968",
+      "files": [
+        {
+          "path": "reviewer_C/report.md",
+          "sha256": "6dd1a84d4474534462fc6e1644c14b174df7fa5b6222fe76c877195da84f065a",
+          "bytes": 37186
+        },
+        {
+          "path": "reviewer_C/report.json",
+          "sha256": "fa96aab77ff7b488346996312f5c3daa0a36b1034fd80f31f2d0a410b49a09a5",
+          "bytes": 47653
+        }
+      ]
+    }
+  ],
+  "note": "SHA-256 calculated from UTF-8 file contents returned by the GitHub connector. C matches its previously committed reviewer_C_freeze.json. A/B were committed before the token cutoff but had no freeze files; these are post-hoc source snapshots, NOT evidence that either report was independently finalized before push. Separate AI contexts are asserted by Codex dispatch metadata, not verified OS isolation. All original report files unchanged."
+}
