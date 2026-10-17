@@ -1,0 +1,151 @@
+% Revision V2 standalone PDF, based on the preserved report source and evidence.
+% Borrow structure/academic typesetting only, not any other team's content, names or results.
+% Do not overwrite templates/original, frozen experiment outputs or historical research notes.
+\documentclass[a4paper,12pt,oneside]{report}
+\usepackage{fontspec}
+\IfFontExistsTF{TeX Gyre Termes}{\setmainfont{TeX Gyre Termes}}{\setmainfont{DejaVu Serif}}
+\usepackage[vietnamese]{babel}
+\usepackage[a4paper,top=23mm,bottom=23mm,left=30mm,right=23mm,headheight=17pt,headsep=8mm,footskip=11mm]{geometry}
+\usepackage{xcolor}
+\definecolor{researchred}{RGB}{150,0,23}
+\usepackage{amsmath,amssymb,graphicx,array,booktabs,longtable,tabularx}
+\usepackage{siunitx}
+\sisetup{detect-all,output-decimal-marker={.},group-separator={\,},group-minimum-digits=4}
+\usepackage{pdflscape}
+\usepackage{placeins}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{caption}
+\usepackage{float} % keep revision-specific evidence tables beside explanations
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{setspace}
+\usepackage{xurl}
+\usepackage[unicode,colorlinks=true,linkcolor=researchred,citecolor=researchred,urlcolor=researchred]{hyperref}
+\emergencystretch=5em
+\setstretch{1.22}
+\setlength{\parindent}{15pt}
+\setlength{\parskip}{5pt}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+
+% Neutral body and section hierarchy; carmine accent from original PTIT template.
+\titleformat{\chapter}[block]{\normalfont\bfseries\centering\fontsize{15}{20}\selectfont\color{researchred}}{Chương \thechapter.}{0.8em}{\MakeUppercase}
+\titleformat{name=\chapter,numberless}[block]{\normalfont\bfseries\centering\fontsize{15}{20}\selectfont\color{black}}{}{0em}{}
+\titlespacing*{\chapter}{0pt}{7pt}{16pt}
+\titleformat{\section}{\normalfont\bfseries\fontsize{13}{17}\selectfont\color{researchred}}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\normalfont\bfseries\fontsize{12}{16}\selectfont}{\thesubsection}{0.8em}{}
+\captionsetup{font=small,labelfont={bf,color=black},labelsep=period}
+\renewcommand{\cftchappresnum}{Chương~}
+\setlength{\cftchapnumwidth}{6em}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftfigpresnum}{Hình~}
+\setlength{\cftfignumwidth}{4em}
+\renewcommand{\cfttabpresnum}{Bảng~}
+\setlength{\cfttabnumwidth}{4em}
+\makeatletter
+\let\originalcontentsline\contentsline
+\makeatother
+
+% Header/footer aligned with PTIT report; no unverified image/signature.
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\color{black} ĐỀ TÀI NCKH SINH VIÊN}
+\fancyhead[R]{\footnotesize\color{black} ENSEMBLE LEARNING -- NIDS}
+\fancyfoot[L]{\footnotesize\color{black} Mã đề tài: 09-SV-2026-CNTT2}
+\fancyfoot[R]{\footnotesize\color{black} \thepage}
+\renewcommand{\headrulewidth}{0.35pt}
+\renewcommand{\footrulewidth}{0.35pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyhead[L]{\footnotesize\color{black} ĐỀ TÀI NCKH SINH VIÊN}\fancyfoot[L]{\footnotesize\color{black} 09-SV-2026-CNTT2}\fancyfoot[R]{\footnotesize\color{black} \thepage}\renewcommand{\headrulewidth}{0.35pt}\renewcommand{\footrulewidth}{0.35pt}}
+
+\begin{document}
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+\draw[black,line width=.55pt] ($(current page.north west)+(2.0cm,-1.45cm)$) rectangle ($(current page.south east)+(-1.75cm,1.45cm)$);
+\draw[researchred!70,line width=1.1pt] ($(current page.north west)+(2.18cm,-1.62cm)$) rectangle ($(current page.south east)+(-1.92cm,1.62cm)$);
+\end{tikzpicture}
+\centering
+{\fontsize{12}{16}\selectfont BỘ KHOA HỌC VÀ CÔNG NGHỆ\par}
+{\fontsize{13}{17}\selectfont\bfseries HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG\par}
+{\fontsize{13}{17}\selectfont\bfseries CƠ SỞ TẠI TP. HỒ CHÍ MINH\par}
+{\fontsize{11}{15}\selectfont Khoa/đơn vị: \textbf{Khoa Công nghệ Thông tin 2}\par}
+\vspace{4mm}
+{\color{researchred}\rule{0.35\textwidth}{0.6pt}\par}
+\vspace{8mm}
+\includegraphics[width=25mm]{../templates/original/latex/assets/Logo_PTIT_University.png}
+\vspace{7mm}
+
+{\large\bfseries ĐỀ TÀI NGHIÊN CỨU KHOA HỌC SINH VIÊN\par}
+\vspace{6mm}
+{\normalsize Mã số đề tài: \textbf{09-SV-2026-CNTT2}\par}
+\vspace{7mm}
+{\color{researchred}\fontsize{18}{23}\selectfont\bfseries NGHIÊN CỨU ENSEMBLE LEARNING\\[3mm] CHO BÀI TOÁN PHÁT HIỆN XÂM NHẬP MẠNG\par}
+\vspace{6mm}
+{\color{black}\normalsize Thực nghiệm phân loại nhị phân trên UNSW-NB15\par}
+\vfill
+\begin{minipage}{0.91\linewidth}
+\raggedright
+\small
+\begin{tabular}{@{}p{.28\linewidth}p{.40\linewidth}p{.21\linewidth}@{}}
+\textbf{\shortstack[l]{Sinh viên\\thực hiện:}} & Dương Ngọc Phú & N23DCDK055\\[4pt]
+& Phạm Thế Vỹ & N23DCCN205\\[4pt]
+& Vũ Văn Kiên & N23DCDT029\\[4pt]
+& Lê Hoàng Nguyên Quân & N23DCDT042\\[7pt]
+\textbf{Lớp:} & \multicolumn{2}{l}{E23CQCE01-N}\\[5pt]
+\textbf{\shortstack[l]{Giảng viên\\hướng dẫn:}} & \multicolumn{2}{l}{Lê Ngọc Hiếu}\\
+\end{tabular}
+\end{minipage}
+\vfill
+{\normalsize\bfseries TP. Hồ Chí Minh -- 10/10/2026\par}
+\end{titlepage}
+
+\pagenumbering{roman}
+\input{frontmatter}
+\clearpage
+\renewcommand{\contentsname}{MỤC LỤC}
+\renewcommand{\listfigurename}{DANH SÁCH HÌNH VẼ}
+\renewcommand{\listtablename}{DANH SÁCH BẢNG}
+\tableofcontents
+\clearpage
+\input{abbreviations}
+\clearpage
+\listoffigures
+\clearpage
+\listoftables
+\clearpage
+
+\pagenumbering{arabic}
+\chapter{CƠ SỞ LÝ THUYẾT}
+\label{chap:ly-thuyet}
+\input{chapters/introduction_revision_v2_2026_10_17}
+\input{chapters/theoretical_foundations_revision_v2_2026_10_17}
+\input{chapters/related_work_revision_v2_2026_10_17}
+\input{chapters/revision_prior_work_v2_2026_10_17}
+
+\chapter{DỮ LIỆU VÀ QUY TRÌNH TIỀN XỬ LÝ}
+\label{chap:dataset-eda}
+\input{chapters/dataset_eda_revision_v2_2026_10_17}
+
+\chapter{XÂY DỰNG MÔ HÌNH VÀ THIẾT KẾ THỰC NGHIỆM}
+\label{chap:phuong-phap}
+\input{chapters/methodology_revision_v2_2026_10_17}
+
+\chapter{KẾT QUẢ THỰC NGHIỆM VÀ ĐÁNH GIÁ}
+\label{chap:ket-qua-thao-luan}
+\input{chapters/results_discussion_revision_v2_2026_10_17}
+\input{chapters/revision_rq_answers_v2_2026_10_17}
+
+\chapter{THẢO LUẬN VÀ HƯỚNG PHÁT TRIỂN}
+\label{chap:ban-luan}
+\input{chapters/validity_discussion_revision_v2_2026_10_17}
+\input{chapters/conclusion_revision_v2_2026_10_17}
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Tài liệu tham khảo}
+\bibliographystyle{plain}
+\bibliography{references_verified,references_dataset_checked,references_revision_2026_10_17}
+\end{document}

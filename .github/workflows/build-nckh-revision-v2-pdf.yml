@@ -1,0 +1,120 @@
+name: Build NCKH report revision V2
+
+on:
+  push:
+    branches:
+      - codex/revision-v2-2026-10-17
+    paths:
+      - "report/main_revision_v2_2026_10_17.tex"
+      - "report/chapters/*v2_2026_10_17.tex"
+      - ".github/workflows/build-nckh-revision-v2-pdf.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nckh-revision-v2-pdf
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install XeLaTeX and PDF inspection tools
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
+            texlive-xetex texlive-latex-extra texlive-fonts-recommended \
+            texlive-lang-other texlive-science latexmk poppler-utils
+      - name: Build V2 with XeLaTeX and BibTeX
+        working-directory: report
+        run: |
+          mkdir -p ../exports/report_revision_v2_2026_10_17
+          latexmk -xelatex -bibtex -interaction=nonstopmode -halt-on-error \
+            -file-line-error -outdir=../exports/report_revision_v2_2026_10_17 \
+            main_revision_v2_2026_10_17.tex
+          cp ../exports/report_revision_v2_2026_10_17/main_revision_v2_2026_10_17.pdf \
+            ../exports/report_revision_v2_2026_10_17/Bao_cao_NCKH_EnsembleLearning_REVISION_V2.pdf
+      - name: Validate content, references, layout warnings, and PDF
+        shell: bash
+        run: |
+          set -euo pipefail
+          PDF="exports/report_revision_v2_2026_10_17/Bao_cao_NCKH_EnsembleLearning_REVISION_V2.pdf"
+          LOG="exports/report_revision_v2_2026_10_17/main_revision_v2_2026_10_17.log"
+          TEXT="exports/report_revision_v2_2026_10_17/pdf_extracted.txt"
+          INFO="exports/report_revision_v2_2026_10_17/pdfinfo.txt"
+          QA="docs/research/REPORT_REVISION_V2_QA_2026-10-17.md"
+          test -s "$PDF"
+          pdfinfo "$PDF" | tee "$INFO"
+          pdftotext -layout "$PDF" "$TEXT"
+          pages=$(awk '/^Pages:/ {print $2}' "$INFO")
+          if [ "$pages" -lt 35 ] || [ "$pages" -gt 80 ]; then
+            echo "Unexpected V2 page count: $pages"
+            exit 1
+          fi
+          for required in "RQ1" "RQ2" "RQ3" "RQ4" "RQ5" "0.950387" "0.947325" \
+            "0.946758" "0.951484" "0.863840" "0.858125" "0.857473" \
+            "scikit-learn 1.9.0" "Fuzzers" "Worms"; do
+            grep -F -q "$required" "$TEXT" || {
+              echo "Required manuscript content missing from PDF: $required"
+              exit 1
+            }
+          done
+          if grep -F -q "??" "$TEXT"; then
+            echo "Unresolved reference marker found in extracted PDF text"
+            exit 1
+          fi
+          if grep -E -q "Citation .*undefined|Reference .*undefined|There were undefined references|Missing character:" "$LOG"; then
+            echo "Unresolved citation/reference or missing glyph warning in LaTeX log"
+            exit 1
+          fi
+          if grep -F -q -e "Overfull \hbox" -e "Overfull \vbox" "$LOG"; then
+            echo "Overfull box warning in LaTeX log; inspect and repair the layout"
+            exit 1
+          fi
+          sha=$(sha256sum "$PDF" | awk '{print $1}')
+          source_commit=$(git rev-parse HEAD)
+          mkdir -p docs/research
+          cat > "$QA" <<EOF
+          # V2 manuscript build and QA — 2026-10-17
+
+          - Source commit used for build: $source_commit
+          - Build: XeLaTeX and BibTeX via latexmk
+          - PDF: $PDF
+          - Pages: $pages
+          - SHA-256: $sha
+          - Automated checks: required RQ/result text present; unresolved citation/reference markers absent; missing glyph and overfull box warnings absent; PDF parsed by pdfinfo and pdftotext.
+          - Visual page review: pending author-host render and inspection recorded with the build artifact.
+          - Scope: no model fitting, feature selection, bootstrap, or official TEST access was performed for this manuscript build.
+          EOF
+      - name: Commit the V2 PDF and QA record
+        if: success() && github.event_name == 'push'
+        shell: bash
+        run: |
+          set -euo pipefail
+          PDF="exports/report_revision_v2_2026_10_17/Bao_cao_NCKH_EnsembleLearning_REVISION_V2.pdf"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$PDF" docs/research/REPORT_REVISION_V2_QA_2026-10-17.md
+          if git diff --cached --quiet; then
+            echo "V2 PDF and QA record already match this build."
+          else
+            git commit -m "Build and QA NCKH manuscript revision V2"
+            BRANCH=$(git symbolic-ref --short HEAD)
+            git push origin "HEAD:$BRANCH"
+          fi
+      - name: Upload PDF and build evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: NCKH_EnsembleLearning_REVISION_V2_2026-10-17
+          path: |
+            exports/report_revision_v2_2026_10_17/Bao_cao_NCKH_EnsembleLearning_REVISION_V2.pdf
+            exports/report_revision_v2_2026_10_17/main_revision_v2_2026_10_17.log
+            exports/report_revision_v2_2026_10_17/pdfinfo.txt
+            exports/report_revision_v2_2026_10_17/pdf_extracted.txt
+            docs/research/REPORT_REVISION_V2_QA_2026-10-17.md
+          if-no-files-found: warn

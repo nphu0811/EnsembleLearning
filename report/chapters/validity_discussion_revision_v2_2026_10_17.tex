@@ -1,0 +1,80 @@
+\section{Diễn giải đánh đổi giữa các loại lỗi}
+\label{sec:discussion-error-tradeoff}
+
+Trên cùng official TEST, Stacking-42 giảm 142 cảnh báo giả so với RF-42 nhưng bỏ sót thêm 118 mẫu Attack. Giá trị thực tế của thay đổi này phụ thuộc vào chi phí tương đối của cảnh báo giả và bỏ sót trong môi trường vận hành; nghiên cứu không có dữ liệu về chi phí đó nên không xếp một cấu hình là tối ưu cho mọi NIDS. Macro-F1 gần như không đổi và MCC giảm nhẹ ở Stacking, trong khi FPR và FNR dịch chuyển theo hai hướng khác nhau. Việc đọc đồng thời các chỉ số này cho thấy lý do một điểm tổng hợp duy nhất chưa đủ để quyết định triển khai.
+
+Ma trận tính đúng/sai theo cặp dưới đây cho thấy số dự đoán bất đồng giữa hai pipeline gần cân bằng. Điều này phù hợp với McNemar không phát hiện khác biệt rõ về tính đúng tổng thể, nhưng không thay thế các chỉ số tách theo lớp hay thiết lập tương đương thống kê.
+
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{14pt}
+\caption{Tính đúng/sai theo cặp dự đoán của RF-42 và Stacking-42 trên official TEST.}
+\label{tab:paired-correctness}
+\begin{tabular}{l S[table-format=5.0] S[table-format=5.0]}
+\toprule
+ & {Stacking đúng} & {Stacking sai}\\
+\midrule
+RF đúng & 71104 & 491\\
+RF sai & 515 & 10222\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Diversity và sai số theo nhóm}
+\label{sec:discussion-diversity-families}
+
+Các learner cơ sở mắc lỗi không hoàn toàn trùng nhau trong development, nhưng kết quả Hard/Soft Voting thấp hơn RF và lợi thế nhỏ của Stacking không rõ trên official TEST. Như vậy, diversity là một thuộc tính quan sát được của các dự đoán, còn lợi ích của ensemble phải được xác lập trực tiếp bằng hiệu năng và loại lỗi của bộ kết hợp. Paired correctness của hai pipeline cuối cũng chỉ mô tả bất đồng; nó không cho biết một base learner cụ thể đã gây ra hay sửa một lỗi nào.
+
+Phân tích theo họ Attack cho thấy mức lỗi không đồng đều: chênh lệch giữa Stacking và RF-42 lớn hơn ở Fuzzers nhưng đi theo hướng ngược lại ở Generic (Bảng~\ref{tab:attack-family}). Vì các mô hình được huấn luyện cho Normal/Attack, đây là phân nhóm hậu nghiệm theo nhãn thật, không phải phép đánh giá đa lớp. Các biến như \texttt{sttl}, \texttt{proto} hay \texttt{state} có thể liên hệ với những dự đoán khác nhau, song dữ liệu mô tả không xác định được cơ chế nhân quả.
+
+\section{Ý nghĩa và giới hạn của Feature Selection}
+\label{sec:discussion-feature-selection}
+
+RF-17 có thời gian huấn luyện và kích thước ước lượng thấp hơn RF-42, đi kèm Macro-F1 thấp hơn, ít FN hơn nhưng nhiều FP hơn. Đây là một đánh đổi có thể quan sát giữa hai pipeline. Vì số cây và kích thước lá cũng khác, chưa thể quy chênh lệch cho riêng việc giảm 25 biến. Bên cạnh đó, stable17 được chọn từ toàn bộ TRAIN trước development CV; điểm OOF do đó có thể lạc quan hơn đánh giá nested, dù official TEST không được dùng để tạo danh sách đặc trưng.
+
+Một phân tích nhân quả riêng cho Feature Selection cần giữ cố định thuật toán và siêu tham số còn lại, lặp lại chọn biến bên trong các training fold, rồi so sánh theo cùng split và ngân sách tính toán. Kết quả hiện có không thực hiện phép đối chứng matched này và không được diễn giải như một ablation thuần túy.
+
+\section{Độ bất định và phạm vi suy luận}
+\label{sec:discussion-uncertainty}
+
+CI paired bootstrap 95\% của hiệu số Macro-F1 và MCC chứa 0, trong khi CI của FPR và FNR nằm ở hai phía đối nghịch. Cùng với McNemar trên tính đúng tổng thể, các kết quả ủng hộ cách diễn giải rằng Stacking làm thay đổi cơ cấu lỗi trên benchmark nhưng chưa thể hiện ưu thế tổng thể rõ. Không bác bỏ khác biệt không đồng nghĩa với chứng minh tương đương. Bootstrap lấy mẫu lại các dòng dự đoán đã ghép cặp và giữ tỷ lệ lớp; nó không tái tạo biến thiên từ quá trình huấn luyện, phụ thuộc giữa các flow, hay thay đổi giữa các mạng.
+
+Official TEST và novel-vector subset đều thuộc UNSW-NB15. Việc Macro-F1 giảm trên subset sau khi bỏ các vector trùng là bằng chứng về độ nhạy với định nghĩa view này; nó không đại diện temporal, host/session-separated hay external validation. Các khoảng Wilson trong bảng attack-family là ước lượng biên theo từng nhóm/pipeline, không phải kiểm định cặp; với các nhóm hiếm, khoảng rộng nhắc rằng tỷ lệ quan sát được còn kém chính xác.
+
+\section{Tái lập, tái huấn luyện và triển khai}
+\label{sec:discussion-reproducibility}
+
+P15 đã tái dựng riêng RF-17, RF-42 và Stacking-42 trên toàn bộ 175\,341 dòng TRAIN trong môi trường Python 3.11.9 và scikit-learn 1.9.0. Việc kiểm tra hash, schema, khả năng nạp lại và tạo xác suất trên dòng TRAIN-derived hỗ trợ khả năng tái lập cấu hình trong môi trường phần mềm được xác định. Tuy vậy, do thiếu môi trường thư viện và đối tượng mô hình lịch sử, các artifact mới không được xem là đồng nhất với mô hình từng tạo ra điểm TEST.
+
+Tái dựng trên TRAIN khác với xác minh lại kết quả TEST lịch sử; cả hai đều khác với đánh giá triển khai. Các metric và chi phí trong báo cáo vẫn là số liệu lịch sử đã khóa. Việc mô hình có thể được fit, nạp và gọi dự đoán trong môi trường ghi nhận không cung cấp bằng chứng về độ trễ yêu cầu, tải xử lý, khả năng thích nghi với drift hay tính sẵn sàng vận hành của một NIDS.
+
+\section{Tổng hợp câu trả lời nghiên cứu}
+\label{sec:revision-rq-map}
+
+Bảng~\ref{tab:rq-evidence} tóm tắt kết quả thực nghiệm có thể bảo vệ cùng phần còn chưa được xác định. Các khoảng trống được nêu trong mối liên hệ với kết quả, thay vì thay thế câu trả lời bằng danh sách giới hạn.
+
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+\caption{Kết luận thực nghiệm cho RQ1--RQ5 và phạm vi chưa được kiểm chứng.}
+\label{tab:rq-evidence}
+\begin{tabularx}{\linewidth}{p{0.9cm} X X}
+\toprule
+RQ & Kết luận trong phạm vi dữ liệu & Bằng chứng còn cần thiết\\
+\midrule
+RQ1 & Stacking chưa cho thấy ưu thế tổng thể rõ so với RF-42; đổi ít FP lấy nhiều FN hơn. & Biến thiên hiệu năng qua các lần huấn luyện độc lập.\\
+RQ2 & RF-17 giảm chi phí quan sát nhưng thay đổi Macro-F1 và cơ cấu lỗi so với RF-42. & Đối chứng matched để tách riêng ảnh hưởng của số đặc trưng.\\
+RQ3 & Diversity lỗi xuất hiện ở learner cơ sở nhưng không bảo đảm Voting/Stacking có lợi. & Thiết kế kiểm tra cơ chế bổ sung lỗi thay vì tương quan mô tả.\\
+RQ4 & Macro-F1 giảm trong novel-vector view; thứ hạng theo Macro-F1 được giữ. & Đánh giá theo thời gian/host/session hoặc benchmark ngoài.\\
+RQ5 & Các pipeline có FPR/FNR khác nhau; tác động riêng của xử lý mất cân bằng chưa xác định. & So sánh matched weighting/resampling bên trong training folds.\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Hướng nghiên cứu tiếp theo}
+
+Các bước tiếp theo có thể được thiết kế như những thí nghiệm riêng, mỗi thí nghiệm khóa trước câu hỏi và đơn vị suy luận. Đánh giá stability cần nhiều lần huấn luyện độc lập; đánh giá Feature Selection cần đặt toàn bộ quá trình chọn biến bên trong fold và giữ cấu hình còn lại tương đương; kiểm tra tác động class weighting/resampling cần đối chứng matched trên training folds. Đối với khả năng khái quát, cần dữ liệu có thông tin thời gian, host hoặc session, hoặc một benchmark ngoài với quyền sử dụng phù hợp. Những thiết kế này sẽ bổ sung bằng chứng cho các câu hỏi còn mở mà không thay đổi kết quả holdout hiện tại.
