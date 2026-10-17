@@ -1,0 +1,12 @@
+{
+  "files": 871,
+  "forbidden_tracked_paths": [
+    "results/reproducibility/r04_ml_smoke_repaired/smoke_models/random_forest_17_SMOKE_ONLY.joblib",
+    "results/reproducibility/r04_ml_smoke_repaired/smoke_models/random_forest_42_SMOKE_ONLY.joblib",
+    "results/reproducibility/r04_ml_smoke_repaired/smoke_models/stacking_42_SMOKE_ONLY.joblib"
+  ],
+  "passed": false,
+  "scope": "TRACKED_REVIEW_SNAPSHOT; excludes mutable research memory; no archive, license grant, or secret-content audit",
+  "code_license_files": [],
+  "source_head": "6c87074a99c83d7ce3ddcd21bf623cbacb317b71"
+}

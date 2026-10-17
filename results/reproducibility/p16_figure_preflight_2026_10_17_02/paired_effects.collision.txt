@@ -1,0 +1,10 @@
+Nature Figure Rendered Collision Audit
+pdf: C:\Users\admin\Documents\ChatGPT\NCKH\results\figures\p16_paired_effects_2026_10_16\paired_effects.pdf
+pages: 1
+visible text boxes: 14
+stroke paths: 24
+
+
+summary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays
+verdict: PASS
+note: contained overlays can be intentional; WARN findings need final-size visual review

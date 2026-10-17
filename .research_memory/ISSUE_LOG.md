@@ -41,3 +41,13 @@ Use: ID | Severity | Issue | Evidence | Attempts | Resolution | Status.
 ## r05 execution issues
 
 Proposal revision first RQ parser included header; assertion stopped before output; anchored RQ1–5 repaired. Citation validator initial33/34 failed qualifier/convention parsing; exact documented placeholders and Proposed model qualifier handled, repaired34/34; initial JSON preserved. Capacity command used unsupported ConvertTo-Json -Property once; corrected PSCustomObject command produced real snapshot. No research results modified; no smoke rerun.
+
+
+## 17/10/2026 QA findings and repairs
+
+Entry stale manifest267/285,known author-deletedhistoricalZIP281/282reconciled in RESUME_AUDIT. First figurepreflight childcp1252vsparentUTF8causeddecode/NoneTypeerror;explicitchild-Xutf8fixedtoolboundary. Figuregeneration01KeyErrorattack_catrootcausedactualEDAfieldattack_category;attempt02completedbuttwoCIfooterlabels overlapped0.59pt;attempt03bottommarginrepairpassed6/6collision. Allattemptsretained. HistoricalsixcollisionFAILremainandareseparatefromfinalnewbundle. Printfont/118dpiheatmapandpre-P15page33provenanceopen;noapprovedPDFedit.
+
+
+## P19 inventory finding, current 17/10/2026
+
+The tracked review snapshot flags three historical SMOKE_ONLY.joblib files under results/reproducibility/r04_ml_smoke_repaired/smoke_models/. All three were tracked in initial commit c4ed771. No new model binary is staged; no files were loaded or removed. Inventory passed=false and code license is absent. Keep this release blocker; it is separate from accepted local P15 full-TRAIN reconstructions. Do not treat the final new-file staging check as a passing whole-repository release inventory. See release/review_inventory_2026_10_17_01/validation.json and the final review inventory snapshot.

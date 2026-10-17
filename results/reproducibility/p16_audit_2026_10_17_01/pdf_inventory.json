@@ -1,0 +1,151 @@
+[
+  {
+    "path": "results/eda/unsw_nb15/figures/fig01_binary_class_distribution.pdf",
+    "pages": 1,
+    "width_mm": 140.1488205803765,
+    "height_mm": 94.49327401055228,
+    "min_text_pt": 7.0,
+    "text_spans": 17,
+    "outside_text": [],
+    "raster_images": [],
+    "warning_under_8pt": true
+  },
+  {
+    "path": "results/eda/unsw_nb15/figures/fig02_attack_category_distribution.pdf",
+    "pages": 1,
+    "width_mm": 206.03854336208767,
+    "height_mm": 119.30663884480795,
+    "min_text_pt": 6.300000190734863,
+    "text_spans": 20,
+    "outside_text": [],
+    "raster_images": [],
+    "warning_under_8pt": true
+  },
+  {
+    "path": "results/eda/unsw_nb15/figures/fig03_numeric_class_separation.pdf",
+    "pages": 1,
+    "width_mm": 161.86822052001952,
+    "height_mm": 129.8045445760091,
+    "min_text_pt": 9.0,
+    "text_spans": 28,
+    "outside_text": [],
+    "raster_images": [],
+    "warning_under_8pt": false
+  },
+  {
+    "path": "results/eda/unsw_nb15/figures/fig04_numeric_correlation_heatmap.pdf",
+    "pages": 1,
+    "width_mm": 177.91131964789494,
+    "height_mm": 157.02328584459093,
+    "min_text_pt": 9.0,
+    "text_spans": 42,
+    "outside_text": [],
+    "raster_images": [
+      {
+        "pixel_width": 468,
+        "pixel_height": 459,
+        "effective_dpi": [
+          100.00000706425469,
+          99.99999667564519
+        ]
+      },
+      {
+        "pixel_width": 23,
+        "pixel_height": 459,
+        "effective_dpi": [
+          100.00001474279354,
+          99.99999667564519
+        ]
+      }
+    ],
+    "warning_under_8pt": false
+  },
+  {
+    "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.pdf",
+    "pages": 1,
+    "width_mm": 183.00000559488933,
+    "height_mm": 100.00000076293945,
+    "min_text_pt": 8.0,
+    "text_spans": 14,
+    "outside_text": [],
+    "raster_images": [],
+    "warning_under_8pt": false
+  },
+  {
+    "path": "results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf",
+    "pages": 1,
+    "width_mm": 119.99999660915799,
+    "height_mm": 64.99999995761448,
+    "min_text_pt": 9.0,
+    "text_spans": 11,
+    "outside_text": [],
+    "raster_images": [],
+    "warning_under_8pt": false
+  },
+  {
+    "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig01_official_macro_f1_ci.pdf",
+    "pages": 1,
+    "width_mm": 160.37608506944446,
+    "height_mm": 111.3186789618598,
+    "min_text_pt": 9.0,
+    "text_spans": 18,
+    "outside_text": [],
+    "raster_images": [],
+    "warning_under_8pt": false
+  },
+  {
+    "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig02_official_mcc_ci.pdf",
+    "pages": 1,
+    "width_mm": 170.89493052164713,
+    "height_mm": 111.3186789618598,
+    "min_text_pt": 9.0,
+    "text_spans": 15,
+    "outside_text": [],
+    "raster_images": [],
+    "warning_under_8pt": false
+  },
+  {
+    "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig03_fpr_fnr_tradeoff.pdf",
+    "pages": 1,
+    "width_mm": 163.19670316908093,
+    "height_mm": 119.14187715318468,
+    "min_text_pt": 9.0,
+    "text_spans": 18,
+    "outside_text": [],
+    "raster_images": [],
+    "warning_under_8pt": false
+  },
+  {
+    "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig04_macro_f1_vs_training_cost.pdf",
+    "pages": 1,
+    "width_mm": 162.61953125,
+    "height_mm": 119.98937064276801,
+    "min_text_pt": 7.0,
+    "text_spans": 18,
+    "outside_text": [],
+    "raster_images": [],
+    "warning_under_8pt": true
+  },
+  {
+    "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig05_official_vs_novel_macro_f1.pdf",
+    "pages": 1,
+    "width_mm": 169.26833945380315,
+    "height_mm": 114.20298826429578,
+    "min_text_pt": 10.0,
+    "text_spans": 16,
+    "outside_text": [],
+    "raster_images": [],
+    "warning_under_8pt": false
+  },
+  {
+    "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig06_attack_family_miss_rate_ci.pdf",
+    "pages": 1,
+    "width_mm": 233.5102300008138,
+    "height_mm": 148.59952138264973,
+    "min_text_pt": 10.0,
+    "text_spans": 29,
+    "outside_text": [],
+    "raster_images": [],
+    "warning_under_8pt": false
+  }
+]

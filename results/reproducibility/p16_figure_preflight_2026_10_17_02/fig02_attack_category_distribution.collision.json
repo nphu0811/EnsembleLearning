@@ -1,0 +1,46 @@
+{
+  "pdf": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\results\\eda\\unsw_nb15\\figures\\fig02_attack_category_distribution.pdf",
+  "auditable": true,
+  "verdict": "FIX BEFORE DELIVERY",
+  "page_count": 1,
+  "visible_text_box_count": 17,
+  "text_trace_count": 20,
+  "stroke_path_count": 44,
+  "filled_region_count": 66,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 1,
+    "warn": 0,
+    "contained_fill_overlays": 0,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [
+    {
+      "severity": "FAIL",
+      "kind": "text-text",
+      "page": 1,
+      "message": "Text boxes overlap by 17.3% of the smaller box",
+      "text": "DoS",
+      "text_bbox": [
+        264.80059814453125,
+        277.472900390625,
+        283.5389709472656,
+        296.2113037109375
+      ],
+      "other_text": "Reconnaissance",
+      "other_bbox": [
+        280.3020324707031,
+        277.47808837890625,
+        333.6834411621094,
+        330.8595275878906
+      ],
+      "object_count": 1,
+      "object_indexes": []
+    }
+  ]
+}

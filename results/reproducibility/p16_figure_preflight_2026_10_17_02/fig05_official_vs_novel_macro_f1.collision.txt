@@ -1,0 +1,10 @@
+Nature Figure Rendered Collision Audit
+pdf: C:\Users\admin\Documents\ChatGPT\NCKH\results\final_reporting\unsw_nb15\phase11_results_figures\figures\fig05_official_vs_novel_macro_f1.pdf
+pages: 1
+visible text boxes: 16
+stroke paths: 40
+
+
+summary: 0 fail, 0 warn, 3 contained fill overlays, 0 contained image overlays
+verdict: PASS
+note: contained overlays can be intentional; WARN findings need final-size visual review

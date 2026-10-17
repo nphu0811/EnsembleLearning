@@ -1,3 +1,13 @@
+# Current roadmap checkpoint 17/10/2026 — P16/P18/P19
+
+P15 remains DONE_SCOPED_RECONSTRUCTION;no additionalTRAINfitting. P16 savedsummary2132checks and actualauthorPDF178checksPASS;all37pages rendered/contact-reviewed;17displaymap saved. Six independent183mmPDF/SVG/600dpiPNG alternatives passedtext6/6andcollision6/6. P16 overall IN_PROGRESS because unchangedapprovedPDF hasfont/118dpiheatmap/snapshot-agefindings, and historical6/12collisionflags remain. See docs/research/P16_COMPREHENSIVE_QA_2026-10-17.md.
+
+P18 offline currentreportmetadata/claim-context/readingledger119/119PASS,12refs/24instances;no newfulltextreads ornetworkqueries. U01/U03existingfollowup takesprecedence over stale memory. L03publisherpagination andclosest-methodreading/noveltyworkremain. P19README,QArequirements,availabilityreviewandreviewinventoryadvancewithinPARTIAL;noFINarchive. P20finalpaneldeferredinputgates. AllG0-G6remainseparatelygoverned;NOT_READY_FOR_SUBMISSION.
+
+Next safe work: exactsourceTRAIN-only highresolutionheatmapplan orP18source-groundedreading;complete proposalform/defenseandrightsindependently. Do not modifyapprovedreport orreruncompletedP15. Currenthandoff is authoritative.
+
+---
+
 # Roadmap hiện hành sau resume ngày 16/10/2026
 
 ## Cập nhật P15 ngày 17/10/2026 — trạng thái ưu tiên hiện hành
@@ -60,3 +70,8 @@ P01/P18: có `literature/literature_matrix.csv`12 records, `literature/gap_matri
 ## 2026-10-16 — P17 five-chapter layout takes precedence
 
 User-requested structure follows five top-level chapters of uploaded PTIT NetFlow reference. The previous eight-chapter 40-page PDF status is preserved in historical QA documents only; **current PDF has five chapters and 37 A4 pages** after removing the abstract and moving the substantive acronym glossary immediately after TOC. Actual compile/run: https://github.com/nphu0811/EnsembleLearning/actions/runs/38916942038 ; QA file `docs/research/P17_FIVE_CHAPTER_RESTRUCTURE_QA_2026-10-16.md`. All frozen experimental results remain unchanged. Nature Skills were not directly available in this ChatGPT runtime, and no Nature skill execution is claimed.
+
+
+## P19 inventory finding, current 17/10/2026
+
+The tracked review snapshot flags three historical SMOKE_ONLY.joblib files under results/reproducibility/r04_ml_smoke_repaired/smoke_models/. All three were tracked in initial commit c4ed771. No new model binary is staged; no files were loaded or removed. Inventory passed=false and code license is absent. Keep this release blocker; it is separate from accepted local P15 full-TRAIN reconstructions. Do not treat the final new-file staging check as a passing whole-repository release inventory. See release/review_inventory_2026_10_17_01/validation.json and the final review inventory snapshot.

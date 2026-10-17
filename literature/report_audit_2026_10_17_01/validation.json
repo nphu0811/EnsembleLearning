@@ -1,0 +1,487 @@
+{
+  "scope": "OFFLINE_SAVED_METADATA_AND_READING_BOUNDARY_AUDIT",
+  "checks": [
+    {
+      "check": "no cross-file duplicate keys",
+      "passed": true
+    },
+    {
+      "check": "no cross-file duplicate keys",
+      "passed": true
+    },
+    {
+      "check": "all 12 bibliography keys cited",
+      "passed": true
+    },
+    {
+      "check": "all DOIs distinct",
+      "passed": true
+    },
+    {
+      "check": "L03 excluded from report",
+      "passed": true
+    },
+    {
+      "check": "legacyL01/author matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL01/title matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL01/doi matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL01/year matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL01/volume matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL01/number matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL01/pages matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL01/venue matches ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL01/verified metadata inherited",
+      "passed": true
+    },
+    {
+      "check": "legacyL02/author matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL02/title matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL02/doi matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL02/year matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL02/volume matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL02/number matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL02/pages matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL02/venue matches ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL02/verified metadata inherited",
+      "passed": true
+    },
+    {
+      "check": "legacyL04/author matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL04/title matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL04/doi matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL04/year matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL04/volume matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL04/number matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL04/pages matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL04/venue matches ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL04/verified metadata inherited",
+      "passed": true
+    },
+    {
+      "check": "legacyL05/author matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL05/title matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL05/doi matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL05/year matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL05/volume matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL05/number matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL05/pages matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL05/venue matches ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL05/verified metadata inherited",
+      "passed": true
+    },
+    {
+      "check": "legacyL06/author matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL06/title matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL06/doi matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL06/year matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL06/volume matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL06/number matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL06/pages matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL06/venue matches ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL06/verified metadata inherited",
+      "passed": true
+    },
+    {
+      "check": "legacyL07/author matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL07/title matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL07/doi matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL07/year matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL07/volume matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL07/number matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL07/pages matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL07/venue matches ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL07/verified metadata inherited",
+      "passed": true
+    },
+    {
+      "check": "legacyL08/author matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL08/title matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL08/doi matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL08/year matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL08/volume matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL08/number matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL08/pages matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL08/venue matches ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL08/verified metadata inherited",
+      "passed": true
+    },
+    {
+      "check": "legacyL09/author matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL09/title matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL09/doi matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL09/year matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL09/volume matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL09/number matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL09/pages matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL09/venue matches ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL09/verified metadata inherited",
+      "passed": true
+    },
+    {
+      "check": "legacyL10/author matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL10/title matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL10/doi matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL10/year matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL10/volume matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL10/number matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL10/pages matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL10/venue matches ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL10/verified metadata inherited",
+      "passed": true
+    },
+    {
+      "check": "legacyL11/author matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL11/title matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL11/doi matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL11/year matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL11/volume matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL11/number matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL11/pages matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL11/venue matches ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL11/verified metadata inherited",
+      "passed": true
+    },
+    {
+      "check": "legacyL12/author matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL12/title matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL12/doi matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL12/year matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL12/volume matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL12/number matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL12/pages matches saved ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL12/venue matches ledger",
+      "passed": true
+    },
+    {
+      "check": "legacyL12/verified metadata inherited",
+      "passed": true
+    },
+    {
+      "check": "U01 exact dataset record",
+      "passed": true
+    },
+    {
+      "check": "unchanged report/references_verified.bib",
+      "passed": true
+    },
+    {
+      "check": "unchanged report/references_dataset_checked.bib",
+      "passed": true
+    },
+    {
+      "check": "unchanged literature/resume_r04_2026_10_16/legacy_verification_ledger.csv",
+      "passed": true
+    },
+    {
+      "check": "unchanged literature/UNSW_U01_U03_METADATA_FOLLOWUP_2026-10-16.md",
+      "passed": true
+    },
+    {
+      "check": "unchanged literature/verification_2026_10_16/dataset_references.bib",
+      "passed": true
+    },
+    {
+      "check": "unchanged report/main.tex",
+      "passed": true
+    },
+    {
+      "check": "unchanged report/chapters/introduction.tex",
+      "passed": true
+    },
+    {
+      "check": "unchanged report/chapters/theoretical_foundations.tex",
+      "passed": true
+    },
+    {
+      "check": "unchanged report/chapters/related_work.tex",
+      "passed": true
+    },
+    {
+      "check": "unchanged report/chapters/dataset_eda.tex",
+      "passed": true
+    },
+    {
+      "check": "unchanged report/chapters/methodology.tex",
+      "passed": true
+    },
+    {
+      "check": "unchanged report/chapters/results_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "unchanged report/chapters/validity_discussion.tex",
+      "passed": true
+    },
+    {
+      "check": "unchanged report/chapters/conclusion.tex",
+      "passed": true
+    }
+  ],
+  "pass_count": 119,
+  "fail_count": 0,
+  "records": 12,
+  "citation_instances": 24,
+  "new_full_text_reads": 0,
+  "new_network_queries": 0
+}

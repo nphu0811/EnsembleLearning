@@ -1,0 +1,6 @@
+{
+  "p16_figure_preflight_01": "Windows subprocess emitted cp1252 (byte 0x97); parent UTF-8 decode failed, then None+str TypeError. New attempt02 uses child -X utf8. Existing logs retained.",
+  "p16_standalone_01": "KeyError attack_cat in EDA saved table whose actual field is attack_category; five partial plots produced; not accepted.",
+  "p16_standalone_02": "Six exports completed, but two CI PDFs fail text-text collision by 0.59pt label/footer overlap; preserve failed reports.",
+  "p16_standalone_03": "Bottom margin increased .23 to .30. Six final PDFs pass text/collision audits. No data/source changes."
+}

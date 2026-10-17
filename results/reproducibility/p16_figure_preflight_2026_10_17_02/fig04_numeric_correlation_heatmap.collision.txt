@@ -1,0 +1,10 @@
+Nature Figure Rendered Collision Audit
+pdf: C:\Users\admin\Documents\ChatGPT\NCKH\results\eda\unsw_nb15\figures\fig04_numeric_correlation_heatmap.pdf
+pages: 1
+visible text boxes: 42
+stroke paths: 42
+
+
+summary: 0 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays
+verdict: PASS
+note: contained overlays can be intentional; WARN findings need final-size visual review

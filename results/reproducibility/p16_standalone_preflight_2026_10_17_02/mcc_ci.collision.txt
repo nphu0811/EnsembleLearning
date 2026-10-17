@@ -1,0 +1,13 @@
+Nature Figure Rendered Collision Audit
+pdf: C:\Users\admin\Documents\ChatGPT\NCKH\results\figures\p16_standalone_2026_10_17_02\mcc_ci.pdf
+pages: 1
+visible text boxes: 13
+stroke paths: 23
+
+[FAIL] page 1 text-text: Text boxes overlap by 6.6% of the smaller box — 'MCC (absolute scale)'
+  other text: '82,332 benchmark rows; stored paired row bootstrap, 10,000 resamples.'
+  text bbox: (271.54864501953125, 204.19448852539062, 366.50518798828125, 213.19448852539062)
+
+summary: 1 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays
+verdict: FIX BEFORE DELIVERY
+note: contained overlays can be intentional; WARN findings need final-size visual review

@@ -1,0 +1,44 @@
+[
+  {
+    "path": "results/figures/p16_standalone_2026_10_17_02/macro_f1_ci.pdf",
+    "width_mm": 183,
+    "height_mm": 85.0,
+    "panels": 1,
+    "alignment": "NOT_APPLICABLE_SINGLE_PANEL"
+  },
+  {
+    "path": "results/figures/p16_standalone_2026_10_17_02/mcc_ci.pdf",
+    "width_mm": 183,
+    "height_mm": 85.0,
+    "panels": 1,
+    "alignment": "NOT_APPLICABLE_SINGLE_PANEL"
+  },
+  {
+    "path": "results/figures/p16_standalone_2026_10_17_02/fpr_fnr_tradeoff.pdf",
+    "width_mm": 183,
+    "height_mm": 95.0,
+    "panels": 1,
+    "alignment": "NOT_APPLICABLE_SINGLE_PANEL"
+  },
+  {
+    "path": "results/figures/p16_standalone_2026_10_17_02/performance_cost.pdf",
+    "width_mm": 183,
+    "height_mm": 95.0,
+    "panels": 1,
+    "alignment": "NOT_APPLICABLE_SINGLE_PANEL"
+  },
+  {
+    "path": "results/figures/p16_standalone_2026_10_17_02/attack_family_wilson.pdf",
+    "width_mm": 183,
+    "height_mm": 155.0,
+    "panels": 1,
+    "alignment": "NOT_APPLICABLE_SINGLE_PANEL"
+  },
+  {
+    "path": "results/figures/p16_standalone_2026_10_17_02/category_distribution.pdf",
+    "width_mm": 183,
+    "height_mm": 150.0,
+    "panels": 1,
+    "alignment": "NOT_APPLICABLE_SINGLE_PANEL"
+  }
+]

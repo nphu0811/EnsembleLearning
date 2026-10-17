@@ -1,0 +1,1724 @@
+{
+  "pdf_source": "C:\\Users\\admin\\Downloads\\Bao_cao_NCKH_EnsembleLearning_09-SV-2026-CNTT2.pdf",
+  "sha256": "8734ccdd5ef6a3495df55a0196bef2d71ae8d16f893fefd9882559a4c857218b",
+  "pages": 37,
+  "checks": [
+    {
+      "check": "accepted snapshot hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "37 pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 1: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 1: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 1: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 2: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 2: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 2: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 3: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 3: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 3: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 4: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 4: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 4: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 5: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 5: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 5: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 6: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 6: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 6: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 7: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 7: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 7: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 8: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 8: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 8: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 9: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 9: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 9: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 10: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 10: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 10: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 11: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 11: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 11: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 12: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 12: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 12: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 13: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 13: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 13: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 14: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 14: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 14: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 15: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 15: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 15: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 16: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 16: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 16: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 17: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 17: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 17: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 18: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 18: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 18: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 19: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 19: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 19: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 20: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 20: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 20: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 21: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 21: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 21: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 22: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 22: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 22: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 23: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 23: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 23: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 24: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 24: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 24: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 25: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 25: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 25: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 26: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 26: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 26: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 27: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 27: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 27: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 28: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 28: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 28: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 29: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 29: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 29: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 30: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 30: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 30: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 31: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 31: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 31: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 32: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 32: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 32: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 33: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 33: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 33: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 34: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 34: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 34: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 35: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 35: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 35: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 36: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 36: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 36: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 37: A4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 37: no replacement character",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "page 37: no off-page text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 random_forest_42/0.863343",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 random_forest_42/0.750910",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 random_forest_42/27.0351",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 random_forest_42/1.6192",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 random_forest_42/10003",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 random_forest_42/734",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.5 random_forest_42",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 stacking_42/0.863840",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 stacking_42/0.750497",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 stacking_42/26.6514",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 stacking_42/1.8795",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 stacking_42/9861",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 stacking_42/852",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.5 stacking_42",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 random_forest_17/0.860673",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 random_forest_17/0.746881",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 random_forest_17/27.6324",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 random_forest_17/1.5618",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 random_forest_17/10224",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.1 random_forest_17/708",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.5 random_forest_17",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.2 macro_f1/delta_a_minus_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.2 macro_f1/ci_lower",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.2 macro_f1/ci_upper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.2 mcc/delta_a_minus_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.2 mcc/ci_lower",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.2 mcc/ci_upper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.2 false_positive_rate/delta_a_minus_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.2 false_positive_rate/ci_lower",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.2 false_positive_rate/ci_upper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.2 false_negative_rate/delta_a_minus_b",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.2 false_negative_rate/ci_lower",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.2 false_negative_rate/ci_upper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.3 random_forest_42/train_time_seconds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.3 random_forest_42/inference_ms_per_sample",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.3 random_forest_42/serialized_model_size_mb",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.3 stacking_42/train_time_seconds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.3 stacking_42/inference_ms_per_sample",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.3 stacking_42/serialized_model_size_mb",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.3 random_forest_17/train_time_seconds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.3 random_forest_17/inference_ms_per_sample",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.3 random_forest_17/serialized_model_size_mb",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.4 value 6062",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.4 value 621",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.4 value 754",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.4 value +133",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.4 value 18871",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.4 value 57",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.4 value 14",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.4 value -43",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.4 value 20399",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.4 value 56",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.4 value 84",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.4 value +28",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.4 value 45332",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.4 value 734",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.4 value 852",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF table 4.4 value +118",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "PDF Holm p",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "FP delta label",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "FN delta label",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "seven body figure captions",
+      "passed": true,
+      "detail": "['1.1', '2.1', '2.2', '2.3', '2.4', '4.1', '4.2']"
+    },
+    {
+      "check": "ten body table captions",
+      "passed": true,
+      "detail": "['2.1', '2.2', '3.1', '4.1', '4.2', '4.3', '4.4', '4.5', '5.1', '5.2']"
+    },
+    {
+      "check": "Poppler rendered all pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input PDF hash unchanged",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "pass_count": 178,
+  "fail_count": 0,
+  "page_details": [
+    {
+      "physical_page": 1,
+      "min_text_pt": 10.909099578857422,
+      "under_8pt": [],
+      "images": [
+        {
+          "width_px": 1024,
+          "height_px": 1024,
+          "dpi": [
+            1040.3816399220204,
+            1040.3816399220204
+          ]
+        }
+      ],
+      "outside": [],
+      "text": "BỘKHOA HỌC VÀ CÔNG NGHỆ\nHỌC VIỆN CÔNG NGHỆBƯU CHÍNH VIỄN THÔNG\nCƠ SỞTẠI TP. HỒCHÍ MINH\nKhoa/đơn vị: Khoa Công nghệThông tin 2\nĐỀTÀI NGHIÊN CỨU KHOA HỌC SINH VIÊN\nMã sốđềtài: 09-SV-2026-CNTT2\nNGHIÊN CỨU ENSEMBLE LEARNING\nCHO BÀI TOÁN PHÁT HIỆN XÂM NHẬP MẠNG\nThực nghiệm phân loại nhịphân trên UNSW-NB15\nSinh viên\nthực hiện:\nDương Ngọc Phú\nN23DCDK055\nPhạm ThếVỹ\nN23DCCN205\nVũ Văn Kiên\nN23DCDT029\nLê Hoàng Nguyên Quân\nN23DCDT042\nLớp:\nE23CQCE01-N\nGiảng viên\nhướng dẫn:\nLê Ngọc Hiếu\nTP. HồChí Minh – 10/10/2026\n"
+    },
+    {
+      "physical_page": 2,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nLỜI CAM ĐOAN\nNhóm sinh viên thực hiện đềtài gồm Dương Ngọc Phú (N23DCDK055), Phạm ThếVỹ\n(N23DCCN205), Vũ Văn Kiên (N23DCDT029) và Lê Hoàng Nguyên Quân (N23DCDT042),\nthuộc lớp E23CQCE01-N, dưới sựhướng dẫn của giảng viên Lê Ngọc Hiếu.\nChúng em xác nhận rằng các nội dung mô tảquy trình, dữliệu và kết quảthực nghiệm trong\nbáo cáo được trình bày nhất quán với dữliệu, chương trình thực nghiệm và bảng kết quả. Các\ncông trình tham khảo được trích dẫn; các giới hạn vềmẫu, thiết kếkiểm định và khảnăng tái\nlập được công khai đểngười đọc có thểđánh giá phạm vi kết luận.\nNhóm sinh viên chịu trách nhiệm tựkiểm tra tính chính xác và tính nguyên gốc của bản báo\ncáo trước khi nộp theo quy định của Học viện. Việc ký tên xác nhận do chính các thành viên\nthực hiện khi hoàn thiện hồsơ nộp.\nTP. HồChí Minh, ngày 10 tháng 10 năm 2026\nNhóm sinh viên thực hiện\n09-SV-2026-CNTT2\ni\n"
+    },
+    {
+      "physical_page": 3,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nLỜI CẢM ƠN\nNhóm sinh viên trân trọng cảm ơn giảng viên hướng dẫn Lê Ngọc Hiếu đã đồng hành trong\nquá trình thực hiện đềtài nghiên cứu khoa học vềEnsemble Learning cho phát hiện xâm nhập\nmạng.\nChúng em cảm ơn các thầy cô của Khoa Công nghệThông tin 2, Học viện Công nghệ\nBưu chính Viễn thông, vì nền tảng kiến thức và môi trường học thuật hỗtrợquá trình học tập,\nnghiên cứu. Báo cáo được thực hiện dựa trên những dữliệu và nguồn tham khảo có ghi nhận,\nvới mong muốn làm rõ chất lượng thực nghiệm cũng như những hạn chếkhi ứng dụng các mô\nhình học máy cho NIDS.\nNhóm mong nhận được những ý kiến nhận xét và phản biện đểtiếp tục hoàn thiện nghiên\ncứu.\nTP. HồChí Minh, ngày 10 tháng 10 năm 2026\nNhóm sinh viên thực hiện\n09-SV-2026-CNTT2\nii\n"
+    },
+    {
+      "physical_page": 4,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nMỤC LỤC\nLời cam đoan\ni\nLời cảm ơn\nii\nDanh mục từviết tắt\nv\nChương 1\nCƠ SỞLÝ THUYẾT\n1\n1.1\nBối cảnh và mục tiêu nghiên cứu . . . . . . . . . . . . . . . . . . . . . . . .\n1\n1.1.1\nBối cảnh và động cơ\n. . . . . . . . . . . . . . . . . . . . . . . . . .\n1\n1.1.2\nVấn đềnghiên cứu . . . . . . . . . . . . . . . . . . . . . . . . . . .\n1\n1.1.3\nCác vấn đềnghiên cứu . . . . . . . . . . . . . . . . . . . . . . . . .\n1\n1.1.4\nMục tiêu và đóng góp nghiên cứu\n. . . . . . . . . . . . . . . . . . .\n2\n1.1.5\nBốcục báo cáo . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n2\n1.2\nCác thuật toán học máy và phương pháp kết hợp . . . . . . . . . . . . . . . .\n3\n1.2.1\nPhát hiện xâm nhập dựa trên đặc trưng luồng mạng . . . . . . . . . .\n3\n1.2.2\nMô hình Logistic Regression . . . . . . . . . . . . . . . . . . . . . .\n4\n1.2.3\nDecision Tree và Random Forest . . . . . . . . . . . . . . . . . . . .\n4\n1.2.4\nVoting, Stacking và sai sốbổsung . . . . . . . . . . . . . . . . . . .\n5\n1.2.5\nCác chiến lược Feature Selection . . . . . . . . . . . . . . . . . . . .\n6\n1.2.6\nCác chỉsốđánh giá và diễn giải thống kê\n. . . . . . . . . . . . . . .\n7\n1.3\nCác công trình nghiên cứu liên quan . . . . . . . . . . . . . . . . . . . . . .\n7\n1.3.1\nEnsemble Learning trong NIDS . . . . . . . . . . . . . . . . . . . .\n7\n1.3.2\nFeature Selection, chuẩn hóa và mất cân bằng . . . . . . . . . . . . .\n8\n1.3.3\nChất lượng dữliệu và khảnăng khái quát\n. . . . . . . . . . . . . . .\n8\n1.3.4\nKhoảng trống bằng chứng và giới hạn tổng quan\n. . . . . . . . . . .\n8\nChương 2\nDỮLIỆU VÀ QUY TRÌNH TIỀN XỬLÝ\n10\n2.1\nNguồn dữliệu và quy mô bản ghi . . . . . . . . . . . . . . . . . . . . . . . .\n10\n2.2\nCác nhóm tấn công và mức độchênh lệch . . . . . . . . . . . . . . . . . . .\n11\n2.3\nKhảo sát thống kê các đặc trưng\n. . . . . . . . . . . . . . . . . . . . . . . .\n11\n2.4\nTương quan giữa các đặc trưng . . . . . . . . . . . . . . . . . . . . . . . . .\n12\n2.5\nKiểm toán overlap và các view đánh giá . . . . . . . . . . . . . . . . . . . .\n14\n2.6\nKết luận vềđặc trưng của benchmark . . . . . . . . . . . . . . . . . . . . . .\n14\n09-SV-2026-CNTT2\niii\n"
+    },
+    {
+      "physical_page": 5,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\nChương 3\nXÂY DỰNG MÔ HÌNH VÀ THIẾT KẾTHỰC NGHIỆM\n15\n3.1\nThiết kếvà tập dữliệu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n15\n3.2\nFeature selection và preprocessing . . . . . . . . . . . . . . . . . . . . . . .\n15\n3.3\nCác pipeline được khóa trước final evaluation\n. . . . . . . . . . . . . . . . .\n15\n3.4\nCác bước triển khai và huấn luyện\n. . . . . . . . . . . . . . . . . . . . . . .\n16\n3.5\nFinal evaluation, uncertainty và sai số\n. . . . . . . . . . . . . . . . . . . . .\n16\n3.6\nCác giới hạn vềtái lập và tính hợp lệ. . . . . . . . . . . . . . . . . . . . . .\n17\nChương 4\nKẾT QUẢTHỰC NGHIỆM VÀ ĐÁNH GIÁ\n18\n4.1\nPhạm vi đánh giá và cách đọc các chỉsố. . . . . . . . . . . . . . . . . . . .\n18\n4.2\nKết quảtrên oﬀicial holdout\n. . . . . . . . . . . . . . . . . . . . . . . . . .\n18\n4.3\nKhoảng tin cậy và kiểm định cặp . . . . . . . . . . . . . . . . . . . . . . . .\n19\n4.4\nChi phí mô hình và sốđặc trưng\n. . . . . . . . . . . . . . . . . . . . . . . .\n21\n4.5\nPhân tích lỗi theo họtấn công . . . . . . . . . . . . . . . . . . . . . . . . . .\n21\n4.6\nKiểm tra độnhạy trên nhóm vector chưa trùng . . . . . . . . . . . . . . . . .\n21\nChương 5\nTHẢO LUẬN VÀ HƯỚNG PHÁT TRIỂN\n22\n5.1\nTại sao điểm sốtổng thểchưa đủ. . . . . . . . . . . . . . . . . . . . . . . .\n22\n5.2\nSai sốtheo nhóm tấn công\n. . . . . . . . . . . . . . . . . . . . . . . . . . .\n22\n5.3\nVai trò và giới hạn của Feature Selection . . . . . . . . . . . . . . . . . . . .\n23\n5.4\nSựkhác biệt giữa kiểm định, bootstrap và độổn định\n. . . . . . . . . . . . .\n23\n5.5\nGiới hạn tái lập đầy đủ\n. . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n23\n5.6\nTính hợp lệbên ngoài và định hướng nghiên cứu tiếp . . . . . . . . . . . . .\n24\n5.7\nMức độtrảlời các mục tiêu nghiên cứu . . . . . . . . . . . . . . . . . . . . .\n24\n5.8\nKết luận và định hướng phát triển . . . . . . . . . . . . . . . . . . . . . . . .\n25\n5.8.1\nTổng kết kết quả. . . . . . . . . . . . . . . . . . . . . . . . . . . .\n25\n5.8.2\nĐóng góp trong phạm vi đã chứng minh . . . . . . . . . . . . . . . .\n25\n5.8.3\nCông việc còn thiếu và hướng nghiên cứu . . . . . . . . . . . . . . .\n25\n5.8.4\nKết luận cuối . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n26\nTài liệu tham khảo\n27\nMã đềtài: 09-SV-2026-CNTT2\niv\n"
+    },
+    {
+      "physical_page": 6,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nDANH MỤC TỪVIẾT TẮT\nKý hiệu\nThuật ngữđầy đủ\nÝ nghĩa trong nghiên cứu\nIDS\nIntrusion Detection System\nHệthống giám sát và phát hiện hoạt động có\ndấu hiệu xâm nhập.\nNIDS\nNetwork\nIntrusion\nDetection\nSystem\nHệthống IDS phân tích dữliệu lưu lượng\nmạng đểnhận biết hành vi tấn công.\nML\nMachine Learning\nPhương pháp học quy luật từdữliệu nhằm dự\nđoán nhãn của lưu lượng mới.\nRF\nRandom Forest\nBộphân loại kết hợp nhiều cây quyết định để\ndựđoán nhãn hoặc xác suất tấn công.\nLR\nLogistic Regression\nBộphân loại ước lượng xác suất thuộc lớp\nAttack từcác đặc trưng đầu vào.\nDT\nDecision Tree\nMô hình phân loại dựa trên các nhánh điều\nkiện đối với giá trịđặc trưng.\nOOF\nOut-of-Fold\nDựđoán trên phần dữliệu không dùng để\nhuấn luyện mô hình ởlượt chia fold tương ứng.\nCV\nCross-Validation\nPhương pháp chia tập huấn luyện thành nhiều\nphần đểước lượng chất lượng khi phát triển\nmô hình.\nFS\nFeature Selection\nQuá trình chọn tập đặc trưng đầu vào nhằm\ncân bằng thông tin dựđoán và chi phí tính\ntoán.\nEDA\nExploratory Data Analysis\nKhảo sát phân bố, chất lượng dữliệu và quan\nhệgiữa các đặc trưng trước huấn luyện.\nTP\nTrue Positive\nSốmẫu Attack được mô hình dựđoán đúng là\nAttack.\nTN\nTrue Negative\nSốmẫu Normal được mô hình dựđoán đúng\nlà Normal.\nFP\nFalse Positive\nSốmẫu Normal bịnhận nhầm là Attack (cảnh\nbáo giả).\nFN\nFalse Negative\nSốmẫu Attack bịnhận nhầm là Normal (tấn\ncông bịbỏsót).\nFPR\nFalse Positive Rate\nTỷlệNormal bịcảnh báo nhầm, tính bằng\nFP/(FP+TN).\nFNR\nFalse Negative Rate\nTỷlệAttack bịbỏsót, tính bằng FN/(FN+TP).\n09-SV-2026-CNTT2\nv\n"
+    },
+    {
+      "physical_page": 7,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\nKý hiệu\nThuật ngữđầy đủ\nÝ nghĩa trong nghiên cứu\nF1\nF1-score\nTrung bình điều hòa của Precision và Recall;\nphản ánh chất lượng cân bằng giữa hai đại\nlượng.\nMCC\nMatthews\nCorrelation\nCoeﬀicient\nChỉsốtương quan giữa nhãn thật và dựđoán,\nsửdụng đủbốn ô ma trận nhầm lẫn.\nCI\nConfidence Interval\nKhoảng giá trịước lượng thểhiện bất định của\nmột đại lượng thống kê theo quy trình đã chọn.\nAP\nAverage Precision\nChỉsốtóm tắt quan hệPrecision–Recall theo\ncác ngưỡng dựđoán.\nSMD\nStandardized Mean Difference\nMức chênh lệch trung bình giữa hai nhóm,\nquy đổi theo độphân tán của đặc trưng.\nMã đềtài: 09-SV-2026-CNTT2\nvi\n"
+    },
+    {
+      "physical_page": 8,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nDANH SÁCH HÌNH VẼ\nHình 1.1 Sơ đồnguyên lý Stacking/OOF và ranh giới oﬀicial TEST. Hình chỉminh\nhọa giao thức, không chứng minh nested validation đầy đủ. . . . . . . . .\n6\nHình 2.1 Phân bốnhãn Normal/Attack trong oﬀicial TRAIN và TEST, biểu đồphân\nbốlớp từkết quảkhảo sát dữliệu. . . . . . . . . . . . . . . . . . . . . .\n10\nHình 2.2 Sốlượng bản ghi theo attack_cat của hai tập. Trong nghiên cứu hiện tại,\nđây là phân tích nhãn thật chứkhông phải kết quảmột mô hình multiclass.\n11\nHình 2.3 Khảo sát mức tách biệt Normal/Attack ởmột sốfeature sốtrên tập huấn\nluyện. Không dùng biểu đồnày đểsuy ra quan hệnhân quả.\n. . . . . . .\n12\nHình 2.4 Ma trận tương quan các feature sốtrên tập huấn luyện. Mối tương quan\nmạnh không tựchứng minh hai biến là tương đương vềcơ chếhay có thể\nloại bỏkhông làm mất thông tin. . . . . . . . . . . . . . . . . . . . . . .\n13\nHình 4.1 Chênh lệch sốlượng lỗi Stacking-42 trừRF-42 trên cùng oﬀicial TEST:\nFP giảm 142 mẫu và FN tăng 118 mẫu. Sốlượng quan sát trên benchmark\ncốđịnh, không phải sai khác trung bình qua nhiều lần huấn luyện. . . . .\n19\nHình 4.2 Bốn hiệu sốStacking-42 trừRF-42 và CI 95% paired bootstrap đã lưu. Giá\ntrịtrục ngang là hiệu sốnhân 100 (không phải phần trăm thay đổi tương\nđối). CI của Macro-F1 và MCC chứa 0; FPR giảm, FNR tăng. . . . . . .\n20\n09-SV-2026-CNTT2\nvii\n"
+    },
+    {
+      "physical_page": 9,
+      "min_text_pt": 7.970099925994873,
+      "under_8pt": [
+        {
+          "text": "2",
+          "size": 7.970099925994873
+        }
+      ],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nDANH SÁCH BẢNG\nBảng 2.1 Phân bốhai lớp của các tập UNSW-NB15 chính thức. . . . . . . . . . . .\n10\nBảng 2.2 Hai góc nhìn đánh giá cùng thuộc oﬀicial TEST đã lưu. . . . . . . . . . .\n14\nBảng 3.1 Cấu hình pipeline cuối theo frozen manifest.\n. . . . . . . . . . . . . . .\n16\nBảng 4.1 Hiệu năng nhịphân của ba pipeline trên oﬀicial TEST (82 332 mẫu;\nthreshold 0,5). FPR và FNR tính theo phần trăm. . . . . . . . . . . . . .\n18\nBảng 4.2 Chênh lệch Stacking-42 trừRF-42 và CI 95% paired bootstrap đã lưu;\n10 000 lần lấy mẫu bootstrap từcác dòng benchmark. Đơn vịlà độchênh\ntuyệt đối trên thang 0–1. . . . . . . . . . . . . . . . . . . . . . . . . . .\n19\nBảng 4.3 Chi phí được ghi nhận trong lần chạy lịch sử. Kích thước sửdụng đơn vị\nMiB (byte chia 10242), không phải MB thập phân.\n. . . . . . . . . . . .\n20\nBảng 4.4 Sốmẫu Attack thực bịdựđoán là Normal, phân nhóm theo attack_cat;\nđây không phải đánh giá multiclass. . . . . . . . . . . . . . . . . . . . .\n21\nBảng 4.5 Macro-F1 trên oﬀicial TEST và phần novel-vector của cùng oﬀicial TEST.\nNovel-vector không phải bộdữliệu kiểm thửđộc lập. . . . . . . . . . . .\n21\nBảng 5.1 Tính đúng/sai của RF-42 và Stacking-42 theo từng cặp dựđoán, oﬀicial\nTEST. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n22\nBảng 5.2 Đối chiếu mục tiêu nghiên cứu với kết quảthực nghiệm đã thực hiện.\n. .\n24\n09-SV-2026-CNTT2\nviii\n"
+    },
+    {
+      "physical_page": 10,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nChương 1.\nCƠ SỞLÝ THUYẾT\n1.1\nBối cảnh và mục tiêu nghiên cứu\n1.1.1\nBối cảnh và động cơ\nHệthống phát hiện xâm nhập mạng (Network Intrusion Detection System, NIDS) nhằm nhận\ndiện lưu lượng có dấu hiệu tấn công từcác quan sát mạng. Các bộphân loại học máy có thểphát\nhiện những mẫu phức tạp trong dữliệu flow, nhưng điểm sốcao trên một benchmark không tự\nbảo đảm hiệu quảtrong các bối cảnh triển khai khác nhau. Cách tạo và làm sạch dữliệu, lựa\nchọn đặc trưng, chia tập và các loại sai sốcó thểảnh hưởng đáng kểđến diễn giải thí nghiệm.\nEnsemble Learning kết hợp dựđoán từnhiều bộphân loại. Tổng quan hệthống của Tama\nvà Lim nhấn mạnh hai khía cạnh thiết kếlà lựa chọn mô hình thành viên và phương pháp kết\nhợp [9]. Những thành phần như Voting, Stacking hay Feature Selection đã xuất hiện trong công\ntrình liên quan, vì vậy chỉáp dụng chúng không thểtựxem là một thuật toán mới [2, 4, 10, 6].\nGiá trịcủa so sánh cần đến từprotocol có truy vết, thước đo thểhiện đúng loại lỗi, đối chiếu\nchi phí và cách diễn giải độbất định.\n1.1.2\nVấn đềnghiên cứu\nNghiên cứu tập trung vào bài toán nhịphân Normal/Attack của UNSW-NB15. Hai tập TRAIN\nvà TEST chính thức được giữriêng; các mô hình được lựa chọn từquá trình development trên\nTRAIN và đánh giá cuối bằng cấu hình đã khóa. Nghiên cứu không tuyên bốphát triển detector\nđa lớp hoặc kiểm nghiệm trên dữliệu triển khai độc lập.\nMột giảđịnh cần kiểm tra là liệu việc có nhiều base learners khác nhau và sai sốbổsung\ncó thực sựđem lại cải thiện tổng thểso với một mô hình đơn mạnh, hay chỉlàm thay đổi đánh\nđổi giữa báo động giả(FP) và tấn công bỏsót (FN). Ngoài chất lượng dựđoán, nghiên cứu\nquan tâm đến chi phí huấn luyện và suy luận cùng tác động của lựa chọn đặc trưng. Đây là\ncase study có kiểm toán trên một benchmark, không phải chứng minh tính ưu việt chung của\nEnsemble Learning.\n1.1.3\nCác vấn đềnghiên cứu\nĐểđánh giá chất lượng và giới hạn của các mô hình phát hiện xâm nhập, nghiên cứu tập trung\nvào năm vấn đềsau:\nRQ1 — Hiệu quảEnsemble: Liệu ensemble có cải thiện ổn định so với mô hình học máy\n09-SV-2026-CNTT2\n1\n"
+    },
+    {
+      "physical_page": 11,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\nđơn trong một protocol đánh giá tương ứng? Điều kiện ổn định qua nhiều lần huấn luyện\nvẫn chưa được kiểm chứng.\nRQ2 — Đặc trưng và chi phí: Các chiến lược Feature Selection liên quan thếnào đến hiệu\nnăng phát hiện, nhận diện tấn công và chi phí của những pipeline đã nghiên cứu? Phân\ntích cuối chưa tách được tác động riêng của sốfeature.\nRQ3 — Sai sốbổsung: Mức cải thiện quan sát có liên hệthếnào với mẫu sai sốbổsung\ngiữa các base learners? Bằng chứng hiện có chủyếu mang tính mô tả, không thiết lập\nnhân quả.\nRQ4 — Độnhạy protocol: Thứhạng và chất lượng mô hình thay đổi như thếnào khi xem\nxét riêng các mẫu không trùng vector với tập TRAIN?\nRQ5 phụ— Xửlý mất cân bằng: Các phương án xửlý mất cân bằng có liên quan như thế\nnào đến Recall, Macro-F1 và sốlượng tấn công bịbỏsót?\nNăm vấn đềtrên được phân tích bằng giao thức thực nghiệm ởChương 3 và các kết quảở\nChương 4.\n1.1.4\nMục tiêu và đóng góp nghiên cứu\nPhần nghiên cứu đã có bằng chứng gồm: (i) xây dựng và lưu quy trình đánh giá có oﬀicial\nholdout; (ii) đối chiếu Random Forest với Stacking, kèm Diversity/OOF và cảkết quảVoting\nkhông thuận lợi; (iii) phân tích đánh đổi hiệu năng–chi phí của hai track feature; (iv) đánh giá\nMacro-F1, MCC, FPR, FNR và chênh lệch theo cặp; (v) phân tích chi tiết sai sốFP/FN và\nattack-family trong phạm vi nhịphân.\nCác kết quảđó có thểcó giá trịthực nghiệm và phương pháp luận trong phạm vi một case\nstudy; không đủcơ sởđểkhẳng định một thuật toán Ensemble Learning mới, ưu thếtổng thể\ncó ý nghĩa thống kê, hoặc khảnăng khái quát ngoài UNSW-NB15. Phần đối chiếu chi tiết với\nprior work được giới hạn trong những nguồn đã có bằng chứng đọc và kiểm tra metadata; chưa\nphải tổng quan hệthống đầy đủcủa lĩnh vực.\n1.1.5\nBốcục báo cáo\nChương 1 trình bày cơ sởlý thuyết và các hướng nghiên cứu liên quan. Chương 2 giới thiệu dữ\nliệu và quy trình tiền xửlý. Chương 3 mô tảmô hình và cách thực hiện thí nghiệm. Chương 4\nphân tích kết quảhuấn luyện và kiểm thử. Chương 5 thảo luận vềý nghĩa, hạn chếvà hướng\nphát triển của nghiên cứu.\nMã đềtài: 09-SV-2026-CNTT2\n2\n"
+    },
+    {
+      "physical_page": 12,
+      "min_text_pt": 7.970099925994873,
+      "under_8pt": [
+        {
+          "text": "1",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "p",
+          "size": 7.970099925994873
+        }
+      ],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\n1.2\nCác thuật toán học máy và phương pháp kết hợp\n1.2.1\nPhát hiện xâm nhập dựa trên đặc trưng luồng mạng\nHệthống phát hiện xâm nhập mạng (NIDS) phân tích các quan sát vềlưu lượng đểphân biệt\nhoạt động bình thường và hoạt động có dấu hiệu tấn công. Một flow có thểđược mô tảbằng\ngiao thức, trạng thái kết nối, sốgói, lượng byte, thời lượng, thông lượng và các thống kê thời\ngian. Những biến này làm dữliệu có thểbiểu diễn bằng bảng đểáp dụng học máy, nhưng không\nchứa mọi thông tin của payload hoặc ngữcảnh vận hành.\nTrong báo cáo này, đơn vịdựđoán là một dòng dữliệu UNSW-NB15. Mỗi dòng gồm vector\nx = (x1, . . . , xp) và nhãn y ∈{0, 1}, trong đó 0 là Normal và 1 là Attack. Đây chưa phải một\nquyết định theo session hay một xác nhận của chuyên gia vềsựcốthực tế. Biến attack_cat\nđược giữđểphân tích lỗi theo nhãn thật sau kiểm thử, chứkhông phải mục tiêu đã chứng minh\ncủa một bộphân loại đa lớp.\n1.2.1.1\nQuy trình biến đổi và leakage\nDữliệu đầu vào có thểcó biến sốvà biến phân loại, cần xửlý thiếu, mã hóa và chuẩn hóa tương\nứng. Một nguyên tắc phương pháp quan trọng là mọi tham sốhọc được từdữliệu, như thống\nkê chuẩn hóa, danh mục encoding hoặc cấu hình Feature Selection, phải được tính từtập huấn\nluyện được phép dùng trong từng bước validation rồi áp dụng cho tập còn lại. Pipeline hỗ\ntrợquản lý chuỗi thao tác nhưng không thểtựloại trừmọi vấn đềdo quan sát quá giống nhau\ngiữa các fold hoặc do chọn feature trước outer CV.\nĐộc lập ởcấp dòng và độc lập ởcấp phiên là hai giảđịnh khác nhau. Nhiều flow có thể\nchia sẻhost, thời gian, dịch vụhoặc cách tạo lưu lượng. Nếu chỉchia ngẫu nhiên ởcấp dòng,\nđiểm test hoặc validation có thểcao do hai phần chứa những mẫu tương tự. Ngược lại, việc\nphát hiện vector trùng cũng không tựchứng minh hai dòng là cùng một phiên. Do đó nghiên\ncứu kiểm tra overlap theo định nghĩa rõ ràng và giữnguyên giới hạn vềnguồn gốc traﬀic.\n1.2.1.2\nSai sốcủa bộphát hiện\nFalse positive (FP) là Normal bịbáo Attack, làm tăng công việc xác minh cảnh báo; false\nnegative (FN) là Attack bịtrảvềNormal, có thểlàm bỏsót sựkiện cần chú ý. Giá trịchi phí\ncủa FP/FN tùy môi trường triển khai và chưa được đo trong đềtài, nên không thểgiảđịnh một\nlỗi bỏsót có giá trịđúng bằng một báo động giả. Việc đọc riêng FPR và FNR giúp trình bày\nđánh đổi này minh bạch hơn một chỉsốAccuracy duy nhất.\nMã đềtài: 09-SV-2026-CNTT2\n3\n"
+    },
+    {
+      "physical_page": 13,
+      "min_text_pt": 7.970099925994873,
+      "under_8pt": [
+        {
+          "text": "⊤",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "−",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "z",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "1",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "k",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "=0",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "2",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "k",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "k",
+          "size": 7.970099925994873
+        }
+      ],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\n1.2.2\nMô hình Logistic Regression\nLogistic Regression là mô hình tuyến tính xác suất. Đối với phân loại nhịphân, giá trịdựđoán\ndương có thểviết:\nbp(y = 1 | x) = σ(w⊤x + b),\nσ(z) =\n1\n1 + e−z .\n(1.1)\nMột ngưỡng biến xác suất thành nhãn; threshold không nhất thiết phải bằng 0,5 trong mọi ứng\ndụng, nhưng nghiên cứu cuối đã khóa tại 0,5 trước oﬀicial TEST. Điều chuẩn trong Logistic\nRegression kiểm soát độlớn hệsốđểhạn chếkhớp quá mức. Đối với dữliệu NIDS có quan\nhệphi tuyến phức tạp, một mô hình tuyến tính có thểthiếu năng lực biểu diễn so với các mô\nhình cây, nhưng tính khác nhau của bềmặt quyết định lại có thểtạo dạng sai sốbổsung trong\nensemble.\nTrong chuỗi thực nghiệm, Logistic Regression được xem xét ởtầng base và meta. Vai trò\nnày không chứng minh LR riêng lẻtối ưu; sựhữu ích phải quan sát qua OOF predictions, độ\nđa dạng lỗi, và hiệu quảcuối trong protocol thống nhất. Nếu chỉxét tập TEST rồi lựa chọn lại\nthành viên có chỉsốtốt nhất thì sẽphá vỡranh giới đánh giá đã khóa.\n1.2.3\nDecision Tree và Random Forest\n1.2.3.1\nDecision Tree\nDecision Tree chia dữliệu bằng các điều kiện theo biến và ngưỡng. Một thước đo mức hỗn tạp\ncủa nút là Gini:\nG(D) = 1 −\n1\nX\nk=0\np2\nk,\n(1.2)\nvới pk là tỷtrọng lớp k tại nút. Cây có thểbiểu diễn điều kiện phi tuyến và tương tác giữa các\nđặc trưng, nhưng cây quá sâu dễhọc các chi tiết riêng của TRAIN. Những siêu tham sốnhư\nđộsâu tối đa, sốquan sát tối thiểu ởlá hoặc sốđặc trưng được xét tại mỗi lần tách có thểkiểm\nsoát độphức tạp.\nDecision Tree không nhất thiết có độchính xác tổng thểcao bằng Random Forest. Khi nó\nđược chọn vào Stacking, lý do phương pháp hợp lệlà kiểm tra liệu một mô hình có cấu trúc\nsai sốkhác biệt có đóng góp hiệu quảhay không, thay vì giảđịnh mô hình yếu kết hợp với mô\nhình mạnh luôn làm kết quảtốt hơn.\nMã đềtài: 09-SV-2026-CNTT2\n4\n"
+    },
+    {
+      "physical_page": 14,
+      "min_text_pt": 7.970099925994873,
+      "under_8pt": [
+        {
+          "text": "RF",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "T",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "t",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "=1",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "t",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "vote",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "M",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "m",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "=1",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "m",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "m",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "m",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "M",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "m",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "=1",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "m",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "i,m",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "(",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "−",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "k",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "(",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "i",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "))",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "m",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "i",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "stack",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "1",
+          "size": 7.970099925994873
+        },
+        {
+          "text": "M",
+          "size": 7.970099925994873
+        }
+      ],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\n1.2.3.2\nRandom Forest\nRandom Forest kết hợp nhiều cây được fit với tính ngẫu nhiên trong lấy mẫu và lựa chọn feature.\nMột mô tảcủa xác suất dựđoán là:\nbpRF(x) = 1\nT\nT\nX\nt=1\nbpt(y = 1 | x).\n(1.3)\nTăng sốcây thường đòi hỏi thêm thời gian train, suy luận và bộnhớ. Tuy vậy, sựthay đổi hiệu\nnăng không tuyến tính theo sốcây, và việc tăng mô hình không bảo đảm vượt một mô hình\nít cây hơn trên dữliệu cụthể. Trong cấu hình cuối RF-42 có 300 cây, còn RF-17 có 150 cây,\nkích thước lá cũng khác; mọi kết luận vềriêng Feature Selection phải tránh so sánh này như\nmột đối chứng chỉthay sốfeature.\n1.2.4\nVoting, Stacking và sai sốbổsung\n1.2.4.1\nHard voting và weighted soft voting\nHard voting chọn nhãn theo sốthành viên bình chọn [9, 4]. Weighted soft voting tổng hợp xác\nsuất từcác model:\nbpvote(x) =\nM\nX\nm=1\nwmbpm(x),\nwm ≥0,\nM\nX\nm=1\nwm = 1.\n(1.4)\nTrọng sốdựa vào một tập validation riêng có thểđiều chỉnh ưu tiên thành viên, nhưng chỉsố\nchất lượng cá nhân không nhất thiết dựbáo đóng góp trong ensemble. Nếu tất cảbase learners\nsai trên các dòng giống nhau, lấy trung bình dựđoán không có cơ chếsửa những lỗi chung\nấy. Do đó diversity là biến quan sát có ý nghĩa, chứkhông phải bằng chứng bắt buộc cho\nsuperiority.\n1.2.4.2\nOut-of-fold training của Stacking\nStacking sửdụng một meta learner đểhọc ánh xạtừdựđoán của các base learners sang kết\nquảcuối [10]. Nếu dùng dựđoán trên chính tập fit của base learners đểtrain meta, tầng meta\ncó thểnhận đầu vào quá lạc quan. Out-of-fold (OOF) giảm vấn đềnày: ởmỗi fold, base learner\nchỉfit trên các fold khác và tạo xác suất cho fold hiện hành. Ghép lại cho mỗi dòng huấn luyện\nmột dựđoán chưa được base learner fit trực tiếp trên dòng đó:\nZi,m = bp(−k(i))\nm\n(xi),\nbpstack(x) = g (bp1(x), . . . , bpM(x)) .\n(1.5)\nMô hình meta trong Stacking-42 là Logistic Regression. Trong suy luận cuối, các base learners\nđược refit trên TRAIN được phép rồi đưa xác suất mới qua meta learner. Tuy nhiên, một\nMã đềtài: 09-SV-2026-CNTT2\n5\n"
+    },
+    {
+      "physical_page": 15,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\nStacking dùng OOF không có nghĩa mọi bước chọn feature, tuning meta và lựa chọn mô hình\nđã được đưa vào nested CV hoàn toàn. Trong nghiên cứu này, meta tuning chưa fully nested\nvà tập stable features được chọn trên oﬀicial TRAIN trước development CV.\nOﬀicial TRAIN: phát triển mô hình\n↓\nK-fold OOF: LR\nDT\nRF\n↓\nMa trận xác suất OOF −→Meta Logistic Regression\n↓\nĐóng băng candidate và threshold\n↓\nOﬀicial TEST: đánh giá một lần sau freeze\nHình 1.1. Sơ đồnguyên lý Stacking/OOF và ranh giới oﬀicial TEST. Hình chỉminh họa giao thức,\nkhông chứng minh nested validation đầy đủ.\n1.2.4.3\nDouble-fault, error correlation và oracle\nDouble-fault đo tỷlệcùng sai của hai bộphân loại, error correlation mô tảmức liên hệgiữa\ncác biến chỉbáo lỗi, còn oracle giảđịnh có thểchọn đúng đầu ra của một base model bất kỳ\ntrên mỗi mẫu. Oracle là cận mô tảdưới thông tin nhãn thật, không phải thuật toán dựđoán có\nthểvận hành trực tiếp. Những chỉsốnày cho biết các base learners có thểbổsung nhau ởđâu,\nnhưng không trảlời việc meta learner có thực sựhọc được quy tắc kết hợp đúng hay không.\nKết quảvoting không thuận lợi trong development vẫn phải được giữlại đểtránh thiên lệch\nchỉbáo cáo phương án tốt.\n1.2.5\nCác chiến lược Feature Selection\nFilter selection sửdụng phép đo thống kê đểxếp hạng biến; wrapper selection đánh giá trực\ntiếp các tập con thông qua mô hình; embedded selection khai thác cơ chếlựa chọn trong khi\nfit [12, 6]. Các phương pháp có ưu nhược điểm khác nhau vềchi phí, tương tác biến và thiên\nlệch theo model. Tính ổn định của feature được chọn qua nhiều lần lặp giúp hạn chếphụ\nthuộc một phép chia cụthể, nhưng không chứng minh loại bỏbiến ít quan trọng luôn cải thiện\ngeneralization.\nMột phép đo gần bằng nhau của RF-17 và RF-42 không cho phép suy rằng 25 feature bịbỏ\nđều vô dụng. Mục tiêu của việc giảm feature trong đềtài là khảo sát một đánh đổi giữa chất\nlượng và tài nguyên của hai pipeline cụthể. Muốn quy kết quảcho riêng sốfeature phải giữcố\nđịnh mọi thành phần khác của RF và lồng lựa chọn feature trong outer folds.\nMã đềtài: 09-SV-2026-CNTT2\n6\n"
+    },
+    {
+      "physical_page": 16,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\n1.2.6\nCác chỉsốđánh giá và diễn giải thống kê\n1.2.6.1\nPrecision, Recall, Macro-F1 và MCC\nVới Attack là lớp dương:\nPrecision =\nTP\nTP + FP,\nRecall =\nTP\nTP + FN,\n(1.6)\nF1 = 2Precision Recall\nPrecision + Recall,\nFPR =\nFP\nFP + TN,\n(1.7)\nFNR =\nFN\nFN + TP,\nDetection Rate = 1 −FNR.\n(1.8)\nMacro-F1 lấy trung bình F1 hai lớp với trọng sốbằng nhau. Weighted-F1 lấy trung bình theo\nsupport. MCC sửdụng toàn bộma trận nhầm lẫn:\nMCC =\nTPTN −FPFN\np\n(TP + FP)(TP + FN)(TN + FP)(TN + FN)\n.\n(1.9)\nMacro-F1 khác MCC: Macro-F1 tổng hợp riêng chất lượng F1 của mỗi lớp, còn MCC đo tương\nquan giữa nhãn thật và nhãn dựđoán dựa trên cảbốn ô. Hai thước đo có thểxếp hạng hai mô\nhình khác nhau.\n1.2.6.2\nPaired bootstrap và McNemar\nCùng một dòng TEST được dựđoán bởi hai model, do đó sai sốcủa chúng có cấu trúc cặp.\nPaired bootstrap lấy mẫu lại chỉsốdòng, áp dụng chung cho hai mô hình và tính hiệu sốmetric\ntrong mỗi lần lặp. CI 95% từcác lần lặp cho thấy bất định do các dòng benchmark đã quan sát,\nchứkhông phải độbiến thiên giữa các lần train độc lập hoặc khi chuyển sang mạng khác.\nMcNemar kiểm tra sốdòng A đúng/B sai so với A sai/B đúng. Đây là kiểm định trên paired\ncorrectness, không phải trực tiếp trên độchênh lệch Macro-F1. Khi có nhiều phép so sánh,\nđiều chỉnh Holm giới hạn rủi ro báo có ý nghĩa do thửnhiều giảthuyết. Các CI và phép kiểm\nđịnh không sửa được tính phụthuộc giữa các dòng flow; đó là giới hạn riêng vềđơn vịlấy\nmẫu.\n1.3\nCác công trình nghiên cứu liên quan\n1.3.1\nEnsemble Learning trong NIDS\nTama và Lim khảo sát có hệthống hướng Ensemble Learning cho Intrusion Detection và đặt\ntrọng tâm vào base classifier, cách kết hợp và tính phụthuộc của đánh giá theo benchmark [9].\nKết quảtổng quan này là cơ sởlựa chọn câu hỏi so sánh thực nghiệm, không thểthay bằng\nnhận định đơn giản rằng kết hợp nhiều classifier chắc chắn làm hiệu năng tăng.\nMã đềtài: 09-SV-2026-CNTT2\n7\n"
+    },
+    {
+      "physical_page": 17,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\nCác cấu hình kết hợp đã được nghiên cứu theo nhiều hướng: soft voting có thành phần tìm\ncấu hình tựđộng [4], heterogeneous stacking với các base learners và meta learner được mô tả\ntrong phần phương pháp của Thockchom và cộng sự[10], và hướng kết hợp lựa chọn đặc trưng\nvới ensemble [2, 6]. Các nghiên cứu có phương pháp và tập dữliệu khác nhau không được coi\nlà baseline matched cho oﬀicial UNSW-NB15 của đềtài. Việc tồn tại những công trình này\ngiới hạn tuyên bốnovelty: đóng góp được định vịởkiểm toán case study, sựminh bạch vềloại\nlỗi, bằng chứng cặp và chi phí, không phải tạo ra Stacking hay Feature Selection.\n1.3.2\nFeature Selection, chuẩn hóa và mất cân bằng\nViệc giảm sốđặc trưng có thểthay đổi chất lượng và chi phí của pipeline, nhưng phải tách việc\nchọn feature khỏi khâu đánh giá nếu muốn ước lượng hiệu ứng thật sựcủa chiến lược lựa chọn.\nCác nghiên cứu vềfilter-based Feature Selection trong IDS [12], đặc trưng và chuẩn hóa [11],\ncũng như embedded/correlation selection [6] là những nguồn đặt phạm vi cho câu hỏi RQ2,\nkhông phải bằng chứng rằng RF-17 của chúng tôi cải thiện nhờchỉloại feature.\nĐối với dữliệu mất cân bằng, nghiên cứu DUEN xem xét dynamic ensemble cùng thành\nphần xửlý phân bốlớp [7]. Do đềtài hiện không có so sánh matched resampling/no-resampling\ndưới cùng điều kiện, không thểkết luận các kỹthuật cân bằng mẫu là vô ích hoặc có hiệu quả\nnhân quảtừnhững kết quảđược lưu. Đây vẫn là giới hạn của RQ5.\n1.3.3\nChất lượng dữliệu và khảnăng khái quát\nEngelen và cộng sựphân tích lỗi và quá trình xửlý trong một bộdữliệu IDS khác\n(CICIDS2017) [3]; bài học phương pháp luận là cần kiểm toán pipeline và chất lượng dữliệu,\nkhông chuyển nguyên các lỗi CICIDS2017 sang UNSW-NB15. Cantone và cộng sựnhấn\nmạnh sựkhác biệt giữa đánh giá trong cùng một dataset và đánh giá cross-dataset [1]. Nghiên\ncứu của chúng tôi mới có oﬀicial holdout cùng một phần novel-vector subset; đó không phải\nexternal validation hoặc phép đo generalization cross-dataset.\nKhảo sát vềcác loại tấn công chưa biết, không điển hình và biến đổi hình thái [8] gợi ý yêu\ncầu đọc kết quảtổng thểtrong mối liên hệvới các dạng tấn công khác nhau. Nhưng phân tích\nattack_cat ởđây là nhóm nhãn thật của binary detector, không phải đo khảnăng dựđoán\nnhãn tấn công đa lớp hoặc unknown-attack deployment.\n1.3.4\nKhoảng trống bằng chứng và giới hạn tổng quan\nSo sánh ensemble cần báo cáo trung thực khảnăng mô hình tốt hơn hoặc không tốt hơn baseline,\nmức thay đổi giữa FP và FN, quan hệgiữa diversity và gain, cùng chi phí của cấu hình đã chọn.\nĐối với UNSW-NB15, đềtài có saved oﬀicial test, paired effects và phân tích hậu nghiệm,\nnhưng chưa có chứng cứrepeated training stability, nested FS ablation độc lập, temporal split,\nMã đềtài: 09-SV-2026-CNTT2\n8\n"
+    },
+    {
+      "physical_page": 18,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\nexternal validation và matched resampling. Do vậy những mục chưa có bằng chứng được trình\nbày như khoảng thiếu của nghiên cứu này, không được biến thành khẳng định rằng toàn bộ\nlĩnh vực chưa từng nghiên cứu chúng.\nCác nhận xét tổng quan ởđây dựa trên những bài báo được trích dẫn trong danh mục tài\nliệu tham khảo; do khác biệt dữliệu và giao thức, không sửdụng kết quảtừcác nghiên cứu đó\nnhư đối chứng trực tiếp cho ba mô hình của đềtài.\nMã đềtài: 09-SV-2026-CNTT2\n9\n"
+    },
+    {
+      "physical_page": 19,
+      "min_text_pt": 6.7439398765563965,
+      "under_8pt": [
+        {
+          "text": "56,000",
+          "size": 6.7439398765563965
+        },
+        {
+          "text": "119,341",
+          "size": 6.7439398765563965
+        },
+        {
+          "text": "37,000",
+          "size": 6.7439398765563965
+        },
+        {
+          "text": "45,332",
+          "size": 6.7439398765563965
+        }
+      ],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nChương 2.\nDỮLIỆU VÀ QUY TRÌNH TIỀN XỬLÝ\n2.1\nNguồn dữliệu và quy mô bản ghi\nUNSW-NB15 là bộdữliệu mô tảlưu lượng mạng dùng trong nghiên cứu phát hiện xâm nhập,\nđược giới thiệu trong công bốcủa Moustafa và Slay [5]. Đềtài sửdụng chính xác hai file phân\nchia chính thức: 175 341 dòng TRAIN và 82 332 dòng TEST. Mục tiêu thực nghiệm được kiểm\nchứng là phân loại Normal/Attack; tên các nhóm tấn công không được sửdụng làm predictor\ntrong mô hình binary.\nBảng 2.1. Phân bốhai lớp của các tập UNSW-NB15 chính thức.\nTập\nNormal\nAttack\nTổng\nAttack (%)\nTRAIN\n56 000\n119 341\n175 341\n68.06\nTEST\n37 000\n45 332\n82 332\n55.06\nSựkhác biệt tỷlệAttack giữa TRAIN (68,06%) và TEST (55,06%) là một quan sát thực tế\ncủa dữliệu chính thức, không phải tỷlệdo nghiên cứu tựcân bằng lại. Điều này cho thấy tổng\nAccuracy và Weighted-F1 có thểchịu ảnh hưởng của cách phân bốlớp; đọc Macro-F1, MCC\nvà chỉsốriêng từng lớp sẽrõ ràng hơn khi so sánh các pipeline.\nNormal\nAttack\n0\n20000\n40000\n60000\n80000\n100000\n120000\nNumber of records\n56,000\n119,341\n37,000\n45,332\nUNSW-NB15 binary class distribution\nTrain\nTest\nHình 2.1. Phân bốnhãn Normal/Attack trong oﬀicial TRAIN và TEST, biểu đồphân bốlớp từkết quả\nkhảo sát dữliệu.\n09-SV-2026-CNTT2\n10\n"
+    },
+    {
+      "physical_page": 20,
+      "min_text_pt": 4.51269006729126,
+      "under_8pt": [
+        {
+          "text": "Normal",
+          "size": 6.446700096130371
+        },
+        {
+          "text": "Generic",
+          "size": 6.446700096130371
+        },
+        {
+          "text": "Exploits",
+          "size": 6.446700096130371
+        },
+        {
+          "text": "Fuzzers",
+          "size": 6.446700096130371
+        },
+        {
+          "text": "DoS",
+          "size": 6.446700096130371
+        },
+        {
+          "text": "Reconnaissance",
+          "size": 6.446700096130371
+        },
+        {
+          "text": "Analysis",
+          "size": 6.446700096130371
+        },
+        {
+          "text": "Backdoor",
+          "size": 6.446700096130371
+        },
+        {
+          "text": "Shellcode",
+          "size": 6.446700096130371
+        },
+        {
+          "text": "Worms",
+          "size": 6.446700096130371
+        },
+        {
+          "text": "10",
+          "size": 6.446700096130371
+        },
+        {
+          "text": "2",
+          "size": 4.51269006729126
+        },
+        {
+          "text": "10",
+          "size": 6.446700096130371
+        },
+        {
+          "text": "3",
+          "size": 4.51269006729126
+        },
+        {
+          "text": "10",
+          "size": 6.446700096130371
+        },
+        {
+          "text": "4",
+          "size": 4.51269006729126
+        },
+        {
+          "text": "Number of records (log scale)",
+          "size": 6.446700096130371
+        },
+        {
+          "text": "Attack-category distribution reveals strong multiclass imbalance",
+          "size": 7.736040115356445
+        },
+        {
+          "text": "Train",
+          "size": 6.446700096130371
+        },
+        {
+          "text": "Test",
+          "size": 6.446700096130371
+        }
+      ],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\n2.2\nCác nhóm tấn công và mức độchênh lệch\nNgoài lớp Normal, trường attack_cat chứa các họtấn công như Analysis, Backdoor, DoS,\nExploits, Fuzzers, Generic, Reconnaissance, Shellcode và Worms. Tại oﬀicial TEST, Generic\nchiếm 18 871 dòng, Exploits 11 132 dòng và Fuzzers 6 062 dòng, trong khi Worms chỉcó 44\ndòng. Quy mô hỗtrợkhông đồng đều có thểlàm độchính xác theo từng nhóm biến động mạnh;\nmột sốđếm FN cần được đọc cùng mẫu sốcủa chính nhóm Attack tương ứng.\nNormal\nGeneric\nExploits\nFuzzers\nDoS\nReconnaissance\nAnalysis\nBackdoor\nShellcode\nWorms\n102\n103\n104\nNumber of records (log scale)\nAttack-category distribution reveals strong multiclass imbalance\nTrain\nTest\nHình 2.2. Sốlượng bản ghi theo attack_cat của hai tập. Trong nghiên cứu hiện tại, đây là phân tích\nnhãn thật chứkhông phải kết quảmột mô hình multiclass.\nNhóm Attack ít mẫu không thểđược coi là đã phát hiện tốt chỉvì Accuracy nhịphân tổng\nthểcao. Một lớp hiếm có thểchỉgóp ít FN vào tổng nhưng lại có FNR cao trong chính lớp đó.\nBởi vậy bước Error Analysis trong báo cáo phân nhóm các Attack thật, đồng thời tránh biến\ncác khác biệt nhỏthành khẳng định vềtoàn bộdạng tấn công trong tựnhiên.\n2.3\nKhảo sát thống kê các đặc trưng\nEDA của TRAIN đã kiểm tra 39 biến số. Các tiêu chí thống kê dùng đểkhám phá không\nđồng nghĩa phép thửnhân quả. Chẳng hạn, standardized mean difference (SMD) giữa Normal\nvà Attack lớn cho thấy trung bình hai nhóm có khác biệt tương đối theo độphân tán, nhưng\nkhông có nghĩa một feature đơn lẻlà dấu hiệu tấn công đáng tin cậy trong mọi tổhợp.\nCác giá trịSMD lớn vềđộlớn trong bảng EDA gồm sttl (1,9430), ct_state_ttl\n(1,3973), ct_dst_sport_ltm (0,9340), rate (0,8692), ct_src_dport_ltm (0,7853), cùng\ncác biến có SMD âm như swin (-0,7636) và dload (-0,7346). Dấu và độlớn của SMD phản\nánh cách định nghĩa hai nhóm trong tập TRAIN; nó không thiết lập hướng tác động của\nMã đềtài: 09-SV-2026-CNTT2\n11\n"
+    },
+    {
+      "physical_page": 21,
+      "min_text_pt": 7.970099925994873,
+      "under_8pt": [
+        {
+          "text": "Spearman",
+          "size": 7.970099925994873
+        }
+      ],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\nfeature lên xác suất bịtấn công.\n0.00\n0.25\n0.50\n0.75\n1.00\n1.25\n1.50\n1.75\n2.00\nAbsolute standardized mean difference\nstcpb\nct_srv_dst\nct_srv_src\nct_dst_ltm\nct_src_ltm\ndmean\ndwin\ndload\nct_dst_src_ltm\nswin\nct_src_dport_ltm\nrate\nct_dst_sport_ltm\nct_state_ttl\nsttl\nFeature\nNumeric features with strongest Normal–Attack separation\n(descriptive TRAIN-only EDA; not feature selection)\nHình 2.3. Khảo sát mức tách biệt Normal/Attack ởmột sốfeature sốtrên tập huấn luyện. Không dùng\nbiểu đồnày đểsuy ra quan hệnhân quả.\n2.4\nTương quan giữa các đặc trưng\nTrên tập huấn luyện, có 59 cặp feature sốđạt |ρSpearman| ≥0, 9. Ví dụ, cặp is_ftp_login và\nct_ftp_cmd có ρ = 1, 0000; trans_depth và ct_flw_http_mthd có ρ ≈0, 9996; tcprtt\nvà synack có ρ ≈0, 9968. Các cặp liên hệmạnh có thểchứa thông tin trùng lắp trong tập\nmẫu, nhưng một hệsốtương quan đơn lẻkhông cho biết mô hình cây sẽphụthuộc vào cặp đó\ntới mức nào.\nĐối với bước lựa chọn đặc trưng, danh sách cặp tương quan có thểlà một trong các nguồn\nbằng chứng đểđềxuất feature candidates, nhưng lựa chọn chính thức còn cần kết hợp kết quả\ntừfilter, embedded và wrapper. Điều quan trọng là giữphần EDA mô tảtách khỏi quyết định\nlựa chọn trên validation, không lặng lẽdùng thông tin từoﬀicial TEST đểxếp hạng feature.\nMã đềtài: 09-SV-2026-CNTT2\n12\n"
+    },
+    {
+      "physical_page": 22,
+      "min_text_pt": 7.624799728393555,
+      "under_8pt": [
+        {
+          "text": "sttl",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "ct_state_ttl",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "dload",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "dmean",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "dbytes",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "dpkts",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "ct_dst_sport_ltm",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "dloss",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "sloss",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "spkts",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "sbytes",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "swin",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "ct_src_dport_ltm",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "dwin",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "stcpb",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "sttl",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "ct_state_ttl",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "dload",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "dmean",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "dbytes",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "dpkts",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "ct_dst_sport_ltm",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "dloss",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "sloss",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "spkts",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "sbytes",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "swin",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "ct_src_dport_ltm",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "dwin",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "stcpb",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "−1.00",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "−0.75",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "−0.50",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "−0.25",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "0.00",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "0.25",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "0.50",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "0.75",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "1.00",
+          "size": 7.624799728393555
+        },
+        {
+          "text": "Spearman rho",
+          "size": 7.624799728393555
+        }
+      ],
+      "images": [
+        {
+          "width_px": 468,
+          "height_px": 459,
+          "dpi": [
+            118.03588635591755,
+            118.03587868598869
+          ]
+        },
+        {
+          "width_px": 23,
+          "height_px": 459,
+          "dpi": [
+            118.03587812661102,
+            118.03587868598869
+          ]
+        }
+      ],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\nsttl\nct_state_ttl\ndload\ndmean\ndbytes\ndpkts\nct_dst_sport_ltm\ndloss\nsloss\nspkts\nsbytes\nswin\nct_src_dport_ltm\ndwin\nstcpb\nsttl\nct_state_ttl\ndload\ndmean\ndbytes\ndpkts\nct_dst_sport_ltm\ndloss\nsloss\nspkts\nsbytes\nswin\nct_src_dport_ltm\ndwin\nstcpb\nSpearman correlation among target-associated numeric features\n(TRAIN only)\n−1.00\n−0.75\n−0.50\n−0.25\n0.00\n0.25\n0.50\n0.75\n1.00\nSpearman rho\nHình 2.4. Ma trận tương quan các feature sốtrên tập huấn luyện. Mối tương quan mạnh không tựchứng\nminh hai biến là tương đương vềcơ chếhay có thểloại bỏkhông làm mất thông tin.\nMã đềtài: 09-SV-2026-CNTT2\n13\n"
+    },
+    {
+      "physical_page": 23,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\n2.5\nKiểm toán overlap và các view đánh giá\nQuy trình audit kiểm tra vector của 42 feature đã sửdụng cho phân loại nhịphân. Có 8 541\ndòng oﬀicial TEST trùng vector với ít nhất một dòng oﬀicial TRAIN; phần còn lại gồm 73 791\ndòng được đặt tên novel-vector view. Số8 541 là sốdòng TEST, không nhất thiết là sốvector\nriêng biệt hay sốsession bịgiao cắt. Các lớp có thểcó giá trịfeature giống nhau vì cách lượng\nhóa và tiền xửlý; vì vậy không được tuyên bốmọi trường hợp trùng vector đều là leakage cùng\nphiên.\nBảng 2.2. Hai góc nhìn đánh giá cùng thuộc oﬀicial TEST đã lưu.\nView\nSốdòng\nDiễn giải hợp lệ\nOﬀicial TEST\n82 332\nTập holdout chính thức, dùng cho\nbảng hiệu năng cuối\nNovel-vector subset\n73 791\nTEST sau khi bỏdòng có vector 42\nfeature trùng với ít nhất một TRAIN\nvector\nOverlap rows\n8 541\nTEST có vector feature trùng; không\ntựđồng nhất với cùng session\nNovel-vector view chỉlà một phép phân tích độnhạy trong cùng bộdữliệu, không bảo\nđảm độc lập theo thời gian hoặc nguồn traﬀic. Do đó báo cáo trình bày riêng metric oﬀicial\nvà metric novel-vector, không thay oﬀicial holdout bằng phần TEST được chọn sau khi quan\nsát kết quả. Một nghiên cứu đánh giá khảnăng khái quát tốt hơn cần một benchmark ngoài\nhoặc group/temporal split được thiết kếtrước, với định nghĩa đơn vịđộc lập và quy trình pre-\nprocessing nhất quán.\n2.6\nKết luận vềđặc trưng của benchmark\nUNSW-NB15 hỗtrợmột case study IDS nhịphân có quy mô vừa đủcho đối chiếu nhiều\npipeline và có nhãn Attack đểphân tích sai số. Tuy nhiên, các chênh lệch lớp, tương quan\nfeature mạnh, sựtồn tại của vector trùng và khảnăng phụthuộc giữa các dòng flow giới hạn\nphạm vi khái quát. Vì thếhiệu năng trên chính benchmark này được diễn giải dưới các điều\nkiện của phép đo, không tựchuyển thành khảnăng phát hiện xâm nhập trên mạng triển khai\nthực tế.\nMã đềtài: 09-SV-2026-CNTT2\n14\n"
+    },
+    {
+      "physical_page": 24,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nChương 3.\nXÂY DỰNG MÔ HÌNH VÀ THIẾT KẾTHỰC NGHIỆM\n3.1\nThiết kếvà tập dữliệu\nNghiên cứu đánh giá các pipeline học máy và Ensemble Learning cho phát hiện xâm nhập\nmạng trên bộdữliệu UNSW-NB15[5]. Nhiệm vụđã được kiểm chứng trong chuỗi thí nghiệm\ncuối là phân loại nhịphân, với Normal = 0 và Attack = 1; các kết quảtheo attack_cat sau\nđó chỉlà phân tích nhóm tấn công bịbỏsót, không phải mô hình đa lớp. Mục tiêu là đánh\ngiá performance, lỗi bổsung, chi phí và độbất định, không tuyên bốphát minh thuật toán\nEnsemble Learning mới.\nHai tập oﬀicial của UNSW-NB15 được giữnguyên: TRAIN có 175 341 dòng (56 000\nNormal và 119 341 Attack), TEST có 82 332 dòng (37 000 Normal và 45 332 Attack). Không\ngộp rồi chia ngẫu nhiên lại hai tập này. Biến id, label và attack_cat bịloại khỏi predictors\nnhịphân; 42 biến còn lại tạo thành track toàn bộđặc trưng. Bản kiểm toán dữliệu ghi nhận\n8 541 dòng TEST trùng vector 42 đặc trưng với ít nhất một dòng TRAIN; 73 791 dòng TEST\ncòn lại tạo novel-vector sensitivity view. Đây vẫn là phần của chính oﬀicial TEST, không phải\nexternal, temporal hoặc session split mới.\n3.2\nFeature selection và preprocessing\nTrack 17 feature ổn định lấy từdanh sách đã lưu của oﬀicial TRAIN, bên cạnh track 42 feature.\nTập đặc trưng được chọn giữnguyên trong các lượt huấn luyện và so sánh tiếp theo. Các\nphép biến đổi có tham sốhọc được được đặt trong sklearn.Pipeline theo thiết kếnguồn.\nMột giới hạn bắt buộc là stable feature selection được thực hiện trên toàn bộoﬀicial TRAIN\ntrước development cross-validation, không lặp hoàn toàn bên trong từng outer fold. Vì vậy\nđiểm development CV có thểlạc quan hơn kết quảcủa quy trình feature selection nested thật.\nChúng tôi không tuyên bốloại trừmọi dạng leakage.\n3.3\nCác pipeline được khóa trước final evaluation\nBa cấu hình cuối và ngưỡng phân loại 0,5 được xác định trước bước đánh giá cuối trên tập\nTEST.\nStacking sửdụng dựđoán out-of-fold của các base learners đểhuấn luyện meta learner, thay\nvì sửdụng thuần in-sample predictions của tầng base. Mã nguồn có inner StratifiedKFold;\ncác seed ghi nhận là 42 cho thí nghiệm và 137 cho inner stacking. Việc dùng OOF giúp hạn chế\nmột dạng overfitting tầng meta nhưng phần meta tuning chưa hoàn toàn nested, nên không bảo\n09-SV-2026-CNTT2\n15\n"
+    },
+    {
+      "physical_page": 25,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\nBảng 3.1. Cấu hình pipeline cuối theo frozen manifest.\nCandidate\nCấu hình\nFeature\nRF-42\nRandom\nForest\n300\ncây,\nmax_features=0.5,\nmin_samples_leaf=1\n42\nStacking-42\nBase Logistic Regression (C = 1, liblinear), Decision\nTree (leaf=2), RF như RF-42; meta Logistic Regression\n(C = 0.5, liblinear, class weight None), inner CV 3 folds\nvà passthrough=False\n42\nRF-17\nRandom\nForest\n150\ncây,\nmax_features=0.5,\nmin_samples_leaf=2\n17\nđảm development validation unbiased. Diversity và voting được xem xét trong development;\nkết quảvoting không thuận lợi cũng là kết quảnghiên cứu cần báo cáo.\nRF-17 khác RF-42 cảsốfeature và tham sốRandom Forest (sốcây, kích thước lá), nên mọi\nchênh lệch giữa chúng là pipeline-level performance–cost trade-off, không phải ablation tách\nbiệt nhân quảcủa sốlượng đặc trưng.\n3.4\nCác bước triển khai và huấn luyện\nQuá trình thực nghiệm được thực hiện bằng Python với thư viện scikit-learn. Đối với mỗi\ncấu hình, chương trình tiến hành thống nhất các bước sau:\n1. Đọc hai tập TRAIN và TEST chính thức, tách cột nhãn label, đồng thời loại id và\nattack_cat khỏi các biến đầu vào.\n2. Xây dựng chuỗi tiền xửlý thích hợp với đặc trưng sốvà đặc trưng phân loại, bảo đảm\ntham sốbiến đổi chỉđược ước lượng từphần dữliệu huấn luyện được phép.\n3. Huấn luyện các mô hình cơ sở; với Stacking, sửdụng dựđoán ngoài fold đểxây dựng\ntập đầu vào cho bộphân loại tầng kết hợp.\n4. Lựa chọn và cốđịnh cấu hình theo kết quảphát triển mô hình trên TRAIN. Sau đó huấn\nluyện lại bằng toàn bộTRAIN và dựđoán trên oﬀicial TEST với ngưỡng 0,5.\n5. Tính confusion matrix, Precision, Recall, Macro-F1, MCC, FPR, FNR và thời gian thực\nthi; xuất dựđoán cùng các bảng chỉsốđểphân tích đối chiếu.\nCác bước này mô tảđúng trình tựtriển khai. Mã nguồn Python đi kèm báo cáo là căn cứđể\nkiểm tra chi tiết thao tác tiền xửlý, đối tượng mô hình và lệnh đánh giá.\n3.5\nFinal evaluation, uncertainty và sai số\nSau khi đóng băng cấu hình và threshold 0,5, các pipeline được huấn luyện trên oﬀicial TRAIN\nvà đánh giá cuối trên oﬀicial TEST. Kết quảdựđoán và các chỉsốđánh giá được trình bày trong\nMã đềtài: 09-SV-2026-CNTT2\n16\n"
+    },
+    {
+      "physical_page": 26,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\nChương 4. Không dùng TEST đểchọn lại mô hình, tối ưu ngưỡng hay sửa feature set. Attack là\npositive class: FPR = FP/(TN+FP), FNR = FN/(TP+FN), Detection Rate = 1−FNR. Cùng\nvới Macro-F1 và MCC, nghiên cứu còn lưu ROC-AUC và trường pr_auc; trường sau được mã\nnguồn tính bằng average_precision_score, vì vậy phải diễn giải là Average Precision (AP),\nkhông tựcoi là phương pháp tích phân PR-AUC khác.\nChênh lệch metric giữa các model được phân tích bằng paired bootstrap 10 000 lần lấy mẫu\nlại các dòng benchmark; CI có điều kiện trên benchmark rows, không đại diện repeated-training\nvariability. McNemar exact với điều chỉnh Holm được dùng cho paired overall correctness,\nkhông phải kiểm định trực tiếp Macro-F1. Các phân tích lỗi theo attack_cat, proto, state,\nsttl, dload là mô tảhậu nghiệm; không dùng đểsuy ra quan hệnhân quảhay tạo threshold\nmới.\n3.6\nCác giới hạn vềtái lập và tính hợp lệ\nViệc kiểm tra tính toàn vẹn dữliệu, sựnhất quán giữa cấu hình và mã nguồn, cùng khảnăng\ntính lại chỉsốtừdựđoán giúp tăng tính kiểm chứng của thí nghiệm. Tuy nhiên, thông tin môi\ntrường thư viện tại lần huấn luyện đầu tiên chưa được lưu đầy đủ; vì vậy chưa thểkhẳng định\nkết quảcủa cảba mô hình đã được tái lập hoàn toàn bằng một lần huấn luyện độc lập.\nMã đềtài: 09-SV-2026-CNTT2\n17\n"
+    },
+    {
+      "physical_page": 27,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nChương 4.\nKẾT QUẢTHỰC NGHIỆM VÀ ĐÁNH GIÁ\n4.1\nPhạm vi đánh giá và cách đọc các chỉsố\nCác kết quảtrong chương này là các sốliệu đã lưu của bài toán phát hiện xâm nhập nhịphân\ntrên UNSW-NB15, với Normal = 0 và Attack = 1. Tập huấn luyện chính thức có 175 341 dòng\nvà tập kiểm thửchính thức có 82 332 dòng, gồm 37 000 Normal và 45 332 Attack. Ba pipeline\nđược khóa trước đánh giá cuối là Random Forest 42 đặc trưng (RF-42), Stacking 42 đặc trưng\n(Stacking-42), và Random Forest 17 đặc trưng (RF-17). Tất cảsửdụng ngưỡng dựđoán nhị\nphân 0,5.\nCác biến id, label, attack_cat không được dùng làm biến dựđoán của bài toán nhịphân.\nattack_cat chỉđược dùng đểphân tích hậu nghiệm nhóm mẫu tấn công bịbỏsót. Phần kết\nquảnày không chứng minh khảnăng nhận diện đa lớp.\nVới Attack là lớp dương, ta có:\nFPR =\nFP\nTN + FP,\nFNR =\nFN\nTP + FN,\nDetection Rate = 1 −FNR.\n(4.1)\nMacro-F1 là trung bình F1 hai lớp với trọng sốbằng nhau; MCC phản ánh tương quan giữa\ndựđoán và nhãn trong toàn bộconfusion matrix. Do có đánh đổi giữa báo động giảvà bỏsót,\nkhông nên dùng Accuracy riêng lẻđểkết luận mô hình tốt hơn.\n4.2\nKết quảtrên oﬀicial holdout\nBảng 4.1. Hiệu năng nhịphân của ba pipeline trên oﬀicial TEST (82 332 mẫu; threshold 0,5). FPR và\nFNR tính theo phần trăm.\nPipeline\nMacro-F1\nMCC\nFPR (%)\nFNR (%)\nFP\nFN\nRF-42\n0.863343\n0.750910\n27.0351\n1.6192\n10003\n734\nStacking-42\n0.863840\n0.750497\n26.6514\n1.8795\n9861\n852\nRF-17\n0.860673\n0.746881\n27.6324\n1.5618\n10224\n708\nStacking-42 có Macro-F1 nhỉnh hơn RF-42 vềmặt sốhọc, nhưng MCC thấp hơn rất nhẹ.\nQuan trọng hơn, Stacking-42 giảm 142 FP (10 003 xuống 9 861) đồng thời tăng 118 FN (734\nlên 852). Đây là sựdịch chuyển đánh đổi giữa hai loại lỗi; chưa có ma trận chi phí tác nghiệp\nđểquy đổi hai thay đổi này thành một lợi ích triển khai tổng thể.\nRF-17 có Macro-F1 thấp hơn RF-42 khoảng 0,002670; đổi lại, thời gian và dung lượng mô\nhình lịch sửgiảm đáng kể(Mục 4.4). RF-17 đồng thời sửdụng siêu tham sốRandom Forest\nkhác RF-42, nên so sánh này là đánh đổi giữa hai pipeline, không phải thí nghiệm chỉthay\n09-SV-2026-CNTT2\n18\n"
+    },
+    {
+      "physical_page": 28,
+      "min_text_pt": 7.970099925994873,
+      "under_8pt": [
+        {
+          "text": "Holm",
+          "size": 7.970099925994873
+        }
+      ],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\nduy nhất sốđặc trưng.\n−200\n−100\n0\n100\n200\nChange in count (Stacking-42 minus RF-42)\nFalse positives\nFalse negatives\n-142\n+118\nFewer false alarms, more missed attacks\nHình 4.1. Chênh lệch sốlượng lỗi Stacking-42 trừRF-42 trên cùng oﬀicial TEST: FP giảm 142 mẫu và\nFN tăng 118 mẫu. Sốlượng quan sát trên benchmark cốđịnh, không phải sai khác trung bình qua nhiều\nlần huấn luyện.\n4.3\nKhoảng tin cậy và kiểm định cặp\nBảng 4.2. Chênh lệch Stacking-42 trừRF-42 và CI 95% paired bootstrap đã lưu; 10 000 lần lấy mẫu\nbootstrap từcác dòng benchmark. Đơn vịlà độchênh tuyệt đối trên thang 0–1.\nChỉsố\n∆\nCI dưới 95%\nCI trên 95%\nMacro-F1\n+0.000497\n-0.000312\n+0.001309\nMCC\n-0.000413\n-0.001938\n+0.001140\nFPR\n-0.003838\n-0.005243\n-0.002432\nFNR\n+0.002603\n+0.001853\n+0.003375\nKhoảng tin cậy của chênh lệch Macro-F1 và MCC chứa 0. Do đó, kết quảkhông cung cấp\nbằng chứng đủmạnh cho ưu thếtổng thểcủa Stacking-42 so với RF-42 trên hai thước đo này;\nđiều này không chứng minh hai mô hình tương đương thống kê. McNemar exact với hiệu chỉnh\nHolm trên đúng/sai tổng thểcủa các cặp dựđoán cho pHolm = 0.468377 trong cùng phép so\nsánh; McNemar không phải kiểm định trực tiếp chênh lệch Macro-F1.\nCI của FPR nằm hoàn toàn phía âm và CI của FNR nằm hoàn toàn phía dương. Các khoảng\ntin cậy này phản ánh biến động do lấy mẫu lại các dòng benchmark đã lưu, không phải độ\nổn định qua các lần huấn luyện độc lập, session độc lập hay dữliệu ngoài bộUNSW-NB15.\nHình 4.2 mô tảtrực quan các hiệu sốcùng khoảng tin cậy 95%.\nMã đềtài: 09-SV-2026-CNTT2\n19\n"
+    },
+    {
+      "physical_page": 29,
+      "min_text_pt": 6.520480155944824,
+      "under_8pt": [
+        {
+          "text": "−0.6",
+          "size": 6.520480155944824
+        },
+        {
+          "text": "−0.4",
+          "size": 6.520480155944824
+        },
+        {
+          "text": "−0.2",
+          "size": 6.520480155944824
+        },
+        {
+          "text": "0.0",
+          "size": 6.520480155944824
+        },
+        {
+          "text": "0.2",
+          "size": 6.520480155944824
+        },
+        {
+          "text": "0.4",
+          "size": 6.520480155944824
+        },
+        {
+          "text": "Difference × 100 (rate differences in percentage points)",
+          "size": 7.335540294647217
+        },
+        {
+          "text": "Macro-F1",
+          "size": 7.335540294647217
+        },
+        {
+          "text": "MCC",
+          "size": 7.335540294647217
+        },
+        {
+          "text": "False positive rate",
+          "size": 7.335540294647217
+        },
+        {
+          "text": "False negative rate",
+          "size": 7.335540294647217
+        },
+        {
+          "text": "Stacking-42 minus RF-42  |  Points and 95% paired bootstrap intervals",
+          "size": 7.335540294647217
+        },
+        {
+          "text": "82,332 benchmark rows; 10,000 bootstrap resamples. Intervals are conditional on these rows.",
+          "size": 6.520480155944824
+        },
+        {
+          "text": "2",
+          "size": 7.970099925994873
+        }
+      ],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\n−0.6\n−0.4\n−0.2\n0.0\n0.2\n0.4\nDifference × 100 (rate differences in percentage points)\nMacro-F1\nMCC\nFalse positive rate\nFalse negative rate\nPaired effects on the official UNSW-NB15 test\nStacking-42 minus RF-42  |  Points and 95% paired bootstrap intervals\n82,332 benchmark rows; 10,000 bootstrap resamples. Intervals are conditional on these rows.\nHình 4.2. Bốn hiệu sốStacking-42 trừRF-42 và CI 95% paired bootstrap đã lưu. Giá trịtrục ngang là\nhiệu sốnhân 100 (không phải phần trăm thay đổi tương đối). CI của Macro-F1 và MCC chứa 0; FPR\ngiảm, FNR tăng.\nBảng 4.3. Chi phí được ghi nhận trong lần chạy lịch sử. Kích thước sửdụng đơn vịMiB (byte chia\n10242), không phải MB thập phân.\nPipeline\nSốfeature\nTrain (s)\nInference (ms/mẫu)\nSize (MiB)\nRF-42\n42\n371.244\n0.008679\n205.490\nStacking-42\n42\n980.170\n0.012445\n206.216\nRF-17\n17\n57.255\n0.003562\n105.044\nMã đềtài: 09-SV-2026-CNTT2\n20\n"
+    },
+    {
+      "physical_page": 30,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\n4.4\nChi phí mô hình và sốđặc trưng\nTrong các sốđo đã lưu, thời gian huấn luyện của RF-42 gấp khoảng 6,48 lần RF-17, và kích\nthước mô hình ước lượng của RF-17 thấp hơn khoảng 48,88% so với RF-42. Các sốliệu chỉ\nphản ánh chi phí quan sát của những cấu hình cụthểtrong lần chạy lịch sử; chưa có phân bố\nthời gian qua nhiều lần huấn luyện và chưa có cơ sởdựbáo thời gian trên thiết bịtriển khai.\nMôi trường Python và thư viện tại thời điểm huấn luyện gốc chưa được xác định trực tiếp.\nTrường kích thước biểu diễn kết quảước lượng serialize trong lần chạy, không chứng minh file\nmô hình cuối hiện tồn tại trên ổđĩa.\n4.5\nPhân tích lỗi theo họtấn công\nBảng 4.4. Sốmẫu Attack thực bịdựđoán là Normal, phân nhóm theo attack_cat; đây không phải\nđánh giá multiclass.\nNhóm Attack\nSốmẫu\nFN RF-42\nFN Stack-42\n∆FN\nFuzzers\n6062\n621\n754\n+133\nGeneric\n18871\n57\n14\n-43\nNhóm còn lại\n20399\n56\n84\n+28\nTổng Attack\n45332\n734\n852\n+118\nTrên Fuzzers, Stacking-42 bỏsót thêm 133 mẫu so với RF-42; trên Generic, Stacking-42\nbỏsót ít hơn 43 mẫu. Các đếm này mô tảtác động không đồng đều giữa các nhóm nhãn thật,\nnhưng không chỉra cơ chếnhân quảcủa sttl, proto hay các feature khác. Những nhóm rất ít\nmẫu không cho phép khái quát chắc chắn vềmọi tấn công ngoài benchmark. Tất cảphân tích\nlỗi được thực hiện hậu nghiệm trên prediction đã khóa, không được dùng đểchỉnh ngưỡng dự\nđoán.\n4.6\nKiểm tra độnhạy trên nhóm vector chưa trùng\nBảng 4.5. Macro-F1 trên oﬀicial TEST và phần novel-vector của cùng oﬀicial TEST. Novel-vector\nkhông phải bộdữliệu kiểm thửđộc lập.\nPipeline\nOﬀicial TEST (n = 82332)\nNovel-vector (n = 73791)\nRF-42\n0.863343\n0.857473\nStacking-42\n0.863840\n0.858125\nRF-17\n0.860673\n0.855723\nCảba pipeline có Macro-F1 thấp hơn trên nhóm novel-vector. Tập con này được xác định\nbằng cách loại những dòng TEST có vector 42 đặc trưng trùng với ít nhất một vector TRAIN;\n8 541 dòng TEST thuộc nhóm overlap theo cách định nghĩa này. Đây là một sensitivity analysis\ntrong cùng benchmark, không thay cho đánh giá external, temporal, day hoặc session split. Vì\nvậy, câu hỏi RQ4 vềđộnhạy với split protocol chưa được trảlời đầy đủ.\nMã đềtài: 09-SV-2026-CNTT2\n21\n"
+    },
+    {
+      "physical_page": 31,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nChương 5.\nTHẢO LUẬN VÀ HƯỚNG PHÁT TRIỂN\n5.1\nTại sao điểm sốtổng thểchưa đủ\nTrong NIDS, việc chọn một pipeline chỉtheo Macro-F1 hoặc Accuracy có thểdẫn tới hiểu\nnhầm mục tiêu sửdụng. Oﬀicial TEST chứa 37 000 dòng Normal và 45 332 dòng Attack. Với\ncùng tập này, Stacking-42 giảm sốFP từ10 003 xuống 9 861 nhưng tăng FN từ734 lên 852 so\nvới RF-42. Nếu người vận hành đặt chi phí FN lớn hơn nhiều chi phí FP thì đánh đổi này có\nthểkhông mong muốn; trong một môi trường quá tải bởi cảnh báo giả, việc giảm FP lại có giá\ntrịriêng. Tuy nhiên, nghiên cứu không đo chi phí thực tếnên chỉmô tảđánh đổi, không gọi\nmột pipeline là tốt nhất cho mọi tình huống.\nSốít trường hợp Stacking sửa lỗi của RF và sốtrường hợp ngược lại còn cho phép nhìn sâu\nhơn vào kết luận thống kê. Trong bảng paired correctness có 71 104 mẫu hai mô hình đều đúng,\n10 222 mẫu đều sai, 491 mẫu RF-42 đúng nhưng Stacking-42 sai và 515 mẫu Stacking-42 đúng\nnhưng RF-42 sai. Sựcân bằng tương đối giữa hai ô sai khác này giải thích vì sao kiểm định\nvềtính đúng tổng thểkhông cho thấy một ưu thếrõ, dù FP/FN theo từng lớp đổi theo những\nhướng khác nhau.\nBảng 5.1. Tính đúng/sai của RF-42 và Stacking-42 theo từng cặp dựđoán, oﬀicial TEST.\nStacking đúng\nStacking sai\nRF đúng\n71 104\n491\nRF sai\n515\n10 222\nCác ô tính đúng/sai chỉchứa nhãn đúng/sai tổng thể, trong khi confusion matrix còn phân\nbiệt Normal/Attack. Vì vậy McNemar vềhai ô discordant không thểthay thếkiểm tra FPR/FNR\nhoặc Macro-F1. Việc một phép kiểm định không bác bỏgiảthuyết không đồng nghĩa chứng\nminh hai mô hình tương đương; nó chỉphản ánh sức mạnh bằng chứng trong phép thửvà dữ\nliệu được dùng.\n5.2\nSai sốtheo nhóm tấn công\nTrên 6 062 mẫu Fuzzers thật, RF-42 bỏsót 621 trong khi Stacking-42 bỏsót 754, tức Stacking\ntăng 133 FN. Trên Generic có 18 871 mẫu, RF-42 bỏsót 57 và Stacking-42 bỏsót 14, nghĩa là\nStacking giảm 43 FN. Hai thay đổi ngược hướng cho thấy một metric gộp toàn bộAttack có\nthểche ảnh hưởng không đồng đều giữa các nhóm.\nVì mô hình được huấn luyện cho binary Normal/Attack, đây là phân nhóm những nhãn\nthật phục vụphân tích hậu nghiệm. Không được diễn giải các đếm FN thành bảng multiclass\n09-SV-2026-CNTT2\n22\n"
+    },
+    {
+      "physical_page": 32,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\naccuracy. Đặc trưng sttl, proto, state và các biến khác có thểđồng xuất hiện với mẫu bịdự\nđoán khác nhau, nhưng việc cùng xuất hiện chưa xác định feature là nguyên nhân. Muốn kiểm\ntra cơ chếcần một đối chứng có thểcan thiệp và không làm thay đổi định nghĩa mẫu hoặc vô\ntình nhìn lại oﬀicial TEST trong khâu thiết kế.\n5.3\nVai trò và giới hạn của Feature Selection\nHai track 42 và 17 feature được so sánh dưới những cấu hình final khác nhau. RF-42 dùng 300\ntrees và min_samples_leaf=1; RF-17 dùng 150 trees và min_samples_leaf=2. Khi RF-17\ncó thời gian train thấp hơn, lợi ích quan sát được có thểdo cảsốcây, kích thước lá, sốfeature\nlẫn các tương tác giữa chúng. Một thí nghiệm ablation chuẩn đểtách nguyên nhân phải giữcác\ntham sốcòn lại cốđịnh, dùng cùng seed/protocol và lặp lại việc chọn feature bên trong vòng\nđánh giá.\nTrong dựán, stable 17 features được chọn từtoàn TRAIN trước development CV. Oﬀicial\nTEST không được dùng trực tiếp đểra danh sách, nhưng điểm CV sau bước chọn toàn TRAIN\ncó thểvẫn lạc quan vì phép chọn đã thấy nhãn của một sốfold trước khi chúng làm validation.\nĐây là giới hạn nghiêm túc, cần đặt ngay cạnh các kết luận vềfeature selection, không chỉchép\nởphần cuối. Dữliệu đã lưu không đủchứng minh rằng một quy trình nested được triển khai\nđầy đủ.\n5.4\nSựkhác biệt giữa kiểm định, bootstrap và độổn định\nPaired bootstrap tạo phân bốhiệu sốtừcùng các dòng TEST, giữquan hệghép cặp của hai\nmodel. Đối với Macro-F1, CI 95% của Stacking-42 trừRF-42 là [-0,000312; 0,001309]; với\nMCC là [-0,001938; 0,001140]. Hai khoảng chứa 0. Trong khi đó, CI FPR nằm hoàn toàn phía\nâm và CI FNR nằm hoàn toàn phía dương. Bốn nhận xét phải được giữcùng nhau: bằng chứng\nủng hộsựthay đổi loại lỗi trên benchmark, không khẳng định một chiến thắng vềhiệu năng\ntổng quát.\nMột phép bootstrap trên dòng không tái tạo sựngẫu nhiên của quá trình tối ưu mô hình. Để\nđo ổn định do train, cần nhiều lần fit độc lập, có quản lý seed và khảnăng so sánh đúng điều\nkiện compute. Đểđo tổng quát hóa giữa các mạng, cần nhiều benchmark độc lập hoặc thiết kế\ntheo thời gian/session. Không được gọi CI hiện tại là độtin cậy triển khai ngoài dữliệu hoặc\ndùng nó thay cho quá trình tái huấn luyện mô hình.\n5.5\nGiới hạn tái lập đầy đủ\nĐểxem xét tính tái lập, nghiên cứu kiểm tra tính toàn vẹn của dữliệu, đối chiếu cấu hình mô\nhình và thửtính lại các chỉsốtừdựđoán. Đây là những điều kiện cần đểkết quảcó thểđược\nMã đềtài: 09-SV-2026-CNTT2\n23\n"
+    },
+    {
+      "physical_page": 33,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\nkiểm chứng, nhưng không thay thếviệc huấn luyện lại mô hình cuối trên một môi trường được\nxác định rõ. Những phép kiểm tra này bảo vệphần mềm và quá trình phân tích, nhưng môi\ntrường Python và thư viện tại lần huấn luyện lịch sửchưa được lưu trực tiếp. Bản model cuối ở\ndạng serialized cũng không được xác minh tồn tại. Như vậy chưa thểtạo một inference demo\nđảm bảo đúng pipeline cuối từcác đối tượng mô hình đã được kiểm thửtrên dữliệu con.\nCác mô hình kiểm thửkỹthuật được xây dựng trên tập con TRAIN chỉnhằm xác minh\nchương trình có thểhuấn luyện, lưu và khôi phục đối tượng mô hình. Chúng không thểthay\ncho các mô hình huấn luyện trên toàn TRAIN hoặc dùng đểkhẳng định lại hiệu năng trên bộ\nkiểm thửchính thức.\n5.6\nTính hợp lệbên ngoài và định hướng nghiên cứu tiếp\nOﬀicial UNSW-NB15 TEST không phải một benchmark external độc lập với quá trình hình\nthành bộdữliệu. Novel-vector view là tập con của chính oﬀicial TEST, không đại diện phép\nkiểm tra temporal split, day split hay host-separated validation. Vì vậy việc tất cảmodel mất\nmột phần Macro-F1 trên novel-vector view chỉchứng minh độnhạy theo định nghĩa chọn dòng\nđó, không mô tảlỗi trên traﬀic tương lai.\nMột hướng tiếp tục đáng tin cậy là khóa trước các câu hỏi mới, định nghĩa đơn vịđộc\nlập (session/host/time), huấn luyện trên một split có thểkiểm chứng, đánh giá external nếu\ncó quyền truy cập và đối chiếu các sốđo vận hành như FPR theo khối lượng traﬀic. Những\nthí nghiệm này phải được đặt thành nghiên cứu kếtiếp có train/test mới, không sửa frozen\npredictions hay threshold của nghiên cứu hiện tại. Việc công khai các giới hạn giữcho báo cáo\ncó giá trịhọc thuật ngay cảkhi không có cải thiện rõ rệt của Stacking so với RF.\n5.7\nMức độtrảlời các mục tiêu nghiên cứu\nBảng 5.2. Đối chiếu mục tiêu nghiên cứu với kết quảthực nghiệm đã thực hiện.\nCâu hỏi\nBằng chứng thực có\nRanh giới kết luận\nRQ1\nOﬀicial paired scores, CI, McNemar\nKhông xác nhận stable\nensemble\ngain\nqua\nrepeated training\nRQ2\nRF-42/RF-17 cost, stable subset\nPipeline\ncomparison,\nkhông\nisolated\nfeature\ncausality\nRQ3\nDiversity, OOF, voting, stacking\nMô tảliên hệ, không chứng\nminh cơ chếnhân quả\nRQ4\nNovel-vector sensitivity\nChưa có temporal/external\nvalidation\nRQ5\nPhân tích imbalance, weight\nChưa\ncó\nmatched\ncontrolled resampling\nMã đềtài: 09-SV-2026-CNTT2\n24\n"
+    },
+    {
+      "physical_page": 34,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\n5.8\nKết luận và định hướng phát triển\n5.8.1\nTổng kết kết quả\nTrên oﬀicial UNSW-NB15 TEST gồm 82 332 dòng, Stacking-42 đạt Macro-F1 khoảng\n0.863840 so với 0.863343 của RF-42, trong khi MCC của Stacking-42 khoảng 0.750497,\nthấp hơn rất nhẹso với 0.750910 của RF-42. Chênh lệch Macro-F1 Stacking-42 trừRF-42 là\nkhoảng +0.000497; khoảng tin cậy 95% paired bootstrap đã lưu gồm 0. Những bằng chứng\nnày không xác nhận ưu thếtổng thểcủa Stacking-42 trên Macro-F1/MCC, và cũng không\nchứng minh hai mô hình tương đương vềmặt thống kê.\nStacking-42 giảm 142 dựđoán báo động giả(FP) nhưng tăng 118 trường hợp bỏsót tấn\ncông (FN) so với RF-42. Phân tích hậu nghiệm cho thấy xu hướng lỗi khác nhau theo từng\nattack family: Stacking-42 có thêm 133 FN ởFuzzers nhưng giảm 43 FN ởGeneric. Những\ncon sốđó thuộc mô hình binary và nhãn thật của các nhóm, không phải khảnăng dựđoán\nmulticlass hay bằng chứng vềnguyên nhân từcác feature riêng lẻ.\nRF-17 có Macro-F1 thấp hơn RF-42 một lượng nhỏ, đổi lại các sốđo lịch sửcho thấy thời\ngian train ngắn hơn và ước lượng dung lượng mô hình giảm. Tuy nhiên, đây là so sánh pipeline-\nlevel vì RF-17 không chỉgiảm đặc trưng mà còn thay đổi siêu tham sốRandom Forest. Không\nthểquy trực tiếp mọi thay đổi cho riêng Feature Selection.\n5.8.2\nĐóng góp trong phạm vi đã chứng minh\nĐóng góp có thểbảo vệởthời điểm hiện tại là một chuỗi thực nghiệm trên benchmark có nguồn\nvà cấu hình đóng băng, có kiểm toán dữliệu, đối chiếu mô hình học máy đơn và ensemble,\nphân tích sai sốbổsung, khoảng tin cậy cho chênh lệch theo cặp, đánh đổi FP/FN và chi phí.\nKết quảkhông thuận lợi của Voting và sựthiếu ưu thếrõ ràng của Stacking là thành phần của\nkết luận khoa học, không bịloại vì không hỗtrợmột giảthuyết chiến thắng.\nBáo cáo cũng ghi nhận các giới hạn của phép đo: sai lệch tiềm tàng do Feature Selection\ntrước development CV, meta tuning chưa fully nested, vector TRAIN/TEST bịtrùng,\nbenchmark flow có thểphụthuộc lẫn nhau, thiếu temporal/external validation và thiếu bằng\nchứng ổn định qua các lần tái huấn luyện độc lập. Việc công khai những giới hạn này góp\nphần tránh suy diễn vượt mức vềkhảnăng tổng quát hoặc tính mới của thuật toán.\n5.8.3\nCông việc còn thiếu và hướng nghiên cứu\nVới RQ1, cần một nghiên cứu mới có nhiều lần huấn luyện độc lập, cùng tài nguyên và môi\ntrường đã khóa đểkiểm tra tính ổn định của hiệu số. Với RQ2, cần thí nghiệm matched và\nnested feature selection, giữcác tham sốcòn lại cốđịnh đểtách tác động của chính Feature\nSelection. Với RQ3, có thểkiểm tra giảthuyết vềcơ chếbổsung sai sốbằng phân tích độc\nMã đềtài: 09-SV-2026-CNTT2\n25\n"
+    },
+    {
+      "physical_page": 35,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\nlập thay vì chỉdùng profile hậu nghiệm. Với RQ4, cần nguồn có thông tin thời gian/session\nhoặc một external benchmark đáng tin cậy đểđánh giá ngoài oﬀicial split. Với RQ5, có thể\nthiết kếđối chứng resampling/class-weight bên trong training folds, nhưng không được dựa\nvào oﬀicial TEST hiện tại đểchọn phương án thắng.\nMã nguồn xửlý, huấn luyện và tổng hợp chỉsốtạo điều kiện kiểm tra quy trình thực nghiệm\nvà tính nhất quán của các kết quả. Tuy nhiên, môi trường huấn luyện gốc chưa biết chắc, bản\ntái dựng full TRAIN chưa thực hiện và mô hình cuối dạng serialized chưa được xác minh. Do\nđó chưa thểcông bốđã tái lập end-to-end hay có hệthống phát hiện xâm nhập triển khai thực\ntế. Các mô hình được huấn luyện trên mẫu dữliệu nhỏđểkiểm tra chương trình không đại diện\ncho mô hình cuối, vì vậy không thểdùng chúng đểminh họa khảnăng dựđoán tương ứng với\nbảng kết quảchính thức.\n5.8.4\nKết luận cuối\nTrong phạm vi benchmark và thí nghiệm đã khóa, kết quảchủyếu nhấn mạnh nhu cầu so sánh\nEnsemble Learning một cách có kiểm soát, trình bày đầy đủloại lỗi và độbất định, thay vì\nchọn mô hình chỉbởi một điểm Accuracy hoặc Macro-F1 nhỉnh hơn vềmặt sốhọc. Việc bổ\nsung Stacking đem lại một đánh đổi FP/FN cụthểnhưng không xác lập ưu thếtổng thểtrước\nRF-42. Các đóng góp có thểtruy vết nằm ởcách đánh giá và diễn giải kết quả, không phải một\ncam kết superiority, novelty hoặc deployment chưa được kiểm chứng.\nMã đềtài: 09-SV-2026-CNTT2\n26\n"
+    },
+    {
+      "physical_page": 36,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nTài liệu tham khảo\n[1] Marco Cantone, Claudio Marrocco, and Alessandro Bria. Machine learning in network\nintrusion detection: A cross-dataset generalization study.\nIEEE Access, 12:144489–\n144508, 2024.\n[2] Doreswamy, Mohammad Kazim Hooshmand, and Ibrahim Gad.\nFeature selection\napproach using ensemble learning for network anomaly detection. CAAI Transactions\non Intelligence Technology, 5(4):283–293, 2020.\n[3] Gints Engelen, Vera Rimmer, and Wouter Joosen. Troubleshooting an intrusion detection\ndataset: the cicids2017 case study. In 2021 IEEE Security and Privacy Workshops (SPW),\npages 7–12, 2021.\n[4] Murad Ali Khan, Naeem Iqbal, Imran, Harun Jamil, and Do-Hyeun Kim. An optimized\nensemble prediction model using automl based on soft voting classifier for network\nintrusion detection. Journal of Network and Computer Applications, 212:103560, 2023.\n[5] Nour Moustafa and Jill Slay. Unsw-nb15: a comprehensive data set for network intrusion\ndetection systems (unsw-nb15 network data set). In 2015 Military Communications and\nInformation Systems Conference (MilCIS), pages 1–6, 2015.\n[6] Ghalia Nassreddine, Mohamad Nassereddine, and Obada Al-Khatib. Ensemble learning\nfor network intrusion detection based on correlation and embedded feature selection\ntechniques. Computers, 14(3):82, 2025.\n[7] Huajuan Ren, Yonghe Tang, Weiyu Dong, Shuai Ren, and Liehui Jiang. Duen: Dynamic\nensemble handling class imbalance in network intrusion detection. Expert Systems with\nApplications, 229:120420, 2023.\n[8] Ulya Sabeel, Shahram Shah Heydari, Khalil El-Khatib, and Khalid Elgazzar. Unknown,\natypical and polymorphic network intrusion detection: A systematic survey.\nIEEE\nTransactions on Network and Service Management, 21(1):1190–1212, 2024.\n[9] Bayu Adhi Tama and Sunghoon Lim. Ensemble learning for intrusion detection systems:\nA systematic mapping study and cross-benchmark evaluation. Computer Science Review,\n39:100357, 2021.\n[10] Ngamba Thockchom, Moirangthem Marjit Singh, and Utpal Nandi. A novel ensemble\nlearning-based model for network intrusion detection. Complex & Intelligent Systems,\n9(5):5693–5714, 2023.\n09-SV-2026-CNTT2\n27\n"
+    },
+    {
+      "physical_page": 37,
+      "min_text_pt": 9.962599754333496,
+      "under_8pt": [],
+      "images": [],
+      "outside": [],
+      "text": "ĐỀTÀI NCKH SINH VIÊN\nENSEMBLE LEARNING – NIDS\n[11] Mubarak Albarka Umar, Zhanfang Chen, Khaled Shuaib, and Yan Liu.\nEffects of\nfeature selection and normalization on network intrusion detection. Data Science and\nManagement, 8(1):23–39, 2025.\n[12] Houssam Zouhri, Ali Idri, and Ahmed Ratnani. Evaluating the impact of filter-based\nfeature selection in intrusion detection systems. International Journal of Information\nSecurity, 23(2):759–785, 2024.\nMã đềtài: 09-SV-2026-CNTT2\n28\n"
+    }
+  ],
+  "contact_sheets": [
+    "contact_01_09.png",
+    "contact_10_18.png",
+    "contact_19_27.png",
+    "contact_28_36.png",
+    "contact_37_37.png"
+  ],
+  "rendered_pages_directory": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\tmp\\pdfs\\p16_report_pdf_2026_10_17_01",
+  "render_engine": "Poppler pdftoppm 100 dpi",
+  "geometry_engine": "PyMuPDF 1.28.2",
+  "scope": "Read-only; no report edits, no dataset read, no fit/predict; automated bounds are not an overlap proof."
+}

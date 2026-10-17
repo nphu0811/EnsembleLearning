@@ -1,3 +1,28 @@
+# Current checkpoint 17/10/2026 — P16 actual-PDF audit, P18/P19 scoped progress
+
+This section supersedes the historical r05/r04 status below. P15 is DONE_SCOPED_RECONSTRUCTION. DO NOT TRAIN AGAIN. Three reconstructed full-TRAIN models are locally available; original historical model identity/environment remains UNKNOWN. Saved acceptance 69/69 true and three run PASS rechecked; historical full-run consistency75/75 is inherited, not rerun. The old STATE snapshot is in .research_memory/p16_2026_10_17/STATE_at_entry.json.
+
+Read docs/RESUME_AUDIT_2026-10-17_P16.md first. Entry main matched origin, clean. Prior manifest267/285 matched;18 drift paths reflect already committed changes. Preservation281/282 matched; the missing p15_02c2_clean_env.zip was deleted by author commit ab88db8, not this session. Keep this known historical exception; do not claim282/282 or silently restore an old archive. Raw data/templates/frozen results and approved report were not changed.
+
+Author supplied actual PDF C:/Users/admin/Downloads/Bao_cao_NCKH_EnsembleLearning_09-SV-2026-CNTT2.pdf.37pages;SHA2568734ccdd5ef6a3495df55a0196bef2d71ae8d16f893fefd9882559a4c857218b. It is still read-only. All37pages rendered with Poppler100dpi;five contact sheets visually inspected. New saved-summary audit2132/2132;actual-PDF checks178/178;source map17/17 in .research_memory/p16_2026_10_17/report_display_source_map.csv. These are bounded assertions, not all prose/config claims or a complete manual print proof.
+
+P16 canonical IN_PROGRESS; completed task DONE_SCOPED_AUDIT_WITH_OPEN_PRINT_FINDINGS. Report docs/research/P16_COMPREHENSIVE_QA_2026-10-17.md. Historical12figure PDFs:text12/12PASS,collision6PASS/6FAIL. Six new standalone alternatives in results/figures/p16_standalone_2026_10_17_03/ have final text6/6 andcollision6/6PASS,zero findings. Sourcepreflight20PASS/1WARN(PNGnoTIFF)/0FAIL. All9attackfamilies retained, no rare-family exclusion. Attempts01(schemaerror),02(twofooter overlaps) and initial encodingpreflight failure retained separately. Never treat incomplete01/02 exports as final. No PDF/report source modified. Open findings are embedded report small fonts,heatmap~118dpi,full heatmap source matrix not saved,pre-P15 provenance prose on physicalpage33. The report cannot be silently changed. Reconstructed current models are not historical binary proof.
+
+P18 current bibliography/claim-context audit119/119PASS;12records/24citation-keyinstances. literature/report_audit_2026_10_17_01/ contains field/reading ledger and contexts. OFFLINE verified-evidence reuse only;0newnetworkqueries/0fulltextreads. docs/research/P18_CURRENT_REPORT_READING_BOUNDARIES_2026-10-17.md. L03pagination conflict remains;U01scoped page warning resolved in existing follow-up;U03finalyear has corroboration but publisherVOR not viewed. No bibliography edit.
+
+P19 rootREADME,observed QArequirements and availability readiness note added;release review inventory generated separately. Not a final license/dependencyclosure/release. P20 final simulated panel deferred until fixed packet/source-reading/release inputs are sufficient. G0-G6 remain open;noFINAL_NCKH.zip,slidesor livedemo acceptance.
+
+NEXT EXACT ACTIONS
+1. Read current STATE/HANDOFF/roadmap and verify current manifest. If using tools/resume_checkpoint_audit.py,choose a NEW results/reproducibility/UNIQUE_SESSION outdir. Expect the historical deleted-ZIP preservation exception; compare actual evidence rather than reset it.
+2. Do not repeat completed P15 or summary/PDF bookkeeping checks just for status. For P16, a faithful high-resolution standalone heatmap needs the full TRAIN Spearman matrix; existing high-correlation-pairs CSV is insufficient. If reconstructing this descriptive artifact, first scope a TRAIN-only exact-source method/hash check and separate output;never upsample or guess missing cells,never edit approvedreport.
+3. Independently continue P18 closest-method source passages within existing reading boundaries and publisher VOR pagination for L03. No field-wide novelty or full-paper-reading claim without passages. Keep currentreport locked.
+4. Resolve P19 dataset/model/template/code rights only with actual author/rightsholder evidence;originaltrainenvUNKNOWN. Finish proposal form/defensefiles within actual template/evidence gates. Do not call readiness from manifests alone.
+5. P20 requires isolated review contexts and immutable common packet under nature-reviewer. No fake humanprofessors;do not claim finalpanel executed in this session.
+
+No background research continues after this interactive session. All useful outputs, failures and restart instructions are saved.
+
+---
+
 # Checkpoint r05 / R05-ASSEMBLY-REVIEW —16/10/2026
 
 DONE_SCOPED: Independent full argument/form review and recheck saved;3P1/2P2 addressed in separate r05 draft;34/34 source-boundary checks;author/renderP0 open;no training or release closure
@@ -298,3 +323,8 @@ User pushed independent author-host result at commit `c81f99a548045d0f6900bec655
 **Canonical P15 NOW = DONE_SCOPED_RECONSTRUCTION**, recorded in `docs/ROADMAP_CURRENT.md`, `.research_memory/TASK_BOARD.md` and `release/RELEASE_BLOCKERS.md`. This supersedes historical provisional P15=PARTIAL/NO_GO notes only for TRAIN reconstruction and local artifact file acceptance; old 9GiB gate FAIL still a truthful historical limit, alternate monitored 12GB local execution done. Both completed no-deadline full runs had resource guard active. RF42 first timeout stays INCOMPLETE. *Still open*: G3 overall public release / original historical environment bitwise identity UNKNOWN / remote reviewer binary not transferred / demo contract, plus G0–G2, G4–G6, P16, P18, P19, P20 and manuscript admin/final delivery. **No more TRAIN retraining is necessary or authorized by this checkpoint**, no scientific TEST reevaluation.
 
 Next turn: user may ask to continue research. Resume from scoped P15 DONE, choose independent next task (e.g. P16 evidence/assets, P18 bibliography checking, P19 distribution manifests and controlled demo-readiness contract) based on current task board. Avoid claiming final ready or rerunning any frozen scientific test. User can `git pull --ff-only origin main`; .joblib remains local and must be retained backed up with recorded SHA as part of deployment packaging policy.
+
+
+## P19 inventory finding, current 17/10/2026
+
+The tracked review snapshot flags three historical SMOKE_ONLY.joblib files under results/reproducibility/r04_ml_smoke_repaired/smoke_models/. All three were tracked in initial commit c4ed771. No new model binary is staged; no files were loaded or removed. Inventory passed=false and code license is absent. Keep this release blocker; it is separate from accepted local P15 full-TRAIN reconstructions. Do not treat the final new-file staging check as a passing whole-repository release inventory. See release/review_inventory_2026_10_17_01/validation.json and the final review inventory snapshot.

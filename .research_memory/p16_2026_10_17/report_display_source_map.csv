@@ -1,0 +1,18 @@
+label,kind,source_tex,source_line,evidence,boundary
+fig:stacking-protocol,figure,report/chapters/theoretical_foundations.tex,65,src/models/run_unsw_phase9_final_holdout.py,"Source diagram, not nested-validation proof"
+tab:dist-normal-attack,table,report/chapters/dataset_eda.tex,7,results/eda/unsw_nb15/tables/binary_class_distribution.csv,Descriptive official split counts
+fig:eda-binary,figure,report/chapters/dataset_eda.tex,18,results/eda/unsw_nb15/tables/binary_class_distribution.csv,"Same counts, historical chart font warning"
+fig:eda-attackcats,figure,report/chapters/dataset_eda.tex,28,results/eda/unsw_nb15/tables/attack_category_distribution.csv,All categories; historical rotated-label collision flag
+fig:eda-separation,figure,report/chapters/dataset_eda.tex,42,results/eda/unsw_nb15/tables/numeric_target_association_train.csv,"TRAIN-only descriptive SMD ranking, not causality"
+fig:eda-correlation,figure,report/chapters/dataset_eda.tex,52,results/eda/unsw_nb15/tables/high_correlation_pairs_train.csv;src/data/eda_unsw-nb15.py,"PARTIAL source coverage: full heatmap matrix not saved, do not reconstruct missing cells from high pairs"
+tab:views-test,table,report/chapters/dataset_eda.tex,64,results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv,"Novel view is a subset of official TEST, not external data"
+tab:frozen-candidates,table,report/chapters/methodology.tex,15,results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json;src/models/run_unsw_phase9_final_holdout.py,"Frozen config, RF17 differs in feature count and hyperparameters"
+tab:ket-qua-official,table,report/chapters/results_discussion.tex,25,results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv,Rounded official rows independently checked
+fig:delta-fp-fn,figure,report/chapters/results_discussion.tex,45,results/figures/p16_r05_error_tradeoff/source_data.csv;results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv,Counts -142 FP and +118 FN; not training-repeat means
+tab:chenh-lech-ci,table,report/chapters/results_discussion.tex,55,results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv,"Stored paired intervals, no new resampling"
+fig:paired-metrics,figure,report/chapters/results_discussion.tex,76,results/figures/p16_paired_effects_2026_10_16/source_data.csv;results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv,"Delta x100, not relative percent; current print font warning"
+tab:chi-phi,table,report/chapters/results_discussion.tex,86,results/final_evaluation/unsw_nb15/phase9_holdout/tables/cost_metrics.csv,"Historical timing and MiB, not current reconstructed-model size"
+tab:attack-family,table,report/chapters/results_discussion.tex,107,results/final_evaluation/unsw_nb15/phase9_holdout/tables/attack_category_miss_profile.csv,"Binary FN stratification, not multiclass evaluation"
+tab:novel-vector,table,report/chapters/results_discussion.tex,130,results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv,"Official/novel saved scores, not new independent test"
+tab:paired-correctness,table,report/chapters/validity_discussion.tex,9,results/final_evaluation/unsw_nb15/phase9_holdout/tables/pairwise_error_counts.csv;results/final_analysis/unsw_nb15/phase10_statistics/tables/mcnemar_holm.csv,"Paired correctness, not direct Macro-F1 hypothesis test"
+tab:rq-evidence,table,report/chapters/validity_discussion.tex,47,.research_memory/RESEARCH_CANON.md;docs/CLAIM_EVIDENCE_MATRIX.md,"Qualitative evidence bounds, not an independently scored RQ-completion test"

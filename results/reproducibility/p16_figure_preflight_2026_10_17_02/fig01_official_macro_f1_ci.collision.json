@@ -1,0 +1,97 @@
+{
+  "pdf": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\results\\final_reporting\\unsw_nb15\\phase11_results_figures\\figures\\fig01_official_macro_f1_ci.pdf",
+  "auditable": true,
+  "verdict": "FIX BEFORE DELIVERY",
+  "page_count": 1,
+  "visible_text_box_count": 18,
+  "text_trace_count": 20,
+  "stroke_path_count": 37,
+  "filled_region_count": 23,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 3,
+    "warn": 0,
+    "contained_fill_overlays": 0,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "0.8638",
+      "text_bbox": [
+        58.83735656738281,
+        87.35232543945312,
+        90.2885971069336,
+        96.35232543945312
+      ],
+      "other_text": null,
+      "other_bbox": [
+        74.56391906738281,
+        33.917022705078125,
+        74.56391906738281,
+        171.86566162109375
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        23
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "0.8633",
+      "text_bbox": [
+        236.3828125,
+        101.98966979980469,
+        267.83404541015625,
+        110.98966979980469
+      ],
+      "other_text": null,
+      "other_bbox": [
+        252.109375,
+        47.269989013671875,
+        252.109375,
+        186.61106872558594
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        24
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 2 stroked path(s)",
+      "text": "0.8607",
+      "text_bbox": [
+        413.9282531738281,
+        180.68804931640625,
+        445.3794860839844,
+        189.68804931640625
+      ],
+      "other_text": null,
+      "other_bbox": [
+        56.80937576293945,
+        125.48699951171875,
+        447.40936279296875,
+        265.75701904296875
+      ],
+      "object_count": 2,
+      "object_indexes": [
+        11,
+        25
+      ]
+    }
+  ]
+}

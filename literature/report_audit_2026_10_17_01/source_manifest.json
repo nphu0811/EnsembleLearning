@@ -1,0 +1,16 @@
+{
+  "report/references_verified.bib": "69e56280a347247a9e9b5d3c43002481962a9d05a6f0de246797ae280b50a9a7",
+  "report/references_dataset_checked.bib": "8832a08cd684d9933886bb598e510ca4f4d5e252723cf5cb70bb099b59c5d905",
+  "literature/resume_r04_2026_10_16/legacy_verification_ledger.csv": "5a3c65b9cf5462c919d2d065dd7ff70b44558e172e6b1d0685d23551ff5cfb02",
+  "literature/UNSW_U01_U03_METADATA_FOLLOWUP_2026-10-16.md": "9aaf868f0591eaf662a7eb81201f78a72c354644ac7f9e5016b3e7b5631166fe",
+  "literature/verification_2026_10_16/dataset_references.bib": "cf7ac97db6d8e3ff55b25100f405f95c5dd24b0e701aa45c7047f0c93a1c310f",
+  "report/main.tex": "4bd6b2f0c5cc4525f471b908aca69372d5917f14181f728f8cd63b7716104470",
+  "report/chapters/introduction.tex": "bb88f2ffc601508c29024d39970590ce9051b2a319248af07a0766de8f2f9ec4",
+  "report/chapters/theoretical_foundations.tex": "3cdd19b6df5a74326e0a1df703d77e8a0f208b8c72b933c2486004af38b612ef",
+  "report/chapters/related_work.tex": "0603d2ca0fd4e20cd0874a33f316d44b23c046105c7e637dfe4f16ff9657c279",
+  "report/chapters/dataset_eda.tex": "4dcb473c245df746ae895db9d5cdbe1dd8bbd4d95e0db3a56449e070ccbc2054",
+  "report/chapters/methodology.tex": "a3eac97b24aee6a1dce6981cf771257cf1ae5e00879952237a6c1aab960949de",
+  "report/chapters/results_discussion.tex": "33b6a0d52216147c50ac2aff4300cf8dd779d2b49dc8fe3e0e09bd4614b2ad4a",
+  "report/chapters/validity_discussion.tex": "daada669520664c20408c2eb41adf22f758b0fc44c7c61285e81c95197872cea",
+  "report/chapters/conclusion.tex": "1e301400e80790555ad4dd17e0354c3609f4f4341250939d104126eca3ab51ab"
+}

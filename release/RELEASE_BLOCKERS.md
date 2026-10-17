@@ -1,3 +1,13 @@
+# Current release findings — 17/10/2026 after P16 actual-PDF QA
+
+P15DONE_SCOPED_RECONSTRUCTION does notcloseG3historicalidentityorG0-G6. Savedsummary2132/2132,actualPDF178/178andP18offline119/119PASS areboundedQA. Sixnewstandalonefigures passtext/collisionaudits. Approved37pagePDF unchanged.
+
+OPEN: embeddedprintfonts/heatmap~118dpi;reportphysicalpage33containspre-P15provenancesnapshot;historical6figurecollisionFAILkept;P18fulltextsupport/novelty/L03VOR;code/dataset/model/template distributionrights;originaltrainingenvironmentUNKNOWN;proposalDOCX/PDFandform/signatures/institutionalacceptance;defenseslides/rehearsal/demo. No finalsimulatedpanelwasexecuted. Currentdocs/research/P16_COMPREHENSIVE_QA_2026-10-17.md,P18_CURRENT_REPORT_READING_BOUNDARIES_2026-10-17.md,P19_RELEASE_READINESS_2026-10-17.md detailevidenceandlimits.
+
+NOT_READY_FOR_SUBMISSION;noFINAL_NCKH.zip. Olderentriesbelowaresnapshots,notcurrentclaims.
+
+---
+
 # Release blockers ngày 16/10/2026
 
 ## 17/10/2026 — P15 full TRAIN reconstruction gate update
@@ -60,3 +70,8 @@ Trạng thái tổng thể **NOT_READY_FOR_SUBMISSION**. Không tạo FINAL_NCKH
 | G6 Defense | NOT_READY | Đã có20 câu Q&A dạng draft với evidence/path QA; còn thiếu slides, script, live inference demo, rehearsal và checksum final inventory |
 
 Tool gaps: không thấy dependency loader artifact trong tools hiện tại; không TeX/LibreOffice trên PATH. Tiếp tục Markdown/source-data/figures/kiểm chứng nguồn độc lập; không dùng tool gap làm lý do xin phép chuyển phase.
+
+
+## P19 inventory finding, current 17/10/2026
+
+The tracked review snapshot flags three historical SMOKE_ONLY.joblib files under results/reproducibility/r04_ml_smoke_repaired/smoke_models/. All three were tracked in initial commit c4ed771. No new model binary is staged; no files were loaded or removed. Inventory passed=false and code license is absent. Keep this release blocker; it is separate from accepted local P15 full-TRAIN reconstructions. Do not treat the final new-file staging check as a passing whole-repository release inventory. See release/review_inventory_2026_10_17_01/validation.json and the final review inventory snapshot.

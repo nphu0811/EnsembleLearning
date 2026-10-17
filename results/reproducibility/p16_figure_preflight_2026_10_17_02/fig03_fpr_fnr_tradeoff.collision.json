@@ -1,0 +1,72 @@
+{
+  "pdf": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\results\\final_reporting\\unsw_nb15\\phase11_results_figures\\figures\\fig03_fpr_fnr_tradeoff.pdf",
+  "auditable": true,
+  "verdict": "FIX BEFORE DELIVERY",
+  "page_count": 1,
+  "visible_text_box_count": 18,
+  "text_trace_count": 21,
+  "stroke_path_count": 31,
+  "filled_region_count": 17,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 2,
+    "warn": 0,
+    "contained_fill_overlays": 0,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "Stacking-42",
+      "text_bbox": [
+        74.20454406738281,
+        22.381975173950195,
+        127.76556396484375,
+        31.381975173950195
+      ],
+      "other_text": null,
+      "other_bbox": [
+        122.00619506835938,
+        22.32501220703125,
+        122.00619506835938,
+        299.5249938964844
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        5
+      ]
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-stroke",
+      "page": 1,
+      "message": "Text is crossed by 1 stroked path(s)",
+      "text": "RF-17",
+      "text_bbox": [
+        429.2954406738281,
+        274.3819885253906,
+        455.4092712402344,
+        283.3819885253906
+      ],
+      "other_text": null,
+      "other_bbox": [
+        441.04998779296875,
+        22.32501220703125,
+        441.04998779296875,
+        299.5249938964844
+      ],
+      "object_count": 1,
+      "object_indexes": [
+        30
+      ]
+    }
+  ]
+}

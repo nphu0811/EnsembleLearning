@@ -1,0 +1,150 @@
+[
+  {
+    "kind": "figure",
+    "label": "fig:stacking-protocol",
+    "source": "report/chapters/theoretical_foundations.tex",
+    "line": 65,
+    "graphics": [],
+    "body": "[htbp]\n\\centering\n\\fcolorbox{researchred!40}{white}{\\begin{minipage}{0.9\\linewidth}\\centering\n\\textbf{Official TRAIN: phát triển mô hình}\\\\[3mm]\n$\\downarrow$\\\\[1mm]\nK-fold OOF: LR \\quad DT \\quad RF\\\\[2mm]\n$\\downarrow$\\\\[1mm]\nMa trận xác suất OOF $\\longrightarrow$ Meta Logistic Regression\\\\[2mm]\n$\\downarrow$\\\\[1mm]\n\\textbf{Đóng băng candidate và threshold}\\\\[2mm]\n$\\downarrow$\\\\[1mm]\n\\textcolor{researchred}{\\textbf{Official TEST: đánh giá một lần sau freeze}}\n\\end{minipage}}\n\\caption{Sơ đồ nguyên lý Stacking/OOF và ranh giới official TEST. Hình chỉ minh họa giao thức, không chứng minh nested validation đầy đủ.}\n\\label{fig:stacking-protocol}\n"
+  },
+  {
+    "kind": "table",
+    "label": "tab:dist-normal-attack",
+    "source": "report/chapters/dataset_eda.tex",
+    "line": 7,
+    "graphics": [],
+    "body": "[htbp]\\centering\n\\caption{Phân bố hai lớp của các tập UNSW-NB15 chính thức.}\n\\label{tab:dist-normal-attack}\n\\begin{tabular}{lrrrr}\\toprule\nTập & Normal & Attack & Tổng & Attack (\\%)\\\\\\midrule\nTRAIN & 56\\,000 & 119\\,341 & 175\\,341 & 68.06\\\\\nTEST & 37\\,000 & 45\\,332 & 82\\,332 & 55.06\\\\\\bottomrule\n\\end{tabular}\n"
+  },
+  {
+    "kind": "figure",
+    "label": "fig:eda-binary",
+    "source": "report/chapters/dataset_eda.tex",
+    "line": 18,
+    "graphics": [
+      "../results/eda/unsw_nb15/figures/fig01_binary_class_distribution.pdf"
+    ],
+    "body": "[htbp]\n\\centering\n\\includegraphics[width=0.86\\textwidth]{../results/eda/unsw_nb15/figures/fig01_binary_class_distribution.pdf}\n\\caption{Phân bố nhãn Normal/Attack trong official TRAIN và TEST, biểu đồ phân bố lớp từ kết quả khảo sát dữ liệu.}\n\\label{fig:eda-binary}\n"
+  },
+  {
+    "kind": "figure",
+    "label": "fig:eda-attackcats",
+    "source": "report/chapters/dataset_eda.tex",
+    "line": 28,
+    "graphics": [
+      "../results/eda/unsw_nb15/figures/fig02_attack_category_distribution.pdf"
+    ],
+    "body": "[htbp]\n\\centering\n\\includegraphics[width=0.94\\textwidth]{../results/eda/unsw_nb15/figures/fig02_attack_category_distribution.pdf}\n\\caption{Số lượng bản ghi theo \\texttt{attack\\_cat} của hai tập. Trong nghiên cứu hiện tại, đây là phân tích nhãn thật chứ không phải kết quả một mô hình multiclass.}\n\\label{fig:eda-attackcats}\n"
+  },
+  {
+    "kind": "figure",
+    "label": "fig:eda-separation",
+    "source": "report/chapters/dataset_eda.tex",
+    "line": 42,
+    "graphics": [
+      "../results/eda/unsw_nb15/figures/fig03_numeric_class_separation.pdf"
+    ],
+    "body": "[htbp]\n\\centering\n\\includegraphics[width=0.96\\textwidth]{../results/eda/unsw_nb15/figures/fig03_numeric_class_separation.pdf}\n\\caption{Khảo sát mức tách biệt Normal/Attack ở một số feature số trên tập huấn luyện. Không dùng biểu đồ này để suy ra quan hệ nhân quả.}\n\\label{fig:eda-separation}\n"
+  },
+  {
+    "kind": "figure",
+    "label": "fig:eda-correlation",
+    "source": "report/chapters/dataset_eda.tex",
+    "line": 52,
+    "graphics": [
+      "../results/eda/unsw_nb15/figures/fig04_numeric_correlation_heatmap.pdf"
+    ],
+    "body": "[htbp]\n\\centering\n\\includegraphics[width=0.96\\textwidth]{../results/eda/unsw_nb15/figures/fig04_numeric_correlation_heatmap.pdf}\n\\caption{Ma trận tương quan các feature số trên tập huấn luyện. Mối tương quan mạnh không tự chứng minh hai biến là tương đương về cơ chế hay có thể loại bỏ không làm mất thông tin.}\n\\label{fig:eda-correlation}\n"
+  },
+  {
+    "kind": "table",
+    "label": "tab:views-test",
+    "source": "report/chapters/dataset_eda.tex",
+    "line": 64,
+    "graphics": [],
+    "body": "[htbp]\\centering\n\\caption{Hai góc nhìn đánh giá cùng thuộc official TEST đã lưu.}\n\\label{tab:views-test}\n\\begin{tabular}{p{0.38\\linewidth}r p{0.39\\linewidth}}\\toprule\nView & Số dòng & Diễn giải hợp lệ\\\\\\midrule\nOfficial TEST & 82\\,332 & Tập holdout chính thức, dùng cho bảng hiệu năng cuối\\\\\nNovel-vector subset & 73\\,791 & TEST sau khi bỏ dòng có vector 42 feature trùng với ít nhất một TRAIN vector\\\\\nOverlap rows & 8\\,541 & TEST có vector feature trùng; không tự đồng nhất với cùng session\\\\\\bottomrule\n\\end{tabular}\n"
+  },
+  {
+    "kind": "table",
+    "label": "tab:frozen-candidates",
+    "source": "report/chapters/methodology.tex",
+    "line": 15,
+    "graphics": [],
+    "body": "[htbp]\n\\centering\n\\small\n\\caption{Cấu hình pipeline cuối theo frozen manifest.}\n\\label{tab:frozen-candidates}\n\\begin{tabular}{lp{9cm}r}\n\\hline\nCandidate & Cấu hình & Feature \\\\\n\\hline\nRF-42 & Random Forest 300 cây, \\texttt{max\\_features}=0.5, \\texttt{min\\_samples\\_leaf}=1 & 42 \\\\\nStacking-42 & Base Logistic Regression ($C=1$, liblinear), Decision Tree (leaf=2), RF như RF-42; meta Logistic Regression ($C=0.5$, liblinear, class weight None), inner CV 3 folds và \\texttt{passthrough}=False & 42 \\\\\nRF-17 & Random Forest 150 cây, \\texttt{max\\_features}=0.5, \\texttt{min\\_samples\\_leaf}=2 & 17 \\\\\n\\hline\n\\end{tabular}\n"
+  },
+  {
+    "kind": "table",
+    "label": "tab:ket-qua-official",
+    "source": "report/chapters/results_discussion.tex",
+    "line": 25,
+    "graphics": [],
+    "body": "[htbp]\n\\centering\n\\small\n\\caption{Hiệu năng nhị phân của ba pipeline trên official TEST (82\\,332 mẫu; threshold 0,5). FPR và FNR tính theo phần trăm.}\n\\label{tab:ket-qua-official}\n\\begin{tabular}{lrrrrrr}\n\\hline\nPipeline & Macro-F1 & MCC & FPR (\\%) & FNR (\\%) & FP & FN \\\\\n\\hline\nRF-42       & 0.863343 & 0.750910 & 27.0351 & 1.6192 & 10003 & 734 \\\\\nStacking-42 & 0.863840 & 0.750497 & 26.6514 & 1.8795 & 9861 & 852 \\\\\nRF-17       & 0.860673 & 0.746881 & 27.6324 & 1.5618 & 10224 & 708 \\\\\n\\hline\n\\end{tabular}\n"
+  },
+  {
+    "kind": "figure",
+    "label": "fig:delta-fp-fn",
+    "source": "report/chapters/results_discussion.tex",
+    "line": 45,
+    "graphics": [
+      "../results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf"
+    ],
+    "body": "[htbp]\n\\centering\n\\includegraphics[width=0.82\\textwidth]{../results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf}\n\\caption{Chênh lệch số lượng lỗi Stacking-42 trừ RF-42 trên cùng official TEST: FP giảm 142 mẫu và FN tăng 118 mẫu. Số lượng quan sát trên benchmark cố định, không phải sai khác trung bình qua nhiều lần huấn luyện.}\n\\label{fig:delta-fp-fn}\n"
+  },
+  {
+    "kind": "table",
+    "label": "tab:chenh-lech-ci",
+    "source": "report/chapters/results_discussion.tex",
+    "line": 55,
+    "graphics": [],
+    "body": "[htbp]\n\\centering\n\\small\n\\caption{Chênh lệch Stacking-42 trừ RF-42 và CI 95\\% paired bootstrap đã lưu; 10\\,000 lần lấy mẫu bootstrap từ các dòng benchmark. Đơn vị là độ chênh tuyệt đối trên thang 0--1.}\n\\label{tab:chenh-lech-ci}\n\\begin{tabular}{lrrr}\n\\hline\nChỉ số & $\\Delta$ & CI dưới 95\\% & CI trên 95\\% \\\\\n\\hline\nMacro-F1 & +0.000497 & -0.000312 & +0.001309 \\\\\nMCC      & -0.000413 & -0.001938 & +0.001140 \\\\\nFPR      & -0.003838 & -0.005243 & -0.002432 \\\\\nFNR      & +0.002603 & +0.001853 & +0.003375 \\\\\n\\hline\n\\end{tabular}\n"
+  },
+  {
+    "kind": "figure",
+    "label": "fig:paired-metrics",
+    "source": "report/chapters/results_discussion.tex",
+    "line": 76,
+    "graphics": [
+      "../results/figures/p16_paired_effects_2026_10_16/paired_effects.pdf"
+    ],
+    "body": "[htbp]\n\\centering\n\\includegraphics[width=0.95\\textwidth]{../results/figures/p16_paired_effects_2026_10_16/paired_effects.pdf}\n\\caption{Bốn hiệu số Stacking-42 trừ RF-42 và CI 95\\% paired bootstrap đã lưu. Giá trị trục ngang là hiệu số nhân 100 (không phải phần trăm thay đổi tương đối). CI của Macro-F1 và MCC chứa 0; FPR giảm, FNR tăng.}\n\\label{fig:paired-metrics}\n"
+  },
+  {
+    "kind": "table",
+    "label": "tab:chi-phi",
+    "source": "report/chapters/results_discussion.tex",
+    "line": 86,
+    "graphics": [],
+    "body": "[htbp]\n\\centering\n\\small\n\\caption{Chi phí được ghi nhận trong lần chạy lịch sử. Kích thước sử dụng đơn vị MiB (byte chia $1024^2$), không phải MB thập phân.}\n\\label{tab:chi-phi}\n\\begin{tabular}{lrrrr}\n\\hline\nPipeline & Số feature & Train (s) & Inference (ms/mẫu) & Size (MiB) \\\\\n\\hline\nRF-42       & 42 & 371.244 & 0.008679 & 205.490 \\\\\nStacking-42 & 42 & 980.170 & 0.012445 & 206.216 \\\\\nRF-17       & 17 & 57.255 & 0.003562 & 105.044 \\\\\n\\hline\n\\end{tabular}\n"
+  },
+  {
+    "kind": "table",
+    "label": "tab:attack-family",
+    "source": "report/chapters/results_discussion.tex",
+    "line": 107,
+    "graphics": [],
+    "body": "[htbp]\n\\centering\n\\small\n\\caption{Số mẫu Attack thực bị dự đoán là Normal, phân nhóm theo \\texttt{attack\\_cat}; đây không phải đánh giá multiclass.}\n\\label{tab:attack-family}\n\\begin{tabular}{lrrrr}\n\\hline\nNhóm Attack & Số mẫu & FN RF-42 & FN Stack-42 & $\\Delta$ FN \\\\\n\\hline\nFuzzers       & 6062  & 621 & 754 & +133 \\\\\nGeneric       & 18871 & 57  & 14  & -43 \\\\\nNhóm còn lại  & 20399 & 56  & 84  & +28 \\\\\n\\hline\nTổng Attack   & 45332 & 734 & 852 & +118 \\\\\n\\hline\n\\end{tabular}\n"
+  },
+  {
+    "kind": "table",
+    "label": "tab:novel-vector",
+    "source": "report/chapters/results_discussion.tex",
+    "line": 130,
+    "graphics": [],
+    "body": "[htbp]\n\\centering\n\\small\n\\caption{Macro-F1 trên official TEST và phần novel-vector của cùng official TEST. Novel-vector \\emph{không} phải bộ dữ liệu kiểm thử độc lập.}\n\\label{tab:novel-vector}\n\\begin{tabular}{lrr}\n\\hline\nPipeline & Official TEST ($n=82332$) & Novel-vector ($n=73791$) \\\\\n\\hline\nRF-42       & 0.863343 & 0.857473 \\\\\nStacking-42 & 0.863840 & 0.858125 \\\\\nRF-17       & 0.860673 & 0.855723 \\\\\n\\hline\n\\end{tabular}\n"
+  },
+  {
+    "kind": "table",
+    "label": "tab:paired-correctness",
+    "source": "report/chapters/validity_discussion.tex",
+    "line": 9,
+    "graphics": [],
+    "body": "[htbp]\\centering\n\\caption{Tính đúng/sai của RF-42 và Stacking-42 theo từng cặp dự đoán, official TEST.}\n\\label{tab:paired-correctness}\n\\begin{tabular}{p{0.36\\linewidth}rr}\\toprule\n & Stacking đúng & Stacking sai\\\\\\midrule\nRF đúng & 71\\,104 & 491\\\\\nRF sai & 515 & 10\\,222\\\\\\bottomrule\n\\end{tabular}\n"
+  },
+  {
+    "kind": "table",
+    "label": "tab:rq-evidence",
+    "source": "report/chapters/validity_discussion.tex",
+    "line": 47,
+    "graphics": [],
+    "body": "[htbp]\\centering\n\\small\n\\caption{Đối chiếu mục tiêu nghiên cứu với kết quả thực nghiệm đã thực hiện.}\n\\label{tab:rq-evidence}\n\\begin{tabularx}{\\linewidth}{p{0.11\\linewidth}X p{0.26\\linewidth}}\\toprule\nCâu hỏi & Bằng chứng thực có & Ranh giới kết luận\\\\\\midrule\nRQ1 & Official paired scores, CI, McNemar & Không xác nhận stable ensemble gain qua repeated training\\\\\nRQ2 & RF-42/RF-17 cost, stable subset & Pipeline comparison, không isolated feature causality\\\\\nRQ3 & Diversity, OOF, voting, stacking & Mô tả liên hệ, không chứng minh cơ chế nhân quả\\\\\nRQ4 & Novel-vector sensitivity & Chưa có temporal/external validation\\\\\nRQ5 & Phân tích imbalance, weight & Chưa có matched controlled resampling\\\\\\bottomrule\n\\end{tabularx}\n"
+  }
+]

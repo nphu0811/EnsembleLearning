@@ -1,0 +1,46 @@
+{
+  "pdf": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\results\\figures\\p16_standalone_2026_10_17_02\\macro_f1_ci.pdf",
+  "auditable": true,
+  "verdict": "FIX BEFORE DELIVERY",
+  "page_count": 1,
+  "visible_text_box_count": 16,
+  "text_trace_count": 18,
+  "stroke_path_count": 26,
+  "filled_region_count": 23,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 1,
+    "warn": 0,
+    "contained_fill_overlays": 0,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [
+    {
+      "severity": "FAIL",
+      "kind": "text-text",
+      "page": 1,
+      "message": "Text boxes overlap by 6.6% of the smaller box",
+      "text": "Macro-F1 (absolute scale)",
+      "text_bbox": [
+        260.93927001953125,
+        204.19448852539062,
+        377.12060546875,
+        213.19448852539062
+      ],
+      "other_text": "82,332 benchmark rows; stored paired row bootstrap, 10,000 resamples.",
+      "other_bbox": [
+        140.05984497070312,
+        212.60348510742188,
+        433.3304138183594,
+        220.60348510742188
+      ],
+      "object_count": 1,
+      "object_indexes": []
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Nature Figure Rendered Collision Audit
+pdf: C:\Users\admin\Documents\ChatGPT\NCKH\results\eda\unsw_nb15\figures\fig02_attack_category_distribution.pdf
+pages: 1
+visible text boxes: 17
+stroke paths: 44
+
+[FAIL] page 1 text-text: Text boxes overlap by 17.3% of the smaller box — 'DoS'
+  other text: 'Reconnaissance'
+  text bbox: (264.80059814453125, 277.472900390625, 283.5389709472656, 296.2113037109375)
+
+summary: 1 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays
+verdict: FIX BEFORE DELIVERY
+note: contained overlays can be intentional; WARN findings need final-size visual review

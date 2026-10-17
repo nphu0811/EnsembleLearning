@@ -51,3 +51,15 @@ Owner: session agent within explicit autonomous user authorization. Không thay 
 - D25: freeze separate-context AI argument review before reconciliation; preserve r04 draft/review and create r05 revision. ThreeP1/twoP2 addressed and recheck accepted only internal content; author/renderP0 remain open. Evidence qa_logs/r05_review_resolution.md.
 - D26: keep software smoke45/45 distinct from absent final/fullTRAIN model, add planning-only reconstruction contract and NO_GO resource gate; no TEST read/fit or new scientific claim.
 - D27: read-only tracked/archive public triage, no cleanup or history rewrite. Pattern findings require review, not assumed secrets; no automatic approval/publish.
+
+
+## 17/10/2026 — P16/P18/P19 evidence decisions
+
+- D28. Reconcile stale STATE against committed main and actual evidence. Keep267/285entrymatches and281/282historicalmatches visible;deleted historical ZIP is explained by author commitab88db8,not restored or countedPASS.
+- D29. Preserve author-approved37pagePDF by verifiedSHA. Audit actualPDF read-only and create independent alternatives;do not fix embeddedprintfindings by editinglockedreport.
+- D30. DerivedweightedF1 is labelled confusion-countidentity,not newevaluation. NoAUC/PR-AUCrecomputation,predictionCSVorrawTESTread,bootstraporfit.
+- D31. Keep six historicalcollisionFAILflags and failednewlayout/schema/encodingattempts. Finalstandalone03 passesall6;no thresholdweakening orsilent historicalreplacement.
+- D32. P18current12refaudit inherits verifiedmetadata/readingboundaries offline.119PASSmeanscopy/key/contextagreement,notfulltextvalidity ornovelty.
+- D33. P19reviewinventory/READMEdo notgrantlicenses orcloseG0-G6. DeferfinalP20paneluntilitsfixedpacket/inputconditionscanbesatisfied. No humanreviewendorsement claimed.
+
+- D34. Preserve three already tracked historical SMOKE_ONLY binaries; flag P19 release inventory FAIL and absent code license. No new model binaries, deletion or history rewrite. Evidence initial commit c4ed771 and review_inventory validation.

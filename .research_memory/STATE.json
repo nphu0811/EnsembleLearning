@@ -1,11 +1,11 @@
 {
   "schema_version": "1.1",
   "project": "Ensemble Learning for Network Intrusion Detection (NCKH)",
-  "last_updated": "2026-10-16T11:03:09.971559+00:00",
-  "local_session_date": "2026-10-16",
+  "last_updated": "2026-10-17",
+  "local_session_date": "2026-10-17",
   "timezone": "Asia/Saigon",
-  "phase": "P15_PARTIAL; P16/P18/P19_IN_PROGRESS",
-  "current_task": "R05-ASSEMBLY-REVIEW",
+  "phase": "P15_DONE_SCOPED_RECONSTRUCTION;P16_IN_PROGRESS_PRINT_FINDINGS;P18_P19_PARTIAL;P20_DEFERRED",
+  "current_task": "CHECKPOINT_SAVED; next P16 source matrix or P18 reading; P19 release findings open",
   "completed_tasks": [
     "BOOT-01",
     "BOOT-02_STRUCTURAL",
@@ -33,24 +33,36 @@
     "R04-SMOKE-PLAN",
     "R04-ML-SMOKE",
     "R04-DEFENSE-CONTENT",
-    "R05-ASSEMBLY-REVIEW"
+    "R05-ASSEMBLY-REVIEW",
+    "P15_DONE_SCOPED_RECONSTRUCTION",
+    "P16_SUMMARY_AND_ACTUAL_PDF_AUDIT_SCOPED",
+    "P16_SIX_STANDALONE_ALTERNATIVES_SCOPED",
+    "P18_CURRENT_REPORT_OFFLINE_AUDIT_SCOPED"
   ],
   "blocked_tasks": [
     {
-      "id": "REPORT-PDF",
-      "reason": "No TeX tool on PATH; IDS source content pending"
+      "id": "P16_PRINT_REPORT_FINDINGS",
+      "reason": "Locked PDF retains sub8pt chart text,118dpiheatmap and pre-P15provenance; no authorized edits. Faithful standaloneheatmap needsfullTRAINmatrix."
     },
     {
-      "id": "G5",
-      "reason": "Author administrative fields/signatures/applicability unconfirmed"
+      "id": "P18_COMPLETE",
+      "reason": "Closestmethodfulltextsupport/noveltysearch,L03publisherpaginationnotcomplete"
     },
     {
-      "id": "RELEASE",
-      "reason": "Critical G0-G6 gaps; see RELEASE_BLOCKERS.md"
+      "id": "G3_RELEASE",
+      "reason": "Originaltrainingenv/binaryidentityUNKNOWN; modeldistribution/demoacceptanceseparate"
     },
     {
-      "id": "PROP-DOCX",
-      "reason": "Partial prose exists; remaining sections/full review/admin acceptance and artifact dependency loader/render runtime still pending"
+      "id": "G5_G6",
+      "reason": "Proposalform/render,institutionalacceptance/signatures,defenseslides/demo/rightsremainopen"
+    },
+    {
+      "id": "P20_FINAL_PANEL",
+      "reason": "Fixedreviewpacket and finalsource/releaseinputsnotyetcomplete; no panelclaimed"
+    },
+    {
+      "id": "P19_TRACKED_SMOKE_BINARIES",
+      "reason": "Three historical SMOKE_ONLY.joblib tracked since c4ed771; no code LICENSE. Preserve local artifacts; release disposition unresolved."
     }
   ],
   "immutable_decisions": [
@@ -64,40 +76,68 @@
   ],
   "artifact_manifest": [
     {
+      "path": ".gitignore",
+      "sha256": "c23a7ebb6e001aa188c9749619209e5fd6e45db3ee89d5aa21e24f6027f89a36"
+    },
+    {
       "path": ".research_memory/CHANGELOG.md",
-      "sha256": "7a96e1f9b2bbcaa6736c3720cedb921b111118cd2d9d577e98f032fbd528395b"
+      "sha256": "aafe05d197e36ec0b70843d05056f19dbf05e0e325f6f6c4d7c801b868751db4"
     },
     {
       "path": ".research_memory/DECISIONS.md",
-      "sha256": "4cc1289f912955fb533a4a296170e356351faaaa053a3b6b3358784e3e832117"
+      "sha256": "94b27094b26e12259cf3ad825a40daaf0ba86aed95200056c5e20619a80223f8"
     },
     {
       "path": ".research_memory/EVIDENCE_INDEX.csv",
-      "sha256": "ebc3e8123694093641f481bdc8bab1eedbb573faba00f40118a924c946b1b4aa"
+      "sha256": "75b414481e73681b01e476fca8b90128d3dbd35991ef5638c2e504610ab272ef"
     },
     {
       "path": ".research_memory/HANDOFF.md",
-      "sha256": "35324fc9389bb64b5a774330d3e3c03a8468f194137217e0e1d4017b65a4f93f"
+      "sha256": "6ae5572f34bbe237cc0bb487458332f561587b214e088801d0ef2400432f5f11"
     },
     {
       "path": ".research_memory/ISSUE_LOG.md",
-      "sha256": "0ec2a62d642a03c710cc3318a6d80861ca1e35ee9962f3ebb75957eb04a95568"
+      "sha256": "20f314a71b0083e0159aa337756bb164ba21fabf2494d65b9fc493406b2b9593"
     },
     {
       "path": ".research_memory/RESEARCH_CANON.md",
-      "sha256": "2b394964de53702c9ec5067e34871f1003ea2d140b76bb7468fa659313feeb36"
+      "sha256": "4e07dad1ab75a3d896e7c385207e1d82bb18331c7f7d800fe2aa7430083a7685"
     },
     {
       "path": ".research_memory/SKILL_USAGE_LOG.md",
-      "sha256": "9e102649bfcff069a236d1e3db328c538faf34a8f9e83b1466a4a82c8dcfc23e"
+      "sha256": "c3266557325b107c198353c89b54ec870bd0864ef02b37cb1c32a79270efd364"
     },
     {
       "path": ".research_memory/TASK_BOARD.md",
-      "sha256": "f954b62153f27e633ecee254f11444fde88b0d09b3286b014b775e7f00ee6d38"
+      "sha256": "1a3afe732b4d62264b226c6eaae768820a6d5891ba46fea3082d2db761d8a8f9"
     },
     {
       "path": ".research_memory/checkpoint_r03.json",
       "sha256": "37a9ccce0caf797b142f951daa0b232d32ccd9118c53810117e793f33a0ac50d"
+    },
+    {
+      "path": ".research_memory/p16_2026_10_17/STATE_at_entry.json",
+      "sha256": "91388163ddf6aad5ba1c13d65710fdc05b29ea92635765987f19a44dbda7a247"
+    },
+    {
+      "path": ".research_memory/p16_2026_10_17/checkpoint.json",
+      "sha256": "68ad49d6e849d9d70b246ced1912378ba8c848ae6c3c2c8a18ba5677abdb8fc4"
+    },
+    {
+      "path": ".research_memory/p16_2026_10_17/failure_history.json",
+      "sha256": "d40ebe1529ee9009d3e010e9ad85133bee88218586348263c54e2a6e2861edaa"
+    },
+    {
+      "path": ".research_memory/p16_2026_10_17/figure_source_preflight.json",
+      "sha256": "baae8eed04a0be7edb0a251153966461fc70f3bd4144834da1186056c37ec076"
+    },
+    {
+      "path": ".research_memory/p16_2026_10_17/final_validation.json",
+      "sha256": "cfc911510ff86572c9d65687b68e6a30976bf5720745374b9c814fc0050a7209"
+    },
+    {
+      "path": ".research_memory/p16_2026_10_17/report_display_source_map.csv",
+      "sha256": "7df817bd71c9d63fcb48010b09490cee795f96a63802c284b229ac154614d4c0"
     },
     {
       "path": ".research_memory/r04/R04-ASSEMBLY.json",
@@ -150,6 +190,10 @@
     {
       "path": ".research_memory/r05/STATE_at_entry.json",
       "sha256": "8558ce355c413cdb8314ef233b8d250e96ea95fb9f55f9c85c7e4de2f6252c08"
+    },
+    {
+      "path": "README.md",
+      "sha256": "870ad354fdcf1745b0c328a12f7337cb303d9d7622c8a3b2b80c3ae5c7374077"
     },
     {
       "path": "defense/Demo_runbook.md",
@@ -205,7 +249,7 @@
     },
     {
       "path": "docs/PUBLIC_SURFACE_AUDIT_R05.md",
-      "sha256": "8f2ee9c29fc57803bb3ea12d86a46255c2deaa53d64ace2d2f0d5483038527d4"
+      "sha256": "8823b83c63b72b2e3e68fe3d8a4acd9b0648b6b4071a4d1b13290e7e513d8326"
     },
     {
       "path": "docs/R04_TASK_CONTRACTS.md",
@@ -213,11 +257,15 @@
     },
     {
       "path": "docs/R05_TASK_CONTRACT.md",
-      "sha256": "60fae9e205d8d28d0e3aa6a3e158c63a095fe25bedcdaeed4a19451bd89cdb87"
+      "sha256": "ef87d3bfb07e285fb2276cc2a6bd1769e73a9647719f8d7dea6745268e80a4d0"
     },
     {
       "path": "docs/RESUME_AUDIT.md",
       "sha256": "40bd17351afea47d2fecdb59b04fd24c957fcbeefe9f0c11d27a90e350be4e7e"
+    },
+    {
+      "path": "docs/RESUME_AUDIT_2026-10-17_P16.md",
+      "sha256": "acbf2d9dabde11d9fadb1181c25395c5c1266ac879417db8202183cae183e76f"
     },
     {
       "path": "docs/RESUME_AUDIT_R02_2026-10-16.md",
@@ -233,7 +281,7 @@
     },
     {
       "path": "docs/ROADMAP_CURRENT.md",
-      "sha256": "01c1db60b93ee0b5861e641f07485db94507d7c46388429e64b3b3a6c4e48ac9"
+      "sha256": "fe6b4073a51c8e2d3815c6d1cce9146d696fa7ae144f95aedd30138582d7f525"
     },
     {
       "path": "docs/ROADMAP_PHASE_AUDIT_2026-10-07.md",
@@ -284,8 +332,20 @@
       "sha256": "cdd4b23eb48d923e1123f1f186fffb599a2cdb2f3df158f46fd36ed3173bed03"
     },
     {
+      "path": "docs/research/P16_COMPREHENSIVE_QA_2026-10-17.md",
+      "sha256": "23017f5e1028967ff8aa91bbbcd35346c31dba690ae8f3c40502aff9544bc686"
+    },
+    {
       "path": "docs/research/P16_PAIRED_EFFECT_CONTRACT.md",
       "sha256": "707d16803e7629881ab870d473bafea8249b5d149e35be14ccde09fb0eb66b0d"
+    },
+    {
+      "path": "docs/research/P18_CURRENT_REPORT_READING_BOUNDARIES_2026-10-17.md",
+      "sha256": "2f48b722ccd99f7d0edde6548ec732b0f6a38fb83fbee87ad6e2dc3147662154"
+    },
+    {
+      "path": "docs/research/P19_RELEASE_READINESS_2026-10-17.md",
+      "sha256": "6beffd0edde393e860e9b60f321ffbede5123e8c38d51d9b6148ac9eabb3a697"
     },
     {
       "path": "docs/research/PHASE14_ERROR_ANALYSIS_CLOSURE.md",
@@ -309,7 +369,7 @@
     },
     {
       "path": "docs/research/R05_FULL_TRAIN_RECONSTRUCTION_PLAN.md",
-      "sha256": "94f0977d0487a9791f2bcdcda8bb09883bc0da0251373945565740c9bd4aaa0d"
+      "sha256": "03d3de322c6da7b39d856e095ae6b6dc1a9be487e3f3005613c272fbbcb409bf"
     },
     {
       "path": "docs/research/REPRODUCIBILITY_MAP.md",
@@ -330,6 +390,22 @@
     {
       "path": "literature/refs_verified_subset.bib",
       "sha256": "d49ced9bd383b1f19856a8bcdf2af5b8e926b5129855e4ec61c4a813875bd585"
+    },
+    {
+      "path": "literature/report_audit_2026_10_17_01/citation_claim_contexts.json",
+      "sha256": "734e294531ed858ea210787592104bb1610d955e9fd186a774b5359d276c2f7a"
+    },
+    {
+      "path": "literature/report_audit_2026_10_17_01/reference_reading_ledger.csv",
+      "sha256": "ce6fc8e445bc316e56b91765438175b16f96eee0e5d340fd329284197d69ebf4"
+    },
+    {
+      "path": "literature/report_audit_2026_10_17_01/source_manifest.json",
+      "sha256": "ad2f103bce7b5f3a72937607c3debdf9a71b8e8a28b8224aea9ce2bee8e2ce61"
+    },
+    {
+      "path": "literature/report_audit_2026_10_17_01/validation.json",
+      "sha256": "d35cced4aa3fed504490166178878d4deb34e1a1e111d4d79b6df9374af63622"
     },
     {
       "path": "literature/resume_r02_2026_10_16/DOMESTIC_SOURCES.md",
@@ -677,7 +753,7 @@
     },
     {
       "path": "proposal/researchwrite/nckh-ids/07_remaining_work_feasibility.md",
-      "sha256": "059fcdd405dcadc5873b9c412d4c8ba453d85a120069257ac4e103fbacafedd5"
+      "sha256": "00ecb2566f4759903c06c75c08887ee322ab904a5b3383960cedddc54fb9aadd"
     },
     {
       "path": "proposal/researchwrite/nckh-ids/drafts/De_cuong_noi_dung_review_r04.md",
@@ -773,15 +849,15 @@
     },
     {
       "path": "proposal/researchwrite/nckh-ids/qa_logs/r05_assembled_argument_recheck.md",
-      "sha256": "0144da0ae80dbf6afe468ab09d30e7aa67fb3d5da199a932163d091382e0bca5"
+      "sha256": "8b256f4e04c38ace8877a70588aeb2de7b0054a27c174e869cde92075817edb5"
     },
     {
       "path": "proposal/researchwrite/nckh-ids/qa_logs/r05_assembled_argument_review.md",
-      "sha256": "368996924d05576ad2d740ad3c4c7f395f93c1b97474be7e9b15f2051dfebdc0"
+      "sha256": "5a11b4fe4db8ea636f11db32a0b3e6e193d7596f25662293da18589dc00cf3a3"
     },
     {
       "path": "proposal/researchwrite/nckh-ids/qa_logs/r05_review_resolution.md",
-      "sha256": "7c6ac56be92626bc244ec403f3d9017c2c26fcc71eb77982ebf36c4e1c5be0db"
+      "sha256": "cd6308edc156f790d82f037f96b53a03799fcdc078e3896ec6277367249df690"
     },
     {
       "path": "proposal/researchwrite/nckh-ids/qa_logs/r05_validation_initial.json",
@@ -793,7 +869,7 @@
     },
     {
       "path": "proposal/researchwrite/nckh-ids/revision_briefs/r05_assembly_brief.md",
-      "sha256": "48692d317898dac264140e618a814c795984ef3d0e72dff4745ae8ebd36b0166"
+      "sha256": "cf2c694443d38e061623cbe373d43632ff4bef2cda97064a295125d733efd9da"
     },
     {
       "path": "proposal/researchwrite/nckh-ids/state.json",
@@ -813,7 +889,27 @@
     },
     {
       "path": "release/RELEASE_BLOCKERS.md",
-      "sha256": "af5e0090b6b32ac2e474b2e0c2b8d87342da28887c78943e3d1db5ecd225a31b"
+      "sha256": "811360cecbf5ff78f08fbed9433323b85450cdfebd9f0b24b305ef952d3edf45"
+    },
+    {
+      "path": "release/review_inventory_2026_10_17_01/review_inventory.csv",
+      "sha256": "386b87d06ab3fdf1b07088096d37569a5e969a2ec20866097ad289c6ccc1cc99"
+    },
+    {
+      "path": "release/review_inventory_2026_10_17_01/validation.json",
+      "sha256": "ec5cc34e2fd58f2a55ec09f7fda1cee2557291c971a45734c71990c0c3fba495"
+    },
+    {
+      "path": "release/review_inventory_2026_10_17_02/review_inventory.csv",
+      "sha256": "9d44e01a6190e177fec519ec84458703f5e6a1080d5061827342af453c1295f2"
+    },
+    {
+      "path": "release/review_inventory_2026_10_17_02/validation.json",
+      "sha256": "47512f8d47fdf6348ac898223adc41f9fb3711f3a356c2abf1450727b5c4fa98"
+    },
+    {
+      "path": "reproducibility/requirements-p16-qa-py311-NOT-TRAINING.txt",
+      "sha256": "110490bee5e1537c0bbd6dc97a5ce8f2ecd2fb7ed93cb2632cf73801da7e871e"
     },
     {
       "path": "reproducibility/requirements-r04-smoke-py311-NOT-ORIGINAL.txt",
@@ -862,6 +958,786 @@
     {
       "path": "results/figures/p16_paired_effects_2026_10_16/source_preflight.json",
       "sha256": "3fd918881ebf5241acd8502d30d635b5811d7c0543bfa131ba814c5bf166b2c1"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/FAILURE.md",
+      "sha256": "1973eaea11d6c8e5fa0572c65681dd766f2fa8ce653ee34628465ac9d8d49740"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/attack_family_wilson.alignment.json",
+      "sha256": "09161c8cf473e6619825798c46e478c9061950afdb817ec3005a9772f733834c"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/attack_family_wilson.pdf",
+      "sha256": "435cfeec323d55d7244a096e2fd3b0508c8089cf40a386b46a58ecad2a444065"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/attack_family_wilson.png",
+      "sha256": "5cd6f3607e9befeed8dc0f0ff962d68d619e3961e59c27213247fd738cd6129a"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/attack_family_wilson.svg",
+      "sha256": "eb7929211c970adec0738fee773eabb7e560c405f64c17929dcff404f1d95c11"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/fpr_fnr_tradeoff.alignment.json",
+      "sha256": "fd5e6ddd7e0dc40bf52fb358ca6f613a29867d01ccb5d6b8ac2ac5222c54d418"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/fpr_fnr_tradeoff.pdf",
+      "sha256": "790d04cb652d465aa81a605b45be7d667a70f33c373fc330185f1b0c05c1fb47"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/fpr_fnr_tradeoff.png",
+      "sha256": "efa79964768a990531530358058b8774c13e6bc5135a0fc91e93e4c0718c618f"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/fpr_fnr_tradeoff.svg",
+      "sha256": "2fac204a490e2217a06a044365e7b9e1d07765396588948e7838dc3ecc65b1dc"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/macro_f1_ci.alignment.json",
+      "sha256": "b6549dd134cdbb7c3077f9dc90440dc127a36c71963c1e2d317ef1124ce7e0c5"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/macro_f1_ci.pdf",
+      "sha256": "d110d783b5fd4fdfe844ea8d2f4e79235b290ec11a38eb7d128a61e0bcee66d8"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/macro_f1_ci.png",
+      "sha256": "3a243984de0bbab67a2ba661457bf56b00f47569670198280f088555797de2a8"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/macro_f1_ci.svg",
+      "sha256": "7a0a9e42e5a34e9f45ed01e0e12c51ad46262ecc6447932c9d6f3fe8df0eb53e"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/mcc_ci.alignment.json",
+      "sha256": "b6549dd134cdbb7c3077f9dc90440dc127a36c71963c1e2d317ef1124ce7e0c5"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/mcc_ci.pdf",
+      "sha256": "294ad746673bb0b7c37bfd4c013da0b6c1215f99a596708c09a92d16b07bfdca"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/mcc_ci.png",
+      "sha256": "27862c060eb948d1e6c1e1fd226190dbfbbf25e3be0f60451f07446ec447e649"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/mcc_ci.svg",
+      "sha256": "2c3956a933167e020a5d773d8539b0150be86e24fad3761aee01014123e6c6b9"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/performance_cost.alignment.json",
+      "sha256": "fd5e6ddd7e0dc40bf52fb358ca6f613a29867d01ccb5d6b8ac2ac5222c54d418"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/performance_cost.pdf",
+      "sha256": "0c865e45ed4a5d7b1b2f8d13eff14e20f37a12306cf56f9147ec237531e21e1c"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/performance_cost.png",
+      "sha256": "6617f4905e242238187afed11c97e8f8c8e7d10b00200fc2cfc231810e6ea35a"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/performance_cost.svg",
+      "sha256": "16541913163f1e9fce74502228580782976a553ec6d472546228449fe93e8c81"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/source_attack_category_distribution.csv",
+      "sha256": "3f3fd32cdb740bca35f8a6f2d012733dd010057fdf6eb66de2215c4a354bffec"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/source_attack_family_miss_rate_ci.csv",
+      "sha256": "086d65e4f51f8a168d3e17de405c7844c7570770168ebea58fa45b08c2cfcf5d"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/source_bootstrap_metric_ci.csv",
+      "sha256": "f91a2ea88fec9014493555e2fcbf44038119477d0c5c08289b29f37ed8b3503f"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/source_cost_metrics.csv",
+      "sha256": "17961b9e7e09e3d252a6e5700a257bcd13236d98dcbc45cf24f1e9b4587f963b"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_01/source_recomputed_point_metrics.csv",
+      "sha256": "d709908a621d0c4aeba43d7ca135c9b401745f6c5104f96c88e08ce885421717"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/FAILURE.md",
+      "sha256": "a33baf40bed637705775c8eb6a0147aeba851e6fcc835ca8f3b6c4ea0a4267a6"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/attack_family_wilson.alignment.json",
+      "sha256": "09161c8cf473e6619825798c46e478c9061950afdb817ec3005a9772f733834c"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/attack_family_wilson.pdf",
+      "sha256": "92211d04438ecb881ee78478294ce350c02138659e6d5c7e5ecba064b325ead1"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/attack_family_wilson.png",
+      "sha256": "5cd6f3607e9befeed8dc0f0ff962d68d619e3961e59c27213247fd738cd6129a"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/attack_family_wilson.svg",
+      "sha256": "1d16c3bd51ac185a17a56dc6adda38375eed31525fbcc267520144cc942fac26"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/category_distribution.alignment.json",
+      "sha256": "718611b4808086ce54ac55eacc2e589be1fa1f5b8166827e494e093dfc49a58e"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/category_distribution.pdf",
+      "sha256": "c107926e2126810409dff32b209ffc2c63b3523eee2e592e8657d465b7123b72"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/category_distribution.png",
+      "sha256": "922e5612272ea4548305d6429f84f1eb8303dc94a767fdd4fb3e591d9ff1e0c8"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/category_distribution.svg",
+      "sha256": "6eeb4919624e797b4efa42d8ed79f95238b63c0f3305690c72745ebddc5f13ce"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/figure_inventory.json",
+      "sha256": "e98886fbe5fdcb0c0de18a58253e2d6d8569e78b715795716f80d572c4567cee"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/fpr_fnr_tradeoff.alignment.json",
+      "sha256": "fd5e6ddd7e0dc40bf52fb358ca6f613a29867d01ccb5d6b8ac2ac5222c54d418"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/fpr_fnr_tradeoff.pdf",
+      "sha256": "771e79228bb9868c2bec4a0bc6d07257f5bdcd33e67443b9607aa0e6a9cb26f0"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/fpr_fnr_tradeoff.png",
+      "sha256": "efa79964768a990531530358058b8774c13e6bc5135a0fc91e93e4c0718c618f"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/fpr_fnr_tradeoff.svg",
+      "sha256": "a64ce9413fa700ea5745c8cbf1c6724305d130f3c3928ff0834dcf5de1452673"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/macro_f1_ci.alignment.json",
+      "sha256": "b6549dd134cdbb7c3077f9dc90440dc127a36c71963c1e2d317ef1124ce7e0c5"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/macro_f1_ci.pdf",
+      "sha256": "b1d18b9640fdb6d75cb6d808b20777e11d55f8fa36964e6166ff7237198c7751"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/macro_f1_ci.png",
+      "sha256": "3a243984de0bbab67a2ba661457bf56b00f47569670198280f088555797de2a8"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/macro_f1_ci.svg",
+      "sha256": "2299379f51c4bc7de5a69a6c01ecca984c1b47b063559c1428b2d06d477c5fce"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/mcc_ci.alignment.json",
+      "sha256": "b6549dd134cdbb7c3077f9dc90440dc127a36c71963c1e2d317ef1124ce7e0c5"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/mcc_ci.pdf",
+      "sha256": "478f9df9a71223b4b2a4b4b844c71dc2349aa587489a0650d96e1c8e111d99fd"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/mcc_ci.png",
+      "sha256": "27862c060eb948d1e6c1e1fd226190dbfbbf25e3be0f60451f07446ec447e649"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/mcc_ci.svg",
+      "sha256": "6f3aff144e247d795e4a4ecdc4105405e02a37cd6ae2dc684cafd992cf5f2e42"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/performance_cost.alignment.json",
+      "sha256": "fd5e6ddd7e0dc40bf52fb358ca6f613a29867d01ccb5d6b8ac2ac5222c54d418"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/performance_cost.pdf",
+      "sha256": "5e0106e6e70c1fedfb71f95bc451b01abaeda6be4484c6174b5c5d5684494b7c"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/performance_cost.png",
+      "sha256": "6617f4905e242238187afed11c97e8f8c8e7d10b00200fc2cfc231810e6ea35a"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/performance_cost.svg",
+      "sha256": "71fc1d1b6bab78051f1002ec3957c2f63ee0b473cdb5c41c6b459c68b16b192f"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/source_attack_category_distribution.csv",
+      "sha256": "3f3fd32cdb740bca35f8a6f2d012733dd010057fdf6eb66de2215c4a354bffec"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/source_attack_family_miss_rate_ci.csv",
+      "sha256": "086d65e4f51f8a168d3e17de405c7844c7570770168ebea58fa45b08c2cfcf5d"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/source_bootstrap_metric_ci.csv",
+      "sha256": "f91a2ea88fec9014493555e2fcbf44038119477d0c5c08289b29f37ed8b3503f"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/source_cost_metrics.csv",
+      "sha256": "17961b9e7e09e3d252a6e5700a257bcd13236d98dcbc45cf24f1e9b4587f963b"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/source_manifest.json",
+      "sha256": "63bfa8b11d841a3ddfbe30329c29e133d1bf6e7d410f860f28c134eb65fa91b9"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_02/source_recomputed_point_metrics.csv",
+      "sha256": "d709908a621d0c4aeba43d7ca135c9b401745f6c5104f96c88e08ce885421717"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.alignment.json",
+      "sha256": "09161c8cf473e6619825798c46e478c9061950afdb817ec3005a9772f733834c"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.pdf",
+      "sha256": "1f821ca810ea89668e6485e24a056091336d2f64e9dd3dabc3c89c290c69f722"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.png",
+      "sha256": "5cd6f3607e9befeed8dc0f0ff962d68d619e3961e59c27213247fd738cd6129a"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/attack_family_wilson.svg",
+      "sha256": "a28d7b7e959a63ec1d2528a49b63580e7599c8e776316a2381bba9ffb2e5bedf"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/category_distribution.alignment.json",
+      "sha256": "718611b4808086ce54ac55eacc2e589be1fa1f5b8166827e494e093dfc49a58e"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/category_distribution.pdf",
+      "sha256": "b86da41b717d3fe9b111c239f285f0109fb7a616abfb32951a03b6a2a0cfa0e3"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/category_distribution.png",
+      "sha256": "922e5612272ea4548305d6429f84f1eb8303dc94a767fdd4fb3e591d9ff1e0c8"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/category_distribution.svg",
+      "sha256": "d4101f60bb5022f7d492d88be87935b6565758c9371e99f913942b893e785afe"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/figure_inventory.json",
+      "sha256": "6aab2bb77806c42de2698cd81786e87f2c604737362fcade18adf327e6189f0a"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/fpr_fnr_tradeoff.alignment.json",
+      "sha256": "c00e039d41c397e2b7bcde8cd954d33c3b475906f993c2a44a04e60f52f01c46"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/fpr_fnr_tradeoff.pdf",
+      "sha256": "e44d14bd38fa44529455d6cffb9fde88a37b053a9166ca0f6bb1d1db613641ff"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/fpr_fnr_tradeoff.png",
+      "sha256": "09fe76995d294acbf292eb25dec65d029839b018e4b334fba95d35db0e3cb977"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/fpr_fnr_tradeoff.svg",
+      "sha256": "f741e3f2529b95d645264ec8f127e8610675bf690abe060bd4313d50fb79c18e"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/macro_f1_ci.alignment.json",
+      "sha256": "29e847bff6ecff573a3f8e1356a571d6ee0c7db98bef0b473211e1d2f7b5dfc5"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/macro_f1_ci.pdf",
+      "sha256": "b17584b20740a7e12bf819c59eee36c96be872d298857c78e56947db456e94ea"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/macro_f1_ci.png",
+      "sha256": "4656c9c79a1eb5bd68cd43878bb474bb4c246e76b39d97f2691e2b418e926dd9"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/macro_f1_ci.svg",
+      "sha256": "280348b4a04468ad16dee634c0186d41c29e7fdea5f87ce9ff6b8e7e109ae191"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/mcc_ci.alignment.json",
+      "sha256": "29e847bff6ecff573a3f8e1356a571d6ee0c7db98bef0b473211e1d2f7b5dfc5"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/mcc_ci.pdf",
+      "sha256": "0b2361a3505db0903f717b3ef5a60e468c01c9921e29c6039cbec1abf283cb68"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/mcc_ci.png",
+      "sha256": "382b7ad02067e00d5c66e81eb5ac57a0d45aa5f46acf01642b6ef592768204b6"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/mcc_ci.svg",
+      "sha256": "155a9efb6c2670fde40c277117e74341d2e40d27a6539f2f7131f748a427451c"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/performance_cost.alignment.json",
+      "sha256": "c00e039d41c397e2b7bcde8cd954d33c3b475906f993c2a44a04e60f52f01c46"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/performance_cost.pdf",
+      "sha256": "18fdc1d6fd9784613108f3e6900c83ff0d9d98251cd91623ff801c6b2f3d308e"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/performance_cost.png",
+      "sha256": "aa3ad995382f79a415302ffb5d9c740cc8a6f9327d75c654fde66245700b958a"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/performance_cost.svg",
+      "sha256": "18327f16ab2e5f0269b2609a2b639e60e4727781679e2f7ea4ab265e4a376a0c"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/source_attack_category_distribution.csv",
+      "sha256": "3f3fd32cdb740bca35f8a6f2d012733dd010057fdf6eb66de2215c4a354bffec"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/source_attack_family_miss_rate_ci.csv",
+      "sha256": "086d65e4f51f8a168d3e17de405c7844c7570770168ebea58fa45b08c2cfcf5d"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/source_bootstrap_metric_ci.csv",
+      "sha256": "f91a2ea88fec9014493555e2fcbf44038119477d0c5c08289b29f37ed8b3503f"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/source_cost_metrics.csv",
+      "sha256": "17961b9e7e09e3d252a6e5700a257bcd13236d98dcbc45cf24f1e9b4587f963b"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/source_manifest.json",
+      "sha256": "63bfa8b11d841a3ddfbe30329c29e133d1bf6e7d410f860f28c134eb65fa91b9"
+    },
+    {
+      "path": "results/figures/p16_standalone_2026_10_17_03/source_recomputed_point_metrics.csv",
+      "sha256": "d709908a621d0c4aeba43d7ca135c9b401745f6c5104f96c88e08ce885421717"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/audit.json",
+      "sha256": "57c31f247ac578db0b17b8c9c99c2806c4eb261d479d18762468dcd6bc40625e"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/derived_metric_identities.csv",
+      "sha256": "d5c354d388ddff15cb6292b3ac1e70e2c3ff34ec9ac7add0589f1542680bd0d8"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/display_inventory.json",
+      "sha256": "a8a4943ba5ccb689480e9ab8528327d96101021e9e8e21bb11af41543ff789c0"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/error_tradeoff.preview.png",
+      "sha256": "c12f09f262279aeb2c72ca854d2e8d12fe3aca994b8e96e0c775f191a3e440dc"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig01_binary_class_distribution.preview.png",
+      "sha256": "5abf229ab7243dea311085492daaa4c30499d3598086c43d098d111c545468e2"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig01_official_macro_f1_ci.preview.png",
+      "sha256": "484a85587af785015964f4c36e578a4aa0ce0b69540fde2417ab5f9aede6c8a1"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig02_attack_category_distribution.preview.png",
+      "sha256": "1931517c32fa62dd00a089ebd1515287f00977e93e96366e8b89ffe020a71468"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig02_official_mcc_ci.preview.png",
+      "sha256": "a05509018643d3e155e7b0a718015c174d87a6a8fc47efa7b5e117bbd54e8e51"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig03_fpr_fnr_tradeoff.preview.png",
+      "sha256": "279f50303ac84c4b3c12ca2e6710737c3fe9bd31501bbd9d76479019fcbf49a7"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig03_numeric_class_separation.preview.png",
+      "sha256": "d5a00694c91531d9e0c4e1b80075bcd38c0648b27adaa0fdc3ef8a4d25bbe34b"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig04_macro_f1_vs_training_cost.preview.png",
+      "sha256": "18c81d59efb2aed29c4eea61d3f9b2414ea77cdac0f36266220d061911767aff"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig04_numeric_correlation_heatmap.preview.png",
+      "sha256": "ba9d2635aed51aef5a9fb0983bf191bee2a093ab2be268384d471fe4168ce9bc"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig05_official_vs_novel_macro_f1.preview.png",
+      "sha256": "ab73c5045de1b552ce21fc11e7cd60317b2c861c46a96e1099dc5eab7e921089"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/fig06_attack_family_miss_rate_ci.preview.png",
+      "sha256": "0015b1de23f497db7f2d06b75dc61ccb29851da1f6fb77d5be2b34cd2d1bb9cc"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/paired_effects.preview.png",
+      "sha256": "9dc5f8e5d5dd4ab7094e69c39bc8019af070a0fd9984c78b234c4c5216c1cead"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/pdf_inventory.json",
+      "sha256": "2c69ca54f79fb94c989a5252e53fff0ff9ff9243720f42f7ad0bc0d5199a8837"
+    },
+    {
+      "path": "results/reproducibility/p16_audit_2026_10_17_01/source_manifest.json",
+      "sha256": "9531e9b6f3412b2d9b2974e00bc468d6e2822d354902fba36a63d60e16d04996"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_01/error_tradeoff.collision.json",
+      "sha256": "b74d67b8025a3532c6e507272f287a35db1decc142a9735198b89f4ab3f3e6de"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_01/fig01_binary_class_distribution.collision.json",
+      "sha256": "8be5ef17f1efd03436d2988958e23b2aeb27a9490c45e5798b2e1400a07d24f6"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_01/fig01_official_macro_f1_ci.collision.json",
+      "sha256": "7e6ef0689e4437dd1ae7b2da6c8e628070b8c9d6c2bd50e45ed4c2ecf70cf3a1"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_01/fig02_attack_category_distribution.collision.json",
+      "sha256": "92ac40262561de9e1d838ed60dd3e66565e867276ca68e35ab8ee20844009ca0"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_01/fig03_numeric_class_separation.collision.json",
+      "sha256": "47ab53c9e4a683b7d03c5f4f543f2f01c5cd107741159d08c722246a6e15b701"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_01/fig04_numeric_correlation_heatmap.collision.json",
+      "sha256": "6296a9c20daa6f40d70c1d217117462c8aabe6cbae6cde2ded495cb7751fdc78"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_01/paired_effects.collision.json",
+      "sha256": "2c935f8edaff063f6fbf803fc0da5f0f5d2e2265377f6a5988afe40bffdce233"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/error_tradeoff.collision.json",
+      "sha256": "b74d67b8025a3532c6e507272f287a35db1decc142a9735198b89f4ab3f3e6de"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/error_tradeoff.collision.txt",
+      "sha256": "8f61a7a8c714b46935084253259a766654e3ee1b293a6e0d2798c6617273977c"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/error_tradeoff.text.txt",
+      "sha256": "4626747f3882740f46b5175a8f1c21d5ced854ec1f380efdc08f098428fdce12"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig01_binary_class_distribution.collision.json",
+      "sha256": "8be5ef17f1efd03436d2988958e23b2aeb27a9490c45e5798b2e1400a07d24f6"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig01_binary_class_distribution.collision.txt",
+      "sha256": "fb838289b8f8bc69dd19c73f6306f79125c54fce3a3de41841c22a42c75823e7"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig01_binary_class_distribution.text.txt",
+      "sha256": "56e7576b14142fbd59b4427307c23aa4d42fa6f87357010ef0738c282d80cf53"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig01_official_macro_f1_ci.collision.json",
+      "sha256": "7e6ef0689e4437dd1ae7b2da6c8e628070b8c9d6c2bd50e45ed4c2ecf70cf3a1"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig01_official_macro_f1_ci.collision.txt",
+      "sha256": "8def408e05e66aac05896778d7c3c9946cb1fd437b8bdc65b30bf830cda3df9b"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig01_official_macro_f1_ci.text.txt",
+      "sha256": "8232f58a99bf317922b7a6c92dc785f6ba9f7548e1159209374d97403e6f8dbb"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig02_attack_category_distribution.collision.json",
+      "sha256": "92ac40262561de9e1d838ed60dd3e66565e867276ca68e35ab8ee20844009ca0"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig02_attack_category_distribution.collision.txt",
+      "sha256": "090f2c281cca0dadbfb37349e4344d713e83187c333f22696c030be737c8b4a3"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig02_attack_category_distribution.text.txt",
+      "sha256": "894bcca84d120ac0e6e089d8dddf12dc54b6a177d014ac79ac4cb0e866ff5379"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig02_official_mcc_ci.collision.json",
+      "sha256": "8731ba2caaa8203588c2aca6b9c93fe177fdfdb78e614e2c47f09e8adac47d30"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig02_official_mcc_ci.collision.txt",
+      "sha256": "e42aaab6d3ab44e19fa9ead3c066e8d86e4ee1800b3904bd6a6b49418287ceea"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig02_official_mcc_ci.text.txt",
+      "sha256": "fbcb38e781592034d80cb54eba62a007b484dcec739c91587a74cc0d56567182"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig03_fpr_fnr_tradeoff.collision.json",
+      "sha256": "211443e848635f8f5eafc684ebfefd4af1dfcddf197ba404198c5a9babd3c7cb"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig03_fpr_fnr_tradeoff.collision.txt",
+      "sha256": "591a70fe5581a690c6c6d4a6528ad27b2b936c2b1eb18c04fe7e04291947ba76"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig03_fpr_fnr_tradeoff.text.txt",
+      "sha256": "f592d183bcfa8319c6e645f1272b1edee86abe1d22695c3fb20b5ca19798130f"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig03_numeric_class_separation.collision.json",
+      "sha256": "47ab53c9e4a683b7d03c5f4f543f2f01c5cd107741159d08c722246a6e15b701"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig03_numeric_class_separation.collision.txt",
+      "sha256": "d1d9643b2cf1653c79174ce053020afa4bd23a3e328821d2df5975a55a258f55"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig03_numeric_class_separation.text.txt",
+      "sha256": "a5f36073942f485275776d304b1d5c22d81efbb685cdca8e8500b80a476fed7f"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig04_macro_f1_vs_training_cost.collision.json",
+      "sha256": "0ad7c18ed12a3a58e9a353f6513d0906b8881a3a8f02ff0bc8db957794aeabb8"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig04_macro_f1_vs_training_cost.collision.txt",
+      "sha256": "f75724c0bc851deaff63269a646b0c8fb217d8c9d9f4eeab615d6726740ad466"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig04_macro_f1_vs_training_cost.text.txt",
+      "sha256": "701ac3448e29fd0f0cf26b04c4e90829f96b904dd6ba005991a90160b29e84b7"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig04_numeric_correlation_heatmap.collision.json",
+      "sha256": "6296a9c20daa6f40d70c1d217117462c8aabe6cbae6cde2ded495cb7751fdc78"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig04_numeric_correlation_heatmap.collision.txt",
+      "sha256": "73ce07e3a1cf8176f58fd9bef00aa12d4d11ac33e3242443ff2f179761cd7bd0"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig04_numeric_correlation_heatmap.text.txt",
+      "sha256": "dab62816222b0c998f10b82829621107cf4f81454bab3db5a3072d798df9c0c4"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig05_official_vs_novel_macro_f1.collision.json",
+      "sha256": "74e9a1b5f762849658a7ab0f9fc10793bb07866ec0b867bd33fab57c06d54def"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig05_official_vs_novel_macro_f1.collision.txt",
+      "sha256": "1f4ff3307fd0704f88647ca54105f9345c5d63034ad8cfd2079f0a3b94cd9a93"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig05_official_vs_novel_macro_f1.text.txt",
+      "sha256": "9b33568d62b11368e7f757ecf23e301f45cc73fcb82d32236aa03b7277bccc7f"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig06_attack_family_miss_rate_ci.collision.json",
+      "sha256": "016657c2f963dfffb423e416c6ca796eb918805a07ef83858cd950c3fa31abde"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig06_attack_family_miss_rate_ci.collision.txt",
+      "sha256": "cd5d2942d9c2705c58cdc40526e61e87a8a1397f6ed6739f58f9a3488060dd4d"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/fig06_attack_family_miss_rate_ci.text.txt",
+      "sha256": "0a162af75ec39b7d74f7b13a684923aa7b3d14a3ba7974ffed0617cbafdd71bd"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/paired_effects.collision.json",
+      "sha256": "2c935f8edaff063f6fbf803fc0da5f0f5d2e2265377f6a5988afe40bffdce233"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/paired_effects.collision.txt",
+      "sha256": "ee8d0a897c38ed1705e89f1774b88cacf53e0e83b482c77644a80140d41c5563"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/paired_effects.text.txt",
+      "sha256": "8e36e201e76c0bdc526eecaf88667087a0e87b82936663f5a7588834f054a43b"
+    },
+    {
+      "path": "results/reproducibility/p16_figure_preflight_2026_10_17_02/summary.json",
+      "sha256": "78ff88b8249619cdaab3978ec1e9701e934c252ed5d4e7203ed270d71b9116f3"
+    },
+    {
+      "path": "results/reproducibility/p16_report_pdf_2026_10_17_01/contact_01_09.png",
+      "sha256": "5c34f0f10f2bdfb5ce5224f53274130a2ae81d687392ea6821aeebea2dff958e"
+    },
+    {
+      "path": "results/reproducibility/p16_report_pdf_2026_10_17_01/contact_10_18.png",
+      "sha256": "b10d11ea15618c0577c137dbc6a919e18a0691c2138159d12ae8bd68b9292a89"
+    },
+    {
+      "path": "results/reproducibility/p16_report_pdf_2026_10_17_01/contact_19_27.png",
+      "sha256": "55442242dbabfe620fb6a60edd3eef96557cbc0e631762d6a698ffd0ac83d987"
+    },
+    {
+      "path": "results/reproducibility/p16_report_pdf_2026_10_17_01/contact_28_36.png",
+      "sha256": "3bb125220c83a48e6823bb650488a843baec053ff55fcd2eecc870a18574d03b"
+    },
+    {
+      "path": "results/reproducibility/p16_report_pdf_2026_10_17_01/contact_37_37.png",
+      "sha256": "8397dbfb6989ab7dc1e9f65e204bb9b5f07d469705174b00fa3dd05d25942a97"
+    },
+    {
+      "path": "results/reproducibility/p16_report_pdf_2026_10_17_01/pdf_audit.json",
+      "sha256": "1989ae5d0c3728fb3506ec7365def046d889df9d6ddaac55aa30195d70f069c3"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/attack_family_wilson.collision.json",
+      "sha256": "cc1f291da363e226923f5d176ca63acd542ac408b3e7898dbcd0bb558b882547"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/attack_family_wilson.collision.txt",
+      "sha256": "f9d896b20e9894287705c85dfd380b88683bacf246019ef01defe3f4acbf6608"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/attack_family_wilson.text.txt",
+      "sha256": "a10fb6797c2439903d3f0eeaa7bd6910dfe5c4dd6ea691adb10ba6c63eec9f28"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/category_distribution.collision.json",
+      "sha256": "21de300c5d7500c679886b4975050bc07d5d4d62d8948121ee0ec6a69f849918"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/category_distribution.collision.txt",
+      "sha256": "ae832fd50a545da64d2033144bf83d901e6f1b2dfe1c7b41899d8ea98e585b4d"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/category_distribution.text.txt",
+      "sha256": "984ece082e01e999fd22a0d9170263016e2eccf05e4909207de491fc0a4c798c"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/fpr_fnr_tradeoff.collision.json",
+      "sha256": "14ea73b7f4857f0648bdf682a070d62df5fbb33d25e275e29254abb5792762a2"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/fpr_fnr_tradeoff.collision.txt",
+      "sha256": "aa7cc953b8c27da8b4eca655645ca7b04cbd348c10e8a454a1e5fe9161481593"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/fpr_fnr_tradeoff.text.txt",
+      "sha256": "08fa43388b44e75716ee41cdfb694d30b04d7611e44ff9aebdd81f9b05babf44"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/macro_f1_ci.collision.json",
+      "sha256": "4b5b263f608ef15b57934b43d4f6f095e4781ce7e384848f5d3af866559e308f"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/macro_f1_ci.collision.txt",
+      "sha256": "f8f190494906cd6335f36895e9a445c8f59b9645cc8f37646d4758d476f5f052"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/macro_f1_ci.text.txt",
+      "sha256": "b3bc1228adfbb318148107913914d3b64b1a87206425117bbc3d529b74d2d152"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/mcc_ci.collision.json",
+      "sha256": "54cc50fd39118b9c214fa82dc1462465aed19ac079dd14302f70befe408cc1cf"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/mcc_ci.collision.txt",
+      "sha256": "ef96a34e41f3cdeeaa3f80418aafdf4dd13bbe3a23e5a509202310a59f18fb1e"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/mcc_ci.text.txt",
+      "sha256": "0658b66d55286d39945da82824d588eafe9f7f75d3259056f06f6d80c51ab470"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/performance_cost.collision.json",
+      "sha256": "67f786d7f2d559895e37052acd290db45852ad5b379054bc3350aa752511c4f8"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/performance_cost.collision.txt",
+      "sha256": "c9b66fccf073e9e69b2441cf215ba963306c8feb3541111db6b69046194d4f12"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/performance_cost.text.txt",
+      "sha256": "a32d6fa57eb31eba7f9a3b2e0603755e073f1cb6ff6bd739b2ce21c3036788e9"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_02/summary.json",
+      "sha256": "59e9b1eea391d28746a12dbce0d1f914793307e9404c7d070b78a022c17524d2"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/attack_family_wilson.collision.json",
+      "sha256": "3dd501a76115a5fa6b97711d002a508cffba52ee73bcfca1c06ee3475b48f462"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/attack_family_wilson.collision.txt",
+      "sha256": "349463c94c8d464af24d423b3b341160ffadf5f3917ccf92cd8a2d822da50ff4"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/attack_family_wilson.text.txt",
+      "sha256": "37e7e737b7ad7b2569f08ee6ac5a4782790e1be912e01360602440ebded93b03"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/category_distribution.collision.json",
+      "sha256": "07928b8bd5924e16c869a6ffe5bc54059d9a7e8600f6731e0f6794bda996b9e9"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/category_distribution.collision.txt",
+      "sha256": "1c586f34151c5cde302e6bad408686d79297b6ecf77fdd3989b0eb3ea5055ded"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/category_distribution.text.txt",
+      "sha256": "19fe639560b3f0023c5157ce0184e6ed916c8e5d5e881597c1608bec21462034"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/contact.png",
+      "sha256": "fd0b2d8fd13c6491ecd8bc8d53c358cdc3739e2ee673c6db1841e6bbfd8a7530"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/fpr_fnr_tradeoff.collision.json",
+      "sha256": "8ef281661e726c60f2127e794921b55b18c2dec105bcca270558593efe989b8c"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/fpr_fnr_tradeoff.collision.txt",
+      "sha256": "6edd9d0f5f44274547be1bf6ea7dc06694c7fd3b09379cf27ee69ace3564f1fc"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/fpr_fnr_tradeoff.text.txt",
+      "sha256": "5f53b49bf6b88889dee6626e97672654ee843d543320405bb407e3805448b908"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/macro_f1_ci.collision.json",
+      "sha256": "f9ab79e490fd5c9356588a7f1a64948a6f955bcc408685214cbfb367a20b75ac"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/macro_f1_ci.collision.txt",
+      "sha256": "34e42c8d8c3ac5264484c9d43d7fcd26e34f1c237b924044aeab64d023cd8cc2"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/macro_f1_ci.text.txt",
+      "sha256": "5f1a6e8923ffa96b7ed5969bffccd69ea85c2cf052ef3084c7d4721291963254"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/mcc_ci.collision.json",
+      "sha256": "b6e869a1ca6bae0b6f903cef4c8589022e1d4653e90c7dec9382ce908eed4587"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/mcc_ci.collision.txt",
+      "sha256": "6d18e7c7cba3855d29518cf0709c0c49743417adfd86d5646fc807ac236b9fd2"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/mcc_ci.text.txt",
+      "sha256": "1143c38627fddd69288633cb1a8dd51f1e55c567847b6a36094ec59bc1ca6f98"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/performance_cost.collision.json",
+      "sha256": "c9aceba3ffed22d9818c0ec3abd043029a38e21f38c7e0dc2dfcee5a55fed295"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/performance_cost.collision.txt",
+      "sha256": "86382a042912824710a2347c8e63ebef0ade7b1e418e9c9e83b78ad833ca0b8f"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/performance_cost.text.txt",
+      "sha256": "96d58bdde75c86ebdc9c9dd621bf643056f17905c1f573f72b90008410582539"
+    },
+    {
+      "path": "results/reproducibility/p16_standalone_preflight_2026_10_17_03/summary.json",
+      "sha256": "8445d44868cfad2809636ac941137c82c67055e0335056b2d0d5684ce1053f9b"
     },
     {
       "path": "results/reproducibility/r04_ml_smoke/run_metadata.json",
@@ -1056,6 +1932,10 @@
       "sha256": "a3a4c143fda53e5a3eaeca50ee45a75e9059f8e84926bc01e039fdc36b3a01d6"
     },
     {
+      "path": "results/reproducibility/resume_2026_10_17_p16/resume_audit.json",
+      "sha256": "b0f2075b234a3788e078047d51cdef794d1d6e29e85e3695373b16140ca47070"
+    },
+    {
       "path": "src/analysis/plot_p16_paired_effects.py",
       "sha256": "82bae85c1b4dd6a1d67b3f29c661142163a4ec6f90af18dc01d7384f42ced959"
     },
@@ -1136,6 +2016,30 @@
       "sha256": "98537bb53b3afdcbdd86bc6ac6b32b7206fe81337df6af71cd1217149a3e996f"
     },
     {
+      "path": "tools/p16_figure_preflight.py",
+      "sha256": "6c47e522a092ce61dffe50fa517cd7507bd3df3aecd6b70849caed5563062507"
+    },
+    {
+      "path": "tools/p16_frozen_results_audit.py",
+      "sha256": "19200c872ede5f3002430e588e54357e185d76fab9779af886dc043c59b685e1"
+    },
+    {
+      "path": "tools/p16_report_pdf_audit.py",
+      "sha256": "48de0f6db0d8cf54b09158a32bf75a6a0671eaf4723a3030985daeef71c18fc1"
+    },
+    {
+      "path": "tools/p16_standalone_figures.py",
+      "sha256": "ec4981564386429a3ffc533fe9fe54454473ebe76e3f94734795f71e5b837cda"
+    },
+    {
+      "path": "tools/p18_current_report_citation_audit.py",
+      "sha256": "1dcd5dca3bf02980c980156b0c8094eced33a2447637f5e165e538f16db77597"
+    },
+    {
+      "path": "tools/p19_review_inventory.py",
+      "sha256": "a980f46cbe9faef6fb3355b603049dc79f38ad764ab13e175a1472f0946e0308"
+    },
+    {
       "path": "tools/r04_assemble_proposal.py",
       "sha256": "18bd87fba1d90e06d20f93fe155a1f45b68acd2fd1085c7d7c83fa842d30c77d"
     },
@@ -1181,7 +2085,7 @@
     },
     {
       "path": "tools/r05_public_surface_audit.py",
-      "sha256": "ac5e79967dd40732e2f2b4c55fc8b80919540ab2458e0f7a5b968b7e51d6c113"
+      "sha256": "3a2143e90aa8d41f15954603ce817fa5872a62ec79cebde276dd43e6caa68c06"
     },
     {
       "path": "tools/r05_revise_proposal.py",
@@ -1189,7 +2093,7 @@
     },
     {
       "path": "tools/r05_validate_proposal.py",
-      "sha256": "3100a433ddcdd496a2e673948a64da8b6691aa9d730cab12744bad57aa61a502"
+      "sha256": "197ae4baa3830d24dc4b94a6a349dca535ff51809fd603ce837bb03cbbb49788"
     },
     {
       "path": "tools/reconcile_reference_checks_r03.py",
@@ -1204,7 +2108,7 @@
       "sha256": "75fe99880b22b3eb70e0578fbd79455e64440183fa4475f8a0941728d09148da"
     }
   ],
-  "next_action": "Continue P16 frozen-results tables and captions;then supported form/report sources;fullTRAIN plan remains NO_GO;do not rerun completed smoke",
+  "next_action": "P16 exact-source TRAIN-only standalone heatmap plan or P18 closest-method source passages/L03 publisher pagination; never retrain P15 or edit approved report",
   "last_gate_status": {
     "bootstrap": "PASS_SCOPED",
     "raw_integrity": "PASS",
@@ -1215,7 +2119,7 @@
     "preservation": "282/282 unchanged",
     "figure_F1": "READY_FOR_REVIEW",
     "bibliography": "3 metadata verified; 2 check suggested; 0 full text",
-    "release": "NOT_READY_FOR_SUBMISSION:G0-G3PARTIAL,G4BLOCKEDfinalwriting/render,G5AUTHOR_INPUT_NEEDED,G6NOT_READY",
+    "release": "NOT_READY_FOR_SUBMISSION",
     "resume_r02": "92/92 prior manifest and282/282 preservation PASS",
     "legacy_literature": "11/12VERIFIED_METADATA;L03CHECK_SUGGESTED pageconflict;U01/U03open",
     "foundation_review": "PASS_SCOPED: methods7.8125; argument7.75",
@@ -1238,18 +2142,28 @@
     "fresh_train_smoke": "PASS_SCOPED45/45;initial41/42 preserved;pipcheckPASS;6/6auditunittests",
     "full_proposal_review": "PARTIAL:evidencefullcontentreport saved;independentargumentreviewfailedquota;notDOCX/render",
     "r04_post_audit": "265/265 checkpoint artifact hashes and282/282 historical preservation PASS;originalZIP/DOCXCRC/extractionPASS;no visualQA",
-    "R05-ASSEMBLY-REVIEW": "DONE_SCOPED: Independent full argument/form review and recheck saved;3P1/2P2 addressed in separate r05 draft;34/34 source-boundary checks;author/renderP0 open;no training or release closure"
+    "R05-ASSEMBLY-REVIEW": "DONE_SCOPED: Independent full argument/form review and recheck saved;3P1/2P2 addressed in separate r05 draft;34/34 source-boundary checks;author/renderP0 open;no training or release closure",
+    "P15": "DONE_SCOPED_RECONSTRUCTION;69/69savedacceptance;3runPASS",
+    "P16": "2132summary+178actualPDFPASS;newfigures6text/6collisionPASS;historicalcollision6FAILandprint/snapshotfindingsopen",
+    "P18": "119offlinechecksPASS;12refs24contexts;0newfulltextreads",
+    "P19": "PARTIAL; tracked review inventory FAIL:3legacy SMOKE_ONLY joblib; no code LICENSE; no new model binaries staged",
+    "P20": "DEFERRED_FINAL_PANEL_INPUT_GATES",
+    "current_checkpoint_integrity": "1172 PASS / 0 FAIL; not overall release readiness",
+    "release_inventory": "FAIL_3_PREEXISTING_SMOKE_BINARIES; finalsnapshot871files; no code LICENSE"
   },
-  "resume_command": "TIẾP TỤC NCKH; read .research_memory/HANDOFF.md and validate STATE artifact hashes before next task",
-  "training_performed_this_session": true,
-  "prediction_performed_this_session": true,
+  "resume_command": "python -X utf8 tools/resume_checkpoint_audit.py --out-dir results/reproducibility/NEW_UNIQUE_SESSION",
+  "training_performed_this_session": false,
+  "prediction_performed_this_session": false,
   "original_training_environment": "UNKNOWN",
-  "model_artifact_available": false,
+  "model_artifact_available": true,
   "background_work": "NONE",
-  "session_id": "2026-10-16-r05",
-  "checkpoint_validation_path": ".research_memory/r05/R05-ASSEMBLY-REVIEW.json",
+  "session_id": "2026-10-17-p16",
+  "checkpoint_validation_path": ".research_memory/p16_2026_10_17/checkpoint.json",
   "execution_scope_r04": "Only2000officialTRAINfitrows/500TRAINvalidation software smoke;no officialTESTCSV read,no scientific performance metrics,no tuning;threeSMOKE_ONLYmodels",
   "smoke_model_artifact_available": true,
   "smoke_model_scope": "Not fullTRAIN/final inference models;not substitute for final demo",
-  "r04_post_audit_path": "results/reproducibility/resume_2026_10_16_r04_post/resume_audit.json"
+  "r04_post_audit_path": "results/reproducibility/resume_2026_10_16_r04_post/resume_audit.json",
+  "official_test_opened_this_session": false,
+  "model_artifact_scope": "Three author-host RECONSTRUCTED_FULL_TRAIN artifacts; original historical binary identity UNKNOWN; no model loading in current QA",
+  "git_publication": "Verify Git HEAD and origin/main directly; no commit SHA inferred from mutable JSON"
 }

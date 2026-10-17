@@ -1,0 +1,14 @@
+Nature Figure Rendered Collision Audit
+pdf: C:\Users\admin\Documents\ChatGPT\NCKH\results\final_reporting\unsw_nb15\phase11_results_figures\figures\fig03_fpr_fnr_tradeoff.pdf
+pages: 1
+visible text boxes: 18
+stroke paths: 31
+
+[FAIL] page 1 text-stroke: Text is crossed by 1 stroked path(s) — 'Stacking-42'
+  text bbox: (74.20454406738281, 22.381975173950195, 127.76556396484375, 31.381975173950195)
+[FAIL] page 1 text-stroke: Text is crossed by 1 stroked path(s) — 'RF-17'
+  text bbox: (429.2954406738281, 274.3819885253906, 455.4092712402344, 283.3819885253906)
+
+summary: 2 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays
+verdict: FIX BEFORE DELIVERY
+note: contained overlays can be intentional; WARN findings need final-size visual review

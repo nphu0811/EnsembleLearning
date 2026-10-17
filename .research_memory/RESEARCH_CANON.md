@@ -23,3 +23,8 @@ Kết luận được hỗ trợ: Stacking-42 không chứng minh ưu thế tổ
 Giới hạn bắt buộc: FS full TRAIN trước development CV; meta selection không fully nested; overlap/split dependence; bootstrap có điều kiện trên benchmark rows; no external validation; no live deployment; original training environment UNKNOWN; no serialized model local. Không claim fully leakage-free hoặc end-to-end reproducible từ static hashes/import smoke.
 
 Contribution là kiểm toán benchmark và trade-off có evidence; novelty chưa được chứng minh. Danh tính, GVHD, ngày/chữ ký, ngân sách áp dụng dùng [CẦN XÁC NHẬN].
+
+
+## Current provenance clarification — 17/10/2026
+
+The statement above saying no serialized model local is historical. Three reconstructedfullTRAINartifacts now exist on author's laptop with69/69acceptancechecks;see P15 scopedclosure. Originalhistoricalmodelidentity/environment remainUNKNOWN. Do notsubstitutereconstructedoutputsforfrozenTESTmetrics. This sessionperformednofit,predict,rawCSVreadorretraining.37pageapprovedPDF remainsunchanged;physicalpage33reflectspre-P15snapshot.

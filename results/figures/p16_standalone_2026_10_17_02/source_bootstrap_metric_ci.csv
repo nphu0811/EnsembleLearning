@@ -1,0 +1,25 @@
+eval_view,pipeline,metric,point_estimate,ci_level,ci_lower,ci_upper,bootstrap_replicates,bootstrap_type
+official_test,stacking_42,macro_f1,0.8638401636220685,0.95,0.8614658585623457,0.8661468765752398,10000,stratified paired multinomial bootstrap over joint prediction patterns
+official_test,stacking_42,mcc,0.7504972252236092,0.95,0.7464664514015807,0.7544706987800675,10000,stratified paired multinomial bootstrap over joint prediction patterns
+official_test,stacking_42,false_positive_rate,0.2665135135135135,0.95,0.262027027027027,0.2710810810810811,10000,stratified paired multinomial bootstrap over joint prediction patterns
+official_test,stacking_42,false_negative_rate,0.01879467043148328,0.95,0.017559339980587663,0.020052060354716315,10000,stratified paired multinomial bootstrap over joint prediction patterns
+official_test,random_forest_42,macro_f1,0.863343473727991,0.95,0.8609655017871328,0.8656937692069977,10000,stratified paired multinomial bootstrap over joint prediction patterns
+official_test,random_forest_42,mcc,0.7509102614822714,0.95,0.7468985473578521,0.7549313151319894,10000,stratified paired multinomial bootstrap over joint prediction patterns
+official_test,random_forest_42,false_positive_rate,0.27035135135135135,0.95,0.2658108108108108,0.27497297297297296,10000,stratified paired multinomial bootstrap over joint prediction patterns
+official_test,random_forest_42,false_negative_rate,0.01619165269566752,0.95,0.015066619606459013,0.017360804729550868,10000,stratified paired multinomial bootstrap over joint prediction patterns
+official_test,random_forest_17,macro_f1,0.8606729981436925,0.95,0.858279838661918,0.8630396278538472,10000,stratified paired multinomial bootstrap over joint prediction patterns
+official_test,random_forest_17,mcc,0.7468811591067652,0.95,0.7428625670925347,0.7508415278788055,10000,stratified paired multinomial bootstrap over joint prediction patterns
+official_test,random_forest_17,false_positive_rate,0.2763243243243243,0.95,0.27175608108108107,0.28094662162162165,10000,stratified paired multinomial bootstrap over joint prediction patterns
+official_test,random_forest_17,false_negative_rate,0.015618106414894556,0.95,0.014471013853348627,0.016787258448777907,10000,stratified paired multinomial bootstrap over joint prediction patterns
+novel_vector_test,stacking_42,macro_f1,0.8581247861592347,0.95,0.855669002897677,0.860590811746164,10000,stratified paired multinomial bootstrap over joint prediction patterns
+novel_vector_test,stacking_42,mcc,0.7407089846820121,0.95,0.7365494450365473,0.7449186288052259,10000,stratified paired multinomial bootstrap over joint prediction patterns
+novel_vector_test,stacking_42,false_positive_rate,0.26429858140058543,0.95,0.2597387975681153,0.2688583652330556,10000,stratified paired multinomial bootstrap over joint prediction patterns
+novel_vector_test,stacking_42,false_negative_rate,0.02179651360321982,0.95,0.02033295873297964,0.023260068473460002,10000,stratified paired multinomial bootstrap over joint prediction patterns
+novel_vector_test,random_forest_42,macro_f1,0.8574731085266867,0.95,0.8550494113978695,0.8599315153549643,10000,stratified paired multinomial bootstrap over joint prediction patterns
+novel_vector_test,random_forest_42,mcc,0.7410419448564929,0.95,0.736950631097227,0.7451959153208882,10000,stratified paired multinomial bootstrap over joint prediction patterns
+novel_vector_test,random_forest_42,false_positive_rate,0.2686050439090295,0.95,0.2640445564062148,0.27319297455528035,10000,stratified paired multinomial bootstrap over joint prediction patterns
+novel_vector_test,random_forest_42,false_negative_rate,0.018712594412356585,0.95,0.017379714084102136,0.020045474740611035,10000,stratified paired multinomial bootstrap over joint prediction patterns
+novel_vector_test,random_forest_17,macro_f1,0.8557231182734804,0.95,0.8532089784065203,0.858173627923487,10000,stratified paired multinomial bootstrap over joint prediction patterns
+novel_vector_test,random_forest_17,mcc,0.7384471304655449,0.95,0.7342295302764332,0.7425526571334832,10000,stratified paired multinomial bootstrap over joint prediction patterns
+novel_vector_test,random_forest_17,false_positive_rate,0.27243301058320196,0.95,0.26792952037829315,0.27713352848457556,10000,stratified paired multinomial bootstrap over joint prediction patterns
+novel_vector_test,random_forest_17,false_negative_rate,0.018268300969605102,0.95,0.0169615555497478,0.019627316206256698,10000,stratified paired multinomial bootstrap over joint prediction patterns

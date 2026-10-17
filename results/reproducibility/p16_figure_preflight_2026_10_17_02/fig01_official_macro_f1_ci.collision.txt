@@ -1,0 +1,16 @@
+Nature Figure Rendered Collision Audit
+pdf: C:\Users\admin\Documents\ChatGPT\NCKH\results\final_reporting\unsw_nb15\phase11_results_figures\figures\fig01_official_macro_f1_ci.pdf
+pages: 1
+visible text boxes: 18
+stroke paths: 37
+
+[FAIL] page 1 text-stroke: Text is crossed by 1 stroked path(s) — '0.8638'
+  text bbox: (58.83735656738281, 87.35232543945312, 90.2885971069336, 96.35232543945312)
+[FAIL] page 1 text-stroke: Text is crossed by 1 stroked path(s) — '0.8633'
+  text bbox: (236.3828125, 101.98966979980469, 267.83404541015625, 110.98966979980469)
+[FAIL] page 1 text-stroke: Text is crossed by 2 stroked path(s) — '0.8607'
+  text bbox: (413.9282531738281, 180.68804931640625, 445.3794860839844, 189.68804931640625)
+
+summary: 3 fail, 0 warn, 0 contained fill overlays, 0 contained image overlays
+verdict: FIX BEFORE DELIVERY
+note: contained overlays can be intentional; WARN findings need final-size visual review

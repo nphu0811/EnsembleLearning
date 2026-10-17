@@ -1,0 +1,23 @@
+{
+  "display_map_checks": 17,
+  "display_map_pass": 17,
+  "pdf_sha256": "8734ccdd5ef6a3495df55a0196bef2d71ae8d16f893fefd9882559a4c857218b",
+  "saved_summary_checks": 2132,
+  "pdf_checks": 178,
+  "p18_checks": 119,
+  "historical_pdf_text_pass": 12,
+  "historical_pdf_collision_pass": 6,
+  "historical_pdf_collision_fail": 6,
+  "new_figure_text_pass": 6,
+  "new_figure_collision_pass": 6,
+  "training_performed": false,
+  "official_test_dataset_opened": false,
+  "prediction_csv_opened": false,
+  "report_modified": false,
+  "p16_status": "DONE_SCOPED_AUDIT_WITH_OPEN_PRINT_FINDINGS; canonical IN_PROGRESS",
+  "p18_status": "PARTIAL; offline claim/reading audit complete",
+  "p19_status": "PARTIAL; no final archive",
+  "p20_status": "DEFERRED_FINAL_PANEL_INPUT_GATES",
+  "source_head": "6c87074a99c83d7ce3ddcd21bf623cbacb317b71",
+  "p19_inventory": "FAIL_3_PREEXISTING_TRACKED_SMOKE_BINARIES; no project code LICENSE"
+}

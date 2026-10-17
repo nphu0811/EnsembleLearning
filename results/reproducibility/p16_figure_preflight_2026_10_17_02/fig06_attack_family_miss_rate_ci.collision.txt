@@ -1,0 +1,42 @@
+Nature Figure Rendered Collision Audit
+pdf: C:\Users\admin\Documents\ChatGPT\NCKH\results\final_reporting\unsw_nb15\phase11_results_figures\figures\fig06_attack_family_miss_rate_ci.pdf
+pages: 1
+visible text boxes: 29
+stroke paths: 135
+
+[FAIL] page 1 text-stroke: Text is crossed by 1 stroked path(s) — 'RF-17'
+  text bbox: (586.234375, 61.65262222290039, 615.2653198242188, 71.65261840820312)
+[FAIL] page 1 text-text: Text boxes overlap by 89.4% of the smaller box — 'Generic'
+  other text: '(n=18871)'
+  text bbox: (33.27482604980469, 335.33404541015625, 83.50054931640625, 384.5176086425781)
+[FAIL] page 1 text-text: Text boxes overlap by 89.4% of the smaller box — 'Exploits'
+  other text: '(n=11132)'
+  text bbox: (108.68025207519531, 335.323486328125, 158.9059600830078, 384.5176086425781)
+[FAIL] page 1 text-text: Text boxes overlap by 88.4% of the smaller box — 'Fuzzers'
+  other text: '(n=6062)'
+  text bbox: (189.29495239257812, 335.33026123046875, 234.31324768066406, 380.8699951171875)
+[FAIL] page 1 text-text: Text boxes overlap by 8.5% of the smaller box — '(n=4089)'
+  other text: 'Reconnaissance'
+  text bbox: (261.7980651855469, 341.0276794433594, 310.8085021972656, 382.4264221191406)
+[FAIL] page 1 text-text: Text boxes overlap by 88.4% of the smaller box — 'DoS'
+  other text: '(n=4089)'
+  text bbox: (264.7003479003906, 335.32879638671875, 309.7186584472656, 380.8699951171875)
+[FAIL] page 1 text-text: Text boxes overlap by 6.8% of the smaller box — 'DoS'
+  other text: 'Reconnaissance'
+  text bbox: (264.7003479003906, 335.32879638671875, 309.7186584472656, 380.8699951171875)
+[FAIL] page 1 text-text: Text boxes overlap by 97.8% of the smaller box — 'Reconnaissance'
+  other text: '(n=3496)'
+  text bbox: (306.65045166015625, 335.32696533203125, 385.12408447265625, 389.6439514160156)
+[FAIL] page 1 text-text: Text boxes overlap by 93.5% of the smaller box — 'Analysis'
+  other text: '(n=677)'
+  text bbox: (414.1692199707031, 335.3243408203125, 460.5313720703125, 377.2224426269531)
+[FAIL] page 1 text-text: Text boxes overlap by 93.5% of the smaller box — 'Backdoor'
+  other text: '(n=583)'
+  text bbox: (484.8388977050781, 335.3279724121094, 535.9368286132812, 377.2224426269531)
+[FAIL] page 1 text-text: Text boxes overlap by 93.5% of the smaller box — 'Shellcode'
+  other text: '(n=378)'
+  text bbox: (558.9771728515625, 335.3302307128906, 611.3421630859375, 377.2224426269531)
+
+summary: 11 fail, 0 warn, 3 contained fill overlays, 0 contained image overlays
+verdict: FIX BEFORE DELIVERY
+note: contained overlays can be intentional; WARN findings need final-size visual review

@@ -1,3 +1,21 @@
+# Current task checkpoint — 17/10/2026
+
+| Task | Status | Fresh evidence |
+|---|---|---|
+| RESUME-P16 | DONE_SCOPED_WITH_RECONCILED_DRIFT | docs/RESUME_AUDIT_2026-10-17_P16.md;267/285oldhashes,281/282historicalfiles;known committed deletion |
+| P15 | DONE_SCOPED_RECONSTRUCTION; DO NOT RETRAIN | originalclosure17/10;currentaudit69truechecks/3runPASS;75/75historicalQAinherited |
+| P16-COMPREHENSIVE-AUDIT | DONE_SCOPED_WITH_OPEN_PRINT_FINDINGS |2132summary+178actualPDFchecksPASS;17displaymap;37pagecontactreview |
+| P16-STANDALONE-ALTERNATIVES | DONE_SCOPED |6newfigures,text6/6,collision6/6;final03bundle;failed01/02preserved |
+| P16 whole phase | IN_PROGRESS | Locked report embeddedfont/118dpiheatmap/snapshot-agefindings;historical6collisionFAILstilldisclosed |
+| P18-CURRENT-REPORT-CLAIMS | DONE_SCOPED_OFFLINE |119checksPASS,12records,24contexts;0networkqueries/0newfulltextreads |
+| P18 whole phase | PARTIAL |Closest-methodreading,noveltysearch,L03publisherpaginationopen |
+| P19 | PARTIAL |README,QAenv,availabilityandreviewinventory;licensing/archival/fullenvgatesopen |
+| P20 | DEFERRED_FINAL_PANEL_INPUT_GATES |No finalthree-reviewerpanelrun;fixedpacketandremaininginputsneeded |
+
+Approved37pagePDF/source,frozenresultsandhistoricalmodels untouched. This currentsection supersedes stale phase/status statements below without rewriting theirhistory.
+
+---
+
 # Research Task Board
 
 Checkpoint hiện hành r03: `docs/RESUME_AUDIT_R03_2026-10-16.md`. Prior manifest146/148 khớp (2 stale memory hashes), historical preservation282/282. DOCX count được đính chính8 bảng. Các hàng r01/r02 dưới đây giữ evidence lịch sử; cập nhật mới ưu tiên:
@@ -205,3 +223,8 @@ Evidence: `.research_memory/r05/R05-ASSEMBLY-REVIEW.json`.
 - **Local actual binary checks 69/69 true**: RF17 20/20, RF42 20/20, Stacking42 29/29 (SHA256, byte sizes, model load, frozen fitted hyperparameters, 17/42 feature schema/order, labels[0,1], threshold0.5, 16 TRAIN-row probability sanity, unchanged hash after load). Remote consistency recheck of author report vs 3 worker+supervisor full TRAIN reports: candidate, model hash/size, inputs+versions, 175341 TRAIN rows and pass status all match. Earlier 75/75 read-only logs consistency pass retained. Actual binaries were checked on user Windows laptop, **not loaded by remote reviewer**; files are not in public Git.
 - **P15 = DONE_SCOPED_RECONSTRUCTION**, record `docs/research/P15_FULL_TRAIN_RECONSTRUCTION_SCOPED_CLOSURE_2026-10-17.md`. Historical 9GiB admission never claimed PASS; alternate resource-supervised 12GB local execution used. RF42 old TIMEOUT INCOMPLETE preserved. No test recomputation, no re-selection, no frozen PDF edits. **G3 overall remains PARTIAL / external binary review, original environment & live-demo/release approval OPEN**; administrative/writing/reference/source rights G0–G6 not auto-closed.
 - **Do not repeat fit**. Next work: candidate-specific demo contract and release rights, P16/P18/P19/P20, source verification and proper manuscript+delivery gates. Re-verify only into NEW unique artifact QA outdir if necessary; original 3 models and acceptance JSON kept unchanged.
+
+
+## P19 inventory finding, current 17/10/2026
+
+The tracked review snapshot flags three historical SMOKE_ONLY.joblib files under results/reproducibility/r04_ml_smoke_repaired/smoke_models/. All three were tracked in initial commit c4ed771. No new model binary is staged; no files were loaded or removed. Inventory passed=false and code license is absent. Keep this release blocker; it is separate from accepted local P15 full-TRAIN reconstructions. Do not treat the final new-file staging check as a passing whole-repository release inventory. See release/review_inventory_2026_10_17_01/validation.json and the final review inventory snapshot.

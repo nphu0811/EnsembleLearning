@@ -1,0 +1,62 @@
+[
+  {
+    "path": "results/eda/unsw_nb15/figures/fig01_binary_class_distribution.pdf",
+    "text_exit": 0,
+    "collision_exit": 0
+  },
+  {
+    "path": "results/eda/unsw_nb15/figures/fig02_attack_category_distribution.pdf",
+    "text_exit": 0,
+    "collision_exit": 1
+  },
+  {
+    "path": "results/eda/unsw_nb15/figures/fig03_numeric_class_separation.pdf",
+    "text_exit": 0,
+    "collision_exit": 0
+  },
+  {
+    "path": "results/eda/unsw_nb15/figures/fig04_numeric_correlation_heatmap.pdf",
+    "text_exit": 0,
+    "collision_exit": 0
+  },
+  {
+    "path": "results/figures/p16_paired_effects_2026_10_16/paired_effects.pdf",
+    "text_exit": 0,
+    "collision_exit": 0
+  },
+  {
+    "path": "results/figures/p16_r05_error_tradeoff/error_tradeoff.pdf",
+    "text_exit": 0,
+    "collision_exit": 0
+  },
+  {
+    "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig01_official_macro_f1_ci.pdf",
+    "text_exit": 0,
+    "collision_exit": 1
+  },
+  {
+    "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig02_official_mcc_ci.pdf",
+    "text_exit": 0,
+    "collision_exit": 1
+  },
+  {
+    "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig03_fpr_fnr_tradeoff.pdf",
+    "text_exit": 0,
+    "collision_exit": 1
+  },
+  {
+    "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig04_macro_f1_vs_training_cost.pdf",
+    "text_exit": 0,
+    "collision_exit": 1
+  },
+  {
+    "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig05_official_vs_novel_macro_f1.pdf",
+    "text_exit": 0,
+    "collision_exit": 0
+  },
+  {
+    "path": "results/final_reporting/unsw_nb15/phase11_results_figures/figures/fig06_attack_family_miss_rate_ci.pdf",
+    "text_exit": 0,
+    "collision_exit": 1
+  }
+]

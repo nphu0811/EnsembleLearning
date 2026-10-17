@@ -1,0 +1,9 @@
+# Observed local P16 read-only audit/figure environment, Python 3.11.9.
+# NOT the original training environment and NOT a hash-locked dependency closure.
+# PDF rendering additionally needs external Poppler pdftoppm.
+# Figure preflight additionally needs installed nature-figure skill scripts.
+numpy==2.4.6
+matplotlib==3.11.1
+Pillow==12.3.0
+PyMuPDF==1.28.2
+pypdf==6.20.1

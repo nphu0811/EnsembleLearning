@@ -1,0 +1,10 @@
+{
+  "pdf": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\results\\final_reporting\\unsw_nb15\\phase11_results_figures\\figures\\fig03_fpr_fnr_tradeoff.pdf",
+  "auditable": true,
+  "minimum_required_pt": 5.0,
+  "minimum_found_pt": 9.0,
+  "text_run_count": 21,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "warnings": []
+}
