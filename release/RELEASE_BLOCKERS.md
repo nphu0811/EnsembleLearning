@@ -1,5 +1,12 @@
 # Release blockers ngày 16/10/2026
 
+## 17/10/2026 — P15 full TRAIN reconstruction gate update
+
+**P15 DONE_SCOPED_RECONSTRUCTION**: three frozen candidates reconstructed on 175341 official TRAIN rows; Windows user-host `artifact_acceptance.json` reports `passed=true` with all 69/69 model-file checks true, preserving INPUT and output SHA-256, actual deserialize+fitted structure+TRAIN-only probability schema. Independent audit of user-supplied reports/telemetry 75/75 consistency PASS. Source `docs/research/P15_FULL_TRAIN_RECONSTRUCTION_SCOPED_CLOSURE_2026-10-17.md`; accepted evidence commit `c81f99a548045d0f6900bec65509ad35da32a073`.
+
+**Release G3 is NOT blanket PASS.** Historical original package environment/model identity is UNKNOWN, binaries remain only on the author laptop, no independent remote model-byte loading and no newly authorized official TEST evaluation/demo acceptance or model distribution rights. `RECONSTRUCTED_FULL_TRAIN` must not be presented as original historical model nor as production/release validated. Former `G3 PARTIAL / no full TRAIN artifact` text farther down documents a previous snapshot and is now superseded **only for the scoped reconstruction criterion**. G0/G1/G2/G4/G5/G6, P16/P18/P19/P20 and ultimate `NOT_READY_FOR_SUBMISSION` remain separately governed. Five-chapter approved PDF and frozen scientific metrics untouched.
+
+
 ## P17 — Thông tin MỚI NHẤT: báo cáo năm chương (16/10/2026)
 
 - Bản PDF hiện hành có **5 chương, 37 trang A4**, bỏ Tóm tắt, Danh mục từ viết tắt nằm sau Mục lục. Bản 8 chương/40 trang dưới đây là **đã thay thế**, chỉ còn giá trị lịch sử QA.
