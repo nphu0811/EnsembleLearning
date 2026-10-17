@@ -1,3 +1,11 @@
+## P21 selector17 pilot author-host PASS (18/10/2026)
+
+**Current P21 checkpoint:** user push commit b8820ed77fcde9040d59719cf8e10ece01b30e9b, three compact JSON reports for supervised selector17 resource pilot. Final status PASS_SELECTOR_RESOURCE_SMOKE_ONLY (not scientific RQ2 performance); 8k FIT pilot; 4667 selector sample rows/seed; five seeds × three methods =15/15 fit-only selector operations; stable17 (eligible stable count18; forced fallback0), no validation/TEST evaluation. 57.547s wall, 15.531s selection, 381898752B peak RSS, minimum system available4684673024B, watchdog exit0/no timeout. Three JSONs independently cross-checked 15/15 consistency checks; [CI 39068091845](https://github.com/nphu0811/EnsembleLearning/actions/runs/39068091845) SUCCESS: 37 stdlib tests +7 synthetic ML tests +29 frozen source checks. See \`docs/research/P21_SELECTOR17_AUTHOR_PILOT_ACCEPTANCE_2026-10-18.md\`.
+
+**Status:** \`P21_RF42_RESOURCE_PILOT_PASS\`; \`P21_SELECTOR17_RESOURCE_PILOT_PASS\`; \`P21_RQ5_WEIGHTING_AND_OVERSAMPLE_PILOT_NOT_BUILT\`; \`P21_RQ1_STACKING_PILOT_NOT_BUILT\`; \`P21_5_SEED_SCIENTIFIC_RESULTS_NOT_AUTHORIZED\`. Next: prepare separately supervised RQ5 weighting/oversampling resource pilot, validate on synthetic data and obtain separate author opt-in, then Stacking-Lite resource pilot. Never substitute pilot 17 selected names for scientific fit-only subset, and never modify official TEST or V2 PDF.
+
+---
+
 ## P21 stable17 selector pilot source QA PASS — 18/10/2026
 
 **Current P21 next step:** TRAIN-fit-only 17-feature selector pilot was IMPLEMENTED, not run on author laptop. It checks sample exclusivity, performs 5 seeds × 3 methods (MI redundancy, L1 Logistic Regression, ExtraTrees single-threaded), ranks exactly 17 original predictors deterministically, discards pilot feature names, and never scores validation/TEST. The launcher has a separate opt-in token, ≤20min wall-time, one CPU, 2GiB RSS tree cap, 1.5GiB system RAM floor and 4GiB starting available gate. Synthetic GitHub QA [39065559976](https://github.com/nphu0811/EnsembleLearning/actions/runs/39065559976) SUCCESS: **30/30 stdlib tests, 7/7 synthetic ML tests, 29/29 frozen source/protocol checks**. Exact usage and scientific caveats: [P21 selector pilot QA](docs/research/P21_SELECTOR17_FIT_ONLY_PILOT_QA_2026-10-18.md).
