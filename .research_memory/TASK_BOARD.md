@@ -1,3 +1,17 @@
+## P21-RF42-PILOT PREPARED, NOT EXECUTED — 18/10/2026
+
+| Task | Status | Evidence/next |
+|---|---|---|
+| P21-local-static-source-preflight | **30/30 PASS (user Windows)** | `--verify-local-train-sha`, official TRAIN SHA correct, `official_test_read=false`, `training_performed=false` |
+| P21-sandbox/resource-protected RF42 anchor pilot code | **IMPLEMENTED, NOT RUN** | `tools/p21_pilot_supervisor.py`, `tools/p21_pilot_worker.py`, `tools/p21_pilot_guards.py`. Only 8k default/20k maximum fit rows from TRAIN-fit pool, no validation prediction, no model artifact. Separate author consent required |
+| P21 synthetic QA | **PASS** | [CI 39061822482](https://github.com/nphu0811/EnsembleLearning/actions/runs/39061822482): 14+7+3 tests, 29 source checks; synthetic split verified group disjoint, collision fail-closed, null reject |
+| P21-pilot-RF42 actual host run | **WAIT_AUTHOR_OPT_IN** | If desired, run bounded `--authorize I_AUTHORIZE_TRAIN_ONLY_P21_RF42_PILOT` on user Windows, new outdir `results/controlled_extensions/p21_train_only_pilot_rf42_01`, >=4GiB available and >=10GiB disk. No auto-run |
+| P21 select17/weight/oversample/Stacking pilot | **NOT IMPLEMENTED / NOT APPROVED** | Inspect RF42 resource/time before implementing rest; additional synthetic ML leakage QA needed |
+| P21 scientific 5-seed RQ1/RQ2/RQ5 fits | **NOT_AUTHORIZED / NOT_RUN** | New controlled study separate from P9/P15, 20 RF + 5 Stack fits only after complete pilot suite and explicit author approval |
+
+All P21 changes preserve original 37-page/PDF V2 47-page, official TEST, original model evaluations, P15 reconstructed binaries and P20 reviews. Pilot resource smoke is not a science result.
+
+---
 # CHECKPOINT ƯU TIÊN 18/10/2026 — SAU PDF V2 VÀ P20-PRE
 
 | Task | Trạng thái hiện hành | Bằng chứng/next exact action |
