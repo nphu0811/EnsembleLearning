@@ -6,6 +6,10 @@ on:
       - "config/p21_train_only_protocol_2026_10_18.json"
       - "tools/p21_protocol_validator.py"
       - "tests/test_p21_train_only_protocol.py"
+      - "tools/p21_pilot_guards.py"
+      - "tools/p21_pilot_worker.py"
+      - "tools/p21_pilot_supervisor.py"
+      - "tests/test_p21_pilot_guards.py"
       - ".github/workflows/p21-train-only-protocol-audit.yml"
   workflow_dispatch:
 
@@ -25,8 +29,11 @@ jobs:
         run: |
           python -m py_compile tools/p21_protocol_validator.py
           python -m py_compile tests/test_p21_train_only_protocol.py
-      - name: Run ten synthetic protocol tests (NO raw TRAIN/TEST)
+          python -m py_compile tools/p21_pilot_guards.py tools/p21_pilot_worker.py tools/p21_pilot_supervisor.py tests/test_p21_pilot_guards.py
+      - name: Run protocol tests (NO raw TRAIN/TEST)
         run: python -m unittest discover -s tests -p "test_p21_train_only_protocol.py" -v
+      - name: Test P21 pilot hard safety gates using synthetic fixtures only
+        run: python -m unittest discover -s tests -p "test_p21_pilot_guards.py" -v
       - name: Show historical tracked file SHA256
         run: |
           sha256sum src/models/run_unsw_phase9_final_holdout.py
