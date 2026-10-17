@@ -60,7 +60,8 @@ jobs:
           for required in "RQ1" "RQ2" "RQ3" "RQ4" "RQ5" "0.950387" "0.947325" \
             "0.946758" "0.951484" "0.863840" "0.858125" "0.857473" \
             "scikit-learn 1.9.0" "Fuzzers" "Worms"; do
-            if ! grep -F -q "$required" "$NORMALIZED"; then
+            required_normalized=$(printf "%s" "$required" | tr -d '[:space:]')
+            if ! grep -F -q "$required_normalized" "$NORMALIZED"; then
               echo "::error title=Missing PDF content::$required is absent after removing extraction whitespace"
               exit 1
             fi
