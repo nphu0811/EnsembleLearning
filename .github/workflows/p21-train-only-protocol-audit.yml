@@ -27,5 +27,11 @@ jobs:
           python -m py_compile tests/test_p21_train_only_protocol.py
       - name: Run ten synthetic protocol tests (NO raw TRAIN/TEST)
         run: python -m unittest discover -s tests -p "test_p21_train_only_protocol.py" -v
+      - name: Show historical tracked file SHA256
+        run: |
+          sha256sum src/models/run_unsw_phase9_final_holdout.py
+          sha256sum results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json
+          sha256sum results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json
+          git ls-files --eol results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json
       - name: Verify P21 contract and three frozen historical file hashes
         run: python tools/p21_protocol_validator.py
