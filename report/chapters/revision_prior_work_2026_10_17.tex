@@ -1,0 +1,33 @@
+
+\subsection{Đối chiếu trực tiếp với các nghiên cứu gần phương pháp}
+\label{sec:related-work-direct-comparison}
+Để định vị đóng góp thực nghiệm, chúng tôi đối chiếu giao thức của ba công trình
+gần nhất đã có bằng chứng đọc phần phương pháp: Thockchom và cộng sự
+\cite{legacyL06}, Nassreddine và cộng sự \cite{legacyL12},
+Alsaffar và cộng sự \cite{alsaffar2024shielding}. Các công trình đều sử dụng
+thành phần lựa chọn đặc trưng và kết hợp bộ phân loại, do đó nghiên cứu này
+\emph{không} tuyên bố tạo ra một thuật toán Stacking hay Feature Selection mới.
+
+\begin{table}[htbp]\centering
+\small
+\caption{Đối chiếu phạm vi phương pháp với công trình liên quan; khác giao thức thì không xếp hạng trực tiếp điểm số.}
+\label{tab:related-methods-revision}
+\begin{tabularx}{\linewidth}{p{0.20\linewidth}X X}
+\toprule
+Công trình & Dữ liệu và giao thức được ghi nhận & Thành phần/khả năng so sánh \\
+\midrule
+Thockchom và cs. (2023) & Gồm UNSW-NB15, có mô tả random 80/20, không đồng nhất official holdout của đề tài & Chi-square và base GNB/DT/LR, meta SGD; đã có dự đoán base qua CV. \\
+Nassreddine và cs. (2025) & NSL-KDD, CICIDS2017; không dùng official UNSW-NB15 TEST trong nghiên cứu này & Correlation/embedded selection, LR meta và SMOTE--TOMEK; chi tiết fold-local toàn chuỗi còn chưa xác minh. \\
+Alsaffar và cs. (2024) & UNSW-NB15 và CICIDS2017; mô tả gộp partition rồi chia ngẫu nhiên 80/20 & MI--Boruta; RF/CatBoost/XGBoost với MLP meta. Đây là tiền lệ gần, không phải baseline có split khớp. \\
+Nghiên cứu này & Official TRAIN 175\,341 và TEST 82\,332, split giữ nguyên; binary Normal/Attack & Stable17/42; RF và Stacking LR/DT/RF, LR meta; đánh giá paired CI, FP/FN, chi phí và novel-vector sensitivity. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Điểm bổ sung có bằng chứng của đề tài là \emph{case study đánh giá và kiểm toán}
+trên split chính thức, đối chiếu cùng mẫu các loại lỗi, mức bất định và chi phí,
+kể cả khi ensemble không vượt mô hình đơn mạnh. Đây là khác biệt \emph{phạm vi
+đánh giá}, không chứng minh tính mới thuật toán, ưu thế trước số liệu của các bài
+khác, hay tổng quan đầy đủ toàn lĩnh vực. Phần Methods/results của ba nguồn
+được kiểm tra theo các đoạn đã tiếp cận; các chi tiết chưa xác minh không
+được suy diễn thành sai sót của công trình trước.
