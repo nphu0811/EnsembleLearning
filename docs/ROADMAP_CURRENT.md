@@ -1,5 +1,11 @@
 # Roadmap hiện hành sau resume ngày 16/10/2026
 
+## Cập nhật P15 ngày 17/10/2026 — trạng thái ưu tiên hiện hành
+
+**P15 = DONE_SCOPED_RECONSTRUCTION**: cả 3 mô hình frozen RF17/RF42/Stack42 đã fit 100% official TRAIN trên laptop tác giả; `run_report.json` đều PASS, full artifact `*_RECONSTRUCTED_FULL_TRAIN.joblib` được author-host read-only SHA/deserialize/structure/probability QA `artifact_acceptance.json` xác nhận 69/69 checks true, đối chiếu remote metadata PASS. Tài liệu chính thức: `docs/research/P15_FULL_TRAIN_RECONSTRUCTION_SCOPED_CLOSURE_2026-10-17.md`. Đây không phải ORIGINAL historical model/bitwise match hoặc đánh giá TEST; G3 release tổng thể còn PARTIAL do original provenance và demo/release gate riêng. Không lặp training để tự ý làm khớp số metric cũ; P16/P18/P19/P20, G0–G6 tiếp tục kiểm soát độc lập.
+
+Các đoạn r05 và r04 phía dưới mô tả snapshot cũ tại 16/10, **không phải trạng thái P15 mới nhất**. Những quyết định/giới hạn dữ liệu lịch sử vẫn giữ nguyên.
+
 ## Cập nhật r05 — 16/10/2026, ưu tiên hiện hành
 
 R04-ASSEMBLY missing independent full argument/form review đã hoàn tất bằng report r05 ở context riêng; baP1 và haiP2 sửa trong draft r05, reviewer recheck chấp nhận internal content;34/34 mechanical checks PASS. HaiP0 hành chính và filled/rendered DOCX/PDF vẫn OPEN. Xem qa_logs/r05_review_resolution.md dưới proposal/researchwrite/nckh-ids/. Phase0–20 và G0–G6 không tự DONE. FullTRAIN plan có input hashes/capacity/budget/isolation nhưng NO_GO do RAM headroom/runner chưa đạt, không fit mới. Public surface triage có finding paths/email/template fields, không cleanup hoặc push.
@@ -27,7 +33,7 @@ Checkpoint r03: docs/RESUME_AUDIT_R03_2026-10-16.md. P18 xác nhận metadata th
 | P12 | VERIFIED_REUSE có giới hạn | phase10 CI/McNemar có; hashes qua P13 input audit; không rerun bootstrap |
 | P13 | VERIFIED_REUSE retrospective | 19 input hash khớp; không full-factorial/component leave-one-out |
 | P14 | VERIFIED_REUSE descriptive | Step1/3/4/5 + closure; 375 checks là evidence lịch sử, không nói vừa chạy lại |
-| P15 | PARTIAL | Hash/protocol/tests/postprocessing clean replay đạt; training reproduction, original env, model artifact còn thiếu |
+| P15 | **DONE_SCOPED_RECONSTRUCTION (17/10/2026)** | 3/3 frozen candidates full TRAIN 175341 rows + local `.joblib` acceptance PASS 69/69; observed RAM traces reviewed 75/75 consistency, no TEST. Historical original environment/model bitwise identity UNKNOWN; independent reviewer binary load and G3 release/demo gate still OPEN. See P15 closure QA. |
 | P16 | IN_PROGRESS | Bắt đầu figure QA từ saved tables; draft cũ không tự động đạt |
 | P17 | PARTIAL (FIVE_CHAPTER_37P_PDF_QA_PASS) | Báo cáo 5 chương như mẫu tham khảo; 37 trang A4, bỏ Tóm tắt, Danh mục từ viết tắt đặt sau Mục lục với cột giải nghĩa theo vai trò; không in đường dẫn source Markdown/JSON trong PDF; XeLaTeX/BibTeX PASS, 12 tài liệu, không thiếu glyph/nhãn/cảnh báo tràn dòng. Xác nhận chữ ký, form nộp, các gate học thuật vẫn OPEN. |
 | P18 | TODO/PARTIAL | Literature list cũ; chưa verified refs.bib cho báo cáo cuối |
