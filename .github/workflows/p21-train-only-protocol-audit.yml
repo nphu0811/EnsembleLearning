@@ -14,6 +14,8 @@ on:
       - "tools/p21_verify_pilot_reports.py"
       - "tests/test_p21_pilot_report_acceptance.py"
       - "tools/p21_rq5_sampling.py"
+      - "tools/p21_rq5_pilot_worker.py"
+      - "tools/p21_rq5_pilot_supervisor.py"
       - "tests/test_p21_rq5_sampling.py"
       - "tools/p21_selector_core.py"
       - "tools/p21_selector_pilot_worker.py"
@@ -45,7 +47,7 @@ jobs:
           python -m py_compile tests/test_p21_train_only_protocol.py
           python -m py_compile tools/p21_pilot_guards.py tools/p21_pilot_worker.py tools/p21_pilot_supervisor.py tests/test_p21_pilot_guards.py
           python -m py_compile tools/p21_verify_pilot_reports.py tests/test_p21_pilot_report_acceptance.py
-          python -m py_compile tools/p21_rq5_sampling.py tests/test_p21_rq5_sampling.py
+          python -m py_compile tools/p21_rq5_sampling.py tests/test_p21_rq5_sampling.py tools/p21_rq5_pilot_worker.py tools/p21_rq5_pilot_supervisor.py
           python -m py_compile tools/p21_selector_core.py tools/p21_selector_pilot_worker.py tools/p21_selector_pilot_supervisor.py
           python -m py_compile tests/test_p21_selector_safety.py tests/test_p21_selector_synthetic.py
           python -m py_compile tools/p21_verify_selector_pilot_reports.py tests/test_p21_selector_report_acceptance.py
