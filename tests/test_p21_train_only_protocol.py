@@ -27,6 +27,40 @@ class P21TrainOnlyContractTests(unittest.TestCase):
     def test_current_protocol_is_design_only_valid(self):
         self.assertEqual(failures(copy.deepcopy(SOURCE)), [])
 
+    def test_hash_verifier_accepts_exact_lf_and_crlf(self):
+        import hashlib
+
+        lf = b'{"stable_features": 17}\n{"seed": 42}\n'
+        crlf = lf.replace(b"\n", b"\r\n")
+        git_hash = hashlib.sha256(lf).hexdigest()
+        author_hash = hashlib.sha256(crlf).hexdigest()
+        self.assertTrue(MOD.verify_dual_eol_bytes(lf, git_hash, author_hash))
+        self.assertTrue(MOD.verify_dual_eol_bytes(crlf, git_hash, author_hash))
+
+    def test_hash_verifier_rejects_changes_mixed_eol_and_stray_cr(self):
+        import hashlib
+
+        lf = b'{"stable_features": 17}\n{"seed": 42}\n'
+        crlf = lf.replace(b"\n", b"\r\n")
+        git_hash = hashlib.sha256(lf).hexdigest()
+        author_hash = hashlib.sha256(crlf).hexdigest()
+        altered = lf.replace(b"17", b"18")
+        mixed = b'{"stable_features": 17}\r\n{"seed": 42}\n'
+        stray_cr = b'{"stable_features": 17}\r{"seed": 42}\n'
+        for bad in (altered, mixed, stray_cr, b"", lf + b" "):
+            with self.subTest(bad=bad):
+                self.assertFalse(MOD.verify_dual_eol_bytes(bad, git_hash, author_hash))
+
+    def test_hash_verifier_rejects_one_incorrect_expected_digest(self):
+        import hashlib
+
+        lf = b'{"stable_features": 17}\n'
+        crlf = lf.replace(b"\n", b"\r\n")
+        git_hash = hashlib.sha256(lf).hexdigest()
+        author_hash = hashlib.sha256(crlf).hexdigest()
+        self.assertFalse(MOD.verify_dual_eol_bytes(lf, "0" * 64, author_hash))
+        self.assertFalse(MOD.verify_dual_eol_bytes(crlf, git_hash, "0" * 64))
+
     def test_reject_train_to_test_path_switch(self):
         p = copy.deepcopy(SOURCE)
         p["source"]["raw_train"] = "data/raw/unsw-nb15/UNSW_NB15_testing-set.csv"
