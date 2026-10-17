@@ -22,6 +22,12 @@ EXPECTED_FROZEN = {
     "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json": "cdda800318c5d2259e581bff5b194381be7434d654950377dd4b40fca50be0a6",
     "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json": "5a8fe201c88b49a2c018778f6d159a107b6fdfa810c05c1606e42e6d675244be",
 }
+EXPECTED_GIT_LF = {
+    "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json":
+        "7e9b99b39c455379871af93e447c80e375232ad66d9aae4075c105059dd1f6e7",
+    "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json":
+        "1066e0791b13f681f72426636ca0713bb6c3316aacebf09d2f9b3b34121125e1",
+}
 EXPECTED_ARMS = {
     "A0_RF42_NONE", "A1_RF17_NONE", "A2_RF42_BALANCED",
     "A3_RF42_OVERSAMPLE", "A4_STACK42_NONE",
@@ -67,6 +73,10 @@ def validate_contract(config: dict) -> list[dict]:
        set(src["excluded_predictors"]) == {"id", "attack_cat", "label"})
     ok("all historical file identity checks declared",
        src["historical_read_only_hashes"] == EXPECTED_FROZEN)
+    ok("repository LF to author Windows CRLF provenance declared",
+       src["tracked_git_lf_sha256"] == EXPECTED_GIT_LF and
+       src["historical_json_worktree_line_endings"] ==
+       "CRLF_on_author_Windows; LF_in_Git_index; conversion_verified_without_content_changes")
 
     ok("group-disjoint 5-fold validation",
        split["group_by"] == "exact_original_42_predictor_vector_only" and
@@ -189,8 +199,20 @@ def static_audit(verify_train: bool = False) -> dict:
     checks = validate_contract(config)
     for rel, expected in EXPECTED_FROZEN.items():
         path = ROOT / rel
-        checks.append({"id": "frozen_sha256:" + rel,
-                       "pass": path.is_file() and sha256(path) == expected})
+        if rel in EXPECTED_GIT_LF and path.is_file():
+            # Git stores LF; the author-host provenance record was created
+            # from the Windows CRLF worktree. Require BOTH exact hashes.
+            data = path.read_bytes()
+            repo_hash = hashlib.sha256(data).hexdigest()
+            crlf_data = data.replace(b"\\r\\n", b"\\n").replace(b"\\n", b"\\r\\n")
+            crlf_hash = hashlib.sha256(crlf_data).hexdigest()
+            valid = (repo_hash == EXPECTED_GIT_LF[rel] and
+                     crlf_hash == expected and b"\\r\\n" not in data)
+            checks.append({"id": "frozen_git_lf_and_author_crlf_sha256:" + rel,
+                           "pass": valid})
+        else:
+            checks.append({"id": "frozen_sha256:" + rel,
+                           "pass": path.is_file() and sha256(path) == expected})
     train_file = ROOT / config["source"]["raw_train"]
     if verify_train:
         checks.append({"id": "explicit_train_sha256",
