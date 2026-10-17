@@ -11,6 +11,9 @@ on:
       - "tools/p21_pilot_supervisor.py"
       - "tests/test_p21_pilot_guards.py"
       - "tests/test_p21_pilot_split_synthetic.py"
+      - "tools/p21_verify_pilot_reports.py"
+      - "tests/test_p21_pilot_report_acceptance.py"
+      - "results/controlled_extensions/p21_train_only_pilot_rf42_*/**"
       - ".github/workflows/p21-train-only-protocol-audit.yml"
   workflow_dispatch:
 
@@ -31,10 +34,15 @@ jobs:
           python -m py_compile tools/p21_protocol_validator.py
           python -m py_compile tests/test_p21_train_only_protocol.py
           python -m py_compile tools/p21_pilot_guards.py tools/p21_pilot_worker.py tools/p21_pilot_supervisor.py tests/test_p21_pilot_guards.py
+          python -m py_compile tools/p21_verify_pilot_reports.py tests/test_p21_pilot_report_acceptance.py
       - name: Run protocol tests (NO raw TRAIN/TEST)
         run: python -m unittest discover -s tests -p "test_p21_train_only_protocol.py" -v
       - name: Test P21 pilot hard safety gates using synthetic fixtures only
         run: python -m unittest discover -s tests -p "test_p21_pilot_guards.py" -v
+      - name: Verify 5 pilot acceptance regression tests (metadata only)
+        run: python -m unittest discover -s tests -p "test_p21_pilot_report_acceptance.py" -v
+      - name: Accept author-provided RF42 pilot report evidence only
+        run: python tools/p21_verify_pilot_reports.py
       - name: Show historical tracked file SHA256
         run: |
           sha256sum src/models/run_unsw_phase9_final_holdout.py
