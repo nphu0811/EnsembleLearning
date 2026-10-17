@@ -1,3 +1,18 @@
+## P21 selector17 pilot ready — 18/10/2026
+
+| Task | State | Evidence / next |
+|---|---|---|
+| Fit-only stability selector implementation | **CODE_READY; NOT EXECUTED ON USER TRAIN** | tools/p21_selector_core.py: MI+Spearman 0.95, L1 LR, ExtraTrees200/n_jobs1, 5 fixed seeds, 17 exact original features. No historical stable17 reuse |
+| Selector supervisor/worker | **CODE_READY; NO AUTHOR EXECUTION** | tools/p21_selector_pilot_supervisor.py and tools/p21_selector_pilot_worker.py; separate consent and protected output, ≤20min, RSS cap2GiB, startup RAM4GiB, one CPU |
+| QA on synthetic fixtures | **PASS** | [CI39065559976](https://github.com/nphu0811/EnsembleLearning/actions/runs/39065559976): 30 unit tests +7 synthetic ML tests+29 static checks, no raw data or TEST |
+| Actual selector pilot | **WAIT_AUTHOR_OPT_IN** | git pull; python .venv-p15-local/P21 selector supervisor with author opt-in; output new p21_train_only_pilot_selector17_01 |
+| P21 weighting/oversampling/Stacking pilots | **NOT_IMPLEMENTED / NOT RUN** | Construct only after selector resource evidence scoped PASS |
+| P21 full 5-seed scientific experiment | **NOT AUTHORIZED / NOT RUN** | Separate consent needed; V2/P9/P15 untouched |
+
+See docs/research/P21_SELECTOR17_FIT_ONLY_PILOT_QA_2026-10-18.md. Old roadmap lines remain historical, not current gate status.
+
+---
+
 ## P21 RF42 author pilot PASS — 18/10/2026
 
 | Item | Status | Evidence and next |
