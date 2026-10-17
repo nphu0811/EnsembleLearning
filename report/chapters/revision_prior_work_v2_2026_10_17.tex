@@ -1,0 +1,27 @@
+\subsection{Đối chiếu phương pháp với một số công trình liên quan}
+\label{sec:related-work-direct-comparison}
+
+Bảng~\ref{tab:related-methods-revision} đặt protocol và thành phần phương pháp của đề tài cạnh ba công trình mà phần phương pháp đã được đối chiếu trong phạm vi tư liệu hiện có: Thockchom và cộng sự \cite{legacyL06}, Nassreddine và cộng sự \cite{legacyL12}, và Alsaffar và cộng sự \cite{alsaffar2024shielding}. Các nghiên cứu này giúp định vị cách kết hợp Feature Selection và ensemble trong tài liệu liên quan; khác biệt về bộ dữ liệu, cách chia tập và protocol khiến chúng không phải đối chứng trực tiếp về điểm số.
+
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\caption{Khác biệt về dữ liệu và phương pháp trong một số nghiên cứu liên quan.}
+\label{tab:related-methods-revision}
+\begin{tabularx}{\linewidth}{p{0.20\linewidth} X X}
+\toprule
+Công trình & Dữ liệu và thiết kế được báo cáo & Thành phần phương pháp và quan hệ với nghiên cứu này\\
+\midrule
+Thockchom và cs. (2023) \cite{legacyL06} & Có UNSW-NB15 và mô tả chia ngẫu nhiên 80/20; split không trùng với official holdout ở đây. & Kết hợp Chi-square với GNB/DT/LR và meta-SGD; là tiền lệ về heterogeneous stacking, không phải baseline matched.\\
+Nassreddine và cs. (2025) \cite{legacyL12} & Dùng NSL-KDD và CICIDS2017, không sử dụng official UNSW-NB15 TEST của đề tài. & Kết hợp lựa chọn theo tương quan/embedded với LR meta và SMOTE--TOMEK; không đối chiếu trực tiếp điểm số giữa các split.\\
+Alsaffar và cs. (2024) \cite{alsaffar2024shielding} & Báo cáo UNSW-NB15 và CICIDS2017, với mô tả gộp partition trước khi chia ngẫu nhiên 80/20. & Kết hợp MI--Boruta với RF/CatBoost/XGBoost và MLP meta; là tiền lệ gần về phương pháp nhưng khác protocol.\\
+Nghiên cứu này & Giữ official TRAIN 175\,341 và TEST 82\,332; phân loại nhị phân Normal/Attack. & So sánh RF-17/RF-42 với Stacking-42, có pooled OOF, paired CI, phân tích FP/FN, chi phí và novel-vector sensitivity.\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Ba khái niệm đóng góp cần được phân biệt. Nghiên cứu này không đề xuất methodological novelty cho Stacking hay Feature Selection; các thành phần đó đã có tiền lệ trong tài liệu. Đóng góp nghiên cứu ở đây là case study theo split chính thức, còn empirical contribution là cách đối chiếu cùng các pipeline trên các mẫu holdout bằng metric tổng hợp, sai số theo lớp, độ bất định và chi phí đã lưu. Phạm vi này không phải tuyên bố review đầy đủ toàn lĩnh vực, cũng không cho phép xếp hạng các điểm số được tạo ra từ protocol khác nhau.
+
+Các mô tả trong bảng giới hạn ở thông tin phương pháp đã được kiểm tra trong các nguồn nêu trên. Chi tiết chưa xác minh được giữ ở trạng thái chưa xác định, thay vì diễn giải thành khuyết điểm của công trình trước.
