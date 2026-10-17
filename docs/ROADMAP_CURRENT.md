@@ -1,3 +1,11 @@
+## P21 stable17 selector pilot source QA PASS — 18/10/2026
+
+**Current P21 next step:** TRAIN-fit-only 17-feature selector pilot was IMPLEMENTED, not run on author laptop. It checks sample exclusivity, performs 5 seeds × 3 methods (MI redundancy, L1 Logistic Regression, ExtraTrees single-threaded), ranks exactly 17 original predictors deterministically, discards pilot feature names, and never scores validation/TEST. The launcher has a separate opt-in token, ≤20min wall-time, one CPU, 2GiB RSS tree cap, 1.5GiB system RAM floor and 4GiB starting available gate. Synthetic GitHub QA [39065559976](https://github.com/nphu0811/EnsembleLearning/actions/runs/39065559976) SUCCESS: **30/30 stdlib tests, 7/7 synthetic ML tests, 29/29 frozen source/protocol checks**. Exact usage and scientific caveats: [P21 selector pilot QA](docs/research/P21_SELECTOR17_FIT_ONLY_PILOT_QA_2026-10-18.md).
+
+**Status: CODE_READY; AUTHOR_SELECTOR_PILOT_NOT_RUN; FULL_P21_RQ1_RQ2_RQ5_NOT_AUTHORIZED.** Previously accepted RF42 8k pilot unchanged. After user runs selector pilot, audit resource/metadata report before building separately approved class-weighting/oversampling and Stack-Lite pilots. Neither pilot creates new official TEST metrics or warrants PDF V3.
+
+---
+
 ## P21 RF42 pilot 8000 TRAIN rows — accepted scoped 18/10/2026
 
 **Latest P21 update:** User pushed commit `34bcdeac4dd4379413154de6aad88ccec8c89a60` with `start.json`, `run_report.json`, `worker/worker_result.json` for supervised **8000-row official TRAIN-only RF42 resource pilot**. Final supervisor status `PASS_RESOURCE_SMOKE_ONLY`, exit0, 51.86s wall, 11.391s fit+16 TRAIN probe, peak 371728384B (~354.5MiB), min available 4333109248B (~4.04GiB), 101 watchdog samples; fold0 group-disjoint fit pool140272/validation35069, **zero validation predictions**, no TEST or accuracy metrics. A read-only cross-record auditor now validates committed reports: **14/14 acceptance checks PASS**, 5 report fixture tests PASS, [CI 39062897494](https://github.com/nphu0811/EnsembleLearning/actions/runs/39062897494) SUCCESS (29 unit tests total +29 static source checks). Review `docs/research/P21_RF42_PILOT_AUTHOR_RESULT_ACCEPTANCE_2026-10-18.md`.
