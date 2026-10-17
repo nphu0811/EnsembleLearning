@@ -1,7 +1,7 @@
 \section{Phạm vi đánh giá và cách diễn giải chỉ số}
 \label{sec:pham-vi-ket-qua}
 
-Chương này tổng hợp kết quả đã lưu cho bài toán phân loại nhị phân trên UNSW-NB15, với Normal = 0 và Attack = 1. Official TRAIN có 175\,341 dòng; official TEST có 82\,332 dòng, gồm 37\,000 Normal và 45\,332 Attack. Ba pipeline cuối là Random Forest 42 đặc trưng (RF-42), Stacking 42 đặc trưng (Stacking-42) và Random Forest 17 đặc trưng (RF-17); cả ba dùng ngưỡng phân loại 0,5. Các biến \texttt{id}, \texttt{label} và \texttt{attack\_cat} không được dùng làm predictor. Trường \texttt{attack\_cat} chỉ hỗ trợ phân tích hậu nghiệm các mẫu Attack bị bỏ sót, không đại diện cho kết quả phân loại đa lớp.
+Chương này trình bày kết quả đánh giá các mô hình phân loại nhị phân trên UNSW-NB15, với Normal = 0 và Attack = 1. Official TRAIN có 175\,341 dòng; official TEST có 82\,332 dòng, gồm 37\,000 Normal và 45\,332 Attack. Ba pipeline cuối là Random Forest 42 đặc trưng (RF-42), Stacking 42 đặc trưng (Stacking-42) và Random Forest 17 đặc trưng (RF-17); cả ba dùng ngưỡng phân loại 0,5. Các biến \texttt{id}, \texttt{label} và \texttt{attack\_cat} không được dùng làm predictor. Trường \texttt{attack\_cat} chỉ hỗ trợ phân tích hậu nghiệm các mẫu Attack bị bỏ sót, không đại diện cho kết quả phân loại đa lớp.
 
 Với Attack là lớp dương, FPR là tỷ lệ Normal bị gán nhầm thành Attack, còn FNR là tỷ lệ Attack bị bỏ sót:
 \begin{equation}
@@ -81,18 +81,18 @@ Các khoảng được tạo bằng 10\,000 lượt bootstrap phân tầng theo 
 \section{Chi phí quan sát trong lần chạy lịch sử}
 \label{sec:chi-phi}
 
-Bảng~\ref{tab:chi-phi} tập hợp thời gian, tốc độ suy luận trung bình trên batch đánh giá và kích thước ước lượng đã lưu. Các con số cho thấy Stacking cần nhiều thời gian huấn luyện hơn RF-42 trong lần chạy đó, còn RF-17 có thời gian và kích thước thấp hơn. Chúng mô tả các cấu hình và môi trường lịch sử cụ thể; không phải benchmark lặp lại trên thiết bị triển khai.
+Bảng~\ref{tab:chi-phi} đối chiếu thời gian huấn luyện, thời gian suy luận trung bình theo lô và dung lượng mô hình ước tính trong lần thực nghiệm ban đầu. Các con số cho thấy Stacking cần nhiều thời gian huấn luyện hơn RF-42 trong lần chạy đó, còn RF-17 có thời gian và kích thước thấp hơn. Chúng mô tả các cấu hình và môi trường lịch sử cụ thể; không phải benchmark lặp lại trên thiết bị triển khai.
 
 \begin{table}[htbp]
 \centering
 \small
 \renewcommand{\arraystretch}{1.3}
-\setlength{\tabcolsep}{7pt}
-\caption{Chi phí lịch sử đã lưu; dung lượng tính theo MiB (byte chia $1024^2$).}
+\setlength{\tabcolsep}{6pt}
+\caption{Chi phí tính toán của ba pipeline trong lần thực nghiệm ban đầu; dung lượng quy đổi sang MiB.}
 \label{tab:chi-phi}
 \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}X S[table-format=2.0] S[table-format=4.3] S[table-format=1.6] S[table-format=3.3]}
 \toprule
-Pipeline & {Số biến gốc} & {Huấn luyện (s)} & {Suy luận (ms/flow)} & {Kích thước (MiB)}\\
+Pipeline & {\shortstack{Số biến\\gốc}} & {\shortstack{Huấn luyện\\(s)}} & {\shortstack{Suy luận theo lô\\(ms/flow)}} & {\shortstack{Dung lượng\\(MiB)}}\\
 \midrule
 RF-42 & 42 & 371.244 & 0.008679 & 205.490\\
 Stacking-42 & 42 & 980.170 & 0.012445 & 206.216\\
@@ -101,7 +101,7 @@ RF-17 & 17 & 57.255 & 0.003562 & 105.044\\
 \end{tabularx}
 \end{table}
 
-Theo các số đo đã lưu, thời gian huấn luyện RF-42 gấp khoảng 6.48 lần RF-17; kích thước ước lượng của RF-17 thấp hơn khoảng 48.88\%. Trường suy luận là thời gian trung bình trên một dòng khi xử lý batch đã đánh giá, không phải độ trễ của một yêu cầu riêng lẻ. Môi trường thư viện gốc chưa được xác định trực tiếp, và kích thước được báo cáo không chứng minh artifact mô hình lịch sử hiện còn tồn tại.
+Trong cùng đợt thực nghiệm, thời gian huấn luyện RF-42 gấp khoảng 6.48 lần RF-17; kích thước ước lượng của RF-17 thấp hơn khoảng 48.88\%. Trường suy luận là thời gian trung bình trên một dòng khi xử lý batch đã đánh giá, không phải độ trễ của một yêu cầu riêng lẻ. Môi trường thư viện gốc chưa được xác định trực tiếp, và kích thước được báo cáo không chứng minh artifact mô hình lịch sử hiện còn tồn tại.
 
 \section{Sai số theo họ tấn công}
 \label{sec:attack-family-error}
