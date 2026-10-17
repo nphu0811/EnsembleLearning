@@ -27,7 +27,12 @@
       "src/models/run_unsw_phase9_final_holdout.py": "3e7d1369222ccdf452116e069a0db3df55e1d6d683d0f92f4e2bcde0800ae480",
       "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json": "cdda800318c5d2259e581bff5b194381be7434d654950377dd4b40fca50be0a6",
       "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json": "5a8fe201c88b49a2c018778f6d159a107b6fdfa810c05c1606e42e6d675244be"
-    }
+    },
+    "tracked_git_lf_sha256": {
+      "results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json": "7e9b99b39c455379871af93e447c80e375232ad66d9aae4075c105059dd1f6e7",
+      "results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json": "1066e0791b13f681f72426636ca0713bb6c3316aacebf09d2f9b3b34121125e1"
+    },
+    "historical_json_worktree_line_endings": "CRLF_on_author_Windows; LF_in_Git_index; conversion_verified_without_content_changes"
   },
   "split": {
     "group_by": "exact_original_42_predictor_vector_only",
