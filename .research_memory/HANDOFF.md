@@ -430,3 +430,22 @@ User said "git lên r" after executing the explicit supervised `P21_RF42` resour
 Assistant created **read-only** `tools/p21_verify_pilot_reports.py` and `tests/test_p21_pilot_report_acceptance.py`; checked 14/14 JSON+config constraints, five tests reject forged metrics/TEST and changed resources/models; GitHub [CI39062897494](https://github.com/nphu0811/EnsembleLearning/actions/runs/39062897494) SUCCESS with 14 protocol +7 pilot guards +5 pilot report +3 synthetic grouped tests = 29 unit tests, plus29 static source checks. Accepted `P21_RF42_ANCHOR_RESOURCE_PILOT_DONE_SCOPED` in `docs/research/P21_RF42_PILOT_AUTHOR_RESULT_ACCEPTANCE_2026-10-18.md`. Cannot independently replay user-host telemetry (resources.csv ignored), report scope only. Commit contained no raw data, binaries, or logs.
 
 **NEXT DESIGN/CODING (NO FULL RUN):** feature selection 17-variable fit-only pilot (5 selection seeds, MI/L1/ET on training sample, cache strictly inside each replication), synthetic tests validating no validation-label access and selector/feature count deterministic; independent resource cap. Then dedicated W1/W2 RF and Stacking-Lite pilots if feasible. **P21 scientific five seeds × five arms and PDF V3 NOT AUTHORIZED**; user must opt in after full pilot telemetry/QA. Preserve old 37p PDF, V2 47p, P9/P15 and official TEST, P20 reviewers.
+
+## P21 selector17 pilot code QA PASS; author run pending — 2026-10-18
+
+User said "ok" to progressing the P21 selector pilot after the author-host RF42 8k pilot PASS. This authorizes code preparation and CI tests, NOT unattended fitting or full RQ matrix execution.
+
+New files:
+- tools/p21_selector_core.py: MI + Spearman redundancy .95, L1 logistic C.1/liblinear, ExtraTrees200/leaf2 **n_jobs=1**, strict FIT-only index guard (allowed indices exactly matching source frame, disjoint from validation), 5 selector seeds [11,23,42,71,101], top20 per method, stable threshold3/5 in >=2 methods, deterministic sort by votes/meanfreq/feature name, select exactly17.
+- tools/p21_selector_pilot_worker.py: supervisor-only, reads hashed official TRAIN, group-disjoint fold0 internal validation, draws 8k default FIT-pool rows, scaled 4667 per selection seed (full protocol 35k/60k ratio), runs 15 selectors, writes only aggregate selector resource/safety report, NO validation scoring, TEST, original global stable17 reuse, selected feature names, binary model or scientific result.
+- tools/p21_selector_pilot_supervisor.py: requires exact separate --authorize I_AUTHORIZE_TRAIN_ONLY_P21_SELECTOR17_PILOT, NEW p21_train_only_pilot_selector17_* folder, 4GiB available RAM at launch, >=10GiB disk, 2GiB process-tree RSS limit, 1.5GiB system floor, one CPU, 0.5s telemetry and hard 5-20minute deadline, cannot auto-run full experiment.
+- tests/test_p21_selector_safety.py (four fixture tests), tests/test_p21_selector_synthetic.py (four ML tests including actual 5×3-selector run on fabricated 42-feature rows), .gitignore updates, CI trigger and instructions at docs/research/P21_SELECTOR17_FIT_ONLY_PILOT_QA_2026-10-18.md.
+
+**GitHub Actions run 39065559976 SUCCESS**: 30/30 standard library tests, 7/7 synthetic ML tests (3 grouped split +4 selector), 29/29 historical source/config checks. No raw UNSW TRAIN/TEST read or original phase results changed by CI. **NO USER LAPTOP PILOT EXECUTED; NO SCIENTIFIC RQ RESULTS**.
+
+Next user opt-in command from NCKH PowerShell (only if they want to run selector resource pilot):
+
+    git pull --ff-only origin main
+    .\.venv-p15-local\Scripts\python.exe -X utf8 tools/p21_selector_pilot_supervisor.py --authorize I_AUTHORIZE_TRAIN_ONLY_P21_SELECTOR17_PILOT --pilot-rows 8000 --timeout-min 20 --out-dir results/controlled_extensions/p21_train_only_pilot_selector17_01
+
+If _01 exists use fresh _02; keep any failure. On PASS expected run_report status PASS_SELECTOR_RESOURCE_SMOKE_ONLY, worker selected_feature_count=17/selector_fit_calls=15/no_validation_rows_used, no TEST/metric/binary, within RSS/time. Push only compact start.json, run_report.json, worker/worker_result.json. Review local telemetry before any weighting/Stacking pilot. P21 full 5-seed 60k matrix and PDF V3 remain explicitly NOT APPROVED.
