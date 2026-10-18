@@ -1,0 +1,124 @@
+name: Build NCKH report revision V3
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "report/main_revision_v3_2026_10_19.tex"
+      - "report/chapters/*v2_2026_10_17.tex"
+      - ".github/workflows/build-nckh-revision-v3-pdf.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nckh-revision-v3-pdf
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install XeLaTeX and PDF inspection tools
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
+            texlive-xetex texlive-latex-extra texlive-fonts-recommended \
+            texlive-lang-other texlive-science latexmk poppler-utils
+      - name: Build V3 with XeLaTeX and BibTeX
+        working-directory: report
+        run: |
+          mkdir -p ../exports/report_revision_v3_2026_10_19
+          latexmk -xelatex -bibtex -interaction=nonstopmode -halt-on-error \
+            -file-line-error -outdir=../exports/report_revision_v3_2026_10_19 \
+            main_revision_v3_2026_10_19.tex
+          cp ../exports/report_revision_v3_2026_10_19/main_revision_v3_2026_10_19.pdf \
+            ../exports/report_revision_v3_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V3.pdf
+      - name: Validate content, references, layout warnings, and PDF
+        shell: bash
+        run: |
+          set -euo pipefail
+          PDF="exports/report_revision_v3_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V3.pdf"
+          LOG="exports/report_revision_v3_2026_10_19/main_revision_v3_2026_10_19.log"
+          TEXT="exports/report_revision_v3_2026_10_19/pdf_extracted.txt"
+          INFO="exports/report_revision_v3_2026_10_19/pdfinfo.txt"
+          QA="docs/research/REPORT_REVISION_V3_QA_2026-10-19.md"
+          NORMALIZED="$RUNNER_TEMP/pdf_extracted_normalized.txt"
+          test -s "$PDF"
+          pdfinfo "$PDF" | tee "$INFO"
+          pdftotext -layout "$PDF" "$TEXT"
+          tr -d '[:space:]' < "$TEXT" > "$NORMALIZED"
+          pages=$(awk '/^Pages:/ {print $2}' "$INFO")
+          if [ "$pages" -lt 35 ] || [ "$pages" -gt 80 ]; then
+            echo "::error title=Unexpected PDF page count::$pages"
+            exit 1
+          fi
+          for required in "RQ1" "RQ2" "RQ3" "RQ4" "RQ5" "0.945220" "0.936751" "0.943877" "0.944886" "0.944731" "309.850" "5" "35" "0.950387" "0.947325" \
+            "0.946758" "0.951484" "0.863840" "0.858125" "0.857473" \
+            "scikit-learn 1.9.0" "Fuzzers" "Worms"; do
+            required_normalized=$(printf "%s" "$required" | tr -d '[:space:]')
+            if ! grep -F -q "$required_normalized" "$NORMALIZED"; then
+              echo "::error title=Missing PDF content::$required is absent after removing extraction whitespace"
+              exit 1
+            fi
+            echo "Required PDF content found: $required"
+          done
+          if grep -F -q "??" "$TEXT"; then
+            echo "::error title=Unresolved reference marker::Found ?? in extracted PDF text"
+            exit 1
+          fi
+          if grep -E -q "Citation .*undefined|Reference .*undefined|There were undefined references|Missing character:" "$LOG"; then
+            echo "::error title=LaTeX citation or glyph warning::Inspect the uploaded LaTeX log"
+            exit 1
+          fi
+          if grep -F -q -e "Overfull \hbox" -e "Overfull \vbox" "$LOG"; then
+            echo "::error title=LaTeX overfull box::Inspect the uploaded LaTeX log"
+            exit 1
+          fi
+          sha=$(sha256sum "$PDF" | awk '{print $1}')
+          source_commit=$(git rev-parse HEAD)
+          mkdir -p docs/research
+          cat > "$QA" <<EOF
+          # V3 manuscript build and QA — 2026-10-19
+
+          - Source commit used for build: $source_commit
+          - Build: XeLaTeX and BibTeX via latexmk
+          - PDF: $PDF
+          - Pages: $pages
+          - SHA-256: $sha
+          - Automated checks: historical plus P21 five-seed RQ/result text present; unresolved citation/reference markers absent; missing glyph and overfull box warnings absent; PDF parsed by pdfinfo and pdftotext.
+          - Visual page review: pending author-host render and inspection recorded with the build artifact.
+          - Scope: no model fitting, feature selection, bootstrap, or official TEST access was performed for this manuscript build. P21 outcomes are post-hoc TRAIN-derived internal validation on one shared held-out fold across 5 FIT seeds, not an independent external test.
+          EOF
+      - name: Commit the V3 PDF and QA record
+        if: success() && github.event_name == 'push'
+        shell: bash
+        run: |
+          set -euo pipefail
+          PDF="exports/report_revision_v3_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V3.pdf"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$PDF" docs/research/REPORT_REVISION_V3_QA_2026-10-19.md
+          if git diff --cached --quiet; then
+            echo "V3 PDF and QA record already match this build."
+          else
+            git commit -m "Build and QA NCKH manuscript revision V3"
+            BRANCH=$(git symbolic-ref --short HEAD)
+            git push origin "HEAD:$BRANCH"
+          fi
+      - name: Upload PDF and build evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: NCKH_EnsembleLearning_REVISION_V3_2026-10-19
+          path: |
+            exports/report_revision_v3_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V3.pdf
+            exports/report_revision_v3_2026_10_19/main_revision_v3_2026_10_19.log
+            exports/report_revision_v3_2026_10_19/pdfinfo.txt
+            exports/report_revision_v3_2026_10_19/pdf_extracted.txt
+            docs/research/REPORT_REVISION_V3_QA_2026-10-19.md
+          if-no-files-found: warn
