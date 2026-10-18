@@ -4,7 +4,7 @@
 Báo cáo kết quả bổ sung này được tạo \emph{sau} quá trình đánh giá official TEST lịch sử. Năm seed tạo năm tập FIT 60\,000 dòng khác nhau nhưng tất cả dự đoán trên \textbf{cùng} 35\,069 dòng internal validation của official TRAIN (11\,200 Normal và 23\,869 Attack). Đây không phải năm lần đánh giá độc lập trên TEST hoặc một benchmark ngoài. Tất cả 25 lượt fit (5 arm $\times$ 5 seed) đều hoàn tất, với checksum nguồn dữ liệu và cấu hình khớp, confusion matrix được kiểm tra lại, không truy cập official TEST khi chạy P21.
 
 \begin{table}[htbp]\centering
-\scriptsize
+\small
 \renewcommand{\arraystretch}{1.26}
 \setlength{\tabcolsep}{3pt}
 \caption{Hiệu năng trung bình qua 5 FIT seed trên \textbf{một} internal validation P21; độ lệch chuẩn mẫu \emph{có điều kiện trên cùng validation} của Macro-F1 và MCC ghi trong ngoặc. FPR/FNR tính bằng phần trăm.}
@@ -12,11 +12,11 @@ Báo cáo kết quả bổ sung này được tạo \emph{sau} quá trình đán
 \begin{tabular}{lrrrr}
 \toprule
 Arm P21 & \shortstack{Macro-F1\\(SD theo FIT)} & \shortstack{MCC\\(SD theo FIT)} & FPR (\%) & FNR (\%)\\\midrule
-RF42-Lite (A0) & 0.945220 (0.000399) & 0.890971 (0.000858) & 9.6196 & 2.3989\\
-RF17-Lite (A1) & 0.936751 (0.001291) & 0.874032 (0.002462) & 10.7589 & 2.9327\\
-RF42 Balanced (A2) & 0.943877 (0.000275) & 0.887909 (0.000563) & 6.4554 & 4.1870\\
-RF42 Oversample (A3) & 0.944886 (0.000742) & 0.889776 (0.001480) & 7.4107 & 3.5670\\
-Stacking-Lite (A4) & 0.944731 (0.000340) & 0.889864 (0.000738) & 9.4071 & 2.5715\\\bottomrule
+RF42-Lite (A0) & \shortstack{0.945220\\{\scriptsize (0.000399)}} & \shortstack{0.890971\\{\scriptsize (0.000858)}} & 9.6196 & 2.3989\\
+RF17-Lite (A1) & \shortstack{0.936751\\{\scriptsize (0.001291)}} & \shortstack{0.874032\\{\scriptsize (0.002462)}} & 10.7589 & 2.9327\\
+RF42 Balanced (A2) & \shortstack{0.943877\\{\scriptsize (0.000275)}} & \shortstack{0.887909\\{\scriptsize (0.000563)}} & 6.4554 & 4.1870\\
+RF42 Oversample (A3) & \shortstack{0.944886\\{\scriptsize (0.000742)}} & \shortstack{0.889776\\{\scriptsize (0.001480)}} & 7.4107 & 3.5670\\
+Stacking-Lite (A4) & \shortstack{0.944731\\{\scriptsize (0.000340)}} & \shortstack{0.889864\\{\scriptsize (0.000738)}} & 9.4071 & 2.5715\\\bottomrule
 \end{tabular}
 \vspace{3pt}
 
@@ -26,7 +26,7 @@ Stacking-Lite (A4) & 0.944731 (0.000340) & 0.889864 (0.000738) & 9.4071 & 2.5715
 \end{table}
 
 \begin{table}[htbp]\centering
-\scriptsize
+\small
 \renewcommand{\arraystretch}{1.24}
 \setlength{\tabcolsep}{3pt}
 \caption{Hiệu số \emph{paired FIT seed} của mỗi arm so với RF42-Lite A0; dấu của $\Delta$ là arm $-$ A0. $\Delta$ FPR/FNR tính bằng \emph{điểm phần trăm}, không phải \%.}
