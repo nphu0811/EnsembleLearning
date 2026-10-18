@@ -1,0 +1,101 @@
+\section{Thiết kế nghiên cứu và dữ liệu}
+\label{sec:method-design}
+
+Nghiên cứu khảo sát các pipeline học máy và Ensemble Learning cho phát hiện xâm nhập nhị phân trên UNSW-NB15 \cite{moustafa2015unsw}. Nhãn Normal được mã hóa 0 và Attack là 1. Hai partition chính thức được giữ nguyên: TRAIN gồm 175\,341 dòng (56\,000 Normal; 119\,341 Attack), TEST gồm 82\,332 dòng (37\,000 Normal; 45\,332 Attack). Các trường \texttt{id}, \texttt{label} và \texttt{attack\_cat} không thuộc tập predictor. Trường \texttt{attack\_cat} chỉ được dùng sau dự đoán để mô tả các mẫu Attack bị bỏ sót; vì thế kết quả theo họ tấn công không phải phân loại đa lớp.
+
+Thiết kế hướng tới so sánh một baseline Random Forest với Stacking, một cấu hình Random Forest có ít đặc trưng hơn, đồng thời khảo sát lỗi, độ bất định và chi phí quan sát được. Mục tiêu không phải đề xuất thuật toán ensemble mới. Novel-vector view được định nghĩa bằng việc loại khỏi TEST những dòng có vector 42 đặc trưng trùng với vector TRAIN; đây là phân tích độ nhạy trong cùng benchmark, không phải một split độc lập mới.
+
+\section{Lựa chọn đặc trưng và tiền xử lý}
+\label{sec:method-feature-selection}
+
+Track 42 giữ toàn bộ đặc trưng dự báo sau khi loại các trường không dùng làm predictor. Track stable17 được xác định trên TRAIN bằng ba nhóm phương pháp filter, L1 và ExtraTrees. Với năm seed \texttt{11, 23, 42, 71, 101}, một biến được xem là ổn định trong từng phương pháp nếu xuất hiện ở ít nhất ba trên năm lượt; tập cuối giữ các biến đáp ứng ngưỡng ở tối thiểu hai phương pháp. Quy tắc này mô tả độ lặp lại của lựa chọn biến trong các lượt đã chạy, không phải bằng chứng về độ ổn định của hiệu năng dự đoán.
+
+Thứ tự 17 biến được khóa là:
+\begin{quote}\small\raggedright
+\texttt{ct\_srv\_dst}, \texttt{ct\_state\_ttl}, \texttt{dload}, \texttt{dttl},
+\texttt{proto}, \texttt{state}, \texttt{sttl}, \texttt{ct\_dst\_ltm},
+\texttt{dmean}, \texttt{dwin}, \texttt{is\_sm\_ips\_ports},
+\texttt{rate}, \texttt{service}, \texttt{swin},
+\texttt{ct\_dst\_sport\_ltm}, \texttt{ct\_dst\_src\_ltm}, \texttt{dbytes}.
+\end{quote}
+Kết quả RFECV 13 biến là một track riêng, không thay cho stable17. Các biến phân loại \texttt{proto}, \texttt{service} và \texttt{state} được one-hot encode với \texttt{handle\_unknown=ignore}; biến số được chuẩn hóa trong pipeline Logistic Regression, còn Random Forest và Decision Tree dùng phép tiền xử lý phù hợp với estimator. Các phép biến đổi có tham số học được đặt trong pipeline để fit trên phần huấn luyện tương ứng.
+
+Danh sách stable17 được tạo từ toàn bộ official TRAIN trước development cross-validation. Vì vậy, nhãn của các fold validation đã góp phần vào bước chọn biến và điểm development có thể lạc quan so với quy trình nested hoàn toàn. TEST không tham gia lựa chọn biến; tuy nhiên, sự phân biệt này không loại bỏ nguy cơ selection optimism trong cross-validation.
+
+\section{Cấu trúc các pipeline}
+\label{sec:method-pipelines}
+
+Random Forest huấn luyện nhiều cây quyết định trên các mẫu bootstrap và tập đặc trưng ngẫu nhiên, sau đó tổng hợp xác suất hoặc phiếu dự đoán của các cây. Cấu hình RF-42 có 300 cây, \texttt{max\_features}=0.5 và \texttt{min\_samples\_leaf}=1; RF-17 có 150 cây với cùng tỷ lệ đặc trưng nhưng \texttt{min\_samples\_leaf}=2. Do nhiều tham số thay đổi cùng lúc, đối chiếu hai cấu hình không phải phép ablation chỉ thay số đặc trưng.
+
+Voting kết hợp đầu ra của Logistic Regression (LR), Decision Tree (DT) và Random Forest (RF). Hard Voting chọn lớp theo đa số phiếu; Soft Voting lấy trung bình xác suất dự đoán trước khi áp dụng ngưỡng. Stacking cũng dùng ba learner này ở tầng cơ sở, nhưng huấn luyện Logistic Regression ở tầng kết hợp từ dự đoán ngoài fold của các learner cơ sở. Cách tạo đầu vào OOF làm giảm việc meta learner học trực tiếp từ dự đoán in-sample của tầng cơ sở; nó không tự loại bỏ mọi nguồn lạc quan trong quá trình chọn cấu hình.
+
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\caption{Cấu hình của ba pipeline được dùng trong đánh giá cuối.}
+\label{tab:frozen-candidates}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{2.5cm}X S[table-format=2.0]}
+\toprule
+Pipeline & Cấu hình chính & {Số biến gốc}\\
+\midrule
+RF-42 & Random Forest: 300 cây, \texttt{max\_features}=0.5, \texttt{min\_samples\_leaf}=1. & 42\\
+Stacking-42 & LR cơ sở: $C=1$, solver \texttt{liblinear}; DT: lá tối thiểu 2; RF như RF-42; meta LR: $C=0.5$, \texttt{liblinear}, \texttt{class\_weight=None}. Inner CV ba fold, \texttt{passthrough=False}. & 42\\
+RF-17 & Random Forest: 150 cây, \texttt{max\_features}=0.5, \texttt{min\_samples\_leaf}=2. & 17\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Phát triển mô hình, OOF và nguyên tắc đánh giá}
+\label{sec:method-validation}
+
+Development OOF được tổng hợp từ outer \texttt{StratifiedKFold} ba fold với seed 42. Trong Stacking, inner \texttt{StratifiedKFold} ba fold dùng seed 137 để tạo dự đoán cho meta learner. Các kết quả Voting, Stacking, diversity và RF đối chiếu trong giai đoạn này chỉ phục vụ mô tả/phát triển mô hình trên TRAIN. Do stable17 được chọn trước outer CV và meta tuning chưa hoàn toàn nested, các con số OOF không được xem như ước lượng độc lập không thiên lệch.
+
+Sau khi khóa ba cấu hình cuối, mỗi pipeline được fit lại trên toàn bộ TRAIN và dự đoán trên official TEST với ngưỡng 0.5. TEST không được dùng để đổi mô hình, threshold hay tập đặc trưng. Các chỉ số gồm confusion matrix, Precision, Recall, Macro-F1, MCC, FPR và FNR. Trường \texttt{pr\_auc} trong mã nguồn được tính bằng \texttt{average\_precision\_score}; vì vậy ở đây được gọi là Average Precision (AP), không đồng nhất với mọi cách tính diện tích dưới đường precision--recall.
+
+Hiệu số giữa hai mô hình được đánh giá bằng paired bootstrap 10\,000 lượt với seed \texttt{20260928}. Các mẫu hình dự đoán của hai mô hình được lấy cùng nhau theo từng dòng, phân tầng theo nhãn thật, giữ nguyên tổng số lượng mỗi lớp. Khoảng 95\% là percentile CI riêng cho từng chỉ số, không điều chỉnh đồng thời toàn bộ các khoảng. McNemar exact so sánh tính đúng tổng thể của từng cặp dự đoán; Holm được áp dụng cho ba cặp mô hình trong mỗi view đánh giá. Phép thử này không kiểm định trực tiếp hiệu số Macro-F1. Cả bootstrap lẫn McNemar trên các dòng benchmark không ước lượng biến thiên giữa các lần huấn luyện độc lập.
+
+\section{Khả năng tái lập trong môi trường phần mềm xác định}
+\label{sec:method-p15}
+
+Trong giai đoạn kiểm tra tính tái lập (P15), RF-17, RF-42 và Stacking-42 được tái dựng trên 175\,341 dòng official TRAIN trong môi trường Python 3.11.9 và scikit-learn 1.9.0, sau khi cấu hình và kết quả lịch sử đã được khóa. Kiểm tra artifact xác nhận hash, schema, khả năng nạp lại mô hình và tạo xác suất dự đoán trên các dòng TRAIN. Kết quả này cho thấy các cấu hình có thể được huấn luyện và sử dụng trong môi trường phần mềm được ghi nhận.
+
+Môi trường và đối tượng mô hình lịch sử không được lưu đủ để chứng minh đồng nhất bitwise với các mô hình từng tạo dự đoán official TEST. Do đó, P15 là tái dựng/tái huấn luyện theo cấu hình đã ghi, không phải khôi phục chính xác artifact lịch sử và không phải phép xác minh lại các metric TEST. Kiểm tra predictability trên dữ liệu TRAIN-derived cũng không đánh giá khả năng vận hành của hệ thống IDS trong thực tế. Ba phạm vi này — khả năng tái lập trong môi trường xác định, tái huấn luyện từ TRAIN và triển khai — được xem là các tuyên bố riêng biệt.
+
+
+\section{Phần mở rộng P21: thiết kế đối chứng matched trên TRAIN-derived validation}
+\label{sec:p21-method}
+Sau khi các kết quả official TEST lịch sử đã được ghi nhận, nhóm thực hiện \textbf{thí nghiệm hậu nghiệm P21} với một mục tiêu hẹp hơn: khảo sát độ biến thiên qua các FIT seed và so sánh matched cho RQ1, RQ2, RQ5. Do ý tưởng thí nghiệm bổ sung xuất hiện \emph{sau} khi đã biết kết quả TEST lịch sử, P21 không phải tiền đăng ký ban đầu, không phải external validation hay thử nghiệm xác nhận độc lập. \textbf{P21 không mở hoặc đánh giá lại official TEST}; các kết quả lịch sử ở những mục trước được giữ bất biến.
+
+\subsection{Phân chia và lấy mẫu FIT}
+Chỉ đọc official TRAIN đúng checksum SHA-256 \texttt{bec7dd5e...fe0648fa}, gồm 175\,341 dòng. Loại ba cột \texttt{id}, \texttt{label}, \texttt{attack\_cat} khỏi 42 biến dự báo. Tạo nhóm từ fingerprint có kiểm tra collision của vector 42 biến gốc, sau đó dùng \texttt{StratifiedGroupKFold} với 5 fold, shuffle seed 20261018 và \emph{chỉ} fold 0 làm validation nội bộ: 140\,272 dòng trong FIT pool và 35\,069 dòng validation. Không tự động fallback về split ngẫu nhiên khi điều kiện tỷ lệ lớp/độ trùng nhóm bị vi phạm. 35\,069 dòng validation này \emph{giữ nguyên} cho cả năm seed; đó là \textbf{một đơn vị kiểm định nội bộ dùng lại}, không phải năm tập độc lập.
+
+Từ FIT pool, với năm seed khóa trước \texttt{1103, 2207, 3301, 4409, 5501}, mỗi seed lấy mẫu stratified không hoàn lại 60\,000 dòng; cùng 60\,000 FIT source-row identities được dùng cho toàn bộ năm arm của seed tương ứng. Các phép biến đổi như One-Hot Encoding, chuẩn hóa của LR, chọn đặc trưng và cân bằng lớp chỉ fit trên dữ liệu FIT; tuyệt đối không sử dụng nhãn validation để đặt ngưỡng hoặc chọn mô hình.
+
+\subsection{Năm nhánh matched, chọn đặc trưng và ngưỡng}
+\begin{table}[htbp]\centering\small
+\renewcommand{\arraystretch}{1.20}
+\setlength{\tabcolsep}{5pt}
+\caption{Năm cấu hình P21 predeclared trên internal validation của official TRAIN.}
+\label{tab:p21-arms-method}
+\begin{tabularx}{\linewidth}{p{0.13\linewidth}X p{0.18\linewidth}}
+\toprule
+Arm & Học máy, xử lý dữ liệu & Vai trò\\\midrule
+A0 & RF42-Lite: 150 trees, leaf=2, max-features=0.5, no weights & Đối chứng RQ1/2/5\\
+A1 & RF17-Lite: \emph{cùng} RF hyperparameters, 17 biến được FIT-only select & RQ2 matched\\
+A2 & RF42-Lite, \texttt{class\_weight=balanced}, không resample & RQ5 weighting\\
+A3 & RF42-Lite, oversample ngẫu nhiên \emph{lớp thiểu số trong FIT} & RQ5 resampling\\
+A4 & Stacking-Lite (LR/DT/RF42, meta LR), không reweight & RQ1 ensemble\\\bottomrule
+\end{tabularx}
+\end{table}
+Ngưỡng quyết định ở tất cả arm cố định $0.5$; mọi kết quả là phân loại nhị phân Normal/Attack. Do FIT từ official TRAIN có Attack là đa số, nhánh A3 tăng số quan sát \emph{Normal} bằng lặp chỉ số FIT hiện có, không giả lập mẫu tấn công mới. Không dùng SMOTE, không resample validation.
+
+A1 thực hiện lại chọn top-17 cho \emph{mỗi} seed FIT. Kết hợp Mutual Information có loại tương quan Spearman theo ngưỡng 0.95, Logistic Regression L1 và ExtraTrees; năm selection seed 11, 23, 42, 71, 101; mỗi lần dùng 35\,000 hàng lấy chỉ từ FIT, 20 biến gợi ý mỗi phương pháp, tần suất tối thiểu 3/5 và ít nhất hai phương pháp; tie-break được cố định. Nếu dưới 17 biến đủ điều kiện, điền theo thứ hạng đã khai báo và phải ghi rõ số biến buộc điền. Bước chọn biến tốn chi phí huấn luyện riêng, cần tính cộng vào chi phí end-to-end khi so sánh.
+
+Stacking A4 dùng base Logistic Regression ($C=1$, liblinear), Decision Tree (leaf=2), RF42-Lite giống A0; meta Logistic Regression ($C=0.5$, liblinear, không weights). OOF meta-features được xây dựng bằng inner CV ba fold, seed 137, \texttt{passthrough=False}, xác suất \texttt{predict\_proba}, một worker. \textbf{Sửa đổi giao thức trước full P21}: thay \texttt{StratifiedKFold} của resource pilot bằng \texttt{StratifiedGroupKFold} theo vector 42 biến để không đặt các vector trùng chính xác vào cả hai phía inner OOF. Điều chỉnh này được ghi trước khi chạy full P21; không được coi phiên bản Stacking này đồng nhất với Stacking của TEST lịch sử.
+
+\subsection{Đánh giá, chi phí, tái lập và phạm vi suy luận}
+Trên \emph{cùng} validation nội bộ, tính Macro-F1, MCC, Precision/Recall Attack, FPR=$FP/(TN+FP)$ và FNR=$FN/(TP+FN)$, confusion matrix, thời gian fit và predict. Hiệu số mỗi arm trừ A0 được tính trong cùng seed; báo cáo trung bình và độ lệch chuẩn mẫu trên năm seed. Không đưa p-value hay khoảng tin cậy suy diễn được hiểu như năm lần kiểm tra độc lập; cũng không hiệu chỉnh kết quả sau khi thấy seed đầu tiên.
+
+Các bản ghi full P21 được tạo trong môi trường Python 3.11, scikit-learn 1.9.0 và pandas 3.0.5 với một CPU, watchdog process-tree RSS 2 GiB, RAM khả dụng tối thiểu khi bắt đầu 4 GiB và floor khi chạy 1.5 GiB, đĩa trống tối thiểu 10 GiB. \textbf{Không đặt timeout thời gian cố định} cho full training nhưng có giới hạn tài nguyên và tín hiệu heartbeat. Năm seed tạo năm kết quả mới tách riêng, được đối chiếu confusion matrix và SHA dữ liệu; một seed thất bại không được âm thầm loại vì chỉ số kém. Các kiểm soát này tăng tính tái lập trong môi trường đã khai báo nhưng không chứng minh độc lập theo thời gian, phiên truy cập hay miền mạng ngoài UNSW-NB15.
