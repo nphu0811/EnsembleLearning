@@ -112,7 +112,21 @@ jobs:
           else
             git commit -m "Build and QA NCKH manuscript revision V4"
             BRANCH=$(git symbolic-ref --short HEAD)
-            git push origin "HEAD:$BRANCH"
+            # No force pushes. A concurrent docs/QA commit may advance main.
+            # Rebase our PDF-only commit on the latest remote tip, retry safely.
+            published=false
+            for attempt in 1 2 3; do
+              if git push origin "HEAD:$BRANCH"; then
+                published=true
+                break
+              fi
+              git fetch origin "$BRANCH"
+              git rebase "origin/$BRANCH"
+            done
+            if [ "$published" != true ]; then
+              echo "::error title=V4 PDF publish blocked::Concurrent writes prevented safe push"
+              exit 1
+            fi
           fi
       - name: Upload PDF and build evidence
         if: always()
