@@ -1,0 +1,22 @@
+\section{Các công trình nghiên cứu liên quan}
+\label{chap:tong-quan}
+
+\subsection{Ensemble Learning trong NIDS}
+Tama và Lim khảo sát có hệ thống hướng Ensemble Learning cho Intrusion Detection và đặt trọng tâm vào base classifier, cách kết hợp và tính phụ thuộc của đánh giá theo benchmark \cite{legacyL01}. Kết quả tổng quan này là cơ sở lựa chọn câu hỏi so sánh thực nghiệm, không thể thay bằng nhận định đơn giản rằng kết hợp nhiều classifier chắc chắn làm hiệu năng tăng.
+
+Các cấu hình kết hợp đã được nghiên cứu theo nhiều hướng: soft voting có thành phần tìm cấu hình tự động \cite{legacyL05}, heterogeneous stacking với các base learners và meta learner được mô tả trong phần phương pháp của Thockchom và cộng sự \cite{legacyL06}, và hướng kết hợp lựa chọn đặc trưng với ensemble \cite{legacyL04,legacyL12}. Các nghiên cứu có phương pháp và tập dữ liệu khác nhau không được coi là baseline matched cho official UNSW-NB15 của đề tài. Việc tồn tại những công trình này giới hạn tuyên bố novelty: đóng góp được định vị ở kiểm toán case study, sự minh bạch về loại lỗi, bằng chứng cặp và chi phí, \emph{không} phải tạo ra Stacking hay Feature Selection.
+
+\subsection{Feature Selection, chuẩn hóa và mất cân bằng}
+Việc giảm số đặc trưng có thể thay đổi chất lượng và chi phí của pipeline, nhưng phải tách việc chọn feature khỏi khâu đánh giá nếu muốn ước lượng hiệu ứng thật sự của chiến lược lựa chọn. Các nghiên cứu về filter-based Feature Selection trong IDS \cite{legacyL08}, đặc trưng và chuẩn hóa \cite{legacyL11}, cũng như embedded/correlation selection \cite{legacyL12} là những nguồn đặt phạm vi cho câu hỏi RQ2, không phải bằng chứng rằng RF-17 của chúng tôi cải thiện nhờ \emph{chỉ} loại feature.
+
+Đối với dữ liệu mất cân bằng, nghiên cứu DUEN xem xét dynamic ensemble cùng thành phần xử lý phân bố lớp \cite{legacyL07}. Do đề tài hiện không có so sánh matched resampling/no-resampling dưới cùng điều kiện, không thể kết luận các kỹ thuật cân bằng mẫu là vô ích hoặc có hiệu quả nhân quả từ những kết quả được lưu. Đây vẫn là giới hạn của RQ5.
+
+\subsection{Chất lượng dữ liệu và khả năng khái quát}
+Engelen và cộng sự phân tích lỗi và quá trình xử lý trong một bộ dữ liệu IDS khác (CICIDS2017) \cite{legacyL02}; bài học phương pháp luận là cần kiểm toán pipeline và chất lượng dữ liệu, \emph{không} chuyển nguyên các lỗi CICIDS2017 sang UNSW-NB15. Cantone và cộng sự nhấn mạnh sự khác biệt giữa đánh giá trong cùng một dataset và đánh giá cross-dataset \cite{legacyL09}. Nghiên cứu của chúng tôi mới có official holdout cùng một phần exact-duplicate-filtered view; đó không phải external validation hoặc phép đo generalization cross-dataset.
+
+Khảo sát về các loại tấn công chưa biết, không điển hình và biến đổi hình thái \cite{legacyL10} gợi ý yêu cầu đọc kết quả tổng thể trong mối liên hệ với các dạng tấn công khác nhau. Nhưng phân tích \texttt{attack\_cat} ở đây là \emph{nhóm nhãn thật của binary detector}, không phải đo khả năng dự đoán nhãn tấn công đa lớp hoặc unknown-attack deployment.
+
+\subsection{Khoảng trống bằng chứng và giới hạn tổng quan}
+So sánh ensemble cần xem xét liệu mô hình có cải thiện hay không, mức thay đổi giữa FP và FN, quan hệ giữa diversity và gain, cùng chi phí của cấu hình đã đánh giá. Trong nghiên cứu này, official holdout và các phân tích cặp được trình bày cùng kết quả hậu nghiệm; các thiết kế về repeated-training stability, nested Feature Selection, temporal split, external validation và matched resampling vẫn nằm ngoài phạm vi thí nghiệm hiện có. Đây là những câu hỏi chưa được giải quyết trong nghiên cứu này, không phải nhận định về toàn bộ lĩnh vực.
+
+Các nhận xét tổng quan ở đây dựa trên những bài báo được trích dẫn trong danh mục tài liệu tham khảo; do khác biệt dữ liệu và giao thức, không sử dụng kết quả từ các nghiên cứu đó như đối chứng trực tiếp cho ba mô hình của đề tài.
