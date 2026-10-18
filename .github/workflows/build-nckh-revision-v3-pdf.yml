@@ -6,6 +6,8 @@ on:
       - main
     paths:
       - "report/main_revision_v3_2026_10_19.tex"
+      - "tools/p21_verify_full_five_seed.py"
+      - "results/controlled_extensions/p21_train_only_science_summary_20261019_022655/aggregate.json"
       - "report/chapters/*v3_2026_10_19.tex"
       - ".github/workflows/build-nckh-revision-v3-pdf.yml"
   workflow_dispatch:
@@ -23,6 +25,8 @@ jobs:
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
+      - name: Verify all five P21 seed reports against published aggregate (read-only)
+        run: python3 -X utf8 tools/p21_verify_full_five_seed.py
       - name: Install XeLaTeX and PDF inspection tools
         run: |
           sudo apt-get update -qq
