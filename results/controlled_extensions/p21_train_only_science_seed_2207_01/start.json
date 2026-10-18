@@ -1,0 +1,31 @@
+{
+  "phase": "P21",
+  "status": "INCOMPLETE",
+  "scope": "TRAIN_REUSED_POST_HOC_P21_SCIENCE",
+  "seed": 2207,
+  "created_at_utc": "2026-10-18T16:57:51.839619+00:00",
+  "source_sha256": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa",
+  "protocol_sha256": "3a4c21cd069432c36cb8cfcdb863dbd4898845cd095fb4111be34b8d0c455c86",
+  "python_executable": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\.venv-p15-local\\Scripts\\python.exe",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1",
+    "psutil": "7.2.2",
+    "threadpoolctl": "3.6.0"
+  },
+  "resource_policy": {
+    "peak_tree_rss_cap_bytes": 2147483648,
+    "available_ram_floor_bytes": 1610612736,
+    "start_available_bytes": 5402951680,
+    "start_disk_free_bytes": 31667142656,
+    "full_training_has_wall_timeout": false
+  },
+  "official_test_opened": false,
+  "results_are_independent_external_test": false,
+  "peak_tree_rss_bytes": 0,
+  "resource_samples": 0,
+  "stop_reason": "NOT_STARTED",
+  "exit_code": null
+}
