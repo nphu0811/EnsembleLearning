@@ -1,0 +1,111 @@
+name: V4 PDF evidence and visual spot-check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "exports/report_revision_v4_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V4.pdf"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: v4-pdf-visual-check
+  cancel-in-progress: false
+
+jobs:
+  sample_render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Poppler PDF tools
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends poppler-utils
+      - name: Render critical tables, validate page bounds, and write QA
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          import subprocess, xml.etree.ElementTree as ET, re
+          pdf=Path("exports/report_revision_v4_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V4.pdf")
+          out=Path("docs/research/v4_visual_samples_2026_10_19")
+          out.mkdir(parents=True,exist_ok=True)
+          info=subprocess.check_output(["pdfinfo",str(pdf)],text=True)
+          count=int(re.search(r"^Pages:\s*(\d+)",info,re.M).group(1))
+          if not 45<=count<=80:
+              raise ValueError(f"Unexpected V4 page count: {count}")
+          body=subprocess.check_output(["pdftotext","-layout",str(pdf),"-"],text=True)
+          pages=body.split("\f")[:count]
+          needles=["Bảng 4.4","Bảng 4.5","Bảng 4.7","FN / FNR","SD theo FIT",
+                   "chi phí báo động","độ nhạy chi phí","exact-duplicate-filtered",
+                   "Wilson 95"]
+          selected={1,5,count}
+          hits={}
+          for needle in needles:
+              matches=[i+1 for i,p in enumerate(pages) if needle.casefold() in p.casefold()]
+              if matches:
+                  hits[needle]=matches
+                  for ix in matches:
+                      selected.add(ix)
+                      if ix>1: selected.add(ix-1)
+                      if ix<count: selected.add(ix+1)
+          if not any(k in hits for k in ("Bảng 4.4","FN / FNR")):
+              raise ValueError("Missing FN/FNR table text")
+          if not any(k in hits for k in ("chi phí báo động","độ nhạy chi phí")):
+              raise ValueError("Missing cost sensitivity section")
+          for i in sorted(selected):
+              dest=out/f"page_{i:02d}"
+              subprocess.run(["pdftoppm","-f",str(i),"-l",str(i),"-r","110",
+                              "-png","-singlefile",str(pdf),str(dest)],check=True)
+              if dest.with_suffix(".png").stat().st_size<1000:
+                  raise ValueError(f"Empty render page {i}")
+          bbox=subprocess.check_output(["pdftotext","-bbox",str(pdf),"-"],text=True)
+          root=ET.fromstring(bbox)
+          ns={"x":"http://www.w3.org/1999/xhtml"}
+          pdfpages=root.findall(".//x:page",ns)
+          if len(pdfpages)!=count:
+              raise ValueError("Unexpected bounding-box page count")
+          words=0
+          for ip,p in enumerate(pdfpages,start=1):
+              w,h=float(p.attrib["width"]),float(p.attrib["height"])
+              for item in p.findall(".//x:word",ns):
+                  words+=1
+                  x0,y0,x1,y1=[float(item.attrib[k]) for k in ("xMin","yMin","xMax","yMax")]
+                  if x0 < -0.5 or y0 < -0.5 or x1>w+0.5 or y1>h+0.5:
+                      raise ValueError(f"Out-of-page text page {ip}")
+          if words<2500:
+              raise ValueError("Unexpectedly little selectable text")
+          (out/"QA.md").write_text(
+              "# V4 selected-page visual spot-check — automated\n\n"
+              f"- Source PDF: {pdf}\n"
+              f"- Verified pages: {count}\n"
+              f"- Total words within page bounds: {words}\n"
+              f"- Rendered PNG pages (110 DPI): {', '.join(map(str,sorted(selected)))}\n"
+              f"- Search anchors found: {hits}\n"
+              "- All words on every page within PDF page bounds (Poppler).\n"
+              "- **NOT a complete human typographic review**; human must still inspect rendered image samples and the submission PDF.\n",
+              encoding="utf-8")
+          print(f"PASS: {count} pages; {len(selected)} renders; {words} in-page words")
+          PY
+      - name: Preserve QA images and record
+        if: success() && github.event_name == 'push'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/research/v4_visual_samples_2026_10_19
+          if ! git diff --cached --quiet; then
+            git commit -m "QA: render selected V4 critical tables and verify text bounds"
+            branch=$(git symbolic-ref --short HEAD)
+            git push origin "HEAD:$branch"
+          fi
+      - name: Upload sample image QA
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: NCKH_V4_PDF_visual_samples
+          path: docs/research/v4_visual_samples_2026_10_19
+          if-no-files-found: warn
