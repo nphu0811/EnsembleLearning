@@ -4,9 +4,9 @@
 Báo cáo kết quả bổ sung này được tạo \emph{sau} quá trình đánh giá official TEST lịch sử. Năm seed tạo năm tập FIT 60\,000 dòng khác nhau nhưng tất cả dự đoán trên \textbf{cùng} 35\,069 dòng internal validation của official TRAIN (11\,200 Normal và 23\,869 Attack). Đây không phải năm lần đánh giá độc lập trên TEST hoặc một benchmark ngoài. Tất cả 25 lượt fit (5 arm $\times$ 5 seed) đều hoàn tất, với checksum nguồn dữ liệu và cấu hình khớp, confusion matrix được kiểm tra lại, không truy cập official TEST khi chạy P21.
 
 \begin{table}[htbp]\centering
-\small
+\scriptsize
 \renewcommand{\arraystretch}{1.26}
-\setlength{\tabcolsep}{6pt}
+\setlength{\tabcolsep}{3pt}
 \caption{Hiệu năng trung bình qua 5 FIT seed trên \textbf{một} internal validation P21; độ lệch chuẩn mẫu Macro-F1 và MCC ghi trong ngoặc. FPR/FNR tính bằng phần trăm.}
 \label{tab:p21-five-arm-results}
 \begin{tabular}{lrrrr}
@@ -21,9 +21,9 @@ Stacking-Lite (A4) & 0.944731 (0.000340) & 0.889864 (0.000738) & 9.4071 & 2.5715
 \end{table}
 
 \begin{table}[htbp]\centering
-\small
+\scriptsize
 \renewcommand{\arraystretch}{1.24}
-\setlength{\tabcolsep}{7pt}
+\setlength{\tabcolsep}{3pt}
 \caption{Hiệu số \emph{paired FIT seed} của mỗi arm so với RF42-Lite A0; dấu của $\Delta$ là arm $-$ A0. $\Delta$ FPR/FNR tính bằng \emph{điểm phần trăm}, không phải \%.}
 \label{tab:p21-paired-deltas}
 \begin{tabular}{lrrrr}
