@@ -1,0 +1,33 @@
+\section{Bối cảnh và mục tiêu nghiên cứu}
+\label{chap:gioi-thieu}
+
+\subsection{Bối cảnh và động cơ}
+Hệ thống phát hiện xâm nhập mạng (Network Intrusion Detection System, NIDS) nhằm nhận diện lưu lượng có dấu hiệu tấn công từ các quan sát mạng. Các bộ phân loại học máy có thể phát hiện những mẫu phức tạp trong dữ liệu flow, nhưng điểm số cao trên một benchmark không tự bảo đảm hiệu quả trong các bối cảnh triển khai khác nhau. Cách tạo và làm sạch dữ liệu, lựa chọn đặc trưng, chia tập và các loại sai số có thể ảnh hưởng đáng kể đến diễn giải thí nghiệm.
+
+Ensemble Learning kết hợp dự đoán từ nhiều bộ phân loại. Tổng quan của Tama và Lim nhấn mạnh hai lựa chọn thiết kế: thành phần mô hình cơ sở và phương pháp kết hợp \cite{legacyL01}. Voting, Stacking và lựa chọn đặc trưng đều đã được nghiên cứu trước đây; việc áp dụng riêng các kỹ thuật này không tạo thành đóng góp thuật toán mới \cite{legacyL04,legacyL05,legacyL06,legacyL12}. Vì vậy, giá trị của nghiên cứu phụ thuộc vào giao thức có thể truy vết, cách mô tả đúng các loại lỗi, sự đối chiếu chi phí và diễn giải thận trọng độ bất định.
+
+\subsection{Vấn đề nghiên cứu}
+Nghiên cứu tập trung vào bài toán nhị phân \textbf{Normal/Attack} của UNSW-NB15. Hai tập TRAIN và TEST chính thức được giữ riêng; các mô hình được lựa chọn trong giai đoạn phát triển trên TRAIN và đánh giá cuối bằng cấu hình đã khóa. Sau đánh giá lịch sử, phần mở rộng P21 được thực hiện trên internal validation của TRAIN với năm seed và năm cấu hình matched; đây là thí nghiệm hậu nghiệm, không truy cập official TEST để tinh chỉnh. Nghiên cứu không xây dựng bộ phân loại đa lớp, cũng chưa kiểm nghiệm trên dữ liệu triển khai độc lập.
+
+Vấn đề trung tâm là liệu các mô hình cơ sở có dạng sai số bổ sung giúp ensemble cải thiện kết quả so với một mô hình đơn mạnh hay chủ yếu làm thay đổi đánh đổi giữa báo động giả (FP) và tấn công bị bỏ sót (FN). Bên cạnh chất lượng dự đoán, nghiên cứu xem xét chi phí huấn luyện, suy luận và lựa chọn đặc trưng. Đây là nghiên cứu trường hợp trên một benchmark, không nhằm chứng minh ưu thế chung của Ensemble Learning.
+
+\subsection{Các vấn đề nghiên cứu}
+Để đánh giá chất lượng và giới hạn của các mô hình phát hiện xâm nhập, nghiên cứu tập trung vào năm vấn đề sau:
+
+\begin{description}
+\item[RQ1 --- Hiệu quả Ensemble:] Liệu ensemble có cải thiện \emph{ổn định} so với mô hình học máy đơn trong một protocol đánh giá tương ứng? Phần lịch sử không đo độ ổn định qua nhiều lần huấn luyện; phần P21 bổ sung năm FIT seed trên cùng một internal validation, chưa phải external confirmation.
+\item[RQ2 --- Đặc trưng và chi phí:] Hai cấu hình với số lượng đặc trưng khác nhau thể hiện ra sao về hiệu năng và chi phí? Phân tích cuối chưa tách được tác động riêng của số đặc trưng.
+\item[RQ3 --- Sai số bổ sung:] Mức hiệu năng quan sát có liên hệ thế nào với sự khác nhau giữa sai số của các mô hình cơ sở? Bằng chứng hiện có mang tính mô tả, chưa xác lập quan hệ nhân quả.
+\item[RQ4 --- Độ nhạy với overlap:] Chất lượng và thứ hạng mô hình thay đổi thế nào khi chỉ xét các mẫu TEST không trùng vector với TRAIN?
+\item[RQ5 --- Mất cân bằng lớp:] Các phương án xử lý mất cân bằng liên hệ thế nào với Recall, Macro-F1 và số Attack bị bỏ sót?
+\end{description}
+
+Năm vấn đề trên được phân tích bằng giao thức thực nghiệm ở Chương~\ref{chap:phuong-phap} và các kết quả ở Chương~\ref{chap:ket-qua-thao-luan}.
+
+\subsection{Mục tiêu và đóng góp nghiên cứu}
+Nghiên cứu đóng góp một đối chiếu thực nghiệm giữa Random Forest, Voting và Stacking trên split chính thức; khảo sát dự đoán ngoài fold và độ đa dạng sai số trong giai đoạn phát triển; so sánh hai pipeline theo hiệu năng và chi phí; đồng thời trình bày Macro-F1, MCC, FPR, FNR, hiệu số theo cặp và lỗi theo họ Attack trong phạm vi bài toán nhị phân.
+
+Những kết quả này có giá trị thực nghiệm trong phạm vi một nghiên cứu trường hợp, nhưng chưa đủ cơ sở để khẳng định thuật toán Ensemble Learning mới, ưu thế tổng thể của Stacking hay khả năng khái quát ngoài UNSW-NB15. Phần đối chiếu với công trình trước được giới hạn ở các nguồn đã kiểm tra phương pháp; đây không phải tổng quan hệ thống đầy đủ của lĩnh vực.
+
+\subsection{Bố cục báo cáo}
+Chương~\ref{chap:ly-thuyet} trình bày cơ sở lý thuyết và các hướng nghiên cứu liên quan. Chương~\ref{chap:dataset-eda} giới thiệu dữ liệu và quy trình tiền xử lý. Chương~\ref{chap:phuong-phap} mô tả mô hình và cách thực hiện thí nghiệm. Chương~\ref{chap:ket-qua-thao-luan} phân tích kết quả huấn luyện và kiểm thử. Chương~\ref{chap:ban-luan} thảo luận về ý nghĩa, hạn chế và hướng phát triển của nghiên cứu.
