@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "scope": "P21_STACK_LITE_FIT_ONLY_RESOURCE_PILOT; no RQ result",
+  "source_path": "data/raw/unsw-nb15/UNSW_NB15_training-set.csv",
+  "source_sha256": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa",
+  "train_file_rows": 175341,
+  "pilot_fit_rows": 8000,
+  "pilot_fit_class_counts": {
+    "0": 2555,
+    "1": 5445
+  },
+  "feature_count": 42,
+  "split": {
+    "method": "StratifiedGroupKFold",
+    "seed": 20261018,
+    "validation_fold": 0,
+    "fit_rows": 140272,
+    "validation_rows": 35069,
+    "validation_ratio": 0.200005,
+    "validation_normal_fraction": 0.31937,
+    "fit_normal_fraction": 0.319379,
+    "group_disjoint": true,
+    "row_disjoint": true,
+    "validation_evaluation_performed": false
+  },
+  "pilot_component": "A4_STACK42_LITE",
+  "inner_cv_folds": 3,
+  "inner_cv_seed": 137,
+  "fit_seconds": 38.937,
+  "official_test_opened": false,
+  "validation_predicted": false,
+  "scientific_metrics_calculated": false,
+  "model_artifact_saved": false,
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1",
+    "psutil": "7.2.2"
+  }
+}
