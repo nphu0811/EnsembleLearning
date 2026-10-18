@@ -24,7 +24,7 @@ def worker_scope(out: Path, seed: int) -> None:
     path = out.resolve(strict=True)
     if (out.is_symlink() or path.name != "worker" or
             path.parent.parent != base or
-            path.parent.name != f"p21_train_only_science_seed_{seed}"):
+            not path.parent.name.startswith(f"p21_train_only_science_seed_{seed}_")):
         raise PermissionError("Worker scope must be dedicated sealed science seed directory")
     if out.parent.is_symlink():
         raise PermissionError("Symlink seed directory forbidden")
