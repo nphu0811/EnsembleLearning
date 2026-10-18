@@ -43,7 +43,7 @@ class TestAggregate(unittest.TestCase):
         p,a,c=summarize(fabricated())
         text=markdown_report({"arm_summary":a,"contrasts":c})
         self.assertIn("POST-HOC",text)
-        self.assertIn("same",text.lower() if "same" in text.lower() else text.lower())
+        self.assertIn("shared",text.lower())
         self.assertIn("RQ1_STACK42_MINUS_RF42",text)
 
 if __name__=="__main__":
