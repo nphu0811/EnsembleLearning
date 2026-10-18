@@ -15,6 +15,12 @@ on:
       - "tests/test_p21_pilot_report_acceptance.py"
       - "tools/p21_rq5_sampling.py"
       - "tools/p21_rq5_pilot_worker.py"
+      - "tools/p21_science_core.py"
+      - "tools/p21_science_worker.py"
+      - "tools/p21_science_supervisor.py"
+      - "tools/p21_science_acceptance.py"
+      - "tests/test_p21_science_acceptance.py"
+      - "tests/test_p21_science_synthetic.py"
       - "tools/p21_stack_lite_pilot_worker.py"
       - "tools/p21_stack_lite_pilot_supervisor.py"
       - "tests/test_p21_stack_lite_pilot_acceptance.py"
@@ -51,6 +57,8 @@ jobs:
           python -m py_compile tests/test_p21_train_only_protocol.py
           python -m py_compile tools/p21_pilot_guards.py tools/p21_pilot_worker.py tools/p21_pilot_supervisor.py tests/test_p21_pilot_guards.py
           python -m py_compile tools/p21_verify_pilot_reports.py tests/test_p21_pilot_report_acceptance.py
+          python -m py_compile tools/p21_science_core.py tools/p21_science_worker.py tools/p21_science_supervisor.py tools/p21_science_acceptance.py
+          python -m py_compile tests/test_p21_science_acceptance.py tests/test_p21_science_synthetic.py
           python -m py_compile tools/p21_stack_lite_pilot_worker.py tools/p21_stack_lite_pilot_supervisor.py tests/test_p21_stack_lite_pilot_acceptance.py
           python -m py_compile tools/p21_rq5_sampling.py tests/test_p21_rq5_sampling.py tests/test_p21_rq5_pilot_acceptance.py tools/p21_rq5_pilot_worker.py tools/p21_rq5_pilot_supervisor.py
           python -m py_compile tools/p21_selector_core.py tools/p21_selector_pilot_worker.py tools/p21_selector_pilot_supervisor.py
@@ -60,6 +68,8 @@ jobs:
         run: python -m unittest discover -s tests -p "test_p21_train_only_protocol.py" -v
       - name: Test P21 pilot hard safety gates using synthetic fixtures only
         run: python -m unittest discover -s tests -p "test_p21_pilot_guards.py" -v
+      - name: Reject forged scientific seed metrics and leakage (synthetic JSON only)
+        run: python -m unittest discover -s tests -p "test_p21_science_acceptance.py" -v
       - name: Verify 5 pilot acceptance regression tests (metadata only)
         run: python -m unittest discover -s tests -p "test_p21_pilot_report_acceptance.py" -v
       - name: Accept author-provided RF42 pilot report evidence only
@@ -109,5 +119,7 @@ jobs:
         run: python -m unittest discover -s tests -p "test_p21_rq5_pilot_acceptance.py" -v
       - name: Verify RQ5 class-weight / oversampling FIT-only rule on synthetic rows
         run: python -m unittest discover -s tests -p "test_p21_rq5_sampling.py" -v
+      - name: Synthetic end-to-end P21 grouped inner CV, RF and Stacking fit (NO TRAIN/TEST)
+        run: python -m unittest discover -s tests -p "test_p21_science_synthetic.py" -v
       - name: Selection leakage guard and actual MI/L1/ET stability on synthetic-only rows
         run: python -m unittest discover -s tests -p "test_p21_selector_synthetic.py" -v
