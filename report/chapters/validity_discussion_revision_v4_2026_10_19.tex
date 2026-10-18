@@ -1,0 +1,120 @@
+\section{Diễn giải đánh đổi giữa các loại lỗi}
+\label{sec:discussion-error-tradeoff}
+
+Trên cùng official TEST, Stacking-42 giảm 142 cảnh báo giả so với RF-42 nhưng bỏ sót thêm 118 mẫu Attack. Giá trị thực tế của thay đổi này phụ thuộc vào chi phí tương đối của cảnh báo giả và bỏ sót trong môi trường vận hành; chưa có dữ liệu thật về chi phí đó; phần phân tích độ nhạy giả định phía dưới chỉ minh họa điều kiện để hai pipeline đổi thứ hạng theo chi phí, không xếp một cấu hình là tối ưu cho mọi NIDS. Macro-F1 gần như không đổi và MCC giảm nhẹ ở Stacking, trong khi FPR và FNR dịch chuyển theo hai hướng khác nhau. Việc đọc đồng thời các chỉ số này cho thấy lý do một điểm tổng hợp duy nhất chưa đủ để quyết định triển khai.
+
+Ma trận tính đúng/sai theo cặp dưới đây cho thấy số dự đoán bất đồng giữa hai pipeline gần cân bằng. Điều này phù hợp với McNemar không phát hiện khác biệt rõ về tính đúng tổng thể, nhưng không thay thế các chỉ số tách theo lớp hay thiết lập tương đương thống kê.
+
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{14pt}
+\caption{Tính đúng/sai theo cặp dự đoán của RF-42 và Stacking-42 trên official TEST.}
+\label{tab:paired-correctness}
+\begin{tabular}{l S[table-format=5.0] S[table-format=5.0]}
+\toprule
+ & {Stacking đúng} & {Stacking sai}\\
+\midrule
+RF đúng & 71104 & 491\\
+RF sai & 515 & 10222\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Phân tích độ nhạy chi phí báo động giả và bỏ sót tấn công}
+\label{sec:v4-fp-fn-cost}
+Để diễn giải đánh đổi trên official TEST \emph{lịch sử} mà không tự giả định chi phí thực tế của một trung tâm SOC, đặt chi phí mỗi cảnh báo giả $C_{\mathrm{FP}}>0$ và chi phí mỗi tấn công bị bỏ sót $C_{\mathrm{FN}}=r C_{\mathrm{FP}}$, với $r$ là \emph{tỷ lệ giả định}, không phải thông số được đo. Tổn thất chuẩn hóa tính theo số lỗi:
+\[
+L=\frac{C_{\mathrm{FP}}\cdot FP+C_{\mathrm{FN}}\cdot FN}{C_{\mathrm{FP}}}=FP+r FN.
+\]
+Từ confusion matrices trên \emph{cùng} 82\,332 dòng official TEST và ngưỡng phân loại khóa $0.5$, RF-42 có $FP=10\,003$, $FN=734$; Stacking-42 có $FP=9\,861$, $FN=852$. Do đó
+\[
+L_{\mathrm{RF}}=10\,003+734r,\quad
+L_{\mathrm{Stack}}=9\,861+852r,\quad
+L_{\mathrm{Stack}}-L_{\mathrm{RF}}=-142+118r.
+\]
+Hai mô hình có tổn thất bằng nhau khi $r=142/118\approx1.2034$. Nếu $r$ lớn hơn ngưỡng này, \textbf{RF-42 có tổn thất thấp hơn Stacking-42 \emph{trong đúng phép so sánh hai mô hình này}}; không suy ra RF-42 tối ưu hơn RF-17 hoặc mọi NIDS khác.
+
+\begin{table}[htbp]\centering\small
+\renewcommand{\arraystretch}{1.23}
+\caption{Phân tích độ nhạy \emph{giả định} theo $r=C_{\mathrm{FN}}/C_{\mathrm{FP}}$, chuẩn hóa $C_{\mathrm{FP}}=1$. Giá trị là điểm tổn thất quy ước, không phải số tiền thiệt hại thực tế.}
+\label{tab:v4-cost-sensitivity}
+\begin{tabular}{rrrrl}\toprule
+$r$ & $L_{\mathrm{RF}}$ & $L_{\mathrm{Stack}}$ & $L_{\mathrm{Stack}}-L_{\mathrm{RF}}$ & Tổn thất thấp hơn\\\midrule
+1 & 10737 & 10713 & -24 & Stacking-42\\
+5 & 13673 & 14121 & +448 & RF-42\\
+10 & 17343 & 18381 & +1038 & RF-42\\
+50 & 46703 & 52461 & +5758 & RF-42\\
+100 & 83403 & 95061 & +11658 & RF-42\\\bottomrule
+\end{tabular}
+\end{table}
+
+Bảng~\ref{tab:v4-cost-sensitivity} chỉ khảo sát một số tỷ lệ chi phí do người nghiên cứu \emph{định nghĩa để minh họa}, không có bằng chứng định lượng rằng $r=5$ hoặc $r=100$ đúng cho hệ thống tại Học viện. Mô hình cộng tuyến tính chưa xét mức độ nghiêm trọng từng tấn công, số cảnh báo lặp, khả năng xác minh của SOC, điều chỉnh ngưỡng hoặc chi phí drift; vì vậy đây là \textbf{phân tích độ nhạy của confusion matrix hiện có}, không phải kết quả tối ưu hóa chính sách vận hành hay dự đoán thiệt hại thực tế.
+
+
+\section{Diversity và sai số theo nhóm}
+\label{sec:discussion-diversity-families}
+
+Các learner cơ sở mắc lỗi không hoàn toàn trùng nhau trong development, nhưng kết quả Hard/Soft Voting thấp hơn RF và lợi thế nhỏ của Stacking không rõ trên official TEST. Như vậy, diversity là một thuộc tính quan sát được của các dự đoán, còn lợi ích của ensemble phải được xác lập trực tiếp bằng hiệu năng và loại lỗi của bộ kết hợp. Paired correctness của hai pipeline cuối cũng chỉ mô tả bất đồng; nó không cho biết một base learner cụ thể đã gây ra hay sửa một lỗi nào.
+
+Phân tích theo họ Attack cho thấy mức lỗi không đồng đều: chênh lệch giữa Stacking và RF-42 lớn hơn ở Fuzzers nhưng đi theo hướng ngược lại ở Generic (Bảng~\ref{tab:attack-family}). Vì các mô hình được huấn luyện cho Normal/Attack, đây là phân nhóm hậu nghiệm theo nhãn thật, không phải phép đánh giá đa lớp. Các biến như \texttt{sttl}, \texttt{proto} hay \texttt{state} có thể liên hệ với những dự đoán khác nhau, song dữ liệu mô tả không xác định được cơ chế nhân quả.
+
+\section{Ý nghĩa và giới hạn của Feature Selection}
+\label{sec:discussion-feature-selection}
+
+RF-17 có thời gian huấn luyện và kích thước ước lượng thấp hơn RF-42, đi kèm Macro-F1 thấp hơn, ít FN hơn nhưng nhiều FP hơn. Đây là một đánh đổi có thể quan sát giữa hai pipeline. Vì số cây và kích thước lá cũng khác, chưa thể quy chênh lệch cho riêng việc giảm 25 biến. Bên cạnh đó, stable17 được chọn từ toàn bộ TRAIN trước development CV; điểm OOF do đó có thể lạc quan hơn đánh giá nested, dù official TEST không được dùng để tạo danh sách đặc trưng.
+
+Phần official TEST lịch sử không thực hiện phép đối chứng matched này. P21 sau đó bổ sung hai RF với cùng 150 cây, leaf=2, max-features=0.5, cùng FIT source rows, selector FIT-only mới qua từng seed. Kết quả P21 được diễn giải riêng trong Mục~\ref{sec:p21-results}, không dùng để sửa lại kết quả official TEST lịch sử.
+
+\section{Độ bất định và phạm vi suy luận}
+\label{sec:discussion-uncertainty}
+
+CI paired bootstrap 95\% của hiệu số Macro-F1 và MCC chứa 0, trong khi CI của FPR và FNR nằm ở hai phía đối nghịch. Cùng với McNemar trên tính đúng tổng thể, các kết quả ủng hộ cách diễn giải rằng Stacking làm thay đổi cơ cấu lỗi trên benchmark nhưng chưa thể hiện ưu thế tổng thể rõ. Không bác bỏ khác biệt không đồng nghĩa với chứng minh tương đương. Bootstrap lấy mẫu lại các dòng dự đoán đã ghép cặp và giữ tỷ lệ lớp; nó không tái tạo biến thiên từ quá trình huấn luyện, phụ thuộc giữa các flow, hay thay đổi giữa các mạng. Trong P21, SD giữa năm seed chỉ đo biến thiên FIT/seed có điều kiện trên một validation chung, không phải SD của năm mạng độc lập (Bảng~\ref{tab:p21-five-arm-results}).
+
+Official TEST và exact-duplicate-filtered subset đều thuộc UNSW-NB15. Việc Macro-F1 giảm trên subset sau khi bỏ các vector trùng là bằng chứng về độ nhạy với định nghĩa view này; nó không đại diện temporal, host/session-separated hay external validation. Các khoảng Wilson trong Bảng~\ref{tab:attack-family-wilson} là ước lượng biên theo từng nhóm/pipeline, không phải kiểm định cặp; với các nhóm hiếm, khoảng rộng nhắc rằng tỷ lệ quan sát được còn kém chính xác.
+
+\section{Tái lập, tái huấn luyện và triển khai}
+\label{sec:discussion-reproducibility}
+
+P15 đã tái dựng riêng RF-17, RF-42 và Stacking-42 trên toàn bộ 175\,341 dòng TRAIN trong môi trường Python 3.11.9 và scikit-learn 1.9.0. Việc kiểm tra hash, schema, khả năng nạp lại và tạo xác suất trên dòng TRAIN-derived hỗ trợ khả năng tái lập cấu hình trong môi trường phần mềm được xác định. Tuy vậy, do thiếu môi trường thư viện và đối tượng mô hình lịch sử, các artifact mới không được xem là đồng nhất với mô hình từng tạo ra điểm TEST.
+
+Tái dựng trên TRAIN khác với xác minh lại kết quả TEST lịch sử; cả hai đều khác với đánh giá triển khai. Các metric của P9/P15 trong các phần lịch sử vẫn được giữ khóa; các con số P21 mới là thí nghiệm matched hậu nghiệm trên internal validation của TRAIN và được tách nhãn rõ. Việc mô hình có thể được fit, nạp và gọi dự đoán trong môi trường ghi nhận không cung cấp bằng chứng về độ trễ yêu cầu, tải xử lý, khả năng thích nghi với drift hay tính sẵn sàng vận hành của một NIDS.
+
+\section{Tổng hợp câu trả lời nghiên cứu}
+\label{sec:revision-rq-map}
+
+Bảng~\ref{tab:rq-evidence} tóm tắt kết quả thực nghiệm có thể bảo vệ cùng phần còn chưa được xác định. Các khoảng trống được nêu trong mối liên hệ với kết quả, thay vì thay thế câu trả lời bằng danh sách giới hạn.
+
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+\caption{Kết luận thực nghiệm cho RQ1--RQ5 và phạm vi chưa được kiểm chứng.}
+\label{tab:rq-evidence}
+\begin{tabularx}{\linewidth}{p{0.9cm} X X}
+\toprule
+RQ & Kết luận trong phạm vi dữ liệu & Bằng chứng còn cần thiết\\
+\midrule
+RQ1 & Stacking-Lite không hơn RF42-Lite theo Macro-F1 trung bình qua năm FIT seed P21; TEST lịch sử cũng không chứng minh vượt trội. & Độ ổn định ngoài một validation dùng chung.\\
+RQ2 & RF17 FIT nhanh hơn RF42 nhưng giảm Macro-F1 trong đối chứng matched P21; cộng chi phí chọn biến từ đầu còn chậm hơn. & Độ trễ dự đoán, bộ nhớ arm, chi phí khi triển khai.\\
+RQ3 & Diversity lỗi xuất hiện ở learner cơ sở nhưng không bảo đảm Voting/Stacking có lợi. & Thiết kế kiểm tra cơ chế bổ sung lỗi thay vì tương quan mô tả.\\
+RQ4 & Macro-F1 giảm trong exact-duplicate-filtered view; thứ hạng theo Macro-F1 được giữ. & Đánh giá theo thời gian/host/session hoặc benchmark ngoài.\\
+RQ5 & Weighting/oversampling FIT-only được đối chiếu matched ở P21: cả hai giảm FPR và tăng FNR so với RF42. & Đánh giá threshold-cost và dữ liệu traffic độc lập.\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Hướng nghiên cứu tiếp theo}
+
+P21 đã bổ sung năm lượt huấn luyện matched có kiểm soát seed, FIT-only feature selection và đối chứng class weighting/oversampling. Tuy nhiên các lượt fit vẫn chia sẻ \emph{một} internal validation, và được thiết kế sau khi biết kết quả TEST lịch sử. Hướng tiếp theo vì vậy là đánh giá theo thời gian, host/session hoặc benchmark mạng ngoài có quyền sử dụng rõ ràng, với kế hoạch tiền đăng ký trước khi xem kết quả; tiếp theo mới khảo sát threshold tối ưu theo chi phí báo động giả và bỏ sót thực tế. Những bước này không thay đổi kết quả official holdout cũ.
+
+
+\section{Giới hạn bổ sung riêng cho thực nghiệm P21}
+\label{sec:p21-validity}
+P21 là một nhánh nghiên cứu hậu nghiệm. Lý do bổ sung đối chứng matched xuất phát từ các điểm yếu đã được nhận diện sau giai đoạn thử nghiệm chính; vì vậy không được gọi P21 là tiền đăng ký của toàn bộ công trình. Hai điều kiện phải được tách bạch: \emph{P21 không đọc official TEST khi fit/đánh giá} nhưng \emph{internal validation của TRAIN đã được chấm điểm}. Trường metadata \texttt{validation\_evaluation\_performed=false} nằm trong \emph{split audit trước khi fit}, không phủ định sự tồn tại của bảng metrics validation ở output cuối. Chỉ số P21 thuộc một partition cố định của TRAIN, không được xem là phép xác nhận ngoại sinh.
+
+Các biến thể A0--A4 có cùng FIT source identities trong mỗi seed và cùng ngưỡng $0.5$. Điều đó hạn chế chênh lệch do mẫu nhưng không tự chứng minh các quan sát độc lập theo session/host; grouping dựa trên vector 42 biến chỉ chặn trường hợp trùng \emph{chính xác}, không phát hiện toàn bộ các flow liên quan. P21 sử dụng 5 FIT seed, nhưng tất cả cùng 35\,069 nhãn true nội bộ; không thể coi đó là $n=5$ tập benchmark độc lập hay tuyên bố khẳng định superiority bằng p-value. Phạm vi hợp lệ là đánh giá \emph{độ nhạy do tái chọn FIT và seed} trong một protocol cố định trên cùng internal validation.
+
+Việc chỉ dùng 60\,000 dòng FIT cho từng seed P21 và RF42-Lite 150 cây khác với thí nghiệm trên toàn TRAIN và official TEST của ba model lịch sử; vì vậy độ chênh lệch FPR/FNR giữa hai giai đoạn chịu ảnh hưởng của phân bố dữ liệu, kích thước FIT, hyperparameters, tập đánh giá và thời điểm thiết kế. Không thể so sánh trực tiếp các giá trị tuyệt đối rồi gọi đó là cải thiện sau huấn luyện. RQ2 chỉ đo thời gian chọn biến và model fit; cần tính thêm lưu trữ model, tiền xử lý, predict latency và chi phí duy trì selector nếu muốn kết luận sẵn sàng triển khai.
