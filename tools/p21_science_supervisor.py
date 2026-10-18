@@ -55,22 +55,18 @@ def pilots_pass(source_sha):
                     continue
                 report=json.loads(path.read_text(encoding="utf-8"))
                 checks=report.get("worker_checks",{})
-                if (report.get("status")==status and
-                    report.get("train_sha256")==source_sha and
-                    report.get("exit_code")==0 and
-                    checks.get("source_sha256")==source_sha and
-                    checks.get("official_test_opened") is False and
-                    checks.get("scientific_metrics_calculated") is False and
-                    report.get("peak_tree_rss_bytes",0)>0 and
-                    report.get("peak_tree_rss_bytes",CAP)>=CAP) :
-                    continue
-                if report.get("status")==status and (
-                    report.get("train_sha256")==source_sha and
-                    checks.get("source_sha256")==source_sha and
-                    checks.get("official_test_opened") is False and
-                    checks.get("scientific_metrics_calculated") is False and
-                    report.get("peak_tree_rss_bytes",0)>0 and
-                    report.get("peak_tree_rss_bytes",CAP)<CAP
+                if (
+                    report.get("status")==status
+                    and report.get("exit_code")==0
+                    and report.get("stop_reason") is None
+                    and report.get("train_sha256")==source_sha
+                    and checks.get("source_sha256")==source_sha
+                    and checks.get("official_test_opened") is False
+                    and checks.get("scientific_metrics_calculated") is False
+                    and checks.get("split",{}).get("group_disjoint") is True
+                    and checks.get("split",{}).get("validation_evaluation_performed") is False
+                    and 0<report.get("peak_tree_rss_bytes",0)<CAP
+                    and report.get("resource_samples",0)>0
                 ):
                     success=True
             except (OSError,ValueError,TypeError,KeyError):
@@ -192,7 +188,12 @@ def main() -> int:
                 log.write("seconds,tree_rss_bytes,available_ram_bytes,disk_free_bytes,process_count\n")
                 while proc.poll() is None:
                     (out/"heartbeat").touch()
-                    sample=resource_sample(psutil,proc.pid,ROOT,CAP,FLOOR)
+                    try:
+                        sample=resource_sample(psutil,proc.pid,ROOT,CAP,FLOOR)
+                    except psutil.NoSuchProcess:
+                        if proc.poll() is not None:
+                            break
+                        raise
                     peak=max(peak,sample["rss_bytes"])
                     available_now=sample["available_ram_bytes"]
                     min_avail=available_now if min_avail is None else min(min_avail,available_now)
