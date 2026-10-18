@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - "report/main_revision_v3_2026_10_19.tex"
-      - "report/chapters/*v2_2026_10_17.tex"
+      - "report/chapters/*v3_2026_10_19.tex"
       - ".github/workflows/build-nckh-revision-v3-pdf.yml"
   workflow_dispatch:
 
