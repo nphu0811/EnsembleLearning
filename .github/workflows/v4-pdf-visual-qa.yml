@@ -30,8 +30,11 @@ jobs:
           set -euo pipefail
           python3 - <<'PY'
           from pathlib import Path
-          import subprocess, xml.etree.ElementTree as ET, re
+          import subprocess, xml.etree.ElementTree as ET, re, hashlib
           pdf=Path("exports/report_revision_v4_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V4.pdf")
+          expected_sha="7e8784d7b415eef5b94003440c8446e46c05b399f91ebde57917d0e2581eea98"
+          if hashlib.sha256(pdf.read_bytes()).hexdigest()!=expected_sha:
+              raise ValueError("V4 PDF changed from accepted 56-page SHA: stop stale visual QA")
           out=Path("docs/research/v4_visual_samples_2026_10_19")
           out.mkdir(parents=True,exist_ok=True)
           info=subprocess.check_output(["pdfinfo",str(pdf)],text=True)
