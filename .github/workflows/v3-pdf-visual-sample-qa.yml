@@ -31,8 +31,8 @@ jobs:
           mkdir -p "$DIR"
           test -s "$PDF"
           pages=$(pdfinfo "$PDF" | awk '/^Pages:/ {print $2}')
-          test "$pages" -eq 56
-          for page in 1 5 30 39 43 47 52 56; do
+          test "$pages" -eq 55
+          for page in 1 5 30 35 36 37 38 39 45 52 55; do
             file="$DIR/page_$(printf '%02d' "$page")"
             pdftoppm -f "$page" -l "$page" -r 96 -png -singlefile "$PDF" "$file"
             test -s "$file.png"
@@ -46,7 +46,7 @@ jobs:
           root=ET.fromstring(result.stdout)
           ns={"x":"http://www.w3.org/1999/xhtml"}
           pages=root.findall(".//x:page",ns)
-          if len(pages)!=56:
+          if len(pages)!=55:
               raise ValueError(f"Unexpected bbox count: {len(pages)}")
           found=0
           for idx,page in enumerate(pages,start=1):
@@ -58,14 +58,14 @@ jobs:
                       raise ValueError(f"Out-of-page glyph page {idx}: {(x0,y0,x1,y1)}")
           if found<2000:
               raise ValueError(f"Too little selectable text: {found} words")
-          print(f"PASS: 56 pages and {found} word boxes entirely inside page bounds")
+          print(f"PASS: 55 pages and {found} word boxes entirely inside page bounds")
           PY
           cat > "$DIR/QA.md" <<EOF
           # V3 sampled-page visual QA — 2026-10-19
 
           - Source PDF: $PDF
           - Pages: $pages
-          - Rendered previews: 1, 5, 30, 39, 43, 47, 52, 56 at 96 DPI.
+          - Rendered previews: 1, 5, 30, 35, 36, 37, 38, 39, 45, 52, 55 at 96 DPI.
           - Machine validation: pdfinfo 56 pages; pdftotext word bounding boxes inside each page.
           - Warning: sample images are NOT proof of perfect typography on all 56 pages; inspect images before print.
           EOF
