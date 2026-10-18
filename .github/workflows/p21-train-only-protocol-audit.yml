@@ -19,6 +19,8 @@ on:
       - "tools/p21_science_worker.py"
       - "tools/p21_science_supervisor.py"
       - "tools/p21_science_acceptance.py"
+      - "tools/p21_science_aggregate.py"
+      - "tests/test_p21_science_aggregation.py"
       - "tests/test_p21_science_acceptance.py"
       - "tests/test_p21_science_synthetic.py"
       - "tools/p21_stack_lite_pilot_worker.py"
@@ -57,8 +59,8 @@ jobs:
           python -m py_compile tests/test_p21_train_only_protocol.py
           python -m py_compile tools/p21_pilot_guards.py tools/p21_pilot_worker.py tools/p21_pilot_supervisor.py tests/test_p21_pilot_guards.py
           python -m py_compile tools/p21_verify_pilot_reports.py tests/test_p21_pilot_report_acceptance.py
-          python -m py_compile tools/p21_science_core.py tools/p21_science_worker.py tools/p21_science_supervisor.py tools/p21_science_acceptance.py
-          python -m py_compile tests/test_p21_science_acceptance.py tests/test_p21_science_synthetic.py
+          python -m py_compile tools/p21_science_core.py tools/p21_science_worker.py tools/p21_science_supervisor.py tools/p21_science_acceptance.py tools/p21_science_aggregate.py
+          python -m py_compile tests/test_p21_science_acceptance.py tests/test_p21_science_synthetic.py tests/test_p21_science_aggregation.py
           python -m py_compile tools/p21_stack_lite_pilot_worker.py tools/p21_stack_lite_pilot_supervisor.py tests/test_p21_stack_lite_pilot_acceptance.py
           python -m py_compile tools/p21_rq5_sampling.py tests/test_p21_rq5_sampling.py tests/test_p21_rq5_pilot_acceptance.py tools/p21_rq5_pilot_worker.py tools/p21_rq5_pilot_supervisor.py
           python -m py_compile tools/p21_selector_core.py tools/p21_selector_pilot_worker.py tools/p21_selector_pilot_supervisor.py
@@ -68,6 +70,8 @@ jobs:
         run: python -m unittest discover -s tests -p "test_p21_train_only_protocol.py" -v
       - name: Test P21 pilot hard safety gates using synthetic fixtures only
         run: python -m unittest discover -s tests -p "test_p21_pilot_guards.py" -v
+      - name: Verify complete-five-seed aggregation on fabricated metrics
+        run: python -m unittest discover -s tests -p "test_p21_science_aggregation.py" -v
       - name: Reject forged scientific seed metrics and leakage (synthetic JSON only)
         run: python -m unittest discover -s tests -p "test_p21_science_acceptance.py" -v
       - name: Verify 5 pilot acceptance regression tests (metadata only)
