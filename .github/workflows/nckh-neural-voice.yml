@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/nckh-neural-voice.yml"
       - "presentation/nckh_defense/script_first_v3/final_10_slide_v1/upgrade_neural_voice.py"
+      - "presentation/nckh_defense/script_first_v3/final_10_slide_v1/NCKH_Ensemble_IDS_10_Slides_Preview.mp4"
   workflow_dispatch:
 
 permissions:
