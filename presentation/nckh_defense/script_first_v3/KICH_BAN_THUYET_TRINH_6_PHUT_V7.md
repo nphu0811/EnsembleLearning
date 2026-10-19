@@ -4,13 +4,13 @@
 **Luận điểm xuyên suốt:** Ensemble Learning không mặc nhiên tốt hơn mô hình đơn; khi triển khai IDS phải xem tổng chất lượng, FP, FN và chi phí/lệch đánh giá.
 
 ## Cảnh 1 — Một cảnh báo ít hơn có chắc tốt hơn? | 00:00–00:25 (25 giây)
-> Thưa quý thầy cô, nếu một hệ thống phát hiện xâm nhập tạo ra ít cảnh báo hơn, liệu chúng ta có thể kết luận nó an toàn hơn không? Chưa chắc. Hệ thống có thể giảm những cảnh báo nhầm, nhưng đồng thời bỏ sót thêm lưu lượng tấn công. Nhóm em bắt đầu nghiên cứu từ chính sự đánh đổi đó.
+> Thưa quý thầy cô, ít cảnh báo hơn có đồng nghĩa hệ thống phát hiện xâm nhập an toàn hơn không? Chưa chắc. Hệ thống có thể giảm báo động giả nhưng đồng thời bỏ sót thêm tấn công. Đó là câu hỏi dẫn dắt nghiên cứu của nhóm em.
 
 **Nội dung chính trên slide:** “Ít cảnh báo hơn ≠ Ít tấn công bị bỏ sót”. Không công bố ngay số liệu để dành cho cảnh 5.  
 **Nguồn PDF:** Chương 1, mục 1.1.2 (trang in 1); Chương 4, Bảng 4.1 và Hình 4.1 (trang in 20–21).
 
 ## Cảnh 2 — Bài toán và dữ liệu | 00:25–01:05 (40 giây)
-> Đề tài của nhóm em là nghiên cứu Ensemble Learning cho bài toán phát hiện xâm nhập mạng. Trên bộ dữ liệu UNSW-NB15, mỗi dòng lưu lượng được phân loại thành một trong hai nhãn: bình thường hoặc tấn công. Nhóm sử dụng hai phần dữ liệu chính thức: 175.341 dòng TRAIN và 82.332 dòng TEST, với 42 đặc trưng dùng để dự đoán. Mục tiêu không phải chỉ tìm mô hình có Accuracy cao, mà xem liệu kết hợp mô hình có cải thiện kết quả và có làm thay đổi loại lỗi hệ thống mắc phải hay không.
+> Đề tài của nhóm em nghiên cứu Ensemble Learning cho phát hiện xâm nhập mạng. Với UNSW-NB15, mỗi dòng lưu lượng được phân thành Normal hoặc Attack. Nhóm sử dụng hai phần dữ liệu chính thức: 175.341 dòng TRAIN và 82.332 dòng TEST, với 42 đặc trưng dự báo. Thay vì chỉ nhìn Accuracy, nhóm muốn biết các phương pháp kết hợp dự đoán có thực sự cải thiện chất lượng, và ảnh hưởng ra sao đến từng loại lỗi.
 
 **Nội dung chính trên slide:** 175.341 TRAIN / 82.332 TEST / 42 predictors / Normal – Attack.  
 **Nguồn PDF:** Chương 2, mục 2.1, Bảng 2.1 và Hình 2.1 (trang in 10); Chương 3, mục 3.1 (trang in 15).
@@ -22,7 +22,7 @@
 **Nguồn PDF:** Chương 3, mục 3.2–3.4 và Bảng 3.1 (trang in 15–17).
 
 ## Cảnh 4 — Đúng nhiều chưa đủ | 01:55–02:25 (30 giây)
-> Với hệ thống phát hiện xâm nhập, hai kiểu sai có ý nghĩa rất khác nhau. False Positive là lưu lượng bình thường bị báo thành tấn công, khiến người quản trị phải kiểm tra thêm. False Negative là lưu lượng tấn công bị nhận nhầm thành bình thường, có thể làm bỏ sót sự kiện đáng chú ý. Vì vậy, ngoài Macro-F1 và MCC, nhóm đánh giá riêng tỷ lệ báo động giả FPR và tỷ lệ bỏ sót FNR.
+> Trong hệ thống IDS, báo động giả, hay False Positive, là lưu lượng bình thường bị báo thành tấn công. Ngược lại, False Negative là lưu lượng tấn công bị nhận nhầm thành bình thường. Một lỗi làm tăng công kiểm tra; lỗi kia có thể khiến sự cố bị bỏ qua. Vì vậy, nhóm xem đồng thời Macro-F1, MCC, FPR và FNR.
 
 **Nội dung chính trên slide:** Hai ví dụ FP/FN song song, dưới là Macro-F1, MCC, FPR và FNR với giải nghĩa ngắn.  
 **Nguồn PDF:** Chương 1, mục 1.2.1 và 1.2.6 (trang in 3, 6); Chương 4, mục 4.1 và công thức (4.1) (trang in 20).
@@ -34,7 +34,7 @@
 **Nguồn PDF:** Chương 4, Bảng 4.1, Bảng 4.2, Hình 4.1 và Hình 4.2 (trang in 20–22).
 
 ## Cảnh 6 — Vì sao còn phải làm thí nghiệm P21? | 03:20–04:05 (45 giây)
-> Phần thực nghiệm ban đầu còn hai điểm cần kiểm soát tốt hơn. Thứ nhất, bộ 17 đặc trưng lịch sử đã được chọn trước một số bước cross-validation. Thứ hai, hai Random Forest còn khác cả số cây và cấu hình lá. Vì vậy, nhóm bổ sung P21 sau khi có kết quả ban đầu để thực hiện đối chứng chặt chẽ hơn. P21 chỉ lấy dữ liệu từ TRAIN, tạo năm tập FIT gồm 60.000 dòng với năm seed khác nhau, và đánh giá năm cấu hình trên cùng một tập validation 35.069 dòng. Đây là một phép kiểm tra nội bộ hậu nghiệm, không phải năm tập TEST độc lập.
+> Thực nghiệm lịch sử còn hai hạn chế. Bộ 17 đặc trưng được chọn trước development cross-validation, và hai Random Forest không chỉ khác số đặc trưng mà còn khác siêu tham số. Nhóm vì vậy bổ sung P21 để đối chứng có kiểm soát. Từ TRAIN, nhóm tạo năm tập FIT, mỗi tập 60.000 dòng theo seed khác nhau. Cả năm seed và năm cấu hình cùng đánh giá trên một validation 35.069 dòng. Đây là thí nghiệm nội bộ hậu nghiệm, không phải năm tập TEST độc lập.
 
 **Nội dung chính trên slide:** TRAIN → FIT pool / một validation cố định → năm FIT seed × năm nhánh A0–A4. Ghi nổi bật “P21: TRAIN-derived validation, không phải external TEST”.  
 **Nguồn PDF:** Chương 3, mục 3.2, 3.6.1–3.6.3 và Bảng 3.2 (trang in 15–19); Chương 4, mục 4.9 (trang in 28).
@@ -46,7 +46,7 @@
 **Nguồn PDF:** Chương 4, Bảng 4.8, 4.9, 4.11 và mục 4.9.2–4.9.4 (trang in 28–30).
 
 ## Cảnh 8 — Đóng góp và giới hạn | 05:13–06:00 (47 giây)
-> Từ hai phần thực nghiệm, nhóm em rút ra một kết luận: giá trị của Ensemble Learning trong phát hiện xâm nhập không nằm ở việc kết hợp càng nhiều mô hình càng tốt, mà ở việc đánh giá đúng mô hình đang sửa loại lỗi nào và tạo thêm loại lỗi nào. Đóng góp của đề tài là quy trình đối chiếu có truy vết, các thí nghiệm kiểm soát và phân tích sự đánh đổi giữa cảnh báo giả với tấn công bị bỏ sót. Nhóm cũng thừa nhận giới hạn: kết quả hiện dựa trên UNSW-NB15; P21 dùng lại một validation nội bộ và chưa kiểm nghiệm trên mạng triển khai độc lập. Hướng tiếp theo là đánh giá trên dữ liệu mới, theo thời gian hoặc phiên mạng, rồi mới khảo sát chi phí vận hành thực. Em xin cảm ơn quý thầy cô.
+> Điều nhóm rút ra là: kết hợp nhiều mô hình chưa chắc giúp phát hiện xâm nhập tốt hơn. Điều quan trọng là biết mô hình giảm loại lỗi nào, tăng loại lỗi nào, và chi phí phải trả. Đóng góp của đề tài là đối chiếu có kiểm soát, phân tích sai số và công khai giới hạn bằng chứng. Nghiên cứu vẫn chỉ trên UNSW-NB15; P21 dùng chung một validation, chưa thử trên mạng độc lập. Bước tiếp theo là đánh giá với dữ liệu mới, tách theo thời gian hoặc phiên mạng và đo chi phí vận hành thực tế. Em xin cảm ơn quý thầy cô.
 
 **Nội dung chính trên slide:** Ba dòng “Đối chiếu có kiểm soát / Phân tích sai số / Minh bạch giới hạn” và một dòng “Bước tiếp theo: đánh giá dữ liệu mạng độc lập”.  
 **Nguồn PDF:** Chương 5, mục 5.4–5.9 (trang in 33–36).
