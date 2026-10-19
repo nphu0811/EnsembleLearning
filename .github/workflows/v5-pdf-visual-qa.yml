@@ -5,7 +5,6 @@ on:
     branches: [main]
     paths:
       - "exports/report_revision_v5_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V5.pdf"
-      - ".github/workflows/v5-pdf-visual-qa.yml"
   workflow_dispatch:
 
 permissions:
