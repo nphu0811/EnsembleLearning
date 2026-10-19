@@ -436,3 +436,5 @@ DONE_ARTIFACT_VALIDATED: presentation/nckh_defense/ all10required outputs + code
 - DONE_SCOPED: 4 approved obsolete PDFs synchronized out of working tree; 53 doc renames + current references; no scientific changes.
 - DONE_SCOPED: opaque hashes1059/1059, rename53/53, protocol29/29, P21 five seeds, 24 tests, P20 scoped944/0; VALIDATION_SUMMARY.json.
 - DOING: commit and push codex/workspace-cleanup-20261019; main final approval remains pending.
+
+- DONE_SCOPED publication: `acf80302649ebeab3f2a52b230551248d1bd63a3` pushed/remote verified; main final approval pending.

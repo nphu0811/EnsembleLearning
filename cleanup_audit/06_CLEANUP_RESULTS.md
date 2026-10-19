@@ -1,6 +1,6 @@
 # Kết quả cleanup đã được duyệt — 19/10/2026
 
-Trạng thái: cleanup phạm vi được duyệt và rename tài liệu đã kiểm tra đạt; đang chuẩn bị commit/push nhánh `codex/workspace-cleanup-20261019`. Chưa merge main.
+Trạng thái: cleanup phạm vi được duyệt và rename tài liệu đã kiểm tra đạt; đã commit/push nhánh `codex/workspace-cleanup-20261019`, remote xác nhận đúng implementation commit. Chưa merge main.
 
 - Kiểm kê 52,059 file gồm Git; hash toàn bộ 48,405 file ngoài Git, 0 lỗi đọc.
 - Đã loại đúng 4 PDF V2–V5 khỏi local bằng fast-forward tới 6 commit có sẵn trên remote. Các file này đã được xóa trên GitHub trong commit `3dc7caa179ce1baf8441b426ae145a7f7a874c73`; commit cleanup mới không xóa thêm file tracked nào.
@@ -37,6 +37,6 @@ Baseline toàn workspace: 4,193,776,701 logical bytes. Snapshot sau thao tác: 4
 
 - Commit gốc local: `72dd60d669a40554e7c6e884413bb96f837b58ba`.
 - Đồng bộ an toàn bằng fetch + fast-forward tới origin/main `6d2424431849ea1bd432baf1b4da09d2c5e1b651`; giữ các thay đổi chưa commit và Word lock chưa tracked.
-- Cleanup commit: PENDING_COMMIT. Push: PENDING_PUSH. Main merge: CHỜ DUYỆT CUỐI.
+- Cleanup implementation commit: `acf80302649ebeab3f2a52b230551248d1bd63a3`. Push: VERIFIED bằng git ls-remote. Main merge: CHỜ DUYỆT CUỐI. Receipt commit sau đó chỉ ghi trạng thái publication; xem PUBLICATION_RECEIPT.json.
 - Có thể phục hồi một PDF bằng `git restore --source=72dd60d --worktree -- <đường-dẫn-chính-xác-trong-DELETED_FILES_MANIFEST.json>`. Không dùng reset hard, git clean, force push hoặc rewrite history.
 - Phục hồi rename theo mapping hoặc Git history trên một nhánh riêng; không khôi phục hàng loạt đè các thay đổi mới.
