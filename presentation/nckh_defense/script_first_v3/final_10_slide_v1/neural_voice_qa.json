@@ -1,0 +1,84 @@
+{
+  "status": "PASS_NEURAL_VIETNAMESE_PREVIEW",
+  "video": "NCKH_Ensemble_IDS_10_Slides_Preview_NeuralVoice.mp4",
+  "voice": "vi-VN-HoaiMyNeural",
+  "rate": "-4%",
+  "duration_seconds": 360.0,
+  "narration_slots": [
+    {
+      "slide": 1,
+      "slot_sec": 12,
+      "speech_original_sec": 11.496,
+      "speech_final_sec": 11.03,
+      "time_fitted": true
+    },
+    {
+      "slide": 2,
+      "slot_sec": 23,
+      "speech_original_sec": 16.056,
+      "speech_final_sec": 16.056,
+      "time_fitted": false
+    },
+    {
+      "slide": 3,
+      "slot_sec": 40,
+      "speech_original_sec": 27.768,
+      "speech_final_sec": 27.768,
+      "time_fitted": false
+    },
+    {
+      "slide": 4,
+      "slot_sec": 50,
+      "speech_original_sec": 32.232,
+      "speech_final_sec": 32.232,
+      "time_fitted": false
+    },
+    {
+      "slide": 5,
+      "slot_sec": 30,
+      "speech_original_sec": 24.264,
+      "speech_final_sec": 24.264,
+      "time_fitted": false
+    },
+    {
+      "slide": 6,
+      "slot_sec": 61,
+      "speech_original_sec": 41.544,
+      "speech_final_sec": 41.544,
+      "time_fitted": false
+    },
+    {
+      "slide": 7,
+      "slot_sec": 43,
+      "speech_original_sec": 33.216,
+      "speech_final_sec": 33.216,
+      "time_fitted": false
+    },
+    {
+      "slide": 8,
+      "slot_sec": 68,
+      "speech_original_sec": 47.16,
+      "speech_final_sec": 47.16,
+      "time_fitted": false
+    },
+    {
+      "slide": 9,
+      "slot_sec": 19,
+      "speech_original_sec": 14.064,
+      "speech_final_sec": 14.064,
+      "time_fitted": false
+    },
+    {
+      "slide": 10,
+      "slot_sec": 14,
+      "speech_original_sec": 15.432,
+      "speech_final_sec": 13.031,
+      "time_fitted": true
+    }
+  ],
+  "script_source": "deck_plan.json",
+  "audio_timelines_changed": false,
+  "human_proper_noun_pronunciation_QA": false,
+  "quality_notice": "This is synthesized speech for rehearsal; manually inspect names/ML acronyms and replace with live voice for defense.",
+  "pptx_and_research_untouched": true
+}
