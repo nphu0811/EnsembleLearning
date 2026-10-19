@@ -1,4 +1,5 @@
 name: Visual QA of final ten NCKH slides
+# Re-render after the PTIT cover contrast and circular pipeline edits.
 
 on:
   push:
