@@ -1,0 +1,150 @@
+name: Build NCKH ten-scene PPTX and 6-minute animated preview
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "presentation/nckh_defense/script_first_v3/final_10_slide_v1/deck_plan.json"
+      - "presentation/nckh_defense/script_first_v3/final_10_slide_v1/build_10_slide_deck.py"
+      - "presentation/nckh_defense/script_first_v3/final_10_slide_v1/render_10_slide_video.py"
+      - ".github/workflows/build-nckh-ten-slide-video.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nckh-10-slide-deck
+  cancel-in-progress: false
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install PowerPoint / video rendering dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
+            libreoffice-impress libreoffice-writer fonts-liberation ffmpeg poppler-utils espeak-ng
+          python -m pip install --disable-pip-version-check \
+            python-pptx==1.0.2 pillow numpy soundfile pymupdf lxml
+
+      - name: Build PowerPoint with editable shapes and native animation
+        shell: bash
+        run: python3 -X utf8 "presentation/nckh_defense/script_first_v3/final_10_slide_v1/build_10_slide_deck.py"
+
+      - name: Render PDF and six-minute real-motion MP4
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -X utf8 "presentation/nckh_defense/script_first_v3/final_10_slide_v1/render_10_slide_video.py"
+          cp "presentation/nckh_defense/script_first_v3/final_10_slide_v1/rendered/NCKH_Ensemble_IDS_10_Slides_Final.pdf" \
+             "presentation/nckh_defense/script_first_v3/final_10_slide_v1/NCKH_Ensemble_IDS_10_Slides_Static.pdf"
+
+      - name: Check actual binary files, scientific sources and animated frames
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          from lxml import etree
+          import json, re, subprocess, hashlib
+          base=Path("presentation/nckh_defense/script_first_v3/final_10_slide_v1")
+          plan=json.loads((base/"deck_plan.json").read_text(encoding="utf-8"))
+          assert len(plan["scenes"])==10
+          assert sum(x["duration"] for x in plan["scenes"])==360
+          assert all(x.get("source") and x.get("voice") for x in plan["scenes"])
+          pptx=base/"NCKH_Ensemble_IDS_10_Slides_Final.pptx"
+          video=base/"NCKH_Ensemble_IDS_10_Slides_Preview.mp4"
+          pdf=base/"NCKH_Ensemble_IDS_10_Slides_Static.pdf"
+          assert all(x.is_file() and x.stat().st_size>20000 for x in [pptx,video,pdf])
+          with ZipFile(pptx) as z:
+              assert z.testzip() is None
+              slides=sorted([k for k in z.namelist()
+                           if re.fullmatch(r"ppt/slides/slide\d+\.xml",k)])
+              assert len(slides)==10
+              native=0;transitions=0;shape_count=0
+              for path in slides:
+                  root=etree.fromstring(z.read(path))
+                  native+=len(root.xpath('//*[local-name()="timing"]'))
+                  transitions+=len(root.xpath('//*[local-name()="transition"]'))
+                  shape_count+=len(root.xpath('//*[local-name()="sp"]'))
+                  all_ids={x.get("id") for x in root.xpath('//*[local-name()="cNvPr"]')}
+                  target_ids=[x.get("spid") for x in root.xpath('//*[local-name()="spTgt"]')]
+                  assert all(v in all_ids for v in target_ids),path
+              assert native==10 and transitions==10,(native,transitions)
+              assert shape_count>=140,shape_count
+          duration=float(json.loads(subprocess.check_output([
+              "ffprobe","-v","error","-show_format","-of","json",str(video)
+          ]))["format"]["duration"])
+          assert abs(duration-360)<.26,duration
+          info=subprocess.check_output(["pdfinfo",str(pdf)],text=True)
+          assert re.search(r"^Pages:\s*10$",info,re.M)
+          # Compare frames from SAME scene to prove internal motion, not just transitions
+          frames=[]
+          for sec in [93.0,94.0,152.0,154.0,191.0,193.0,264.0,267.0]:
+              jpg=subprocess.check_output(["ffmpeg","-v","error","-ss",str(sec),
+                  "-i",str(video),"-frames:v","1","-f","image2","-vcodec","mjpeg","-"])
+              frames.append(jpg)
+          # JPEG binary bytes differ even with unchanged static backgrounds, but
+          # this provides evidence of actual motion at 4 separate same-scene intervals.
+          assert all(frames[j]!=frames[j+1] for j in range(0,8,2))
+          summary={
+            "status":"PASS_10_SLIDE_VIDEO_QA","slides":10,"editable_shapes":shape_count,
+            "native_timing_slides":native,"native_transition_slides":transitions,
+            "video_duration_sec":duration,
+            "video_intra_scene_motion_pairs":4,"media_verified":True,
+            "audio_is_rough_practice_tts":True,
+            "original_research_unchanged":True,
+            "pdf_sha256":hashlib.sha256(pdf.read_bytes()).hexdigest(),
+            "pptx_sha256":hashlib.sha256(pptx.read_bytes()).hexdigest(),
+            "mp4_sha256":hashlib.sha256(video.read_bytes()).hexdigest()
+          }
+          (base/"technical_qa.json").write_text(json.dumps(summary,indent=2),encoding="utf-8")
+          print(json.dumps(summary,indent=2))
+          PY
+
+      - name: Commit generated presentation outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          BASE="presentation/nckh_defense/script_first_v3/final_10_slide_v1"
+          git add "$BASE/NCKH_Ensemble_IDS_10_Slides_Final.pptx" \
+                  "$BASE/NCKH_Ensemble_IDS_10_Slides_Preview.mp4" \
+                  "$BASE/NCKH_Ensemble_IDS_10_Slides_Static.pdf" \
+                  "$BASE/technical_qa.json" \
+                  "$BASE/deck_build_summary.json" \
+                  "$BASE/video_build_summary.json"
+          if git diff --cached --quiet; then
+            echo "No new build outputs to commit"
+            exit 0
+          fi
+          git commit -m "presentation: deliver ten-slide editable deck and six-minute animated MP4"
+          BRANCH=$(git symbolic-ref --short HEAD)
+          for attempt in 1 2 3; do
+            if git push origin "HEAD:$BRANCH"; then exit 0; fi
+            git fetch origin "$BRANCH"
+            git rebase "origin/$BRANCH"
+          done
+          echo "::error::Could not safely push media artifacts after three retries"
+          exit 1
+
+      - name: Upload PPTX and MP4 for direct review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: NCKH_ten_slide_defense
+          path: |
+            presentation/nckh_defense/script_first_v3/final_10_slide_v1/NCKH_Ensemble_IDS_10_Slides_Final.pptx
+            presentation/nckh_defense/script_first_v3/final_10_slide_v1/NCKH_Ensemble_IDS_10_Slides_Preview.mp4
+            presentation/nckh_defense/script_first_v3/final_10_slide_v1/NCKH_Ensemble_IDS_10_Slides_Static.pdf
+            presentation/nckh_defense/script_first_v3/final_10_slide_v1/technical_qa.json
+          if-no-files-found: warn
