@@ -28,7 +28,8 @@
     ".gitignore": true,
     "AGENTS.md": true,
     "MASTER_PROMPT.md": true,
-    "README_FIRST.md": true
+    "README_FIRST.md": true,
+    ".vscode": true
   },
   "files.associations": {
     "*.code-workspace": "jsonc"
