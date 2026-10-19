@@ -1,13 +1,7 @@
 name: Build NCKH report revision V2
 
+# Historical V2 build retained for manual verification only. Superseded PDF was removed.
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "report/main_revision_v2_2026_10_17.tex"
-      - "report/chapters/*v2_2026_10_17.tex"
-      - ".github/workflows/build-nckh-revision-v2-pdf.yml"
   workflow_dispatch:
 
 permissions:
