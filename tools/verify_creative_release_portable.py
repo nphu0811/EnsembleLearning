@@ -161,6 +161,11 @@ def audit(base):
     binary_exts = {".pptx", ".mp4", ".pdf", ".zip", ".png",
                    ".jpg", ".jpeg", ".mp3", ".wav", ".svgz"}
     missing, binary_fails, unexpected_text_changes, git_lf_files = [], [], [], 0
+    post_package_generated = []
+    # The packaging script writes this summary *after* creating the manifest
+    # and ZIP (to record the ZIP's final digest). Its in-ZIP prior version
+    # is still checked byte-for-byte against the original manifest above.
+    known_post_package_rewrites = {"audit/release_validation.json"}
     for name, sha in expected.items():
         local = base / name
         if not local.is_file():
@@ -168,6 +173,9 @@ def audit(base):
             continue
         b = local.read_bytes()
         if hashlib.sha256(b).hexdigest() == sha:
+            continue
+        if name in known_post_package_rewrites:
+            post_package_generated.append(name)
             continue
         if local.suffix.lower() in binary_exts:
             binary_fails.append(name)
@@ -197,6 +205,7 @@ def audit(base):
         "sha_manifest_entries": len(expected),
         "manifest_zip_original_bytes_verified": True,
         "git_text_files_with_lf_normalization": git_lf_files,
+        "known_post_package_generated_reports": post_package_generated,
         "delivery_zip_crc_pass": True,
         "latex_source_zip_crc_pass": True,
         "human_audio_pronunciation_verified": False,
