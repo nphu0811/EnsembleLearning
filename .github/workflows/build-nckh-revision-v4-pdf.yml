@@ -1,15 +1,7 @@
 name: Build NCKH report revision V4
 
+# Historical V4 build retained for manual verification only. Superseded PDF was removed.
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "report/main_revision_v4_2026_10_19.tex"
-      - "tools/p21_verify_full_five_seed.py"
-      - "results/controlled_extensions/p21_train_only_science_summary_20261019_022655/aggregate.json"
-      - "report/chapters/*v4_2026_10_19.tex"
-      - ".github/workflows/build-nckh-revision-v4-pdf.yml"
   workflow_dispatch:
 
 permissions:
