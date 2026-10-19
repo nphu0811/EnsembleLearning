@@ -1,0 +1,248 @@
+{
+  "status": "FAIL",
+  "checks_passed": 44,
+  "checks_total": 45,
+  "failures": [
+    "pdf_selectable_text"
+  ],
+  "checks": [
+    {
+      "check": "artifact_exists:NCKH_Ensemble_IDS_Final.pptx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_exists:NCKH_Ensemble_IDS_Preview.mp4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_exists:NCKH_Ensemble_IDS_Static.pdf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_exists:Kich_ban_thuyet_trinh_6_phut.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_exists:QnA_4_phut.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_exists:Storyboard.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_exists:Skill_Decision_Matrix.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_exists:Asset_Manifest.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "artifact_exists:Scientific_Evidence_Map.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_unchanged:exports/report_revision_v6_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V6.pdf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_unchanged:results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_unchanged:results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_unchanged:results/controlled_extensions/p21_train_only_science_summary_20261019_022655/aggregate.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_unchanged:config/p21_train_only_protocol_2026_10_18.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_unchanged:src/models/run_unsw_phase9_final_holdout.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_unchanged:src/models/run_unsw_ensemble_phase7_2.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_unchanged:tools/p21_science_core.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "frozen_unchanged:tools/p21_selector_core.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "v6_frozen_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "slide_count32",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "no_unrelated_project_or_placeholders",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "all32_have_notes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "appendix_hidden_only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "native_editable_not_flattened",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "unique_shape_names",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "no_off_canvas_shapes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "zip_crc",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "all_package_xml_parses",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "native_morph_present",
+      "pass": true,
+      "detail": [
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13,
+        14,
+        16,
+        17,
+        19
+      ]
+    },
+    {
+      "check": "main_show_range1to20",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "internal_slide_links_resolve",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "static_pdf20_main_keyframes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "pdf_selectable_text",
+      "pass": false,
+      "detail": null
+    },
+    {
+      "check": "pdf_vietnamese_and_no_replacement",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "pdf_word_bounds",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "video_exact_360_seconds",
+      "pass": true,
+      "detail": "360.000000"
+    },
+    {
+      "check": "video1080p30_h264",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "audio_aac_present",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "native_video_excluded_appendix",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "full_decode_clean",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "timeline360_8scenes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "tts_within_each_slot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "tts_pause_available",
+      "pass": true,
+      "detail": 0.7119999999999891
+    },
+    {
+      "check": "independent_visual_qa_pass",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "p21_readonly_verifier",
+      "pass": true,
+      "detail": "{\n  \"status\": \"PASS_FIVE_SEED_READ_ONLY_AUDIT\",\n  \"completed_seeds_verified\": 5,\n  \"arms_claimed\": 25,\n  \"official_test_opened_by_this_audit\": false,\n  \"metrics_recomputed_from_existing_counts\": true,\n  \"independent_external_validation\": false,\n  \"failures\": []\n}"
+    }
+  ]
+}

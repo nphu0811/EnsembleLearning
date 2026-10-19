@@ -1,0 +1,29 @@
+--- V6/chapters/introduction_revision_v3_2026_10_19.tex
++++ V7/chapters/introduction_revision_v3_2026_10_19.tex
+@@ -2,14 +2,14 @@
+ \label{chap:gioi-thieu}
+ 
+ \subsection{Bối cảnh và động cơ}
+-Hệ thống phát hiện xâm nhập mạng (Network Intrusion Detection System, NIDS) nhằm nhận diện lưu lượng có dấu hiệu tấn công từ các quan sát mạng. Các bộ phân loại học máy có thể phát hiện những mẫu phức tạp trong dữ liệu flow, nhưng điểm số cao trên một benchmark không tự bảo đảm hiệu quả trong các bối cảnh triển khai khác nhau. Cách tạo và làm sạch dữ liệu, lựa chọn đặc trưng, chia tập và các loại sai số có thể ảnh hưởng đáng kể đến diễn giải thí nghiệm.
++Hệ thống phát hiện xâm nhập mạng (Network Intrusion Detection System, NIDS) nhằm nhận diện lưu lượng có dấu hiệu tấn công từ các quan sát mạng. Các bộ phân loại học máy có thể nhận ra những mẫu phức tạp trong dữ liệu flow. Tuy nhiên, điểm số cao trên một benchmark chưa bảo đảm mô hình sẽ hoạt động tốt ở môi trường khác. Kết quả còn phụ thuộc vào cách tạo, làm sạch và chia dữ liệu, cách chọn đặc trưng, cũng như loại lỗi được xem xét.
+ 
+-Ensemble Learning kết hợp dự đoán từ nhiều bộ phân loại. Tổng quan của Tama và Lim nhấn mạnh hai lựa chọn thiết kế: thành phần mô hình cơ sở và phương pháp kết hợp \cite{legacyL01}. Voting, Stacking và lựa chọn đặc trưng đều đã được nghiên cứu trước đây; việc áp dụng riêng các kỹ thuật này không tạo thành đóng góp thuật toán mới \cite{legacyL04,legacyL05,legacyL06,legacyL12}. Vì vậy, giá trị của nghiên cứu phụ thuộc vào giao thức có thể truy vết, cách mô tả đúng các loại lỗi, sự đối chiếu chi phí và diễn giải thận trọng độ bất định.
++Ensemble Learning kết hợp dự đoán từ nhiều bộ phân loại. Tổng quan của Tama và Lim nhấn mạnh hai lựa chọn thiết kế: thành phần mô hình cơ sở và phương pháp kết hợp \cite{legacyL01}. Voting, Stacking và lựa chọn đặc trưng đều đã được nghiên cứu trước đây; việc áp dụng riêng các kỹ thuật này không tạo thành đóng góp thuật toán mới \cite{legacyL04,legacyL05,legacyL06,legacyL12}. Nghiên cứu vì thế cần một giao thức có thể kiểm tra lại, mô tả rõ từng loại lỗi, đối chiếu chi phí và nêu đúng mức độ bất định của kết quả.
+ 
+ \subsection{Vấn đề nghiên cứu}
+ Nghiên cứu tập trung vào bài toán nhị phân \textbf{Normal/Attack} của UNSW-NB15. Hai tập TRAIN và TEST chính thức được giữ riêng; các mô hình được lựa chọn trong giai đoạn phát triển trên TRAIN và đánh giá cuối bằng cấu hình đã khóa. Sau đánh giá lịch sử, phần mở rộng P21 được thực hiện trên internal validation của TRAIN với năm seed và năm cấu hình matched; đây là thí nghiệm hậu nghiệm, không truy cập official TEST để tinh chỉnh. Nghiên cứu không xây dựng bộ phân loại đa lớp, cũng chưa kiểm nghiệm trên dữ liệu triển khai độc lập.
+ 
+-Vấn đề trung tâm là liệu các mô hình cơ sở có dạng sai số bổ sung giúp ensemble cải thiện kết quả so với một mô hình đơn mạnh hay chủ yếu làm thay đổi đánh đổi giữa báo động giả (FP) và tấn công bị bỏ sót (FN). Bên cạnh chất lượng dự đoán, nghiên cứu xem xét chi phí huấn luyện, suy luận và lựa chọn đặc trưng. Đây là nghiên cứu trường hợp trên một benchmark, không nhằm chứng minh ưu thế chung của Ensemble Learning.
++Câu hỏi chính là: sai số khác nhau giữa các mô hình cơ sở có giúp ensemble dự đoán tốt hơn một mô hình đơn mạnh, hay chủ yếu chuyển đổi giữa báo động giả (FP) và tấn công bị bỏ sót (FN)? Bên cạnh chất lượng dự đoán, nghiên cứu xem xét chi phí huấn luyện, suy luận và lựa chọn đặc trưng. Đây là nghiên cứu trường hợp trên một benchmark, không nhằm chứng minh ưu thế chung của Ensemble Learning.
+ 
+ \subsection{Các vấn đề nghiên cứu}
+ Để đánh giá chất lượng và giới hạn của các mô hình phát hiện xâm nhập, nghiên cứu tập trung vào năm vấn đề sau:
+@@ -27,7 +27,7 @@
+ \subsection{Mục tiêu và đóng góp nghiên cứu}
+ Nghiên cứu đóng góp một đối chiếu thực nghiệm giữa Random Forest, Voting và Stacking trên split chính thức; khảo sát dự đoán ngoài fold và độ đa dạng sai số trong giai đoạn phát triển; so sánh hai pipeline theo hiệu năng và chi phí; đồng thời trình bày Macro-F1, MCC, FPR, FNR, hiệu số theo cặp và lỗi theo họ Attack trong phạm vi bài toán nhị phân.
+ 
+-Những kết quả này có giá trị thực nghiệm trong phạm vi một nghiên cứu trường hợp, nhưng chưa đủ cơ sở để khẳng định thuật toán Ensemble Learning mới, ưu thế tổng thể của Stacking hay khả năng khái quát ngoài UNSW-NB15. Phần đối chiếu với công trình trước được giới hạn ở các nguồn đã kiểm tra phương pháp; đây không phải tổng quan hệ thống đầy đủ của lĩnh vực.
++Các kết quả chỉ được diễn giải trong phạm vi nghiên cứu trường hợp này. Chúng chưa chứng minh một thuật toán Ensemble Learning mới, ưu thế tổng thể của Stacking hay khả năng khái quát ngoài UNSW-NB15. Phần đối chiếu với công trình trước được giới hạn ở các nguồn đã kiểm tra phương pháp; đây không phải tổng quan hệ thống đầy đủ của lĩnh vực.
+ 
+ \subsection{Bố cục báo cáo}
+ Chương~\ref{chap:ly-thuyet} trình bày cơ sở lý thuyết và các hướng nghiên cứu liên quan. Chương~\ref{chap:dataset-eda} giới thiệu dữ liệu và quy trình tiền xử lý. Chương~\ref{chap:phuong-phap} mô tả mô hình và cách thực hiện thí nghiệm. Chương~\ref{chap:ket-qua-thao-luan} phân tích kết quả huấn luyện và kiểm thử. Chương~\ref{chap:ban-luan} thảo luận về ý nghĩa, hạn chế và hướng phát triển của nghiên cứu.

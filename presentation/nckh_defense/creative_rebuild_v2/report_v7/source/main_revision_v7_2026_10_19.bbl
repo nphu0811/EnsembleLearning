@@ -1,0 +1,68 @@
+\begin{thebibliography}{10}
+
+\bibitem{alsaffar2024shielding}
+Ali~Mohammed Alsaffar, Mostafa Nouri-Baygi, and Hamed~M. Zolbanin.
+\newblock Shielding networks: enhancing intrusion detection with hybrid feature selection and stack ensemble learning.
+\newblock {\em Journal of Big Data}, 11(1):133, 2024.
+
+\bibitem{legacyL09}
+Marco Cantone, Claudio Marrocco, and Alessandro Bria.
+\newblock Machine learning in network intrusion detection: A cross-dataset generalization study.
+\newblock {\em IEEE Access}, 12:144489--144508, 2024.
+
+\bibitem{legacyL04}
+{Doreswamy}, Mohammad~Kazim Hooshmand, and Ibrahim Gad.
+\newblock Feature selection approach using ensemble learning for network anomaly detection.
+\newblock {\em CAAI Transactions on Intelligence Technology}, 5(4):283--293, 2020.
+
+\bibitem{legacyL02}
+Gints Engelen, Vera Rimmer, and Wouter Joosen.
+\newblock Troubleshooting an intrusion detection dataset: the cicids2017 case study.
+\newblock In {\em 2021 IEEE Security and Privacy Workshops (SPW)}, pages 7--12, 2021.
+
+\bibitem{legacyL05}
+Murad~Ali Khan, Naeem Iqbal, {Imran}, Harun Jamil, and Do-Hyeun Kim.
+\newblock An optimized ensemble prediction model using automl based on soft voting classifier for network intrusion detection.
+\newblock {\em Journal of Network and Computer Applications}, 212:103560, 2023.
+
+\bibitem{moustafa2015unsw}
+Nour Moustafa and Jill Slay.
+\newblock Unsw-nb15: a comprehensive data set for network intrusion detection systems (unsw-nb15 network data set).
+\newblock In {\em 2015 Military Communications and Information Systems Conference (MilCIS)}, pages 1--6, 2015.
+
+\bibitem{legacyL12}
+Ghalia Nassreddine, Mohamad Nassereddine, and Obada Al-Khatib.
+\newblock Ensemble learning for network intrusion detection based on correlation and embedded feature selection techniques.
+\newblock {\em Computers}, 14(3):82, 2025.
+
+\bibitem{legacyL07}
+Huajuan Ren, Yonghe Tang, Weiyu Dong, Shuai Ren, and Liehui Jiang.
+\newblock Duen: Dynamic ensemble handling class imbalance in network intrusion detection.
+\newblock {\em Expert Systems with Applications}, 229:120420, 2023.
+
+\bibitem{legacyL10}
+Ulya Sabeel, Shahram~Shah Heydari, Khalil El-Khatib, and Khalid Elgazzar.
+\newblock Unknown, atypical and polymorphic network intrusion detection: A systematic survey.
+\newblock {\em IEEE Transactions on Network and Service Management}, 21(1):1190--1212, 2024.
+
+\bibitem{legacyL01}
+Bayu~Adhi Tama and Sunghoon Lim.
+\newblock Ensemble learning for intrusion detection systems: A systematic mapping study and cross-benchmark evaluation.
+\newblock {\em Computer Science Review}, 39:100357, 2021.
+
+\bibitem{legacyL06}
+Ngamba Thockchom, Moirangthem~Marjit Singh, and Utpal Nandi.
+\newblock A novel ensemble learning-based model for network intrusion detection.
+\newblock {\em Complex \& Intelligent Systems}, 9(5):5693--5714, 2023.
+
+\bibitem{legacyL11}
+Mubarak~Albarka Umar, Zhanfang Chen, Khaled Shuaib, and Yan Liu.
+\newblock Effects of feature selection and normalization on network intrusion detection.
+\newblock {\em Data Science and Management}, 8(1):23--39, 2025.
+
+\bibitem{legacyL08}
+Houssam Zouhri, Ali Idri, and Ahmed Ratnani.
+\newblock Evaluating the impact of filter-based feature selection in intrusion detection systems.
+\newblock {\em International Journal of Information Security}, 23(2):759--785, 2024.
+
+\end{thebibliography}

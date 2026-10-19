@@ -1,0 +1,31 @@
+{
+  "status": "PASS_ARTIFACTS_WITH_DOCUMENTED_LIMITS",
+  "zip": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\creative_rebuild_v2\\NCKH_Ensemble_IDS_Creative_Delivery.zip",
+  "bytes": 34667533,
+  "files": 293,
+  "required": [
+    "Bao_cao_NCKH_EnsembleLearning_REVISION_V7.pdf",
+    "LaTeX_Revision_V7_Source.zip",
+    "Humanizer_Change_Log.md",
+    "Scientific_Integrity_QA.md",
+    "PDF_Comparison_V6_V7.md",
+    "NCKH_Ensemble_IDS_Creative_Final.pptx",
+    "NCKH_Ensemble_IDS_Creative_Preview.mp4",
+    "NCKH_Ensemble_IDS_Static.pdf",
+    "Kich_ban_6_phut_Humanized.md",
+    "QnA_Humanized.md",
+    "Storyboard_Cinematic.md",
+    "Creative_Direction.md",
+    "Design_Reference_Study.md",
+    "Skill_Decision_Matrix.md",
+    "Animation_Manifest.md",
+    "Asset_Manifest.md",
+    "Scientific_Evidence_Map.md",
+    "OLD_DECK_CRITIQUE.md",
+    "Contact_Sheet.jpg",
+    "README.md",
+    "QA_Report.md",
+    "requirements.txt"
+  ],
+  "sha256": "3afc6a1d977e914df4efcdf151de6056064b7d648b930562df5dafcf50262c84"
+}

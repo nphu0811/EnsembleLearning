@@ -1,0 +1,10 @@
+--- V6/chapters/revision_prior_work_v5_2026_10_19.tex
++++ V7/chapters/revision_prior_work_v5_2026_10_19.tex
+@@ -24,6 +24,6 @@
+ \endgroup
+ \end{center}
+ 
+-Ba khái niệm đóng góp cần được phân biệt. Nghiên cứu này không đề xuất methodological novelty cho Stacking hay Feature Selection; các thành phần đó đã có tiền lệ trong tài liệu. Đóng góp nghiên cứu ở đây là case study theo split chính thức, còn empirical contribution là cách đối chiếu cùng các pipeline trên các mẫu holdout bằng metric tổng hợp, sai số theo lớp, độ bất định và chi phí đã lưu. Phạm vi này không phải tuyên bố review đầy đủ toàn lĩnh vực, cũng không cho phép xếp hạng các điểm số được tạo ra từ protocol khác nhau.
++Stacking và Feature Selection đã được nghiên cứu trước đây, nên đề tài không đề xuất phương pháp mới cho hai kỹ thuật này. Đề tài thực hiện một case study theo split chính thức. Phần đóng góp thực nghiệm là đối chiếu các pipeline trên cùng mẫu holdout qua chỉ số tổng hợp, sai số theo lớp, độ bất định và chi phí đã lưu. Phạm vi này không phải tuyên bố review đầy đủ toàn lĩnh vực, cũng không cho phép xếp hạng các điểm số được tạo ra từ protocol khác nhau.
+ 
+ Các mô tả trong bảng giới hạn ở thông tin phương pháp đã được kiểm tra trong các nguồn nêu trên. Chi tiết chưa xác minh được giữ ở trạng thái chưa xác định, thay vì diễn giải thành khuyết điểm của công trình trước.

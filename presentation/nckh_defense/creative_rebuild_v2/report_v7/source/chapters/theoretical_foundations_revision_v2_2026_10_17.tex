@@ -1,0 +1,113 @@
+\section{Các thuật toán học máy và phương pháp kết hợp}
+
+
+\subsection{Phát hiện xâm nhập dựa trên đặc trưng luồng mạng}
+Hệ thống phát hiện xâm nhập mạng (NIDS) phân tích các quan sát về lưu lượng để phân biệt hoạt động bình thường và hoạt động có dấu hiệu tấn công. Một flow có thể được mô tả bằng giao thức, trạng thái kết nối, số gói, lượng byte, thời lượng, thông lượng và các thống kê thời gian. Các biến này cho phép biểu diễn lưu lượng dưới dạng bảng để áp dụng học máy. Tuy vậy, bảng đặc trưng không chứa đầy đủ payload và ngữ cảnh vận hành.
+
+Trong báo cáo này, đơn vị dự đoán là một \emph{dòng dữ liệu UNSW-NB15}. Mỗi dòng gồm vector $x=(x_1,\ldots,x_p)$ và nhãn $y\in\{0,1\}$, trong đó $0$ là Normal và $1$ là Attack. Đây chưa phải một quyết định theo session hay một xác nhận của chuyên gia về sự cố thực tế. Biến \texttt{attack\_cat} được giữ để phân tích lỗi theo nhãn thật sau kiểm thử, chứ không phải mục tiêu đã chứng minh của một bộ phân loại đa lớp.
+
+\subsubsection{Quy trình biến đổi và leakage}
+Dữ liệu đầu vào có thể có biến số và biến phân loại, cần xử lý thiếu, mã hóa và chuẩn hóa tương ứng. Mọi tham số học từ dữ liệu, gồm thống kê chuẩn hóa, danh mục encoding và cấu hình Feature Selection, phải được tính trên phần huấn luyện được phép dùng ở từng bước validation, rồi mới áp dụng cho phần còn lại. \texttt{Pipeline} hỗ trợ quản lý chuỗi thao tác nhưng không thể tự loại trừ mọi vấn đề do quan sát quá giống nhau giữa các fold hoặc do chọn feature trước outer CV.
+
+Độc lập ở cấp dòng và độc lập ở cấp phiên là hai giả định khác nhau. Nhiều flow có thể chia sẻ host, thời gian, dịch vụ hoặc cách tạo lưu lượng. Nếu chỉ chia ngẫu nhiên ở cấp dòng, điểm test hoặc validation có thể cao do hai phần chứa những mẫu tương tự. Ngược lại, việc phát hiện vector trùng cũng không tự chứng minh hai dòng là cùng một phiên. Do đó nghiên cứu kiểm tra overlap theo định nghĩa rõ ràng và giữ nguyên giới hạn về nguồn gốc traffic.
+
+\subsubsection{Sai số của bộ phát hiện}
+False positive (FP) là Normal bị báo Attack, làm tăng công việc xác minh cảnh báo; false negative (FN) là Attack bị trả về Normal, có thể làm bỏ sót sự kiện cần chú ý. Giá trị chi phí của FP/FN tùy môi trường triển khai và chưa được đo trong đề tài, nên không thể giả định một lỗi bỏ sót có giá trị đúng bằng một báo động giả. FPR và FNR cho biết riêng hai phía của đánh đổi mà Accuracy tổng thể có thể che khuất.
+
+\subsection{Mô hình Logistic Regression}
+Logistic Regression là mô hình tuyến tính xác suất. Đối với phân loại nhị phân, giá trị dự đoán dương có thể viết:
+\begin{equation}
+\widehat p(y=1\mid x)=\sigma(w^\top x+b),\qquad \sigma(z)=\frac{1}{1+e^{-z}}.
+\label{eq:lr}
+\end{equation}
+Một ngưỡng biến xác suất thành nhãn; threshold không nhất thiết phải bằng 0,5 trong mọi ứng dụng, nhưng nghiên cứu cuối đã khóa tại 0,5 trước official TEST. Điều chuẩn trong Logistic Regression kiểm soát độ lớn hệ số để hạn chế khớp quá mức. Đối với dữ liệu NIDS có quan hệ phi tuyến phức tạp, một mô hình tuyến tính có thể thiếu năng lực biểu diễn so với các mô hình cây, nhưng tính khác nhau của bề mặt quyết định lại có thể tạo dạng sai số bổ sung trong ensemble.
+
+Trong chuỗi thực nghiệm, Logistic Regression được xem xét ở tầng base và meta. Để biết LR có đóng góp hay không, cần xem dự đoán OOF, độ đa dạng lỗi và kết quả cuối trong cùng protocol; việc dùng LR ở hai tầng chưa chứng minh LR riêng lẻ là tối ưu. Nếu chỉ xét tập TEST rồi lựa chọn lại thành viên có chỉ số tốt nhất thì sẽ phá vỡ ranh giới đánh giá đã khóa.
+
+\subsection{Decision Tree và Random Forest}
+\subsubsection{Decision Tree}
+Decision Tree chia dữ liệu bằng các điều kiện theo biến và ngưỡng. Một thước đo mức hỗn tạp của nút là Gini:
+\begin{equation}
+G(D)=1-\sum_{k=0}^{1}p_k^2,
+\label{eq:gini}
+\end{equation}
+với $p_k$ là tỷ trọng lớp $k$ tại nút. Cây có thể biểu diễn điều kiện phi tuyến và tương tác giữa các đặc trưng, nhưng cây quá sâu dễ học các chi tiết riêng của TRAIN. Những siêu tham số như độ sâu tối đa, số quan sát tối thiểu ở lá hoặc số đặc trưng được xét tại mỗi lần tách có thể kiểm soát độ phức tạp.
+
+Decision Tree không nhất thiết có độ chính xác tổng thể cao bằng Random Forest. Khi đưa Decision Tree vào Stacking, nghiên cứu cần kiểm tra xem sai số khác biệt của nó có giúp bộ kết hợp hay không. Không thể mặc định rằng ghép mô hình yếu với mô hình mạnh sẽ cải thiện kết quả.
+
+\subsubsection{Random Forest}
+Random Forest kết hợp nhiều cây được fit với tính ngẫu nhiên trong lấy mẫu và lựa chọn feature. Một mô tả của xác suất dự đoán là:
+\begin{equation}
+\widehat p_{\mathrm{RF}}(x)=\frac{1}{T}\sum_{t=1}^{T}\widehat p_t(y=1\mid x).
+\label{eq:rf}
+\end{equation}
+Tăng số cây thường đòi hỏi thêm thời gian train, suy luận và bộ nhớ. Tuy vậy, sự thay đổi hiệu năng không tuyến tính theo số cây, và việc tăng mô hình không bảo đảm vượt một mô hình ít cây hơn trên dữ liệu cụ thể. Trong cấu hình cuối RF-42 có 300 cây, còn RF-17 có 150 cây, kích thước lá cũng khác; mọi kết luận về riêng Feature Selection phải tránh so sánh này như một đối chứng chỉ thay số feature.
+
+\subsection{Voting, Stacking và sai số bổ sung}
+\subsubsection{Hard voting và weighted soft voting}
+Hard voting chọn nhãn theo số thành viên bình chọn \cite{legacyL01,legacyL05}. Weighted soft voting tổng hợp xác suất từ các model:
+\begin{equation}
+\widehat p_{\mathrm{vote}}(x)=\sum_{m=1}^{M}w_m\widehat p_m(x),\quad
+w_m\ge 0,\quad\sum_{m=1}^{M}w_m=1.
+\label{eq:voting}
+\end{equation}
+Trọng số dựa vào một tập validation riêng có thể điều chỉnh ưu tiên thành viên, nhưng chỉ số chất lượng cá nhân không nhất thiết dự báo đóng góp trong ensemble. Nếu tất cả base learners sai trên các dòng giống nhau, lấy trung bình dự đoán không có cơ chế sửa những lỗi chung ấy. Do đó, diversity là một đặc điểm cần quan sát; riêng nó chưa chứng minh bộ kết hợp có hiệu năng cao hơn.
+
+\subsubsection{Out-of-fold training của Stacking}
+Stacking sử dụng một meta learner để học ánh xạ từ dự đoán của các base learners sang kết quả cuối \cite{legacyL06}. Nếu dùng dự đoán trên chính tập fit của base learners để train meta, tầng meta có thể nhận đầu vào quá lạc quan. Out-of-fold (OOF) giảm vấn đề này: ở mỗi fold, base learner chỉ fit trên các fold khác và tạo xác suất cho fold hiện hành. Ghép lại cho mỗi dòng huấn luyện một dự đoán chưa được base learner fit trực tiếp trên dòng đó:
+\begin{equation}
+Z_{i,m}=\widehat p_m^{(-k(i))}(x_i),\qquad
+\widehat p_{\mathrm{stack}}(x)=g\left(\widehat p_1(x),\ldots,\widehat p_M(x)\right).
+\label{eq:stack}
+\end{equation}
+Mô hình meta trong Stacking-42 là Logistic Regression. Trong suy luận cuối, các base learners được refit trên TRAIN được phép rồi đưa xác suất mới qua meta learner. Tuy nhiên, một Stacking dùng OOF không có nghĩa mọi bước chọn feature, tuning meta và lựa chọn mô hình đã được đưa vào nested CV hoàn toàn. Trong nghiên cứu này, meta tuning chưa fully nested và tập stable features được chọn trên official TRAIN trước development CV.
+
+\begin{figure}[htbp]
+\centering
+\fcolorbox{researchred!40}{white}{\begin{minipage}{0.9\linewidth}\centering
+\textbf{Official TRAIN: phát triển mô hình}\\[3mm]
+$\downarrow$\\[1mm]
+K-fold OOF: LR \quad DT \quad RF\\[2mm]
+$\downarrow$\\[1mm]
+Ma trận xác suất OOF $\longrightarrow$ Meta Logistic Regression\\[2mm]
+$\downarrow$\\[1mm]
+\textbf{Đóng băng candidate và threshold}\\[2mm]
+$\downarrow$\\[1mm]
+\textcolor{researchred}{\textbf{Official TEST: đánh giá một lần sau freeze}}
+\end{minipage}}
+\caption{Sơ đồ nguyên lý Stacking/OOF và ranh giới official TEST. Hình chỉ minh họa giao thức, không chứng minh nested validation đầy đủ.}
+\label{fig:stacking-protocol}
+\end{figure}
+
+\subsubsection{Double-fault, error correlation và oracle}
+Double-fault đo tỷ lệ cùng sai của hai bộ phân loại, error correlation mô tả mức liên hệ giữa các biến chỉ báo lỗi, còn oracle giả định có thể chọn đúng đầu ra của một base model bất kỳ trên mỗi mẫu. Oracle là cận mô tả dưới thông tin nhãn thật, không phải thuật toán dự đoán có thể vận hành trực tiếp. Những chỉ số này cho biết các base learners có thể bổ sung nhau ở đâu, nhưng không trả lời việc meta learner có thực sự học được quy tắc kết hợp đúng hay không. Kết quả voting không thuận lợi trong development vẫn phải được giữ lại để tránh thiên lệch chỉ báo cáo phương án tốt.
+
+\subsection{Các chiến lược Feature Selection}
+Filter selection sử dụng phép đo thống kê để xếp hạng biến; wrapper selection đánh giá trực tiếp các tập con thông qua mô hình; embedded selection khai thác cơ chế lựa chọn trong khi fit \cite{legacyL08,legacyL12}. Mỗi phương pháp có chi phí, khả năng xét tương tác biến và mức phụ thuộc vào model khác nhau. Tính ổn định của feature được chọn qua nhiều lần lặp giúp hạn chế phụ thuộc một phép chia cụ thể, nhưng không chứng minh loại bỏ biến ít quan trọng luôn cải thiện generalization.
+
+Một phép đo gần bằng nhau của RF-17 và RF-42 không cho phép suy rằng 25 feature bị bỏ đều vô dụng. Mục tiêu của việc giảm feature trong đề tài là khảo sát một \emph{đánh đổi giữa chất lượng và tài nguyên} của hai pipeline cụ thể. Muốn quy kết quả cho riêng số feature phải giữ cố định mọi thành phần khác của RF và lồng lựa chọn feature trong outer folds.
+
+\subsection{Các chỉ số đánh giá và diễn giải thống kê}
+\subsubsection{Precision, Recall, Macro-F1 và MCC}
+Với Attack là lớp dương:
+\begin{align}
+\mathrm{Precision}&=\frac{\mathrm{TP}}{\mathrm{TP}+\mathrm{FP}},&
+\mathrm{Recall}&=\frac{\mathrm{TP}}{\mathrm{TP}+\mathrm{FN}},\\
+\mathrm{F1}&=\frac{2\mathrm{Precision}\,\mathrm{Recall}}{\mathrm{Precision}+\mathrm{Recall}},&
+\mathrm{FPR}&=\frac{\mathrm{FP}}{\mathrm{FP}+\mathrm{TN}},\\
+\mathrm{FNR}&=\frac{\mathrm{FN}}{\mathrm{FN}+\mathrm{TP}},&
+\mathrm{Detection\ Rate}&=1-\mathrm{FNR}.
+\end{align}
+Macro-F1 lấy trung bình F1 hai lớp với trọng số bằng nhau. Weighted-F1 lấy trung bình theo support. MCC sử dụng toàn bộ ma trận nhầm lẫn:
+\begin{equation}
+\mathrm{MCC}=\frac{\mathrm{TP}\mathrm{TN}-\mathrm{FP}\mathrm{FN}}
+{\sqrt{(\mathrm{TP}+\mathrm{FP})(\mathrm{TP}+\mathrm{FN})
+(\mathrm{TN}+\mathrm{FP})(\mathrm{TN}+\mathrm{FN})}}.
+\label{eq:mcc}
+\end{equation}
+Macro-F1 khác MCC: Macro-F1 tổng hợp riêng chất lượng F1 của mỗi lớp, còn MCC đo tương quan giữa nhãn thật và nhãn dự đoán dựa trên cả bốn ô. Hai thước đo có thể xếp hạng hai mô hình khác nhau.
+
+\subsubsection{Paired bootstrap và McNemar}
+Cùng một dòng TEST được dự đoán bởi hai model, do đó sai số của chúng có cấu trúc cặp. Paired bootstrap lấy mẫu lại chỉ số dòng, áp dụng chung cho hai mô hình và tính hiệu số metric trong mỗi lần lặp. CI 95\% từ các lần lặp cho thấy bất định do các dòng benchmark đã quan sát, chứ không phải độ biến thiên giữa các lần train độc lập hoặc khi chuyển sang mạng khác.
+
+McNemar kiểm tra số dòng A đúng/B sai so với A sai/B đúng. Đây là kiểm định trên \emph{paired correctness}, không phải trực tiếp trên độ chênh lệch Macro-F1. Khi có nhiều phép so sánh, điều chỉnh Holm giới hạn rủi ro báo có ý nghĩa do thử nhiều giả thuyết. Các CI và phép kiểm định không sửa được tính phụ thuộc giữa các dòng flow; đó là giới hạn riêng về đơn vị lấy mẫu.

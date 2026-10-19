@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 960 540">
+<rect width="960" height="540" fill="white"/>
+<text x="43.199999999999996" y="75.6" font-family="Aptos,Arial,sans-serif" font-size="36.0" font-weight="700" fill="#0D3560">Giảm cảnh báo giả có thể tăng bỏ sót</text>
+<text x="41.76" y="516.1600000000001" font-family="Aptos,Arial,sans-serif" font-size="10.0" font-weight="400" fill="#526A81">Nguồn: P21 aggregate.json · hậu nghiệm trên TRAIN; cùng validation qua 5 FIT seed.</text>
+<text x="871.1999999999999" y="516.0" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#526A81">18</text>
+<line x1="43.199999999999996" y1="488.16" x2="915.84" y2="488.16" stroke="#1769AA"/>
+<line x1="169.20000000000002" y1="154.79999999999998" x2="169.20000000000002" y2="403.2" stroke="#1769AA"/>
+<line x1="169.20000000000002" y1="403.2" x2="838.8000000000001" y2="403.2" stroke="#1769AA"/>
+<text x="162.0" y="428.0" font-family="Aptos,Arial,sans-serif" font-size="14.0" font-weight="400" fill="#526A81">0</text>
+<text x="375.6" y="428.0" font-family="Aptos,Arial,sans-serif" font-size="14.0" font-weight="400" fill="#526A81">4</text>
+<text x="589.2" y="428.0" font-family="Aptos,Arial,sans-serif" font-size="14.0" font-weight="400" fill="#526A81">8</text>
+<text x="802.8000000000001" y="428.0" font-family="Aptos,Arial,sans-serif" font-size="14.0" font-weight="400" fill="#526A81">12</text>
+<text x="133.20000000000002" y="410.0" font-family="Aptos,Arial,sans-serif" font-size="14.0" font-weight="400" fill="#526A81">0</text>
+<text x="133.20000000000002" y="320.71999999999997" font-family="Aptos,Arial,sans-serif" font-size="14.0" font-weight="400" fill="#526A81">2</text>
+<text x="133.20000000000002" y="231.43992125984255" font-family="Aptos,Arial,sans-serif" font-size="14.0" font-weight="400" fill="#526A81">4</text>
+<text x="61.199999999999996" y="158.4" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="700" fill="#0D3560">FNR (%)</text>
+<text x="770.4" y="458.64" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="700" fill="#0D3560">FPR (%)</text>
+<text x="693.6888976377953" y="319.71181102362203" font-family="Aptos,Arial,sans-serif" font-size="20.0" font-weight="700" fill="#1769AA">RF42</text>
+<text x="423.916062992126" y="189.49133858267717" font-family="Aptos,Arial,sans-serif" font-size="20.0" font-weight="700" fill="#B65B29">Balanced</text>
+<text x="575.732125984252" y="231.5703937007874" font-family="Aptos,Arial,sans-serif" font-size="20.0" font-weight="700" fill="#139DCB">Oversample</text>
+<text x="61.199999999999996" y="476.24" font-family="Aptos,Arial,sans-serif" font-size="14.0" font-weight="400" fill="#526A81">Trung bình 5 FIT seed · Normal là lớp ít mẫu trong TRAIN</text>
+</svg>

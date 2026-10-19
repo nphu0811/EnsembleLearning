@@ -1,0 +1,82 @@
+[
+  {
+    "scene": 1,
+    "seconds": 9,
+    "title": "Experimental Motion Identity",
+    "speech": "",
+    "events": [
+      {
+        "shape": "shape-5",
+        "kind": "motion",
+        "at": 0,
+        "duration": 6,
+        "dx": -0.7,
+        "dy": 0.0,
+        "repeat": 1
+      },
+      {
+        "shape": "shape-5",
+        "kind": "scale",
+        "at": 0,
+        "duration": 2,
+        "scale": 115,
+        "repeat": 2,
+        "reverse": true
+      },
+      {
+        "shape": "shape-6",
+        "kind": "motion",
+        "at": 0,
+        "duration": 6,
+        "dx": -0.85,
+        "dy": 0.1,
+        "repeat": 1
+      },
+      {
+        "shape": "shape-6",
+        "kind": "scale",
+        "at": 0,
+        "duration": 2,
+        "scale": 115,
+        "repeat": 2,
+        "reverse": true
+      },
+      {
+        "shape": "shape-7",
+        "kind": "motion",
+        "at": 0,
+        "duration": 6,
+        "dx": -1.0,
+        "dy": 0.2,
+        "repeat": 1
+      },
+      {
+        "shape": "shape-7",
+        "kind": "scale",
+        "at": 0,
+        "duration": 2,
+        "scale": 115,
+        "repeat": 2,
+        "reverse": true
+      },
+      {
+        "shape": "shape-8",
+        "kind": "motion",
+        "at": 1,
+        "duration": 5,
+        "dx": 0.3,
+        "dy": 0.5,
+        "repeat": 1
+      },
+      {
+        "shape": "text-10",
+        "kind": "wipe",
+        "at": 2,
+        "duration": 0.8
+      }
+    ],
+    "bg": "7958F5",
+    "tag": "CONCEPT C / EXPERIMENTAL MOTION IDENTITY",
+    "source": "142 /118 là hiệu số lỗi official TEST lịch sử; hình học không đại diện metric độc lập"
+  }
+]

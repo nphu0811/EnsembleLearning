@@ -1,0 +1,9 @@
+python-pptx==1.0.2
+pywin32==312
+numpy==2.4.6
+Pillow==12.3.0
+lxml==6.1.2
+edge-tts==7.3.1
+PyMuPDF==1.28.2
+faster-whisper==1.2.1
+playwright==1.64.0

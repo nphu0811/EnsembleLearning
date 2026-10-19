@@ -1,0 +1,202 @@
+[
+  {
+    "slide": 1,
+    "scene": 1,
+    "planned_seconds": 20,
+    "voice_seconds": 14.472,
+    "space_for_transition_and_pause": 5.5280000000000005,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_01.mp3"
+  },
+  {
+    "slide": 2,
+    "scene": 2,
+    "planned_seconds": 20,
+    "voice_seconds": 14.208,
+    "space_for_transition_and_pause": 5.792,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_02.mp3"
+  },
+  {
+    "slide": 3,
+    "scene": 2,
+    "planned_seconds": 20,
+    "voice_seconds": 16.536,
+    "space_for_transition_and_pause": 3.4639999999999986,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_03.mp3"
+  },
+  {
+    "slide": 4,
+    "scene": 3,
+    "planned_seconds": 10,
+    "voice_seconds": 8.352,
+    "space_for_transition_and_pause": 1.6479999999999997,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_04.mp3"
+  },
+  {
+    "slide": 5,
+    "scene": 3,
+    "planned_seconds": 15,
+    "voice_seconds": 12.312,
+    "space_for_transition_and_pause": 2.6880000000000006,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_05.mp3"
+  },
+  {
+    "slide": 6,
+    "scene": 3,
+    "planned_seconds": 15,
+    "voice_seconds": 12.216,
+    "space_for_transition_and_pause": 2.7840000000000007,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_06.mp3"
+  },
+  {
+    "slide": 7,
+    "scene": 3,
+    "planned_seconds": 15,
+    "voice_seconds": 11.712,
+    "space_for_transition_and_pause": 3.2880000000000003,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_07.mp3"
+  },
+  {
+    "slide": 8,
+    "scene": 4,
+    "planned_seconds": 18,
+    "voice_seconds": 16.44,
+    "space_for_transition_and_pause": 1.5599999999999987,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_08.mp3"
+  },
+  {
+    "slide": 9,
+    "scene": 4,
+    "planned_seconds": 18,
+    "voice_seconds": 15.84,
+    "space_for_transition_and_pause": 2.16,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_09.mp3"
+  },
+  {
+    "slide": 10,
+    "scene": 4,
+    "planned_seconds": 19,
+    "voice_seconds": 15.456,
+    "space_for_transition_and_pause": 3.5440000000000005,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_10.mp3"
+  },
+  {
+    "slide": 11,
+    "scene": 5,
+    "planned_seconds": 20,
+    "voice_seconds": 17.568,
+    "space_for_transition_and_pause": 2.4319999999999986,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_11.mp3"
+  },
+  {
+    "slide": 12,
+    "scene": 5,
+    "planned_seconds": 18,
+    "voice_seconds": 16.104,
+    "space_for_transition_and_pause": 1.8960000000000008,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_12.mp3"
+  },
+  {
+    "slide": 13,
+    "scene": 5,
+    "planned_seconds": 17,
+    "voice_seconds": 14.4,
+    "space_for_transition_and_pause": 2.5999999999999996,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_13.mp3"
+  },
+  {
+    "slide": 14,
+    "scene": 5,
+    "planned_seconds": 15,
+    "voice_seconds": 12.216,
+    "space_for_transition_and_pause": 2.7840000000000007,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_14.mp3"
+  },
+  {
+    "slide": 15,
+    "scene": 6,
+    "planned_seconds": 20,
+    "voice_seconds": 17.304,
+    "space_for_transition_and_pause": 2.6960000000000015,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_15.mp3"
+  },
+  {
+    "slide": 16,
+    "scene": 6,
+    "planned_seconds": 18,
+    "voice_seconds": 15.768,
+    "space_for_transition_and_pause": 2.2319999999999993,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_16.mp3"
+  },
+  {
+    "slide": 17,
+    "scene": 6,
+    "planned_seconds": 17,
+    "voice_seconds": 15.288,
+    "space_for_transition_and_pause": 1.7119999999999997,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_17.mp3"
+  },
+  {
+    "slide": 18,
+    "scene": 7,
+    "planned_seconds": 20,
+    "voice_seconds": 16.488,
+    "space_for_transition_and_pause": 3.5120000000000005,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_18.mp3"
+  },
+  {
+    "slide": 19,
+    "scene": 7,
+    "planned_seconds": 20,
+    "voice_seconds": 15.576,
+    "space_for_transition_and_pause": 4.4239999999999995,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_19.mp3"
+  },
+  {
+    "slide": 20,
+    "scene": 8,
+    "planned_seconds": 25,
+    "voice_seconds": 20.856,
+    "space_for_transition_and_pause": 4.143999999999998,
+    "rate": "-5%",
+    "voice": "vi-VN-NamMinhNeural",
+    "path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\audio\\slide_20.mp3"
+  }
+]

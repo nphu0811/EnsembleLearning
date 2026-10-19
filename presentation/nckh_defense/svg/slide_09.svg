@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 960 540">
+<rect width="960" height="540" fill="white"/>
+<text x="43.199999999999996" y="75.6" font-family="Aptos,Arial,sans-serif" font-size="36.0" font-weight="700" fill="#0D3560">Voting tổng hợp phiếu hoặc xác suất</text>
+<text x="41.76" y="516.1600000000001" font-family="Aptos,Arial,sans-serif" font-size="10.0" font-weight="400" fill="#526A81">Nguồn: báo cáo V6, chương 3–5.</text>
+<text x="871.1999999999999" y="516.0" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#526A81">09</text>
+<line x1="43.199999999999996" y1="488.16" x2="915.84" y2="488.16" stroke="#1769AA"/>
+<text x="50.4" y="245.20000000000002" font-family="Aptos,Arial,sans-serif" font-size="22.0" font-weight="700" fill="#0D3560">Cùng đầu vào</text>
+<text x="246.24" y="183.6" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="700" fill="#FFFFFF">Logistic</text>
+<text x="246.24" y="207.6" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="700" fill="#FFFFFF">Regression</text>
+<line x1="172.79999999999998" y1="183.6" x2="230.39999999999998" y2="244.79999999999998" stroke="#1769AA"/>
+<line x1="414.0" y1="187.20000000000002" x2="504.0" y2="250.56" stroke="#1769AA"/>
+<text x="246.24" y="262.79999999999995" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="700" fill="#FFFFFF">Decision</text>
+<text x="246.24" y="286.79999999999995" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="700" fill="#FFFFFF">Tree</text>
+<line x1="172.79999999999998" y1="244.79999999999998" x2="230.39999999999998" y2="262.79999999999995" stroke="#1769AA"/>
+<line x1="414.0" y1="250.56" x2="504.0" y2="266.4" stroke="#1769AA"/>
+<text x="246.24" y="342.0" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="700" fill="#FFFFFF">Random</text>
+<text x="246.24" y="366.0" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="700" fill="#FFFFFF">Forest</text>
+<line x1="172.79999999999998" y1="244.79999999999998" x2="230.39999999999998" y2="342.0" stroke="#1769AA"/>
+<line x1="414.0" y1="250.56" x2="504.0" y2="345.6" stroke="#1769AA"/>
+<text x="512.64" y="244.79999999999998" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="700" fill="#FFFFFF">Luật gộp</text>
+<text x="512.64" y="268.79999999999995" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="700" fill="#FFFFFF">cố định</text>
+<text x="687.6" y="227.20000000000002" font-family="Aptos,Arial,sans-serif" font-size="22.0" font-weight="700" fill="#0D3560">Hard: đa số nhãn</text>
+<text x="687.6" y="255.20000000000002" font-family="Aptos,Arial,sans-serif" font-size="22.0" font-weight="700" fill="#0D3560">Soft: trung bình xác suất</text>
+<text x="50.4" y="436.0" font-family="Aptos,Arial,sans-serif" font-size="22.0" font-weight="400" fill="#526A81">Diversity về cách học chưa bảo đảm lợi ích khi gộp</text>
+</svg>

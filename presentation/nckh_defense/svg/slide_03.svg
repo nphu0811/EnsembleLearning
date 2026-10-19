@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 960 540">
+<rect width="960" height="540" fill="white"/>
+<text x="43.199999999999996" y="75.6" font-family="Aptos,Arial,sans-serif" font-size="36.0" font-weight="700" fill="#0D3560">Một benchmark. Hai phạm vi bằng chứng.</text>
+<text x="41.76" y="516.1600000000001" font-family="Aptos,Arial,sans-serif" font-size="10.0" font-weight="400" fill="#526A81">Nguồn: báo cáo V6, chương 3–5.</text>
+<text x="871.1999999999999" y="516.0" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#526A81">03</text>
+<line x1="43.199999999999996" y1="488.16" x2="915.84" y2="488.16" stroke="#1769AA"/>
+<text x="61.199999999999996" y="226.0" font-family="Aptos,Arial,sans-serif" font-size="64.0" font-weight="700" fill="#1769AA">175.341</text>
+<text x="64.8" y="260.6" font-family="Aptos,Arial,sans-serif" font-size="23.0" font-weight="400" fill="#0D3560">dòng official TRAIN</text>
+<text x="507.59999999999997" y="226.0" font-family="Aptos,Arial,sans-serif" font-size="64.0" font-weight="700" fill="#0D3560">82.332</text>
+<text x="511.2" y="260.6" font-family="Aptos,Arial,sans-serif" font-size="23.0" font-weight="400" fill="#0D3560">dòng official TEST</text>
+<text x="75.60000000000001" y="365.16" font-family="Aptos,Arial,sans-serif" font-size="21.0" font-weight="700" fill="#1769AA">P21 · nội bộ TRAIN</text>
+<text x="75.60000000000001" y="392.16" font-family="Aptos,Arial,sans-serif" font-size="21.0" font-weight="700" fill="#1769AA">Đối chứng bổ sung, hậu nghiệm</text>
+<text x="522.0" y="365.16" font-family="Aptos,Arial,sans-serif" font-size="21.0" font-weight="700" fill="#0D3560">Kết quả lịch sử</text>
+<text x="522.0" y="392.16" font-family="Aptos,Arial,sans-serif" font-size="21.0" font-weight="700" fill="#0D3560">Đánh giá candidate đã khóa</text>
+<text x="64.8" y="457.2" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="400" fill="#526A81">Không so trực tiếp các mức điểm giữa hai tập đánh giá.</text>
+</svg>

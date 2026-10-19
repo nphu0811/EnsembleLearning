@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "slide": 1,
+      "shape": "#s1-title",
+      "height": 92.4000015258789,
+      "bound_height": 91.4000015258789
+    },
+    {
+      "slide": 1,
+      "shape": "Text 20",
+      "height": 39.39992141723633,
+      "bound_height": 38.400001525878906
+    },
+    {
+      "slide": 1,
+      "shape": "Text 21",
+      "height": 39.39992141723633,
+      "bound_height": 38.400001525878906
+    },
+    {
+      "slide": 3,
+      "shape": "Text 14",
+      "height": 77.79991912841797,
+      "bound_height": 76.80000305175781
+    },
+    {
+      "slide": 3,
+      "shape": "Text 16",
+      "height": 77.79991912841797,
+      "bound_height": 76.80000305175781
+    },
+    {
+      "slide": 10,
+      "shape": "#s10-title",
+      "height": 92.4000015258789,
+      "bound_height": 91.4000015258789
+    }
+  ]
+}

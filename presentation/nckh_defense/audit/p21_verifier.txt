@@ -1,0 +1,9 @@
+{
+  "status": "PASS_FIVE_SEED_READ_ONLY_AUDIT",
+  "completed_seeds_verified": 5,
+  "arms_claimed": 25,
+  "official_test_opened_by_this_audit": false,
+  "metrics_recomputed_from_existing_counts": true,
+  "independent_external_validation": false,
+  "failures": []
+}

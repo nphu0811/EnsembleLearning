@@ -411,3 +411,15 @@ The tracked review snapshot flags three historical SMOKE_ONLY.joblib files under
 - Published PDF `exports/report_revision_v5_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V5.pdf`, `50 A4 pages`, SHA-256 `8e8c558e99501b2b8088332a1edbbc7c7331e6f48e5747b070c82749d31f7d4d`, compiled from commit `75f4b2d73`, PDF published commit `f506b2cf0`. QA record `docs/research/REPORT_REVISION_V5_QA_2026-10-19.md`.
 - Visual review workflow run `39186801131` SUCCESS, `docs/research/v5_visual_samples_2026_10_19/QA.md`, 48 selected-page PNG renders, 19871 word bounding boxes stay inside all 50 PDF pages. Manually inspected page 1 cover (correct TS. and year), page 7 sorted glossary, page 10 table list, page 12 font hierarchy, page 20 inline related-work comparison without isolated page, page 40 P21 tables and equation. No 360-degree page rotation, no content clipped in sampled images. All 50 pages were word-bounds scanned but not all human read end-to-end.
 - Deliver V5 GitHub PDF link. Do not treat format changes as scientific new results; frozen official TEST and P21 data untouched. Later teacher feedback may require V6; user will forward it.
+
+
+## 19/10/2026 — Defense presentation
+DONE_ARTIFACT_VALIDATED: presentation/nckh_defense/ all10required outputs + code/SVG/ZIP. Evidence: QA_Report.md, audit/delivery_validation.json48/48PASS, audit/independent_visual_qa.md.20mainkeyframes/8scenes360s;12Q&Ahidden. Human rehearsal/projector check remain user follow-through, not a fabricated acceptance.
+
+## 2026-10-19 Creative V2
+
+- V7 language-only revision: DONE_SCOPED; PDF+LaTeX+38change log+invariants+49page QA.
+- Old deck/video critique: DONE;32slides20transitionmarkup0internaltiming confirmed.
+- Design reference browser study: PARTIAL_ACCESS, CAPTCHA documented;3concepts produced and selected A+B.
+- Native animated PPTX+360sMP4+staticPDF+source+manifests: DELIVERED_ARTIFACT_QA_PASS.
+- Human TTS pronunciation/venue rehearsal: NOT_VERIFIED; no falsePASS.

@@ -1,0 +1,355 @@
+{
+  "status": "PASS",
+  "v6_pages": 50,
+  "v7_pages": 49,
+  "v6_sha256": "40b35c9a5c7f228ee91bbba94cfb0ccd701d52dd707a6f5b184171412ce6afc3",
+  "v7_sha256": "3579e41be58d24aee3807e000ffe6d762ebb857f1c588c1f0c503ef6f29cee0e",
+  "latex_warnings": [],
+  "pages": [
+    {
+      "page": 1,
+      "words": 88,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 2,
+      "words": 177,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 3,
+      "words": 148,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 4,
+      "words": 742,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 5,
+      "words": 981,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 6,
+      "words": 118,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 7,
+      "words": 267,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 8,
+      "words": 122,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 9,
+      "words": 236,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 10,
+      "words": 563,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 11,
+      "words": 200,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 12,
+      "words": 439,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 13,
+      "words": 365,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 14,
+      "words": 449,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 15,
+      "words": 398,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 16,
+      "words": 455,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 17,
+      "words": 275,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 18,
+      "words": 406,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 19,
+      "words": 528,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 20,
+      "words": 404,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 21,
+      "words": 213,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 22,
+      "words": 224,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 23,
+      "words": 211,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 24,
+      "words": 382,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 25,
+      "words": 183,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 26,
+      "words": 413,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 27,
+      "words": 432,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 28,
+      "words": 461,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 29,
+      "words": 468,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 30,
+      "words": 437,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 31,
+      "words": 377,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 32,
+      "words": 307,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 33,
+      "words": 381,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 34,
+      "words": 417,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 35,
+      "words": 516,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 36,
+      "words": 516,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 37,
+      "words": 448,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 38,
+      "words": 424,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 39,
+      "words": 383,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 40,
+      "words": 381,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 41,
+      "words": 270,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 42,
+      "words": 420,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 43,
+      "words": 450,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 44,
+      "words": 422,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 45,
+      "words": 469,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 46,
+      "words": 511,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 47,
+      "words": 272,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 48,
+      "words": 295,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    },
+    {
+      "page": 49,
+      "words": 90,
+      "outside_page": [],
+      "replacement_character": false,
+      "unresolved_marker": false
+    }
+  ],
+  "edited_passages": 38,
+  "visual_review": "All49pages in3contact sheets, full-page12/26/39/40/42/46 inspected; no clipping/collision found; chapter-end whitespace inherited, not reflowed gratuitously"
+}

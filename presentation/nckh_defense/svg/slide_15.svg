@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 960 540">
+<rect width="960" height="540" fill="white"/>
+<text x="43.199999999999996" y="75.6" font-family="Aptos,Arial,sans-serif" font-size="36.0" font-weight="700" fill="#0D3560">P21: đối chứng matched trên TRAIN</text>
+<text x="41.76" y="516.1600000000001" font-family="Aptos,Arial,sans-serif" font-size="10.0" font-weight="400" fill="#526A81">Nguồn: P21 aggregate.json · hậu nghiệm trên TRAIN; cùng validation qua 5 FIT seed.</text>
+<text x="871.1999999999999" y="516.0" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#526A81">15</text>
+<line x1="43.199999999999996" y1="488.16" x2="915.84" y2="488.16" stroke="#1769AA"/>
+<text x="61.199999999999996" y="201.4" font-family="Aptos,Arial,sans-serif" font-size="43.0" font-weight="700" fill="#1769AA">5 FIT seed</text>
+<text x="511.2" y="201.4" font-family="Aptos,Arial,sans-serif" font-size="43.0" font-weight="700" fill="#0D3560">1 validation</text>
+<line x1="82.8" y1="288.0" x2="504.0" y2="288.0" stroke="#1769AA"/>
+<line x1="136.79999999999998" y1="288.0" x2="504.0" y2="288.0" stroke="#1769AA"/>
+<line x1="190.79999999999998" y1="288.0" x2="504.0" y2="288.0" stroke="#1769AA"/>
+<line x1="244.79999999999998" y1="288.0" x2="504.0" y2="288.0" stroke="#1769AA"/>
+<line x1="298.8" y1="288.0" x2="504.0" y2="288.0" stroke="#1769AA"/>
+<text x="519.84" y="280.8" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="700" fill="#FFFFFF">35.069 dòng cố định</text>
+<text x="64.8" y="354.2" font-family="Aptos,Arial,sans-serif" font-size="23.0" font-weight="700" fill="#1769AA">60.000 FIT rows / seed</text>
+<text x="64.8" y="420.0" font-family="Aptos,Arial,sans-serif" font-size="24.0" font-weight="700" fill="#0D3560">RF42 · RF17 · Balanced · Oversample · Stacking</text>
+<text x="64.8" y="462.08" font-family="Aptos,Arial,sans-serif" font-size="20.0" font-weight="400" fill="#526A81">Group theo vector trùng; không phải 5 TEST độc lập.</text>
+</svg>

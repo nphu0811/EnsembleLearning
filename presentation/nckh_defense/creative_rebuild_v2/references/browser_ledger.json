@@ -1,0 +1,239 @@
+[
+  {
+    "name": "lollypop_designathon",
+    "url": "https://lollypop.design/designathon2026/",
+    "screens": [
+      {
+        "path": "references\\lollypop_designathon_00.png",
+        "scrollY": 0
+      },
+      {
+        "path": "references\\lollypop_designathon_01.png",
+        "scrollY": 0
+      },
+      {
+        "path": "references\\lollypop_designathon_02.png",
+        "scrollY": 0
+      },
+      {
+        "path": "references\\lollypop_designathon_03.png",
+        "scrollY": 0
+      }
+    ],
+    "status": 200,
+    "title": "Radware Captcha Page",
+    "text": "We apologize for the inconvenience...\n\n...but your activity and behavior on this site made us think that you are a bot.\n\nNote: A number of things could be going on here.\n\nIf you are attempting to access this site using an anonymous Private/Proxy network, please disable that and try accessing site again.\nDue to previously detected malicious behavior which originated from the network you're using, please request unblock to site.\nIncident ID: 6d6cf4ed-e35u-4575-98af-af11117f4009\n\n\n\nPlease solve this CAPTCHA to request unblock to the website\n\n\n\n\n\n\n\n\n\nYou reached this page when trying to access https://lollypop.design/designathon2026/ from 117.5.143.181 on October 19 2026, 05:44:30 UTC",
+    "visible_styles": [
+      {
+        "text": "We apologize for the inconvenience...",
+        "font": "Lato",
+        "size": "36px",
+        "transform": "none"
+      }
+    ]
+  },
+  {
+    "name": "lollypop_home",
+    "url": "https://lollypop.design/",
+    "screens": [
+      {
+        "path": "references\\lollypop_home_00.png",
+        "scrollY": 0
+      },
+      {
+        "path": "references\\lollypop_home_01.png",
+        "scrollY": 0
+      },
+      {
+        "path": "references\\lollypop_home_02.png",
+        "scrollY": 0
+      },
+      {
+        "path": "references\\lollypop_home_03.png",
+        "scrollY": 0
+      }
+    ],
+    "status": 200,
+    "title": "Radware Captcha Page",
+    "text": "We apologize for the inconvenience...\n\n...but your activity and behavior on this site made us think that you are a bot.\n\nNote: A number of things could be going on here.\n\nIf you are attempting to access this site using an anonymous Private/Proxy network, please disable that and try accessing site again.\nDue to previously detected malicious behavior which originated from the network you're using, please request unblock to site.\nIncident ID: 75c45c07-e35u-4e91-b1cc-0febfb4b1d05\n\n\n\nPlease solve this CAPTCHA to request unblock to the website\n\n\n\n\n\n\n\n\n\nYou reached this page when trying to access https://lollypop.design/ from 117.5.143.181 on October 19 2026, 05:44:41 UTC",
+    "visible_styles": [
+      {
+        "text": "We apologize for the inconvenience...",
+        "font": "Lato",
+        "size": "36px",
+        "transform": "none"
+      }
+    ]
+  },
+  {
+    "name": "active_theory",
+    "url": "https://activetheory.net/",
+    "screens": [
+      {
+        "path": "references\\active_theory_00.png",
+        "scrollY": 0
+      },
+      {
+        "path": "references\\active_theory_01.png",
+        "scrollY": 0
+      }
+    ],
+    "status": 200,
+    "title": "Not Supported",
+    "text": "Your browser is not supported",
+    "visible_styles": [
+      {
+        "text": "Your browser is not supported",
+        "font": "nbarchitekt, Helvetica, Arial, sans-serif",
+        "size": "18px",
+        "transform": "none"
+      }
+    ]
+  },
+  {
+    "name": "locomotive",
+    "url": "https://locomotive.ca/en",
+    "screens": [
+      {
+        "path": "references\\locomotive_00.png",
+        "scrollY": 0
+      },
+      {
+        "path": "references\\locomotive_01.png",
+        "scrollY": 0
+      }
+    ],
+    "status": 403,
+    "title": "Just a moment...",
+    "text": "locomotive.ca\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a4cd795c9edf1fb6\nPerformance and Security by Cloudflare\nPrivacy",
+    "visible_styles": [
+      {
+        "text": "locomotive.ca",
+        "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "size": "40px",
+        "transform": "none"
+      },
+      {
+        "text": "Performing security verification",
+        "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "size": "24px",
+        "transform": "none"
+      },
+      {
+        "text": "Verification successful. Waiting for locomotive.ca to respond",
+        "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "size": "24px",
+        "transform": "none"
+      }
+    ]
+  },
+  {
+    "name": "awwwards",
+    "url": "https://www.awwwards.com/",
+    "screens": [
+      {
+        "path": "references\\awwwards_00.png",
+        "scrollY": 0
+      },
+      {
+        "path": "references\\awwwards_01.png",
+        "scrollY": 900
+      }
+    ],
+    "status": 200,
+    "title": "Awwwards - Website Awards - Best Web Design Trends",
+    "text": "Explore\nDirectory\nAcademy\nNew\nJobs\nMarket\nLog in\nSign Up\nBe Pro\nSubmit Website\nSite of the Day\nOct 18, 2026\nScore 7.22 of 10\nSIGNAL-A STUDIO\nSignal-A PRO\nMaciej Żuk\nLatest\nNOMINEES\nVote for the latest websites on awwwards\nMubien\nby\nMubien PRO\nLajoya\nby\nGuillaume Azadian\nCheck out all submitted websites\nView Nominees\nWinners\nRecent Sites\nof the Day.\nSignal-A Studio\nby\nSignal-A PRO\nBelgrade Arbor\nby\nSquare43 Studio PRO\nOFFFForum\nby\nREF Digital PRO\nOverworld Audio\nby\nRogier de Boevé\nHuy Phan Vol.2\nby\nHuy Phan PRO\nNeutomni\nby\nNeutomni\nCheck out all submitted websites\nView Winners\nAcademy\nLearn from the\nbest instructors.\nLearn UI Design with Figma from Scratch\nInstructor\nDaniele Buffa\nScore 4.9/5\nNordic Design Intensive Course: Complete Branding\nInstructor\nHmmm Creative Studio\nScore 5/5\nInnovative Web Design in Figma: A Step-by-Step Process\nInstructor\nLouis Paquet\nScore 5/5\nChoose from over hundreds of courses\nView Academy\nCollections\nExplore a wide\nvariety of collections.\nText Marquee animation\nfollowed by\n+36\nInteractive Narratives\nfollowed by\n+132\nFind inspiration for your projects\nView Collections\nDirectory\nW.CREATORS\nActive creators in your country.\n\nInternational\n\nNectar\nWorks\n10\nnectarestudio.com\n9 awards\n\nInternational\n\nBaunfire\nWorks\n37\nbaunfire.com\n21 awards\nName\tProfile\tAwards\tCategories\t\n\nKOTA Studio PRO\n\tFreelance\t1\t\nWeb Design\n\t\nView\n\n\nKenny Ho PRO\n\tFreelance\t6\t\nArt Direction\n\t\nView\n\n\nKaixa PRO\n\tFreelance\t1\t\nWeb Design\n\t\nView\n\n\nHuy Phan PRO\n\tFreelance\t17\t\nWeb Design , UX/UI , Art Direction\n\t\nView\nConnect with over 6,106 Agencies and Professionals\nView Directory\nBlog\nExplore these\npopular posts.\nShopify vs WooCommerce: What's the better?\nWhat's the best website builder for an e-commerce? In the world of eCommerce, choosing the right platform can mean the difference between success...\n100 Best Free Fonts for Designers in 2025\nTypography is currently playing a central role in web design, with progressive improvements like Variable Fonts, CSS Shapes, FlexBox\nTrendy Gradients in Web Design\nThis year we have seen many&nbsp;multicolored gradients with vibrant color palettes and irregular shapes with blur and distortion effects. Gradients...\n30 Great Websites with Parallax Scrolling\nThe parallax effect has been around for years in classic video games, but it&nbsp;became a trend in the web design world. This cool effect is...\nBrowse all articles\nView Blog\nMarket\nA curated marketplace\nfor digital & physical products\nDigital Product\nPlyń Piaty — Infinite CMS-Ready Portfolio\nBy Arkuš Design\nfrom\n39USD\nView Product\nDigital Product\nHOLMCHROME · Framer Portfolio Template\nBy Canberk\nfrom\n49USD\nView Product\nDigital Product\nSelv - Free Portfolio & Resume Template\nBy Stratila\nView Product\nBrowse specially curated products\nView Market\n\nShare your work\n\nSubmit your website for visibility and recognition\nSubmit Website\nGot questions? Read our FAQs\n\nBe a member\n\nGet access to special pro features\nBe Pro\nGot questions? Read our FAQs\nNominees\nCourses\nCollections\nDirectory\nMarket\nVisit Sotd.\n\nWebsites\nCollections\nElements\nAcademy\nJobs\nMarket\nDirectory\nConferences\nFAQs\nAbout Us\nContact Us\nCookies Policy\nLegal Terms\nPrivacy Policy\nConnect:\nInstagram\nLinkedIn\nTwitter\nFacebook\nYouTube\nTikTok\nPinterest\n\nThis website uses cookies to ensure you get the best experience on our website. Cookies Policy\n\nGOT IT",
+    "visible_styles": [
+      {
+        "text": "Site of the Day\nOct 18, 2026\nScore 7.22 of 10",
+        "font": "\"Inter Tight\"",
+        "size": "14px",
+        "transform": "none"
+      },
+      {
+        "text": "SIGNAL-A STUDIO",
+        "font": "\"Inter Tight\"",
+        "size": "126.732px",
+        "transform": "none"
+      },
+      {
+        "text": "Latest",
+        "font": "\"Inter Tight\"",
+        "size": "14px",
+        "transform": "none"
+      },
+      {
+        "text": "NOMINEES",
+        "font": "\"Inter Tight\"",
+        "size": "126.732px",
+        "transform": "none"
+      },
+      {
+        "text": "",
+        "font": "\"Inter Tight\"",
+        "size": "20.6479px",
+        "transform": "none"
+      },
+      {
+        "text": "Mubien",
+        "font": "\"Inter Tight\"",
+        "size": "20.6479px",
+        "transform": "none"
+      },
+      {
+        "text": "",
+        "font": "\"Inter Tight\"",
+        "size": "20.6479px",
+        "transform": "none"
+      },
+      {
+        "text": "Lajoya",
+        "font": "\"Inter Tight\"",
+        "size": "20.6479px",
+        "transform": "none"
+      },
+      {
+        "text": "Sweet Tape",
+        "font": "\"Inter Tight\"",
+        "size": "20.6479px",
+        "transform": "none"
+      },
+      {
+        "text": "\n                    Sweet Tape\n                ",
+        "font": "\"Inter Tight\"",
+        "size": "20.6479px",
+        "transform": "none"
+      },
+      {
+        "text": "Winners",
+        "font": "\"Inter Tight\"",
+        "size": "14px",
+        "transform": "none"
+      },
+      {
+        "text": "Recent Sites\nof the Day.",
+        "font": "\"Inter Tight\"",
+        "size": "41.8873px",
+        "transform": "none"
+      }
+    ]
+  },
+  {
+    "name": "behance",
+    "url": "https://www.behance.net/search/projects/editorial%20motion",
+    "screens": [
+      {
+        "path": "references\\behance_00.png",
+        "scrollY": 0
+      },
+      {
+        "path": "references\\behance_01.png",
+        "scrollY": 0
+      }
+    ],
+    "status": 403,
+    "title": "",
+    "text": "",
+    "visible_styles": []
+  }
+]

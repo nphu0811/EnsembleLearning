@@ -1,0 +1,26 @@
+\babel@toc {vietnamese}{}\relax 
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Khác biệt về dữ liệu và phương pháp trong một số nghiên cứu liên quan.}}{9}{table.1.1}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Phân bố hai lớp của các tập UNSW-NB15 chính thức.}}{10}{table.caption.14}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Năm cặp biến số có tương quan Spearman tuyệt đối lớn nhất trong TRAIN.}}{13}{table.caption.18}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Hai góc nhìn đánh giá cùng thuộc official TEST đã lưu.}}{13}{table.caption.19}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Cấu hình của ba pipeline được dùng trong đánh giá cuối.}}{16}{table.caption.20}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Năm cấu hình P21 predeclared trên internal validation của official TRAIN.}}{18}{table.caption.21}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Hiệu năng nhị phân trên official TEST (82\,332 mẫu; ngưỡng 0,5).}}{20}{table.caption.22}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Hiệu số Stacking-42 trừ RF-42 và CI 95\% paired bootstrap trên official TEST; hiệu số ở thang 0--1.}}{21}{table.caption.24}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Chi phí tính toán của ba pipeline trong lần thực nghiệm ban đầu; dung lượng quy đổi sang MiB.}}{22}{table.caption.26}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Số tấn công bỏ sót (FN) và FNR theo chín họ Attack trên official TEST; mỗi ô: \textbf {FN / FNR (\%)}.}}{23}{table.caption.27}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Khoảng tin cậy Wilson 95\% cho FNR (\%) của cùng chín họ Attack. Đây là CI biên theo nhóm, không phải kiểm định paired giữa mô hình.}}{23}{table.caption.28}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Kết quả pooled OOF trong giai đoạn phát triển trên track 42 đặc trưng. FPR và FNR tính theo phần trăm.}}{24}{table.caption.29}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Macro-F1 trên official TEST và exact-duplicate-filtered subset thuộc cùng tập kiểm thử.}}{26}{table.caption.30}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Hiệu năng trung bình qua 5 FIT seed trên \textbf {một} internal validation P21; độ lệch chuẩn mẫu \emph {có điều kiện trên cùng validation} của Macro-F1 và MCC ghi trong ngoặc. FPR/FNR tính bằng phần trăm.}}{28}{table.caption.31}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Hiệu số \emph {paired FIT seed} của mỗi arm so với RF42-Lite A0; dấu của $\Delta $ là arm $-$ A0. $\Delta $ FPR/FNR tính bằng \emph {điểm phần trăm}, không phải \%.}}{28}{table.caption.32}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces Macro-F1 theo FIT seed, chỉ mô tả biến thiên huấn luyện có điều kiện; \textbf {cùng} 35\,069 quan sát validation ở cả năm cột.}}{29}{table.caption.33}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces Chi phí huấn luyện trung bình theo năm FIT seed, đơn vị giây. Các số là thời gian fit ghi từ worker, không phải end-to-end latency triển khai.}}{29}{table.caption.34}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Tính đúng/sai theo cặp dự đoán của RF-42 và Stacking-42 trên official TEST.}}{31}{table.caption.35}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Phân tích độ nhạy \emph {giả định} theo $r=C_{\mathrm {FN}}/C_{\mathrm {FP}}$, chuẩn hóa $C_{\mathrm {FP}}=1$. Giá trị là điểm tổn thất quy ước, không phải số tiền thiệt hại thực tế.}}{32}{table.caption.36}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Kết luận thực nghiệm cho RQ1--RQ5 và phạm vi chưa được kiểm chứng.}}{34}{table.caption.37}%

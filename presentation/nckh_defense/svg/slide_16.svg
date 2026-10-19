@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 960 540">
+<rect width="960" height="540" fill="white"/>
+<text x="43.199999999999996" y="75.6" font-family="Aptos,Arial,sans-serif" font-size="36.0" font-weight="700" fill="#0D3560">P21 chưa cho thấy Stacking-Lite tốt hơn</text>
+<text x="41.76" y="516.1600000000001" font-family="Aptos,Arial,sans-serif" font-size="10.0" font-weight="400" fill="#526A81">Nguồn: P21 aggregate.json · hậu nghiệm trên TRAIN; cùng validation qua 5 FIT seed.</text>
+<text x="871.1999999999999" y="516.0" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#526A81">16</text>
+<line x1="43.199999999999996" y1="488.16" x2="915.84" y2="488.16" stroke="#1769AA"/>
+<line x1="241.20000000000002" y1="158.4" x2="241.20000000000002" y2="406.8" stroke="#1769AA"/>
+<text x="219.6" y="433.76" font-family="Aptos,Arial,sans-serif" font-size="14.0" font-weight="400" fill="#526A81">0.944</text>
+<line x1="547.1999999999999" y1="158.4" x2="547.1999999999999" y2="406.8" stroke="#1769AA"/>
+<text x="525.6" y="433.76" font-family="Aptos,Arial,sans-serif" font-size="14.0" font-weight="400" fill="#526A81">0.945</text>
+<line x1="853.1999999999999" y1="158.4" x2="853.1999999999999" y2="406.8" stroke="#1769AA"/>
+<text x="831.5999212598425" y="433.76" font-family="Aptos,Arial,sans-serif" font-size="14.0" font-weight="400" fill="#526A81">0.946</text>
+<text x="61.199999999999996" y="180.0" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="400" fill="#526A81">1103</text>
+<line x1="377.0395275590551" y1="169.20000000000002" x2="467.9927559055118" y2="169.20000000000002" stroke="#1769AA"/>
+<text x="61.199999999999996" y="227.52" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="400" fill="#526A81">2207</text>
+<line x1="412.32133858267713" y1="216.71999999999997" x2="765.0191338582677" y2="216.71999999999997" stroke="#1769AA"/>
+<text x="61.199999999999996" y="275.03999999999996" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="400" fill="#526A81">3301</text>
+<line x1="571.3272440944882" y1="264.24" x2="714.3892125984252" y2="264.24" stroke="#1769AA"/>
+<text x="61.199999999999996" y="322.56000000000006" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="400" fill="#526A81">4409</text>
+<line x1="571.7058267716535" y1="311.76" x2="584.111653543307" y2="311.76" stroke="#1769AA"/>
+<text x="61.199999999999996" y="370.08" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="400" fill="#526A81">5501</text>
+<line x1="380.1650393700788" y1="359.28000000000003" x2="552.9110236220473" y2="359.28000000000003" stroke="#1769AA"/>
+<text x="61.199999999999996" y="149.16" font-family="Aptos,Arial,sans-serif" font-size="21.0" font-weight="700" fill="#1769AA">RF42-Lite  0,945220</text>
+<text x="504.0" y="149.16" font-family="Aptos,Arial,sans-serif" font-size="21.0" font-weight="700" fill="#B65B29">Stacking-Lite  0,944731</text>
+<text x="61.199999999999996" y="471.2" font-family="Aptos,Arial,sans-serif" font-size="14.0" font-weight="400" fill="#526A81">Macro-F1 · trục rút gọn 0,944–0,946; đường nối cùng FIT seed</text>
+</svg>

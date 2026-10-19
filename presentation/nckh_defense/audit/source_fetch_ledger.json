@@ -1,0 +1,114 @@
+[
+  {
+    "id": "motion_skill",
+    "url": "https://raw.githubusercontent.com/meiiie/meiiie_skillls/main/motion-pptx-studio/SKILL.md",
+    "status": 200,
+    "bytes": 14733,
+    "sha256": "626fc5e4fe3e1ed912ee467d5877a4a51ed41d4926e0e6d5ffe389df696012e3",
+    "path": "presentation\\nckh_defense\\audit\\motion_skill.txt"
+  },
+  {
+    "id": "motion_tree",
+    "url": "https://api.github.com/repos/meiiie/meiiie_skillls/contents/motion-pptx-studio",
+    "status": 200,
+    "bytes": 8932,
+    "sha256": "422057c751189b3e5e4f19ab87a53da038b18cb09c9f4a755b640a3279458b06",
+    "path": "presentation\\nckh_defense\\audit\\motion_tree.txt"
+  },
+  {
+    "id": "visual_skill",
+    "url": "https://raw.githubusercontent.com/Clockworkhg/visual-ppt-builder/main/SKILL.md",
+    "status": 200,
+    "bytes": 12416,
+    "sha256": "2fbf726079c0f0ef9006692fb5c7ddb8a73fe015cb9b800bea624fc8818b690e",
+    "path": "presentation\\nckh_defense\\audit\\visual_skill.txt"
+  },
+  {
+    "id": "visual_license",
+    "url": "https://api.github.com/repos/Clockworkhg/visual-ppt-builder/license",
+    "status": 404,
+    "bytes": 140,
+    "sha256": "6c0109c2ac75f1f264b61da6aff1737f7bc7eac254e6396710ff81a4139f32b1",
+    "path": "presentation\\nckh_defense\\audit\\visual_license.txt"
+  },
+  {
+    "id": "pptmaster_license",
+    "url": "https://api.github.com/repos/hugohe3/ppt-master/license",
+    "status": 200,
+    "bytes": 2364,
+    "sha256": "0dc8d107b08e4c194924452dcfc03d1ede7d2fe36386c73c275c6e5979fd1499",
+    "path": "presentation\\nckh_defense\\audit\\pptmaster_license.txt"
+  },
+  {
+    "id": "officecli_license",
+    "url": "https://api.github.com/repos/iOfficeAI/OfficeCLI/license",
+    "status": 200,
+    "bytes": 16598,
+    "sha256": "e378f86eac81483c36b30c99e4cdf696d2dc84893f138bc412c13017cf76a2cb",
+    "path": "presentation\\nckh_defense\\audit\\officecli_license.txt"
+  },
+  {
+    "id": "anatomy",
+    "url": "https://skills.wheresryan.sh/anatomy",
+    "status": 200,
+    "bytes": 168517,
+    "sha256": "ca84dc8e43e0c940ea99be6bb59d5591ae4ca87b5f3bc41504497f14c7afaf95",
+    "path": "presentation\\nckh_defense\\audit\\anatomy.txt"
+  },
+  {
+    "id": "manimgx",
+    "url": "https://manimgx.academa.ai/",
+    "status": 200,
+    "bytes": 61165,
+    "sha256": "67d9e07293bfc2d225f220ba4740fecef11be7f6fb06fc2fb6f5929ff782be8c",
+    "path": "presentation\\nckh_defense\\audit\\manimgx.txt"
+  },
+  {
+    "id": "manimgx_license",
+    "url": "https://manimgx.academa.ai/license/",
+    "status": 404,
+    "bytes": 27491,
+    "sha256": "e3bb7ef5f5ca70db8aeb8d5e0811b9b8bec20f426e776d22a84a064298b0e627",
+    "path": "presentation\\nckh_defense\\audit\\manimgx_license.txt"
+  },
+  {
+    "id": "openai_skills",
+    "url": "https://github.com/openai/skills",
+    "status": 200,
+    "bytes": 248689,
+    "sha256": "398a9c236fc4a7dc8eb2306d46fa311be235af29310a252398d6dcc581c69e6c",
+    "path": "presentation\\nckh_defense\\audit\\openai_skills.txt"
+  },
+  {
+    "id": "openai_plugins",
+    "url": "https://github.com/openai/plugins",
+    "status": 200,
+    "bytes": 237250,
+    "sha256": "01595a0d8ae12e88a635eebac5dbf29adff25053023a64b9baa0374178afe140",
+    "path": "presentation\\nckh_defense\\audit\\openai_plugins.txt"
+  },
+  {
+    "id": "codex_skills",
+    "url": "https://developers.openai.com/codex/skills",
+    "status": 200,
+    "bytes": 413242,
+    "sha256": "3d75be1dd9292ae7cb5d420809d3410bda8b39c6706795c8815fe2ddba2a4c7d",
+    "path": "presentation\\nckh_defense\\audit\\codex_skills.txt"
+  },
+  {
+    "id": "ted",
+    "url": "https://storage.ted.com/tedx/manuals/tedx_speaker_guide.pdf",
+    "status": 200,
+    "bytes": 201634,
+    "sha256": "d91cdc0d4b579be10cceddf8a215a912af2bc1f6b4d40200f91ebdc363552b33",
+    "path": "presentation\\nckh_defense\\audit\\ted.pdf"
+  },
+  {
+    "id": "toastmasters",
+    "url": "https://www.toastmasters.org/Magazine/Magazine%20Issues/2023/Sept/Storytelling%20Tips",
+    "status": 200,
+    "bytes": 84128,
+    "sha256": "a513ef1081625afa573de74b62f2c7f787f4c38d6cd6ac48c5a3f1d661b21655",
+    "path": "presentation\\nckh_defense\\audit\\toastmasters.txt"
+  }
+]

@@ -1,0 +1,35 @@
+--- V6/chapters/dataset_eda_revision_v4_2026_10_19.tex
++++ V7/chapters/dataset_eda_revision_v4_2026_10_19.tex
+@@ -16,7 +16,7 @@
+ TEST & 37000 & 45332 & 82332 & 55.06\\\bottomrule
+ \end{tabular}
+ \end{table}
+-Sự khác biệt tỷ lệ Attack giữa TRAIN (68,06\%) và TEST (55,06\%) là một quan sát thực tế của dữ liệu chính thức, không phải tỷ lệ do nghiên cứu tự cân bằng lại. Điều này cho thấy tổng Accuracy và Weighted-F1 có thể chịu ảnh hưởng của cách phân bố lớp; đọc Macro-F1, MCC và chỉ số riêng từng lớp sẽ rõ ràng hơn khi so sánh các pipeline.
++Sự khác biệt tỷ lệ Attack giữa TRAIN (68,06\%) và TEST (55,06\%) là một quan sát thực tế của dữ liệu chính thức, không phải tỷ lệ do nghiên cứu tự cân bằng lại. Vì Accuracy và Weighted-F1 chịu ảnh hưởng của phân bố lớp, khi so sánh pipeline cần đọc thêm Macro-F1, MCC và chỉ số của từng lớp.
+ 
+ \begin{figure}[htbp]
+ \centering
+@@ -26,7 +26,7 @@
+ \end{figure}
+ 
+ \section{Các nhóm tấn công và mức độ chênh lệch}
+-Ngoài lớp Normal, trường \texttt{attack\_cat} chứa các họ tấn công như Analysis, Backdoor, DoS, Exploits, Fuzzers, Generic, Reconnaissance, Shellcode và Worms. Tại official TEST, Generic chiếm 18\,871 dòng, Exploits 11\,132 dòng và Fuzzers 6\,062 dòng, trong khi Worms chỉ có 44 dòng. Quy mô hỗ trợ không đồng đều có thể làm độ chính xác theo từng nhóm biến động mạnh; một số đếm FN cần được đọc cùng mẫu số của chính nhóm Attack tương ứng.
++Ngoài lớp Normal, trường \texttt{attack\_cat} chứa các họ tấn công như Analysis, Backdoor, DoS, Exploits, Fuzzers, Generic, Reconnaissance, Shellcode và Worms. Tại official TEST, Generic chiếm 18\,871 dòng, Exploits 11\,132 dòng và Fuzzers 6\,062 dòng, trong khi Worms chỉ có 44 dòng. Số mẫu giữa các nhóm chênh lệch lớn, nên độ chính xác theo nhóm có thể biến động mạnh. Số FN cần được đọc cùng tổng số mẫu của nhóm Attack tương ứng.
+ 
+ \begin{figure}[htbp]
+ \centering
+@@ -38,7 +38,7 @@
+ Nhóm Attack ít mẫu không thể được coi là đã phát hiện tốt chỉ vì Accuracy nhị phân tổng thể cao. Một lớp hiếm có thể chỉ góp ít FN vào tổng nhưng lại có FNR cao trong chính lớp đó. Bởi vậy bước Error Analysis trong báo cáo phân nhóm các Attack thật, đồng thời tránh biến các khác biệt nhỏ thành khẳng định về toàn bộ dạng tấn công trong tự nhiên.
+ 
+ \section{Khảo sát thống kê các đặc trưng}
+-EDA của TRAIN đã kiểm tra 39 biến số. Các tiêu chí thống kê dùng để khám phá không đồng nghĩa phép thử nhân quả. Chẳng hạn, standardized mean difference (SMD) giữa Normal và Attack lớn cho thấy trung bình hai nhóm có khác biệt tương đối theo độ phân tán, nhưng không có nghĩa một feature đơn lẻ là dấu hiệu tấn công đáng tin cậy trong mọi tổ hợp.
++EDA trên TRAIN khảo sát 39 biến số. Các thống kê mô tả dùng trong bước này không phải phép kiểm tra quan hệ nhân quả. Chẳng hạn, standardized mean difference (SMD) giữa Normal và Attack lớn cho thấy trung bình hai nhóm có khác biệt tương đối theo độ phân tán, nhưng không có nghĩa một feature đơn lẻ là dấu hiệu tấn công đáng tin cậy trong mọi tổ hợp.
+ 
+ Các giá trị SMD lớn về độ lớn trong bảng EDA gồm \texttt{sttl} (1,9430), \texttt{ct\_state\_ttl} (1,3973), \texttt{ct\_dst\_sport\_ltm} (0,9340), \texttt{rate} (0,8692), \texttt{ct\_src\_dport\_ltm} (0,7853), cùng các biến có SMD âm như \texttt{swin} (-0,7636) và \texttt{dload} (-0,7346). Dấu và độ lớn của SMD phản ánh cách định nghĩa hai nhóm trong tập TRAIN; nó không thiết lập hướng tác động của feature lên xác suất bị tấn công.
+ 
+@@ -94,4 +94,4 @@
+ Exact-duplicate-filtered view chỉ là một phép phân tích độ nhạy trong cùng bộ dữ liệu, không bảo đảm độc lập theo thời gian hoặc nguồn traffic. Do đó báo cáo trình bày riêng metric official và metric exact-duplicate-filtered, không thay official holdout bằng phần TEST được chọn sau khi quan sát kết quả. Một nghiên cứu đánh giá khả năng khái quát tốt hơn cần một benchmark ngoài hoặc group/temporal split được thiết kế trước, với định nghĩa đơn vị độc lập và quy trình pre-processing nhất quán.
+ 
+ \section{Kết luận về đặc trưng của benchmark}
+-UNSW-NB15 hỗ trợ một case study IDS nhị phân có quy mô vừa đủ cho đối chiếu nhiều pipeline và có nhãn Attack để phân tích sai số. Tuy nhiên, các chênh lệch lớp, tương quan feature mạnh, sự tồn tại của vector trùng và khả năng phụ thuộc giữa các dòng flow giới hạn phạm vi khái quát. Vì thế hiệu năng trên chính benchmark này được diễn giải dưới các điều kiện của phép đo, không tự chuyển thành khả năng phát hiện xâm nhập trên mạng triển khai thực tế.
++Với quy mô của UNSW-NB15 và nhãn Attack đi kèm, nghiên cứu có thể đối chiếu nhiều pipeline IDS nhị phân và phân tích sai số. Tuy nhiên, các chênh lệch lớp, tương quan feature mạnh, sự tồn tại của vector trùng và khả năng phụ thuộc giữa các dòng flow giới hạn phạm vi khái quát. Vì thế hiệu năng trên chính benchmark này được diễn giải dưới các điều kiện của phép đo, không tự chuyển thành khả năng phát hiện xâm nhập trên mạng triển khai thực tế.

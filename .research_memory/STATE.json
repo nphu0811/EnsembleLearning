@@ -1,11 +1,11 @@
 {
   "schema_version": "1.1",
   "project": "Ensemble Learning for Network Intrusion Detection (NCKH)",
-  "last_updated": "2026-10-18",
-  "local_session_date": "2026-10-17",
+  "last_updated": "2026-10-19",
+  "local_session_date": "2026-10-19",
   "timezone": "Asia/Saigon",
-  "phase": "P15_DONE_SCOPED_RECONSTRUCTION;P16_AUDIT_SCOPED_WITH_OPEN_PRINT_FINDINGS;P17_V2_47P_QA_PASS_AUTHOR_REVIEW_PENDING;P18_P19_PARTIAL;P20_PRE_REVIEW_QA_PASS_WITH_ERRATUM_FINAL_DEFERRED;P21_RF42_PILOT_PASS_RESOURCE_SMOKE_ONLY;P21_REMAINING_PILOTS_PENDING;P21_SELECTOR17_PILOT_PASS_RESOURCE_SMOKE_ONLY;P21_RQ5_PILOTS_PENDING",
-  "current_task": "P21_RF42_AND_SELECTOR17_RESOURCE_PILOTS_SCOPED_PASS;NEXT_PREPARE_RQ5_WEIGHT_OVERSAMPLE_PILOT;FULL_RQ_MATRIX_NOT_AUTHORIZED",
+  "phase": "P15_DONE_SCOPED_RECONSTRUCTION;P16_AUDIT_SCOPED_WITH_OPEN_PRINT_FINDINGS;P17_V2_47P_QA_PASS_AUTHOR_REVIEW_PENDING;P18_P19_PARTIAL;P20_PRE_REVIEW_QA_PASS_WITH_ERRATUM_FINAL_DEFERRED;P21_RF42_PILOT_PASS_RESOURCE_SMOKE_ONLY;P21_REMAINING_PILOTS_PENDING;P21_SELECTOR17_PILOT_PASS_RESOURCE_SMOKE_ONLY;P21_RQ5_PILOTS_PENDING;DEFENSE_PPTX_VIDEO_360S_ARTIFACT_QA_PASS;V7_HUMANIZED_SOURCE_INVARIANTS_PASS;CREATIVE_V2_NATIVE_TIMELINE_ARTIFACT_QA_PASS",
+  "current_task": "CREATIVE_V2_DELIVERED_ARTIFACT_QA_PASS_WITH_REFERENCE_ACCESS_AND_TTS_LISTENING_LIMITS",
   "completed_tasks": [
     "BOOT-01",
     "BOOT-02_STRUCTURAL",
@@ -41,7 +41,8 @@
     "P18_DEEP_SELECTED_SECTIONS_SCOPED",
     "P19_SMOKE_INVENTORY_SCOPED",
     "P19_ALLOWLIST_INTERNAL_DRAFT_SCOPED",
-    "P20_PACKET_RUBRIC_PREPARATION_ONLY"
+    "P20_PACKET_RUBRIC_PREPARATION_ONLY",
+    "DEFENSE_2026_10_19_8_SCENES_360S_NATIVE_PPTX_MP4_PDF_QA48"
   ],
   "blocked_tasks": [
     {
@@ -2298,52 +2299,66 @@
     {
       "path": "tools/resume_checkpoint_audit.py",
       "sha256": "75fe99880b22b3eb70e0578fbd79455e64440183fa4475f8a0941728d09148da"
+    },
+    {
+      "path": "presentation/nckh_defense/NCKH_Ensemble_IDS_Final.pptx",
+      "sha256": "df3115d91ebc08638b62061d9a6276353823c674c9b88ecd8872cb17000293bf",
+      "bytes": 165419
+    },
+    {
+      "path": "presentation/nckh_defense/NCKH_Ensemble_IDS_Preview.mp4",
+      "sha256": "b3016b6798717ed9a5b107c86fe2a70915f990b6865a26ba6ff6b5eca0de9470",
+      "bytes": 12519165
+    },
+    {
+      "path": "presentation/nckh_defense/NCKH_Ensemble_IDS_Static.pdf",
+      "sha256": "eddd6b59b3b1322b6e161e101e56e08052b29464e3e831aab3698b58655a1edd",
+      "bytes": 353680
+    },
+    {
+      "path": "presentation/nckh_defense/Kich_ban_thuyet_trinh_6_phut.md",
+      "sha256": "8ab5c8017c5247c054235443cd0bd267bb95ef2fe1ea0b445b9c6d5c81025e2e",
+      "bytes": 19506
+    },
+    {
+      "path": "presentation/nckh_defense/QnA_4_phut.md",
+      "sha256": "a93cc5030abf075f1ef72296919ed06ba1a463a9808c11cd1bfe6f94573967cf",
+      "bytes": 5246
+    },
+    {
+      "path": "presentation/nckh_defense/Storyboard.md",
+      "sha256": "596c954f5822958667438ad551f287d3d8c57466c3870801e502f511ebfab14f",
+      "bytes": 6336
+    },
+    {
+      "path": "presentation/nckh_defense/Skill_Decision_Matrix.md",
+      "sha256": "f5d31b82d0b029bd3bb290f2ef41d27d5561825d708cb1b864b483e642ee3664",
+      "bytes": 4925
+    },
+    {
+      "path": "presentation/nckh_defense/Asset_Manifest.md",
+      "sha256": "8215107ad20b5a113ac649c13b476f2c7aa9b2d02698f47188ab80bdfa875c76",
+      "bytes": 2385
+    },
+    {
+      "path": "presentation/nckh_defense/Scientific_Evidence_Map.md",
+      "sha256": "b8ea79615dba3cc61fdb0f6848a00b7f7f06611c7aec3a0b49043bceadcb6938",
+      "bytes": 4984
+    },
+    {
+      "path": "presentation/nckh_defense/QA_Report.md",
+      "sha256": "f4725b6df5100f982e24c61d015ac867f10e7bddc44297f4120299591edfcb58",
+      "bytes": 7115
+    },
+    {
+      "path": "presentation/nckh_defense/NCKH_Ensemble_IDS_Delivery.zip",
+      "sha256": "eb79fbacbd5405b83555bbab0787d136eab64b3eebd940a68be550a423b386fa",
+      "bytes": 13714883
     }
   ],
-  "next_action": "P21 selector17 author-run 8k FIT/15 selector calls PASS and reported evidence 15/15 consistency checks (CI39068091845). Next implement synthetic-audited, separately author-opt-in RQ5 RF42 class_weight balanced and Normal-minority fit-only random oversampling resource pilots, then Stacking-Lite pilot. No full 5seed 60k RQ science or validation scoring/official TEST until separate explicit authorization; preserve PDF V2/P9/P15.",
-  "last_gate_status": {
-    "bootstrap": "PASS_SCOPED",
-    "raw_integrity": "PASS",
-    "static_protocol": "PASS_WITH_CAVEATS",
-    "saved_evidence_checks": "79/79 PASS",
-    "unit_tests": "6/6 PASS",
-    "fresh_aggregate_replay": "3/3 byte-identical CSV; 6/6 tests PASS",
-    "preservation": "282/282 unchanged",
-    "figure_F1": "READY_FOR_REVIEW",
-    "bibliography": "3 metadata verified; 2 check suggested; 0 full text",
-    "release": "NOT_READY_FOR_SUBMISSION;INTERNAL_REVIEW_ONLY_ARCHIVE_NOT_PUBLIC_AUTHORIZED",
-    "resume_r02": "92/92 prior manifest and282/282 preservation PASS",
-    "legacy_literature": "11/12VERIFIED_METADATA;L03CHECK_SUGGESTED pageconflict;U01/U03open",
-    "foundation_review": "PASS_SCOPED: methods7.8125; argument7.75",
-    "partial_section": "KEEP_INTERNAL_DRAFT7.5; P2 edits applied; no post-edit rescore",
-    "defense_qa": "20 questions;33 evidence paths; DRAFT_FOR_REVIEW",
-    "resume_r03": "146/148 prior hash matches;2 explained stale memory hashes;282/282 preserved",
-    "template_r03": "ZIP15 entries/extraction CRC PASS;DOCX8 tables CRC PASS;no visual QA",
-    "products_section": "INTERNAL_PARTIAL_DRAFT; independent section report + source checks; not full proposal",
-    "r03_post_audit": "172/172 checkpoint manifest PASS;282/282 historical preservation PASS;source/P2 checks16/16 PASS;section7.75 before minor repairs, no rescore",
-    "R04-RESUME": "DONE_SCOPED: 174/174 prior artifact hashes and282/282 historical files match; ZIP15 entries and DOCX8 tables CRC PASS; skills registry inspected",
-    "R04-REF": "DONE_SCOPED: Five of six pending legacy entries resolved;11/12 metadata verified; L03 retained CHECK_SUGGESTED page conflict; U01/U03 open;28/28 bookkeeping checks PASS; no full P18 completion",
-    "R04-READ": "DONE_SCOPED: Five source-linked claims anchored to actual passages;10/10 capture checks PASS;L06 selected Methods,L09 indexed Introduction,D01/D02 bounded domestic sources;no full-paper read claim",
-    "R04-FORM-AUDIT": "DONE_SCOPED: Original DOCX58 blocks/97 cells captured;14/14 coverage checks PASS;working gap draft also checkpointed pending review repairs;no fill/render/admin approval",
-    "R04-GAP-LIT": "DONE_SCOPED: Updated gap matrix and related-work/rationale draft;30/30 source/RQ checks and3/3 repair checks PASS;two independent scoped reviews with minor repairs;not full proposal/P01/P18 closure",
-    "R04-SMOKE-PLAN": "DONE_SCOPED: Capacity and frozen source paths inspected;bounded2000/500 TRAIN-only smoke contract and observed-version requirements saved;no fit or original-environment claim yet",
-    "R04-ASSEMBLY": "PARTIAL: All proposal content assembled in original field order;10/10 initial checks,6/6 P2 repair checks;one evidence review saved;independent full argument review interrupted by usage limit;not DOCX/render/full gate",
-    "R04-ML-SMOKE": "DONE_SCOPED: Fresh venv pip check PASS;TRAIN-only three frozen builders fit/serialize/reload;initial41/42 failed bitwise RF17 assertion,diagnosed2.22e-16 parallel-sum drift;repaired45/45 PASS and6/6 audit tests;not final models/G3 closure",
-    "R04-DEFENSE-CONTENT": "DONE_SCOPED: Drafted12-position720-second defense script,evidence walkthrough/final inference dependency runbook and G0-G6 checklist;source/timing validation PASS;not slides/render/rehearsal or live demo",
-    "R04-FINAL-CHECKPOINT": "PARTIAL: r04 advanced references11/12,gap/relatedwork,full content mapping and assembly,TRAIN-only software smoke45/45,defense content25/25;full argument review interrupted by quota;G0-G6 remain open;no final release",
-    "fresh_train_smoke": "PASS_SCOPED45/45;initial41/42 preserved;pipcheckPASS;6/6auditunittests",
-    "full_proposal_review": "PARTIAL:evidencefullcontentreport saved;independentargumentreviewfailedquota;notDOCX/render",
-    "r04_post_audit": "265/265 checkpoint artifact hashes and282/282 historical preservation PASS;originalZIP/DOCXCRC/extractionPASS;no visualQA",
-    "R05-ASSEMBLY-REVIEW": "DONE_SCOPED: Independent full argument/form review and recheck saved;3P1/2P2 addressed in separate r05 draft;34/34 source-boundary checks;author/renderP0 open;no training or release closure",
-    "P15": "DONE_SCOPED_RECONSTRUCTION;69/69savedacceptance;3runPASS",
-    "P16": "2132summary+178actualPDFPASS;newfigures6text/6collisionPASS;historicalcollision6FAILandprint/snapshotfindingsopen",
-    "P18": "PARTIAL;7papers3selectedbodyreads24assertions;136traceabilityidentitychecksPASS;L03VOR/access/noveltygapsremain",
-    "P19": "PARTIAL;internaldraft245+121checksPASS,3pathtestsPASS;publicrights/codeLICENSE/3trackedmodelsremainopen",
-    "P20": "DEFERRED;setup/rubric/questionsprepared,noactualreviewerreports",
-    "current_checkpoint_integrity": "555/555 current artifact SHA256 matches;25/25 final preservation/scope checks; not overall release readiness",
-    "release_inventory": "FAIL_3_PREEXISTING_SMOKE_BINARIES; finalsnapshot871files; no code LICENSE"
-  },
-  "resume_command": "python -X utf8 tools/resume_checkpoint_audit.py --out-dir results/reproducibility/NEW_UNIQUE_SESSION",
+  "next_action": "Open presentation/nckh_defense/NCKH_Ensemble_IDS_Preview.mp4 and rehearse with actual presenters; use hidden slides21–32 for Q&A. Do not retrain/tune from these findings.",
+  "last_gate_status": "DEFENSE_ARTIFACT_48_OF_48_PASS;INDEPENDENT_STATIC_QA_PASS;HUMAN_VOICE_AND_PROJECTOR_NOT_TESTED",
+  "resume_command": "python presentation/nckh_defense/validate_delivery.py",
   "training_performed_this_session": false,
   "prediction_performed_this_session": false,
   "original_training_environment": "UNKNOWN",
@@ -2357,5 +2372,25 @@
   "r04_post_audit_path": "results/reproducibility/resume_2026_10_16_r04_post/resume_audit.json",
   "official_test_opened_this_session": false,
   "model_artifact_scope": "Three author-host RECONSTRUCTED_FULL_TRAIN artifacts; original historical binary identity UNKNOWN; no model loading in current QA",
-  "git_publication": "Verify Git HEAD and origin/main directly; no commit SHA inferred from mutable JSON"
+  "git_publication": "Verify Git HEAD and origin/main directly; no commit SHA inferred from mutable JSON",
+  "creative_v2_delivery": {
+    "directory": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\presentation\\nckh_defense\\creative_rebuild_v2",
+    "report_v7_pages": 49,
+    "report_prose_edits": 38,
+    "main_slides": 17,
+    "scenes": 8,
+    "hidden_qna": 12,
+    "native_effects": 439,
+    "motion_paths": 59,
+    "scale_effects": 15,
+    "native_shape_instances": 568,
+    "preview_seconds": 360,
+    "tts_speech_seconds": 319.056,
+    "status": "DELIVERED_WITH_DOCUMENTED_LIMITATIONS",
+    "limits": [
+      "Lollypop CAPTCHA: no claim of observing its scroll/motion",
+      "No human audio listening; ASR imperfect for English terms; TTS sample needs presenter review"
+    ],
+    "release_validation": "presentation/nckh_defense/creative_rebuild_v2/audit/release_validation.json"
+  }
 }

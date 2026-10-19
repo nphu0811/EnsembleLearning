@@ -1,0 +1,202 @@
+[
+  {
+    "slide": 1,
+    "scene": 1,
+    "start": 0,
+    "end": 20,
+    "incoming_transition": 0,
+    "speech_start": 0.1,
+    "speech_end": 14.572,
+    "silence_after": 5.428000000000001
+  },
+  {
+    "slide": 2,
+    "scene": 2,
+    "start": 20,
+    "end": 40,
+    "incoming_transition": 0.55,
+    "speech_start": 20.650000000000002,
+    "speech_end": 34.858000000000004,
+    "silence_after": 5.141999999999996
+  },
+  {
+    "slide": 3,
+    "scene": 2,
+    "start": 40,
+    "end": 60,
+    "incoming_transition": 0.9,
+    "speech_start": 41.0,
+    "speech_end": 57.536,
+    "silence_after": 2.4639999999999986
+  },
+  {
+    "slide": 4,
+    "scene": 3,
+    "start": 60,
+    "end": 70,
+    "incoming_transition": 0.55,
+    "speech_start": 60.65,
+    "speech_end": 69.002,
+    "silence_after": 0.9980000000000047
+  },
+  {
+    "slide": 5,
+    "scene": 3,
+    "start": 70,
+    "end": 85,
+    "incoming_transition": 0.9,
+    "speech_start": 71.0,
+    "speech_end": 83.312,
+    "silence_after": 1.6880000000000024
+  },
+  {
+    "slide": 6,
+    "scene": 3,
+    "start": 85,
+    "end": 100,
+    "incoming_transition": 0.9,
+    "speech_start": 86.0,
+    "speech_end": 98.216,
+    "silence_after": 1.784000000000006
+  },
+  {
+    "slide": 7,
+    "scene": 3,
+    "start": 100,
+    "end": 115,
+    "incoming_transition": 0.9,
+    "speech_start": 101.0,
+    "speech_end": 112.712,
+    "silence_after": 2.2879999999999967
+  },
+  {
+    "slide": 8,
+    "scene": 4,
+    "start": 115,
+    "end": 133,
+    "incoming_transition": 0.55,
+    "speech_start": 115.64999999999999,
+    "speech_end": 132.09,
+    "silence_after": 0.9099999999999966
+  },
+  {
+    "slide": 9,
+    "scene": 4,
+    "start": 133,
+    "end": 151,
+    "incoming_transition": 0.9,
+    "speech_start": 134.0,
+    "speech_end": 149.84,
+    "silence_after": 1.1599999999999966
+  },
+  {
+    "slide": 10,
+    "scene": 4,
+    "start": 151,
+    "end": 170,
+    "incoming_transition": 0.9,
+    "speech_start": 152.0,
+    "speech_end": 167.456,
+    "silence_after": 2.544000000000011
+  },
+  {
+    "slide": 11,
+    "scene": 5,
+    "start": 170,
+    "end": 190,
+    "incoming_transition": 0.55,
+    "speech_start": 170.65,
+    "speech_end": 188.21800000000002,
+    "silence_after": 1.7819999999999823
+  },
+  {
+    "slide": 12,
+    "scene": 5,
+    "start": 190,
+    "end": 208,
+    "incoming_transition": 0.9,
+    "speech_start": 191.0,
+    "speech_end": 207.10399999999998,
+    "silence_after": 0.896000000000015
+  },
+  {
+    "slide": 13,
+    "scene": 5,
+    "start": 208,
+    "end": 225,
+    "incoming_transition": 0.9,
+    "speech_start": 209.0,
+    "speech_end": 223.4,
+    "silence_after": 1.5999999999999943
+  },
+  {
+    "slide": 14,
+    "scene": 5,
+    "start": 225,
+    "end": 240,
+    "incoming_transition": 0.9,
+    "speech_start": 226.0,
+    "speech_end": 238.216,
+    "silence_after": 1.7839999999999918
+  },
+  {
+    "slide": 15,
+    "scene": 6,
+    "start": 240,
+    "end": 260,
+    "incoming_transition": 0.55,
+    "speech_start": 240.65,
+    "speech_end": 257.954,
+    "silence_after": 2.0459999999999923
+  },
+  {
+    "slide": 16,
+    "scene": 6,
+    "start": 260,
+    "end": 278,
+    "incoming_transition": 0.9,
+    "speech_start": 261.0,
+    "speech_end": 276.76800000000003,
+    "silence_after": 1.231999999999971
+  },
+  {
+    "slide": 17,
+    "scene": 6,
+    "start": 278,
+    "end": 295,
+    "incoming_transition": 0.9,
+    "speech_start": 279.0,
+    "speech_end": 294.288,
+    "silence_after": 0.7119999999999891
+  },
+  {
+    "slide": 18,
+    "scene": 7,
+    "start": 295,
+    "end": 315,
+    "incoming_transition": 0.55,
+    "speech_start": 295.65000000000003,
+    "speech_end": 312.13800000000003,
+    "silence_after": 2.8619999999999663
+  },
+  {
+    "slide": 19,
+    "scene": 7,
+    "start": 315,
+    "end": 335,
+    "incoming_transition": 0.9,
+    "speech_start": 316.0,
+    "speech_end": 331.576,
+    "silence_after": 3.423999999999978
+  },
+  {
+    "slide": 20,
+    "scene": 8,
+    "start": 335,
+    "end": 360,
+    "incoming_transition": 0.55,
+    "speech_start": 335.65000000000003,
+    "speech_end": 356.50600000000003,
+    "silence_after": 3.4939999999999714
+  }
+]

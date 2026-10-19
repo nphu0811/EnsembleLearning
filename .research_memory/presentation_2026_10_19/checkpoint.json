@@ -1,0 +1,326 @@
+{
+  "date": "2026-10-19",
+  "timezone": "Asia/Saigon",
+  "task": "DEFENSE_8_SCENES_360S_NATIVE_PPTX_AND_VIDEO",
+  "status": "DONE_ARTIFACT_VALIDATED",
+  "validation": {
+    "status": "PASS",
+    "checks_passed": 48,
+    "checks_total": 48,
+    "failures": [],
+    "checks": [
+      {
+        "check": "artifact_exists:NCKH_Ensemble_IDS_Final.pptx",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "artifact_exists:NCKH_Ensemble_IDS_Preview.mp4",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "artifact_exists:NCKH_Ensemble_IDS_Static.pdf",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "artifact_exists:Kich_ban_thuyet_trinh_6_phut.md",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "artifact_exists:QnA_4_phut.md",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "artifact_exists:Storyboard.md",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "artifact_exists:Skill_Decision_Matrix.md",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "artifact_exists:Asset_Manifest.md",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "artifact_exists:Scientific_Evidence_Map.md",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "frozen_unchanged:exports/report_revision_v6_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V6.pdf",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "frozen_unchanged:results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "frozen_unchanged:results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "frozen_unchanged:results/controlled_extensions/p21_train_only_science_summary_20261019_022655/aggregate.json",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "frozen_unchanged:config/p21_train_only_protocol_2026_10_18.json",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "frozen_unchanged:src/models/run_unsw_phase9_final_holdout.py",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "frozen_unchanged:src/models/run_unsw_ensemble_phase7_2.py",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "frozen_unchanged:tools/p21_science_core.py",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "frozen_unchanged:tools/p21_selector_core.py",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "v6_frozen_identity",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "slide_count32",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "no_unrelated_project_or_placeholders",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "all32_have_notes",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "appendix_hidden_only",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "native_editable_not_flattened",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "unique_shape_names",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "check": "no_off_canvas_shapes",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "check": "zip_crc",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "all_package_xml_parses",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "check": "native_morph_present",
+        "pass": true,
+        "detail": [
+          3,
+          5,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          14,
+          16,
+          17,
+          19
+        ]
+      },
+      {
+        "check": "main_show_range1to20",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "internal_slide_links_resolve",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "static_pdf20_main_keyframes",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "pdf_selectable_titles",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "pdf_vietnamese_and_no_replacement",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "pdf_word_bounds",
+        "pass": true,
+        "detail": []
+      },
+      {
+        "check": "video_exact_360_seconds",
+        "pass": true,
+        "detail": "360.000000"
+      },
+      {
+        "check": "video1080p30_h264",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "audio_aac_present",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "native_video_excluded_appendix",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "full_decode_clean",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "timeline360_8scenes",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "tts_within_each_slot",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "tts_pause_available",
+        "pass": true,
+        "detail": 0.7119999999999891
+      },
+      {
+        "check": "independent_visual_qa_pass",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "video_all20_states_in_order",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "video_no_stable_appendix_state",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "runtime_architecture_and_fn_motion",
+        "pass": true,
+        "detail": null
+      },
+      {
+        "check": "p21_readonly_verifier",
+        "pass": true,
+        "detail": "{\n  \"status\": \"PASS_FIVE_SEED_READ_ONLY_AUDIT\",\n  \"completed_seeds_verified\": 5,\n  \"arms_claimed\": 25,\n  \"official_test_opened_by_this_audit\": false,\n  \"metrics_recomputed_from_existing_counts\": true,\n  \"independent_external_validation\": false,\n  \"failures\": []\n}"
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "presentation/nckh_defense/NCKH_Ensemble_IDS_Final.pptx",
+      "sha256": "df3115d91ebc08638b62061d9a6276353823c674c9b88ecd8872cb17000293bf",
+      "bytes": 165419
+    },
+    {
+      "path": "presentation/nckh_defense/NCKH_Ensemble_IDS_Preview.mp4",
+      "sha256": "b3016b6798717ed9a5b107c86fe2a70915f990b6865a26ba6ff6b5eca0de9470",
+      "bytes": 12519165
+    },
+    {
+      "path": "presentation/nckh_defense/NCKH_Ensemble_IDS_Static.pdf",
+      "sha256": "eddd6b59b3b1322b6e161e101e56e08052b29464e3e831aab3698b58655a1edd",
+      "bytes": 353680
+    },
+    {
+      "path": "presentation/nckh_defense/Kich_ban_thuyet_trinh_6_phut.md",
+      "sha256": "8ab5c8017c5247c054235443cd0bd267bb95ef2fe1ea0b445b9c6d5c81025e2e",
+      "bytes": 19506
+    },
+    {
+      "path": "presentation/nckh_defense/QnA_4_phut.md",
+      "sha256": "a93cc5030abf075f1ef72296919ed06ba1a463a9808c11cd1bfe6f94573967cf",
+      "bytes": 5246
+    },
+    {
+      "path": "presentation/nckh_defense/Storyboard.md",
+      "sha256": "596c954f5822958667438ad551f287d3d8c57466c3870801e502f511ebfab14f",
+      "bytes": 6336
+    },
+    {
+      "path": "presentation/nckh_defense/Skill_Decision_Matrix.md",
+      "sha256": "f5d31b82d0b029bd3bb290f2ef41d27d5561825d708cb1b864b483e642ee3664",
+      "bytes": 4925
+    },
+    {
+      "path": "presentation/nckh_defense/Asset_Manifest.md",
+      "sha256": "8215107ad20b5a113ac649c13b476f2c7aa9b2d02698f47188ab80bdfa875c76",
+      "bytes": 2385
+    },
+    {
+      "path": "presentation/nckh_defense/Scientific_Evidence_Map.md",
+      "sha256": "b8ea79615dba3cc61fdb0f6848a00b7f7f06611c7aec3a0b49043bceadcb6938",
+      "bytes": 4984
+    },
+    {
+      "path": "presentation/nckh_defense/QA_Report.md",
+      "sha256": "f4725b6df5100f982e24c61d015ac867f10e7bddc44297f4120299591edfcb58",
+      "bytes": 7115
+    },
+    {
+      "path": "presentation/nckh_defense/NCKH_Ensemble_IDS_Delivery.zip",
+      "sha256": "eb79fbacbd5405b83555bbab0787d136eab64b3eebd940a68be550a423b386fa",
+      "bytes": 13714883
+    }
+  ],
+  "no_training_or_test_raw_access": true,
+  "next_action": "Human rehearsal using actual presenters and venue projector; no automatic background work."
+}

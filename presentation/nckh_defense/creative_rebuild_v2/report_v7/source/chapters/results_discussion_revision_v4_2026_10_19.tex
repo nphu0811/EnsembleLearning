@@ -1,0 +1,164 @@
+\section{Phạm vi đánh giá và cách diễn giải chỉ số}
+\label{sec:pham-vi-ket-qua}
+
+Chương này trình bày kết quả đánh giá các mô hình phân loại nhị phân trên UNSW-NB15, với Normal = 0 và Attack = 1. Official TRAIN có 175\,341 dòng; official TEST có 82\,332 dòng, gồm 37\,000 Normal và 45\,332 Attack. Ba pipeline cuối là Random Forest 42 đặc trưng (RF-42), Stacking 42 đặc trưng (Stacking-42) và Random Forest 17 đặc trưng (RF-17); cả ba dùng ngưỡng phân loại 0,5. Các biến \texttt{id}, \texttt{label} và \texttt{attack\_cat} không được dùng làm predictor. Trường \texttt{attack\_cat} chỉ hỗ trợ phân tích hậu nghiệm các mẫu Attack bị bỏ sót, không đại diện cho kết quả phân loại đa lớp.
+
+Với Attack là lớp dương, FPR là tỷ lệ Normal bị gán nhầm thành Attack, còn FNR là tỷ lệ Attack bị bỏ sót:
+\begin{equation}
+  \mathrm{FPR}=\frac{\mathrm{FP}}{\mathrm{TN}+\mathrm{FP}},
+  \qquad
+  \mathrm{FNR}=\frac{\mathrm{FN}}{\mathrm{TP}+\mathrm{FN}},
+  \qquad
+  \mathrm{Detection\ Rate}=1-\mathrm{FNR}.
+\end{equation}
+Macro-F1 cho trọng số bằng nhau giữa hai lớp; MCC tổng hợp sự phù hợp giữa dự đoán và nhãn qua confusion matrix. Vì vậy, hai chỉ số này được đọc cùng số FP/FN và không dùng Accuracy đơn lẻ để xếp hạng pipeline.
+
+\section{Kết quả trên official holdout}
+\label{sec:ket-qua-official}
+
+Bảng~\ref{tab:ket-qua-official} cho thấy cả ba pipeline phát hiện phần lớn mẫu Attack nhưng vẫn gán nhầm hơn một phần tư số mẫu Normal. Chênh lệch giữa RF-42 và Stacking-42 nhỏ theo Macro-F1 và MCC, trong khi hai loại lỗi thay đổi theo hướng đối nghịch: Stacking giảm FP 142 mẫu, từ 10\,003 xuống 9\,861, nhưng tăng FN 118 mẫu, từ 734 lên 852. Chưa có hàm chi phí vận hành để quy đổi hai loại lỗi về cùng thang đo. Vì vậy, kết quả này chưa xác định được cấu hình phù hợp hơn cho mọi bối cảnh sử dụng.
+
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\caption{Hiệu năng nhị phân trên official TEST (82\,332 mẫu; ngưỡng 0,5).}
+\label{tab:ket-qua-official}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}X S[table-format=1.6] S[table-format=1.6] S[table-format=2.4] S[table-format=1.4] S[table-format=5.0] S[table-format=4.0]}
+\toprule
+Pipeline & {Macro-F1} & {MCC} & {FPR (\%)} & {FNR (\%)} & {FP} & {FN}\\
+\midrule
+RF-42 & 0.863343 & 0.750910 & 27.0351 & 1.6192 & 10003 & 734\\
+Stacking-42 & 0.863840 & 0.750497 & 26.6514 & 1.8795 & 9861 & 852\\
+RF-17 & 0.860673 & 0.746881 & 27.6324 & 1.5618 & 10224 & 708\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+So với RF-42, RF-17 có Macro-F1 thấp hơn 0.002670, ít hơn 26 FN nhưng nhiều hơn 221 FP. Thời gian huấn luyện và kích thước ước lượng nhỏ hơn đáng kể trong lần chạy lịch sử (Bảng~\ref{tab:chi-phi}), song RF-17 cũng khác RF-42 về số cây và kích thước lá. Do đó, chênh lệch này là đánh đổi giữa hai pipeline, không phải hiệu ứng riêng của việc giảm số đặc trưng.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{assets/error_tradeoff.pdf}
+\caption{Chênh lệch số FP và FN của Stacking-42 so với RF-42 trên cùng official TEST.}
+\label{fig:delta-fp-fn}
+\end{figure}
+
+\section{Độ bất định của chênh lệch và kiểm định cặp}
+\label{sec:bat-dinh}
+
+Bảng~\ref{tab:chenh-lech-ci} trình bày hiệu số Stacking-42 trừ RF-42 cùng khoảng tin cậy paired bootstrap 95\%. CI của Macro-F1 và MCC chứa 0; do đó, dữ liệu chưa cho thấy bằng chứng đủ rõ về ưu thế của Stacking trên hai chỉ số tổng hợp, nhưng cũng không thiết lập tương đương thống kê. McNemar exact sau hiệu chỉnh Holm cho ba cặp mô hình trong view đánh giá tương ứng cho $p_{\mathrm{Holm}}=0.468377$ đối với tính đúng tổng thể. Phép kiểm định này không kiểm định trực tiếp hiệu số Macro-F1.
+
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{10pt}
+\caption{Hiệu số Stacking-42 trừ RF-42 và CI 95\% paired bootstrap trên official TEST; hiệu số ở thang 0--1.}
+\label{tab:chenh-lech-ci}
+\begin{tabularx}{\linewidth}{X S[table-format=+1.6] S[table-format=+1.6] S[table-format=+1.6]}
+\toprule
+Chỉ số & {$\Delta$} & {Cận dưới} & {Cận trên}\\
+\midrule
+Macro-F1 & +0.000497 & -0.000312 & +0.001309\\
+MCC & -0.000413 & -0.001938 & +0.001140\\
+FPR & -0.003838 & -0.005243 & -0.002432\\
+FNR & +0.002603 & +0.001853 & +0.003375\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Các khoảng được tạo bằng 10\,000 lượt bootstrap phân tầng theo nhãn, seed 20260928, lấy mẫu theo các mẫu hình dự đoán liên hợp trên cùng dòng. CI percentile được tính riêng cho từng chỉ số; không có điều chỉnh đồng thời cho toàn bộ họ chỉ số. Hai CI lỗi cho thấy FPR thấp hơn và FNR cao hơn ở Stacking trong phép lấy mẫu lại này. Đây là bất định theo các dòng benchmark đã có dự đoán, không phản ánh biến thiên do huấn luyện lại, phụ thuộc session/host hay dữ liệu ngoài UNSW-NB15.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{assets/paired_effects.pdf}
+\caption{Hiệu số Stacking-42 trừ RF-42 và CI 95\% paired bootstrap; trục hoành thể hiện hiệu số nhân 100.}
+\label{fig:paired-metrics}
+\end{figure}
+
+\section{Chi phí quan sát trong lần chạy lịch sử}
+\label{sec:chi-phi}
+
+Bảng~\ref{tab:chi-phi} đối chiếu thời gian huấn luyện, thời gian suy luận trung bình theo lô và dung lượng mô hình ước tính trong lần thực nghiệm ban đầu. Các con số cho thấy Stacking cần nhiều thời gian huấn luyện hơn RF-42 trong lần chạy đó, còn RF-17 có thời gian và kích thước thấp hơn. Các số đo chỉ mô tả những cấu hình trong môi trường lịch sử đó; đây chưa phải benchmark lặp lại trên thiết bị triển khai.
+
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\caption{Chi phí tính toán của ba pipeline trong lần thực nghiệm ban đầu; dung lượng quy đổi sang MiB.}
+\label{tab:chi-phi}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}X S[table-format=2.0] S[table-format=4.3] S[table-format=1.6] S[table-format=3.3]}
+\toprule
+Pipeline & {\shortstack{Số biến\\gốc}} & {\shortstack{Huấn luyện\\(s)}} & {\shortstack{Suy luận theo lô\\(ms/flow)}} & {\shortstack{Dung lượng\\(MiB)}}\\
+\midrule
+RF-42 & 42 & 371.244 & 0.008679 & 205.490\\
+Stacking-42 & 42 & 980.170 & 0.012445 & 206.216\\
+RF-17 & 17 & 57.255 & 0.003562 & 105.044\\
+\bottomrule
+\end{tabularx}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}\footnotesize
+\emph{Ghi chú về chi phí lịch sử:} Các số giây phản ánh thời gian \textbf{fit riêng từng mô hình trong pipeline lịch sử} với cấu hình RF17 và RF42 khác nhau; \textbf{chưa bao gồm chi phí chọn stable17 từ đầu}. Log tài nguyên chuẩn về model CPU, RAM, mức song song thực tế và phiên bản môi trường gốc chưa đầy đủ; không suy ra chắc chắn cấu hình đa luồng. Các số này không phải đối chứng matched hoặc thời gian huấn luyện end-to-end, và không đối chiếu tốc độ tuyệt đối với P21.
+\end{minipage}
+\end{table}
+
+Trong cùng đợt thực nghiệm, thời gian huấn luyện RF-42 gấp khoảng 6.48 lần RF-17; kích thước ước lượng của RF-17 thấp hơn khoảng 48.88\%. Trường suy luận là thời gian trung bình trên một dòng khi xử lý batch đã đánh giá, không phải độ trễ của một yêu cầu riêng lẻ. Môi trường thư viện gốc chưa được xác định trực tiếp, và kích thước được báo cáo không chứng minh artifact mô hình lịch sử hiện còn tồn tại.
+
+\section{Sai số theo họ tấn công}
+\label{sec:attack-family-error}
+
+Phân nhóm theo nhãn Attack thật sau dự đoán cho thấy những khác biệt bị gộp trong chỉ số tổng thể. Trong số 6\,062 mẫu Fuzzers, Stacking-42 bỏ sót 754 mẫu, nhiều hơn RF-42 (621); với Generic, số bỏ sót của Stacking thấp hơn (14 so với 57). Bảng~\ref{tab:attack-family} mở rộng đối chiếu tới đủ chín nhóm Attack và cả ba pipeline. FNR và số FN được nêu trong Bảng~\ref{tab:attack-family}, còn khoảng tin cậy Wilson 95\% được tách riêng tại Bảng~\ref{tab:attack-family-wilson} để bảo đảm kích thước chữ khi in khổ A4.
+
+\begin{table}[htbp]\centering
+\small\renewcommand{\arraystretch}{1.30}
+\setlength{\tabcolsep}{5pt}
+\caption{Số tấn công bỏ sót (FN) và FNR theo chín họ Attack trên official TEST; mỗi ô: \textbf{FN / FNR (\%)}.}
+\label{tab:attack-family}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.2cm}r*{3}{>{\centering\arraybackslash}X}@{}}
+\toprule
+Họ Attack & $n$ & Stacking-42 & RF-42 & RF-17\\
+\midrule
+Analysis & 677 & 19 / 2.81\% & 3 / 0.44\% & 1 / 0.15\%\\
+Backdoor & 583 & 1 / 0.17\% & 0 / 0.00\% & 0 / 0.00\%\\
+DoS & 4089 & 9 / 0.22\% & 4 / 0.10\% & 2 / 0.05\%\\
+Exploits & 11132 & 49 / 0.44\% & 45 / 0.40\% & 54 / 0.49\%\\
+Fuzzers & 6062 & 754 / 12.44\% & 621 / 10.24\% & 623 / 10.28\%\\
+Generic & 18871 & 14 / 0.07\% & 57 / 0.30\% & 3 / 0.02\%\\
+Reconnaissance & 3496 & 2 / 0.06\% & 1 / 0.03\% & 19 / 0.54\%\\
+Shellcode & 378 & 3 / 0.79\% & 2 / 0.53\% & 6 / 1.59\%\\
+Worms & 44 & 1 / 2.27\% & 1 / 2.27\% & 0 / 0.00\%\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[htbp]\centering
+\small\renewcommand{\arraystretch}{1.23}
+\setlength{\tabcolsep}{5pt}
+\caption{Khoảng tin cậy Wilson 95\% cho FNR (\%) của cùng chín họ Attack. Đây là CI biên theo nhóm, không phải kiểm định paired giữa mô hình.}
+\label{tab:attack-family-wilson}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.2cm}r*{3}{>{\centering\arraybackslash}X}@{}}
+\toprule
+Họ Attack & $n$ & Stacking-42 & RF-42 & RF-17\\
+\midrule
+Analysis & 677 & [1.80; 4.34] & [0.15; 1.29] & [0.03; 0.83]\\
+Backdoor & 583 & [0.03; 0.97] & [0.00; 0.65] & [0.00; 0.65]\\
+DoS & 4089 & [0.12; 0.42] & [0.04; 0.25] & [0.01; 0.18]\\
+Exploits & 11132 & [0.33; 0.58] & [0.30; 0.54] & [0.37; 0.63]\\
+Fuzzers & 6062 & [11.63; 13.29] & [9.51; 11.03] & [9.54; 11.07]\\
+Generic & 18871 & [0.04; 0.12] & [0.23; 0.39] & [0.01; 0.05]\\
+Reconnaissance & 3496 & [0.02; 0.21] & [0.01; 0.16] & [0.35; 0.85]\\
+Shellcode & 378 & [0.27; 2.31] & [0.15; 1.91] & [0.73; 3.42]\\
+Worms & 44 & [0.40; 11.81] & [0.40; 11.81] & [0.00; 8.03]\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Hai bảng mô tả FN và khoảng tin cậy của FNR trong từng nhóm nhãn thật trên cùng official TEST, không phải độ chính xác của bộ phân loại đa lớp. Khoảng Wilson là khoảng nhị thức biên theo từng nhóm và pipeline; không phải kiểm định cặp giữa hai mô hình. Những nhóm hiếm, đặc biệt Worms, có khoảng rộng nên tỷ lệ quan sát được cần được đọc thận trọng. Các khác biệt theo nhóm gợi ý vị trí cần khảo sát thêm, nhưng không xác định đặc trưng hay cơ chế nào gây ra lỗi.
+
+\section{Độ nhạy trên exact-duplicate-filtered subset}
+\label{sec:exact-duplicate-filtered}
+
+Trong official TEST có 8\,541 dòng mang \emph{vector 42 đặc trưng gốc giống hệt} ít nhất một vector TRAIN; sau khi lọc các dòng này còn 73\,791 dòng để tạo \emph{exact-duplicate-filtered view}. Ở đây, 'duplicate' chỉ có nghĩa là khớp toàn bộ 42 biến predictor, \textbf{không đồng nghĩa} cùng bản ghi gốc, session, thời điểm hoặc một cuộc tấn công mới. Bảng~\ref{tab:rev-rq4} so sánh Macro-F1 giữa official TEST và subset này, đồng thời báo cáo trực tiếp độ giảm. Đây là một view con của cùng holdout, không phải tập kiểm thử độc lập. Các giá trị giảm ở cả ba pipeline và thứ hạng theo Macro-F1 không đổi, nhưng phép lọc exact-vector không kiểm tra độc lập theo thời gian, host hoặc session. Vì vậy, nó cung cấp một phân tích độ nhạy hữu ích trong benchmark hiện có chứ chưa trả lời đầy đủ khả năng khái quát ngoài split chính thức.

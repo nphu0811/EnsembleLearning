@@ -1,0 +1,20 @@
+{
+  "protected_hashes": {
+    "exports/report_revision_v6_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V6.pdf": true,
+    "results/final_evaluation/unsw_nb15/phase9_holdout/tables/final_metrics.csv": true,
+    "results/final_analysis/unsw_nb15/phase10_statistics/tables/paired_bootstrap_differences.csv": true,
+    "results/controlled_extensions/p21_train_only_science_summary_20261019_022655/aggregate.json": true,
+    "config/p21_train_only_protocol_2026_10_18.json": true,
+    "src/models/run_unsw_phase9_final_holdout.py": true,
+    "src/models/run_unsw_ensemble_phase7_2.py": true,
+    "tools/p21_science_core.py": true,
+    "tools/p21_selector_core.py": true,
+    "presentation\\nckh_defense\\NCKH_Ensemble_IDS_Final.pptx": true,
+    "presentation\\nckh_defense\\NCKH_Ensemble_IDS_Preview.mp4": true
+  },
+  "confusion_counts_verified": true,
+  "cost_crossing": 1.2033898305084745,
+  "static_pdf_pages": 29,
+  "pdf_glyph_issues": [],
+  "com_bound_flags": 0
+}

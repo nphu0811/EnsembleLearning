@@ -1,0 +1,32 @@
+--- V6/chapters/p21_results_v5_2026_10_19.tex
++++ V7/chapters/p21_results_v5_2026_10_19.tex
+@@ -1,6 +1,6 @@
+ \section{P21: Kết quả đối chứng hậu nghiệm trên internal validation của TRAIN}
+ \label{sec:p21-results}
+-Báo cáo kết quả bổ sung này được tạo \emph{sau} quá trình đánh giá official TEST lịch sử. Năm seed tạo năm tập FIT 60\,000 dòng khác nhau nhưng tất cả dự đoán trên \textbf{cùng} 35\,069 dòng internal validation của official TRAIN (11\,200 Normal và 23\,869 Attack). Đây không phải năm lần đánh giá độc lập trên TEST hoặc một benchmark ngoài. Tất cả 25 lượt fit (5 arm $\times$ 5 seed) đều hoàn tất, với checksum nguồn dữ liệu và cấu hình khớp, confusion matrix được kiểm tra lại, không truy cập official TEST khi chạy P21.
++Thực nghiệm bổ sung được thực hiện \emph{sau} giai đoạn đánh giá official TEST lịch sử. Năm seed tạo năm tập FIT 60\,000 dòng khác nhau nhưng tất cả dự đoán trên \textbf{cùng} 35\,069 dòng internal validation của official TRAIN (11\,200 Normal và 23\,869 Attack). Đây không phải năm lần đánh giá độc lập trên TEST hoặc một benchmark ngoài. Tất cả 25 lượt fit (5 arm $\times$ 5 seed) đều hoàn tất, với checksum nguồn dữ liệu và cấu hình khớp, confusion matrix được kiểm tra lại, không truy cập official TEST khi chạy P21.
+ 
+ \begin{table}[htbp]\centering
+ \small
+@@ -46,7 +46,7 @@
+ \Delta \mathrm{MacroF1}_{\mathrm{Stack-RF}} =
+ [-0.000297,\;-0.001153,\;-0.000468,\;+0.000041,\;-0.000565].
+ \]
+-Có một seed nhỉnh hơn rất nhỏ nhưng không làm đảo dấu hiệu số trung bình.
++Ở một seed, Stacking nhỉnh hơn rất ít; hiệu số trung bình vẫn giữ nguyên dấu.
+ 
+ \begin{table}[htbp]\centering
+ \small
+@@ -86,10 +86,10 @@
+ Chỉ fit Stacking-Lite & 652.913\\\bottomrule
+ \end{tabular}
+ \end{table}
+-Nếu bỏ qua chi phí chọn feature, A1 fit RF nhanh hơn A0 khoảng 2.85 lần. Trong kịch bản \emph{phải tìm lại 17 đặc trưng cho mỗi lượt huấn luyện}, chi phí \emph{selection + RF fit} của A1 cao hơn khoảng 28.5\% so với riêng fit RF42 trong thiết kế P21. Cả hai tổng này chưa cộng thời gian xử lý dữ liệu ngoài các lời gọi đã đo, lưu artifact, giám sát hay latency phục vụ nên không được gọi là tổng chi phí triển khai end-to-end. Vì vậy không thể dựa vào thời gian fit RF17 để tuyên bố Feature Selection đã làm giảm \emph{tổng} chi phí training.
++Nếu bỏ qua chi phí chọn feature, A1 fit RF nhanh hơn A0 khoảng 2.85 lần. Trong kịch bản \emph{phải tìm lại 17 đặc trưng cho mỗi lượt huấn luyện}, chi phí \emph{selection + RF fit} của A1 cao hơn khoảng 28.5\% so với riêng fit RF42 trong thiết kế P21. Các số này chưa tính thời gian xử lý dữ liệu ngoài những lời gọi đã đo, lưu artifact, giám sát và latency phục vụ. Chúng chưa phản ánh chi phí triển khai end-to-end. Thời gian fit RF17 vì thế chưa đủ để kết luận Feature Selection làm giảm \emph{tổng} chi phí training.
+ 
+ \subsection{RQ5: Cân bằng lớp không đồng nghĩa tăng phát hiện Attack}
+ Trên dữ liệu TRAIN, Normal là lớp ít mẫu và được tăng trọng số hoặc lặp lại trong hai nhánh can thiệp. A2 giảm FPR mạnh hơn A3 nhưng cũng làm FNR tăng mạnh hơn. So với A0, A2 giảm FPR 3.1643 điểm phần trăm, tăng FNR 1.7881 điểm; A3 giảm FPR 2.2089 điểm, tăng FNR 1.1680 điểm. Cả hai làm giảm Macro-F1 trung bình, cho thấy đánh đổi giữa cảnh báo giả và bỏ sót tấn công trong mô hình và benchmark nội bộ cụ thể này. Không chọn ngưỡng mới dựa vào validation đã đánh giá.
+ 
+ \subsection{Chất lượng bằng chứng và giới hạn phát biểu}
+-Mỗi seed có năm cấu hình trùng digest FIT source và cùng nhãn true 35\,069 dòng validation, các kiểm tra kết quả phát hiện tổng TN+FP+FN+TP đúng support, khớp các chỉ số Macro-F1/MCC/FPR/FNR và không cho thấy lệch dữ liệu trong metadata. Tuy nhiên đây là \emph{kiểm tra nhất quán báo cáo}, không phải replay độc lập trên máy thứ hai hay đối chứng theo thời gian. Cụm seed chỉ thay đổi mẫu FIT và tính ngẫu nhiên của mô hình; do validation được tái sử dụng, độ lệch chuẩn trong các bảng đo biến thiên \emph{có điều kiện trên validation đó}, không phải sai số tổng quát hóa. Số liệu P21 không được gộp với official TEST 82\,332 dòng của giai đoạn lịch sử để tính p-value hay chọn mô hình cuối.
++Trong mỗi seed, năm cấu hình dùng cùng digest FIT source và cùng nhãn thật của 35\,069 dòng validation. Kiểm tra xác nhận tổng TN+FP+FN+TP khớp support, các chỉ số Macro-F1/MCC/FPR/FNR nhất quán và metadata không cho thấy lệch dữ liệu. Tuy nhiên đây là \emph{kiểm tra nhất quán báo cáo}, không phải replay độc lập trên máy thứ hai hay đối chứng theo thời gian. Cụm seed chỉ thay đổi mẫu FIT và tính ngẫu nhiên của mô hình; do validation được tái sử dụng, độ lệch chuẩn trong các bảng đo biến thiên \emph{có điều kiện trên validation đó}, không phải sai số tổng quát hóa. Số liệu P21 không được gộp với official TEST 82\,332 dòng của giai đoạn lịch sử để tính p-value hay chọn mô hình cuối.

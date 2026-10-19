@@ -65,3 +65,10 @@ Actual37pagePDF and savedsummaryP16QA,17displaymap,sixindependentstandalonefigur
 ##17/10/2026 P19safe
 
 Read-onlysmokemodelinventory,explicitallowlistlocalINTERNAL_REVIEW_ONLYZIP,manifest/CRC/hash/paths245checksplusindependent121checksand3tests. Safe-releasepolicy/reportandP20packet/rubric/questionsprepared. Noindex/model/rawdata/history/approvedPDF/bibliographychange. NoFINALorLICENSE.
+
+
+##19/10/2026 — Defense artifacts
+Added isolated presentation/nckh_defense/ deliverable workspace with native PPTX/PDF/360s narrated MP4,10requiredproducts, sourceSVG/code, independentQA and checksummedZIP. Preserved scientificresults and originaltemplates. Reconciled staleSTATE against V6/P21 evidence; saved precise handoff.
+
+## 2026-10-19 Creative rebuild V2 delivery
+Created presentation/nckh_defense/creative_rebuild_v2/. V7 report49pages/38prosechanges; native timeline439effects in17main slides/8scenes;12hiddenQ&A;360s1080p30actualvideo; source+3concepts+7heroclips+26xreleasefiles/checksums. See release_validation.json for exact file count. Independent staticQA and full decodePASS; reference/TTS listening limits documented.

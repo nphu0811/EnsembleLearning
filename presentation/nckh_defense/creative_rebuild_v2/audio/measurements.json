@@ -1,0 +1,155 @@
+[
+  {
+    "slide": 1,
+    "scene": 1,
+    "planned": 20,
+    "speech_seconds": 17.136,
+    "remaining": 2.8640000000000008,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  },
+  {
+    "slide": 2,
+    "scene": 2,
+    "planned": 20,
+    "speech_seconds": 17.16,
+    "remaining": 2.84,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  },
+  {
+    "slide": 3,
+    "scene": 2,
+    "planned": 15,
+    "speech_seconds": 13.608,
+    "remaining": 1.3919999999999995,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  },
+  {
+    "slide": 4,
+    "scene": 3,
+    "planned": 20,
+    "speech_seconds": 18.792,
+    "remaining": 1.2079999999999984,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  },
+  {
+    "slide": 5,
+    "scene": 3,
+    "planned": 20,
+    "speech_seconds": 16.992,
+    "remaining": 3.007999999999999,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  },
+  {
+    "slide": 6,
+    "scene": 3,
+    "planned": 20,
+    "speech_seconds": 16.128,
+    "remaining": 3.872,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  },
+  {
+    "slide": 7,
+    "scene": 4,
+    "planned": 18,
+    "speech_seconds": 16.488,
+    "remaining": 1.5120000000000005,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  },
+  {
+    "slide": 8,
+    "scene": 4,
+    "planned": 17,
+    "speech_seconds": 15.672,
+    "remaining": 1.3279999999999994,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  },
+  {
+    "slide": 9,
+    "scene": 4,
+    "planned": 20,
+    "speech_seconds": 18.12,
+    "remaining": 1.879999999999999,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  },
+  {
+    "slide": 10,
+    "scene": 5,
+    "planned": 20,
+    "speech_seconds": 18.072,
+    "remaining": 1.9280000000000008,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  },
+  {
+    "slide": 11,
+    "scene": 5,
+    "planned": 20,
+    "speech_seconds": 17.184,
+    "remaining": 2.815999999999999,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  },
+  {
+    "slide": 12,
+    "scene": 5,
+    "planned": 25,
+    "speech_seconds": 23.16,
+    "remaining": 1.8399999999999999,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  },
+  {
+    "slide": 13,
+    "scene": 6,
+    "planned": 25,
+    "speech_seconds": 21.456,
+    "remaining": 3.5440000000000005,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  },
+  {
+    "slide": 14,
+    "scene": 6,
+    "planned": 25,
+    "speech_seconds": 23.208,
+    "remaining": 1.7920000000000016,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  },
+  {
+    "slide": 15,
+    "scene": 7,
+    "planned": 25,
+    "speech_seconds": 20.832,
+    "remaining": 4.167999999999999,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  },
+  {
+    "slide": 16,
+    "scene": 7,
+    "planned": 25,
+    "speech_seconds": 22.416,
+    "remaining": 2.5839999999999996,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  },
+  {
+    "slide": 17,
+    "scene": 8,
+    "planned": 25,
+    "speech_seconds": 22.632,
+    "remaining": 2.3679999999999986,
+    "voice": "vi-VN-HoaiMyNeural",
+    "rate": "-5%"
+  }
+]

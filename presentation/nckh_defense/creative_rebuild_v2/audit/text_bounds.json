@@ -1,0 +1,2952 @@
+{
+  "flagged": [],
+  "minor_glyph_overhang": [
+    {
+      "slide": 23,
+      "shape": "text-6",
+      "text": "P21 chọn 17 biến trong FIT bằng MI, L1 và ExtraTrees qua 5 selector se",
+      "height": 151.46487426757812,
+      "bound_height": 150.0,
+      "width": 698.4000244140625,
+      "bound_width": 702.8800048828125
+    },
+    {
+      "slide": 26,
+      "shape": "text-6",
+      "text": "Khoảng tin cậy của chênh lệch Macro-F1 và MCC chứa 0 nên nhóm chưa thấ",
+      "height": 151.46487426757812,
+      "bound_height": 150.0,
+      "width": 698.4000244140625,
+      "bound_width": 702.8750610351562
+    }
+  ],
+  "width_tolerance_pt": 6,
+  "height_tolerance_pt": 2,
+  "rows": [
+    {
+      "slide": 1,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         HOOK",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 291.5
+    },
+    {
+      "slide": 1,
+      "shape": "text-2",
+      "text": "01",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 1,
+      "shape": "source",
+      "text": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải ",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 383.8750305175781
+    },
+    {
+      "slide": 1,
+      "shape": "text-4",
+      "text": "Nghiên cứu Ensemble Learning\rcho phát hiện xâm nhập mạng",
+      "height": 72.0,
+      "bound_height": 50.400001525878906,
+      "width": 720.0,
+      "bound_width": 285.675048828125
+    },
+    {
+      "slide": 1,
+      "shape": "hook1",
+      "text": "BỚT CẢNH BÁO.",
+      "height": 93.5999984741211,
+      "bound_height": 78.0,
+      "width": 864.0,
+      "bound_width": 546.75
+    },
+    {
+      "slide": 1,
+      "shape": "hook2",
+      "text": "AN TOÀN HƠN?",
+      "height": 93.5999984741211,
+      "bound_height": 78.0,
+      "width": 864.0,
+      "bound_width": 520.3250122070312
+    },
+    {
+      "slide": 1,
+      "shape": "text-7",
+      "text": "?",
+      "height": 144.0,
+      "bound_height": 138.0,
+      "width": 165.60000610351562,
+      "bound_width": 102.25
+    },
+    {
+      "slide": 1,
+      "shape": "text-8",
+      "text": "Một câu hỏi về cái giá của sai lầm.",
+      "height": 46.79999923706055,
+      "bound_height": 30.0,
+      "width": 648.0,
+      "bound_width": 369.4599914550781
+    },
+    {
+      "slide": 2,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         TRAFFIC",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 311.3750305175781
+    },
+    {
+      "slide": 2,
+      "shape": "text-2",
+      "text": "02",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 2,
+      "shape": "source",
+      "text": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải ",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 383.8750305175781
+    },
+    {
+      "slide": 2,
+      "shape": "hero-title",
+      "text": "MỘT BẢN GHI.  HAI KHẢ NĂNG.",
+      "height": 82.80000305175781,
+      "bound_height": 54.0,
+      "width": 864.0,
+      "bound_width": 697.5
+    },
+    {
+      "slide": 2,
+      "shape": "text-42",
+      "text": "NORMAL",
+      "height": 28.799999237060547,
+      "bound_height": 25.200000762939453,
+      "width": 216.0,
+      "bound_width": 80.5
+    },
+    {
+      "slide": 2,
+      "shape": "text-43",
+      "text": "ATTACK",
+      "height": 28.799999237060547,
+      "bound_height": 25.200000762939453,
+      "width": 216.0,
+      "bound_width": 80.5
+    },
+    {
+      "slide": 2,
+      "shape": "text-44",
+      "text": "Sơ đồ minh họa flow và quyết định nhị phân.",
+      "height": 46.79999923706055,
+      "bound_height": 27.600000381469727,
+      "width": 792.0,
+      "bound_width": 437.3999938964844
+    },
+    {
+      "slide": 3,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         DATA",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 291.5
+    },
+    {
+      "slide": 3,
+      "shape": "text-2",
+      "text": "02",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 3,
+      "shape": "source",
+      "text": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải ",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 383.8750305175781
+    },
+    {
+      "slide": 3,
+      "shape": "hero-title",
+      "text": "DỮ LIỆU CỐ ĐỊNH.\rCÂU HỎI MỞ.",
+      "height": 144.0,
+      "bound_height": 129.60000610351562,
+      "width": 576.0,
+      "bound_width": 494.75
+    },
+    {
+      "slide": 3,
+      "shape": "text-6",
+      "text": "175.341",
+      "height": 144.0,
+      "bound_height": 111.5999984741211,
+      "width": 633.5999755859375,
+      "bound_width": 362.25
+    },
+    {
+      "slide": 3,
+      "shape": "text-7",
+      "text": "dòng TRAIN chính thức",
+      "height": 36.0,
+      "bound_height": 30.0,
+      "width": 576.0,
+      "bound_width": 250.39999389648438
+    },
+    {
+      "slide": 3,
+      "shape": "text-8",
+      "text": "82.332",
+      "height": 144.0,
+      "bound_height": 55.20000076293945,
+      "width": 201.60000610351562,
+      "bound_width": 153.6250457763672
+    },
+    {
+      "slide": 3,
+      "shape": "text-9",
+      "text": "TEST\rCHÍNH THỨC",
+      "height": 72.0,
+      "bound_height": 55.20000076293945,
+      "width": 180.0,
+      "bound_width": 145.6250457763672
+    },
+    {
+      "slide": 3,
+      "shape": "text-10",
+      "text": "RF là mốc tham chiếu. Voting / Stacking có cải thiện?",
+      "height": 46.79999923706055,
+      "bound_height": 26.399999618530273,
+      "width": 864.0,
+      "bound_width": 502.1650390625
+    },
+    {
+      "slide": 4,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         FEATURES",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 318.0
+    },
+    {
+      "slide": 4,
+      "shape": "text-2",
+      "text": "03",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 4,
+      "shape": "source",
+      "text": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải ",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 383.8750305175781
+    },
+    {
+      "slide": 4,
+      "shape": "hero-title",
+      "text": "GIỮ GÌ\rCHO MÔ HÌNH?",
+      "height": 218.0,
+      "bound_height": 216.0,
+      "width": 388.79998779296875,
+      "bound_width": 263.25
+    },
+    {
+      "slide": 4,
+      "shape": "feature-label-0",
+      "text": "id",
+      "height": 36.0,
+      "bound_height": 31.200000762939453,
+      "width": 338.3999938964844,
+      "bound_width": 42.75
+    },
+    {
+      "slide": 4,
+      "shape": "feature-label-1",
+      "text": "label",
+      "height": 36.0,
+      "bound_height": 31.200000762939453,
+      "width": 338.3999938964844,
+      "bound_width": 85.5
+    },
+    {
+      "slide": 4,
+      "shape": "feature-label-2",
+      "text": "attack_cat",
+      "height": 36.0,
+      "bound_height": 31.200000762939453,
+      "width": 338.3999938964844,
+      "bound_width": 156.75
+    },
+    {
+      "slide": 4,
+      "shape": "feature-label-3",
+      "text": "proto",
+      "height": 36.0,
+      "bound_height": 31.200000762939453,
+      "width": 338.3999938964844,
+      "bound_width": 85.5
+    },
+    {
+      "slide": 4,
+      "shape": "feature-label-4",
+      "text": "service",
+      "height": 36.0,
+      "bound_height": 31.200000762939453,
+      "width": 338.3999938964844,
+      "bound_width": 114.0
+    },
+    {
+      "slide": 4,
+      "shape": "feature-label-5",
+      "text": "state",
+      "height": 36.0,
+      "bound_height": 31.200000762939453,
+      "width": 338.3999938964844,
+      "bound_width": 85.5
+    },
+    {
+      "slide": 4,
+      "shape": "text-14",
+      "text": "42",
+      "height": 155.39999389648438,
+      "bound_height": 156.0,
+      "width": 324.0,
+      "bound_width": 180.6250457763672
+    },
+    {
+      "slide": 4,
+      "shape": "text-15",
+      "text": "predictor gốc",
+      "height": 43.20000076293945,
+      "bound_height": 34.79999923706055,
+      "width": 367.20001220703125,
+      "bound_width": 171.2150421142578
+    },
+    {
+      "slide": 4,
+      "shape": "text-30",
+      "text": "One-hot biến phân loại · Nhánh LR có chuẩn hóa",
+      "height": 46.79999923706055,
+      "bound_height": 26.399999618530273,
+      "width": 864.0,
+      "bound_width": 462.0
+    },
+    {
+      "slide": 5,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         INFER",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 298.1250305175781
+    },
+    {
+      "slide": 5,
+      "shape": "text-2",
+      "text": "03",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 5,
+      "shape": "source",
+      "text": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải ",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 383.8750305175781
+    },
+    {
+      "slide": 5,
+      "shape": "hero-title",
+      "text": "KHI DỰ ĐOÁN",
+      "height": 72.0,
+      "bound_height": 58.79999923706055,
+      "width": 792.0,
+      "bound_width": 345.5
+    },
+    {
+      "slide": 5,
+      "shape": "text-5",
+      "text": "Một đường dữ liệu. Ba mô hình cơ sở.",
+      "height": 39.599998474121094,
+      "bound_height": 30.0,
+      "width": 792.0,
+      "bound_width": 402.2550354003906
+    },
+    {
+      "slide": 5,
+      "shape": "text-7",
+      "text": "x",
+      "height": 28.799999237060547,
+      "bound_height": 20.399999618530273,
+      "width": 72.0,
+      "bound_width": 18.75
+    },
+    {
+      "slide": 5,
+      "shape": "text-8",
+      "text": "feature\rvector",
+      "height": 57.599998474121094,
+      "bound_height": 45.599998474121094,
+      "width": 129.60000610351562,
+      "bound_width": 62.209999084472656
+    },
+    {
+      "slide": 5,
+      "shape": "text-11",
+      "text": "LR",
+      "height": 28.799999237060547,
+      "bound_height": 20.399999618530273,
+      "width": 89.27999877929688,
+      "bound_width": 28.12504005432129
+    },
+    {
+      "slide": 5,
+      "shape": "text-17",
+      "text": "DT",
+      "height": 28.799999237060547,
+      "bound_height": 20.399999618530273,
+      "width": 89.27999877929688,
+      "bound_width": 28.12504005432129
+    },
+    {
+      "slide": 5,
+      "shape": "text-23",
+      "text": "RF",
+      "height": 28.799999237060547,
+      "bound_height": 20.399999618530273,
+      "width": 89.27999877929688,
+      "bound_width": 28.12504005432129
+    },
+    {
+      "slide": 5,
+      "shape": "text-28",
+      "text": "GỘP",
+      "height": 28.799999237060547,
+      "bound_height": 22.799999237060547,
+      "width": 79.19999694824219,
+      "bound_width": 43.0
+    },
+    {
+      "slide": 5,
+      "shape": "text-30",
+      "text": "Normal",
+      "height": 43.20000076293945,
+      "bound_height": 33.599998474121094,
+      "width": 144.0,
+      "bound_width": 101.0
+    },
+    {
+      "slide": 5,
+      "shape": "text-33",
+      "text": "Attack",
+      "height": 43.20000076293945,
+      "bound_height": 33.599998474121094,
+      "width": 144.0,
+      "bound_width": 88.86503601074219
+    },
+    {
+      "slide": 5,
+      "shape": "text-35",
+      "text": "Các base learner và bộ gộp đã được fit; ngưỡng quyết định 0,5.",
+      "height": 46.79999923706055,
+      "bound_height": 25.200000762939453,
+      "width": 864.0,
+      "bound_width": 565.25
+    },
+    {
+      "slide": 6,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         OOF",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 284.8750305175781
+    },
+    {
+      "slide": 6,
+      "shape": "text-2",
+      "text": "03",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 6,
+      "shape": "source",
+      "text": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải ",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 383.8750305175781
+    },
+    {
+      "slide": 6,
+      "shape": "hero-title",
+      "text": "META LEARNER HỌC TỪ\rDỰ ĐOÁN NGOÀI FOLD.",
+      "height": 122.4000015258789,
+      "bound_height": 108.0,
+      "width": 864.0,
+      "bound_width": 554.8650512695312
+    },
+    {
+      "slide": 6,
+      "shape": "text-5",
+      "text": "FIT BASE",
+      "height": 28.799999237060547,
+      "bound_height": 22.799999237060547,
+      "width": 144.0,
+      "bound_width": 94.5
+    },
+    {
+      "slide": 6,
+      "shape": "text-6",
+      "text": "OOF",
+      "height": 28.799999237060547,
+      "bound_height": 22.799999237060547,
+      "width": 144.0,
+      "bound_width": 42.0
+    },
+    {
+      "slide": 6,
+      "shape": "text-7",
+      "text": "FIT META",
+      "height": 28.799999237060547,
+      "bound_height": 22.799999237060547,
+      "width": 180.0,
+      "bound_width": 94.5
+    },
+    {
+      "slide": 6,
+      "shape": "text-9",
+      "text": "giữ",
+      "height": 21.600000381469727,
+      "bound_height": 16.799999237060547,
+      "width": 57.599998474121094,
+      "bound_width": 31.0
+    },
+    {
+      "slide": 6,
+      "shape": "text-11",
+      "text": "học",
+      "height": 21.600000381469727,
+      "bound_height": 16.799999237060547,
+      "width": 57.599998474121094,
+      "bound_width": 31.0
+    },
+    {
+      "slide": 6,
+      "shape": "text-13",
+      "text": "học",
+      "height": 21.600000381469727,
+      "bound_height": 16.799999237060547,
+      "width": 57.599998474121094,
+      "bound_width": 31.0
+    },
+    {
+      "slide": 6,
+      "shape": "text-19",
+      "text": "học",
+      "height": 21.600000381469727,
+      "bound_height": 16.799999237060547,
+      "width": 57.599998474121094,
+      "bound_width": 31.0
+    },
+    {
+      "slide": 6,
+      "shape": "text-21",
+      "text": "giữ",
+      "height": 21.600000381469727,
+      "bound_height": 16.799999237060547,
+      "width": 57.599998474121094,
+      "bound_width": 31.0
+    },
+    {
+      "slide": 6,
+      "shape": "text-23",
+      "text": "học",
+      "height": 21.600000381469727,
+      "bound_height": 16.799999237060547,
+      "width": 57.599998474121094,
+      "bound_width": 31.0
+    },
+    {
+      "slide": 6,
+      "shape": "text-29",
+      "text": "học",
+      "height": 21.600000381469727,
+      "bound_height": 16.799999237060547,
+      "width": 57.599998474121094,
+      "bound_width": 31.0
+    },
+    {
+      "slide": 6,
+      "shape": "text-31",
+      "text": "học",
+      "height": 21.600000381469727,
+      "bound_height": 16.799999237060547,
+      "width": 57.599998474121094,
+      "bound_width": 31.0
+    },
+    {
+      "slide": 6,
+      "shape": "text-33",
+      "text": "giữ",
+      "height": 21.600000381469727,
+      "bound_height": 16.799999237060547,
+      "width": 57.599998474121094,
+      "bound_width": 31.0
+    },
+    {
+      "slide": 6,
+      "shape": "text-40",
+      "text": "LR",
+      "height": 30.31999969482422,
+      "bound_height": 28.799999237060547,
+      "width": 72.0,
+      "bound_width": 39.75
+    },
+    {
+      "slide": 6,
+      "shape": "text-41",
+      "text": "Mỗi dòng OOF được dự đoán bởi mô hình chưa học dòng đó.",
+      "height": 46.79999923706055,
+      "bound_height": 28.799999237060547,
+      "width": 864.0,
+      "bound_width": 623.9000244140625
+    },
+    {
+      "slide": 6,
+      "shape": "text-42",
+      "text": "P21 dùng inner grouped CV theo vector trùng; lịch sử dùng StratifiedKF",
+      "height": 21.600000381469727,
+      "bound_height": 18.0,
+      "width": 864.0,
+      "bound_width": 477.5400085449219
+    },
+    {
+      "slide": 7,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         FOREST",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 304.75
+    },
+    {
+      "slide": 7,
+      "shape": "text-2",
+      "text": "04",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 7,
+      "shape": "source",
+      "text": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải ",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 383.8750305175781
+    },
+    {
+      "slide": 7,
+      "shape": "hero-title",
+      "text": "RỪNG ĐÃ LÀ\rMỘT ENSEMBLE.",
+      "height": 151.1999969482422,
+      "bound_height": 144.0,
+      "width": 604.7999877929688,
+      "bound_width": 516.5
+    },
+    {
+      "slide": 7,
+      "shape": "text-54",
+      "text": "300",
+      "height": 115.19999694824219,
+      "bound_height": 105.5999984741211,
+      "width": 216.0,
+      "bound_width": 158.8750457763672
+    },
+    {
+      "slide": 7,
+      "shape": "text-55",
+      "text": "cây ở RF42\rlịch sử",
+      "height": 72.0,
+      "bound_height": 55.20000076293945,
+      "width": 194.39999389648438,
+      "bound_width": 111.72000122070312
+    },
+    {
+      "slide": 7,
+      "shape": "text-56",
+      "text": "Bootstrap + đặc trưng ngẫu nhiên → tổng hợp dự đoán",
+      "height": 46.79999923706055,
+      "bound_height": 28.799999237060547,
+      "width": 864.0,
+      "bound_width": 551.925048828125
+    },
+    {
+      "slide": 8,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         VOTE",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 291.5
+    },
+    {
+      "slide": 8,
+      "shape": "text-2",
+      "text": "04",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 8,
+      "shape": "source",
+      "text": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải ",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 383.8750305175781
+    },
+    {
+      "slide": 8,
+      "shape": "hero-title",
+      "text": "VOTING",
+      "height": 91.68000030517578,
+      "bound_height": 91.19999694824219,
+      "width": 720.0,
+      "bound_width": 312.5
+    },
+    {
+      "slide": 8,
+      "shape": "text-5",
+      "text": "Luật gộp được định trước.",
+      "height": 43.20000076293945,
+      "bound_height": 34.79999923706055,
+      "width": 792.0,
+      "bound_width": 326.7750244140625
+    },
+    {
+      "slide": 8,
+      "shape": "text-7",
+      "text": "LR",
+      "height": 28.799999237060547,
+      "bound_height": 20.399999618530273,
+      "width": 79.19999694824219,
+      "bound_width": 28.12495994567871
+    },
+    {
+      "slide": 8,
+      "shape": "text-11",
+      "text": "DT",
+      "height": 28.799999237060547,
+      "bound_height": 20.399999618530273,
+      "width": 79.19999694824219,
+      "bound_width": 28.12495994567871
+    },
+    {
+      "slide": 8,
+      "shape": "text-15",
+      "text": "RF",
+      "height": 28.799999237060547,
+      "bound_height": 20.399999618530273,
+      "width": 79.19999694824219,
+      "bound_width": 28.12495994567871
+    },
+    {
+      "slide": 8,
+      "shape": "text-19",
+      "text": "ĐA SỐ\rPHIẾU",
+      "height": 86.4000015258789,
+      "bound_height": 79.19999694824219,
+      "width": 244.8000030517578,
+      "bound_width": 102.37503814697266
+    },
+    {
+      "slide": 8,
+      "shape": "text-20",
+      "text": "TRUNG BÌNH\rXÁC SUẤT",
+      "height": 86.4000015258789,
+      "bound_height": 69.5999984741211,
+      "width": 252.0,
+      "bound_width": 175.5
+    },
+    {
+      "slide": 8,
+      "shape": "text-21",
+      "text": "Khác cách học chưa bảo đảm sửa được lỗi chung.",
+      "height": 46.79999923706055,
+      "bound_height": 28.799999237060547,
+      "width": 864.0,
+      "bound_width": 519.3599853515625
+    },
+    {
+      "slide": 9,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         STACK",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 298.1250305175781
+    },
+    {
+      "slide": 9,
+      "shape": "text-2",
+      "text": "04",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 9,
+      "shape": "source",
+      "text": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải ",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 383.8750305175781
+    },
+    {
+      "slide": 9,
+      "shape": "hero-title",
+      "text": "STACKING",
+      "height": 91.68000030517578,
+      "bound_height": 91.19999694824219,
+      "width": 561.5999755859375,
+      "bound_width": 412.3599853515625
+    },
+    {
+      "slide": 9,
+      "shape": "text-5",
+      "text": "Luật gộp được học từ OOF.",
+      "height": 43.20000076293945,
+      "bound_height": 36.0,
+      "width": 648.0,
+      "bound_width": 351.0199890136719
+    },
+    {
+      "slide": 9,
+      "shape": "text-7",
+      "text": "LR",
+      "height": 28.799999237060547,
+      "bound_height": 20.399999618530273,
+      "width": 76.31999969482422,
+      "bound_width": 28.12504005432129
+    },
+    {
+      "slide": 9,
+      "shape": "text-9",
+      "text": "p(Attack)",
+      "height": 28.799999237060547,
+      "bound_height": 20.399999618530273,
+      "width": 216.0,
+      "bound_width": 93.75
+    },
+    {
+      "slide": 9,
+      "shape": "text-12",
+      "text": "DT",
+      "height": 28.799999237060547,
+      "bound_height": 20.399999618530273,
+      "width": 76.31999969482422,
+      "bound_width": 28.12504005432129
+    },
+    {
+      "slide": 9,
+      "shape": "text-14",
+      "text": "p(Attack)",
+      "height": 28.799999237060547,
+      "bound_height": 20.399999618530273,
+      "width": 216.0,
+      "bound_width": 93.75
+    },
+    {
+      "slide": 9,
+      "shape": "text-17",
+      "text": "RF",
+      "height": 28.799999237060547,
+      "bound_height": 20.399999618530273,
+      "width": 76.31999969482422,
+      "bound_width": 28.12504005432129
+    },
+    {
+      "slide": 9,
+      "shape": "text-19",
+      "text": "p(Attack)",
+      "height": 28.799999237060547,
+      "bound_height": 20.399999618530273,
+      "width": 216.0,
+      "bound_width": 93.75
+    },
+    {
+      "slide": 9,
+      "shape": "text-22",
+      "text": "META\rLR",
+      "height": 57.599998474121094,
+      "bound_height": 55.20000076293945,
+      "width": 79.19999694824219,
+      "bound_width": 61.38999938964844
+    },
+    {
+      "slide": 9,
+      "shape": "text-24",
+      "text": "Normal\r/ Attack",
+      "height": 86.4000015258789,
+      "bound_height": 64.80000305175781,
+      "width": 144.0,
+      "bound_width": 101.49504089355469
+    },
+    {
+      "slide": 9,
+      "shape": "text-26",
+      "text": "INFERENCE",
+      "height": 43.20000076293945,
+      "bound_height": 28.799999237060547,
+      "width": 223.1999969482422,
+      "bound_width": 132.5
+    },
+    {
+      "slide": 9,
+      "shape": "text-27",
+      "text": "FIT: OOF → meta LR      INFERENCE: base đã học → xác suất → meta",
+      "height": 46.79999923706055,
+      "bound_height": 24.0,
+      "width": 864.0,
+      "bound_width": 569.175048828125
+    },
+    {
+      "slide": 10,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         SCORE",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 298.1250305175781
+    },
+    {
+      "slide": 10,
+      "shape": "text-2",
+      "text": "05",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 10,
+      "shape": "source",
+      "text": "Official TEST lịch sử · 82.332 bản ghi · RF42 so với Stacking42 · ngưỡ",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 317.0
+    },
+    {
+      "slide": 10,
+      "shape": "hero-title",
+      "text": "GẦN NHAU\rĐẾN MỨC NÀO?",
+      "height": 129.60000610351562,
+      "bound_height": 129.60000610351562,
+      "width": 540.0,
+      "bound_width": 440.75
+    },
+    {
+      "slide": 10,
+      "shape": "text-5",
+      "text": "RF42",
+      "height": 32.400001525878906,
+      "bound_height": 30.0,
+      "width": 417.6000061035156,
+      "bound_width": 61.125038146972656
+    },
+    {
+      "slide": 10,
+      "shape": "text-6",
+      "text": "0,863343",
+      "height": 86.4000015258789,
+      "bound_height": 69.5999984741211,
+      "width": 417.6000061035156,
+      "bound_width": 258.0
+    },
+    {
+      "slide": 10,
+      "shape": "text-7",
+      "text": "Stacking42",
+      "height": 32.400001525878906,
+      "bound_height": 30.0,
+      "width": 417.6000061035156,
+      "bound_width": 130.58999633789062
+    },
+    {
+      "slide": 10,
+      "shape": "text-8",
+      "text": "0,863840",
+      "height": 86.4000015258789,
+      "bound_height": 69.5999984741211,
+      "width": 417.6000061035156,
+      "bound_width": 258.0
+    },
+    {
+      "slide": 10,
+      "shape": "text-9",
+      "text": "Δ Macro-F1  +0,000497",
+      "height": 43.20000076293945,
+      "bound_height": 38.400001525878906,
+      "width": 864.0,
+      "bound_width": 329.1400146484375
+    },
+    {
+      "slide": 10,
+      "shape": "text-10",
+      "text": "CI 95% của Δ Macro-F1 / Δ MCC chứa 0.",
+      "height": 43.20000076293945,
+      "bound_height": 30.0,
+      "width": 864.0,
+      "bound_width": 433.4150390625
+    },
+    {
+      "slide": 10,
+      "shape": "text-13",
+      "text": "0",
+      "height": 18.0,
+      "bound_height": 14.399999618530273,
+      "width": 28.799999237060547,
+      "bound_width": 13.25
+    },
+    {
+      "slide": 10,
+      "shape": "text-15",
+      "text": "CI 95% Δ Macro-F1",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 266.3999938964844,
+      "bound_width": 111.85504150390625
+    },
+    {
+      "slide": 10,
+      "shape": "text-16",
+      "text": "−0,000312              +0,001309",
+      "height": 21.600000381469727,
+      "bound_height": 12.0,
+      "width": 273.6000061035156,
+      "bound_width": 181.5
+    },
+    {
+      "slide": 11,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         FP",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 278.25
+    },
+    {
+      "slide": 11,
+      "shape": "text-2",
+      "text": "05",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 11,
+      "shape": "source",
+      "text": "Official TEST lịch sử · 82.332 bản ghi · RF42 so với Stacking42 · ngưỡ",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 317.0
+    },
+    {
+      "slide": 11,
+      "shape": "hero-title",
+      "text": "BỚT CẢNH BÁO GIẢ.",
+      "height": 79.19999694824219,
+      "bound_height": 62.400001525878906,
+      "width": 864.0,
+      "bound_width": 544.1250610351562
+    },
+    {
+      "slide": 11,
+      "shape": "text-5",
+      "text": "−142",
+      "height": 179.0,
+      "bound_height": 180.0,
+      "width": 511.20001220703125,
+      "bound_width": 379.3750305175781
+    },
+    {
+      "slide": 11,
+      "shape": "text-6",
+      "text": "FP",
+      "height": 84.59992218017578,
+      "bound_height": 84.0,
+      "width": 216.0,
+      "bound_width": 115.5
+    },
+    {
+      "slide": 11,
+      "shape": "text-7",
+      "text": "RF42",
+      "height": 28.799999237060547,
+      "bound_height": 22.799999237060547,
+      "width": 165.60000610351562,
+      "bound_width": 45.625038146972656
+    },
+    {
+      "slide": 11,
+      "shape": "text-9",
+      "text": "10.003",
+      "height": 36.0,
+      "bound_height": 32.400001525878906,
+      "width": 118.80000305175781,
+      "bound_width": 104.12503814697266
+    },
+    {
+      "slide": 11,
+      "shape": "text-10",
+      "text": "Stacking42",
+      "height": 28.799999237060547,
+      "bound_height": 22.799999237060547,
+      "width": 165.60000610351562,
+      "bound_width": 94.55000305175781
+    },
+    {
+      "slide": 11,
+      "shape": "text-12",
+      "text": "9.861",
+      "height": 36.0,
+      "bound_height": 32.400001525878906,
+      "width": 118.80000305175781,
+      "bound_width": 89.25
+    },
+    {
+      "slide": 11,
+      "shape": "text-14",
+      "text": "0",
+      "height": 18.0,
+      "bound_height": 14.399999618530273,
+      "width": 36.0,
+      "bound_width": 8.875039100646973
+    },
+    {
+      "slide": 11,
+      "shape": "text-15",
+      "text": "11.000 FP",
+      "height": 18.0,
+      "bound_height": 14.399999618530273,
+      "width": 144.0,
+      "bound_width": 53.375038146972656
+    },
+    {
+      "slide": 12,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         FN",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 278.25
+    },
+    {
+      "slide": 12,
+      "shape": "text-2",
+      "text": "05",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 12,
+      "shape": "source",
+      "text": "Official TEST lịch sử · 82.332 bản ghi · RF42 so với Stacking42 · ngưỡ",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 317.0
+    },
+    {
+      "slide": 12,
+      "shape": "text-4",
+      "text": "PHẦN ĐỔI LẠI",
+      "height": 43.20000076293945,
+      "bound_height": 28.799999237060547,
+      "width": 792.0,
+      "bound_width": 172.25
+    },
+    {
+      "slide": 12,
+      "shape": "text-5",
+      "text": "+118",
+      "height": 220.2999267578125,
+      "bound_height": 222.0,
+      "width": 662.4000244140625,
+      "bound_width": 457.7900085449219
+    },
+    {
+      "slide": 12,
+      "shape": "hero-title",
+      "text": "BẢN GHI TẤN CÔNG\rBỊ BỎ SÓT THÊM.",
+      "height": 108.0,
+      "bound_height": 86.4000015258789,
+      "width": 576.0,
+      "bound_width": 364.0
+    },
+    {
+      "slide": 12,
+      "shape": "text-8",
+      "text": "734",
+      "height": 39.599998474121094,
+      "bound_height": 33.599998474121094,
+      "width": 104.4000015258789,
+      "bound_width": 61.5
+    },
+    {
+      "slide": 12,
+      "shape": "text-9",
+      "text": "RF42",
+      "height": 28.799999237060547,
+      "bound_height": 14.399999618530273,
+      "width": 111.5999984741211,
+      "bound_width": 33.125038146972656
+    },
+    {
+      "slide": 12,
+      "shape": "text-11",
+      "text": "852",
+      "height": 39.599998474121094,
+      "bound_height": 33.599998474121094,
+      "width": 104.4000015258789,
+      "bound_width": 61.5
+    },
+    {
+      "slide": 12,
+      "shape": "text-12",
+      "text": "Stacking42",
+      "height": 28.799999237060547,
+      "bound_height": 14.399999618530273,
+      "width": 111.5999984741211,
+      "bound_width": 72.87503814697266
+    },
+    {
+      "slide": 12,
+      "shape": "text-13",
+      "text": "FN: thang riêng 0–1.000",
+      "height": 21.600000381469727,
+      "bound_height": 16.799999237060547,
+      "width": 273.6000061035156,
+      "bound_width": 143.82000732421875
+    },
+    {
+      "slide": 12,
+      "shape": "text-14",
+      "text": "Số bản ghi trên cùng TEST; chưa phải số sự cố độc lập.",
+      "height": 46.79999923706055,
+      "bound_height": 21.600000381469727,
+      "width": 576.0,
+      "bound_width": 419.7699890136719
+    },
+    {
+      "slide": 13,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         MATRIX",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 304.75
+    },
+    {
+      "slide": 13,
+      "shape": "text-2",
+      "text": "06",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 13,
+      "shape": "source",
+      "text": "P21 hậu nghiệm trên TRAIN · 5 FIT seed · cùng 35.069 dòng internal val",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 331.6250305175781
+    },
+    {
+      "slide": 13,
+      "shape": "hero-title",
+      "text": "5 LƯỢT FIT.\r1 VALIDATION CHUNG.",
+      "height": 126.0,
+      "bound_height": 120.0,
+      "width": 864.0,
+      "bound_width": 564.7050170898438
+    },
+    {
+      "slide": 13,
+      "shape": "text-5",
+      "text": "RF42",
+      "height": 25.200000762939453,
+      "bound_height": 19.200000762939453,
+      "width": 115.19999694824219,
+      "bound_width": 43.75
+    },
+    {
+      "slide": 13,
+      "shape": "text-6",
+      "text": "RF17",
+      "height": 25.200000762939453,
+      "bound_height": 19.200000762939453,
+      "width": 115.19999694824219,
+      "bound_width": 43.75
+    },
+    {
+      "slide": 13,
+      "shape": "text-7",
+      "text": "Balanced",
+      "height": 25.200000762939453,
+      "bound_height": 19.200000762939453,
+      "width": 115.19999694824219,
+      "bound_width": 78.75
+    },
+    {
+      "slide": 13,
+      "shape": "text-8",
+      "text": "Oversample",
+      "height": 25.200000762939453,
+      "bound_height": 19.200000762939453,
+      "width": 115.19999694824219,
+      "bound_width": 96.25
+    },
+    {
+      "slide": 13,
+      "shape": "text-9",
+      "text": "Stack-Lite",
+      "height": 25.200000762939453,
+      "bound_height": 19.200000762939453,
+      "width": 115.19999694824219,
+      "bound_width": 96.25
+    },
+    {
+      "slide": 13,
+      "shape": "text-10",
+      "text": "1103",
+      "height": 21.600000381469727,
+      "bound_height": 19.200000762939453,
+      "width": 86.4000015258789,
+      "bound_width": 43.75
+    },
+    {
+      "slide": 13,
+      "shape": "text-18",
+      "text": "2207",
+      "height": 21.600000381469727,
+      "bound_height": 19.200000762939453,
+      "width": 86.4000015258789,
+      "bound_width": 43.75
+    },
+    {
+      "slide": 13,
+      "shape": "text-26",
+      "text": "3301",
+      "height": 21.600000381469727,
+      "bound_height": 19.200000762939453,
+      "width": 86.4000015258789,
+      "bound_width": 43.75
+    },
+    {
+      "slide": 13,
+      "shape": "text-34",
+      "text": "4409",
+      "height": 21.600000381469727,
+      "bound_height": 19.200000762939453,
+      "width": 86.4000015258789,
+      "bound_width": 43.75
+    },
+    {
+      "slide": 13,
+      "shape": "text-42",
+      "text": "5501",
+      "height": 21.600000381469727,
+      "bound_height": 19.200000762939453,
+      "width": 86.4000015258789,
+      "bound_width": 43.75
+    },
+    {
+      "slide": 13,
+      "shape": "text-51",
+      "text": "35.069",
+      "height": 36.0,
+      "bound_height": 31.200000762939453,
+      "width": 158.39999389648438,
+      "bound_width": 99.75
+    },
+    {
+      "slide": 13,
+      "shape": "text-52",
+      "text": "60.000 dòng FIT / seed",
+      "height": 36.0,
+      "bound_height": 28.799999237060547,
+      "width": 432.0,
+      "bound_width": 236.1250457763672
+    },
+    {
+      "slide": 13,
+      "shape": "text-53",
+      "text": "cùng một validation",
+      "height": 36.0,
+      "bound_height": 25.200000762939453,
+      "width": 338.3999938964844,
+      "bound_width": 182.2450408935547
+    },
+    {
+      "slide": 14,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         SELECTION",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 324.6250305175781
+    },
+    {
+      "slide": 14,
+      "shape": "text-2",
+      "text": "06",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 14,
+      "shape": "source",
+      "text": "P21 hậu nghiệm trên TRAIN · 5 FIT seed · cùng 35.069 dòng internal val",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 331.6250305175781
+    },
+    {
+      "slide": 14,
+      "shape": "hero-title",
+      "text": "BỚT BIẾN.\rBỚT CHI PHÍ?",
+      "height": 136.8000030517578,
+      "bound_height": 132.0,
+      "width": 540.0,
+      "bound_width": 386.0
+    },
+    {
+      "slide": 14,
+      "shape": "text-5",
+      "text": "P21 · Macro-F1 trung bình",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 345.6000061035156,
+      "bound_width": 201.75503540039062
+    },
+    {
+      "slide": 14,
+      "shape": "text-6",
+      "text": "RF42-Lite   0,945220\rStack-Lite  0,944731\rRF17-Lite   0,936751",
+      "height": 100.80000305175781,
+      "bound_height": 75.5999984741211,
+      "width": 345.6000061035156,
+      "bound_width": 241.5
+    },
+    {
+      "slide": 14,
+      "shape": "text-7",
+      "text": "RF42-Lite",
+      "height": 29.139999389648438,
+      "bound_height": 27.600000381469727,
+      "width": 183.60000610351562,
+      "bound_width": 102.63999938964844
+    },
+    {
+      "slide": 14,
+      "shape": "text-9",
+      "text": "RF17-Lite",
+      "height": 29.139999389648438,
+      "bound_height": 27.600000381469727,
+      "width": 183.60000610351562,
+      "bound_width": 102.63999938964844
+    },
+    {
+      "slide": 14,
+      "shape": "text-12",
+      "text": "225,250 + 84,600 = 309,850 s",
+      "height": 46.79999923706055,
+      "bound_height": 38.400001525878906,
+      "width": 864.0,
+      "bound_width": 511.1250305175781
+    },
+    {
+      "slide": 14,
+      "shape": "text-13",
+      "text": "Violet: chọn biến 225,250 s   |   Lime: fit RF17 84,600 s",
+      "height": 25.200000762939453,
+      "bound_height": 20.399999618530273,
+      "width": 669.5999755859375,
+      "bound_width": 392.6250305175781
+    },
+    {
+      "slide": 14,
+      "shape": "text-14",
+      "text": "RF42 fit: 241,119 s · RF17: chọn biến + fit · chưa phải end-to-end",
+      "height": 21.600000381469727,
+      "bound_height": 19.200000762939453,
+      "width": 864.0,
+      "bound_width": 442.0450439453125
+    },
+    {
+      "slide": 15,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         RATES",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 298.1250305175781
+    },
+    {
+      "slide": 15,
+      "shape": "text-2",
+      "text": "07",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 15,
+      "shape": "source",
+      "text": "P21 hậu nghiệm trên TRAIN · 5 FIT seed · cùng 35.069 dòng internal val",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 331.6250305175781
+    },
+    {
+      "slide": 15,
+      "shape": "hero-title",
+      "text": "ÍT CẢNH BÁO GIẢ HƠN.\rBỎ SÓT NHIỀU HƠN.",
+      "height": 111.5999984741211,
+      "bound_height": 108.0,
+      "width": 864.0,
+      "bound_width": 528.3750610351562
+    },
+    {
+      "slide": 15,
+      "shape": "text-7",
+      "text": "0",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 43.20000076293945,
+      "bound_width": 14.25
+    },
+    {
+      "slide": 15,
+      "shape": "text-8",
+      "text": "4",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 43.20000076293945,
+      "bound_width": 14.25
+    },
+    {
+      "slide": 15,
+      "shape": "text-9",
+      "text": "8",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 43.20000076293945,
+      "bound_width": 14.25
+    },
+    {
+      "slide": 15,
+      "shape": "text-10",
+      "text": "12",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 43.20000076293945,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 15,
+      "shape": "text-11",
+      "text": "0",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 36.0,
+      "bound_width": 14.25
+    },
+    {
+      "slide": 15,
+      "shape": "text-12",
+      "text": "2",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 36.0,
+      "bound_width": 14.25
+    },
+    {
+      "slide": 15,
+      "shape": "text-13",
+      "text": "4",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 36.0,
+      "bound_width": 14.25
+    },
+    {
+      "slide": 15,
+      "shape": "text-14",
+      "text": "FNR %",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 108.0,
+      "bound_width": 59.25
+    },
+    {
+      "slide": 15,
+      "shape": "text-15",
+      "text": "FPR %",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 108.0,
+      "bound_width": 59.25
+    },
+    {
+      "slide": 15,
+      "shape": "text-17",
+      "text": "RF42",
+      "height": 28.799999237060547,
+      "bound_height": 25.200000762939453,
+      "width": 172.8000030517578,
+      "bound_width": 51.25
+    },
+    {
+      "slide": 15,
+      "shape": "text-21",
+      "text": "Balanced",
+      "height": 28.799999237060547,
+      "bound_height": 25.200000762939453,
+      "width": 172.8000030517578,
+      "bound_width": 94.25
+    },
+    {
+      "slide": 15,
+      "shape": "text-25",
+      "text": "Oversample",
+      "height": 28.799999237060547,
+      "bound_height": 25.200000762939453,
+      "width": 172.8000030517578,
+      "bound_width": 120.46504211425781
+    },
+    {
+      "slide": 15,
+      "shape": "text-26",
+      "text": "Trung bình 5 FIT seed · Normal là lớp ít mẫu trong TRAIN.",
+      "height": 46.79999923706055,
+      "bound_height": 24.0,
+      "width": 864.0,
+      "bound_width": 484.2450256347656
+    },
+    {
+      "slide": 16,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         LOSS",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 291.5
+    },
+    {
+      "slide": 16,
+      "shape": "text-2",
+      "text": "07",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 16,
+      "shape": "source",
+      "text": "Phân tích giả định · dự đoán official TEST lịch sử · L=FP+rFN · chỉ cặ",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 368.1250305175781
+    },
+    {
+      "slide": 16,
+      "shape": "hero-title",
+      "text": "L = FP + r × FN",
+      "height": 90.0,
+      "bound_height": 69.5999984741211,
+      "width": 864.0,
+      "bound_width": 421.6499938964844
+    },
+    {
+      "slide": 16,
+      "shape": "text-5",
+      "text": "r: chi phí giả định của FN / FP",
+      "height": 36.0,
+      "bound_height": 30.0,
+      "width": 864.0,
+      "bound_width": 314.25
+    },
+    {
+      "slide": 16,
+      "shape": "text-6",
+      "text": "r = 1",
+      "height": 43.20000076293945,
+      "bound_height": 34.79999923706055,
+      "width": 277.20001220703125,
+      "bound_width": 96.0
+    },
+    {
+      "slide": 16,
+      "shape": "text-7",
+      "text": "RF42",
+      "height": 25.200000762939453,
+      "bound_height": 19.200000762939453,
+      "width": 122.4000015258789,
+      "bound_width": 39.0
+    },
+    {
+      "slide": 16,
+      "shape": "text-9",
+      "text": "10 737,0",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 129.60000610351562,
+      "bound_width": 88.87503814697266
+    },
+    {
+      "slide": 16,
+      "shape": "text-10",
+      "text": "Stacking42",
+      "height": 25.200000762939453,
+      "bound_height": 19.200000762939453,
+      "width": 122.4000015258789,
+      "bound_width": 83.3499984741211
+    },
+    {
+      "slide": 16,
+      "shape": "text-12",
+      "text": "10 713,0",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 129.60000610351562,
+      "bound_width": 88.87503814697266
+    },
+    {
+      "slide": 16,
+      "shape": "text-13",
+      "text": "Stacking thấp hơn",
+      "height": 46.79999923706055,
+      "bound_height": 26.399999618530273,
+      "width": 273.6000061035156,
+      "bound_width": 184.72000122070312
+    },
+    {
+      "slide": 16,
+      "shape": "text-14",
+      "text": "r = 1,2034",
+      "height": 43.20000076293945,
+      "bound_height": 34.79999923706055,
+      "width": 277.20001220703125,
+      "bound_width": 176.0
+    },
+    {
+      "slide": 16,
+      "shape": "text-15",
+      "text": "RF42",
+      "height": 25.200000762939453,
+      "bound_height": 19.200000762939453,
+      "width": 122.4000015258789,
+      "bound_width": 39.0
+    },
+    {
+      "slide": 16,
+      "shape": "text-17",
+      "text": "10 886,3",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 129.60000610351562,
+      "bound_width": 88.87503814697266
+    },
+    {
+      "slide": 16,
+      "shape": "text-18",
+      "text": "Stacking42",
+      "height": 25.200000762939453,
+      "bound_height": 19.200000762939453,
+      "width": 122.4000015258789,
+      "bound_width": 83.3499984741211
+    },
+    {
+      "slide": 16,
+      "shape": "text-20",
+      "text": "10 886,3",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 129.60000610351562,
+      "bound_width": 88.87503814697266
+    },
+    {
+      "slide": 16,
+      "shape": "text-21",
+      "text": "Hai tổn thất bằng nhau",
+      "height": 46.79999923706055,
+      "bound_height": 26.399999618530273,
+      "width": 273.6000061035156,
+      "bound_width": 229.75
+    },
+    {
+      "slide": 16,
+      "shape": "text-22",
+      "text": "r = 5",
+      "height": 43.20000076293945,
+      "bound_height": 34.79999923706055,
+      "width": 277.20001220703125,
+      "bound_width": 96.0
+    },
+    {
+      "slide": 16,
+      "shape": "text-23",
+      "text": "RF42",
+      "height": 25.200000762939453,
+      "bound_height": 19.200000762939453,
+      "width": 122.4000015258789,
+      "bound_width": 39.0
+    },
+    {
+      "slide": 16,
+      "shape": "text-25",
+      "text": "13 673,0",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 129.60000610351562,
+      "bound_width": 88.87503814697266
+    },
+    {
+      "slide": 16,
+      "shape": "text-26",
+      "text": "Stacking42",
+      "height": 25.200000762939453,
+      "bound_height": 19.200000762939453,
+      "width": 122.4000015258789,
+      "bound_width": 83.3499984741211
+    },
+    {
+      "slide": 16,
+      "shape": "text-28",
+      "text": "14 121,0",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 129.60000610351562,
+      "bound_width": 88.87503814697266
+    },
+    {
+      "slide": 16,
+      "shape": "text-29",
+      "text": "RF42 thấp hơn",
+      "height": 46.79999923706055,
+      "bound_height": 26.399999618530273,
+      "width": 273.6000061035156,
+      "bound_width": 147.1250457763672
+    },
+    {
+      "slide": 16,
+      "shape": "text-30",
+      "text": "Cùng trục tổn thất quy ước 0–15.000; không phải tiền thiệt hại.",
+      "height": 18.0,
+      "bound_height": 15.600000381469727,
+      "width": 864.0,
+      "bound_width": 347.8950500488281
+    },
+    {
+      "slide": 17,
+      "shape": "section-tag",
+      "text": "ENSEMBLE / IDS                         CLOSE",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 298.1250305175781
+    },
+    {
+      "slide": 17,
+      "shape": "text-2",
+      "text": "08",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 17,
+      "shape": "source",
+      "text": "NCKH Ensemble IDS · Dương Ngọc Phú / Phạm Thế Vỹ / Vũ Văn Kiên / Lê Ho",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 510.75
+    },
+    {
+      "slide": 17,
+      "shape": "hero-title",
+      "text": "CHỌN TỪ\rLOẠI LỖI\rCẦN GIẢM.",
+      "height": 324.0,
+      "bound_height": 252.0,
+      "width": 626.39990234375,
+      "bound_width": 392.75
+    },
+    {
+      "slide": 17,
+      "shape": "text-5",
+      "text": "Đối chiếu các cấu hình.",
+      "height": 66.80000305175781,
+      "bound_height": 64.80000305175781,
+      "width": 273.6000061035156,
+      "bound_width": 222.27503967285156
+    },
+    {
+      "slide": 17,
+      "shape": "text-6",
+      "text": "Kiểm soát thí nghiệm.",
+      "height": 57.599998474121094,
+      "bound_height": 32.400001525878906,
+      "width": 273.6000061035156,
+      "bound_width": 270.7050476074219
+    },
+    {
+      "slide": 17,
+      "shape": "text-7",
+      "text": "Nêu rõ giới hạn.",
+      "height": 57.599998474121094,
+      "bound_height": 32.400001525878906,
+      "width": 273.6000061035156,
+      "bound_width": 196.19503784179688
+    },
+    {
+      "slide": 17,
+      "shape": "text-8",
+      "text": "Cần dữ liệu mạng mới và chi phí thực tế.",
+      "height": 43.20000076293945,
+      "bound_height": 31.200000762939453,
+      "width": 864.0,
+      "bound_width": 452.5
+    },
+    {
+      "slide": 17,
+      "shape": "TextBox 12",
+      "text": "A1",
+      "height": 14.399999618530273,
+      "bound_height": 12.0,
+      "width": 50.400001525878906,
+      "bound_width": 13.125039100646973
+    },
+    {
+      "slide": 17,
+      "shape": "TextBox 13",
+      "text": "A2",
+      "height": 14.399999618530273,
+      "bound_height": 12.0,
+      "width": 50.400001525878906,
+      "bound_width": 13.125039100646973
+    },
+    {
+      "slide": 17,
+      "shape": "TextBox 14",
+      "text": "A3",
+      "height": 14.399999618530273,
+      "bound_height": 12.0,
+      "width": 50.400001525878906,
+      "bound_width": 13.125039100646973
+    },
+    {
+      "slide": 17,
+      "shape": "TextBox 15",
+      "text": "A4",
+      "height": 14.399999618530273,
+      "bound_height": 12.0,
+      "width": 50.400001525878906,
+      "bound_width": 13.125039100646973
+    },
+    {
+      "slide": 17,
+      "shape": "TextBox 16",
+      "text": "A5",
+      "height": 14.399999618530273,
+      "bound_height": 12.0,
+      "width": 50.400001525878906,
+      "bound_width": 13.125039100646973
+    },
+    {
+      "slide": 17,
+      "shape": "TextBox 17",
+      "text": "A6",
+      "height": 14.399999618530273,
+      "bound_height": 12.0,
+      "width": 50.400001525878906,
+      "bound_width": 13.125039100646973
+    },
+    {
+      "slide": 17,
+      "shape": "TextBox 18",
+      "text": "A7",
+      "height": 14.399999618530273,
+      "bound_height": 12.0,
+      "width": 50.400001525878906,
+      "bound_width": 13.125039100646973
+    },
+    {
+      "slide": 17,
+      "shape": "TextBox 19",
+      "text": "A8",
+      "height": 14.399999618530273,
+      "bound_height": 12.0,
+      "width": 50.400001525878906,
+      "bound_width": 13.125039100646973
+    },
+    {
+      "slide": 17,
+      "shape": "TextBox 20",
+      "text": "A9",
+      "height": 14.399999618530273,
+      "bound_height": 12.0,
+      "width": 50.400001525878906,
+      "bound_width": 13.125039100646973
+    },
+    {
+      "slide": 17,
+      "shape": "TextBox 21",
+      "text": "A10",
+      "height": 14.399999618530273,
+      "bound_height": 12.0,
+      "width": 50.400001525878906,
+      "bound_width": 18.25
+    },
+    {
+      "slide": 17,
+      "shape": "TextBox 22",
+      "text": "A11",
+      "height": 14.399999618530273,
+      "bound_height": 12.0,
+      "width": 50.400001525878906,
+      "bound_width": 18.25
+    },
+    {
+      "slide": 17,
+      "shape": "TextBox 23",
+      "text": "A12",
+      "height": 14.399999618530273,
+      "bound_height": 12.0,
+      "width": 50.400001525878906,
+      "bound_width": 18.25
+    },
+    {
+      "slide": 18,
+      "shape": "section-tag",
+      "text": "VẤN ĐÁP / A01",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 92.75
+    },
+    {
+      "slide": 18,
+      "shape": "text-2",
+      "text": "08",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 18,
+      "shape": "source",
+      "text": "V6 §3.1, §5.3–5.5; P21 aggregate",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 141.0
+    },
+    {
+      "slide": 18,
+      "shape": "text-4",
+      "text": "01",
+      "height": 94.04000091552734,
+      "bound_height": 93.5999984741211,
+      "width": 180.0,
+      "bound_width": 108.37503814697266
+    },
+    {
+      "slide": 18,
+      "shape": "text-5",
+      "text": "Nhóm có phát minh thuật toán mới không?",
+      "height": 108.0,
+      "bound_height": 86.4000015258789,
+      "width": 687.5999755859375,
+      "bound_width": 573.5950317382812
+    },
+    {
+      "slide": 18,
+      "shape": "text-6",
+      "text": "Nhóm không đề xuất thuật toán mới. Nhóm đối chiếu các cấu hình, bổ sun",
+      "height": 122.0,
+      "bound_height": 120.0,
+      "width": 698.4000244140625,
+      "bound_width": 692.3800048828125
+    },
+    {
+      "slide": 18,
+      "shape": "text-7",
+      "text": "Trả lời chính trong 15–25 giây.",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 684.0,
+      "bound_width": 228.99000549316406
+    },
+    {
+      "slide": 18,
+      "shape": "TextBox 8",
+      "text": "Về kết luận",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 129.60000610351562,
+      "bound_width": 56.45000076293945
+    },
+    {
+      "slide": 19,
+      "shape": "section-tag",
+      "text": "VẤN ĐÁP / A02",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 92.75
+    },
+    {
+      "slide": 19,
+      "shape": "text-2",
+      "text": "08",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 19,
+      "shape": "source",
+      "text": "src/models/run_unsw_ensemble_phase7_2.py; V6 §3.3, §4.5",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 263.8750305175781
+    },
+    {
+      "slide": 19,
+      "shape": "text-4",
+      "text": "02",
+      "height": 94.04000091552734,
+      "bound_height": 93.5999984741211,
+      "width": 180.0,
+      "bound_width": 108.37503814697266
+    },
+    {
+      "slide": 19,
+      "shape": "text-5",
+      "text": "Vì sao chọn LR, DT và RF; AdaBoost ở đâu?",
+      "height": 108.0,
+      "bound_height": 43.20000076293945,
+      "width": 694.5,
+      "bound_width": 692.5
+    },
+    {
+      "slide": 19,
+      "shape": "text-6",
+      "text": "LR là mốc tuyến tính; DT học quy tắc phi tuyến; RF kết hợp nhiều cây đ",
+      "height": 151.46487426757812,
+      "bound_height": 150.0,
+      "width": 698.4000244140625,
+      "bound_width": 689.4400024414062
+    },
+    {
+      "slide": 19,
+      "shape": "text-7",
+      "text": "Trả lời chính trong 15–25 giây.",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 684.0,
+      "bound_width": 228.99000549316406
+    },
+    {
+      "slide": 19,
+      "shape": "TextBox 8",
+      "text": "Về kết luận",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 129.60000610351562,
+      "bound_width": 56.45000076293945
+    },
+    {
+      "slide": 20,
+      "shape": "section-tag",
+      "text": "VẤN ĐÁP / A03",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 92.75
+    },
+    {
+      "slide": 20,
+      "shape": "text-2",
+      "text": "08",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 20,
+      "shape": "source",
+      "text": "V6 §2.1, §2.5–2.6, §3.1",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 98.37503814697266
+    },
+    {
+      "slide": 20,
+      "shape": "text-4",
+      "text": "03",
+      "height": 94.04000091552734,
+      "bound_height": 93.5999984741211,
+      "width": 180.0,
+      "bound_width": 108.37503814697266
+    },
+    {
+      "slide": 20,
+      "shape": "text-5",
+      "text": "Vì sao dùng UNSW-NB15?",
+      "height": 108.0,
+      "bound_height": 43.20000076293945,
+      "width": 687.5999755859375,
+      "bound_width": 424.5400085449219
+    },
+    {
+      "slide": 20,
+      "shape": "text-6",
+      "text": "UNSW-NB15 có nhãn nhị phân và bộ chia chính thức, thuận tiện để đối ch",
+      "height": 121.17189025878906,
+      "bound_height": 120.0,
+      "width": 698.4000244140625,
+      "bound_width": 700.0250244140625
+    },
+    {
+      "slide": 20,
+      "shape": "text-7",
+      "text": "Trả lời chính trong 15–25 giây.",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 684.0,
+      "bound_width": 228.99000549316406
+    },
+    {
+      "slide": 20,
+      "shape": "TextBox 8",
+      "text": "Về kết luận",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 129.60000610351562,
+      "bound_width": 56.45000076293945
+    },
+    {
+      "slide": 21,
+      "shape": "section-tag",
+      "text": "VẤN ĐÁP / A04",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 92.75
+    },
+    {
+      "slide": 21,
+      "shape": "text-2",
+      "text": "08",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 21,
+      "shape": "source",
+      "text": "V6 §3.2–3.6; tools/p21_science_core.py",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 173.6250457763672
+    },
+    {
+      "slide": 21,
+      "shape": "text-4",
+      "text": "04",
+      "height": 94.04000091552734,
+      "bound_height": 93.5999984741211,
+      "width": 180.0,
+      "bound_width": 108.37503814697266
+    },
+    {
+      "slide": 21,
+      "shape": "text-5",
+      "text": "Quy trình có hoàn toàn tránh leakage không?",
+      "height": 108.0,
+      "bound_height": 86.4000015258789,
+      "width": 687.5999755859375,
+      "bound_width": 604.3250122070312
+    },
+    {
+      "slide": 21,
+      "shape": "text-6",
+      "text": "Nhóm đặt preprocessing trong pipeline và dùng dự đoán OOF cho meta lea",
+      "height": 151.46487426757812,
+      "bound_height": 150.0,
+      "width": 698.4000244140625,
+      "bound_width": 686.14501953125
+    },
+    {
+      "slide": 21,
+      "shape": "text-7",
+      "text": "Trả lời chính trong 15–25 giây.",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 684.0,
+      "bound_width": 228.99000549316406
+    },
+    {
+      "slide": 21,
+      "shape": "TextBox 8",
+      "text": "Về kết luận",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 129.60000610351562,
+      "bound_width": 56.45000076293945
+    },
+    {
+      "slide": 22,
+      "shape": "section-tag",
+      "text": "VẤN ĐÁP / A05",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 92.75
+    },
+    {
+      "slide": 22,
+      "shape": "text-2",
+      "text": "08",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 22,
+      "shape": "source",
+      "text": "P21 aggregate.json; V6 §3.6, §4.7",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 143.8750457763672
+    },
+    {
+      "slide": 22,
+      "shape": "text-4",
+      "text": "05",
+      "height": 94.04000091552734,
+      "bound_height": 93.5999984741211,
+      "width": 180.0,
+      "bound_width": 108.37503814697266
+    },
+    {
+      "slide": 22,
+      "shape": "text-5",
+      "text": "P21 có phải external TEST mới không?",
+      "height": 108.0,
+      "bound_height": 43.20000076293945,
+      "width": 687.5999755859375,
+      "bound_width": 618.1799926757812
+    },
+    {
+      "slide": 22,
+      "shape": "text-6",
+      "text": "Không. P21 dùng lại official TRAIN. Mỗi seed có 60.000 dòng FIT và cùn",
+      "height": 152.0,
+      "bound_height": 150.0,
+      "width": 698.4000244140625,
+      "bound_width": 692.3750610351562
+    },
+    {
+      "slide": 22,
+      "shape": "text-7",
+      "text": "Trả lời chính trong 15–25 giây.",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 684.0,
+      "bound_width": 228.99000549316406
+    },
+    {
+      "slide": 22,
+      "shape": "TextBox 8",
+      "text": "Về kết luận",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 129.60000610351562,
+      "bound_width": 56.45000076293945
+    },
+    {
+      "slide": 23,
+      "shape": "section-tag",
+      "text": "VẤN ĐÁP / A06",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 92.75
+    },
+    {
+      "slide": 23,
+      "shape": "text-2",
+      "text": "08",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 23,
+      "shape": "source",
+      "text": "V6 §3.2–3.3, §4.7.3; tools/p21_selector_core.py",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 206.75
+    },
+    {
+      "slide": 23,
+      "shape": "text-4",
+      "text": "06",
+      "height": 94.04000091552734,
+      "bound_height": 93.5999984741211,
+      "width": 180.0,
+      "bound_width": 108.37503814697266
+    },
+    {
+      "slide": 23,
+      "shape": "text-5",
+      "text": "Feature Selection hoạt động thế nào và có rẻ hơn?",
+      "height": 108.0,
+      "bound_height": 86.4000015258789,
+      "width": 687.5999755859375,
+      "bound_width": 688.0850219726562
+    },
+    {
+      "slide": 23,
+      "shape": "text-6",
+      "text": "P21 chọn 17 biến trong FIT bằng MI, L1 và ExtraTrees qua 5 selector se",
+      "height": 151.46487426757812,
+      "bound_height": 150.0,
+      "width": 698.4000244140625,
+      "bound_width": 702.8800048828125
+    },
+    {
+      "slide": 23,
+      "shape": "text-7",
+      "text": "Trả lời chính trong 15–25 giây.",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 684.0,
+      "bound_width": 228.99000549316406
+    },
+    {
+      "slide": 23,
+      "shape": "TextBox 8",
+      "text": "Về kết luận",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 129.60000610351562,
+      "bound_width": 56.45000076293945
+    },
+    {
+      "slide": 24,
+      "shape": "section-tag",
+      "text": "VẤN ĐÁP / A07",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 92.75
+    },
+    {
+      "slide": 24,
+      "shape": "text-2",
+      "text": "08",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 24,
+      "shape": "source",
+      "text": "src/models/run_unsw_phase9_final_holdout.py:283–508; tools/p21_science",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 369.8750305175781
+    },
+    {
+      "slide": 24,
+      "shape": "text-4",
+      "text": "07",
+      "height": 94.04000091552734,
+      "bound_height": 93.5999984741211,
+      "width": 180.0,
+      "bound_width": 108.37503814697266
+    },
+    {
+      "slide": 24,
+      "shape": "text-5",
+      "text": "OOF được dùng ở đâu?",
+      "height": 108.0,
+      "bound_height": 43.20000076293945,
+      "width": 687.5999755859375,
+      "bound_width": 378.8750305175781
+    },
+    {
+      "slide": 24,
+      "shape": "text-6",
+      "text": "Voting dùng luật gộp cố định: đa số nhãn hoặc trung bình xác suất. Với",
+      "height": 151.46487426757812,
+      "bound_height": 150.0,
+      "width": 698.4000244140625,
+      "bound_width": 695.1599731445312
+    },
+    {
+      "slide": 24,
+      "shape": "text-7",
+      "text": "Trả lời chính trong 15–25 giây.",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 684.0,
+      "bound_width": 228.99000549316406
+    },
+    {
+      "slide": 24,
+      "shape": "TextBox 8",
+      "text": "Về kết luận",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 129.60000610351562,
+      "bound_width": 56.45000076293945
+    },
+    {
+      "slide": 25,
+      "shape": "section-tag",
+      "text": "VẤN ĐÁP / A08",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 92.75
+    },
+    {
+      "slide": 25,
+      "shape": "text-2",
+      "text": "08",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 25,
+      "shape": "source",
+      "text": "V6 §3.4; final_metrics.csv",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 112.37503814697266
+    },
+    {
+      "slide": 25,
+      "shape": "text-4",
+      "text": "08",
+      "height": 94.04000091552734,
+      "bound_height": 93.5999984741211,
+      "width": 180.0,
+      "bound_width": 108.37503814697266
+    },
+    {
+      "slide": 25,
+      "shape": "text-5",
+      "text": "Vì sao không chỉ dùng Accuracy?",
+      "height": 108.0,
+      "bound_height": 43.20000076293945,
+      "width": 687.5999755859375,
+      "bound_width": 537.43505859375
+    },
+    {
+      "slide": 25,
+      "shape": "text-6",
+      "text": "Macro-F1 cho hai lớp trọng số bằng nhau, còn MCC xét cả bốn ô confusio",
+      "height": 152.0,
+      "bound_height": 150.0,
+      "width": 698.4000244140625,
+      "bound_width": 692.5499877929688
+    },
+    {
+      "slide": 25,
+      "shape": "text-7",
+      "text": "Trả lời chính trong 15–25 giây.",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 684.0,
+      "bound_width": 228.99000549316406
+    },
+    {
+      "slide": 25,
+      "shape": "TextBox 8",
+      "text": "Về kết luận",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 129.60000610351562,
+      "bound_width": 56.45000076293945
+    },
+    {
+      "slide": 26,
+      "shape": "section-tag",
+      "text": "VẤN ĐÁP / A09",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 92.75
+    },
+    {
+      "slide": 26,
+      "shape": "text-2",
+      "text": "08",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 26,
+      "shape": "source",
+      "text": "V6 §3.4, §4.2, §5.1",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 80.12503814697266
+    },
+    {
+      "slide": 26,
+      "shape": "text-4",
+      "text": "09",
+      "height": 94.04000091552734,
+      "bound_height": 93.5999984741211,
+      "width": 180.0,
+      "bound_width": 108.37503814697266
+    },
+    {
+      "slide": 26,
+      "shape": "text-5",
+      "text": "Vì sao không nói hai mô hình tương đương?",
+      "height": 108.0,
+      "bound_height": 86.4000015258789,
+      "width": 687.5999755859375,
+      "bound_width": 573.75
+    },
+    {
+      "slide": 26,
+      "shape": "text-6",
+      "text": "Khoảng tin cậy của chênh lệch Macro-F1 và MCC chứa 0 nên nhóm chưa thấ",
+      "height": 151.46487426757812,
+      "bound_height": 150.0,
+      "width": 698.4000244140625,
+      "bound_width": 702.8750610351562
+    },
+    {
+      "slide": 26,
+      "shape": "text-7",
+      "text": "Trả lời chính trong 15–25 giây.",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 684.0,
+      "bound_width": 228.99000549316406
+    },
+    {
+      "slide": 26,
+      "shape": "TextBox 8",
+      "text": "Về kết luận",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 129.60000610351562,
+      "bound_width": 56.45000076293945
+    },
+    {
+      "slide": 27,
+      "shape": "section-tag",
+      "text": "VẤN ĐÁP / A10",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 92.75
+    },
+    {
+      "slide": 27,
+      "shape": "text-2",
+      "text": "08",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 27,
+      "shape": "source",
+      "text": "V6 §5.1; final_metrics.csv",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 112.37503814697266
+    },
+    {
+      "slide": 27,
+      "shape": "text-4",
+      "text": "10",
+      "height": 94.04000091552734,
+      "bound_height": 93.5999984741211,
+      "width": 180.0,
+      "bound_width": 108.37503814697266
+    },
+    {
+      "slide": 27,
+      "shape": "text-5",
+      "text": "Khi nào RF42 tốt hơn Stacking42?",
+      "height": 108.0,
+      "bound_height": 43.20000076293945,
+      "width": 687.5999755859375,
+      "bound_width": 547.8200073242188
+    },
+    {
+      "slide": 27,
+      "shape": "text-6",
+      "text": "Với đúng dự đoán official TEST đang xét, nhóm đặt L=FP+r×FN. Chênh lệc",
+      "height": 151.46487426757812,
+      "bound_height": 150.0,
+      "width": 698.4000244140625,
+      "bound_width": 686.1500244140625
+    },
+    {
+      "slide": 27,
+      "shape": "text-7",
+      "text": "Trả lời chính trong 15–25 giây.",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 684.0,
+      "bound_width": 228.99000549316406
+    },
+    {
+      "slide": 27,
+      "shape": "TextBox 8",
+      "text": "Về kết luận",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 129.60000610351562,
+      "bound_width": 56.45000076293945
+    },
+    {
+      "slide": 28,
+      "shape": "section-tag",
+      "text": "VẤN ĐÁP / A11",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 92.75
+    },
+    {
+      "slide": 28,
+      "shape": "text-2",
+      "text": "08",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 28,
+      "shape": "source",
+      "text": "V6 §4.7.4; P21 aggregate.json",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 128.8750457763672
+    },
+    {
+      "slide": 28,
+      "shape": "text-4",
+      "text": "11",
+      "height": 94.04000091552734,
+      "bound_height": 93.5999984741211,
+      "width": 180.0,
+      "bound_width": 104.06999969482422
+    },
+    {
+      "slide": 28,
+      "shape": "text-5",
+      "text": "Tại sao balanced làm tăng FNR?",
+      "height": 108.0,
+      "bound_height": 43.20000076293945,
+      "width": 687.5999755859375,
+      "bound_width": 522.8650512695312
+    },
+    {
+      "slide": 28,
+      "shape": "text-6",
+      "text": "Normal mới là lớp ít mẫu trong TRAIN. Cấu hình balanced ưu tiên Normal",
+      "height": 151.46487426757812,
+      "bound_height": 150.0,
+      "width": 698.4000244140625,
+      "bound_width": 697.43505859375
+    },
+    {
+      "slide": 28,
+      "shape": "text-7",
+      "text": "Trả lời chính trong 15–25 giây.",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 684.0,
+      "bound_width": 228.99000549316406
+    },
+    {
+      "slide": 28,
+      "shape": "TextBox 8",
+      "text": "Về kết luận",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 129.60000610351562,
+      "bound_width": 56.45000076293945
+    },
+    {
+      "slide": 29,
+      "shape": "section-tag",
+      "text": "VẤN ĐÁP / A12",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 792.0,
+      "bound_width": 92.75
+    },
+    {
+      "slide": 29,
+      "shape": "text-2",
+      "text": "08",
+      "height": 21.600000381469727,
+      "bound_height": 15.600000381469727,
+      "width": 54.0,
+      "bound_width": 21.37504005432129
+    },
+    {
+      "slide": 29,
+      "shape": "source",
+      "text": "V6 §3.5, §5.4–5.5",
+      "height": 16.559999465942383,
+      "bound_height": 12.0,
+      "width": 864.0,
+      "bound_width": 75.12503814697266
+    },
+    {
+      "slide": 29,
+      "shape": "text-4",
+      "text": "12",
+      "height": 94.04000091552734,
+      "bound_height": 93.5999984741211,
+      "width": 180.0,
+      "bound_width": 108.37503814697266
+    },
+    {
+      "slide": 29,
+      "shape": "text-5",
+      "text": "Nhóm đã triển khai IDS mạng thật chưa?",
+      "height": 108.0,
+      "bound_height": 43.20000076293945,
+      "width": 687.5999755859375,
+      "bound_width": 662.780029296875
+    },
+    {
+      "slide": 29,
+      "shape": "text-6",
+      "text": "Chưa. Nhóm đang đánh giá pipeline ngoại tuyến. P15 tái dựng theo cấu h",
+      "height": 151.46487426757812,
+      "bound_height": 150.0,
+      "width": 698.4000244140625,
+      "bound_width": 699.0150146484375
+    },
+    {
+      "slide": 29,
+      "shape": "text-7",
+      "text": "Trả lời chính trong 15–25 giây.",
+      "height": 28.799999237060547,
+      "bound_height": 21.600000381469727,
+      "width": 684.0,
+      "bound_width": 228.99000549316406
+    },
+    {
+      "slide": 29,
+      "shape": "TextBox 8",
+      "text": "Về kết luận",
+      "height": 21.600000381469727,
+      "bound_height": 14.399999618530273,
+      "width": 129.60000610351562,
+      "bound_width": 56.45000076293945
+    }
+  ]
+}

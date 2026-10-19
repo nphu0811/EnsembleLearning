@@ -1,0 +1,29 @@
+--- V6/chapters/validity_discussion_revision_v4_2026_10_19.tex
++++ V7/chapters/validity_discussion_revision_v4_2026_10_19.tex
+@@ -1,7 +1,7 @@
+ \section{Diễn giải đánh đổi giữa các loại lỗi}
+ \label{sec:discussion-error-tradeoff}
+ 
+-Trên cùng official TEST, Stacking-42 giảm 142 cảnh báo giả so với RF-42 nhưng bỏ sót thêm 118 mẫu Attack. Giá trị thực tế của thay đổi này phụ thuộc vào chi phí tương đối của cảnh báo giả và bỏ sót trong môi trường vận hành; chưa có dữ liệu thật về chi phí đó; phần phân tích độ nhạy giả định phía dưới chỉ minh họa điều kiện để hai pipeline đổi thứ hạng theo chi phí, không xếp một cấu hình là tối ưu cho mọi NIDS. Macro-F1 gần như không đổi và MCC giảm nhẹ ở Stacking, trong khi FPR và FNR dịch chuyển theo hai hướng khác nhau. Việc đọc đồng thời các chỉ số này cho thấy lý do một điểm tổng hợp duy nhất chưa đủ để quyết định triển khai.
++Trên cùng official TEST, Stacking-42 giảm 142 cảnh báo giả so với RF-42 nhưng bỏ sót thêm 118 mẫu Attack. Ý nghĩa vận hành của thay đổi này phụ thuộc vào chi phí tương đối giữa cảnh báo giả và bỏ sót. Đề tài chưa có dữ liệu thực về các chi phí đó. Phân tích độ nhạy dưới đây dùng các tỷ lệ giả định để chỉ ra khi nào hai pipeline đổi thứ hạng; nó chưa xác định cấu hình tối ưu cho mọi NIDS. Macro-F1 gần như không đổi và MCC giảm nhẹ ở Stacking, trong khi FPR và FNR dịch chuyển theo hai hướng khác nhau. Một điểm tổng hợp duy nhất vì thế chưa đủ để quyết định triển khai.
+ 
+ Ma trận tính đúng/sai theo cặp dưới đây cho thấy số dự đoán bất đồng giữa hai pipeline gần cân bằng. Điều này phù hợp với McNemar không phát hiện khác biệt rõ về tính đúng tổng thể, nhưng không thay thế các chỉ số tách theo lớp hay thiết lập tương đương thống kê.
+ 
+@@ -56,7 +56,7 @@
+ \section{Diversity và sai số theo nhóm}
+ \label{sec:discussion-diversity-families}
+ 
+-Các learner cơ sở mắc lỗi không hoàn toàn trùng nhau trong development, nhưng kết quả Hard/Soft Voting thấp hơn RF và lợi thế nhỏ của Stacking không rõ trên official TEST. Như vậy, diversity là một thuộc tính quan sát được của các dự đoán, còn lợi ích của ensemble phải được xác lập trực tiếp bằng hiệu năng và loại lỗi của bộ kết hợp. Paired correctness của hai pipeline cuối cũng chỉ mô tả bất đồng; nó không cho biết một base learner cụ thể đã gây ra hay sửa một lỗi nào.
++Các learner cơ sở mắc lỗi không hoàn toàn trùng nhau trong development, nhưng kết quả Hard/Soft Voting thấp hơn RF và lợi thế nhỏ của Stacking không rõ trên official TEST. Diversity mô tả khác biệt giữa các dự đoán. Để xác định lợi ích của ensemble, vẫn phải đo trực tiếp hiệu năng và từng loại lỗi của bộ kết hợp. Paired correctness của hai pipeline cuối cũng chỉ mô tả bất đồng; nó không cho biết một base learner cụ thể đã gây ra hay sửa một lỗi nào.
+ 
+ Phân tích theo họ Attack cho thấy mức lỗi không đồng đều: chênh lệch giữa Stacking và RF-42 lớn hơn ở Fuzzers nhưng đi theo hướng ngược lại ở Generic (Bảng~\ref{tab:attack-family}). Vì các mô hình được huấn luyện cho Normal/Attack, đây là phân nhóm hậu nghiệm theo nhãn thật, không phải phép đánh giá đa lớp. Các biến như \texttt{sttl}, \texttt{proto} hay \texttt{state} có thể liên hệ với những dự đoán khác nhau, song dữ liệu mô tả không xác định được cơ chế nhân quả.
+ 
+@@ -84,7 +84,7 @@
+ \section{Tổng hợp câu trả lời nghiên cứu}
+ \label{sec:revision-rq-map}
+ 
+-Bảng~\ref{tab:rq-evidence} tóm tắt kết quả thực nghiệm có thể bảo vệ cùng phần còn chưa được xác định. Các khoảng trống được nêu trong mối liên hệ với kết quả, thay vì thay thế câu trả lời bằng danh sách giới hạn.
++Bảng~\ref{tab:rq-evidence} tóm tắt kết quả đã có cho từng câu hỏi nghiên cứu và những bằng chứng còn thiếu.
+ 
+ \begin{table}[htbp]
+ \centering

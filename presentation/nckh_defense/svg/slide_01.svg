@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 960 540">
+<rect width="960" height="540" fill="white"/>
+<text x="43.199999999999996" y="75.6" font-family="Aptos,Arial,sans-serif" font-size="36.0" font-weight="700" fill="#0D3560">Một cảnh báo ít hơn.</text>
+<text x="43.199999999999996" y="117.6" font-family="Aptos,Arial,sans-serif" font-size="36.0" font-weight="700" fill="#0D3560">Một rủi ro lớn hơn?</text>
+<text x="41.76" y="516.1600000000001" font-family="Aptos,Arial,sans-serif" font-size="10.0" font-weight="400" fill="#526A81">Nguồn: báo cáo V6, chương 3–5.</text>
+<text x="871.1999999999999" y="516.0" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#526A81">01</text>
+<line x1="43.199999999999996" y1="488.16" x2="915.84" y2="488.16" stroke="#1769AA"/>
+<text x="46.800000000000004" y="180.4" font-family="Aptos,Arial,sans-serif" font-size="22.0" font-weight="700" fill="#1769AA">NGHIÊN CỨU ENSEMBLE LEARNING</text>
+<text x="46.800000000000004" y="208.4" font-family="Aptos,Arial,sans-serif" font-size="22.0" font-weight="700" fill="#1769AA">CHO PHÁT HIỆN XÂM NHẬP MẠNG</text>
+<text x="46.800000000000004" y="285.6" font-family="Aptos,Arial,sans-serif" font-size="30.0" font-weight="700" fill="#0D3560">Cái giá của từng loại sai lầm</text>
+<line x1="662.4" y1="277.2" x2="738.0" y2="277.2" stroke="#1769AA"/>
+<line x1="741.6" y1="194.4" x2="828.0" y2="277.2" stroke="#1769AA"/>
+<line x1="741.6" y1="277.2" x2="828.0" y2="360.0" stroke="#1769AA"/>
+<text x="835.1999999999999" y="206.24" font-family="Aptos,Arial,sans-serif" font-size="32.0" font-weight="700" fill="#1769AA">FP</text>
+<text x="835.1999999999999" y="379.04" font-family="Aptos,Arial,sans-serif" font-size="32.0" font-weight="700" fill="#B65B29">FN</text>
+<text x="46.800000000000004" y="422.8" font-family="Aptos,Arial,sans-serif" font-size="16.0" font-weight="400" fill="#526A81">Dương Ngọc Phú · Phạm Thế Vỹ · Vũ Văn Kiên · Lê Hoàng Nguyên Quân</text>
+<text x="46.800000000000004" y="455.64" font-family="Aptos,Arial,sans-serif" font-size="15.0" font-weight="400" fill="#526A81">GVHD: TS. Lê Ngọc Hiếu   |   PTIT cơ sở TP.HCM   |   2026</text>
+</svg>

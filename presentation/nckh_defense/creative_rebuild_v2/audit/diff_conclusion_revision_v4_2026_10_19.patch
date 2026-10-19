@@ -1,0 +1,18 @@
+--- V6/chapters/conclusion_revision_v4_2026_10_19.tex
++++ V7/chapters/conclusion_revision_v4_2026_10_19.tex
+@@ -1,6 +1,6 @@
+ \section{Kết luận}
+ \label{chap:ket-luan}
+-Nghiên cứu đánh giá học tổ hợp và mô hình đơn cho phân loại nhị phân Normal/Attack trên UNSW-NB15 bằng hai lớp bằng chứng được tách biệt về thời điểm thiết kế và bộ dữ liệu đánh giá.
++Nghiên cứu so sánh học tổ hợp và mô hình đơn cho phân loại Normal/Attack trên UNSW-NB15. Hai phần thực nghiệm được trình bày riêng vì khác thời điểm thiết kế và bộ dữ liệu đánh giá.
+ 
+ \textbf{Thứ nhất, official TEST lịch sử} (82\,332 dòng) ghi nhận Stacking-42 đạt Macro-F1 $0.863840$, RF-42 $0.863343$ và RF-17 $0.860673$. Khoảng tin cậy paired-bootstrap của hiệu số Stacking so với RF về Macro-F1/MCC chứa 0; Stacking giảm 142 false positives nhưng tăng 118 false negatives. Các phân tích Voting, diversity của learner cơ sở, phân bố FN theo họ Attack và exact-duplicate-filtered view tạo ra bằng chứng mô tả hữu ích, nhưng không chứng minh ưu thế ensemble ổn định, cơ chế nhân quả do diversity hoặc tổng quát hóa ra benchmark độc lập. Kết quả này được giữ nguyên sau P21.
+ 
+@@ -12,6 +12,6 @@
+ 
+ Với \textbf{RQ5}, trọng số lớp cân bằng (A2) giảm FPR trung bình 3.164 điểm phần trăm nhưng tăng FNR 1.788 điểm so với A0; FIT-only random oversampling của Normal (A3) giảm FPR 2.209 điểm và tăng FNR 1.168 điểm. Cả hai có Macro-F1 trung bình thấp hơn A0, cho thấy chi phí bỏ sót tấn công phải được xem xét cùng mục tiêu giảm cảnh báo giả. Kết quả không có nghĩa biện pháp cân bằng lớp luôn vô ích; hiệu quả phụ thuộc phân bố dữ liệu, ngưỡng quyết định và chi phí vận hành.
+ 
+-Đóng góp kiểm chứng của công trình là đối chiếu nhiều thuật toán theo các chỉ số Macro-F1, MCC, FPR, FNR và ma trận nhầm lẫn; thảo luận đa dạng sai số, nguồn bất định, so sánh pipeline có kiểm soát siêu tham số, lựa chọn đặc trưng lặp trên FIT và kiểm soát rò rỉ vector trùng trong inner Stacking. Tuy nhiên, năm seed P21 dùng \emph{cùng} validation và các giả thuyết bổ sung được xây dựng sau khi nhìn thấy kết quả lịch sử. Do vậy không xem P21 là independent external validation, không trình bày kiểm định tương đương hoặc tính khái quát theo năm benchmark độc lập.
++Công trình đối chiếu nhiều thuật toán bằng Macro-F1, MCC, FPR, FNR và ma trận nhầm lẫn; phân tích đa dạng sai số và nguồn bất định. Các đối chứng kiểm soát siêu tham số, lặp lựa chọn đặc trưng trên FIT và kiểm soát rò rỉ do vector trùng trong inner Stacking. Tuy nhiên, năm seed P21 dùng \emph{cùng} validation và các giả thuyết bổ sung được xây dựng sau khi nhìn thấy kết quả lịch sử. Do vậy không xem P21 là independent external validation, không trình bày kiểm định tương đương hoặc tính khái quát theo năm benchmark độc lập.
+ 
+ Hướng phát triển tiếp theo cần một thiết kế tiền đăng ký trên dữ liệu mới, split theo thời gian/host/session nếu có nguồn định danh đáng tin cậy, nhiều môi trường mạng và chi phí false positive/false negative đã định lượng. Chỉ những phép đánh giá độc lập như vậy mới có thể nâng mức bằng chứng từ \emph{đối chứng nội bộ hậu nghiệm} đến kết luận có sức khái quát hơn về hiệu năng IDS trong thực tế.

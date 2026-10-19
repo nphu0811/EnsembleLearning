@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 960 540">
+<rect width="960" height="540" fill="white"/>
+<text x="43.199999999999996" y="75.6" font-family="Aptos,Arial,sans-serif" font-size="36.0" font-weight="700" fill="#0D3560">P21 có 5 FIT seed trên 1 validation cố định</text>
+<text x="41.76" y="516.1600000000001" font-family="Aptos,Arial,sans-serif" font-size="10.0" font-weight="400" fill="#526A81">Phụ lục vấn đáp · P21 aggregate.json; V6 §3.6, §4.7</text>
+<text x="871.1999999999999" y="516.0" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#526A81">25</text>
+<line x1="43.199999999999996" y1="488.16" x2="915.84" y2="488.16" stroke="#1769AA"/>
+<text x="61.199999999999996" y="178.20000000000002" font-family="Aptos,Arial,sans-serif" font-size="27.0" font-weight="700" fill="#1769AA">P21 có phải external TEST mới không?</text>
+<text x="61.199999999999996" y="259.0" font-family="Aptos,Arial,sans-serif" font-size="25.0" font-weight="400" fill="#0D3560">Không. Hậu nghiệm trên official TRAIN; mỗi seed dùng 60.000 FIT source rows, validation 35.069 dòng (11.200 Normal / 23.869 Attack). Group theo vector 42 predictor trùng chính xác; không chứng minh độc lập session/time. SD có điều kiện trên validation này.</text>
+<text x="61.199999999999996" y="462.40000000000003" font-family="Aptos,Arial,sans-serif" font-size="16.0" font-weight="400" fill="#526A81">Trả lời cốt lõi trong 15–25 giây; chỉ mở khi hội đồng hỏi.</text>
+<text x="770.4" y="20.64" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#1769AA">Về kết luận</text>
+</svg>

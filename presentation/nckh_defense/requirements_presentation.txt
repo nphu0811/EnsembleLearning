@@ -1,0 +1,7 @@
+python-pptx==1.0.2
+pywin32==312
+edge-tts==7.3.1
+pymupdf==1.28.2
+Pillow==12.3.0
+requests==2.34.2
+numpy==2.4.6

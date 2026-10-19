@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 960 540">
+<rect width="960" height="540" fill="white"/>
+<text x="43.199999999999996" y="75.6" font-family="Aptos,Arial,sans-serif" font-size="36.0" font-weight="700" fill="#0D3560">Đọc CI của hiệu số; không suy ra tương đương</text>
+<text x="41.76" y="516.1600000000001" font-family="Aptos,Arial,sans-serif" font-size="10.0" font-weight="400" fill="#526A81">Phụ lục vấn đáp · V6 §3.4, §4.2, §5.1</text>
+<text x="871.1999999999999" y="516.0" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#526A81">29</text>
+<line x1="43.199999999999996" y1="488.16" x2="915.84" y2="488.16" stroke="#1769AA"/>
+<text x="61.199999999999996" y="178.20000000000002" font-family="Aptos,Arial,sans-serif" font-size="27.0" font-weight="700" fill="#1769AA">Vì sao không nói hai mô hình tương đương?</text>
+<text x="61.199999999999996" y="259.0" font-family="Aptos,Arial,sans-serif" font-size="25.0" font-weight="400" fill="#0D3560">CI 95% paired bootstrap của chênh Macro-F1/MCC chứa 0: chưa thấy khác biệt rõ theo phép đo đó. Không phải kiểm định tương đương. McNemar đo đúng/sai tổng thể, không trực tiếp Macro-F1. Bootstrap hàng dữ liệu không ước lượng biến thiên huấn luyện.</text>
+<text x="61.199999999999996" y="462.40000000000003" font-family="Aptos,Arial,sans-serif" font-size="16.0" font-weight="400" fill="#526A81">Trả lời cốt lõi trong 15–25 giây; chỉ mở khi hội đồng hỏi.</text>
+<text x="770.4" y="20.64" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#1769AA">Về kết luận</text>
+</svg>

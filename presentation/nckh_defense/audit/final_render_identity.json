@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "renders_compared": 32,
+  "changed": [],
+  "note": "Editable text-frame height repair changed no pixels in any of32 PowerPoint PNGs; existing native motion video remains visually identical to final deck states."
+}

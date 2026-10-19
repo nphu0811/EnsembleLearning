@@ -1,3 +1,36 @@
+# Creative V2 delivery checkpoint — 19/10/2026
+
+Latest user request V2 handled as a new directory, not an edit of old final files. Read `presentation/nckh_defense/creative_rebuild_v2/README.md` and `QA_Report.md`. Actual outputs:
+- V7 PDF49pages + matching LaTeX sourceZIP;38 prose edits, numeric/math/table/citation invariants PASS. XeLaTeX→BibTeX→XeLaTeX2passes. V6 unchanged.
+- PPTX29slides,17main/8scenes/360s +12hidden Q&A.568native shape instances;439internal effects;59motion paths;15scale. Zero Morph/transition effects. Independent screenshot QA including rewritten appendix PASS.
+- MP4 exactly360.000s1080p30. Native PowerPoint CreateVideo was360.3933s, FFmpeg PTSfactor0.9989086923 and external narration. Full decode clean.7hero clips/frame strips prove same-slide object/chart movement. Main final render hashes identical after note/box repairs. No voice audio embedded in PPTX; video contains TTS.
+- Three9s native concept clips and mockups, staticPDF29pages, script/Q&A/storyboard/skill/evidence/asset/animation manifests; checkedZIP/checksums.
+
+**Limits, do not erase:** Lollypop/Designathon CAPTCHA, Locomotive/Behance403, ActiveTheory unsupported. Browser fallback Playwright; real Awwwards2scrollstates observed. Do not claim observed Lollypop kinetic motion. TTS actual measured319.056s at HoaiMy−5%; no audio speedup. ASR checks are noisy for English terms. This environment cannot listen to audio; no human pronunciation sign-off. Presenter should listen/rehearse before defense. Q&A15–25s is core-answer target, not measured full12paragraph duration. Do not claim all requested reference/audio quality checks passed.
+
+Read-only resume: inspect audit/release_validation.json, open finalPPTX andMP4, verify checksums. Do not rerun frozen training. If editing slides, follow sourceREADME and rerender/recheck. PowerPoint COM tasks must run sequentially. Portable TinyTeX/Whisper runtime not included in deliveryZIP. All core deck metadata now self-contained in creative_qna.py; no dependency on old content.py when building new deck.
+
+No background work continues after this interactive session. Remaining human checks are audio pronunciation and venue/projector rehearsal. Older checkpoint below is history; the V1 completion did NOT imply real internal animation and was superseded by the user's V2 redesign request.
+
+---
+
+# Presentation checkpoint — 19/10/2026 (latest)
+
+Completed the explicitly requested defense presentation; no model training or raw TEST reads. Outputs in `presentation/nckh_defense/`:
+- Editable final PPTX:32slides,20technical keyframes forming8scenes/360s,12hidden Q&A.
+- Actual MP4:360.000s1080p30,H.264/AAC,Vietnamese synthetic voice-over; native PowerPoint Morph, FFmpeg timestamp normalization0.996263182845.
+-20-page static main PDF; exact script/storyboard/Q&A/evidence/skill/asset/QA docs;112-file ZIP and checksums.
+-48/48 artifact checks PASS; independent static QA fixed/rechecked slides2,10,12,13,18.20main stable video states in order, appendix physically excluded.10actual motion sample frames viewed, full decode clean. Six editable text-frame bounds fixed;32render hashes unchanged. See QA_Report.md for honest limits/initial failed checks.
+
+**Resume read-only:** `python presentation/nckh_defense/validate_delivery.py` then open MP4/PPTX. Human next step: rehearse with actual voice and venue projector; do not claim these tests occurred. Native audio is external preview voice-over, not an embedded lecturer recording. UsePowerPoint desktop supportingMorph; static viewers may flatten transitions. A1–A12 on closing or21…32+Enter opens Q&A; notes/doc explain navigation.
+
+Source V6 SHA remains40b35c9a5c7f228ee91bbba94cfb0ccd701d52dd707a6f5b184171412ce6afc3. P9CSV/P21aggregate/protocol/code hashes unchanged. EntrySTATE18/10 was stale relative to V6+fullP21; old phase status retained as history, current task field reflects completed presentation. Do not restart P21 or infer independent external tests. No work continues after the session.
+
+Artifacts+SHA: `.research_memory/presentation_2026_10_19/checkpoint.json`. Build instructions in presentation README; sources content.py/build_deck.py/animate_export.py/finalize_video.py. Avoid overwriting finalized user edits on a future rebuild.
+
+---
+Previous handoff preserved below:
+
 # Current safe-release checkpoint — 17/10/2026
 
 P18deep checkpoint committed/pushed ccfde4e56176a212e8108b3de5a3cf869f7861ce. P19safeallowlistdraft now complete in boundedinternalreview scope. See docs/research/P19_SAFE_RELEASE_AUDIT_2026-10-17.md and release/internal_review_draft_2026_10_17_01/.

@@ -1,0 +1,83 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {chapter}{Lời cam đoan}{i}{chapter*.1}%
+\contentsline {chapter}{Lời cảm ơn}{ii}{chapter*.2}%
+\contentsline {chapter}{Danh mục từ viết tắt}{vi}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}CƠ SỞ LÝ THUYẾT}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Bối cảnh và mục tiêu nghiên cứu}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Bối cảnh và động cơ}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Vấn đề nghiên cứu}{1}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Các vấn đề nghiên cứu}{1}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Mục tiêu và đóng góp nghiên cứu}{2}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Bố cục báo cáo}{2}{subsection.1.1.5}%
+\contentsline {section}{\numberline {1.2}Các thuật toán học máy và phương pháp kết hợp}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Phát hiện xâm nhập dựa trên đặc trưng luồng mạng}{3}{subsection.1.2.1}%
+\contentsline {subsubsection}{Quy trình biến đổi và leakage}{3}{subsubsection*.4}%
+\contentsline {subsubsection}{Sai số của bộ phát hiện}{3}{subsubsection*.5}%
+\contentsline {subsection}{\numberline {1.2.2}Mô hình Logistic Regression}{4}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Decision Tree và Random Forest}{4}{subsection.1.2.3}%
+\contentsline {subsubsection}{Decision Tree}{4}{subsubsection*.6}%
+\contentsline {subsubsection}{Random Forest}{4}{subsubsection*.7}%
+\contentsline {subsection}{\numberline {1.2.4}Voting, Stacking và sai số bổ sung}{5}{subsection.1.2.4}%
+\contentsline {subsubsection}{Hard voting và weighted soft voting}{5}{subsubsection*.8}%
+\contentsline {subsubsection}{Out-of-fold training của Stacking}{5}{subsubsection*.9}%
+\contentsline {subsubsection}{Double-fault, error correlation và oracle}{5}{subsubsection*.11}%
+\contentsline {subsection}{\numberline {1.2.5}Các chiến lược Feature Selection}{6}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}Các chỉ số đánh giá và diễn giải thống kê}{6}{subsection.1.2.6}%
+\contentsline {subsubsection}{Precision, Recall, Macro-F1 và MCC}{7}{subsubsection*.12}%
+\contentsline {subsubsection}{Paired bootstrap và McNemar}{7}{subsubsection*.13}%
+\contentsline {section}{\numberline {1.3}Các công trình nghiên cứu liên quan}{7}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Ensemble Learning trong NIDS}{7}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Feature Selection, chuẩn hóa và mất cân bằng}{8}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Chất lượng dữ liệu và khả năng khái quát}{8}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Khoảng trống bằng chứng và giới hạn tổng quan}{8}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Đối chiếu phương pháp với một số công trình liên quan}{9}{subsection.1.3.5}%
+\contentsline {chapter}{\numberline {2}DỮ LIỆU VÀ QUY TRÌNH TIỀN XỬ LÝ}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Nguồn dữ liệu và quy mô bản ghi}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Các nhóm tấn công và mức độ chênh lệch}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Khảo sát thống kê các đặc trưng}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Tương quan giữa các đặc trưng}{13}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Kiểm toán overlap và các view đánh giá}{13}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Kết luận về đặc trưng của benchmark}{14}{section.2.6}%
+\contentsline {chapter}{\numberline {3}XÂY DỰNG MÔ HÌNH VÀ THIẾT KẾ THỰC NGHIỆM}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Thiết kế nghiên cứu và dữ liệu}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Lựa chọn đặc trưng và tiền xử lý}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Cấu trúc các pipeline}{16}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Phát triển mô hình, OOF và nguyên tắc đánh giá}{16}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Khả năng tái lập trong môi trường phần mềm xác định}{17}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Phần mở rộng P21: thiết kế đối chứng matched trên TRAIN-derived validation}{17}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Phân chia và lấy mẫu FIT}{18}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Năm nhánh matched, chọn đặc trưng và ngưỡng}{18}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Đánh giá, chi phí, tái lập và phạm vi suy luận}{19}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Định nghĩa chi phí đo và chi phí chưa đo}{19}{subsection.3.6.4}%
+\contentsline {chapter}{\numberline {4}KẾT QUẢ THỰC NGHIỆM VÀ ĐÁNH GIÁ}{20}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Phạm vi đánh giá và cách diễn giải chỉ số}{20}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Kết quả trên official holdout}{20}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Độ bất định của chênh lệch và kiểm định cặp}{21}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Chi phí quan sát trong lần chạy lịch sử}{22}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Sai số theo họ tấn công}{23}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Độ nhạy trên exact-duplicate-filtered subset}{24}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Bằng chứng phát triển mô hình: OOF, Voting và diversity}{24}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Đối chiếu các câu hỏi nghiên cứu}{25}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}RQ1: Ensemble có cải thiện ổn định so với mô hình đơn?}{25}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}RQ2: Feature Selection thay đổi chất lượng và chi phí ra sao?}{25}{subsection.4.8.2}%
+\contentsline {subsection}{\numberline {4.8.3}RQ3: Diversity lỗi có liên hệ thế nào với kết quả Ensemble?}{26}{subsection.4.8.3}%
+\contentsline {subsection}{\numberline {4.8.4}RQ4: Hiệu năng thay đổi ra sao khi loại các vector TEST trùng TRAIN?}{26}{subsection.4.8.4}%
+\contentsline {subsection}{\numberline {4.8.5}RQ5: Xử lý mất cân bằng ảnh hưởng thế nào đến lỗi?}{27}{subsection.4.8.5}%
+\contentsline {section}{\numberline {4.9}P21: Kết quả đối chứng hậu nghiệm trên internal validation của TRAIN}{28}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Độ biến thiên giữa năm FIT seed}{28}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}RQ1: Ensemble và đánh đổi lỗi}{29}{subsection.4.9.2}%
+\contentsline {subsection}{\numberline {4.9.3}RQ2: Đối chứng matched Feature Selection và chi phí thực tế}{29}{subsection.4.9.3}%
+\contentsline {subsection}{\numberline {4.9.4}RQ5: Cân bằng lớp không đồng nghĩa tăng phát hiện Attack}{30}{subsection.4.9.4}%
+\contentsline {subsection}{\numberline {4.9.5}Chất lượng bằng chứng và giới hạn phát biểu}{30}{subsection.4.9.5}%
+\contentsline {chapter}{\numberline {5}THẢO LUẬN VÀ HƯỚNG PHÁT TRIỂN}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Diễn giải đánh đổi giữa các loại lỗi}{31}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Phân tích độ nhạy chi phí báo động giả và bỏ sót tấn công}{31}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Diversity và sai số theo nhóm}{32}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Ý nghĩa và giới hạn của Feature Selection}{32}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Độ bất định và phạm vi suy luận}{33}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Tái lập, tái huấn luyện và triển khai}{33}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Tổng hợp câu trả lời nghiên cứu}{33}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Hướng nghiên cứu tiếp theo}{34}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Giới hạn bổ sung riêng cho thực nghiệm P21}{34}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Kết luận}{35}{section.5.9}%
+\contentsline {chapter}{Tài liệu tham khảo}{37}{section*.38}%

@@ -1,0 +1,182 @@
+[
+  {
+    "slide": 1,
+    "scene": 1,
+    "seconds": 20,
+    "view": "opening",
+    "title": "Một cảnh báo ít hơn.\nMột rủi ro lớn hơn?",
+    "speech": "Kính thưa hội đồng, điều gì nguy hiểm hơn một cảnh báo giả? Đó có thể là một cuộc tấn công bị bỏ sót. Với đề tài này, nhóm chúng em nghiên cứu cách kết hợp mô hình, và kiểm tra cái giá của từng loại sai lầm.",
+    "source": "Nguồn: báo cáo V6, chương 3–5."
+  },
+  {
+    "slide": 2,
+    "scene": 2,
+    "seconds": 20,
+    "view": "question",
+    "title": "Kết hợp mô hình có giúp IDS tốt hơn?",
+    "speech": "Bài toán của nhóm là phân loại một bản ghi lưu lượng thành bình thường hoặc tấn công. Câu hỏi chính là: kết hợp nhiều mô hình có cải thiện kết quả so với một mô hình mạnh như Random Forest, hay chỉ chuyển sai số từ loại này sang loại khác?",
+    "source": "Nguồn: báo cáo V6, chương 3–5."
+  },
+  {
+    "slide": 3,
+    "scene": 2,
+    "seconds": 20,
+    "view": "dataset",
+    "title": "Một benchmark. Hai phạm vi bằng chứng.",
+    "speech": "Nhóm dùng bộ dữ liệu UNSW, với hơn một trăm bảy mươi lăm nghìn dòng huấn luyện và hơn tám mươi hai nghìn dòng kiểm thử chính thức. Báo cáo có kết quả lịch sử và thực nghiệm bổ sung P hai mươi mốt. Hai phần này phải được đọc riêng vì dùng tập đánh giá khác nhau.",
+    "source": "Nguồn: báo cáo V6, chương 3–5."
+  },
+  {
+    "slide": 4,
+    "scene": 3,
+    "seconds": 10,
+    "view": "architecture0",
+    "title": "Mỗi bản ghi đi qua một pipeline rõ ràng",
+    "speech": "Đây là quy trình xử lý dữ liệu và đánh giá ngoại tuyến trong mã nguồn. Một dòng minh họa đại diện cho một bản ghi lưu lượng.",
+    "source": "Nguồn: báo cáo V6, chương 3–5."
+  },
+  {
+    "slide": 5,
+    "scene": 3,
+    "seconds": 15,
+    "view": "architecture1",
+    "title": "Chỉ giữ thông tin dùng để dự đoán",
+    "speech": "Nhóm loại mã định danh, nhãn và nhóm tấn công khỏi đầu vào. Còn bốn mươi hai đặc trưng gốc. Biến phân loại được mã hóa; nhánh hồi quy logistic có bước chuẩn hóa.",
+    "source": "Nguồn: báo cáo V6, chương 3–5."
+  },
+  {
+    "slide": 6,
+    "scene": 3,
+    "seconds": 15,
+    "view": "architecture2",
+    "title": "Các mô hình nhận cùng một bản ghi",
+    "speech": "Bản ghi đi đến hồi quy logistic, cây quyết định và Random Forest. Các phép biến đổi có tham số phải học từ phần dữ liệu huấn luyện tương ứng. Không học từ tập kiểm thử.",
+    "source": "Nguồn: báo cáo V6, chương 3–5."
+  },
+  {
+    "slide": 7,
+    "scene": 3,
+    "seconds": 15,
+    "view": "architecture3",
+    "title": "Một quyết định tạo ra hai loại rủi ro",
+    "speech": "Đầu ra là quyết định bình thường hoặc tấn công, với ngưỡng đã khóa. Báo tấn công cho lưu lượng bình thường là cảnh báo giả. Cho một cuộc tấn công đi qua là bỏ sót.",
+    "source": "Nguồn: báo cáo V6, chương 3–5."
+  },
+  {
+    "slide": 8,
+    "scene": 4,
+    "seconds": 18,
+    "view": "rf",
+    "title": "Random Forest đã là một ensemble mạnh",
+    "speech": "Random Forest kết hợp nhiều cây quyết định, được học từ các mẫu và tập đặc trưng ngẫu nhiên. Vì vậy, nhóm không so ensemble với một mô hình đơn yếu. Mốc đối chiếu chính đã là một phương pháp ensemble, có khả năng mô tả quan hệ phi tuyến.",
+    "source": "Nguồn: báo cáo V6, chương 3–5."
+  },
+  {
+    "slide": 9,
+    "scene": 4,
+    "seconds": 18,
+    "view": "voting",
+    "title": "Voting tổng hợp phiếu hoặc xác suất",
+    "speech": "Với Voting, ba mô hình cùng dự đoán. Hard Voting lấy đa số phiếu; Soft Voting lấy trung bình xác suất. Hồi quy logistic, cây quyết định và rừng ngẫu nhiên có cách học khác nhau, nhưng khác nhau chưa bảo đảm kết hợp tốt hơn.",
+    "source": "Nguồn: báo cáo V6, chương 3–5."
+  },
+  {
+    "slide": 10,
+    "scene": 4,
+    "seconds": 19,
+    "view": "stacking",
+    "title": "Stacking học cách kết hợp\ntừ dự đoán OOF",
+    "speech": "Stacking thêm một tầng hồi quy logistic để học cách kết hợp. Tầng này học từ dự đoán ngoài fold: mỗi dòng được dự đoán bởi mô hình cơ sở chưa học dòng đó. Đây là điểm khác với học lại từ chính dự đoán trên dữ liệu đã huấn luyện.",
+    "source": "Nguồn: báo cáo V6, chương 3–5."
+  },
+  {
+    "slide": 11,
+    "scene": 5,
+    "seconds": 20,
+    "view": "testscore",
+    "title": "Official TEST: khoảng cách rất nhỏ",
+    "speech": "Trên tập kiểm thử chính thức, Macro F một của Stacking và Random Forest đều xấp xỉ không phẩy tám sáu ba. Stacking nhỉnh hơn rất ít về chỉ số này, nhưng chỉ số tương quan MCC lại thấp hơn một chút. Vì vậy chưa có cơ sở nói Stacking vượt trội.",
+    "source": "Nguồn: P9 final_metrics.csv · official TEST, 82.332 dòng · ngưỡng 0,5."
+  },
+  {
+    "slide": 12,
+    "scene": 5,
+    "seconds": 18,
+    "view": "testfp",
+    "title": "Stacking giảm 142 cảnh báo giả…",
+    "speech": "Hãy tách kết quả thành các lỗi cụ thể trên cùng tập kiểm thử. Random Forest có mười nghìn không trăm lẻ ba cảnh báo giả. Stacking còn chín nghìn tám trăm sáu mươi mốt. Như vậy, số cảnh báo giả giảm một trăm bốn mươi hai.",
+    "source": "Nguồn: P9 final_metrics.csv · official TEST, 82.332 dòng · ngưỡng 0,5."
+  },
+  {
+    "slide": 13,
+    "scene": 5,
+    "seconds": 17,
+    "view": "testfn",
+    "title": "…nhưng bỏ sót thêm 118 tấn công",
+    "speech": "Đồng thời, số tấn công bị bỏ sót tăng từ bảy trăm ba mươi bốn lên tám trăm năm mươi hai. Tức là tăng một trăm mười tám. Lợi ích giảm cảnh báo giả đi kèm một tổn thất mà một con số tổng hợp dễ che khuất.",
+    "source": "Nguồn: P9 final_metrics.csv · official TEST, 82.332 dòng · ngưỡng 0,5."
+  },
+  {
+    "slide": 14,
+    "scene": 5,
+    "seconds": 15,
+    "view": "testsummary",
+    "title": "Lợi thế tổng hợp chưa đủ thuyết phục",
+    "speech": "Khoảng tin cậy của chênh lệch Macro F một và MCC chứa số không. Bằng chứng lịch sử cho thấy một đánh đổi lỗi, chưa chứng minh Stacking tốt hơn Random Forest một cách rõ ràng.",
+    "source": "Nguồn: P9 final_metrics.csv · official TEST, 82.332 dòng · ngưỡng 0,5."
+  },
+  {
+    "slide": 15,
+    "scene": 6,
+    "seconds": 20,
+    "view": "p21design",
+    "title": "P21: đối chứng matched trên TRAIN",
+    "speech": "Để kiểm tra các yếu tố cụ thể, nhóm bổ sung năm cấu hình đối chứng qua năm seed huấn luyện. Mỗi seed dùng sáu mươi nghìn dòng học, cùng một tập validation tách theo nhóm vector trùng. Đây là thực nghiệm hậu nghiệm trên TRAIN, không phải tập kiểm thử bên ngoài mới.",
+    "source": "Nguồn: P21 aggregate.json · hậu nghiệm trên TRAIN; cùng validation qua 5 FIT seed."
+  },
+  {
+    "slide": 16,
+    "scene": 6,
+    "seconds": 18,
+    "view": "p21score",
+    "title": "P21 chưa cho thấy Stacking-Lite tốt hơn",
+    "speech": "Macro F một trung bình của Random Forest Lite cao hơn Stacking Lite một chút. Năm seed mô tả biến thiên huấn luyện trên cùng validation cố định. Đây không phải năm tập kiểm thử độc lập hay bằng chứng tổng quát hóa ra mạng mới.",
+    "source": "Nguồn: P21 aggregate.json · hậu nghiệm trên TRAIN; cùng validation qua 5 FIT seed."
+  },
+  {
+    "slide": 17,
+    "scene": 6,
+    "seconds": 17,
+    "view": "p21cost",
+    "title": "Ít đặc trưng chưa chắc ít chi phí hơn",
+    "speech": "Với mười bảy đặc trưng, riêng bước học rừng nhanh hơn. Nhưng nếu cộng bước chọn đặc trưng, tổng thời gian đo được là khoảng ba trăm mười giây, cao hơn khoảng hai trăm bốn mươi mốt giây của rừng bốn mươi hai đặc trưng. Chỉ số dự đoán cũng giảm.",
+    "source": "Nguồn: P21 aggregate.json · hậu nghiệm trên TRAIN; cùng validation qua 5 FIT seed."
+  },
+  {
+    "slide": 18,
+    "scene": 7,
+    "seconds": 20,
+    "view": "tradeoff",
+    "title": "Giảm cảnh báo giả có thể tăng bỏ sót",
+    "speech": "Trong P hai mươi mốt, tăng trọng số lớp và lấy mẫu bổ sung đều giảm tỷ lệ cảnh báo giả, nhưng tăng tỷ lệ bỏ sót. Lớp bình thường mới là lớp ít mẫu trong TRAIN này. Vì vậy, cân bằng lớp không tự động đồng nghĩa với phát hiện tấn công tốt hơn.",
+    "source": "Nguồn: P21 aggregate.json · hậu nghiệm trên TRAIN; cùng validation qua 5 FIT seed."
+  },
+  {
+    "slide": 19,
+    "scene": 7,
+    "seconds": 20,
+    "view": "cost",
+    "title": "Mục tiêu vận hành quyết định cách chọn",
+    "speech": "Nếu quy chi phí một cảnh báo giả bằng một đơn vị, và gọi r là chi phí một lần bỏ sót, hai mô hình lịch sử hòa nhau khi r khoảng một phẩy hai. Đây chỉ là phân tích giả định trên dự đoán cố định, không phải giá thiệt hại của một hệ thống thực.",
+    "source": "Nguồn: V6 §5.1 / P9 confusion counts · phân tích chi phí giả định cho đúng 2 mô hình."
+  },
+  {
+    "slide": 20,
+    "scene": 8,
+    "seconds": 25,
+    "view": "closing",
+    "title": "Chọn mô hình bằng bằng chứng và chi phí lỗi",
+    "speech": "Đóng góp của nhóm là đối chiếu có truy vết, thực nghiệm kiểm soát và phân tích đánh đổi lỗi, không phải một thuật toán mới. Giới hạn còn có sai lệch chọn đặc trưng lịch sử và thiếu kiểm chứng trên mạng ngoài. Kết luận của nhóm: thêm mô hình chỉ có ý nghĩa khi lợi ích phù hợp với mục tiêu bảo vệ. Nhóm xin cảm ơn hội đồng.",
+    "source": "Nguồn: báo cáo V6, chương 3–5."
+  }
+]

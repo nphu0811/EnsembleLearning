@@ -1,0 +1,11 @@
+{
+  "url": "https://deb.debian.org/debian/pool/main/f/fonts-liberation2/fonts-liberation2_2.1.5-1_all.deb",
+  "files": [
+    "copyright",
+    "LiberationSerif-Bold.ttf",
+    "LiberationSerif-BoldItalic.ttf",
+    "LiberationSerif-Italic.ttf",
+    "LiberationSerif-Regular.ttf"
+  ],
+  "note": "Explicit local LiberationSerif2 font files preserve the V6 family; no machine font installation needed."
+}

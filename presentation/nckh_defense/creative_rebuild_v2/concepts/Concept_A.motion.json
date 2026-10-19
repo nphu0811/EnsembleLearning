@@ -1,0 +1,40 @@
+[
+  {
+    "scene": 1,
+    "seconds": 9,
+    "title": "Editorial Research",
+    "speech": "",
+    "events": [
+      {
+        "shape": "hero-title",
+        "kind": "fly",
+        "at": 0,
+        "duration": 0.8
+      },
+      {
+        "shape": "text-6",
+        "kind": "wipe",
+        "at": 1.2,
+        "duration": 1.2
+      },
+      {
+        "shape": "text-7",
+        "kind": "fly",
+        "at": 3,
+        "duration": 0.8
+      },
+      {
+        "shape": "text-7",
+        "kind": "scale",
+        "at": 4,
+        "duration": 1.2,
+        "scale": 107,
+        "repeat": 2,
+        "reverse": true
+      }
+    ],
+    "bg": "F8F5EE",
+    "tag": "CONCEPT A / EDITORIAL RESEARCH",
+    "source": "Official TEST lịch sử · Stacking42 so với RF42 · minh họa thiết kế bằng dữ liệu thật"
+  }
+]

@@ -1,0 +1,20 @@
+--- V6/chapters/revision_rq_answers_v4_2026_10_19.tex
++++ V7/chapters/revision_rq_answers_v4_2026_10_19.tex
+@@ -29,7 +29,7 @@
+ 
+ Trong giai đoạn phát triển, Stacking đạt Macro-F1 cao hơn RF 0.001097 và MCC cao hơn 0.001621; đồng thời FPR thấp hơn 1.3678 điểm phần trăm nhưng FNR cao hơn 0.5471 điểm. Hard và Soft Voting đều thấp hơn RF về Macro-F1 và MCC. Những chênh lệch này mô tả hiệu quả trên các dự đoán OOF đã lưu, song không phải kết quả holdout cuối và không cho biết liệu cùng thứ hạng có lặp lại qua nhiều lần huấn luyện hay không. Hơn nữa, tập đặc trưng stable17 được xác định trên toàn bộ TRAIN trước outer CV, còn việc tinh chỉnh meta learner chưa hoàn toàn nested; vì vậy các điểm phát triển có thể lạc quan.
+ 
+-Các cặp base learner cũng mắc lỗi không hoàn toàn trùng nhau: LR/RF có double-fault 0.030814 và tương quan lỗi 0.563855; DT/RF lần lượt là 0.025345 và 0.498922. Mức bổ sung lỗi này tạo điều kiện để một bộ kết hợp có thể khai thác khác biệt giữa các learner, nhưng tự nó không bảo đảm Voting hoặc Stacking sẽ cải thiện dự đoán. Kết quả Voting thấp hơn RF trong bảng là một minh họa trực tiếp cho sự phân biệt giữa diversity quan sát được và lợi ích thực tế của phép kết hợp.
++Các cặp base learner cũng mắc lỗi không hoàn toàn trùng nhau: LR/RF có double-fault 0.030814 và tương quan lỗi 0.563855; DT/RF lần lượt là 0.025345 và 0.498922. Bộ kết hợp có thể khai thác khác biệt lỗi giữa các learner. Tuy nhiên, riêng mức bổ sung lỗi quan sát được chưa bảo đảm Voting hoặc Stacking sẽ cải thiện dự đoán. Kết quả Voting thấp hơn RF trong bảng là một minh họa trực tiếp cho sự phân biệt giữa diversity quan sát được và lợi ích thực tế của phép kết hợp.
+ 
+ \section{Đối chiếu các câu hỏi nghiên cứu}
+ \label{sec:revision-rq-all}
+@@ -54,7 +54,7 @@
+ 
+ \subsection{RQ3: Diversity lỗi có liên hệ thế nào với kết quả Ensemble?}
+ \label{sec:revision-rq3}
+-Các cặp learner trong development có lỗi bổ sung, nhưng hai phương án Voting không vượt RF về Macro-F1. Stacking chỉ cao hơn RF một mức nhỏ ở pooled OOF, và ưu thế đó không rõ trên official TEST. Phân tích paired correctness cuối cùng cho thấy 71\,104 mẫu cả RF-42 và Stacking-42 đều dự đoán đúng, 10\,222 mẫu cả hai cùng sai, 491 mẫu RF đúng/Stacking sai và 515 mẫu RF sai/Stacking đúng. Hai loại bất đồng gần cân bằng, phù hợp với kết quả McNemar không cho thấy khác biệt rõ về tính đúng tổng thể.
++Các cặp learner trong development có lỗi bổ sung, nhưng hai phương án Voting không vượt RF về Macro-F1. Stacking chỉ cao hơn RF một mức nhỏ ở pooled OOF, và ưu thế đó không rõ trên official TEST. Phân tích paired correctness cuối cùng cho thấy 71\,104 mẫu cả RF-42 và Stacking-42 đều dự đoán đúng, 10\,222 mẫu cả hai cùng sai, 491 mẫu RF đúng/Stacking sai và 515 mẫu RF sai/Stacking đúng. Số bất đồng theo hai hướng gần cân bằng. Kết quả này phù hợp với việc McNemar chưa phát hiện khác biệt rõ về tính đúng tổng thể.
+ 
+ Paired correctness của hai mô hình cuối không đồng nhất với diversity giữa các base learner trong development. Cả hai phân tích đều mang tính mô tả; chúng cho thấy có khác biệt về lỗi để khảo sát, nhưng chưa xác định cơ chế nhân quả khiến phép kết hợp sửa hay tạo thêm một lỗi cụ thể.
+ 

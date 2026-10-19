@@ -1,0 +1,1477 @@
+--- V6 PDF
++++ V7 PDF
+@@ -82,13 +82,13 @@
+ 1
+ 1.1.3
+ Các vấn đềnghiên cứu . . . . . . . . . . . . . . . . . . . . . . . . .
+-2
++1
+ 1.1.4
+ Mục tiêu và đóng góp nghiên cứu . . . . . . . . . . . . . . . . . . .
+ 2
+ 1.1.5
+ Bốcục báo cáo . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+-3
++2
+ 1.2
+ Các thuật toán học máy và phương pháp kết hợp . . . . . . . . . . . . . . . .
+ 3
+@@ -109,13 +109,13 @@
+ 6
+ 1.2.6
+ Các chỉsốđánh giá và diễn giải thống kê . . . . . . . . . . . . . . .
+-7
++6
+ 1.3
+ Các công trình nghiên cứu liên quan . . . . . . . . . . . . . . . . . . . . . .
+ 7
+ 1.3.1
+ Ensemble Learning trong NIDS . . . . . . . . . . . . . . . . . . . .
+-8
++7
+ 1.3.2
+ Feature Selection, chuẩn hóa và mất cân bằng . . . . . . . . . . . . .
+ 8
+@@ -125,34 +125,34 @@
+ 1.3.4
+ Khoảng trống bằng chứng và giới hạn tổng quan
+ . . . . . . . . . . .
+-9
++8
+ 1.3.5
+ Đối chiếu phương pháp với một sốcông trình liên quan . . . . . . . .
+ 9
+ Chương 2
+ DỮLIỆU VÀ QUY TRÌNH TIỀN XỬLÝ
+-11
++10
+ 2.1
+ Nguồn dữliệu và quy mô bản ghi
+ . . . . . . . . . . . . . . . . . . . . . . .
+-11
++10
+ 2.2
+ Các nhóm tấn công và mức độchênh lệch . . . . . . . . . . . . . . . . . . .
+-12
++11
+ 2.3
+ Khảo sát thống kê các đặc trưng
+ . . . . . . . . . . . . . . . . . . . . . . . .
+-13
++12
+ 2.4
+ Tương quan giữa các đặc trưng . . . . . . . . . . . . . . . . . . . . . . . . .
+-14
++13
+ 2.5
+ Kiểm toán overlap và các view đánh giá . . . . . . . . . . . . . . . . . . . .
+-14
++13
+ 2.6
+ Kết luận vềđặc trưng của benchmark
+ . . . . . . . . . . . . . . . . . . . . .
+-15
++14
+ 09-SV-2026-CNTT2
+ iii
+ 
+@@ -160,133 +160,133 @@
+ ENSEMBLE LEARNING – NIDS
+ Chương 3
+ XÂY DỰNG MÔ HÌNH VÀ THIẾT KẾTHỰC NGHIỆM
+-16
++15
+ 3.1
+ Thiết kếnghiên cứu và dữliệu . . . . . . . . . . . . . . . . . . . . . . . . .
+-16
++15
+ 3.2
+ Lựa chọn đặc trưng và tiền xửlý . . . . . . . . . . . . . . . . . . . . . . . .
+-16
++15
+ 3.3
+ Cấu trúc các pipeline . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+-17
++16
+ 3.4
+ Phát triển mô hình, OOF và nguyên tắc đánh giá . . . . . . . . . . . . . . . .
+-17
++16
+ 3.5
+ Khảnăng tái lập trong môi trường phần mềm xác định
+ . . . . . . . . . . . .
+-18
++17
+ 3.6
+ Phần mởrộng P21: thiết kếđối chứng matched trên TRAIN-derived validation
+-18
++17
+ 3.6.1
+ Phân chia và lấy mẫu FIT
+ . . . . . . . . . . . . . . . . . . . . . . .
+-19
++18
+ 3.6.2
+ Năm nhánh matched, chọn đặc trưng và ngưỡng
+ . . . . . . . . . . .
+-19
++18
+ 3.6.3
+ Đánh giá, chi phí, tái lập và phạm vi suy luận . . . . . . . . . . . . .
+-20
++19
+ 3.6.4
+ Định nghĩa chi phí đo và chi phí chưa đo
+ . . . . . . . . . . . . . . .
+-20
++19
+ Chương 4
+ KẾT QUẢTHỰC NGHIỆM VÀ ĐÁNH GIÁ
+-21
++20
+ 4.1
+ Phạm vi đánh giá và cách diễn giải chỉsố
+ . . . . . . . . . . . . . . . . . . .
+-21
++20
+ 4.2
+ Kết quảtrên official holdout
+ . . . . . . . . . . . . . . . . . . . . . . . . . .
+-21
++20
+ 4.3
+ Độbất định của chênh lệch và kiểm định cặp
+ . . . . . . . . . . . . . . . . .
+-22
++21
+ 4.4
+ Chi phí quan sát trong lần chạy lịch sử. . . . . . . . . . . . . . . . . . . . .
+-23
++22
+ 4.5
+ Sai sốtheo họtấn công . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+-24
++23
+ 4.6
+ Độnhạy trên exact-duplicate-filtered subset . . . . . . . . . . . . . . . . . .
+-25
++24
+ 4.7
+ Bằng chứng phát triển mô hình: OOF, Voting và diversity . . . . . . . . . . .
+-25
++24
+ 4.8
+ Đối chiếu các câu hỏi nghiên cứu . . . . . . . . . . . . . . . . . . . . . . . .
+-26
++25
+ 4.8.1
+ RQ1: Ensemble có cải thiện ổn định so với mô hình đơn? . . . . . . .
+-26
++25
+ 4.8.2
+ RQ2: Feature Selection thay đổi chất lượng và chi phí ra sao?
+ . . . .
+-26
++25
+ 4.8.3
+ RQ3: Diversity lỗi có liên hệthếnào với kết quảEnsemble? . . . . .
+-27
++26
+ 4.8.4
+-RQ4: Hiệu năng thay đổi ra sao khi loại các vector TEST trùng TRAIN? 27
++RQ4: Hiệu năng thay đổi ra sao khi loại các vector TEST trùng TRAIN? 26
+ 4.8.5
+ RQ5: Xửlý mất cân bằng ảnh hưởng thếnào đến lỗi? . . . . . . . . .
+-28
++27
+ 4.9
+ P21: Kết quảđối chứng hậu nghiệm trên internal validation của TRAIN . . .
+-29
++28
+ 4.9.1
+ Độbiến thiên giữa năm FIT seed . . . . . . . . . . . . . . . . . . . .
+-29
++28
+ 4.9.2
+ RQ1: Ensemble và đánh đổi lỗi
+ . . . . . . . . . . . . . . . . . . . .
+-30
++29
+ 4.9.3
+ RQ2: Đối chứng matched Feature Selection và chi phí thực tế
+ . . . .
+-30
++29
+ 4.9.4
+ RQ5: Cân bằng lớp không đồng nghĩa tăng phát hiện Attack . . . . .
+-31
++30
+ 4.9.5
+ Chất lượng bằng chứng và giới hạn phát biểu . . . . . . . . . . . . .
+-31
++30
+ Chương 5
+ THẢO LUẬN VÀ HƯỚNG PHÁT TRIỂN
+-32
++31
+ 5.1
+ Diễn giải đánh đổi giữa các loại lỗi . . . . . . . . . . . . . . . . . . . . . . .
+-32
++31
+ 5.1.1
+ Phân tích độnhạy chi phí báo động giảvà bỏsót tấn công
+ . . . . . .
+-32
++31
+ 5.2
+ Diversity và sai sốtheo nhóm . . . . . . . . . . . . . . . . . . . . . . . . . .
+-33
++32
+ 5.3
+ Ý nghĩa và giới hạn của Feature Selection . . . . . . . . . . . . . . . . . . .
+-33
++32
+ 5.4
+ Độbất định và phạm vi suy luận . . . . . . . . . . . . . . . . . . . . . . . .
+-34
++33
+ 5.5
+ Tái lập, tái huấn luyện và triển khai
+ . . . . . . . . . . . . . . . . . . . . . .
+-34
++33
+ 5.6
+ Tổng hợp câu trảlời nghiên cứu
+ . . . . . . . . . . . . . . . . . . . . . . . .
+-34
++33
+ Mã đềtài: 09-SV-2026-CNTT2
+ iv
+ 
+@@ -295,16 +295,16 @@
+ 5.7
+ Hướng nghiên cứu tiếp theo
+ . . . . . . . . . . . . . . . . . . . . . . . . . .
+-35
++34
+ 5.8
+ Giới hạn bổsung riêng cho thực nghiệm P21
+ . . . . . . . . . . . . . . . . .
+-35
++34
+ 5.9
+ Kết luận . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+-36
++35
+ Tài liệu tham khảo
+-38
++37
+ Mã đềtài: 09-SV-2026-CNTT2
+ v
+ 
+@@ -366,12 +366,11 @@
+ dấu hiệu xâm nhập.
+ LR
+ Logistic Regression
+-Bộphân loại ước lượng xác suất thuộc lớp
+-Attack từcác đặc trưng đầu vào.
++Bộphân loại ước lượng xác suất thuộc lớp At-
++tack từcác đặc trưng đầu vào.
+ MCC
+-Matthews
+-Correlation
+-Coefficient
++Matthews Correlation Coeffi-
++cient
+ Chỉsốtương quan giữa nhãn thật và dựđoán,
+ sửdụng đủbốn ô ma trận nhầm lẫn.
+ ML
+@@ -427,24 +426,24 @@
+ Phân bốnhãn Normal/Attack trong official TRAIN và TEST, biểu đồ
+ phân bốlớp từkết quảkhảo sát dữliệu.
+ . . . . . . . . . . . . . . .
+-11
++10
+ Hình 2.2
+ Sốlượng bản ghi theo attack_cat của hai tập. Trong nghiên cứu
+ hiện tại, đây là phân tích nhãn thật chứkhông phải kết quảmột mô
+ hình multiclass. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+-12
++11
+ Hình 2.3
+ Khảo sát mức tách biệt Normal/Attack ởmột sốfeature sốtrên tập
+ huấn luyện. Không dùng biểu đồnày đểsuy ra quan hệnhân quả. . .
+-13
++12
+ Hình 4.1
+ Chênh lệch sốFP và FN của Stacking-42 so với RF-42 trên cùng
+ official TEST. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+-22
++21
+ Hình 4.2
+ Hiệu sốStacking-42 trừRF-42 và CI 95% paired bootstrap; trục
+ hoành thểhiện hiệu sốnhân 100. . . . . . . . . . . . . . . . . . . .
+-23
++22
+ 09-SV-2026-CNTT2
+ viii
+ 
+@@ -456,61 +455,61 @@
+ 9
+ Bảng 2.1
+ Phân bốhai lớp của các tập UNSW-NB15 chính thức. . . . . . . . .
+-11
++10
+ Bảng 2.2
+ Năm cặp biến sốcó tương quan Spearman tuyệt đối lớn nhất trong
+ TRAIN. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+-14
++13
+ Bảng 2.3
+ Hai góc nhìn đánh giá cùng thuộc official TEST đã lưu. . . . . . . .
+-14
++13
+ Bảng 3.1
+ Cấu hình của ba pipeline được dùng trong đánh giá cuối. . . . . . .
+-17
++16
+ Bảng 3.2
+ Năm cấu hình P21 predeclared trên internal validation của official
+ TRAIN. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+-19
++18
+ Bảng 4.1
+ Hiệu năng nhịphân trên official TEST (82 332 mẫu; ngưỡng 0,5).
+ .
++20
++Bảng 4.2
++Hiệu sốStacking-42 trừRF-42 và CI 95% paired bootstrap trên of-
++ficial TEST; hiệu sốởthang 0–1. . . . . . . . . . . . . . . . . . . .
+ 21
+-Bảng 4.2
+-Hiệu sốStacking-42 trừRF-42 và CI 95% paired bootstrap trên
+-official TEST; hiệu sốởthang 0–1. . . . . . . . . . . . . . . . . . .
+-22
+ Bảng 4.3
+ Chi phí tính toán của ba pipeline trong lần thực nghiệm ban đầu; dung
+ lượng quy đổi sang MiB. . . . . . . . . . . . . . . . . . . . . . . .
+-23
++22
+ Bảng 4.4
+ Sốtấn công bỏsót (FN) và FNR theo chín họAttack trên official
+ TEST; mỗi ô: FN / FNR (%).
+ . . . . . . . . . . . . . . . . . . . .
+-24
++23
+ Bảng 4.5
+ Khoảng tin cậy Wilson 95% cho FNR (%) của cùng chín họAttack.
+-Đây là CI biên theo nhóm, không phải kiểm định paired giữa mô hình. 24
++Đây là CI biên theo nhóm, không phải kiểm định paired giữa mô hình. 23
+ Bảng 4.6
+ Kết quảpooled OOF trong giai đoạn phát triển trên track 42 đặc
+ trưng. FPR và FNR tính theo phần trăm. . . . . . . . . . . . . . . .
+-25
++24
+ Bảng 4.7
+ Macro-F1 trên official TEST và exact-duplicate-filtered subset thuộc
+ cùng tập kiểm thử. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+-27
++26
+ Bảng 4.8
+ Hiệu năng trung bình qua 5 FIT seed trên một internal validation P21;
+ độlệch chuẩn mẫu có điều kiện trên cùng validation của Macro-F1
+ và MCC ghi trong ngoặc. FPR/FNR tính bằng phần trăm. . . . . . .
+-29
++28
+ Bảng 4.9
+ Hiệu sốpaired FIT seed của mỗi arm so với RF42-Lite A0; dấu của
+-∆là arm −A0. ∆FPR/FNR tính bằng điểm phần trăm, không phải %. 29
++∆là arm −A0. ∆FPR/FNR tính bằng điểm phần trăm, không phải %. 28
+ Bảng 4.10
+ Macro-F1 theo FIT seed, chỉmô tảbiến thiên huấn luyện có điều
+ kiện; cùng 35 069 quan sát validation ởcảnăm cột. . . . . . . . . .
+-30
++29
+ 09-SV-2026-CNTT2
+ ix
+ 
+@@ -520,19 +519,19 @@
+ Chi phí huấn luyện trung bình theo năm FIT seed, đơn vịgiây. Các
+ sốlà thời gian fit ghi từworker, không phải end-to-end latency triển
+ khai. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+-30
++29
+ Bảng 5.1
+-Tính đúng/sai theo cặp dựđoán của RF-42 và Stacking-42 trên
+-official TEST. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+-32
++Tính đúng/sai theo cặp dựđoán của RF-42 và Stacking-42 trên offi-
++cial TEST. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
++31
+ Bảng 5.2
+ Phân tích độnhạy giảđịnh theo r = CFN/CFP, chuẩn hóa CFP = 1.
+ Giá trịlà điểm tổn thất quy ước, không phải sốtiền thiệt hại thực tế.
+-33
++32
+ Bảng 5.3
+ Kết luận thực nghiệm cho RQ1–RQ5 và phạm vi chưa được kiểm
+ chứng. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+-35
++34
+ Mã đềtài: 09-SV-2026-CNTT2
+ x
+ 
+@@ -545,16 +544,15 @@
+ Bối cảnh và động cơ
+ Hệthống phát hiện xâm nhập mạng (Network Intrusion Detection System, NIDS) nhằm nhận
+ diện lưu lượng có dấu hiệu tấn công từcác quan sát mạng. Các bộphân loại học máy có thể
+-phát hiện những mẫu phức tạp trong dữliệu flow, nhưng điểm sốcao trên một benchmark
+-không tựbảo đảm hiệu quảtrong các bối cảnh triển khai khác nhau. Cách tạo và làm sạch dữ
+-liệu, lựa chọn đặc trưng, chia tập và các loại sai sốcó thểảnh hưởng đáng kểđến diễn giải thí
+-nghiệm.
++nhận ra những mẫu phức tạp trong dữliệu flow. Tuy nhiên, điểm sốcao trên một benchmark
++chưa bảo đảm mô hình sẽhoạt động tốt ởmôi trường khác. Kết quảcòn phụthuộc vào cách
++tạo, làm sạch và chia dữliệu, cách chọn đặc trưng, cũng như loại lỗi được xem xét.
+ Ensemble Learning kết hợp dựđoán từnhiều bộphân loại. Tổng quan của Tama và Lim
+ nhấn mạnh hai lựa chọn thiết kế: thành phần mô hình cơ sởvà phương pháp kết hợp [10].
+ Voting, Stacking và lựa chọn đặc trưng đều đã được nghiên cứu trước đây; việc áp dụng riêng
+-các kỹthuật này không tạo thành đóng góp thuật toán mới [3, 5, 11, 7]. Vì vậy, giá trịcủa
+-nghiên cứu phụthuộc vào giao thức có thểtruy vết, cách mô tảđúng các loại lỗi, sựđối chiếu
+-chi phí và diễn giải thận trọng độbất định.
++các kỹthuật này không tạo thành đóng góp thuật toán mới [3, 5, 11, 7]. Nghiên cứu vì thếcần
++một giao thức có thểkiểm tra lại, mô tảrõ từng loại lỗi, đối chiếu chi phí và nêu đúng mức độ
++bất định của kết quả.
+ 1.1.2
+ Vấn đềnghiên cứu
+ Nghiên cứu tập trung vào bài toán nhịphân Normal/Attack của UNSW-NB15. Hai tập TRAIN
+@@ -563,22 +561,22 @@
+ thực hiện trên internal validation của TRAIN với năm seed và năm cấu hình matched; đây là
+ thí nghiệm hậu nghiệm, không truy cập official TEST đểtinh chỉnh. Nghiên cứu không xây
+ dựng bộphân loại đa lớp, cũng chưa kiểm nghiệm trên dữliệu triển khai độc lập.
+-Vấn đềtrung tâm là liệu các mô hình cơ sởcó dạng sai sốbổsung giúp ensemble cải thiện
+-kết quảso với một mô hình đơn mạnh hay chủyếu làm thay đổi đánh đổi giữa báo động giả
+-(FP) và tấn công bịbỏsót (FN). Bên cạnh chất lượng dựđoán, nghiên cứu xem xét chi phí
+-huấn luyện, suy luận và lựa chọn đặc trưng. Đây là nghiên cứu trường hợp trên một benchmark,
+-không nhằm chứng minh ưu thếchung của Ensemble Learning.
+-09-SV-2026-CNTT2
+-1
+-
+-ĐỀTÀI NCKH SINH VIÊN
+-ENSEMBLE LEARNING – NIDS
++Câu hỏi chính là: sai sốkhác nhau giữa các mô hình cơ sởcó giúp ensemble dựđoán tốt
++hơn một mô hình đơn mạnh, hay chủyếu chuyển đổi giữa báo động giả(FP) và tấn công bịbỏ
++sót (FN)? Bên cạnh chất lượng dựđoán, nghiên cứu xem xét chi phí huấn luyện, suy luận và
++lựa chọn đặc trưng. Đây là nghiên cứu trường hợp trên một benchmark, không nhằm chứng
++minh ưu thếchung của Ensemble Learning.
+ 1.1.3
+ Các vấn đềnghiên cứu
+ Đểđánh giá chất lượng và giới hạn của các mô hình phát hiện xâm nhập, nghiên cứu tập trung
+ vào năm vấn đềsau:
+ RQ1 — Hiệu quảEnsemble: Liệu ensemble có cải thiện ổn định so với mô hình học máy
+ đơn trong một protocol đánh giá tương ứng? Phần lịch sửkhông đo độổn định qua nhiều
++09-SV-2026-CNTT2
++1
++
++ĐỀTÀI NCKH SINH VIÊN
++ENSEMBLE LEARNING – NIDS
+ lần huấn luyện; phần P21 bổsung năm FIT seed trên cùng một internal validation, chưa
+ phải external confirmation.
+ RQ2 — Đặc trưng và chi phí: Hai cấu hình với sốlượng đặc trưng khác nhau thểhiện ra
+@@ -599,22 +597,21 @@
+ split chính thức; khảo sát dựđoán ngoài fold và độđa dạng sai sốtrong giai đoạn phát triển; so
+ sánh hai pipeline theo hiệu năng và chi phí; đồng thời trình bày Macro-F1, MCC, FPR, FNR,
+ hiệu sốtheo cặp và lỗi theo họAttack trong phạm vi bài toán nhịphân.
+-Những kết quảnày có giá trịthực nghiệm trong phạm vi một nghiên cứu trường hợp, nhưng
+-chưa đủcơ sởđểkhẳng định thuật toán Ensemble Learning mới, ưu thếtổng thểcủa Stacking
+-hay khảnăng khái quát ngoài UNSW-NB15. Phần đối chiếu với công trình trước được giới
+-hạn ởcác nguồn đã kiểm tra phương pháp; đây không phải tổng quan hệthống đầy đủcủa lĩnh
+-vực.
+-Mã đềtài: 09-SV-2026-CNTT2
+-2
+-
+-ĐỀTÀI NCKH SINH VIÊN
+-ENSEMBLE LEARNING – NIDS
++Các kết quảchỉđược diễn giải trong phạm vi nghiên cứu trường hợp này. Chúng chưa
++chứng minh một thuật toán Ensemble Learning mới, ưu thếtổng thểcủa Stacking hay khả
++năng khái quát ngoài UNSW-NB15. Phần đối chiếu với công trình trước được giới hạn ởcác
++nguồn đã kiểm tra phương pháp; đây không phải tổng quan hệthống đầy đủcủa lĩnh vực.
+ 1.1.5
+ Bốcục báo cáo
+ Chương 1 trình bày cơ sởlý thuyết và các hướng nghiên cứu liên quan. Chương 2 giới thiệu dữ
+ liệu và quy trình tiền xửlý. Chương 3 mô tảmô hình và cách thực hiện thí nghiệm. Chương 4
+ phân tích kết quảhuấn luyện và kiểm thử. Chương 5 thảo luận vềý nghĩa, hạn chếvà hướng
+ phát triển của nghiên cứu.
++Mã đềtài: 09-SV-2026-CNTT2
++2
++
++ĐỀTÀI NCKH SINH VIÊN
++ENSEMBLE LEARNING – NIDS
+ 1.2
+ Các thuật toán học máy và phương pháp kết hợp
+ 1.2.1
+@@ -622,8 +619,8 @@
+ Hệthống phát hiện xâm nhập mạng (NIDS) phân tích các quan sát vềlưu lượng đểphân biệt
+ hoạt động bình thường và hoạt động có dấu hiệu tấn công. Một flow có thểđược mô tảbằng
+ giao thức, trạng thái kết nối, sốgói, lượng byte, thời lượng, thông lượng và các thống kê thời
+-gian. Những biến này làm dữliệu có thểbiểu diễn bằng bảng đểáp dụng học máy, nhưng
+-không chứa mọi thông tin của payload hoặc ngữcảnh vận hành.
++gian. Các biến này cho phép biểu diễn lưu lượng dưới dạng bảng đểáp dụng học máy. Tuy
++vậy, bảng đặc trưng không chứa đầy đủpayload và ngữcảnh vận hành.
+ Trong báo cáo này, đơn vịdựđoán là một dòng dữliệu UNSW-NB15. Mỗi dòng gồm vector
+ x = (x1, . . . , xp) và nhãn y ∈{0, 1}, trong đó 0 là Normal và 1 là Attack. Đây chưa phải một
+ quyết định theo session hay một xác nhận của chuyên gia vềsựcốthực tế. Biến attack_cat
+@@ -631,11 +628,11 @@
+ của một bộphân loại đa lớp.
+ Quy trình biến đổi và leakage
+ Dữliệu đầu vào có thểcó biến sốvà biến phân loại, cần xửlý thiếu, mã hóa và chuẩn hóa
+-tương ứng. Một nguyên tắc phương pháp quan trọng là mọi tham sốhọc được từdữliệu, như
+-thống kê chuẩn hóa, danh mục encoding hoặc cấu hình Feature Selection, phải được tính từtập
+-huấn luyện được phép dùng trong từng bước validation rồi áp dụng cho tập còn lại. Pipeline
+-hỗtrợquản lý chuỗi thao tác nhưng không thểtựloại trừmọi vấn đềdo quan sát quá giống
+-nhau giữa các fold hoặc do chọn feature trước outer CV.
++tương ứng. Mọi tham sốhọc từdữliệu, gồm thống kê chuẩn hóa, danh mục encoding và cấu
++hình Feature Selection, phải được tính trên phần huấn luyện được phép dùng ởtừng bước
++validation, rồi mới áp dụng cho phần còn lại. Pipeline hỗtrợquản lý chuỗi thao tác nhưng
++không thểtựloại trừmọi vấn đềdo quan sát quá giống nhau giữa các fold hoặc do chọn feature
++trước outer CV.
+ Độc lập ởcấp dòng và độc lập ởcấp phiên là hai giảđịnh khác nhau. Nhiều flow có thể
+ chia sẻhost, thời gian, dịch vụhoặc cách tạo lưu lượng. Nếu chỉchia ngẫu nhiên ởcấp dòng,
+ điểm test hoặc validation có thểcao do hai phần chứa những mẫu tương tự. Ngược lại, việc
+@@ -645,13 +642,13 @@
+ False positive (FP) là Normal bịbáo Attack, làm tăng công việc xác minh cảnh báo; false
+ negative (FN) là Attack bịtrảvềNormal, có thểlàm bỏsót sựkiện cần chú ý. Giá trịchi phí
+ của FP/FN tùy môi trường triển khai và chưa được đo trong đềtài, nên không thểgiảđịnh một
+-lỗi bỏsót có giá trịđúng bằng một báo động giả. Việc đọc riêng FPR và FNR giúp trình bày
++lỗi bỏsót có giá trịđúng bằng một báo động giả. FPR và FNR cho biết riêng hai phía của đánh
++đổi mà Accuracy tổng thểcó thểche khuất.
+ Mã đềtài: 09-SV-2026-CNTT2
+ 3
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+-đánh đổi này minh bạch hơn một chỉsốAccuracy duy nhất.
+ 1.2.2
+ Mô hình Logistic Regression
+ Logistic Regression là mô hình tuyến tính xác suất. Đối với phân loại nhịphân, giá trịdựđoán
+@@ -667,10 +664,10 @@
+ hệphi tuyến phức tạp, một mô hình tuyến tính có thểthiếu năng lực biểu diễn so với các mô
+ hình cây, nhưng tính khác nhau của bềmặt quyết định lại có thểtạo dạng sai sốbổsung trong
+ ensemble.
+-Trong chuỗi thực nghiệm, Logistic Regression được xem xét ởtầng base và meta. Vai trò
+-này không chứng minh LR riêng lẻtối ưu; sựhữu ích phải quan sát qua OOF predictions, độ
+-đa dạng lỗi, và hiệu quảcuối trong protocol thống nhất. Nếu chỉxét tập TEST rồi lựa chọn lại
+-thành viên có chỉsốtốt nhất thì sẽphá vỡranh giới đánh giá đã khóa.
++Trong chuỗi thực nghiệm, Logistic Regression được xem xét ởtầng base và meta. Đểbiết
++LR có đóng góp hay không, cần xem dựđoán OOF, độđa dạng lỗi và kết quảcuối trong cùng
++protocol; việc dùng LR ởhai tầng chưa chứng minh LR riêng lẻlà tối ưu. Nếu chỉxét tập
++TEST rồi lựa chọn lại thành viên có chỉsốtốt nhất thì sẽphá vỡranh giới đánh giá đã khóa.
+ 1.2.3
+ Decision Tree và Random Forest
+ Decision Tree
+@@ -687,15 +684,10 @@
+ đặc trưng, nhưng cây quá sâu dễhọc các chi tiết riêng của TRAIN. Những siêu tham sốnhư
+ độsâu tối đa, sốquan sát tối thiểu ởlá hoặc sốđặc trưng được xét tại mỗi lần tách có thểkiểm
+ soát độphức tạp.
+-Decision Tree không nhất thiết có độchính xác tổng thểcao bằng Random Forest. Khi nó
+-được chọn vào Stacking, lý do phương pháp hợp lệlà kiểm tra liệu một mô hình có cấu trúc
+-sai sốkhác biệt có đóng góp hiệu quảhay không, thay vì giảđịnh mô hình yếu kết hợp với mô
+-hình mạnh luôn làm kết quảtốt hơn.
+-Mã đềtài: 09-SV-2026-CNTT2
+-4
+-
+-ĐỀTÀI NCKH SINH VIÊN
+-ENSEMBLE LEARNING – NIDS
++Decision Tree không nhất thiết có độchính xác tổng thểcao bằng Random Forest. Khi đưa
++Decision Tree vào Stacking, nghiên cứu cần kiểm tra xem sai sốkhác biệt của nó có giúp bộ
++kết hợp hay không. Không thểmặc định rằng ghép mô hình yếu với mô hình mạnh sẽcải thiện
++kết quả.
+ Random Forest
+ Random Forest kết hợp nhiều cây được fit với tính ngẫu nhiên trong lấy mẫu và lựa chọn
+ feature. Một mô tảcủa xác suất dựđoán là:
+@@ -706,6 +698,11 @@
+ t=1
+ bpt(y = 1 | x).
+ (1.3)
++Mã đềtài: 09-SV-2026-CNTT2
++4
++
++ĐỀTÀI NCKH SINH VIÊN
++ENSEMBLE LEARNING – NIDS
+ Tăng sốcây thường đòi hỏi thêm thời gian train, suy luận và bộnhớ. Tuy vậy, sựthay đổi hiệu
+ năng không tuyến tính theo sốcây, và việc tăng mô hình không bảo đảm vượt một mô hình
+ ít cây hơn trên dữliệu cụthể. Trong cấu hình cuối RF-42 có 300 cây, còn RF-17 có 150 cây,
+@@ -729,9 +726,9 @@
+ (1.4)
+ Trọng sốdựa vào một tập validation riêng có thểđiều chỉnh ưu tiên thành viên, nhưng chỉsố
+ chất lượng cá nhân không nhất thiết dựbáo đóng góp trong ensemble. Nếu tất cảbase learners
+-sai trên các dòng giống nhau, lấy trung bình dựđoán không có cơ chếsửa những lỗi chung
+-ấy. Do đó diversity là biến quan sát có ý nghĩa, chứkhông phải bằng chứng bắt buộc cho
+-superiority.
++sai trên các dòng giống nhau, lấy trung bình dựđoán không có cơ chếsửa những lỗi chung ấy.
++Do đó, diversity là một đặc điểm cần quan sát; riêng nó chưa chứng minh bộkết hợp có hiệu
++năng cao hơn.
+ Out-of-fold training của Stacking
+ Stacking sửdụng một meta learner đểhọc ánh xạtừdựđoán của các base learners sang kết quả
+ cuối [11]. Nếu dùng dựđoán trên chính tập fit của base learners đểtrain meta, tầng meta có
+@@ -747,12 +744,17 @@
+ được refit trên TRAIN được phép rồi đưa xác suất mới qua meta learner. Tuy nhiên, một
+ Stacking dùng OOF không có nghĩa mọi bước chọn feature, tuning meta và lựa chọn mô hình
+ đã được đưa vào nested CV hoàn toàn. Trong nghiên cứu này, meta tuning chưa fully nested
++và tập stable features được chọn trên official TRAIN trước development CV.
++Double-fault, error correlation và oracle
++Double-fault đo tỷlệcùng sai của hai bộphân loại, error correlation mô tảmức liên hệgiữa
++các biến chỉbáo lỗi, còn oracle giảđịnh có thểchọn đúng đầu ra của một base model bất kỳ
++trên mỗi mẫu. Oracle là cận mô tảdưới thông tin nhãn thật, không phải thuật toán dựđoán có
++thểvận hành trực tiếp. Những chỉsốnày cho biết các base learners có thểbổsung nhau ởđâu,
+ Mã đềtài: 09-SV-2026-CNTT2
+ 5
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+-và tập stable features được chọn trên official TRAIN trước development CV.
+ Official TRAIN: phát triển mô hình
+ ↓
+ K-fold OOF: LR
+@@ -766,11 +768,6 @@
+ Official TEST: đánh giá một lần sau freeze
+ Hình 1.1. Sơ đồnguyên lý Stacking/OOF và ranh giới official TEST. Hình chỉminh họa giao thức,
+ không chứng minh nested validation đầy đủ.
+-Double-fault, error correlation và oracle
+-Double-fault đo tỷlệcùng sai của hai bộphân loại, error correlation mô tảmức liên hệgiữa
+-các biến chỉbáo lỗi, còn oracle giảđịnh có thểchọn đúng đầu ra của một base model bất kỳ
+-trên mỗi mẫu. Oracle là cận mô tảdưới thông tin nhãn thật, không phải thuật toán dựđoán có
+-thểvận hành trực tiếp. Những chỉsốnày cho biết các base learners có thểbổsung nhau ởđâu,
+ nhưng không trảlời việc meta learner có thực sựhọc được quy tắc kết hợp đúng hay không.
+ Kết quảvoting không thuận lợi trong development vẫn phải được giữlại đểtránh thiên lệch
+ chỉbáo cáo phương án tốt.
+@@ -778,21 +775,21 @@
+ Các chiến lược Feature Selection
+ Filter selection sửdụng phép đo thống kê đểxếp hạng biến; wrapper selection đánh giá trực
+ tiếp các tập con thông qua mô hình; embedded selection khai thác cơ chếlựa chọn trong khi
+-fit [13, 7]. Các phương pháp có ưu nhược điểm khác nhau vềchi phí, tương tác biến và thiên
+-lệch theo model. Tính ổn định của feature được chọn qua nhiều lần lặp giúp hạn chếphụ
++fit [13, 7]. Mỗi phương pháp có chi phí, khảnăng xét tương tác biến và mức phụthuộc vào
++model khác nhau. Tính ổn định của feature được chọn qua nhiều lần lặp giúp hạn chếphụ
+ thuộc một phép chia cụthể, nhưng không chứng minh loại bỏbiến ít quan trọng luôn cải thiện
+ generalization.
+ Một phép đo gần bằng nhau của RF-17 và RF-42 không cho phép suy rằng 25 feature bịbỏ
+ đều vô dụng. Mục tiêu của việc giảm feature trong đềtài là khảo sát một đánh đổi giữa chất
+ lượng và tài nguyên của hai pipeline cụthể. Muốn quy kết quảcho riêng sốfeature phải giữ
+ cốđịnh mọi thành phần khác của RF và lồng lựa chọn feature trong outer folds.
+-Mã đềtài: 09-SV-2026-CNTT2
+-6
+-
+-ĐỀTÀI NCKH SINH VIÊN
+-ENSEMBLE LEARNING – NIDS
+ 1.2.6
+ Các chỉsốđánh giá và diễn giải thống kê
++Mã đềtài: 09-SV-2026-CNTT2
++6
++
++ĐỀTÀI NCKH SINH VIÊN
++ENSEMBLE LEARNING – NIDS
+ Precision, Recall, Macro-F1 và MCC
+ Với Attack là lớp dương:
+ Precision =
+@@ -836,24 +833,25 @@
+ mẫu.
+ 1.3
+ Các công trình nghiên cứu liên quan
+-Mã đềtài: 09-SV-2026-CNTT2
+-7
+-
+-ĐỀTÀI NCKH SINH VIÊN
+-ENSEMBLE LEARNING – NIDS
+ 1.3.1
+ Ensemble Learning trong NIDS
+ Tama và Lim khảo sát có hệthống hướng Ensemble Learning cho Intrusion Detection và đặt
+ trọng tâm vào base classifier, cách kết hợp và tính phụthuộc của đánh giá theo benchmark
+-[10]. Kết quảtổng quan này là cơ sởlựa chọn câu hỏi so sánh thực nghiệm, không thểthay
+-bằng nhận định đơn giản rằng kết hợp nhiều classifier chắc chắn làm hiệu năng tăng.
++[10]. Tổng quan này giúp hình thành câu hỏi so sánh thực nghiệm. Nó không cho phép kết
++luận rằng cứkết hợp nhiều classifier thì hiệu năng sẽtăng.
+ Các cấu hình kết hợp đã được nghiên cứu theo nhiều hướng: soft voting có thành phần tìm
+ cấu hình tựđộng [5], heterogeneous stacking với các base learners và meta learner được mô
+ tảtrong phần phương pháp của Thockchom và cộng sự[11], và hướng kết hợp lựa chọn đặc
++Mã đềtài: 09-SV-2026-CNTT2
++7
++
++ĐỀTÀI NCKH SINH VIÊN
++ENSEMBLE LEARNING – NIDS
+ trưng với ensemble [3, 7]. Các nghiên cứu có phương pháp và tập dữliệu khác nhau không
+-được coi là baseline matched cho official UNSW-NB15 của đềtài. Việc tồn tại những công
+-trình này giới hạn tuyên bốnovelty: đóng góp được định vịởkiểm toán case study, sựminh
+-bạch vềloại lỗi, bằng chứng cặp và chi phí, không phải tạo ra Stacking hay Feature Selection.
++được coi là baseline matched cho official UNSW-NB15 của đềtài. Các công trình này cho
++thấy Stacking và Feature Selection đã có tiền lệ. Đóng góp của đềtài nằm ởviệc kiểm toán
++case study, báo cáo rõ loại lỗi, đối chiếu theo cặp và xem xét chi phí; không phải tạo ra hai kỹ
++thuật đó.
+ 1.3.2
+ Feature Selection, chuẩn hóa và mất cân bằng
+ Việc giảm sốđặc trưng có thểthay đổi chất lượng và chi phí của pipeline, nhưng phải tách
+@@ -867,21 +865,16 @@
+ nhân quảtừnhững kết quảđược lưu. Đây vẫn là giới hạn của RQ5.
+ 1.3.3
+ Chất lượng dữliệu và khảnăng khái quát
+-Engelen và cộng sựphân tích lỗi và quá trình xửlý trong một bộdữliệu IDS khác
+-(CICIDS2017) [4]; bài học phương pháp luận là cần kiểm toán pipeline và chất lượng dữliệu,
+-không chuyển nguyên các lỗi CICIDS2017 sang UNSW-NB15. Cantone và cộng sựnhấn
+-mạnh sựkhác biệt giữa đánh giá trong cùng một dataset và đánh giá cross-dataset [2]. Nghiên
+-cứu của chúng tôi mới có official holdout cùng một phần exact-duplicate-filtered view; đó
+-không phải external validation hoặc phép đo generalization cross-dataset.
++Engelen và cộng sựphân tích lỗi và quá trình xửlý trong một bộdữliệu IDS khác (CI-
++CIDS2017) [4]; bài học phương pháp luận là cần kiểm toán pipeline và chất lượng dữliệu,
++không chuyển nguyên các lỗi CICIDS2017 sang UNSW-NB15. Cantone và cộng sựnhấn mạnh
++sựkhác biệt giữa đánh giá trong cùng một dataset và đánh giá cross-dataset [2]. Nghiên cứu
++của chúng tôi mới có official holdout cùng một phần exact-duplicate-filtered view; đó không
++phải external validation hoặc phép đo generalization cross-dataset.
+ Khảo sát vềcác loại tấn công chưa biết, không điển hình và biến đổi hình thái [9] gợi ý yêu
+ cầu đọc kết quảtổng thểtrong mối liên hệvới các dạng tấn công khác nhau. Nhưng phân tích
+ attack_cat ởđây là nhóm nhãn thật của binary detector, không phải đo khảnăng dựđoán
+ nhãn tấn công đa lớp hoặc unknown-attack deployment.
+-Mã đềtài: 09-SV-2026-CNTT2
+-8
+-
+-ĐỀTÀI NCKH SINH VIÊN
+-ENSEMBLE LEARNING – NIDS
+ 1.3.4
+ Khoảng trống bằng chứng và giới hạn tổng quan
+ So sánh ensemble cần xem xét liệu mô hình có cải thiện hay không, mức thay đổi giữa FP và
+@@ -890,9 +883,14 @@
+ vềrepeated-training stability, nested Feature Selection, temporal split, external validation và
+ matched resampling vẫn nằm ngoài phạm vi thí nghiệm hiện có. Đây là những câu hỏi chưa
+ được giải quyết trong nghiên cứu này, không phải nhận định vềtoàn bộlĩnh vực.
+-Các nhận xét tổng quan ởđây dựa trên những bài báo được trích dẫn trong danh mục tài
+-liệu tham khảo; do khác biệt dữliệu và giao thức, không sửdụng kết quảtừcác nghiên cứu
+-đó như đối chứng trực tiếp cho ba mô hình của đềtài.
++Phần tổng quan dựa trên các bài báo đã trích dẫn. Vì dữliệu và giao thức khác nhau, kết
++quảcủa các công trình đó không được dùng làm đối chứng trực tiếp cho ba mô hình của đề
++Mã đềtài: 09-SV-2026-CNTT2
++8
++
++ĐỀTÀI NCKH SINH VIÊN
++ENSEMBLE LEARNING – NIDS
++tài.
+ 1.3.5
+ Đối chiếu phương pháp với một sốcông trình liên quan
+ Bảng 1.1 đặt protocol và thành phần phương pháp của đềtài cạnh ba công trình mà phần
+@@ -944,38 +942,29 @@
+ tiền lệgần vềphương pháp nhưng khác
+ protocol.
+ Nghiên cứu này
+-Giữ
+-official
+-TRAIN
+-175 341
+-và
+-TEST
++Giữofficial TRAIN 175 341 và TEST
+ 82 332;
+ phân
+ loại
+ nhị
+ phân
+-Normal/Attack.
+-So sánh RF-17/RF-42 với Stacking-42,
+-có pooled OOF, paired CI, phân tích
+-FP/FN, chi phí và exact-duplicate-filtered
+-sensitivity.
+-Ba khái niệm đóng góp cần được phân biệt. Nghiên cứu này không đềxuất methodological
+-novelty cho Stacking hay Feature Selection; các thành phần đó đã có tiền lệtrong tài liệu.
+-Đóng góp nghiên cứu ởđây là case study theo split chính thức, còn empirical contribution là
+-cách đối chiếu cùng các pipeline trên các mẫu holdout bằng metric tổng hợp, sai sốtheo lớp,
+-Mã đềtài: 09-SV-2026-CNTT2
+-9
+-
+-ĐỀTÀI NCKH SINH VIÊN
+-ENSEMBLE LEARNING – NIDS
+-độbất định và chi phí đã lưu. Phạm vi này không phải tuyên bốreview đầy đủtoàn lĩnh vực,
+-cũng không cho phép xếp hạng các điểm sốđược tạo ra từprotocol khác nhau.
++Nor-
++mal/Attack.
++So sánh RF-17/RF-42 với Stacking-42, có
++pooled OOF, paired CI, phân tích FP/FN,
++chi phí và exact-duplicate-filtered sensi-
++tivity.
++Stacking và Feature Selection đã được nghiên cứu trước đây, nên đềtài không đềxuất
++phương pháp mới cho hai kỹthuật này. Đềtài thực hiện một case study theo split chính thức.
++Phần đóng góp thực nghiệm là đối chiếu các pipeline trên cùng mẫu holdout qua chỉsốtổng
++hợp, sai sốtheo lớp, độbất định và chi phí đã lưu. Phạm vi này không phải tuyên bốreview
++đầy đủtoàn lĩnh vực, cũng không cho phép xếp hạng các điểm sốđược tạo ra từprotocol khác
++nhau.
+ Các mô tảtrong bảng giới hạn ởthông tin phương pháp đã được kiểm tra trong các nguồn
+ nêu trên. Chi tiết chưa xác minh được giữởtrạng thái chưa xác định, thay vì diễn giải thành
+ khuyết điểm của công trình trước.
+ Mã đềtài: 09-SV-2026-CNTT2
+-10
++9
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ Chương 2.
+@@ -1004,9 +993,9 @@
+ 82 332
+ 55.06
+ Sựkhác biệt tỷlệAttack giữa TRAIN (68,06%) và TEST (55,06%) là một quan sát thực
+-tếcủa dữliệu chính thức, không phải tỷlệdo nghiên cứu tựcân bằng lại. Điều này cho thấy
+-tổng Accuracy và Weighted-F1 có thểchịu ảnh hưởng của cách phân bốlớp; đọc Macro-F1,
+-MCC và chỉsốriêng từng lớp sẽrõ ràng hơn khi so sánh các pipeline.
++tếcủa dữliệu chính thức, không phải tỷlệdo nghiên cứu tựcân bằng lại. Vì Accuracy và
++Weighted-F1 chịu ảnh hưởng của phân bốlớp, khi so sánh pipeline cần đọc thêm Macro-F1,
++MCC và chỉsốcủa từng lớp.
+ Normal
+ Attack
+ 0
+@@ -1027,7 +1016,7 @@
+ Hình 2.1. Phân bốnhãn Normal/Attack trong official TRAIN và TEST, biểu đồphân bốlớp từkết quả
+ khảo sát dữliệu.
+ 09-SV-2026-CNTT2
+-11
++10
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+@@ -1036,8 +1025,8 @@
+ Ngoài lớp Normal, trường attack_cat chứa các họtấn công như Analysis, Backdoor, DoS,
+ Exploits, Fuzzers, Generic, Reconnaissance, Shellcode và Worms. Tại official TEST, Generic
+ chiếm 18 871 dòng, Exploits 11 132 dòng và Fuzzers 6 062 dòng, trong khi Worms chỉcó 44
+-dòng. Quy mô hỗtrợkhông đồng đều có thểlàm độchính xác theo từng nhóm biến động
+-mạnh; một sốđếm FN cần được đọc cùng mẫu sốcủa chính nhóm Attack tương ứng.
++dòng. Sốmẫu giữa các nhóm chênh lệch lớn, nên độchính xác theo nhóm có thểbiến động
++mạnh. SốFN cần được đọc cùng tổng sốmẫu của nhóm Attack tương ứng.
+ 102
+ 103
+ 104
+@@ -1064,16 +1053,16 @@
+ Bởi vậy bước Error Analysis trong báo cáo phân nhóm các Attack thật, đồng thời tránh biến
+ các khác biệt nhỏthành khẳng định vềtoàn bộdạng tấn công trong tựnhiên.
+ Mã đềtài: 09-SV-2026-CNTT2
+-12
++11
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+ 2.3
+ Khảo sát thống kê các đặc trưng
+-EDA của TRAIN đã kiểm tra 39 biến số. Các tiêu chí thống kê dùng đểkhám phá không đồng
+-nghĩa phép thửnhân quả. Chẳng hạn, standardized mean difference (SMD) giữa Normal và
+-Attack lớn cho thấy trung bình hai nhóm có khác biệt tương đối theo độphân tán, nhưng không
+-có nghĩa một feature đơn lẻlà dấu hiệu tấn công đáng tin cậy trong mọi tổhợp.
++EDA trên TRAIN khảo sát 39 biến số. Các thống kê mô tảdùng trong bước này không phải
++phép kiểm tra quan hệnhân quả. Chẳng hạn, standardized mean difference (SMD) giữa Normal
++và Attack lớn cho thấy trung bình hai nhóm có khác biệt tương đối theo độphân tán, nhưng
++không có nghĩa một feature đơn lẻlà dấu hiệu tấn công đáng tin cậy trong mọi tổhợp.
+ Các giá trịSMD lớn vềđộlớn trong bảng EDA gồm sttl (1,9430), ct_state_ttl
+ (1,3973), ct_dst_sport_ltm (0,9340), rate (0,8692), ct_src_dport_ltm (0,7853), cùng
+ các biến có SMD âm như swin (-0,7636) và dload (-0,7346). Dấu và độlớn của SMD phản
+@@ -1110,7 +1099,7 @@
+ Hình 2.3. Khảo sát mức tách biệt Normal/Attack ởmột sốfeature sốtrên tập huấn luyện. Không dùng
+ biểu đồnày đểsuy ra quan hệnhân quả.
+ Mã đềtài: 09-SV-2026-CNTT2
+-13
++12
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+@@ -1168,10 +1157,10 @@
+ nhất một vector TRAIN.
+ Overlap rows
+ 8 541
+-Dòng TEST có vector trùng; không đồng nhất với cùng
+-session.
+-Mã đềtài: 09-SV-2026-CNTT2
+-14
++Dòng TEST có vector trùng; không đồng nhất với cùng ses-
++sion.
++Mã đềtài: 09-SV-2026-CNTT2
++13
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+@@ -1183,14 +1172,13 @@
+ và quy trình pre-processing nhất quán.
+ 2.6
+ Kết luận vềđặc trưng của benchmark
+-UNSW-NB15 hỗtrợmột case study IDS nhịphân có quy mô vừa đủcho đối chiếu nhiều
+-pipeline và có nhãn Attack đểphân tích sai số. Tuy nhiên, các chênh lệch lớp, tương quan
+-feature mạnh, sựtồn tại của vector trùng và khảnăng phụthuộc giữa các dòng flow giới hạn
+-phạm vi khái quát. Vì thếhiệu năng trên chính benchmark này được diễn giải dưới các điều
+-kiện của phép đo, không tựchuyển thành khảnăng phát hiện xâm nhập trên mạng triển khai
+-thực tế.
+-Mã đềtài: 09-SV-2026-CNTT2
+-15
++Với quy mô của UNSW-NB15 và nhãn Attack đi kèm, nghiên cứu có thểđối chiếu nhiều
++pipeline IDS nhịphân và phân tích sai số. Tuy nhiên, các chênh lệch lớp, tương quan feature
++mạnh, sựtồn tại của vector trùng và khảnăng phụthuộc giữa các dòng flow giới hạn phạm vi
++khái quát. Vì thếhiệu năng trên chính benchmark này được diễn giải dưới các điều kiện của
++phép đo, không tựchuyển thành khảnăng phát hiện xâm nhập trên mạng triển khai thực tế.
++Mã đềtài: 09-SV-2026-CNTT2
++14
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ Chương 3.
+@@ -1204,11 +1192,11 @@
+ gồm 82 332 dòng (37 000 Normal; 45 332 Attack). Các trường id, label và attack_cat
+ không thuộc tập predictor. Trường attack_cat chỉđược dùng sau dựđoán đểmô tảcác mẫu
+ Attack bịbỏsót; vì thếkết quảtheo họtấn công không phải phân loại đa lớp.
+-Thiết kếhướng tới so sánh một baseline Random Forest với Stacking, một cấu hình Random
+-Forest có ít đặc trưng hơn, đồng thời khảo sát lỗi, độbất định và chi phí quan sát được. Mục tiêu
+-không phải đềxuất thuật toán ensemble mới. Exact-duplicate-filtered view được định nghĩa
+-bằng việc loại khỏi TEST những dòng có vector 42 đặc trưng trùng với vector TRAIN; đây là
+-phân tích độnhạy trong cùng benchmark, không phải một split độc lập mới.
++Nghiên cứu lấy Random Forest làm baseline đểđối chiếu với Stacking và một cấu hình
++Random Forest ít đặc trưng hơn. Các phép so sánh xét cảsai số, độbất định và chi phí quan
++sát được. Mục tiêu không phải đềxuất thuật toán ensemble mới. Exact-duplicate-filtered view
++được định nghĩa bằng việc loại khỏi TEST những dòng có vector 42 đặc trưng trùng với vector
++TRAIN; đây là phân tích độnhạy trong cùng benchmark, không phải một split độc lập mới.
+ 3.2
+ Lựa chọn đặc trưng và tiền xửlý
+ Track 42 giữtoàn bộđặc trưng dựbáo sau khi loại các trường không dùng làm predictor. Track
+@@ -1229,7 +1217,7 @@
+ Danh sách stable17 được tạo từtoàn bộofficial TRAIN trước development cross-validation.
+ Vì vậy, nhãn của các fold validation đã góp phần vào bước chọn biến và điểm development
+ 09-SV-2026-CNTT2
+-16
++15
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+@@ -1248,9 +1236,9 @@
+ Voting kết hợp đầu ra của Logistic Regression (LR), Decision Tree (DT) và Random Forest
+ (RF). Hard Voting chọn lớp theo đa sốphiếu; Soft Voting lấy trung bình xác suất dựđoán
+ trước khi áp dụng ngưỡng. Stacking cũng dùng ba learner này ởtầng cơ sở, nhưng huấn luyện
+-Logistic Regression ởtầng kết hợp từdựđoán ngoài fold của các learner cơ sở. Cách tạo đầu
+-vào OOF làm giảm việc meta learner học trực tiếp từdựđoán in-sample của tầng cơ sở; nó
+-không tựloại bỏmọi nguồn lạc quan trong quá trình chọn cấu hình.
++Logistic Regression ởtầng kết hợp từdựđoán ngoài fold của các learner cơ sở. Đầu vào OOF
++giúp meta learner tránh học trực tiếp từdựđoán in-sample của tầng cơ sở. Dù vậy, quá trình
++chọn cấu hình vẫn có thểtạo ra các nguồn lạc quan khác.
+ Bảng 3.1. Cấu hình của ba pipeline được dùng trong đánh giá cuối.
+ Pipeline
+ Cấu hình chính
+@@ -1286,7 +1274,7 @@
+ Sau khi khóa ba cấu hình cuối, mỗi pipeline được fit lại trên toàn bộTRAIN và dựđoán
+ trên official TEST với ngưỡng 0.5. TEST không được dùng đểđổi mô hình, threshold hay tập
+ Mã đềtài: 09-SV-2026-CNTT2
+-17
++16
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+@@ -1313,9 +1301,8 @@
+ bitwise với các mô hình từng tạo dựđoán official TEST. Do đó, P15 là tái dựng/tái huấn luyện
+ theo cấu hình đã ghi, không phải khôi phục chính xác artifact lịch sửvà không phải phép xác
+ minh lại các metric TEST. Kiểm tra predictability trên dữliệu TRAIN-derived cũng không
+-đánh giá khảnăng vận hành của hệthống IDS trong thực tế. Ba phạm vi này — khảnăng tái
+-lập trong môi trường xác định, tái huấn luyện từTRAIN và triển khai — được xem là các
+-tuyên bốriêng biệt.
++đánh giá khảnăng vận hành của hệthống IDS trong thực tế. Vì vậy, cần đánh giá riêng khả
++năng tái lập trong môi trường xác định, tái huấn luyện từTRAIN và triển khai.
+ 3.6
+ Phần mởrộng P21: thiết kếđối chứng matched trên TRAIN-derived
+ validation
+@@ -1326,7 +1313,7 @@
+ thửnghiệm xác nhận độc lập. P21 không mởhoặc đánh giá lại official TEST; các kết quả
+ lịch sửởnhững mục trước được giữbất biến.
+ Mã đềtài: 09-SV-2026-CNTT2
+-18
++17
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+@@ -1358,8 +1345,8 @@
+ chứng
+ RQ1/2/5
+ A1
+-RF17-Lite: cùng RF hyperparameters, 17 biến được FIT-only
+-select
++RF17-Lite: cùng RF hyperparameters, 17 biến được FIT-only se-
++lect
+ RQ2 matched
+ A2
+ RF42-Lite, class_weight=balanced, không resample
+@@ -1370,10 +1357,10 @@
+ A4
+ Stacking-Lite (LR/DT/RF42, meta LR), không reweight
+ RQ1 ensemble
+-Ngưỡng quyết định ởtất cảarm cốđịnh 0.5; mọi kết quảlà phân loại nhịphân
+-Normal/Attack. Do FIT từofficial TRAIN có Attack là đa số, nhánh A3 tăng sốquan sát
+-Normal bằng lặp chỉsốFIT hiện có, không giảlập mẫu tấn công mới. Không dùng SMOTE,
+-không resample validation.
++Ngưỡng quyết định ởtất cảarm cốđịnh 0.5; mọi kết quảlà phân loại nhịphân Nor-
++mal/Attack. Do FIT từofficial TRAIN có Attack là đa số, nhánh A3 tăng sốquan sát Normal
++bằng lặp chỉsốFIT hiện có, không giảlập mẫu tấn công mới. Không dùng SMOTE, không
++resample validation.
+ A1 thực hiện lại chọn top-17 cho mỗi seed FIT. Kết hợp Mutual Information có loại tương
+ quan Spearman theo ngưỡng 0.95, Logistic Regression L1 và ExtraTrees; năm selection seed
+ 11, 23, 42, 71, 101; mỗi lần dùng 35 000 hàng lấy chỉtừFIT, 20 biến gợi ý mỗi phương pháp,
+@@ -1382,7 +1369,7 @@
+ tốn chi phí huấn luyện riêng, cần tính cộng vào chi phí end-to-end khi so sánh.
+ Stacking A4 dùng base Logistic Regression (C = 1, liblinear), Decision Tree (leaf=2),
+ Mã đềtài: 09-SV-2026-CNTT2
+-19
++18
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+@@ -1397,9 +1384,8 @@
+ Trên cùng validation nội bộ, tính Macro-F1, MCC, Precision/Recall Attack, FPR=FP/(TN +
+ FP) và FNR=FN/(TP + FN), confusion matrix, thời gian fit và predict. Hiệu sốmỗi arm
+ trừA0 được tính trong cùng seed; báo cáo trung bình và độlệch chuẩn mẫu trên năm seed.
+-Không đưa p-value hay khoảng tin cậy suy diễn được hiểu như năm lần kiểm tra độc lập, và
+-không thực hiện t-test hoặc ANOVA với năm seed này; cũng không hiệu chỉnh kết quảsau khi
+-thấy seed đầu tiên.
++Năm seed này không được dùng như năm lần kiểm tra độc lập đểtính p-value, khoảng tin cậy
++suy diễn, t-test hoặc ANOVA. Kết quảcũng không được hiệu chỉnh sau khi xem seed đầu tiên.
+ Các bản ghi full P21 được tạo trong môi trường Python 3.11, scikit-learn 1.9.0 và pandas
+ 3.0.5 với một CPU, watchdog process-tree RSS 2 GiB, RAM khảdụng tối thiểu khi bắt đầu 4
+ GiB và floor khi chạy 1.5 GiB, đĩa trống tối thiểu 10 GiB. Không đặt timeout thời gian cố
+@@ -1418,7 +1404,7 @@
+ gian fit lịch sửthuộc một cấu hình RF khác và môi trường chưa có log CPU/RAM/parallelism
+ đầy đủ, không được so sánh như một ablation khống chế.
+ Mã đềtài: 09-SV-2026-CNTT2
+-20
++19
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ Chương 4.
+@@ -1450,9 +1436,9 @@
+ Bảng 4.1 cho thấy cảba pipeline phát hiện phần lớn mẫu Attack nhưng vẫn gán nhầm hơn một
+ phần tư sốmẫu Normal. Chênh lệch giữa RF-42 và Stacking-42 nhỏtheo Macro-F1 và MCC,
+ trong khi hai loại lỗi thay đổi theo hướng đối nghịch: Stacking giảm FP 142 mẫu, từ10 003
+-xuống 9 861, nhưng tăng FN 118 mẫu, từ734 lên 852. Khi chưa có hàm chi phí vận hành để
+-quy đổi cảnh báo giảvà bỏsót thành cùng một thang đo, kết quảnày không xác định được cấu
+-hình phù hợp hơn cho mọi bối cảnh sửdụng.
++xuống 9 861, nhưng tăng FN 118 mẫu, từ734 lên 852. Chưa có hàm chi phí vận hành đểquy
++đổi hai loại lỗi vềcùng thang đo. Vì vậy, kết quảnày chưa xác định được cấu hình phù hợp
++hơn cho mọi bối cảnh sửdụng.
+ Bảng 4.1. Hiệu năng nhịphân trên official TEST (82 332 mẫu; ngưỡng 0,5).
+ Pipeline
+ Macro-F1
+@@ -1485,7 +1471,7 @@
+ So với RF-42, RF-17 có Macro-F1 thấp hơn 0.002670, ít hơn 26 FN nhưng nhiều hơn 221
+ FP. Thời gian huấn luyện và kích thước ước lượng nhỏhơn đáng kểtrong lần chạy lịch sử
+ 09-SV-2026-CNTT2
+-21
++20
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+@@ -1540,7 +1526,7 @@
+ benchmark đã có dựđoán, không phản ánh biến thiên do huấn luyện lại, phụthuộc session/host
+ hay dữliệu ngoài UNSW-NB15.
+ Mã đềtài: 09-SV-2026-CNTT2
+-22
++21
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+@@ -1565,8 +1551,8 @@
+ Bảng 4.3 đối chiếu thời gian huấn luyện, thời gian suy luận trung bình theo lô và dung lượng
+ mô hình ước tính trong lần thực nghiệm ban đầu. Các con sốcho thấy Stacking cần nhiều thời
+ gian huấn luyện hơn RF-42 trong lần chạy đó, còn RF-17 có thời gian và kích thước thấp hơn.
+-Chúng mô tảcác cấu hình và môi trường lịch sửcụthể; không phải benchmark lặp lại trên
+-thiết bịtriển khai.
++Các sốđo chỉmô tảnhững cấu hình trong môi trường lịch sửđó; đây chưa phải benchmark
++lặp lại trên thiết bịtriển khai.
+ Bảng 4.3. Chi phí tính toán của ba pipeline trong lần thực nghiệm ban đầu; dung lượng quy đổi sang
+ MiB.
+ Pipeline
+@@ -1604,17 +1590,17 @@
+ trường thư viện gốc chưa được xác định trực tiếp, và kích thước được báo cáo không chứng
+ minh artifact mô hình lịch sửhiện còn tồn tại.
+ Mã đềtài: 09-SV-2026-CNTT2
+-23
++22
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+ 4.5
+ Sai sốtheo họtấn công
+-Phân tích hậu nghiệm theo họnhãn thật làm rõ khác biệt mà chỉsốtổng thểgộp lại. Trong số
+-6 062 mẫu Fuzzers, Stacking-42 bỏsót 754 mẫu, nhiều hơn RF-42 (621); với Generic, sốbỏ
+-sót của Stacking thấp hơn (14 so với 57). Bảng 4.4 mởrộng đối chiếu tới đủchín nhóm Attack
+-và cảba pipeline. FNR và sốFN được nêu trong Bảng 4.4, còn khoảng tin cậy Wilson 95%
+-được tách riêng tại Bảng 4.5 đểbảo đảm kích thước chữkhi in khổA4.
++Phân nhóm theo nhãn Attack thật sau dựđoán cho thấy những khác biệt bịgộp trong chỉsố
++tổng thể. Trong số6 062 mẫu Fuzzers, Stacking-42 bỏsót 754 mẫu, nhiều hơn RF-42 (621);
++với Generic, sốbỏsót của Stacking thấp hơn (14 so với 57). Bảng 4.4 mởrộng đối chiếu tới
++đủchín nhóm Attack và cảba pipeline. FNR và sốFN được nêu trong Bảng 4.4, còn khoảng
++tin cậy Wilson 95% được tách riêng tại Bảng 4.5 đểbảo đảm kích thước chữkhi in khổA4.
+ Bảng 4.4. Sốtấn công bỏsót (FN) và FNR theo chín họAttack trên official TEST; mỗi ô: FN / FNR
+ (%).
+ HọAttack
+@@ -1726,7 +1712,7 @@
+ khác biệt theo nhóm gợi ý vịtrí cần khảo sát thêm, nhưng không xác định đặc trưng hay cơ
+ chếnào gây ra lỗi.
+ Mã đềtài: 09-SV-2026-CNTT2
+-24
++23
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+@@ -1788,14 +1774,14 @@
+ stable17 được xác định trên toàn bộTRAIN trước outer CV, còn việc tinh chỉnh meta learner
+ chưa hoàn toàn nested; vì vậy các điểm phát triển có thểlạc quan.
+ Các cặp base learner cũng mắc lỗi không hoàn toàn trùng nhau: LR/RF có double-fault
+-0.030814 và tương quan lỗi 0.563855; DT/RF lần lượt là 0.025345 và 0.498922. Mức bổsung
+-Mã đềtài: 09-SV-2026-CNTT2
+-25
+-
+-ĐỀTÀI NCKH SINH VIÊN
+-ENSEMBLE LEARNING – NIDS
+-lỗi này tạo điều kiện đểmột bộkết hợp có thểkhai thác khác biệt giữa các learner, nhưng tựnó
+-không bảo đảm Voting hoặc Stacking sẽcải thiện dựđoán. Kết quảVoting thấp hơn RF trong
++0.030814 và tương quan lỗi 0.563855; DT/RF lần lượt là 0.025345 và 0.498922. Bộkết hợp
++Mã đềtài: 09-SV-2026-CNTT2
++24
++
++ĐỀTÀI NCKH SINH VIÊN
++ENSEMBLE LEARNING – NIDS
++có thểkhai thác khác biệt lỗi giữa các learner. Tuy nhiên, riêng mức bổsung lỗi quan sát được
++chưa bảo đảm Voting hoặc Stacking sẽcải thiện dựđoán. Kết quảVoting thấp hơn RF trong
+ bảng là một minh họa trực tiếp cho sựphân biệt giữa diversity quan sát được và lợi ích thực
+ tếcủa phép kết hợp.
+ 4.8
+@@ -1833,7 +1819,7 @@
+ 150 cây và min_samples_leaf=2, còn RF-42 dùng 300 cây và giá trị1. Hơn nữa, việc chọn
+ stable17 trên toàn TRAIN trước development CV có thểlàm điểm CV lạc quan. Đối với hai
+ Mã đềtài: 09-SV-2026-CNTT2
+-26
++25
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+@@ -1854,9 +1840,9 @@
+ Các cặp learner trong development có lỗi bổsung, nhưng hai phương án Voting không vượt
+ RF vềMacro-F1. Stacking chỉcao hơn RF một mức nhỏởpooled OOF, và ưu thếđó không
+ rõ trên official TEST. Phân tích paired correctness cuối cùng cho thấy 71 104 mẫu cảRF-42
+-và Stacking-42 đều dựđoán đúng, 10 222 mẫu cảhai cùng sai, 491 mẫu RF đúng/Stacking
+-sai và 515 mẫu RF sai/Stacking đúng. Hai loại bất đồng gần cân bằng, phù hợp với kết quả
+-McNemar không cho thấy khác biệt rõ vềtính đúng tổng thể.
++và Stacking-42 đều dựđoán đúng, 10 222 mẫu cảhai cùng sai, 491 mẫu RF đúng/Stacking sai
++và 515 mẫu RF sai/Stacking đúng. Sốbất đồng theo hai hướng gần cân bằng. Kết quảnày phù
++hợp với việc McNemar chưa phát hiện khác biệt rõ vềtính đúng tổng thể.
+ Paired correctness của hai mô hình cuối không đồng nhất với diversity giữa các base learner
+ trong development. Cảhai phân tích đều mang tính mô tả; chúng cho thấy có khác biệt vềlỗi
+ đểkhảo sát, nhưng chưa xác định cơ chếnhân quảkhiến phép kết hợp sửa hay tạo thêm một
+@@ -1886,7 +1872,7 @@
+ Khoảng cách Macro-F1 giữa Stacking-42 và RF-42 vẫn nhỏtrong cảhai view. Exact-
+ duplicate-filtered là phân tích độnhạy trên chính official TEST, được xác định theo trùng
+ Mã đềtài: 09-SV-2026-CNTT2
+-27
++26
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+@@ -1901,11 +1887,11 @@
+ 1.5618%. Những chỉsốnày mô tảđánh đổi lỗi theo lớp, đồng thời phân tích theo họtấn
+ công cho thấy mức bỏsót không đồng đều giữa các nhóm có quy mô rất khác nhau.
+ Trong quá trình tinh chỉnh đã có so sánh class_weight=None với balanced cho meta
+-learner, và cấu hình Stacking cuối dùng None. Tuy nhiên, không có đối chứng matched
+-giữa weighting và không weighting, hoặc giữa resampling và không resampling trong cùng
+-một protocol. Kết quảofficial TEST lịch sửnày không cô lập được ảnh hưởng riêng của
+-weighting/resampling; P21 sau đó bổsung đối chứng matched chỉtrong official TRAIN,
+-trình bày riêng phía dưới.
++learner, và cấu hình Stacking cuối dùng None. Tuy nhiên, không có đối chứng matched giữa
++weighting và không weighting, hoặc giữa resampling và không resampling trong cùng một
++protocol. Kết quảofficial TEST lịch sửnày không cô lập được ảnh hưởng riêng của weight-
++ing/resampling; P21 sau đó bổsung đối chứng matched chỉtrong official TRAIN, trình bày
++riêng phía dưới.
+ Bổsung hậu nghiệm P21 cho RQ5. Normal mới là lớp ít mẫu trong TRAIN (56 000 so
+ với 119 341 Attack). Trong năm lần FIT-matched trên TRAIN-derived internal validation,
+ class_weight=balanced ởRF42 giảm FPR 3.164 điểm phần trăm nhưng tăng FNR 1.788
+@@ -1922,14 +1908,14 @@
+ TEST lịch sử, không phải benchmark mới. Các bằng chứng P21 là post-hoc reused-TRAIN
+ internal validation, không phải kết quảTEST độc lập.
+ Mã đềtài: 09-SV-2026-CNTT2
+-28
++27
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+ 4.9
+ P21: Kết quảđối chứng hậu nghiệm trên internal validation của
+ TRAIN
+-Báo cáo kết quảbổsung này được tạo sau quá trình đánh giá official TEST lịch sử. Năm seed
++Thực nghiệm bổsung được thực hiện sau giai đoạn đánh giá official TEST lịch sử. Năm seed
+ tạo năm tập FIT 60 000 dòng khác nhau nhưng tất cảdựđoán trên cùng 35 069 dòng internal
+ validation của official TRAIN (11 200 Normal và 23 869 Attack). Đây không phải năm lần
+ đánh giá độc lập trên TEST hoặc một benchmark ngoài. Tất cả25 lượt fit (5 arm × 5 seed)
+@@ -2009,11 +1995,11 @@
+ Hiệu sốpaired của Stacking trừRF theo thứtựnăm seed:
+ ∆MacroF1Stack−RF = [−0.000297, −0.001153, −0.000468, +0.000041, −0.000565].
+ Mã đềtài: 09-SV-2026-CNTT2
+-29
+-
+-ĐỀTÀI NCKH SINH VIÊN
+-ENSEMBLE LEARNING – NIDS
+-Có một seed nhỉnh hơn rất nhỏnhưng không làm đảo dấu hiệu sốtrung bình.
++28
++
++ĐỀTÀI NCKH SINH VIÊN
++ENSEMBLE LEARNING – NIDS
++Ởmột seed, Stacking nhỉnh hơn rất ít; hiệu sốtrung bình vẫn giữnguyên dấu.
+ Bảng 4.10. Macro-F1 theo FIT seed, chỉmô tảbiến thiên huấn luyện có điều kiện; cùng 35 069 quan
+ sát validation ởcảnăm cột.
+ Arm
+@@ -2085,15 +2071,15 @@
+ 652.913
+ Nếu bỏqua chi phí chọn feature, A1 fit RF nhanh hơn A0 khoảng 2.85 lần. Trong kịch bản
+ phải tìm lại 17 đặc trưng cho mỗi lượt huấn luyện, chi phí selection + RF fit của A1 cao hơn
+-khoảng 28.5% so với riêng fit RF42 trong thiết kếP21. Cảhai tổng này chưa cộng thời gian
+-xửlý dữliệu ngoài các lời gọi đã đo, lưu artifact, giám sát hay latency phục vụnên không
+-Mã đềtài: 09-SV-2026-CNTT2
+-30
+-
+-ĐỀTÀI NCKH SINH VIÊN
+-ENSEMBLE LEARNING – NIDS
+-được gọi là tổng chi phí triển khai end-to-end. Vì vậy không thểdựa vào thời gian fit RF17 để
+-tuyên bốFeature Selection đã làm giảm tổng chi phí training.
++khoảng 28.5% so với riêng fit RF42 trong thiết kếP21. Các sốnày chưa tính thời gian xửlý dữ
++liệu ngoài những lời gọi đã đo, lưu artifact, giám sát và latency phục vụ. Chúng chưa phản ánh
++Mã đềtài: 09-SV-2026-CNTT2
++29
++
++ĐỀTÀI NCKH SINH VIÊN
++ENSEMBLE LEARNING – NIDS
++chi phí triển khai end-to-end. Thời gian fit RF17 vì thếchưa đủđểkết luận Feature Selection
++làm giảm tổng chi phí training.
+ 4.9.4
+ RQ5: Cân bằng lớp không đồng nghĩa tăng phát hiện Attack
+ Trên dữliệu TRAIN, Normal là lớp ít mẫu và được tăng trọng sốhoặc lặp lại trong hai nhánh
+@@ -2104,16 +2090,16 @@
+ dựa vào validation đã đánh giá.
+ 4.9.5
+ Chất lượng bằng chứng và giới hạn phát biểu
+-Mỗi seed có năm cấu hình trùng digest FIT source và cùng nhãn true 35 069 dòng validation,
+-các kiểm tra kết quảphát hiện tổng TN+FP+FN+TP đúng support, khớp các chỉsốMacro-
+-F1/MCC/FPR/FNR và không cho thấy lệch dữliệu trong metadata. Tuy nhiên đây là kiểm tra
+-nhất quán báo cáo, không phải replay độc lập trên máy thứhai hay đối chứng theo thời gian.
+-Cụm seed chỉthay đổi mẫu FIT và tính ngẫu nhiên của mô hình; do validation được tái sử
+-dụng, độlệch chuẩn trong các bảng đo biến thiên có điều kiện trên validation đó, không phải
+-sai sốtổng quát hóa. Sốliệu P21 không được gộp với official TEST 82 332 dòng của giai đoạn
+-lịch sửđểtính p-value hay chọn mô hình cuối.
+-Mã đềtài: 09-SV-2026-CNTT2
+-31
++Trong mỗi seed, năm cấu hình dùng cùng digest FIT source và cùng nhãn thật của 35 069
++dòng validation. Kiểm tra xác nhận tổng TN+FP+FN+TP khớp support, các chỉsốMacro-
++F1/MCC/FPR/FNR nhất quán và metadata không cho thấy lệch dữliệu. Tuy nhiên đây là kiểm
++tra nhất quán báo cáo, không phải replay độc lập trên máy thứhai hay đối chứng theo thời
++gian. Cụm seed chỉthay đổi mẫu FIT và tính ngẫu nhiên của mô hình; do validation được tái
++sửdụng, độlệch chuẩn trong các bảng đo biến thiên có điều kiện trên validation đó, không
++phải sai sốtổng quát hóa. Sốliệu P21 không được gộp với official TEST 82 332 dòng của giai
++đoạn lịch sửđểtính p-value hay chọn mô hình cuối.
++Mã đềtài: 09-SV-2026-CNTT2
++30
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ Chương 5.
+@@ -2121,13 +2107,12 @@
+ 5.1
+ Diễn giải đánh đổi giữa các loại lỗi
+ Trên cùng official TEST, Stacking-42 giảm 142 cảnh báo giảso với RF-42 nhưng bỏsót thêm
+-118 mẫu Attack. Giá trịthực tếcủa thay đổi này phụthuộc vào chi phí tương đối của cảnh báo
+-giảvà bỏsót trong môi trường vận hành; chưa có dữliệu thật vềchi phí đó; phần phân tích
+-độnhạy giảđịnh phía dưới chỉminh họa điều kiện đểhai pipeline đổi thứhạng theo chi phí,
+-không xếp một cấu hình là tối ưu cho mọi NIDS. Macro-F1 gần như không đổi và MCC giảm
+-nhẹởStacking, trong khi FPR và FNR dịch chuyển theo hai hướng khác nhau. Việc đọc đồng
+-thời các chỉsốnày cho thấy lý do một điểm tổng hợp duy nhất chưa đủđểquyết định triển
+-khai.
++118 mẫu Attack. Ý nghĩa vận hành của thay đổi này phụthuộc vào chi phí tương đối giữa cảnh
++báo giảvà bỏsót. Đềtài chưa có dữliệu thực vềcác chi phí đó. Phân tích độnhạy dưới đây
++dùng các tỷlệgiảđịnh đểchỉra khi nào hai pipeline đổi thứhạng; nó chưa xác định cấu hình
++tối ưu cho mọi NIDS. Macro-F1 gần như không đổi và MCC giảm nhẹởStacking, trong khi
++FPR và FNR dịch chuyển theo hai hướng khác nhau. Một điểm tổng hợp duy nhất vì thếchưa
++đủđểquyết định triển khai.
+ Ma trận tính đúng/sai theo cặp dưới đây cho thấy sốdựđoán bất đồng giữa hai pipeline gần
+ cân bằng. Điều này phù hợp với McNemar không phát hiện khác biệt rõ vềtính đúng tổng thể,
+ nhưng không thay thếcác chỉsốtách theo lớp hay thiết lập tương đương thống kê.
+@@ -2158,8 +2143,9 @@
+ RF-42 có tổn thất thấp hơn Stacking-42 trong đúng phép so sánh hai mô hình này; không
+ suy ra RF-42 tối ưu hơn RF-17 hoặc mọi NIDS khác.
+ Bảng 5.2 chỉkhảo sát một sốtỷlệchi phí do người nghiên cứu định nghĩa đểminh họa,
++không có bằng chứng định lượng rằng r = 5 hoặc r = 100 đúng cho hệthống tại Học viện.
+ 09-SV-2026-CNTT2
+-32
++31
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+@@ -2195,7 +2181,6 @@
+ 95061
+ +11658
+ RF-42
+-không có bằng chứng định lượng rằng r = 5 hoặc r = 100 đúng cho hệthống tại Học viện.
+ Mô hình cộng tuyến tính chưa xét mức độnghiêm trọng từng tấn công, sốcảnh báo lặp, khả
+ năng xác minh của SOC, điều chỉnh ngưỡng hoặc chi phí drift; vì vậy đây là phân tích độ
+ nhạy của confusion matrix hiện có, không phải kết quảtối ưu hóa chính sách vận hành hay
+@@ -2203,11 +2188,10 @@
+ 5.2
+ Diversity và sai sốtheo nhóm
+ Các learner cơ sởmắc lỗi không hoàn toàn trùng nhau trong development, nhưng kết quả
+-Hard/Soft Voting thấp hơn RF và lợi thếnhỏcủa Stacking không rõ trên official TEST. Như
+-vậy, diversity là một thuộc tính quan sát được của các dựđoán, còn lợi ích của ensemble phải
+-được xác lập trực tiếp bằng hiệu năng và loại lỗi của bộkết hợp. Paired correctness của hai
+-pipeline cuối cũng chỉmô tảbất đồng; nó không cho biết một base learner cụthểđã gây ra hay
+-sửa một lỗi nào.
++Hard/Soft Voting thấp hơn RF và lợi thếnhỏcủa Stacking không rõ trên official TEST. Di-
++versity mô tảkhác biệt giữa các dựđoán. Đểxác định lợi ích của ensemble, vẫn phải đo trực
++tiếp hiệu năng và từng loại lỗi của bộkết hợp. Paired correctness của hai pipeline cuối cũng
++chỉmô tảbất đồng; nó không cho biết một base learner cụthểđã gây ra hay sửa một lỗi nào.
+ Phân tích theo họAttack cho thấy mức lỗi không đồng đều: chênh lệch giữa Stacking và
+ RF-42 lớn hơn ởFuzzers nhưng đi theo hướng ngược lại ởGeneric (Bảng 4.4). Vì các mô hình
+ được huấn luyện cho Normal/Attack, đây là phân nhóm hậu nghiệm theo nhãn thật, không phải
+@@ -2223,13 +2207,13 @@
+ trưng.
+ Phần official TEST lịch sửkhông thực hiện phép đối chứng matched này. P21 sau đó bổ
+ sung hai RF với cùng 150 cây, leaf=2, max-features=0.5, cùng FIT source rows, selector FIT-
+-Mã đềtài: 09-SV-2026-CNTT2
+-33
+-
+-ĐỀTÀI NCKH SINH VIÊN
+-ENSEMBLE LEARNING – NIDS
+ only mới qua từng seed. Kết quảP21 được diễn giải riêng trong Mục 4.9, không dùng đểsửa
+ lại kết quảofficial TEST lịch sử.
++Mã đềtài: 09-SV-2026-CNTT2
++32
++
++ĐỀTÀI NCKH SINH VIÊN
++ENSEMBLE LEARNING – NIDS
+ 5.4
+ Độbất định và phạm vi suy luận
+ CI paired bootstrap 95% của hiệu sốMacro-F1 và MCC chứa 0, trong khi CI của FPR và
+@@ -2260,11 +2244,9 @@
+ sàng vận hành của một NIDS.
+ 5.6
+ Tổng hợp câu trảlời nghiên cứu
+-Bảng 5.3 tóm tắt kết quảthực nghiệm có thểbảo vệcùng phần còn chưa được xác định. Các
+-khoảng trống được nêu trong mối liên hệvới kết quả, thay vì thay thếcâu trảlời bằng danh
+-sách giới hạn.
+-Mã đềtài: 09-SV-2026-CNTT2
+-34
++Bảng 5.3 tóm tắt kết quảđã có cho từng câu hỏi nghiên cứu và những bằng chứng còn thiếu.
++Mã đềtài: 09-SV-2026-CNTT2
++33
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+@@ -2328,7 +2310,7 @@
+ hiện toàn bộcác flow liên quan. P21 sửdụng 5 FIT seed, nhưng tất cảcùng 35 069 nhãn true
+ nội bộ; không thểcoi đó là n = 5 tập benchmark độc lập hay tuyên bốkhẳng định superiority
+ Mã đềtài: 09-SV-2026-CNTT2
+-35
++34
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+@@ -2342,9 +2324,9 @@
+ xửlý, predict latency và chi phí duy trì selector nếu muốn kết luận sẵn sàng triển khai.
+ 5.9
+ Kết luận
+-Nghiên cứu đánh giá học tổhợp và mô hình đơn cho phân loại nhịphân Normal/Attack trên
+-UNSW-NB15 bằng hai lớp bằng chứng được tách biệt vềthời điểm thiết kếvà bộdữliệu đánh
+-giá.
++Nghiên cứu so sánh học tổhợp và mô hình đơn cho phân loại Normal/Attack trên UNSW-
++NB15. Hai phần thực nghiệm được trình bày riêng vì khác thời điểm thiết kếvà bộdữliệu
++đánh giá.
+ Thứnhất, official TEST lịch sử(82 332 dòng) ghi nhận Stacking-42 đạt Macro-F1
+ 0.863840, RF-42 0.863343 và RF-17 0.860673. Khoảng tin cậy paired-bootstrap của hiệu
+ sốStacking so với RF vềMacro-F1/MCC chứa 0; Stacking giảm 142 false positives nhưng
+@@ -2370,7 +2352,7 @@
+ Đây không phải ước lượng thiệt hại thực tế, cũng không cho phép khẳng định RF42 tối ưu hơn
+ mọi phương pháp.
+ Mã đềtài: 09-SV-2026-CNTT2
+-36
++35
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+@@ -2380,20 +2362,19 @@
+ chi phí bỏsót tấn công phải được xem xét cùng mục tiêu giảm cảnh báo giả. Kết quảkhông có
+ nghĩa biện pháp cân bằng lớp luôn vô ích; hiệu quảphụthuộc phân bốdữliệu, ngưỡng quyết
+ định và chi phí vận hành.
+-Đóng góp kiểm chứng của công trình là đối chiếu nhiều thuật toán theo các chỉsốMacro-
+-F1, MCC, FPR, FNR và ma trận nhầm lẫn; thảo luận đa dạng sai số, nguồn bất định, so sánh
+-pipeline có kiểm soát siêu tham số, lựa chọn đặc trưng lặp trên FIT và kiểm soát rò rỉvector
+-trùng trong inner Stacking. Tuy nhiên, năm seed P21 dùng cùng validation và các giảthuyết bổ
+-sung được xây dựng sau khi nhìn thấy kết quảlịch sử. Do vậy không xem P21 là independent
+-external validation, không trình bày kiểm định tương đương hoặc tính khái quát theo năm
+-benchmark độc lập.
++Công trình đối chiếu nhiều thuật toán bằng Macro-F1, MCC, FPR, FNR và ma trận nhầm
++lẫn; phân tích đa dạng sai sốvà nguồn bất định. Các đối chứng kiểm soát siêu tham số, lặp lựa
++chọn đặc trưng trên FIT và kiểm soát rò rỉdo vector trùng trong inner Stacking. Tuy nhiên,
++năm seed P21 dùng cùng validation và các giảthuyết bổsung được xây dựng sau khi nhìn thấy
++kết quảlịch sử. Do vậy không xem P21 là independent external validation, không trình bày
++kiểm định tương đương hoặc tính khái quát theo năm benchmark độc lập.
+ Hướng phát triển tiếp theo cần một thiết kếtiền đăng ký trên dữliệu mới, split theo thời
+ gian/host/session nếu có nguồn định danh đáng tin cậy, nhiều môi trường mạng và chi phí false
+ positive/false negative đã định lượng. Chỉnhững phép đánh giá độc lập như vậy mới có thể
+ nâng mức bằng chứng từđối chứng nội bộhậu nghiệm đến kết luận có sức khái quát hơn về
+ hiệu năng IDS trong thực tế.
+ Mã đềtài: 09-SV-2026-CNTT2
+-37
++36
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ Tài liệu tham khảo
+@@ -2404,46 +2385,43 @@
+ intrusion detection: A cross-dataset generalization study.
+ IEEE Access, 12:144489–
+ 144508, 2024.
+-[3] Doreswamy, Mohammad Kazim Hooshmand, and Ibrahim Gad.
+-Feature selection
+-approach using ensemble learning for network anomaly detection. CAAI Transactions
+-on Intelligence Technology, 5(4):283–293, 2020.
++[3] Doreswamy, Mohammad Kazim Hooshmand, and Ibrahim Gad. Feature selection ap-
++proach using ensemble learning for network anomaly detection. CAAI Transactions on
++Intelligence Technology, 5(4):283–293, 2020.
+ [4] Gints Engelen, Vera Rimmer, and Wouter Joosen. Troubleshooting an intrusion detection
+ dataset: the cicids2017 case study. In 2021 IEEE Security and Privacy Workshops (SPW),
+ pages 7–12, 2021.
+ [5] Murad Ali Khan, Naeem Iqbal, Imran, Harun Jamil, and Do-Hyeun Kim. An optimized
+-ensemble prediction model using automl based on soft voting classifier for network
+-intrusion detection. Journal of Network and Computer Applications, 212:103560, 2023.
++ensemble prediction model using automl based on soft voting classifier for network in-
++trusion detection. Journal of Network and Computer Applications, 212:103560, 2023.
+ [6] Nour Moustafa and Jill Slay. Unsw-nb15: a comprehensive data set for network intrusion
+ detection systems (unsw-nb15 network data set). In 2015 Military Communications and
+ Information Systems Conference (MilCIS), pages 1–6, 2015.
+-[7] Ghalia Nassreddine, Mohamad Nassereddine, and Obada Al-Khatib. Ensemble learning
+-for network intrusion detection based on correlation and embedded feature selection
++[7] Ghalia Nassreddine, Mohamad Nassereddine, and Obada Al-Khatib. Ensemble learn-
++ing for network intrusion detection based on correlation and embedded feature selection
+ techniques. Computers, 14(3):82, 2025.
+ [8] Huajuan Ren, Yonghe Tang, Weiyu Dong, Shuai Ren, and Liehui Jiang. Duen: Dynamic
+ ensemble handling class imbalance in network intrusion detection. Expert Systems with
+ Applications, 229:120420, 2023.
+ [9] Ulya Sabeel, Shahram Shah Heydari, Khalil El-Khatib, and Khalid Elgazzar. Unknown,
+-atypical and polymorphic network intrusion detection: A systematic survey.
+-IEEE
+-Transactions on Network and Service Management, 21(1):1190–1212, 2024.
++atypical and polymorphic network intrusion detection: A systematic survey. IEEE Trans-
++actions on Network and Service Management, 21(1):1190–1212, 2024.
+ [10] Bayu Adhi Tama and Sunghoon Lim. Ensemble learning for intrusion detection systems:
+ A systematic mapping study and cross-benchmark evaluation. Computer Science Review,
+ 39:100357, 2021.
+ 09-SV-2026-CNTT2
+-38
++37
+ 
+ ĐỀTÀI NCKH SINH VIÊN
+ ENSEMBLE LEARNING – NIDS
+ [11] Ngamba Thockchom, Moirangthem Marjit Singh, and Utpal Nandi. A novel ensemble
+ learning-based model for network intrusion detection. Complex & Intelligent Systems,
+ 9(5):5693–5714, 2023.
+-[12] Mubarak Albarka Umar, Zhanfang Chen, Khaled Shuaib, and Yan Liu.
+-Effects of
+-feature selection and normalization on network intrusion detection. Data Science and
+-Management, 8(1):23–39, 2025.
++[12] Mubarak Albarka Umar, Zhanfang Chen, Khaled Shuaib, and Yan Liu. Effects of feature
++selection and normalization on network intrusion detection. Data Science and Manage-
++ment, 8(1):23–39, 2025.
+ [13] Houssam Zouhri, Ali Idri, and Ahmed Ratnani. Evaluating the impact of filter-based
+ feature selection in intrusion detection systems. International Journal of Information
+ Security, 23(2):759–785, 2024.
+ Mã đềtài: 09-SV-2026-CNTT2
+-39
++38

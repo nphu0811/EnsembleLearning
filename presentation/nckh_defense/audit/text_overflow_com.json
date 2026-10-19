@@ -1,0 +1,44 @@
+[
+  {
+    "slide": 1,
+    "shape": "#s1-title",
+    "height": 86.4000015258789,
+    "bound_height": 91.4000015258789,
+    "text": "Một cảnh báo ít hơn.\rMột rủi ro lớn hơn?"
+  },
+  {
+    "slide": 1,
+    "shape": "Text 20",
+    "height": 36.0,
+    "bound_height": 38.400001525878906,
+    "text": "FP"
+  },
+  {
+    "slide": 1,
+    "shape": "Text 21",
+    "height": 36.0,
+    "bound_height": 38.400001525878906,
+    "text": "FN"
+  },
+  {
+    "slide": 3,
+    "shape": "Text 14",
+    "height": 72.0,
+    "bound_height": 76.80000305175781,
+    "text": "175.341"
+  },
+  {
+    "slide": 3,
+    "shape": "Text 16",
+    "height": 72.0,
+    "bound_height": 76.80000305175781,
+    "text": "82.332"
+  },
+  {
+    "slide": 10,
+    "shape": "#s10-title",
+    "height": 86.4000015258789,
+    "bound_height": 91.4000015258789,
+    "text": "Stacking học cách kết hợp\rtừ dự đoán OOF"
+  }
+]

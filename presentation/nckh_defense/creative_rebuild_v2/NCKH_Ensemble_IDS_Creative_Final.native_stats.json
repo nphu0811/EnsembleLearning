@@ -1,0 +1,176 @@
+[
+  {
+    "slide": 1,
+    "scene": 1,
+    "effects": 12,
+    "seconds": 20
+  },
+  {
+    "slide": 2,
+    "scene": 2,
+    "effects": 76,
+    "seconds": 20
+  },
+  {
+    "slide": 3,
+    "scene": 2,
+    "effects": 2,
+    "seconds": 15
+  },
+  {
+    "slide": 4,
+    "scene": 3,
+    "effects": 39,
+    "seconds": 20
+  },
+  {
+    "slide": 5,
+    "scene": 3,
+    "effects": 43,
+    "seconds": 20
+  },
+  {
+    "slide": 6,
+    "scene": 3,
+    "effects": 25,
+    "seconds": 20
+  },
+  {
+    "slide": 7,
+    "scene": 4,
+    "effects": 63,
+    "seconds": 18
+  },
+  {
+    "slide": 8,
+    "scene": 4,
+    "effects": 19,
+    "seconds": 17
+  },
+  {
+    "slide": 9,
+    "scene": 4,
+    "effects": 27,
+    "seconds": 20
+  },
+  {
+    "slide": 10,
+    "scene": 5,
+    "effects": 8,
+    "seconds": 20
+  },
+  {
+    "slide": 11,
+    "scene": 5,
+    "effects": 11,
+    "seconds": 20
+  },
+  {
+    "slide": 12,
+    "scene": 5,
+    "effects": 7,
+    "seconds": 25
+  },
+  {
+    "slide": 13,
+    "scene": 6,
+    "effects": 52,
+    "seconds": 25
+  },
+  {
+    "slide": 14,
+    "scene": 6,
+    "effects": 4,
+    "seconds": 25
+  },
+  {
+    "slide": 15,
+    "scene": 7,
+    "effects": 14,
+    "seconds": 25
+  },
+  {
+    "slide": 16,
+    "scene": 7,
+    "effects": 24,
+    "seconds": 25
+  },
+  {
+    "slide": 17,
+    "scene": 8,
+    "effects": 13,
+    "seconds": 25
+  },
+  {
+    "slide": 18,
+    "scene": 8,
+    "effects": 0,
+    "seconds": 30
+  },
+  {
+    "slide": 19,
+    "scene": 8,
+    "effects": 0,
+    "seconds": 30
+  },
+  {
+    "slide": 20,
+    "scene": 8,
+    "effects": 0,
+    "seconds": 30
+  },
+  {
+    "slide": 21,
+    "scene": 8,
+    "effects": 0,
+    "seconds": 30
+  },
+  {
+    "slide": 22,
+    "scene": 8,
+    "effects": 0,
+    "seconds": 30
+  },
+  {
+    "slide": 23,
+    "scene": 8,
+    "effects": 0,
+    "seconds": 30
+  },
+  {
+    "slide": 24,
+    "scene": 8,
+    "effects": 0,
+    "seconds": 30
+  },
+  {
+    "slide": 25,
+    "scene": 8,
+    "effects": 0,
+    "seconds": 30
+  },
+  {
+    "slide": 26,
+    "scene": 8,
+    "effects": 0,
+    "seconds": 30
+  },
+  {
+    "slide": 27,
+    "scene": 8,
+    "effects": 0,
+    "seconds": 30
+  },
+  {
+    "slide": 28,
+    "scene": 8,
+    "effects": 0,
+    "seconds": 30
+  },
+  {
+    "slide": 29,
+    "scene": 8,
+    "effects": 0,
+    "seconds": 30
+  }
+]

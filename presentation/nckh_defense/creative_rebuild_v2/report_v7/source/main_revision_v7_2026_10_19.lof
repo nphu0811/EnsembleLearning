@@ -1,0 +1,12 @@
+\babel@toc {vietnamese}{}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Sơ đồ nguyên lý Stacking/OOF và ranh giới official TEST. Hình chỉ minh họa giao thức, không chứng minh nested validation đầy đủ.}}{6}{figure.caption.10}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Phân bố nhãn Normal/Attack trong official TRAIN và TEST, biểu đồ phân bố lớp từ kết quả khảo sát dữ liệu.}}{10}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Số lượng bản ghi theo \texttt {attack\_cat} của hai tập. Trong nghiên cứu hiện tại, đây là phân tích nhãn thật chứ không phải kết quả một mô hình multiclass.}}{11}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Khảo sát mức tách biệt Normal/Attack ở một số feature số trên tập huấn luyện. Không dùng biểu đồ này để suy ra quan hệ nhân quả.}}{12}{figure.caption.17}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Chênh lệch số FP và FN của Stacking-42 so với RF-42 trên cùng official TEST.}}{21}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Hiệu số Stacking-42 trừ RF-42 và CI 95\% paired bootstrap; trục hoành thể hiện hiệu số nhân 100.}}{22}{figure.caption.25}%
+\addvspace {10\p@ }

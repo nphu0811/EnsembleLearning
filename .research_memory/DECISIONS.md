@@ -75,3 +75,10 @@ D35. Treat targeted7paper/3selected-sectionreading as PARTIAL,not fullcorpus. D3
 - D39. BuildexplicitallowlistinternalreviewdossierwithoutGitindexcleanup;preserve3historicalsmokemodelphysicalcopiesandhistory. Pullingadeletioncommitcanremoveothercheckoutcopies,soavoidunnecessarycleanup.
 - D40. KeepactualZIP/copycontentslocalignored;publishonlymanifest/QA. Includeauthor-approvedPDFonlyinlocalinternalcopy;noimpliedpublicright. No LICENSE invented.
 - D41. Mechanical245+independent121PASSand3pathtestsdonotclosepublicrelease. Currentdossierisnotrunnableenvironmentorfinalblindpacket. PrepareP20rubriconly,fullpanelDEFERRED.
+
+
+## 19/10/2026 — Presentation decisions
+Use actual PowerPoint16COM for native Morph and export; no OfficeCLI binary falsely claimed. White/blue native geometry, motionStudio ideas without copiedstylepack. Keep TEST/P21 on separate scenes; costs include selector. MP4 native361.3503s uniformly normalized to360s withFFmpeg, narration unstretched. Editable text frame repair preserves all32renderhashes. No researchresults modified.
+
+## 2026-10-19 Creative V2
+Native PowerPoint MainSequence chosen over Morph/template engines: internal packet paths/scale/reveals, same engine renders PPTX and video. Historical TEST/P21 remain separated. Language-only V7 preserved source numeric/protected-block invariants. Lollypop blocked; no bypass or invented reference observation. TTS ASR not equivalent to human listening. Original V6/deck/video/frozenresults hashes preserved.

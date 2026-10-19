@@ -1,0 +1,38 @@
+--- V6/chapters/methodology_revision_v4_2026_10_19.tex
++++ V7/chapters/methodology_revision_v4_2026_10_19.tex
+@@ -3,7 +3,7 @@
+ 
+ Nghiên cứu khảo sát các pipeline học máy và Ensemble Learning cho phát hiện xâm nhập nhị phân trên UNSW-NB15 \cite{moustafa2015unsw}. Nhãn Normal được mã hóa 0 và Attack là 1. Hai partition chính thức được giữ nguyên: TRAIN gồm 175\,341 dòng (56\,000 Normal; 119\,341 Attack), TEST gồm 82\,332 dòng (37\,000 Normal; 45\,332 Attack). Các trường \texttt{id}, \texttt{label} và \texttt{attack\_cat} không thuộc tập predictor. Trường \texttt{attack\_cat} chỉ được dùng sau dự đoán để mô tả các mẫu Attack bị bỏ sót; vì thế kết quả theo họ tấn công không phải phân loại đa lớp.
+ 
+-Thiết kế hướng tới so sánh một baseline Random Forest với Stacking, một cấu hình Random Forest có ít đặc trưng hơn, đồng thời khảo sát lỗi, độ bất định và chi phí quan sát được. Mục tiêu không phải đề xuất thuật toán ensemble mới. Exact-duplicate-filtered view được định nghĩa bằng việc loại khỏi TEST những dòng có vector 42 đặc trưng trùng với vector TRAIN; đây là phân tích độ nhạy trong cùng benchmark, không phải một split độc lập mới.
++Nghiên cứu lấy Random Forest làm baseline để đối chiếu với Stacking và một cấu hình Random Forest ít đặc trưng hơn. Các phép so sánh xét cả sai số, độ bất định và chi phí quan sát được. Mục tiêu không phải đề xuất thuật toán ensemble mới. Exact-duplicate-filtered view được định nghĩa bằng việc loại khỏi TEST những dòng có vector 42 đặc trưng trùng với vector TRAIN; đây là phân tích độ nhạy trong cùng benchmark, không phải một split độc lập mới.
+ 
+ \section{Lựa chọn đặc trưng và tiền xử lý}
+ \label{sec:method-feature-selection}
+@@ -27,7 +27,7 @@
+ 
+ Random Forest huấn luyện nhiều cây quyết định trên các mẫu bootstrap và tập đặc trưng ngẫu nhiên, sau đó tổng hợp xác suất hoặc phiếu dự đoán của các cây. Cấu hình RF-42 có 300 cây, \texttt{max\_features}=0.5 và \texttt{min\_samples\_leaf}=1; RF-17 có 150 cây với cùng tỷ lệ đặc trưng nhưng \texttt{min\_samples\_leaf}=2. Do nhiều tham số thay đổi cùng lúc, đối chiếu hai cấu hình không phải phép ablation chỉ thay số đặc trưng.
+ 
+-Voting kết hợp đầu ra của Logistic Regression (LR), Decision Tree (DT) và Random Forest (RF). Hard Voting chọn lớp theo đa số phiếu; Soft Voting lấy trung bình xác suất dự đoán trước khi áp dụng ngưỡng. Stacking cũng dùng ba learner này ở tầng cơ sở, nhưng huấn luyện Logistic Regression ở tầng kết hợp từ dự đoán ngoài fold của các learner cơ sở. Cách tạo đầu vào OOF làm giảm việc meta learner học trực tiếp từ dự đoán in-sample của tầng cơ sở; nó không tự loại bỏ mọi nguồn lạc quan trong quá trình chọn cấu hình.
++Voting kết hợp đầu ra của Logistic Regression (LR), Decision Tree (DT) và Random Forest (RF). Hard Voting chọn lớp theo đa số phiếu; Soft Voting lấy trung bình xác suất dự đoán trước khi áp dụng ngưỡng. Stacking cũng dùng ba learner này ở tầng cơ sở, nhưng huấn luyện Logistic Regression ở tầng kết hợp từ dự đoán ngoài fold của các learner cơ sở. Đầu vào OOF giúp meta learner tránh học trực tiếp từ dự đoán in-sample của tầng cơ sở. Dù vậy, quá trình chọn cấu hình vẫn có thể tạo ra các nguồn lạc quan khác.
+ 
+ \begin{table}[htbp]
+ \centering
+@@ -61,7 +61,7 @@
+ 
+ Trong giai đoạn kiểm tra tính tái lập (P15), RF-17, RF-42 và Stacking-42 được tái dựng trên 175\,341 dòng official TRAIN trong môi trường Python 3.11.9 và scikit-learn 1.9.0, sau khi cấu hình và kết quả lịch sử đã được khóa. Kiểm tra artifact xác nhận hash, schema, khả năng nạp lại mô hình và tạo xác suất dự đoán trên các dòng TRAIN. Kết quả này cho thấy các cấu hình có thể được huấn luyện và sử dụng trong môi trường phần mềm được ghi nhận.
+ 
+-Môi trường và đối tượng mô hình lịch sử không được lưu đủ để chứng minh đồng nhất bitwise với các mô hình từng tạo dự đoán official TEST. Do đó, P15 là tái dựng/tái huấn luyện theo cấu hình đã ghi, không phải khôi phục chính xác artifact lịch sử và không phải phép xác minh lại các metric TEST. Kiểm tra predictability trên dữ liệu TRAIN-derived cũng không đánh giá khả năng vận hành của hệ thống IDS trong thực tế. Ba phạm vi này — khả năng tái lập trong môi trường xác định, tái huấn luyện từ TRAIN và triển khai — được xem là các tuyên bố riêng biệt.
++Môi trường và đối tượng mô hình lịch sử không được lưu đủ để chứng minh đồng nhất bitwise với các mô hình từng tạo dự đoán official TEST. Do đó, P15 là tái dựng/tái huấn luyện theo cấu hình đã ghi, không phải khôi phục chính xác artifact lịch sử và không phải phép xác minh lại các metric TEST. Kiểm tra predictability trên dữ liệu TRAIN-derived cũng không đánh giá khả năng vận hành của hệ thống IDS trong thực tế. Vì vậy, cần đánh giá riêng khả năng tái lập trong môi trường xác định, tái huấn luyện từ TRAIN và triển khai.
+ 
+ 
+ \section{Phần mở rộng P21: thiết kế đối chứng matched trên TRAIN-derived validation}
+@@ -96,7 +96,7 @@
+ Stacking A4 dùng base Logistic Regression ($C=1$, liblinear), Decision Tree (leaf=2), RF42-Lite giống A0; meta Logistic Regression ($C=0.5$, liblinear, không weights). OOF meta-features được xây dựng bằng inner CV ba fold, seed 137, \texttt{passthrough=False}, xác suất \texttt{predict\_proba}, một worker. \textbf{Sửa đổi giao thức trước full P21}: thay \texttt{StratifiedKFold} của resource pilot bằng \texttt{StratifiedGroupKFold} theo vector 42 biến để không đặt các vector trùng chính xác vào cả hai phía inner OOF. Điều chỉnh này được ghi trước khi chạy full P21; không được coi phiên bản Stacking này đồng nhất với Stacking của TEST lịch sử.
+ 
+ \subsection{Đánh giá, chi phí, tái lập và phạm vi suy luận}
+-Trên \emph{cùng} validation nội bộ, tính Macro-F1, MCC, Precision/Recall Attack, FPR=$FP/(TN+FP)$ và FNR=$FN/(TP+FN)$, confusion matrix, thời gian fit và predict. Hiệu số mỗi arm trừ A0 được tính trong cùng seed; báo cáo trung bình và độ lệch chuẩn mẫu trên năm seed. Không đưa p-value hay khoảng tin cậy suy diễn được hiểu như năm lần kiểm tra độc lập, và không thực hiện t-test hoặc ANOVA với năm seed này; cũng không hiệu chỉnh kết quả sau khi thấy seed đầu tiên.
++Trên \emph{cùng} validation nội bộ, tính Macro-F1, MCC, Precision/Recall Attack, FPR=$FP/(TN+FP)$ và FNR=$FN/(TP+FN)$, confusion matrix, thời gian fit và predict. Hiệu số mỗi arm trừ A0 được tính trong cùng seed; báo cáo trung bình và độ lệch chuẩn mẫu trên năm seed. Năm seed này không được dùng như năm lần kiểm tra độc lập để tính p-value, khoảng tin cậy suy diễn, t-test hoặc ANOVA. Kết quả cũng không được hiệu chỉnh sau khi xem seed đầu tiên.
+ 
+ Các bản ghi full P21 được tạo trong môi trường Python 3.11, scikit-learn 1.9.0 và pandas 3.0.5 với một CPU, watchdog process-tree RSS 2 GiB, RAM khả dụng tối thiểu khi bắt đầu 4 GiB và floor khi chạy 1.5 GiB, đĩa trống tối thiểu 10 GiB. \textbf{Không đặt timeout thời gian cố định} cho full training nhưng có giới hạn tài nguyên và tín hiệu heartbeat. Năm seed tạo năm kết quả mới tách riêng, được đối chiếu confusion matrix và SHA dữ liệu; một seed thất bại không được âm thầm loại vì chỉ số kém. Các kiểm soát này tăng tính tái lập trong môi trường đã khai báo nhưng không chứng minh độc lập theo thời gian, phiên truy cập hay miền mạng ngoài UNSW-NB15.
+ 

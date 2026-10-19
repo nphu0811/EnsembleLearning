@@ -1,0 +1,181 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "file": "frontmatter_v6_2026_10_19.tex",
+      "changed": false,
+      "invariants": {
+        "numbers": true,
+        "table_figure_math_envs": true,
+        "protected_blocks": true,
+        "math": true,
+        "citation_ref_label_code": true
+      }
+    },
+    {
+      "file": "abbreviations_v5_2026_10_19.tex",
+      "changed": false,
+      "invariants": {
+        "numbers": true,
+        "table_figure_math_envs": true,
+        "protected_blocks": true,
+        "math": true,
+        "citation_ref_label_code": true
+      }
+    },
+    {
+      "file": "chapters/introduction_revision_v3_2026_10_19.tex",
+      "changed": true,
+      "invariants": {
+        "numbers": true,
+        "table_figure_math_envs": true,
+        "protected_blocks": true,
+        "math": true,
+        "citation_ref_label_code": true
+      }
+    },
+    {
+      "file": "chapters/theoretical_foundations_revision_v2_2026_10_17.tex",
+      "changed": true,
+      "invariants": {
+        "numbers": true,
+        "table_figure_math_envs": true,
+        "protected_blocks": true,
+        "math": true,
+        "citation_ref_label_code": true
+      }
+    },
+    {
+      "file": "chapters/related_work_revision_v4_2026_10_19.tex",
+      "changed": true,
+      "invariants": {
+        "numbers": true,
+        "table_figure_math_envs": true,
+        "protected_blocks": true,
+        "math": true,
+        "citation_ref_label_code": true
+      }
+    },
+    {
+      "file": "chapters/revision_prior_work_v5_2026_10_19.tex",
+      "changed": true,
+      "invariants": {
+        "numbers": true,
+        "table_figure_math_envs": true,
+        "protected_blocks": true,
+        "math": true,
+        "citation_ref_label_code": true
+      }
+    },
+    {
+      "file": "chapters/dataset_eda_revision_v4_2026_10_19.tex",
+      "changed": true,
+      "invariants": {
+        "numbers": true,
+        "table_figure_math_envs": true,
+        "protected_blocks": true,
+        "math": true,
+        "citation_ref_label_code": true
+      }
+    },
+    {
+      "file": "chapters/methodology_revision_v4_2026_10_19.tex",
+      "changed": true,
+      "invariants": {
+        "numbers": true,
+        "table_figure_math_envs": true,
+        "protected_blocks": true,
+        "math": true,
+        "citation_ref_label_code": true
+      }
+    },
+    {
+      "file": "chapters/results_discussion_revision_v4_2026_10_19.tex",
+      "changed": true,
+      "invariants": {
+        "numbers": true,
+        "table_figure_math_envs": true,
+        "protected_blocks": true,
+        "math": true,
+        "citation_ref_label_code": true
+      }
+    },
+    {
+      "file": "chapters/revision_rq_answers_v4_2026_10_19.tex",
+      "changed": true,
+      "invariants": {
+        "numbers": true,
+        "table_figure_math_envs": true,
+        "protected_blocks": true,
+        "math": true,
+        "citation_ref_label_code": true
+      }
+    },
+    {
+      "file": "chapters/p21_results_v5_2026_10_19.tex",
+      "changed": true,
+      "invariants": {
+        "numbers": true,
+        "table_figure_math_envs": true,
+        "protected_blocks": true,
+        "math": true,
+        "citation_ref_label_code": true
+      }
+    },
+    {
+      "file": "chapters/validity_discussion_revision_v4_2026_10_19.tex",
+      "changed": true,
+      "invariants": {
+        "numbers": true,
+        "table_figure_math_envs": true,
+        "protected_blocks": true,
+        "math": true,
+        "citation_ref_label_code": true
+      }
+    },
+    {
+      "file": "chapters/conclusion_revision_v4_2026_10_19.tex",
+      "changed": true,
+      "invariants": {
+        "numbers": true,
+        "table_figure_math_envs": true,
+        "protected_blocks": true,
+        "math": true,
+        "citation_ref_label_code": true
+      }
+    }
+  ],
+  "graphics": [
+    {
+      "source": "templates\\original\\latex\\assets\\Logo_PTIT_University.png",
+      "packaged": "assets/Logo_PTIT_University.png",
+      "sha256": "2d804f4c34eb3b75925c4c5804cb3cb28936257ba65879a8c99e3d94dc2b7b9a"
+    },
+    {
+      "source": "results\\eda\\unsw_nb15\\figures\\fig01_binary_class_distribution.pdf",
+      "packaged": "assets/fig01_binary_class_distribution.pdf",
+      "sha256": "5121e3233db00c3c46a74a35a26d288d96f18e874a8c71ed6ef45396f2dc2264"
+    },
+    {
+      "source": "results\\figures\\p16_standalone_2026_10_17_03\\category_distribution.pdf",
+      "packaged": "assets/category_distribution.pdf",
+      "sha256": "b86da41b717d3fe9b111c239f285f0109fb7a616abfb32951a03b6a2a0cfa0e3"
+    },
+    {
+      "source": "results\\eda\\unsw_nb15\\figures\\fig03_numeric_class_separation.pdf",
+      "packaged": "assets/fig03_numeric_class_separation.pdf",
+      "sha256": "a9ec8634046b1cff92543f6a0dbdb2af23288263c2153ef1183fc6f8f60b27c9"
+    },
+    {
+      "source": "results\\figures\\p16_r05_error_tradeoff\\error_tradeoff.pdf",
+      "packaged": "assets/error_tradeoff.pdf",
+      "sha256": "064967a939962cba0fb1b6b0ca1d7445cc7caee6795750d789a2e22f831e88d5"
+    },
+    {
+      "source": "results\\figures\\p16_paired_effects_2026_10_16\\paired_effects.pdf",
+      "packaged": "assets/paired_effects.pdf",
+      "sha256": "b05a40f35751e1479a077e97a042b895e8832c5fd0482b875348ccc0a07fdc4b"
+    }
+  ],
+  "bibliographies_unchanged": true
+}

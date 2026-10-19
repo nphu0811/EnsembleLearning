@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 960 540">
+<rect width="960" height="540" fill="white"/>
+<text x="43.199999999999996" y="75.6" font-family="Aptos,Arial,sans-serif" font-size="36.0" font-weight="700" fill="#0D3560">…nhưng bỏ sót thêm 118 tấn công</text>
+<text x="41.76" y="516.1600000000001" font-family="Aptos,Arial,sans-serif" font-size="10.0" font-weight="400" fill="#526A81">Nguồn: P9 final_metrics.csv · official TEST, 82.332 dòng · ngưỡng 0,5.</text>
+<text x="871.1999999999999" y="516.0" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#526A81">13</text>
+<line x1="43.199999999999996" y1="488.16" x2="915.84" y2="488.16" stroke="#1769AA"/>
+<text x="61.199999999999996" y="163.0" font-family="Aptos,Arial,sans-serif" font-size="19.0" font-weight="700" fill="#1769AA">CẢNH BÁO GIẢ · FP</text>
+<text x="61.199999999999996" y="205.20000000000002" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="400" fill="#526A81">RF42</text>
+<text x="248.4" y="205.88" font-family="Aptos,Arial,sans-serif" font-size="23.0" font-weight="700" fill="#1769AA">10.003</text>
+<text x="61.199999999999996" y="288.0" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="400" fill="#526A81">Stacking42</text>
+<text x="248.4" y="288.68" font-family="Aptos,Arial,sans-serif" font-size="23.0" font-weight="700" fill="#1769AA">9.861</text>
+<line x1="61.199999999999996" y1="370.8" x2="435.6" y2="370.8" stroke="#1769AA"/>
+<text x="61.199999999999996" y="390.0" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#526A81">0</text>
+<text x="378.0" y="390.0" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#526A81">11.000</text>
+<text x="522.0" y="163.0" font-family="Aptos,Arial,sans-serif" font-size="19.0" font-weight="700" fill="#B65B29">BỎ SÓT · FN</text>
+<text x="522.0" y="205.20000000000002" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="400" fill="#526A81">RF42</text>
+<text x="698.4" y="205.88" font-family="Aptos,Arial,sans-serif" font-size="23.0" font-weight="700" fill="#B65B29">734</text>
+<text x="522.0" y="288.0" font-family="Aptos,Arial,sans-serif" font-size="18.0" font-weight="400" fill="#526A81">Stacking42</text>
+<text x="698.4" y="288.68" font-family="Aptos,Arial,sans-serif" font-size="23.0" font-weight="700" fill="#B65B29">852</text>
+<line x1="522.0" y1="370.8" x2="874.8" y2="370.8" stroke="#1769AA"/>
+<text x="522.0" y="390.0" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#526A81">0</text>
+<text x="817.1999999999999" y="390.0" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#526A81">1.000</text>
+<text x="61.199999999999996" y="455.2" font-family="Aptos,Arial,sans-serif" font-size="34.0" font-weight="700" fill="#1769AA">−142 FP</text>
+<text x="522.0" y="455.2" font-family="Aptos,Arial,sans-serif" font-size="34.0" font-weight="700" fill="#B65B29">+118 FN</text>
+<text x="61.199999999999996" y="477.84" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#526A81">Hai trục dùng thang riêng; số liệu là số bản ghi trên cùng official TEST.</text>
+</svg>

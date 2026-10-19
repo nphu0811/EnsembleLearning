@@ -1,0 +1,3165 @@
+[
+  {
+    "scene": 1,
+    "seconds": 20,
+    "title": "Bớt cảnh báo.\nCó an toàn hơn?",
+    "speech": "Một hệ thống phát hiện xâm nhập báo ít hơn một trăm bốn mươi hai cảnh báo giả. Nghe có vẻ tốt. Nhưng nếu đổi lại là bỏ sót thêm một trăm mười tám bản ghi tấn công thì sao? Đó là đánh đổi nhóm chúng em muốn làm rõ khi nghiên cứu cách kết hợp các mô hình.",
+    "events": [
+      {
+        "shape": "hook1",
+        "kind": "fly",
+        "at": 0.6,
+        "duration": 0.85
+      },
+      {
+        "shape": "hook2",
+        "kind": "fly",
+        "at": 4.5,
+        "duration": 0.85
+      },
+      {
+        "shape": "text-7",
+        "kind": "scale",
+        "at": 8,
+        "duration": 1.7,
+        "scale": 112,
+        "repeat": 3,
+        "reverse": true
+      },
+      {
+        "shape": "shape-9",
+        "kind": "fade",
+        "at": 1.0,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-9",
+        "kind": "motion",
+        "at": 1.12,
+        "duration": 3,
+        "dx": 7.2,
+        "dy": 0.0,
+        "repeat": 4
+      },
+      {
+        "shape": "shape-9",
+        "kind": "exit",
+        "at": 13.120000000000001,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-10",
+        "kind": "fade",
+        "at": 2.8,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-10",
+        "kind": "motion",
+        "at": 2.92,
+        "duration": 3,
+        "dx": 7.2,
+        "dy": 0.0,
+        "repeat": 4
+      },
+      {
+        "shape": "shape-10",
+        "kind": "exit",
+        "at": 14.92,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-11",
+        "kind": "fade",
+        "at": 4.6,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-11",
+        "kind": "motion",
+        "at": 4.72,
+        "duration": 3,
+        "dx": 7.2,
+        "dy": 0.0,
+        "repeat": 4
+      },
+      {
+        "shape": "shape-11",
+        "kind": "exit",
+        "at": 16.72,
+        "duration": 0.12
+      }
+    ],
+    "bg": "10162F",
+    "tag": "ENSEMBLE / IDS                         HOOK",
+    "source": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải traffic triển khai"
+  },
+  {
+    "scene": 2,
+    "seconds": 20,
+    "title": "Một bản ghi.\nHai khả năng.",
+    "speech": "Mỗi bản ghi lưu lượng được mô hình gán vào một trong hai lớp: bình thường hoặc tấn công. Báo nhầm làm người vận hành tốn công kiểm tra. Bỏ sót lại để một dấu hiệu tấn công đi qua. Vì vậy, chỉ hỏi mô hình đúng bao nhiêu phần trăm là chưa đủ.",
+    "events": [
+      {
+        "shape": "line-5",
+        "kind": "wipe",
+        "at": 0.25,
+        "duration": 0.7
+      },
+      {
+        "shape": "line-6",
+        "kind": "wipe",
+        "at": 0.33,
+        "duration": 0.7
+      },
+      {
+        "shape": "line-7",
+        "kind": "wipe",
+        "at": 0.41000000000000003,
+        "duration": 0.7
+      },
+      {
+        "shape": "line-8",
+        "kind": "wipe",
+        "at": 0.49,
+        "duration": 0.7
+      },
+      {
+        "shape": "line-9",
+        "kind": "wipe",
+        "at": 0.5700000000000001,
+        "duration": 0.7
+      },
+      {
+        "shape": "line-10",
+        "kind": "wipe",
+        "at": 0.65,
+        "duration": 0.7
+      },
+      {
+        "shape": "line-11",
+        "kind": "wipe",
+        "at": 0.73,
+        "duration": 0.7
+      },
+      {
+        "shape": "line-12",
+        "kind": "wipe",
+        "at": 0.81,
+        "duration": 0.7
+      },
+      {
+        "shape": "line-13",
+        "kind": "wipe",
+        "at": 0.89,
+        "duration": 0.7
+      },
+      {
+        "shape": "line-14",
+        "kind": "wipe",
+        "at": 0.97,
+        "duration": 0.7
+      },
+      {
+        "shape": "line-15",
+        "kind": "wipe",
+        "at": 1.05,
+        "duration": 0.7
+      },
+      {
+        "shape": "line-16",
+        "kind": "wipe",
+        "at": 1.13,
+        "duration": 0.7
+      },
+      {
+        "shape": "line-17",
+        "kind": "wipe",
+        "at": 1.21,
+        "duration": 0.7
+      },
+      {
+        "shape": "shape-18",
+        "kind": "fade",
+        "at": 0.3,
+        "duration": 0.5
+      },
+      {
+        "shape": "shape-18",
+        "kind": "scale",
+        "at": 1.0,
+        "duration": 1.8,
+        "scale": 125,
+        "repeat": 3,
+        "reverse": true
+      },
+      {
+        "shape": "shape-19",
+        "kind": "fade",
+        "at": 0.4,
+        "duration": 0.5
+      },
+      {
+        "shape": "shape-19",
+        "kind": "scale",
+        "at": 1.15,
+        "duration": 1.8,
+        "scale": 125,
+        "repeat": 3,
+        "reverse": true
+      },
+      {
+        "shape": "shape-20",
+        "kind": "fade",
+        "at": 0.5,
+        "duration": 0.5
+      },
+      {
+        "shape": "shape-20",
+        "kind": "scale",
+        "at": 1.3,
+        "duration": 1.8,
+        "scale": 125,
+        "repeat": 3,
+        "reverse": true
+      },
+      {
+        "shape": "shape-21",
+        "kind": "fade",
+        "at": 0.6000000000000001,
+        "duration": 0.5
+      },
+      {
+        "shape": "shape-21",
+        "kind": "scale",
+        "at": 1.45,
+        "duration": 1.8,
+        "scale": 125,
+        "repeat": 3,
+        "reverse": true
+      },
+      {
+        "shape": "shape-22",
+        "kind": "fade",
+        "at": 0.7,
+        "duration": 0.5
+      },
+      {
+        "shape": "shape-22",
+        "kind": "scale",
+        "at": 1.6,
+        "duration": 1.8,
+        "scale": 125,
+        "repeat": 3,
+        "reverse": true
+      },
+      {
+        "shape": "shape-23",
+        "kind": "fade",
+        "at": 0.8,
+        "duration": 0.5
+      },
+      {
+        "shape": "shape-23",
+        "kind": "scale",
+        "at": 1.75,
+        "duration": 1.8,
+        "scale": 125,
+        "repeat": 3,
+        "reverse": true
+      },
+      {
+        "shape": "shape-24",
+        "kind": "fade",
+        "at": 0.9000000000000001,
+        "duration": 0.5
+      },
+      {
+        "shape": "shape-24",
+        "kind": "scale",
+        "at": 1.9,
+        "duration": 1.8,
+        "scale": 125,
+        "repeat": 3,
+        "reverse": true
+      },
+      {
+        "shape": "shape-25",
+        "kind": "fade",
+        "at": 1.0,
+        "duration": 0.5
+      },
+      {
+        "shape": "shape-25",
+        "kind": "scale",
+        "at": 2.05,
+        "duration": 1.8,
+        "scale": 125,
+        "repeat": 3,
+        "reverse": true
+      },
+      {
+        "shape": "shape-26",
+        "kind": "fade",
+        "at": 1.1,
+        "duration": 0.5
+      },
+      {
+        "shape": "shape-26",
+        "kind": "scale",
+        "at": 2.2,
+        "duration": 1.8,
+        "scale": 125,
+        "repeat": 3,
+        "reverse": true
+      },
+      {
+        "shape": "shape-27",
+        "kind": "fade",
+        "at": 1.2,
+        "duration": 0.5
+      },
+      {
+        "shape": "shape-27",
+        "kind": "scale",
+        "at": 2.3499999999999996,
+        "duration": 1.8,
+        "scale": 125,
+        "repeat": 3,
+        "reverse": true
+      },
+      {
+        "shape": "shape-28",
+        "kind": "fade",
+        "at": 1.3,
+        "duration": 0.5
+      },
+      {
+        "shape": "shape-28",
+        "kind": "scale",
+        "at": 2.5,
+        "duration": 1.8,
+        "scale": 125,
+        "repeat": 3,
+        "reverse": true
+      },
+      {
+        "shape": "network-packet-0",
+        "kind": "fade",
+        "at": 1.7,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-0",
+        "kind": "motion",
+        "at": 1.8199999999999998,
+        "duration": 2.1,
+        "dx": 0.8999999999999999,
+        "dy": -1.2000000000000002,
+        "repeat": 7
+      },
+      {
+        "shape": "network-packet-0",
+        "kind": "exit",
+        "at": 16.52,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-1",
+        "kind": "fade",
+        "at": 2.25,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-1",
+        "kind": "motion",
+        "at": 2.37,
+        "duration": 2.1,
+        "dx": 1.3,
+        "dy": 1.6999999999999997,
+        "repeat": 7
+      },
+      {
+        "shape": "network-packet-1",
+        "kind": "exit",
+        "at": 17.07,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-2",
+        "kind": "fade",
+        "at": 2.8,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-2",
+        "kind": "motion",
+        "at": 2.92,
+        "duration": 2.1,
+        "dx": 1.8,
+        "dy": 0.8999999999999999,
+        "repeat": 7
+      },
+      {
+        "shape": "network-packet-2",
+        "kind": "exit",
+        "at": 17.62,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-3",
+        "kind": "fade",
+        "at": 3.35,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-3",
+        "kind": "motion",
+        "at": 3.47,
+        "duration": 2.1,
+        "dx": 1.4,
+        "dy": -2.0,
+        "repeat": 7
+      },
+      {
+        "shape": "network-packet-3",
+        "kind": "exit",
+        "at": 18.17,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-4",
+        "kind": "fade",
+        "at": 1.7,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-4",
+        "kind": "motion",
+        "at": 1.8199999999999998,
+        "duration": 2.1,
+        "dx": 2.6,
+        "dy": -0.20000000000000018,
+        "repeat": 7
+      },
+      {
+        "shape": "network-packet-4",
+        "kind": "exit",
+        "at": 16.52,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-5",
+        "kind": "fade",
+        "at": 2.25,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-5",
+        "kind": "motion",
+        "at": 2.37,
+        "duration": 2.1,
+        "dx": 2.0,
+        "dy": -0.3999999999999999,
+        "repeat": 7
+      },
+      {
+        "shape": "network-packet-5",
+        "kind": "exit",
+        "at": 17.07,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-6",
+        "kind": "fade",
+        "at": 2.8,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-6",
+        "kind": "motion",
+        "at": 2.92,
+        "duration": 2.1,
+        "dx": 2.3,
+        "dy": -1.0999999999999996,
+        "repeat": 7
+      },
+      {
+        "shape": "network-packet-6",
+        "kind": "exit",
+        "at": 17.62,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-7",
+        "kind": "fade",
+        "at": 3.35,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-7",
+        "kind": "motion",
+        "at": 3.47,
+        "duration": 2.1,
+        "dx": 1.5,
+        "dy": 1.1,
+        "repeat": 7
+      },
+      {
+        "shape": "network-packet-7",
+        "kind": "exit",
+        "at": 18.17,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-8",
+        "kind": "fade",
+        "at": 1.7,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-8",
+        "kind": "motion",
+        "at": 1.8199999999999998,
+        "duration": 2.1,
+        "dx": 1.9000000000000004,
+        "dy": -1,
+        "repeat": 7
+      },
+      {
+        "shape": "network-packet-8",
+        "kind": "exit",
+        "at": 16.52,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-9",
+        "kind": "fade",
+        "at": 2.25,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-9",
+        "kind": "motion",
+        "at": 2.37,
+        "duration": 2.1,
+        "dx": 2.4000000000000004,
+        "dy": 1,
+        "repeat": 7
+      },
+      {
+        "shape": "network-packet-9",
+        "kind": "exit",
+        "at": 17.07,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-10",
+        "kind": "fade",
+        "at": 2.8,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-10",
+        "kind": "motion",
+        "at": 2.92,
+        "duration": 2.1,
+        "dx": 2.4000000000000004,
+        "dy": 0.7999999999999998,
+        "repeat": 7
+      },
+      {
+        "shape": "network-packet-10",
+        "kind": "exit",
+        "at": 17.62,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-11",
+        "kind": "fade",
+        "at": 3.35,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-11",
+        "kind": "motion",
+        "at": 3.47,
+        "duration": 2.1,
+        "dx": 1.9000000000000004,
+        "dy": -1.2000000000000002,
+        "repeat": 7
+      },
+      {
+        "shape": "network-packet-11",
+        "kind": "exit",
+        "at": 18.17,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-12",
+        "kind": "fade",
+        "at": 1.7,
+        "duration": 0.12
+      },
+      {
+        "shape": "network-packet-12",
+        "kind": "motion",
+        "at": 1.8199999999999998,
+        "duration": 2.1,
+        "dx": 1.0,
+        "dy": -1.5,
+        "repeat": 7
+      },
+      {
+        "shape": "network-packet-12",
+        "kind": "exit",
+        "at": 16.52,
+        "duration": 0.12
+      },
+      {
+        "shape": "text-42",
+        "kind": "fade",
+        "at": 5,
+        "duration": 0.5
+      },
+      {
+        "shape": "text-43",
+        "kind": "fade",
+        "at": 9,
+        "duration": 0.5
+      }
+    ],
+    "bg": "10162F",
+    "tag": "ENSEMBLE / IDS                         TRAFFIC",
+    "source": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải traffic triển khai"
+  },
+  {
+    "scene": 2,
+    "seconds": 15,
+    "title": "Dữ liệu cố định.\nCâu hỏi mở.",
+    "speech": "Nhóm dùng UNSW-NB15: hơn một trăm bảy mươi lăm nghìn dòng huấn luyện và tám mươi hai nghìn dòng kiểm thử chính thức. Nhóm muốn biết Voting và Stacking có tốt hơn mô hình tham chiếu Random Forest không.",
+    "events": [
+      {
+        "shape": "text-6",
+        "kind": "wipe",
+        "at": 0.5,
+        "duration": 1.1
+      },
+      {
+        "shape": "text-8",
+        "kind": "fly",
+        "at": 4,
+        "duration": 0.9
+      }
+    ],
+    "bg": "F8F5EE",
+    "tag": "ENSEMBLE / IDS                         DATA",
+    "source": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải traffic triển khai"
+  },
+  {
+    "scene": 3,
+    "seconds": 20,
+    "title": "Từ bản ghi\nđến đầu vào mô hình.",
+    "speech": "Đây là pipeline ngoại tuyến trong mã nguồn. Nhóm loại mã định danh, nhãn và tên nhóm tấn công khỏi đầu vào, giữ bốn mươi hai đặc trưng gốc. Biến phân loại được mã hóa; hồi quy logistic có thêm chuẩn hóa. Các phép biến đổi phải học tham số từ phần huấn luyện tương ứng.",
+    "events": [
+      {
+        "shape": "feature-label-0",
+        "kind": "fade",
+        "at": 0.6,
+        "duration": 0.35
+      },
+      {
+        "shape": "line-6",
+        "kind": "wipe",
+        "at": 3.7,
+        "duration": 0.5
+      },
+      {
+        "shape": "feature-label-0",
+        "kind": "motion",
+        "at": 7.0,
+        "duration": 0.7,
+        "dx": 1.0,
+        "dy": 0,
+        "repeat": 1
+      },
+      {
+        "shape": "feature-label-1",
+        "kind": "fade",
+        "at": 0.98,
+        "duration": 0.35
+      },
+      {
+        "shape": "line-8",
+        "kind": "wipe",
+        "at": 4.5,
+        "duration": 0.5
+      },
+      {
+        "shape": "feature-label-1",
+        "kind": "motion",
+        "at": 7.45,
+        "duration": 0.7,
+        "dx": 1.0,
+        "dy": 0,
+        "repeat": 1
+      },
+      {
+        "shape": "feature-label-2",
+        "kind": "fade",
+        "at": 1.3599999999999999,
+        "duration": 0.35
+      },
+      {
+        "shape": "line-10",
+        "kind": "wipe",
+        "at": 5.300000000000001,
+        "duration": 0.5
+      },
+      {
+        "shape": "feature-label-2",
+        "kind": "motion",
+        "at": 7.9,
+        "duration": 0.7,
+        "dx": 1.0,
+        "dy": 0,
+        "repeat": 1
+      },
+      {
+        "shape": "feature-label-3",
+        "kind": "fade",
+        "at": 1.7400000000000002,
+        "duration": 0.35
+      },
+      {
+        "shape": "feature-label-3",
+        "kind": "motion",
+        "at": 8.0,
+        "duration": 0.8,
+        "dx": -0.7,
+        "dy": 0,
+        "repeat": 1
+      },
+      {
+        "shape": "feature-label-4",
+        "kind": "fade",
+        "at": 2.12,
+        "duration": 0.35
+      },
+      {
+        "shape": "feature-label-4",
+        "kind": "motion",
+        "at": 8.8,
+        "duration": 0.8,
+        "dx": -0.7,
+        "dy": 0,
+        "repeat": 1
+      },
+      {
+        "shape": "feature-label-5",
+        "kind": "fade",
+        "at": 2.5,
+        "duration": 0.35
+      },
+      {
+        "shape": "feature-label-5",
+        "kind": "motion",
+        "at": 9.6,
+        "duration": 0.8,
+        "dx": -0.7,
+        "dy": 0,
+        "repeat": 1
+      },
+      {
+        "shape": "text-14",
+        "kind": "fly",
+        "at": 7.3,
+        "duration": 0.9
+      },
+      {
+        "shape": "vector-cell-0",
+        "kind": "wipe",
+        "at": 10.0,
+        "duration": 0.5
+      },
+      {
+        "shape": "vector-cell-1",
+        "kind": "wipe",
+        "at": 10.18,
+        "duration": 0.5
+      },
+      {
+        "shape": "vector-cell-2",
+        "kind": "wipe",
+        "at": 10.36,
+        "duration": 0.5
+      },
+      {
+        "shape": "vector-cell-3",
+        "kind": "wipe",
+        "at": 10.54,
+        "duration": 0.5
+      },
+      {
+        "shape": "vector-cell-4",
+        "kind": "wipe",
+        "at": 10.72,
+        "duration": 0.5
+      },
+      {
+        "shape": "vector-cell-5",
+        "kind": "wipe",
+        "at": 10.9,
+        "duration": 0.5
+      },
+      {
+        "shape": "vector-cell-6",
+        "kind": "wipe",
+        "at": 11.08,
+        "duration": 0.5
+      },
+      {
+        "shape": "vector-cell-7",
+        "kind": "wipe",
+        "at": 11.26,
+        "duration": 0.5
+      },
+      {
+        "shape": "vector-cell-8",
+        "kind": "wipe",
+        "at": 11.44,
+        "duration": 0.5
+      },
+      {
+        "shape": "vector-cell-9",
+        "kind": "wipe",
+        "at": 11.62,
+        "duration": 0.5
+      },
+      {
+        "shape": "vector-cell-10",
+        "kind": "wipe",
+        "at": 11.8,
+        "duration": 0.5
+      },
+      {
+        "shape": "vector-cell-11",
+        "kind": "wipe",
+        "at": 11.98,
+        "duration": 0.5
+      },
+      {
+        "shape": "vector-cell-12",
+        "kind": "wipe",
+        "at": 12.16,
+        "duration": 0.5
+      },
+      {
+        "shape": "vector-cell-13",
+        "kind": "wipe",
+        "at": 12.34,
+        "duration": 0.5
+      },
+      {
+        "shape": "shape-31",
+        "kind": "fade",
+        "at": 13.0,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-31",
+        "kind": "motion",
+        "at": 13.12,
+        "duration": 1.4,
+        "dx": 5.800000000000001,
+        "dy": 0.0,
+        "repeat": 2
+      },
+      {
+        "shape": "shape-31",
+        "kind": "exit",
+        "at": 15.919999999999998,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-32",
+        "kind": "fade",
+        "at": 13.4,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-32",
+        "kind": "motion",
+        "at": 13.52,
+        "duration": 1.4,
+        "dx": 5.800000000000001,
+        "dy": 0.0,
+        "repeat": 2
+      },
+      {
+        "shape": "shape-32",
+        "kind": "exit",
+        "at": 16.32,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-33",
+        "kind": "fade",
+        "at": 13.8,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-33",
+        "kind": "motion",
+        "at": 13.92,
+        "duration": 1.4,
+        "dx": 5.800000000000001,
+        "dy": 0.0,
+        "repeat": 2
+      },
+      {
+        "shape": "shape-33",
+        "kind": "exit",
+        "at": 16.72,
+        "duration": 0.12
+      }
+    ],
+    "bg": "F8F5EE",
+    "tag": "ENSEMBLE / IDS                         FEATURES",
+    "source": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải traffic triển khai"
+  },
+  {
+    "scene": 3,
+    "seconds": 20,
+    "title": "Khi dự đoán,\ndữ liệu đi theo đường nào?",
+    "speech": "Cùng một bản ghi sau xử lý đi đến hồi quy logistic, cây quyết định và Random Forest. Các mô hình tạo xác suất cho bộ kết hợp ra quyết định, với ngưỡng không phẩy năm đã khóa. Đây là đường suy luận ngoại tuyến; nhóm chưa triển khai bắt gói trực tiếp trên mạng.",
+    "events": [
+      {
+        "shape": "shape-6",
+        "kind": "fade",
+        "at": 0,
+        "duration": 0.4
+      },
+      {
+        "shape": "text-7",
+        "kind": "fade",
+        "at": 0.2,
+        "duration": 0.4
+      },
+      {
+        "shape": "line-9",
+        "kind": "wipe",
+        "at": 0.8,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-10",
+        "kind": "fade",
+        "at": 1.4,
+        "duration": 0.4
+      },
+      {
+        "shape": "text-11",
+        "kind": "fade",
+        "at": 1.5999999999999999,
+        "duration": 0.4
+      },
+      {
+        "shape": "line-12",
+        "kind": "wipe",
+        "at": 3.0,
+        "duration": 0.7
+      },
+      {
+        "shape": "shape-13",
+        "kind": "fade",
+        "at": 3.8,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-13",
+        "kind": "motion",
+        "at": 3.92,
+        "duration": 1.3,
+        "dx": 2.8000000000000003,
+        "dy": -1.2999999999999998,
+        "repeat": 4
+      },
+      {
+        "shape": "shape-13",
+        "kind": "exit",
+        "at": 9.120000000000001,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-14",
+        "kind": "fade",
+        "at": 4.3999999999999995,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-14",
+        "kind": "motion",
+        "at": 4.52,
+        "duration": 1.3,
+        "dx": 2.8000000000000003,
+        "dy": -1.2999999999999998,
+        "repeat": 4
+      },
+      {
+        "shape": "shape-14",
+        "kind": "exit",
+        "at": 9.719999999999999,
+        "duration": 0.12
+      },
+      {
+        "shape": "line-15",
+        "kind": "wipe",
+        "at": 1.2000000000000002,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-16",
+        "kind": "fade",
+        "at": 1.7999999999999998,
+        "duration": 0.4
+      },
+      {
+        "shape": "text-17",
+        "kind": "fade",
+        "at": 1.9999999999999998,
+        "duration": 0.4
+      },
+      {
+        "shape": "line-18",
+        "kind": "wipe",
+        "at": 3.3,
+        "duration": 0.7
+      },
+      {
+        "shape": "shape-19",
+        "kind": "fade",
+        "at": 4.3,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-19",
+        "kind": "motion",
+        "at": 4.42,
+        "duration": 1.3,
+        "dx": 2.8000000000000003,
+        "dy": 0.0,
+        "repeat": 4
+      },
+      {
+        "shape": "shape-19",
+        "kind": "exit",
+        "at": 9.620000000000001,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-20",
+        "kind": "fade",
+        "at": 4.8999999999999995,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-20",
+        "kind": "motion",
+        "at": 5.02,
+        "duration": 1.3,
+        "dx": 2.8000000000000003,
+        "dy": 0.0,
+        "repeat": 4
+      },
+      {
+        "shape": "shape-20",
+        "kind": "exit",
+        "at": 10.219999999999999,
+        "duration": 0.12
+      },
+      {
+        "shape": "line-21",
+        "kind": "wipe",
+        "at": 1.6,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-22",
+        "kind": "fade",
+        "at": 2.2,
+        "duration": 0.4
+      },
+      {
+        "shape": "text-23",
+        "kind": "fade",
+        "at": 2.4000000000000004,
+        "duration": 0.4
+      },
+      {
+        "shape": "line-24",
+        "kind": "wipe",
+        "at": 3.6,
+        "duration": 0.7
+      },
+      {
+        "shape": "shape-25",
+        "kind": "fade",
+        "at": 4.8,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-25",
+        "kind": "motion",
+        "at": 4.92,
+        "duration": 1.3,
+        "dx": 2.8000000000000003,
+        "dy": 1.2999999999999998,
+        "repeat": 4
+      },
+      {
+        "shape": "shape-25",
+        "kind": "exit",
+        "at": 10.120000000000001,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-26",
+        "kind": "fade",
+        "at": 5.3999999999999995,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-26",
+        "kind": "motion",
+        "at": 5.52,
+        "duration": 1.3,
+        "dx": 2.8000000000000003,
+        "dy": 1.2999999999999998,
+        "repeat": 4
+      },
+      {
+        "shape": "shape-26",
+        "kind": "exit",
+        "at": 10.719999999999999,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-27",
+        "kind": "fade",
+        "at": 4,
+        "duration": 0.6
+      },
+      {
+        "shape": "line-29",
+        "kind": "wipe",
+        "at": 6,
+        "duration": 0.8
+      },
+      {
+        "shape": "text-30",
+        "kind": "fade",
+        "at": 7,
+        "duration": 0.4
+      },
+      {
+        "shape": "shape-31",
+        "kind": "fade",
+        "at": 9.0,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-31",
+        "kind": "motion",
+        "at": 9.12,
+        "duration": 1.3,
+        "dx": 1.4000000000000004,
+        "dy": -1.0999999999999996,
+        "repeat": 6
+      },
+      {
+        "shape": "shape-31",
+        "kind": "exit",
+        "at": 16.92,
+        "duration": 0.12
+      },
+      {
+        "shape": "line-32",
+        "kind": "wipe",
+        "at": 7,
+        "duration": 0.8
+      },
+      {
+        "shape": "text-33",
+        "kind": "fade",
+        "at": 8,
+        "duration": 0.4
+      },
+      {
+        "shape": "shape-34",
+        "kind": "fade",
+        "at": 9.6,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-34",
+        "kind": "motion",
+        "at": 9.719999999999999,
+        "duration": 1.3,
+        "dx": 1.4000000000000004,
+        "dy": 1.0499999999999998,
+        "repeat": 6
+      },
+      {
+        "shape": "shape-34",
+        "kind": "exit",
+        "at": 17.52,
+        "duration": 0.12
+      }
+    ],
+    "bg": "10162F",
+    "tag": "ENSEMBLE / IDS                         INFER",
+    "source": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải traffic triển khai"
+  },
+  {
+    "scene": 3,
+    "seconds": 20,
+    "title": "Huấn luyện tầng kết hợp\nphải dùng dự đoán OOF.",
+    "speech": "Để huấn luyện Stacking, mỗi mô hình cơ sở học trên một số fold rồi dự đoán fold được giữ lại. Ghép các dự đoán ngoài fold này để huấn luyện tầng kết hợp. Nhờ vậy, tầng cuối không học từ dự đoán trên chính những dòng mà mô hình cơ sở vừa học.",
+    "events": [
+      {
+        "shape": "fold-r0c0",
+        "kind": "wipe",
+        "at": 0.5,
+        "duration": 0.5
+      },
+      {
+        "shape": "fold-r0c1",
+        "kind": "wipe",
+        "at": 0.65,
+        "duration": 0.5
+      },
+      {
+        "shape": "fold-r0c2",
+        "kind": "wipe",
+        "at": 0.8,
+        "duration": 0.5
+      },
+      {
+        "shape": "line-14",
+        "kind": "wipe",
+        "at": 3.1,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-15",
+        "kind": "fade",
+        "at": 3.6,
+        "duration": 0.4
+      },
+      {
+        "shape": "shape-16",
+        "kind": "fade",
+        "at": 3.75,
+        "duration": 0.4
+      },
+      {
+        "shape": "shape-17",
+        "kind": "fade",
+        "at": 3.9,
+        "duration": 0.4
+      },
+      {
+        "shape": "fold-r1c0",
+        "kind": "wipe",
+        "at": 4.1,
+        "duration": 0.5
+      },
+      {
+        "shape": "fold-r1c1",
+        "kind": "wipe",
+        "at": 4.25,
+        "duration": 0.5
+      },
+      {
+        "shape": "fold-r1c2",
+        "kind": "wipe",
+        "at": 4.3999999999999995,
+        "duration": 0.5
+      },
+      {
+        "shape": "line-24",
+        "kind": "wipe",
+        "at": 6.7,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-25",
+        "kind": "fade",
+        "at": 7.2,
+        "duration": 0.4
+      },
+      {
+        "shape": "shape-26",
+        "kind": "fade",
+        "at": 7.3500000000000005,
+        "duration": 0.4
+      },
+      {
+        "shape": "shape-27",
+        "kind": "fade",
+        "at": 7.5,
+        "duration": 0.4
+      },
+      {
+        "shape": "fold-r2c0",
+        "kind": "wipe",
+        "at": 7.7,
+        "duration": 0.5
+      },
+      {
+        "shape": "fold-r2c1",
+        "kind": "wipe",
+        "at": 7.8500000000000005,
+        "duration": 0.5
+      },
+      {
+        "shape": "fold-r2c2",
+        "kind": "wipe",
+        "at": 8.0,
+        "duration": 0.5
+      },
+      {
+        "shape": "line-34",
+        "kind": "wipe",
+        "at": 10.3,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-35",
+        "kind": "fade",
+        "at": 10.8,
+        "duration": 0.4
+      },
+      {
+        "shape": "shape-36",
+        "kind": "fade",
+        "at": 10.950000000000001,
+        "duration": 0.4
+      },
+      {
+        "shape": "shape-37",
+        "kind": "fade",
+        "at": 11.100000000000001,
+        "duration": 0.4
+      },
+      {
+        "shape": "line-38",
+        "kind": "wipe",
+        "at": 12.2,
+        "duration": 0.8
+      },
+      {
+        "shape": "shape-39",
+        "kind": "fade",
+        "at": 13,
+        "duration": 0.5
+      },
+      {
+        "shape": "shape-39",
+        "kind": "scale",
+        "at": 13.6,
+        "duration": 1,
+        "scale": 115,
+        "repeat": 2,
+        "reverse": true
+      },
+      {
+        "shape": "text-40",
+        "kind": "fade",
+        "at": 13,
+        "duration": 0.4
+      }
+    ],
+    "bg": "F8F5EE",
+    "tag": "ENSEMBLE / IDS                         OOF",
+    "source": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải traffic triển khai"
+  },
+  {
+    "scene": 4,
+    "seconds": 18,
+    "title": "Mô hình tham chiếu\nđã là một ensemble.",
+    "speech": "Random Forest đã kết hợp nhiều cây quyết định. Các cây học từ mẫu và tập đặc trưng ngẫu nhiên rồi tổng hợp dự đoán. Nhóm chọn nó làm mốc mạnh. Thêm một tầng kết hợp phải cho thấy lợi ích cụ thể; nhiều mô hình hơn chưa chắc tốt hơn.",
+    "events": [
+      {
+        "shape": "line-5",
+        "kind": "wipe",
+        "at": 1.0,
+        "duration": 0.45
+      },
+      {
+        "shape": "line-6",
+        "kind": "wipe",
+        "at": 1.0,
+        "duration": 0.45
+      },
+      {
+        "shape": "shape-7",
+        "kind": "fade",
+        "at": 1.1,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-8",
+        "kind": "fade",
+        "at": 1.2000000000000002,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-9",
+        "kind": "fade",
+        "at": 1.3,
+        "duration": 0.3
+      },
+      {
+        "shape": "line-10",
+        "kind": "wipe",
+        "at": 3.0,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-11",
+        "kind": "fade",
+        "at": 5.0,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-11",
+        "kind": "motion",
+        "at": 5.12,
+        "duration": 1.8,
+        "dx": 5.4,
+        "dy": 0.9500000000000002,
+        "repeat": 5
+      },
+      {
+        "shape": "shape-11",
+        "kind": "exit",
+        "at": 14.120000000000001,
+        "duration": 0.12
+      },
+      {
+        "shape": "line-12",
+        "kind": "wipe",
+        "at": 1.2,
+        "duration": 0.45
+      },
+      {
+        "shape": "line-13",
+        "kind": "wipe",
+        "at": 1.2,
+        "duration": 0.45
+      },
+      {
+        "shape": "shape-14",
+        "kind": "fade",
+        "at": 1.3,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-15",
+        "kind": "fade",
+        "at": 1.4000000000000001,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-16",
+        "kind": "fade",
+        "at": 1.5,
+        "duration": 0.3
+      },
+      {
+        "shape": "line-17",
+        "kind": "wipe",
+        "at": 3.2,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-18",
+        "kind": "fade",
+        "at": 5.28,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-18",
+        "kind": "motion",
+        "at": 5.4,
+        "duration": 1.8,
+        "dx": 3.7500000000000004,
+        "dy": 0.6500000000000004,
+        "repeat": 5
+      },
+      {
+        "shape": "shape-18",
+        "kind": "exit",
+        "at": 14.4,
+        "duration": 0.12
+      },
+      {
+        "shape": "line-19",
+        "kind": "wipe",
+        "at": 1.4,
+        "duration": 0.45
+      },
+      {
+        "shape": "line-20",
+        "kind": "wipe",
+        "at": 1.4,
+        "duration": 0.45
+      },
+      {
+        "shape": "shape-21",
+        "kind": "fade",
+        "at": 1.5,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-22",
+        "kind": "fade",
+        "at": 1.6,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-23",
+        "kind": "fade",
+        "at": 1.7,
+        "duration": 0.3
+      },
+      {
+        "shape": "line-24",
+        "kind": "wipe",
+        "at": 3.4,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-25",
+        "kind": "fade",
+        "at": 5.5600000000000005,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-25",
+        "kind": "motion",
+        "at": 5.680000000000001,
+        "duration": 1.8,
+        "dx": 2.1000000000000005,
+        "dy": 0.9500000000000002,
+        "repeat": 5
+      },
+      {
+        "shape": "shape-25",
+        "kind": "exit",
+        "at": 14.68,
+        "duration": 0.12
+      },
+      {
+        "shape": "line-26",
+        "kind": "wipe",
+        "at": 1.6,
+        "duration": 0.45
+      },
+      {
+        "shape": "line-27",
+        "kind": "wipe",
+        "at": 1.6,
+        "duration": 0.45
+      },
+      {
+        "shape": "shape-28",
+        "kind": "fade",
+        "at": 1.7000000000000002,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-29",
+        "kind": "fade",
+        "at": 1.8000000000000003,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-30",
+        "kind": "fade",
+        "at": 1.9000000000000001,
+        "duration": 0.3
+      },
+      {
+        "shape": "line-31",
+        "kind": "wipe",
+        "at": 3.6,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-32",
+        "kind": "fade",
+        "at": 5.84,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-32",
+        "kind": "motion",
+        "at": 5.96,
+        "duration": 1.8,
+        "dx": 0.45000000000000107,
+        "dy": 0.6500000000000004,
+        "repeat": 5
+      },
+      {
+        "shape": "shape-32",
+        "kind": "exit",
+        "at": 14.96,
+        "duration": 0.12
+      },
+      {
+        "shape": "line-33",
+        "kind": "wipe",
+        "at": 1.8,
+        "duration": 0.45
+      },
+      {
+        "shape": "line-34",
+        "kind": "wipe",
+        "at": 1.8,
+        "duration": 0.45
+      },
+      {
+        "shape": "shape-35",
+        "kind": "fade",
+        "at": 1.9000000000000001,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-36",
+        "kind": "fade",
+        "at": 2.0,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-37",
+        "kind": "fade",
+        "at": 2.1,
+        "duration": 0.3
+      },
+      {
+        "shape": "line-38",
+        "kind": "wipe",
+        "at": 3.8,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-39",
+        "kind": "fade",
+        "at": 6.12,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-39",
+        "kind": "motion",
+        "at": 6.24,
+        "duration": 1.8,
+        "dx": -1.1999999999999993,
+        "dy": 0.9500000000000002,
+        "repeat": 5
+      },
+      {
+        "shape": "shape-39",
+        "kind": "exit",
+        "at": 15.24,
+        "duration": 0.12
+      },
+      {
+        "shape": "line-40",
+        "kind": "wipe",
+        "at": 2.0,
+        "duration": 0.45
+      },
+      {
+        "shape": "line-41",
+        "kind": "wipe",
+        "at": 2.0,
+        "duration": 0.45
+      },
+      {
+        "shape": "shape-42",
+        "kind": "fade",
+        "at": 2.1,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-43",
+        "kind": "fade",
+        "at": 2.2,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-44",
+        "kind": "fade",
+        "at": 2.3000000000000003,
+        "duration": 0.3
+      },
+      {
+        "shape": "line-45",
+        "kind": "wipe",
+        "at": 4.0,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-46",
+        "kind": "fade",
+        "at": 6.4,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-46",
+        "kind": "motion",
+        "at": 6.5200000000000005,
+        "duration": 1.8,
+        "dx": -2.8499999999999996,
+        "dy": 0.6500000000000004,
+        "repeat": 5
+      },
+      {
+        "shape": "shape-46",
+        "kind": "exit",
+        "at": 15.52,
+        "duration": 0.12
+      },
+      {
+        "shape": "line-47",
+        "kind": "wipe",
+        "at": 2.2,
+        "duration": 0.45
+      },
+      {
+        "shape": "line-48",
+        "kind": "wipe",
+        "at": 2.2,
+        "duration": 0.45
+      },
+      {
+        "shape": "shape-49",
+        "kind": "fade",
+        "at": 2.3000000000000003,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-50",
+        "kind": "fade",
+        "at": 2.4000000000000004,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-51",
+        "kind": "fade",
+        "at": 2.5000000000000004,
+        "duration": 0.3
+      },
+      {
+        "shape": "line-52",
+        "kind": "wipe",
+        "at": 4.2,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-53",
+        "kind": "fade",
+        "at": 6.68,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-53",
+        "kind": "motion",
+        "at": 6.8,
+        "duration": 1.8,
+        "dx": -4.499999999999998,
+        "dy": 0.9500000000000002,
+        "repeat": 5
+      },
+      {
+        "shape": "shape-53",
+        "kind": "exit",
+        "at": 15.8,
+        "duration": 0.12
+      }
+    ],
+    "bg": "7958F5",
+    "tag": "ENSEMBLE / IDS                         FOREST",
+    "source": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải traffic triển khai"
+  },
+  {
+    "scene": 4,
+    "seconds": 17,
+    "title": "Voting có luật gộp\ncố định.",
+    "speech": "Voting gộp đầu ra của ba mô hình theo luật cố định. Hard Voting lấy đa số phiếu; Soft Voting lấy trung bình xác suất. Các mô hình có cách học khác nhau, nhưng nếu cùng sai ở những bản ghi khó, phép gộp vẫn có thể giữ nguyên lỗi.",
+    "events": [
+      {
+        "shape": "shape-6",
+        "kind": "fade",
+        "at": 0.5,
+        "duration": 0.4
+      },
+      {
+        "shape": "text-7",
+        "kind": "fade",
+        "at": 0.7,
+        "duration": 0.4
+      },
+      {
+        "shape": "line-8",
+        "kind": "wipe",
+        "at": 2.0,
+        "duration": 0.8
+      },
+      {
+        "shape": "shape-9",
+        "kind": "fade",
+        "at": 3.0,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-9",
+        "kind": "motion",
+        "at": 3.12,
+        "duration": 1.7,
+        "dx": 5.3,
+        "dy": 1.0999999999999996,
+        "repeat": 5
+      },
+      {
+        "shape": "shape-9",
+        "kind": "exit",
+        "at": 11.620000000000001,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-10",
+        "kind": "fade",
+        "at": 0.9,
+        "duration": 0.4
+      },
+      {
+        "shape": "text-11",
+        "kind": "fade",
+        "at": 1.1,
+        "duration": 0.4
+      },
+      {
+        "shape": "line-12",
+        "kind": "wipe",
+        "at": 2.4,
+        "duration": 0.8
+      },
+      {
+        "shape": "shape-13",
+        "kind": "fade",
+        "at": 3.6,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-13",
+        "kind": "motion",
+        "at": 3.72,
+        "duration": 1.7,
+        "dx": 5.3,
+        "dy": 0.0,
+        "repeat": 5
+      },
+      {
+        "shape": "shape-13",
+        "kind": "exit",
+        "at": 12.22,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-14",
+        "kind": "fade",
+        "at": 1.3,
+        "duration": 0.4
+      },
+      {
+        "shape": "text-15",
+        "kind": "fade",
+        "at": 1.5,
+        "duration": 0.4
+      },
+      {
+        "shape": "line-16",
+        "kind": "wipe",
+        "at": 2.8,
+        "duration": 0.8
+      },
+      {
+        "shape": "shape-17",
+        "kind": "fade",
+        "at": 4.2,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-17",
+        "kind": "motion",
+        "at": 4.32,
+        "duration": 1.7,
+        "dx": 5.3,
+        "dy": -1.1000000000000005,
+        "repeat": 5
+      },
+      {
+        "shape": "shape-17",
+        "kind": "exit",
+        "at": 12.82,
+        "duration": 0.12
+      },
+      {
+        "shape": "text-20",
+        "kind": "fade",
+        "at": 7,
+        "duration": 0.5
+      }
+    ],
+    "bg": "F8F5EE",
+    "tag": "ENSEMBLE / IDS                         VOTE",
+    "source": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải traffic triển khai"
+  },
+  {
+    "scene": 4,
+    "seconds": 20,
+    "title": "Stacking học\ncách gộp xác suất.",
+    "speech": "Stacking dùng hồi quy logistic ở tầng cuối. Tầng này học cách gộp từ dự đoán ngoài fold. Sau đó, mô hình cơ sở được học lại trên dữ liệu huấn luyện để dự đoán bản ghi mới. Ngoài fold phục vụ huấn luyện tầng cuối; đường đang sáng minh họa lúc suy luận.",
+    "events": [
+      {
+        "shape": "shape-6",
+        "kind": "fade",
+        "at": 0.4,
+        "duration": 0.4
+      },
+      {
+        "shape": "text-7",
+        "kind": "fade",
+        "at": 0.6000000000000001,
+        "duration": 0.4
+      },
+      {
+        "shape": "line-8",
+        "kind": "wipe",
+        "at": 1.5,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-9",
+        "kind": "fade",
+        "at": 2.0,
+        "duration": 0.4
+      },
+      {
+        "shape": "shape-10",
+        "kind": "fade",
+        "at": 3.0,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-10",
+        "kind": "motion",
+        "at": 3.12,
+        "duration": 2.0,
+        "dx": 4.4,
+        "dy": 1.0499999999999998,
+        "repeat": 6
+      },
+      {
+        "shape": "shape-10",
+        "kind": "exit",
+        "at": 15.120000000000001,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-11",
+        "kind": "fade",
+        "at": 0.6000000000000001,
+        "duration": 0.4
+      },
+      {
+        "shape": "text-12",
+        "kind": "fade",
+        "at": 0.8,
+        "duration": 0.4
+      },
+      {
+        "shape": "line-13",
+        "kind": "wipe",
+        "at": 1.8,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-14",
+        "kind": "fade",
+        "at": 2.4,
+        "duration": 0.4
+      },
+      {
+        "shape": "shape-15",
+        "kind": "fade",
+        "at": 3.5,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-15",
+        "kind": "motion",
+        "at": 3.62,
+        "duration": 2.0,
+        "dx": 4.4,
+        "dy": -0.15000000000000036,
+        "repeat": 6
+      },
+      {
+        "shape": "shape-15",
+        "kind": "exit",
+        "at": 15.620000000000001,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-16",
+        "kind": "fade",
+        "at": 0.8,
+        "duration": 0.4
+      },
+      {
+        "shape": "text-17",
+        "kind": "fade",
+        "at": 1.0,
+        "duration": 0.4
+      },
+      {
+        "shape": "line-18",
+        "kind": "wipe",
+        "at": 2.1,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-19",
+        "kind": "fade",
+        "at": 2.8,
+        "duration": 0.4
+      },
+      {
+        "shape": "shape-20",
+        "kind": "fade",
+        "at": 4.0,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-20",
+        "kind": "motion",
+        "at": 4.12,
+        "duration": 2.0,
+        "dx": 4.4,
+        "dy": -1.3500000000000005,
+        "repeat": 6
+      },
+      {
+        "shape": "shape-20",
+        "kind": "exit",
+        "at": 16.12,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-21",
+        "kind": "fade",
+        "at": 3,
+        "duration": 0.7
+      },
+      {
+        "shape": "line-23",
+        "kind": "wipe",
+        "at": 5,
+        "duration": 0.8
+      },
+      {
+        "shape": "text-24",
+        "kind": "fade",
+        "at": 6,
+        "duration": 0.5
+      },
+      {
+        "shape": "shape-25",
+        "kind": "fade",
+        "at": 7,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-25",
+        "kind": "motion",
+        "at": 7.12,
+        "duration": 2.0,
+        "dx": 2.0999999999999996,
+        "dy": 0.0,
+        "repeat": 5
+      },
+      {
+        "shape": "shape-25",
+        "kind": "exit",
+        "at": 17.12,
+        "duration": 0.12
+      }
+    ],
+    "bg": "10162F",
+    "tag": "ENSEMBLE / IDS                         STACK",
+    "source": "UNSW-NB15 · sơ đồ minh họa pipeline offline theo mã nguồn; không phải traffic triển khai"
+  },
+  {
+    "scene": 5,
+    "seconds": 20,
+    "title": "Điểm tổng hợp\ngần như ngang nhau.",
+    "speech": "Trên tập kiểm thử chính thức, Macro F một của hai mô hình đều gần không phẩy tám sáu ba. Stacking chỉ nhỉnh hơn rất ít, còn MCC thấp hơn một chút. Khoảng tin cậy của cả hai hiệu số đều chứa số không. Chưa có bằng chứng rõ rằng Stacking vượt trội.",
+    "events": [
+      {
+        "shape": "text-5",
+        "kind": "fade",
+        "at": 1,
+        "duration": 0.5
+      },
+      {
+        "shape": "text-6",
+        "kind": "wipe",
+        "at": 1.5,
+        "duration": 1
+      },
+      {
+        "shape": "text-7",
+        "kind": "fade",
+        "at": 4,
+        "duration": 0.5
+      },
+      {
+        "shape": "text-8",
+        "kind": "wipe",
+        "at": 4.5,
+        "duration": 1
+      },
+      {
+        "shape": "text-9",
+        "kind": "fly",
+        "at": 8,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-10",
+        "kind": "fade",
+        "at": 12,
+        "duration": 0.6
+      },
+      {
+        "shape": "line-11",
+        "kind": "wipe",
+        "at": 13,
+        "duration": 1
+      },
+      {
+        "shape": "shape-14",
+        "kind": "fade",
+        "at": 14,
+        "duration": 0.4
+      }
+    ],
+    "bg": "F8F5EE",
+    "tag": "ENSEMBLE / IDS                         SCORE",
+    "source": "Official TEST lịch sử · 82.332 bản ghi · RF42 so với Stacking42 · ngưỡng 0,5"
+  },
+  {
+    "scene": 5,
+    "seconds": 20,
+    "title": "142 cảnh báo giả\nđã giảm đi.",
+    "speech": "Về cảnh báo giả, Random Forest báo nhầm mười nghìn không trăm lẻ ba bản ghi bình thường. Stacking còn chín nghìn tám trăm sáu mươi mốt. Mức giảm là một trăm bốn mươi hai. Nhưng trên cùng tập kiểm thử, đây mới chỉ là một phía của kết quả.",
+    "events": [
+      {
+        "shape": "text-5",
+        "kind": "fly",
+        "at": 0.4,
+        "duration": 0.9
+      },
+      {
+        "shape": "fp-bar-0",
+        "kind": "wipe",
+        "at": 3,
+        "duration": 2.1
+      },
+      {
+        "shape": "text-9",
+        "kind": "fade",
+        "at": 5,
+        "duration": 0.5
+      },
+      {
+        "shape": "fp-bar-1",
+        "kind": "wipe",
+        "at": 6,
+        "duration": 2.1
+      },
+      {
+        "shape": "text-12",
+        "kind": "fade",
+        "at": 8,
+        "duration": 0.5
+      },
+      {
+        "shape": "shape-16",
+        "kind": "fade",
+        "at": 10,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-16",
+        "kind": "motion",
+        "at": 10.12,
+        "duration": 2,
+        "dx": 7.050000000000001,
+        "dy": 0.0,
+        "repeat": 3
+      },
+      {
+        "shape": "shape-16",
+        "kind": "exit",
+        "at": 16.119999999999997,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-17",
+        "kind": "fade",
+        "at": 12,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-17",
+        "kind": "motion",
+        "at": 12.12,
+        "duration": 2,
+        "dx": 7.050000000000001,
+        "dy": 0.0,
+        "repeat": 3
+      },
+      {
+        "shape": "shape-17",
+        "kind": "exit",
+        "at": 18.119999999999997,
+        "duration": 0.12
+      }
+    ],
+    "bg": "10162F",
+    "tag": "ENSEMBLE / IDS                         FP",
+    "source": "Official TEST lịch sử · 82.332 bản ghi · RF42 so với Stacking42 · ngưỡng 0,5"
+  },
+  {
+    "scene": 5,
+    "seconds": 25,
+    "title": "118 bản ghi tấn công\nbị bỏ sót thêm.",
+    "speech": "Ở phía còn lại, số bản ghi tấn công bị bỏ sót tăng từ bảy trăm ba mươi bốn lên tám trăm năm mươi hai. Tức là thêm một trăm mười tám. Nhóm nhấn mạnh số bản ghi, vì đây chưa phải một trăm mười tám sự cố độc lập trong mạng thật. Lúc này, câu hỏi không còn là mô hình nào có điểm nhỉnh hơn, mà là việc giảm cảnh báo giả có đáng với phần bỏ sót tăng thêm hay không.",
+    "events": [
+      {
+        "shape": "text-5",
+        "kind": "fly",
+        "at": 0.4,
+        "duration": 1.1
+      },
+      {
+        "shape": "text-5",
+        "kind": "scale",
+        "at": 5,
+        "duration": 1.4,
+        "scale": 106,
+        "repeat": 2,
+        "reverse": true
+      },
+      {
+        "shape": "hero-title",
+        "kind": "wipe",
+        "at": 3,
+        "duration": 0.8
+      },
+      {
+        "shape": "fn-bar-0",
+        "kind": "wipe",
+        "at": 9,
+        "duration": 2
+      },
+      {
+        "shape": "text-8",
+        "kind": "fade",
+        "at": 11,
+        "duration": 0.4
+      },
+      {
+        "shape": "fn-bar-1",
+        "kind": "wipe",
+        "at": 12,
+        "duration": 2
+      },
+      {
+        "shape": "text-11",
+        "kind": "fade",
+        "at": 14,
+        "duration": 0.4
+      }
+    ],
+    "bg": "FF7058",
+    "tag": "ENSEMBLE / IDS                         FN",
+    "source": "Official TEST lịch sử · 82.332 bản ghi · RF42 so với Stacking42 · ngưỡng 0,5"
+  },
+  {
+    "scene": 6,
+    "seconds": 25,
+    "title": "Năm lượt FIT.\nMột validation chung.",
+    "speech": "Nhóm bổ sung P hai mươi mốt để kiểm tra có đối chứng. Năm seed huấn luyện, mỗi seed dùng sáu mươi nghìn dòng FIT. Năm nhánh gồm rừng bốn mươi hai biến, rừng mười bảy biến, trọng số lớp, lấy mẫu bổ sung và Stacking Lite. Tất cả dùng chung một validation cố định từ TRAIN; không phải năm tập kiểm thử độc lập.",
+    "events": [
+      {
+        "shape": "text-10",
+        "kind": "fade",
+        "at": 0.5,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-11",
+        "kind": "fade",
+        "at": 1.0,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-12",
+        "kind": "fade",
+        "at": 1.15,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-13",
+        "kind": "fade",
+        "at": 1.3,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-14",
+        "kind": "fade",
+        "at": 1.45,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-15",
+        "kind": "fade",
+        "at": 1.6,
+        "duration": 0.25
+      },
+      {
+        "shape": "line-16",
+        "kind": "wipe",
+        "at": 2.4,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-17",
+        "kind": "fade",
+        "at": 3.1,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-17",
+        "kind": "motion",
+        "at": 3.22,
+        "duration": 1.2,
+        "dx": 1.299999999999999,
+        "dy": 0.9199999999999999,
+        "repeat": 1
+      },
+      {
+        "shape": "shape-17",
+        "kind": "exit",
+        "at": 4.42,
+        "duration": 0.12
+      },
+      {
+        "shape": "text-18",
+        "kind": "fade",
+        "at": 2.5,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-19",
+        "kind": "fade",
+        "at": 3.0,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-20",
+        "kind": "fade",
+        "at": 3.15,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-21",
+        "kind": "fade",
+        "at": 3.3,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-22",
+        "kind": "fade",
+        "at": 3.45,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-23",
+        "kind": "fade",
+        "at": 3.6,
+        "duration": 0.25
+      },
+      {
+        "shape": "line-24",
+        "kind": "wipe",
+        "at": 4.4,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-25",
+        "kind": "fade",
+        "at": 5.1,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-25",
+        "kind": "motion",
+        "at": 5.22,
+        "duration": 1.2,
+        "dx": 1.299999999999999,
+        "dy": 0.47000000000000064,
+        "repeat": 1
+      },
+      {
+        "shape": "shape-25",
+        "kind": "exit",
+        "at": 6.42,
+        "duration": 0.12
+      },
+      {
+        "shape": "text-26",
+        "kind": "fade",
+        "at": 4.5,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-27",
+        "kind": "fade",
+        "at": 5.0,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-28",
+        "kind": "fade",
+        "at": 5.15,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-29",
+        "kind": "fade",
+        "at": 5.3,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-30",
+        "kind": "fade",
+        "at": 5.45,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-31",
+        "kind": "fade",
+        "at": 5.6,
+        "duration": 0.25
+      },
+      {
+        "shape": "line-32",
+        "kind": "wipe",
+        "at": 6.4,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-33",
+        "kind": "fade",
+        "at": 7.1,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-33",
+        "kind": "motion",
+        "at": 7.22,
+        "duration": 1.2,
+        "dx": 1.299999999999999,
+        "dy": 0.020000000000000462,
+        "repeat": 1
+      },
+      {
+        "shape": "shape-33",
+        "kind": "exit",
+        "at": 8.42,
+        "duration": 0.12
+      },
+      {
+        "shape": "text-34",
+        "kind": "fade",
+        "at": 6.5,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-35",
+        "kind": "fade",
+        "at": 7.0,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-36",
+        "kind": "fade",
+        "at": 7.15,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-37",
+        "kind": "fade",
+        "at": 7.3,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-38",
+        "kind": "fade",
+        "at": 7.45,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-39",
+        "kind": "fade",
+        "at": 7.6,
+        "duration": 0.25
+      },
+      {
+        "shape": "line-40",
+        "kind": "wipe",
+        "at": 8.4,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-41",
+        "kind": "fade",
+        "at": 9.1,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-41",
+        "kind": "motion",
+        "at": 9.219999999999999,
+        "duration": 1.2,
+        "dx": 1.299999999999999,
+        "dy": -0.4299999999999997,
+        "repeat": 1
+      },
+      {
+        "shape": "shape-41",
+        "kind": "exit",
+        "at": 10.419999999999998,
+        "duration": 0.12
+      },
+      {
+        "shape": "text-42",
+        "kind": "fade",
+        "at": 8.5,
+        "duration": 0.3
+      },
+      {
+        "shape": "shape-43",
+        "kind": "fade",
+        "at": 9.0,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-44",
+        "kind": "fade",
+        "at": 9.15,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-45",
+        "kind": "fade",
+        "at": 9.3,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-46",
+        "kind": "fade",
+        "at": 9.45,
+        "duration": 0.25
+      },
+      {
+        "shape": "shape-47",
+        "kind": "fade",
+        "at": 9.6,
+        "duration": 0.25
+      },
+      {
+        "shape": "line-48",
+        "kind": "wipe",
+        "at": 10.4,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-49",
+        "kind": "fade",
+        "at": 11.1,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-49",
+        "kind": "motion",
+        "at": 11.219999999999999,
+        "duration": 1.2,
+        "dx": 1.299999999999999,
+        "dy": -0.8799999999999999,
+        "repeat": 1
+      },
+      {
+        "shape": "shape-49",
+        "kind": "exit",
+        "at": 12.419999999999998,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-50",
+        "kind": "fade",
+        "at": 3,
+        "duration": 0.6
+      },
+      {
+        "shape": "shape-50",
+        "kind": "scale",
+        "at": 5,
+        "duration": 1.2,
+        "scale": 111,
+        "repeat": 6,
+        "reverse": true
+      }
+    ],
+    "bg": "F8F5EE",
+    "tag": "ENSEMBLE / IDS                         MATRIX",
+    "source": "P21 hậu nghiệm trên TRAIN · 5 FIT seed · cùng 35.069 dòng internal validation"
+  },
+  {
+    "scene": 6,
+    "seconds": 25,
+    "title": "Bớt biến.\nChưa chắc bớt chi phí.",
+    "speech": "Trong P hai mươi mốt, Random Forest Lite vẫn có Macro F một trung bình nhỉnh hơn Stacking Lite. Rừng mười bảy biến học nhanh hơn sau khi chọn biến. Nhưng cộng bước chọn, thời gian lên khoảng ba trăm mười giây, cao hơn hai trăm bốn mươi mốt giây của rừng bốn mươi hai biến. Chất lượng dự đoán cũng giảm. Vì vậy phải tính cả bước chọn biến.",
+    "events": [
+      {
+        "shape": "cost-0-0",
+        "kind": "wipe",
+        "at": 2,
+        "duration": 2
+      },
+      {
+        "shape": "cost-1-0",
+        "kind": "wipe",
+        "at": 8,
+        "duration": 2
+      },
+      {
+        "shape": "cost-1-1",
+        "kind": "wipe",
+        "at": 11,
+        "duration": 2
+      },
+      {
+        "shape": "text-12",
+        "kind": "fade",
+        "at": 15,
+        "duration": 0.6
+      }
+    ],
+    "bg": "10162F",
+    "tag": "ENSEMBLE / IDS                         SELECTION",
+    "source": "P21 hậu nghiệm trên TRAIN · 5 FIT seed · cùng 35.069 dòng internal validation"
+  },
+  {
+    "scene": 7,
+    "seconds": 25,
+    "title": "Ít cảnh báo giả hơn.\nBỏ sót nhiều hơn.",
+    "speech": "Trong P hai mươi mốt, tăng trọng số lớp và lấy mẫu bổ sung đều giảm tỷ lệ cảnh báo giả, nhưng tăng tỷ lệ bỏ sót. Bình thường mới là lớp ít mẫu trong TRAIN này. Can thiệp cân bằng vì thế ưu tiên lớp bình thường hơn. Đây là hướng dịch chuyển lỗi trong các cấu hình đã thử, không có nghĩa cân bằng lớp luôn có hại.",
+    "events": [
+      {
+        "shape": "shape-16",
+        "kind": "fade",
+        "at": 1,
+        "duration": 0.5
+      },
+      {
+        "shape": "text-17",
+        "kind": "fade",
+        "at": 1.4,
+        "duration": 0.5
+      },
+      {
+        "shape": "line-18",
+        "kind": "wipe",
+        "at": 5,
+        "duration": 1.7
+      },
+      {
+        "shape": "shape-19",
+        "kind": "fade",
+        "at": 5,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-19",
+        "kind": "motion",
+        "at": 5.12,
+        "duration": 1.7,
+        "dx": -2.2413083333333326,
+        "dy": -1.090741,
+        "repeat": 1
+      },
+      {
+        "shape": "shape-19",
+        "kind": "exit",
+        "at": 6.82,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-20",
+        "kind": "fade",
+        "at": 6,
+        "duration": 0.5
+      },
+      {
+        "shape": "text-21",
+        "kind": "fade",
+        "at": 6.4,
+        "duration": 0.5
+      },
+      {
+        "shape": "line-22",
+        "kind": "wipe",
+        "at": 10,
+        "duration": 1.7
+      },
+      {
+        "shape": "shape-23",
+        "kind": "fade",
+        "at": 10,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-23",
+        "kind": "motion",
+        "at": 10.12,
+        "duration": 1.7,
+        "dx": -1.5646375,
+        "dy": -0.7125410000000003,
+        "repeat": 1
+      },
+      {
+        "shape": "shape-23",
+        "kind": "exit",
+        "at": 11.819999999999999,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-24",
+        "kind": "fade",
+        "at": 11,
+        "duration": 0.5
+      },
+      {
+        "shape": "text-25",
+        "kind": "fade",
+        "at": 11.4,
+        "duration": 0.5
+      }
+    ],
+    "bg": "F8F5EE",
+    "tag": "ENSEMBLE / IDS                         RATES",
+    "source": "P21 hậu nghiệm trên TRAIN · 5 FIT seed · cùng 35.069 dòng internal validation"
+  },
+  {
+    "scene": 7,
+    "seconds": 25,
+    "title": "Một tỷ lệ chi phí\ncó thể đổi thứ hạng.",
+    "speech": "Nhóm giả định một cảnh báo giả tốn một đơn vị, còn một lần bỏ sót tốn r đơn vị. Với dự đoán kiểm thử lịch sử, hai mô hình hòa nhau khi r khoảng một phẩy hai. Khi bỏ sót đắt hơn mức này, Random Forest có tổn thất thấp hơn Stacking. Đây là giả định để đọc kết quả, chưa phải thiệt hại đo tại trung tâm vận hành.",
+    "events": [
+      {
+        "shape": "text-6",
+        "kind": "fade",
+        "at": 0.8,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-7",
+        "kind": "fade",
+        "at": 0.8,
+        "duration": 0.7
+      },
+      {
+        "shape": "loss-r0-bar0",
+        "kind": "wipe",
+        "at": 0.8,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-9",
+        "kind": "fade",
+        "at": 0.8,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-10",
+        "kind": "fade",
+        "at": 0.8,
+        "duration": 0.7
+      },
+      {
+        "shape": "loss-r0-bar1",
+        "kind": "wipe",
+        "at": 0.8,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-12",
+        "kind": "fade",
+        "at": 0.8,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-13",
+        "kind": "fade",
+        "at": 0.8,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-14",
+        "kind": "fade",
+        "at": 8.2,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-15",
+        "kind": "fade",
+        "at": 8.2,
+        "duration": 0.7
+      },
+      {
+        "shape": "loss-r1-bar0",
+        "kind": "wipe",
+        "at": 8.2,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-17",
+        "kind": "fade",
+        "at": 8.2,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-18",
+        "kind": "fade",
+        "at": 8.2,
+        "duration": 0.7
+      },
+      {
+        "shape": "loss-r1-bar1",
+        "kind": "wipe",
+        "at": 8.2,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-20",
+        "kind": "fade",
+        "at": 8.2,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-21",
+        "kind": "fade",
+        "at": 8.2,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-22",
+        "kind": "fade",
+        "at": 15.2,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-23",
+        "kind": "fade",
+        "at": 15.2,
+        "duration": 0.7
+      },
+      {
+        "shape": "loss-r2-bar0",
+        "kind": "wipe",
+        "at": 15.2,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-25",
+        "kind": "fade",
+        "at": 15.2,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-26",
+        "kind": "fade",
+        "at": 15.2,
+        "duration": 0.7
+      },
+      {
+        "shape": "loss-r2-bar1",
+        "kind": "wipe",
+        "at": 15.2,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-28",
+        "kind": "fade",
+        "at": 15.2,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-29",
+        "kind": "fade",
+        "at": 15.2,
+        "duration": 0.7
+      }
+    ],
+    "bg": "10162F",
+    "tag": "ENSEMBLE / IDS                         LOSS",
+    "source": "Phân tích giả định · dự đoán official TEST lịch sử · L=FP+rFN · chỉ cặp RF42/Stacking42"
+  },
+  {
+    "scene": 8,
+    "seconds": 25,
+    "title": "Chọn mô hình\ntừ loại lỗi cần giảm.",
+    "speech": "Qua các thí nghiệm, nhóm thấy ghép thêm mô hình chưa chắc giúp phát hiện tấn công tốt hơn. Cần đọc kết quả cùng loại lỗi và chi phí của nó. Nhóm đã đối chiếu cấu hình, bổ sung đối chứng và nêu giới hạn chọn đặc trưng lịch sử. Bước tiếp theo là kiểm chứng trên dữ liệu mạng mới và đo chi phí thực tế. Nhóm xin cảm ơn hội đồng.",
+    "events": [
+      {
+        "shape": "text-5",
+        "kind": "wipe",
+        "at": 2,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-6",
+        "kind": "wipe",
+        "at": 6,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-7",
+        "kind": "wipe",
+        "at": 10,
+        "duration": 0.7
+      },
+      {
+        "shape": "text-8",
+        "kind": "fade",
+        "at": 15,
+        "duration": 0.5
+      },
+      {
+        "shape": "shape-9",
+        "kind": "fade",
+        "at": 3.0,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-9",
+        "kind": "motion",
+        "at": 3.12,
+        "duration": 2,
+        "dx": 3.4000000000000004,
+        "dy": 0.0,
+        "repeat": 5
+      },
+      {
+        "shape": "shape-9",
+        "kind": "exit",
+        "at": 13.120000000000001,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-10",
+        "kind": "fade",
+        "at": 5.3,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-10",
+        "kind": "motion",
+        "at": 5.42,
+        "duration": 2,
+        "dx": 3.4000000000000004,
+        "dy": 0.0,
+        "repeat": 5
+      },
+      {
+        "shape": "shape-10",
+        "kind": "exit",
+        "at": 15.42,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-11",
+        "kind": "fade",
+        "at": 7.6,
+        "duration": 0.12
+      },
+      {
+        "shape": "shape-11",
+        "kind": "motion",
+        "at": 7.72,
+        "duration": 2,
+        "dx": 3.4000000000000004,
+        "dy": 0.0,
+        "repeat": 5
+      },
+      {
+        "shape": "shape-11",
+        "kind": "exit",
+        "at": 17.72,
+        "duration": 0.12
+      }
+    ],
+    "bg": "C5F66A",
+    "tag": "ENSEMBLE / IDS                         CLOSE",
+    "source": "NCKH Ensemble IDS · Dương Ngọc Phú / Phạm Thế Vỹ / Vũ Văn Kiên / Lê Hoàng Nguyên Quân · GVHD: TS. Lê Ngọc Hiếu"
+  },
+  {
+    "scene": 8,
+    "seconds": 30,
+    "title": "Tính mới nằm ở cách kiểm chứng và diễn giải",
+    "speech": "Không. Đóng góp trong phạm vi đề tài là benchmark có truy vết, kiểm toán hạn chế, P21 matched và phân tích chi phí lỗi. Không tuyên bố mới trên toàn lĩnh vực.",
+    "events": [],
+    "bg": "F8F5EE",
+    "tag": "VẤN ĐÁP / A01",
+    "source": "V6 §3.1, §5.3–5.5; P21 aggregate"
+  },
+  {
+    "scene": 8,
+    "seconds": 30,
+    "title": "Diversity là điều kiện cần xem xét, chưa đủ",
+    "speech": "LR làm mốc tuyến tính; DT học quy tắc phi tuyến; RF giảm phương sai bằng nhiều cây. AdaBoost là đối chiếu boosting ở development. Hard/Soft Voting không hơn RF về Macro-F1 development; không mang Voting thành kết quả TEST cuối.",
+    "events": [],
+    "bg": "F8F5EE",
+    "tag": "VẤN ĐÁP / A02",
+    "source": "src/models/run_unsw_ensemble_phase7_2.py; V6 §3.3, §4.5"
+  },
+  {
+    "scene": 8,
+    "seconds": 30,
+    "title": "UNSW-NB15 là benchmark, chưa đại diện mạng thực",
+    "speech": "Có nhãn nhị phân và official split phù hợp đối chiếu tái lập. Giữ nguyên 175.341 TRAIN / 82.332 TEST. Kết quả chỉ thuộc benchmark; cần validation theo thời gian hoặc nguồn mạng khác trước khi khái quát.",
+    "events": [],
+    "bg": "F8F5EE",
+    "tag": "VẤN ĐÁP / A03",
+    "source": "V6 §2.1, §2.5–2.6, §3.1"
+  },
+  {
+    "scene": 8,
+    "seconds": 30,
+    "title": "Kiểm soát leakage phải được mô tả theo từng giai đoạn",
+    "speech": "Không tuyên bố tuyệt đối. Preprocessing trong pipeline; meta LR học dự đoán OOF; TEST không dùng tuning. Tuy nhiên stable17 lịch sử chọn trên toàn TRAIN trước CV và meta tuning chưa hoàn toàn nested, có selection optimism. P21 chọn trong FIT và inner grouped CV; không sửa hồi tố lịch sử.",
+    "events": [],
+    "bg": "F8F5EE",
+    "tag": "VẤN ĐÁP / A04",
+    "source": "V6 §3.2–3.6; tools/p21_science_core.py"
+  },
+  {
+    "scene": 8,
+    "seconds": 30,
+    "title": "P21 có 5 FIT seed trên 1 validation cố định",
+    "speech": "Không. Hậu nghiệm trên official TRAIN; mỗi seed dùng 60.000 FIT source rows, validation 35.069 dòng (11.200 Normal / 23.869 Attack). Group theo vector 42 predictor trùng chính xác; không chứng minh độc lập session/time. SD có điều kiện trên validation này.",
+    "events": [],
+    "bg": "F8F5EE",
+    "tag": "VẤN ĐÁP / A05",
+    "source": "P21 aggregate.json; V6 §3.6, §4.7"
+  },
+  {
+    "scene": 8,
+    "seconds": 30,
+    "title": "Đối chứng RF17 cần tính cả chọn biến",
+    "speech": "P21 chọn stable17 từ FIT qua MI/L1/ExtraTrees, 5 selector seed; 14 biến chung trong 5 bộ. RF17 model fit 84,600 s; selector 225,250 s; cộng 309,850 s, so RF42 fit 241,119 s. Chưa phải chi phí end-to-end. RF17 lịch sử đổi cả số cây và min leaf, không phải FS-only ablation.",
+    "events": [],
+    "bg": "F8F5EE",
+    "tag": "VẤN ĐÁP / A06",
+    "source": "V6 §3.2–3.3, §4.7.3; tools/p21_selector_core.py"
+  },
+  {
+    "scene": 8,
+    "seconds": 30,
+    "title": "Voting có luật gộp cố định; Stacking học luật gộp",
+    "speech": "Hard: đa số nhãn; Soft: trung bình xác suất. Stacking: LR meta học xác suất OOF của LR/DT/RF; passthrough=False. Khi dự đoán, base learner fit lại trên phần train rồi đưa xác suất cho meta. OOF cần giữ cả preprocessing trong fold.",
+    "events": [],
+    "bg": "F8F5EE",
+    "tag": "VẤN ĐÁP / A07",
+    "source": "src/models/run_unsw_phase9_final_holdout.py:283–508; tools/p21_science_core.py"
+  },
+  {
+    "scene": 8,
+    "seconds": 30,
+    "title": "Macro-F1 và MCC bổ sung góc nhìn khác nhau",
+    "speech": "Macro-F1 cho hai lớp trọng số bằng nhau; MCC dùng cả TN/FP/FN/TP. Precision Attack = TP/(TP+FP); Recall = TP/(TP+FN). FPR = FP/(TN+FP); FNR = FN/(TP+FN). Attack là lớp dương. Accuracy che được lỗi khi phân bố lớp đổi.",
+    "events": [],
+    "bg": "F8F5EE",
+    "tag": "VẤN ĐÁP / A08",
+    "source": "V6 §3.4; final_metrics.csv"
+  },
+  {
+    "scene": 8,
+    "seconds": 30,
+    "title": "Đọc CI của hiệu số; không suy ra tương đương",
+    "speech": "CI 95% paired bootstrap của chênh Macro-F1/MCC chứa 0: chưa thấy khác biệt rõ theo phép đo đó. Không phải kiểm định tương đương. McNemar đo đúng/sai tổng thể, không trực tiếp Macro-F1. Bootstrap hàng dữ liệu không ước lượng biến thiên huấn luyện.",
+    "events": [],
+    "bg": "F8F5EE",
+    "tag": "VẤN ĐÁP / A09",
+    "source": "V6 §3.4, §4.2, §5.1"
+  },
+  {
+    "scene": 8,
+    "seconds": 30,
+    "title": "Rủi ro phụ thuộc đơn vị chi phí đã chọn",
+    "speech": "Trên official TEST cố định, L = FP + r FN, ΔL(Stack−RF)=−142+118r. Khi r>142/118≈1,2034, RF42 có L thấp hơn Stacking42 trong đúng cặp này. Chưa suy ra RF42 tối ưu hơn mọi mô hình hoặc chi phí SOC thực.",
+    "events": [],
+    "bg": "F8F5EE",
+    "tag": "VẤN ĐÁP / A10",
+    "source": "V6 §5.1; final_metrics.csv"
+  },
+  {
+    "scene": 8,
+    "seconds": 30,
+    "title": "Cân bằng Normal giải thích hướng thay đổi lỗi",
+    "speech": "Normal là lớp ít mẫu trong TRAIN. P21 class_weight=balanced ưu tiên Normal hơn nên giảm FPR, tăng FNR quan sát được. A2−A0: −3,1643 đpp FPR / +1,7881 đpp FNR; oversample: −2,2089 / +1,1680 đpp. Không chọn lại ngưỡng từ kết quả này.",
+    "events": [],
+    "bg": "F8F5EE",
+    "tag": "VẤN ĐÁP / A11",
+    "source": "V6 §4.7.4; P21 aggregate.json"
+  },
+  {
+    "scene": 8,
+    "seconds": 30,
+    "title": "Khả năng tái dựng khác khả năng triển khai",
+    "speech": "Chưa. Mã hiện là pipeline offline. P15 tái dựng theo cấu hình, không chứng minh bitwise artifact lịch sử. Chưa đo traffic mới, drift, tải phục vụ hay tổn thất SOC. Cần đánh giá ngoài, calibration/threshold trên train-validation mới và đo latency toàn pipeline.",
+    "events": [],
+    "bg": "F8F5EE",
+    "tag": "VẤN ĐÁP / A12",
+    "source": "V6 §3.5, §5.4–5.5"
+  }
+]

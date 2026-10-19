@@ -1,0 +1,29 @@
+--- V6/chapters/results_discussion_revision_v4_2026_10_19.tex
++++ V7/chapters/results_discussion_revision_v4_2026_10_19.tex
+@@ -16,7 +16,7 @@
+ \section{Kết quả trên official holdout}
+ \label{sec:ket-qua-official}
+ 
+-Bảng~\ref{tab:ket-qua-official} cho thấy cả ba pipeline phát hiện phần lớn mẫu Attack nhưng vẫn gán nhầm hơn một phần tư số mẫu Normal. Chênh lệch giữa RF-42 và Stacking-42 nhỏ theo Macro-F1 và MCC, trong khi hai loại lỗi thay đổi theo hướng đối nghịch: Stacking giảm FP 142 mẫu, từ 10\,003 xuống 9\,861, nhưng tăng FN 118 mẫu, từ 734 lên 852. Khi chưa có hàm chi phí vận hành để quy đổi cảnh báo giả và bỏ sót thành cùng một thang đo, kết quả này không xác định được cấu hình phù hợp hơn cho mọi bối cảnh sử dụng.
++Bảng~\ref{tab:ket-qua-official} cho thấy cả ba pipeline phát hiện phần lớn mẫu Attack nhưng vẫn gán nhầm hơn một phần tư số mẫu Normal. Chênh lệch giữa RF-42 và Stacking-42 nhỏ theo Macro-F1 và MCC, trong khi hai loại lỗi thay đổi theo hướng đối nghịch: Stacking giảm FP 142 mẫu, từ 10\,003 xuống 9\,861, nhưng tăng FN 118 mẫu, từ 734 lên 852. Chưa có hàm chi phí vận hành để quy đổi hai loại lỗi về cùng thang đo. Vì vậy, kết quả này chưa xác định được cấu hình phù hợp hơn cho mọi bối cảnh sử dụng.
+ 
+ \begin{table}[htbp]
+ \centering
+@@ -81,7 +81,7 @@
+ \section{Chi phí quan sát trong lần chạy lịch sử}
+ \label{sec:chi-phi}
+ 
+-Bảng~\ref{tab:chi-phi} đối chiếu thời gian huấn luyện, thời gian suy luận trung bình theo lô và dung lượng mô hình ước tính trong lần thực nghiệm ban đầu. Các con số cho thấy Stacking cần nhiều thời gian huấn luyện hơn RF-42 trong lần chạy đó, còn RF-17 có thời gian và kích thước thấp hơn. Chúng mô tả các cấu hình và môi trường lịch sử cụ thể; không phải benchmark lặp lại trên thiết bị triển khai.
++Bảng~\ref{tab:chi-phi} đối chiếu thời gian huấn luyện, thời gian suy luận trung bình theo lô và dung lượng mô hình ước tính trong lần thực nghiệm ban đầu. Các con số cho thấy Stacking cần nhiều thời gian huấn luyện hơn RF-42 trong lần chạy đó, còn RF-17 có thời gian và kích thước thấp hơn. Các số đo chỉ mô tả những cấu hình trong môi trường lịch sử đó; đây chưa phải benchmark lặp lại trên thiết bị triển khai.
+ 
+ \begin{table}[htbp]
+ \centering
+@@ -110,7 +110,7 @@
+ \section{Sai số theo họ tấn công}
+ \label{sec:attack-family-error}
+ 
+-Phân tích hậu nghiệm theo họ nhãn thật làm rõ khác biệt mà chỉ số tổng thể gộp lại. Trong số 6\,062 mẫu Fuzzers, Stacking-42 bỏ sót 754 mẫu, nhiều hơn RF-42 (621); với Generic, số bỏ sót của Stacking thấp hơn (14 so với 57). Bảng~\ref{tab:attack-family} mở rộng đối chiếu tới đủ chín nhóm Attack và cả ba pipeline. FNR và số FN được nêu trong Bảng~\ref{tab:attack-family}, còn khoảng tin cậy Wilson 95\% được tách riêng tại Bảng~\ref{tab:attack-family-wilson} để bảo đảm kích thước chữ khi in khổ A4.
++Phân nhóm theo nhãn Attack thật sau dự đoán cho thấy những khác biệt bị gộp trong chỉ số tổng thể. Trong số 6\,062 mẫu Fuzzers, Stacking-42 bỏ sót 754 mẫu, nhiều hơn RF-42 (621); với Generic, số bỏ sót của Stacking thấp hơn (14 so với 57). Bảng~\ref{tab:attack-family} mở rộng đối chiếu tới đủ chín nhóm Attack và cả ba pipeline. FNR và số FN được nêu trong Bảng~\ref{tab:attack-family}, còn khoảng tin cậy Wilson 95\% được tách riêng tại Bảng~\ref{tab:attack-family-wilson} để bảo đảm kích thước chữ khi in khổ A4.
+ 
+ \begin{table}[htbp]\centering
+ \small\renewcommand{\arraystretch}{1.30}

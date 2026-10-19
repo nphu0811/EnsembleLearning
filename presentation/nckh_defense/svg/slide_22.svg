@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 960 540">
+<rect width="960" height="540" fill="white"/>
+<text x="43.199999999999996" y="75.6" font-family="Aptos,Arial,sans-serif" font-size="36.0" font-weight="700" fill="#0D3560">Diversity là điều kiện cần xem xét, chưa đủ</text>
+<text x="41.76" y="516.1600000000001" font-family="Aptos,Arial,sans-serif" font-size="10.0" font-weight="400" fill="#526A81">Phụ lục vấn đáp · src/models/run_unsw_ensemble_phase7_2.py; V6 §3.3, §4.5</text>
+<text x="871.1999999999999" y="516.0" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#526A81">22</text>
+<line x1="43.199999999999996" y1="488.16" x2="915.84" y2="488.16" stroke="#1769AA"/>
+<text x="61.199999999999996" y="178.20000000000002" font-family="Aptos,Arial,sans-serif" font-size="27.0" font-weight="700" fill="#1769AA">Vì sao chọn LR, DT và RF; AdaBoost ở đâu?</text>
+<text x="61.199999999999996" y="259.0" font-family="Aptos,Arial,sans-serif" font-size="25.0" font-weight="400" fill="#0D3560">LR làm mốc tuyến tính; DT học quy tắc phi tuyến; RF giảm phương sai bằng nhiều cây. AdaBoost là đối chiếu boosting ở development. Hard/Soft Voting không hơn RF về Macro-F1 development; không mang Voting thành kết quả TEST cuối.</text>
+<text x="61.199999999999996" y="462.40000000000003" font-family="Aptos,Arial,sans-serif" font-size="16.0" font-weight="400" fill="#526A81">Trả lời cốt lõi trong 15–25 giây; chỉ mở khi hội đồng hỏi.</text>
+<text x="770.4" y="20.64" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#1769AA">Về kết luận</text>
+</svg>

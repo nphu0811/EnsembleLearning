@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 960 540">
+<rect width="960" height="540" fill="white"/>
+<text x="43.199999999999996" y="75.6" font-family="Aptos,Arial,sans-serif" font-size="36.0" font-weight="700" fill="#0D3560">Chọn mô hình bằng bằng chứng và chi phí lỗi</text>
+<text x="41.76" y="516.1600000000001" font-family="Aptos,Arial,sans-serif" font-size="10.0" font-weight="400" fill="#526A81">Nguồn: báo cáo V6, chương 3–5.</text>
+<text x="871.1999999999999" y="516.0" font-family="Aptos,Arial,sans-serif" font-size="12.0" font-weight="400" fill="#526A81">20</text>
+<line x1="43.199999999999996" y1="488.16" x2="915.84" y2="488.16" stroke="#1769AA"/>
+<text x="61.199999999999996" y="192.0" font-family="Aptos,Arial,sans-serif" font-size="30.0" font-weight="700" fill="#1769AA">Đối chiếu có truy vết</text>
+<text x="61.199999999999996" y="243.6" font-family="Aptos,Arial,sans-serif" font-size="24.0" font-weight="400" fill="#0D3560">Đối chứng matched · Chi phí chọn biến · Đánh đổi FP/FN</text>
+<text x="61.199999999999996" y="331.0" font-family="Aptos,Arial,sans-serif" font-size="25.0" font-weight="400" fill="#526A81">Giới hạn: selection bias lịch sử;</text>
+<text x="61.199999999999996" y="362.0" font-family="Aptos,Arial,sans-serif" font-size="25.0" font-weight="400" fill="#526A81">chưa validation ngoài, chưa triển khai IDS trực tiếp.</text>
+<text x="61.199999999999996" y="449.8" font-family="Aptos,Arial,sans-serif" font-size="25.0" font-weight="700" fill="#0D3560">Mô hình phù hợp phải kiểm soát được cái giá của sai lầm.</text>
+<text x="61.199999999999996" y="479.0" font-family="Aptos,Arial,sans-serif" font-size="11.0" font-weight="400" fill="#526A81">A1</text>
+<text x="126.72" y="479.0" font-family="Aptos,Arial,sans-serif" font-size="11.0" font-weight="400" fill="#526A81">A2</text>
+<text x="192.24" y="479.0" font-family="Aptos,Arial,sans-serif" font-size="11.0" font-weight="400" fill="#526A81">A3</text>
+<text x="257.76" y="479.0" font-family="Aptos,Arial,sans-serif" font-size="11.0" font-weight="400" fill="#526A81">A4</text>
+<text x="323.28000000000003" y="479.0" font-family="Aptos,Arial,sans-serif" font-size="11.0" font-weight="400" fill="#526A81">A5</text>
+<text x="388.7999212598425" y="479.0" font-family="Aptos,Arial,sans-serif" font-size="11.0" font-weight="400" fill="#526A81">A6</text>
+<text x="454.32" y="479.0" font-family="Aptos,Arial,sans-serif" font-size="11.0" font-weight="400" fill="#526A81">A7</text>
+<text x="519.84" y="479.0" font-family="Aptos,Arial,sans-serif" font-size="11.0" font-weight="400" fill="#526A81">A8</text>
+<text x="585.36" y="479.0" font-family="Aptos,Arial,sans-serif" font-size="11.0" font-weight="400" fill="#526A81">A9</text>
+<text x="650.8799212598425" y="479.0" font-family="Aptos,Arial,sans-serif" font-size="11.0" font-weight="400" fill="#526A81">A10</text>
+<text x="716.4" y="479.0" font-family="Aptos,Arial,sans-serif" font-size="11.0" font-weight="400" fill="#526A81">A11</text>
+<text x="781.92" y="479.0" font-family="Aptos,Arial,sans-serif" font-size="11.0" font-weight="400" fill="#526A81">A12</text>
+</svg>

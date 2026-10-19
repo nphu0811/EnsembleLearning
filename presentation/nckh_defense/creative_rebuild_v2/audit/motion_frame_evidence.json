@@ -1,0 +1,93 @@
+[
+  {
+    "hero": "network",
+    "slide_start": 20,
+    "times": [
+      3.5,
+      4.2,
+      5.0
+    ],
+    "mean_absolute_pixel_differences": [
+      0.7560585455246913,
+      1.0104793595679011
+    ]
+  },
+  {
+    "hero": "features",
+    "slide_start": 55,
+    "times": [
+      1,
+      5,
+      9
+    ],
+    "mean_absolute_pixel_differences": [
+      1.7266804912551441,
+      2.8241044560185187
+    ]
+  },
+  {
+    "hero": "stacking",
+    "slide_start": 150,
+    "times": [
+      5,
+      5.6,
+      6.4
+    ],
+    "mean_absolute_pixel_differences": [
+      0.216494341563786,
+      0.4930055619855967
+    ]
+  },
+  {
+    "hero": "FP",
+    "slide_start": 190,
+    "times": [
+      3.4,
+      4.0,
+      4.8
+    ],
+    "mean_absolute_pixel_differences": [
+      1.5334637024176954,
+      2.0811374742798354
+    ]
+  },
+  {
+    "hero": "FN",
+    "slide_start": 210,
+    "times": [
+      10,
+      12.7,
+      14.5
+    ],
+    "mean_absolute_pixel_differences": [
+      2.866364615483539,
+      1.9789639596193416
+    ]
+  },
+  {
+    "hero": "P21",
+    "slide_start": 235,
+    "times": [
+      1,
+      4,
+      8
+    ],
+    "mean_absolute_pixel_differences": [
+      0.7414748906893004,
+      1.2628793724279836
+    ]
+  },
+  {
+    "hero": "cost",
+    "slide_start": 310,
+    "times": [
+      2,
+      9,
+      16
+    ],
+    "mean_absolute_pixel_differences": [
+      3.308090117026749,
+      3.5109710969650205
+    ]
+  }
+]

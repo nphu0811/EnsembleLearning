@@ -1,0 +1,46 @@
+[
+  {
+    "slide": 3,
+    "transcript": " Nhóm dùng UNF-DAP, NB-15, hơn 175,000 dòng hướng luyện và 82,000 dòng kiểm thử chính thức.  Nhóm muốn biết vô tình và staccin có tốt hơn mô hình tham chíu ràng đồng 4.0."
+  },
+  {
+    "slide": 4,
+    "transcript": " Đây là TPP Linh ngoại tuyến trong mãn ngùng.  Nhóm lại mãi định danh, nhảm và tên nhóm tấn công khỏi đầu vào, dựa 42 đặt trưng gốc.  Biến phân loại được mãi hóa, hồi quay logistic có thêm trụng hóa.  Các phép biến đổi phải học tham số từ phần húng luyện tương ứng."
+  },
+  {
+    "slide": 8,
+    "transcript": " Vô tinh gục đầu ra của ba mô hình theo lượt của định.  Hắc vô tinh lấy đa số phíu, số vô tinh lấy trùng bình sát xuất.  Các mô hình có thách học khác nhau,  nhưng nếu cùng sai ở những bạn ghi khó,  thách vụp vẫn có thể giữ nguyên lỗi."
+  },
+  {
+    "slide": 9,
+    "transcript": " Ta kênh dùng hồi quý logistic ở tầng cuối.  Tầng này học tích gục từ dự đoán ngoài phâu.  Sau đó, môi hình cơ sở được học lại trên dự liệu hướng liện để dự đoán bản ghê mới.  Ngoài phâu phục vụ hướng liện tầng cuối, đừng đang sáng mên hòa lúc suy lượng."
+  },
+  {
+    "slide": 10,
+    "transcript": " Trên tập kiểm thử chính thức, macro F1 của 20 hình đều gần không phải 863.  Tà tiên chỉ nhỉnh hơn rất ít, còn MSEC thấp hơn một chút.  Hoảng tinh kệ của cả 2 hiệu số đều chứ số không.  Chưa có bằng chính trỏ rằng, Tà tiên vượt rồi."
+  },
+  {
+    "slide": 11,
+    "transcript": " về cảnh báo giả, răn đôn phó rết báo nhờ 10.000 không trăm lệ ba bản kỳ bình thường.  Tà kinh còn 9.861 mức giảm là 142,  nhưng trên cùng tập kiểm thử, đầy mới chỉ là 1 phía của kết quả."
+  },
+  {
+    "slide": 12,
+    "transcript": " Ở phía còn lại, số bản ghê tính công bị bỏ sóc tăng từ 734 lên 852.  Tức là thêm 118.  Nhóm những mạnh số bản ghê, vì đây chưa phải 118 sự cố độc lập trong mạng thực.  Lúc này, câu hỏi không còn là mua hình nào có điểm nhỉnh hơn,  mà là việc giảm cảnh báo dạ có đáng với phần bỏ sóc tăng thêm hay không."
+  },
+  {
+    "slide": 13,
+    "transcript": " nhóm bộ xung P21 để kiểm tra có đối chứng.  Nam sích hướng luệng mỗi sích dùng 60.000 dòng phích.  Nam nhánh gồm rừng 42 biến, rừng 17 biến, chồng số lớp, lấy mẫu bộ xung và Stagen Lighter.  Tất cả dùng chung 1 và Lida Tino của định từ trên, không phải 5 tập kiểm thử độc lập."
+  },
+  {
+    "slide": 14,
+    "transcript": " Trong P21, RANDOM FODET LIGHTER vẫn có MACRO F1 trong bình nhỉnh hơn STACHIN LIGHTER.  Rừng 17 biến học nhanh hơn sau khi trọn biến.  Nhưng cộng bước trọn, thời gian lên khoảng 300 mười dây, cao hơn 244 mũ dây của rừng 42 biến.  Chức lượng giữ đoán cũng giảm.  Vì vậy phải tính cả bước trọn biến."
+  },
+  {
+    "slide": 15,
+    "transcript": " Trong P21, tăng trọng số lớp và lấy mẫu bộ sôn đều giảm tỷ lệ tảnh báo giả, nhưng tăng tỷ lệ bỏ xót.  Bình thường mới là lớp ích mẫu trong trên này.  Căng thiệt tương bằng vì thế ư tình lớp bình thường hơn.  Đây là hướng dịch chuyển lỗi trong các cố hình đã thử, không có nghĩa tương bằng lớp luôn có 2."
+  },
+  {
+    "slide": 16,
+    "transcript": " Nhóm giả định 1 tảnh báo giả tốn 1 đơn vị,  còn 1 lần bỏ sóc tốn Ezra đơn vị.  Với dự đoán kiểm thử lịch sử, 2 mua hình hòa nhau khi Ezra khoảng 1.2.  Khi bỏ sóc đắc hơn mức này,  Rang đồng 4Z có tụng thức thấp hơn starting.  Đây là giả định để độc thức quả,  chưa phải thiệt hại đó tại Trung Tâm Vận hành."
+  }
+]
