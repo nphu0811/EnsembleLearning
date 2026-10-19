@@ -1,5 +1,16 @@
 # Ensemble Learning for Network Intrusion Detection
 
+## Dùng file nào? — Tên rõ nghĩa, không cần nhớ mã Phase
+
+- **Báo cáo NCKH đã được người dùng duyệt về nội dung:** [PDF V7, 49 trang](presentation/nckh_defense/creative_rebuild_v2/Bao_cao_NCKH_EnsembleLearning_REVISION_V7.pdf). [Nguồn XeLaTeX và log biên tập](presentation/nckh_defense/creative_rebuild_v2/); bản V6 và các PDF phiên bản trước được giữ để đối chiếu.
+- **Kịch bản bảo vệ:** [Kịch bản 6 phút](presentation/nckh_defense/script_first_v3/KICH_BAN_THUYET_TRINH_6_PHUT_V7.md) và [nội dung 10 slide lấy từ PDF](presentation/nckh_defense/script_first_v3/final_10_slide_v1/CONTENT_PACK_VA_KICH_BAN_10_SLIDE.md).
+- **PowerPoint đang cần sửa lỗi trước khi chốt:** [Bản 10 slide](presentation/nckh_defense/script_first_v3/final_10_slide_v1/NCKH_Ensemble_IDS_10_Slides_Final.pptx) đã từng bật hộp thoại Microsoft PowerPoint **Repair** trên máy người dùng. Không xóa các [bản trình chiếu dự phòng](presentation/nckh_defense/creative_rebuild_v2/) trước khi bản mới mở an toàn.
+- **Video luyện tập:** [Bản 6 phút có giọng Neural](presentation/nckh_defense/script_first_v3/final_10_slide_v1/NCKH_Ensemble_IDS_10_Slides_Preview_NeuralVoice.mp4). MP4 là bản dựng mô phỏng hiệu ứng, **không phải quay trực tiếp** những animation có thể gây lỗi của PowerPoint.
+- **Hướng dẫn dọn máy an toàn:** [Biên bản dọn Git](.research_memory/SAFE_PRESENTATION_CLEANUP_2026_10_19.md) và `python -X utf8 tools/clean_local_workspace_safe.py --dry-run`. Không đổi tên hoặc xóa kết quả train/TEST.
+- **Nghiên cứu/cơ sở kiểm chứng:** [Handoff nghiên cứu](.research_memory/HANDOFF.md), [Roadmap](docs/ROADMAP_CURRENT.md) và các file khoa học đúng tên gốc. Các mã `P15`, `P21`, `phase*` trong pipeline là định danh provenance, không phải chữ thừa để xóa hàng loạt.
+
+---
+
 Evidence-based binary Normal/Attack research on the official UNSW-NB15 split.
 This repository preserves frozen historical results and separately documented
 full-TRAIN reconstructed models. It is **not ready for final submission**.
