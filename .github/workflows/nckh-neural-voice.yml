@@ -49,9 +49,19 @@ jobs:
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "presentation: deliver neural Vietnamese narration preview for ten slides"
           branch=$(git symbolic-ref --short HEAD)
-          git fetch origin "$branch"
-          git rebase "origin/$branch"
-          git push origin "HEAD:$branch"
+          published=false
+          for attempt in 1 2 3 4; do
+            if git push origin "HEAD:$branch"; then
+              published=true
+              break
+            fi
+            git fetch origin "$branch"
+            git rebase "origin/$branch"
+          done
+          if [ "$published" != true ]; then
+            echo "::error::Neural voice video was built but concurrent commits blocked safe publish"
+            exit 1
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
