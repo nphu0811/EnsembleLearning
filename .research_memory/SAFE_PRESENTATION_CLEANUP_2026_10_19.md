@@ -66,3 +66,18 @@ Six removed duplicate Markdown files save a further **40,779 bytes** in the work
 - **Total: 10 files, 78,327,979 bytes, about 74.70 MiB**, removed from latest checkout; all recoverable from Git history.
 - No bulk file/phase renames were done because every scientific output path must continue to match source, manifests and published experiments. User-friendly topic labels were added to existing root README instead of mutating scientific identities.
 
+
+## 2026-10-19 — Follow-up: remove superseded PDF exports
+
+The previous cleanup **incorrectly left obsolete published PDF binaries under `exports/`** despite user's explicit request. Corrected in commit `3dc7caa179ce1baf8441b426ae145a7f7a874c73`:
+
+- Deleted V2 (`exports/report_revision_v2_2026_10_17/Bao_cao_NCKH_EnsembleLearning_REVISION_V2.pdf`; 379,512 bytes).
+- Deleted V3 (`exports/report_revision_v3_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V3.pdf`; 411,326 bytes).
+- Deleted V4 (`exports/report_revision_v4_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V4.pdf`; 430,720 bytes).
+- Deleted V5 (`exports/report_revision_v5_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V5.pdf`; 426,545 bytes).
+
+Additional **1,648,103 bytes (~1.57 MiB)** removed from the HEAD checkout; recoverable from Git history. The original LaTeX report sources and printed QA documentation were **NOT deleted**. Corresponding V2–V5 builder workflows now have `workflow_dispatch` ONLY to prevent automatic recreation on subsequent pushes while retaining deliberate manual reproducibility.
+
+**Important deliberate hold, not a forgotten cleanup:** `exports/report_revision_v6_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V6.pdf` remains because the Creative V2/V7 source/QA/protected SHA maps directly reference its exact location/bytes. Likewise `exports/docx_export_2026_10_16/` contains unique source-preservation Markdown, 60-item SHA-256 manifest and diagnostics cited in research memory and release inventories. Deleting or moving these without a complete source/provenance migration would violate the user's explicit requirement to preserve the study's evidence. They are **NOT canonical submissions**; approved current prose report remains the 49-page V7 PDF under `presentation/nckh_defense/creative_rebuild_v2/`.
+
+No DATA, TRAIN/TEST, model file, predictor, trained output, results, protocol, metric or frozen research source path was modified. All historical commits remain fetchable.
