@@ -69,3 +69,10 @@ results/controlled_extensions/p21_train_only_*/progress.json
 results/controlled_extensions/p21_train_only_*/worker.stdout.log
 results/controlled_extensions/p21_train_only_*/worker.stderr.log
 results/controlled_extensions/p21_train_only_*/worker/*.joblib
+
+# Presentation-only intermediates (regenerable; never scientific TRAIN/TEST data)
+presentation/nckh_defense/intermediate/PowerPoint_native_silent.mp4
+presentation/nckh_defense/audio/narration.wav
+presentation/nckh_defense/audit/timing_test.mp4
+presentation/nckh_defense/script_first_v3/final_10_slide_v1/rendered/
+Bao_cao_NCKH_EnsembleLearning_REVISION_2026-10-17(1).pdf
