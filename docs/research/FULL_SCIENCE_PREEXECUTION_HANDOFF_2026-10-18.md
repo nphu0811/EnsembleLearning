@@ -21,7 +21,7 @@ Pilot evidence is **not a measurement of scientific effectiveness**. Four succes
 - `tools/p21_science_acceptance.py`: strict count reconciliation and paired-source identity checks; rejects partial arms and early TEST/tuning claims.
 - `tools/p21_science_aggregate.py`: requires exactly one valid success for **every** seed 1103,2207,3301,4409,5501, rejects cherry-picked duplicates, prints per-seed and paired contrasts with mean ± sample SD (descriptive).
 - `tools/p21_run_all_seeds.ps1`: Windows orchestrator with synthetic preflight, chronological per-seed run, **operator-invoked resume**; keeps failed attempts immutable and stops on resource failure.
-- `docs/research/P21_PRE_FULL_SCIENCE_GROUP_SAFE_CV_AMENDMENT_2026-10-18.md`: disclosed difference from original inner StratifiedKFold config.
+- `docs/research/PRE_FULL_SCIENCE_GROUP_SAFE_CV_AMENDMENT_2026-10-18.md`: disclosed difference from original inner StratifiedKFold config.
 
 This extension is **POST-HOC reused official TRAIN**, not a new independent TEST or preregistration of original P9. Three-way model/selector changes are controlled as predeclared; RQ1 stacking specifically uses grouped OOF inner CV per amendment rather than pilot's simple stratified fold.
 

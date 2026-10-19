@@ -5,7 +5,7 @@
   "local_session_date": "2026-10-19",
   "timezone": "Asia/Saigon",
   "phase": "P15_DONE_SCOPED_RECONSTRUCTION;P16_AUDIT_SCOPED_WITH_OPEN_PRINT_FINDINGS;P17_V2_47P_QA_PASS_AUTHOR_REVIEW_PENDING;P18_P19_PARTIAL;P20_PRE_REVIEW_QA_PASS_WITH_ERRATUM_FINAL_DEFERRED;P21_RF42_PILOT_PASS_RESOURCE_SMOKE_ONLY;P21_REMAINING_PILOTS_PENDING;P21_SELECTOR17_PILOT_PASS_RESOURCE_SMOKE_ONLY;P21_RQ5_PILOTS_PENDING;DEFENSE_PPTX_VIDEO_360S_ARTIFACT_QA_PASS;V7_HUMANIZED_SOURCE_INVARIANTS_PASS;CREATIVE_V2_NATIVE_TIMELINE_ARTIFACT_QA_PASS",
-  "current_task": "CREATIVE_V2_DELIVERED_ARTIFACT_QA_PASS_WITH_REFERENCE_ACCESS_AND_TTS_LISTENING_LIMITS",
+  "current_task": "APPROVED_CLEANUP_VALIDATED_READY_TO_COMMIT_PUSH",
   "completed_tasks": [
     "BOOT-01",
     "BOOT-02_STRUCTURAL",
@@ -2356,9 +2356,9 @@
       "bytes": 13714883
     }
   ],
-  "next_action": "Open presentation/nckh_defense/NCKH_Ensemble_IDS_Preview.mp4 and rehearse with actual presenters; use hidden slides21–32 for Q&A. Do not retrain/tune from these findings.",
+  "next_action": "Commit and push codex/workspace-cleanup-20261019, verify remote tip; main merge requires final user confirmation.",
   "last_gate_status": "DEFENSE_ARTIFACT_48_OF_48_PASS;INDEPENDENT_STATIC_QA_PASS;HUMAN_VOICE_AND_PROJECTOR_NOT_TESTED",
-  "resume_command": "python presentation/nckh_defense/validate_delivery.py",
+  "resume_command": "git status --short; read cleanup_audit/06_CLEANUP_RESULTS.md and PUBLICATION_RECEIPT.json if present",
   "training_performed_this_session": false,
   "prediction_performed_this_session": false,
   "original_training_environment": "UNKNOWN",
@@ -2392,5 +2392,27 @@
       "No human audio listening; ASR imperfect for English terms; TTS sample needs presenter review"
     ],
     "release_validation": "presentation/nckh_defense/creative_rebuild_v2/audit/release_validation.json"
+  },
+  "previous_task_before_cleanup": "CREATIVE_V2_DELIVERED_ARTIFACT_QA_PASS_WITH_REFERENCE_ACCESS_AND_TTS_LISTENING_LIMITS",
+  "workspace_cleanup_audit": {
+    "date": "2026-10-19",
+    "status": "EXECUTED_VALIDATED_PENDING_PUBLICATION",
+    "summary": "cleanup_audit/summary.json",
+    "plan": "cleanup_audit/05_DELETION_PLAN.md",
+    "deleted": 4,
+    "moved": 0,
+    "renamed": 53,
+    "committed": false,
+    "pushed": false,
+    "safe_cache_delete_candidates": 0,
+    "review_pdf_paths": 0,
+    "scientific_results_modified": false,
+    "workspace_preference": "GON single root, all work groups visible",
+    "deleted_manifest": "cleanup_audit/DELETED_FILES_MANIFEST.json",
+    "rename_manifest": "cleanup_audit/RENAMED_FILES_MANIFEST.json",
+    "validation": "cleanup_audit/VALIDATION_SUMMARY.json",
+    "science_hashes_rechecked": 1059,
+    "unit_tests_passed": 24,
+    "main_merge_approved": false
   }
 }

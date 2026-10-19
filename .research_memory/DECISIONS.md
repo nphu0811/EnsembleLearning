@@ -82,3 +82,11 @@ Use actual PowerPoint16COM for native Morph and export; no OfficeCLI binary fals
 
 ## 2026-10-19 Creative V2
 Native PowerPoint MainSequence chosen over Morph/template engines: internal packet paths/scale/reveals, same engine renders PPTX and video. Historical TEST/P21 remain separated. Language-only V7 preserved source numeric/protected-block invariants. Lollypop blocked; no bypass or invented reference observation. TTS ASR not equivalent to human listening. Original V6/deck/video/frozenresults hashes preserved.
+
+
+## 2026-10-19 — Workspace preference and cleanup boundary
+Latest user accepts workspaces: expand GON to show all work groups under one physical NCKH root; keep full multi-root view optional. File deletion, archival and physical phase renames remain unapproved. Retain every model/train/TEST/result/provenance identity and presentation backup. SHA equality alone is not deletion permission. Stop at cleanup_audit/05_DELETION_PLAN.md.
+
+
+## 2026-10-19 approved rename execution
+User deletion/rename approval supersedes prior dry-run pause. Renamed 53 human docs and current callers, retained all scientific path identities and frozen evidence bytes. Use explicit relocation ledger for old document references; historical expected SHA values never silently changed. Correct only Windows fixture EOL generation; scientific JSON and validators unchanged. Push cleanup branch; main still needs final diff approval.

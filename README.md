@@ -1,8 +1,10 @@
 # Ensemble Learning for Network Intrusion Detection
 
-> **Mở dự án gọn như lúc đầu:** [Bản đồ thư mục tiếng Việt](00_BAN_DO_DU_AN.md) · [VS Code — 5 thư mục chính](NCKH_GON.code-workspace) · [VS Code — tất cả thư mục phân loại](NCKH_DAY_DU.code-workspace). Đây chỉ là thay đổi Explorer; **không đổi đường dẫn dữ liệu/model/results/code train**.
+> **Mở dự án gọn như lúc đầu:** [Bản đồ thư mục tiếng Việt](00_BAN_DO_DU_AN.md) · [VS Code — gọn, đầy đủ nhóm công việc](NCKH_GON.code-workspace) · [VS Code — tất cả thư mục phân loại](NCKH_DAY_DU.code-workspace). Đây chỉ là thay đổi Explorer; **không đổi đường dẫn dữ liệu/model/results/code train**.
 
 ## Dùng file nào? — Tên rõ nghĩa, không cần nhớ mã Phase
+
+[Tài liệu theo tên công việc](docs/CURRENT_DOCUMENTS.md) · [Kết quả cleanup](cleanup_audit/06_CLEANUP_RESULTS.md). 53 tài liệu đã bỏ mã phase khỏi tên; định danh dữ liệu/model/kết quả khoa học vẫn giữ nguyên.
 
 - **Báo cáo NCKH đã được người dùng duyệt về nội dung:** [PDF V7, 49 trang](presentation/nckh_defense/creative_rebuild_v2/Bao_cao_NCKH_EnsembleLearning_REVISION_V7.pdf). [Nguồn XeLaTeX và log biên tập](presentation/nckh_defense/creative_rebuild_v2/); bản V6 và các PDF phiên bản trước được giữ để đối chiếu.
 - **Kịch bản bảo vệ:** [Kịch bản 6 phút](presentation/nckh_defense/script_first_v3/KICH_BAN_THUYET_TRINH_6_PHUT_V7.md) và [nội dung 10 slide lấy từ PDF](presentation/nckh_defense/script_first_v3/final_10_slide_v1/CONTENT_PACK_VA_KICH_BAN_10_SLIDE.md).
@@ -26,15 +28,15 @@ Read [current handoff](.research_memory/HANDOFF.md),
 
 - Official TRAIN has 175,341 rows; official TEST has 82,332 rows. Normal=0,
   Attack=1. Final frozen candidates RF42, Stacking42 and RF17 use threshold 0.5.
-- [P15 closure](docs/research/P15_FULL_TRAIN_RECONSTRUCTION_SCOPED_CLOSURE_2026-10-17.md)
+- [P15 closure](docs/research/FULL_TRAIN_RECONSTRUCTION_SCOPED_CLOSURE_2026-10-17.md)
   documents three reconstructed full-TRAIN artifacts and 69/69 author-host checks.
   These are not original historical artifacts. Original training environment and
   binary identity remain UNKNOWN. Model binaries stay local and are not needed
   for the read-only audits below. Do not rerun training to refresh status.
-- [P16 audit](docs/research/P16_COMPREHENSIVE_QA_2026-10-17.md) records saved-summary
+- [P16 audit](docs/research/COMPREHENSIVE_QA_2026-10-17.md) records saved-summary
   checks, the approved five-chapter 37-page PDF and six standalone alternatives.
   The approved PDF remains unchanged; print and snapshot-age findings stay open.
-- [P18 audit](docs/research/P18_CURRENT_REPORT_READING_BOUNDARIES_2026-10-17.md)
+- [P18 audit](docs/research/CURRENT_REPORT_READING_BOUNDARIES_2026-10-17.md)
   distinguishes verified metadata from actual reading. Full literature validation
   and research novelty are not established by DOI existence.
 
@@ -78,7 +80,7 @@ vector assets and PNGs are previews. No automated overwrite is allowed.
 Frozen builders are in `src/models/run_unsw_phase9_final_holdout.py`; the historical
 entry point can evaluate TEST and must not be casually rerun. The P15 supervisor
 imports only frozen constructors and was used under its documented TRAIN-only
-contract. Follow the [reconstruction closure](docs/research/P15_FULL_TRAIN_RECONSTRUCTION_SCOPED_CLOSURE_2026-10-17.md)
+contract. Follow the [reconstruction closure](docs/research/FULL_TRAIN_RECONSTRUCTION_SCOPED_CLOSURE_2026-10-17.md)
 and existing runbook for provenance, not as a request to launch another fit.
 Do not assign the historical TEST metrics to newly reconstructed binaries.
 
@@ -91,17 +93,17 @@ artifacts. They are historical software-smoke evidence, not approved release
 models. Their tracked presence remains an open release hygiene finding.
 The repository URL is `https://github.com/nphu0811/EnsembleLearning`; there is no
 confirmed archival DOI or final release tag. See
-[availability review](docs/research/P19_RELEASE_READINESS_2026-10-17.md).
+[availability review](docs/research/RELEASE_READINESS_2026-10-17.md).
 
 No FINAL_NCKH.zip, external panel endorsement, production IDS or live demo readiness
 is claimed. Administrative acceptance/signatures, proposal DOCX/PDF, defense slides
 and remaining scientific/release checks are distinct gates.
 
-The [P18 selected-section investigation](docs/research/P18_DEEP_METHODS_VERIFICATION_2026-10-17.md)
+The [P18 selected-section investigation](docs/research/DEEP_METHODS_VERIFICATION_2026-10-17.md)
 adds a seven-paper comparison with explicit full-text access/reading limits.
-The [safe P19 draft audit](docs/research/P19_SAFE_RELEASE_AUDIT_2026-10-17.md)
+The [safe P19 draft audit](docs/research/SAFE_RELEASE_AUDIT_2026-10-17.md)
 provides a local allowlist review ZIP and smoke-artifact inventory without deleting
 tracked files. This draft is INTERNAL_REVIEW_ONLY and not authorized for public
 release. Its manifests and checks are tracked; the ZIP and copied contents stay
-local. [P20 setup](defense/P20_REVIEW_PACKET_SETUP_2026-10-17.md) prepares evidence
+local. [P20 setup](defense/REVIEW_PACKET_SETUP_2026-10-17.md) prepares evidence
 and a rubric; the final reviewer panel remains DEFERRED.

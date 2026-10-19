@@ -33,7 +33,7 @@ No serialized **full-TRAIN** RF-17/RF-42/Stacking artifacts are present in this 
 
 Commit `ab88db8` tracked approximately 7,401 tree objects under `.venv-p15-local/` (about 97,727,898 bytes of tracked blobs). These files are installed environment dependencies, not scientific source/evidence. The `.gitignore` on subsequent main now includes `.venv-p15-local/`, **but adding an ignore pattern does not untrack existing files**.
 
-**DO NOT remotely delete tracked virtualenv files without preparing the laptop**: pulling a deletion commit can remove the author's tracked local venv files. To safely untrack, the author should run `git rm -r --cached -- .venv-p15-local` on the laptop, verify files still exist on disk, commit the staged index-only removal and push. See `docs/research/P15_GIT_VENV_SAFE_CLEANUP_2026-10-16.md`. This does not purge earlier public Git history; no history rewrite was performed or authorized.
+**DO NOT remotely delete tracked virtualenv files without preparing the laptop**: pulling a deletion commit can remove the author's tracked local venv files. To safely untrack, the author should run `git rm -r --cached -- .venv-p15-local` on the laptop, verify files still exist on disk, commit the staged index-only removal and push. See `docs/research/GIT_VENV_SAFE_CLEANUP_2026-10-16.md`. This does not purge earlier public Git history; no history rewrite was performed or authorized.
 
 ## Recommended next step
 

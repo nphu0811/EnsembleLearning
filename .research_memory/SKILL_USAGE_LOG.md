@@ -83,3 +83,17 @@ Read exact local officecli-pptx/morph-ppt/visual-ppt-builder/ppt-masterSKILL.md;
 
 ## 2026-10-19 Creative V2 — actual scope
 Humanizer3.1 read in full from blader/humanizer SKILL.md; snapshot audit/Humanizer_SKILL.md. Applied neutral factual file/embedded editing to38LaTeX passages and rewritten speech/Q&A, not AI detection. officecli-pptx local SKILL read; Gate3 independent screenshot reviewer used for29slides and fixes. morph-ppt base read, zeroMorph used inV2. PPTMaster animations/native guidance and VisualPPT RULES read; their engines not run. Browser skill read; built-in browser missingmodule/Chrome unavailable, Playwright fallback actual screenshots. Nature-polishing registry instruction read but no Nature operation claimed. Snapshot inherited surveys explicitly scoped as prior audit, not new executions.
+
+
+## 2026-10-19 — Read-only cleanup audit and GON view
+- Installed registry inspected: cleanup_audit/installed_skill_registry.json (70 entries in explicit skill roots). No Nature Skill execution claimed; no literature/statistical research requested.
+- superpowers:using-superpowers: C:/Users/admin/.codex/plugins/cache/openai-curated-remote/superpowers/6.4.2/skills/using-superpowers/SKILL.md and references/codex-tools.md loaded for tool/skill routing.
+- superpowers:verification-before-completion: exact sibling verification-before-completion/SKILL.md loaded; fresh protocol/five-seed, workspace JSON and git diff checks recorded.
+- superpowers:brainstorming: exact sibling brainstorming/SKILL.md loaded for bounded existing view change; intent reflected in chat, existing user authorization used for reversible workspace configuration.
+- officecli-pptx: C:/Users/admin/.codex/skills/officecli-pptx/SKILL.md loaded; inspection scope only (ZIP CRC/XML/slide/shape targets). No OfficeCLI execution, PPTX save/repair, native/visual QA or installed CLI claimed.
+- pdf: C:/Users/admin/.codex/plugins/cache/openai-primary-runtime/pdf/26.1015.12040/skills/pdf/SKILL.md loaded; PyMuPDF read-only parse/all-page text, not authoring/rendered visual QA. No source document edited.
+- Evidence: cleanup_audit/01–05, artifact_inspection.json, research_prechecks.json, workspace_checks.json, final_validation.json. Cleanup/deletion approval still pending.
+
+
+## Approved cleanup execution — 2026-10-19
+Loaded exact superpowers6.4.2 writing-plans, using-git-worktrees, executing-plans and verification-before-completion SKILL.md; followed existing user instruction to use a cleanup branch in-place, no dataset/environment copies. Plan: cleanup_audit/EXECUTION_PLAN.md. Loaded systematic-debugging/SKILL.md for actual Windows CRCRLF fixture failure, diagnosed before single-line fix and 14/14 rerun. Executing-plans requested independent final review; cleanup_review performed read-only review and found no actionable issue. No Nature Skill used. Evidence: rename/deletion manifests, VALIDATION_SUMMARY.json, 06_CLEANUP_RESULTS.md. Main publication approval remains separate.

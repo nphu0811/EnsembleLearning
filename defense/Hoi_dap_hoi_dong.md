@@ -42,13 +42,13 @@ Evidence: `src/analysis/close_original_phase11.py`, `results/final_evaluation/un
 
 Chuỗi thực nghiệm được kiểm chứng hiện tại là binary. Các bảng theo attack_cat phân tích mẫu tấn công nào binary detector bỏ sót; đó không phải multiclass precision/recall hay mô hình nhận diện đúng từng attack category. Chưa có bằng chứng thực nghiệm để kết luận về chất lượng multiclass model.
 
-Evidence: `docs/research/PHASE14_ERROR_ANALYSIS_CLOSURE.md`.
+Evidence: `docs/research/ERROR_ANALYSIS_CLOSURE.md`.
 
 ## 8. Tập dữ liệu và cách chia được xác định thế nào?
 
 Nghiên cứu dùng official preset TRAIN175.341 dòng và TEST82.332 dòng của UNSW-NB15. Ba CSV local khớp hash lịch sử; đây là kiểm định local integrity, không xác nhận URL tải gốc hoặc checksum do nhà cung cấp công bố. Không tự tạo random split mới sau khi xem TEST.
 
-Evidence: `results/reproducibility/resume_2026_10_16/p15_03_dataset.json`, `docs/research/P15_03_DATASET_PROVENANCE.md`.
+Evidence: `results/reproducibility/resume_2026_10_16/p15_03_dataset.json`, `docs/research/DATASET_PROVENANCE.md`.
 
 ## 9. Có thể khẳng định hoàn toàn không leakage không?
 

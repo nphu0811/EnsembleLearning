@@ -13,7 +13,7 @@ The Nature audit scripts and Poppler are documented external dependencies.
 ## Data availability draft, separate from the locked manuscript
 
 This research uses the official UNSW-NB15 TRAIN/TEST files. Their original source
-and dataset publication are documented in `docs/research/P15_03_DATASET_PROVENANCE.md`
+and dataset publication are documented in `docs/research/DATASET_PROVENANCE.md`
 and the checked U01 bibliography record (DOI 10.1109/MilCIS.2015.7348942). Raw data
 are not included in this new review bundle. Saved historical summary tables,
 statistical outputs, source-to-display maps and QA reports are present in this

@@ -1,0 +1,161 @@
+{
+  "status": "PASS_SCOPED_CLEANUP",
+  "unexpected_missing_files": [],
+  "unexpected_scientific_changes": [],
+  "immutable_files_sha256_rechecked": 1059,
+  "allowlist_missing": [],
+  "python_ast_valid": [
+    "tools/p19_safe_review_draft.py",
+    "tools/resume_checkpoint_audit.py",
+    "tools/verify_document_renames.py",
+    "tests/test_p21_train_only_protocol.py"
+  ],
+  "git_diff_check_code": 0,
+  "git_cached_diff_check_code": 0,
+  "deleted_files_verified": [
+    "exports/report_revision_v2_2026_10_17/Bao_cao_NCKH_EnsembleLearning_REVISION_V2.pdf",
+    "exports/report_revision_v3_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V3.pdf",
+    "exports/report_revision_v4_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V4.pdf",
+    "exports/report_revision_v5_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V5.pdf"
+  ],
+  "deleted_paths_bytes_before": 1648103,
+  "deleted_paths_bytes_after": 0,
+  "removed_logical_file_bytes_measured": 1648103,
+  "renamed_count": 53,
+  "workspace_measurement_after": {
+    "files": 52146,
+    "logical_bytes_including_git_and_audit": 4238729273,
+    "audit_logical_bytes": 39617825,
+    "baseline_snapshot_logical_bytes": 4193776701,
+    "note": "Snapshot measurements occur at different stages; audit outputs and Git metadata add bytes. Removed PDF bytes are not the net workspace decrease or physical free-space change."
+  },
+  "archive_count": 0,
+  "pptx_desktop_runtime_this_session": "NOT_VERIFIED; all existing presentation binaries retained byte-for-byte",
+  "training_performed": false,
+  "prediction_performed": false,
+  "official_test_evaluated": false,
+  "git_history_rewritten": false,
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/verify_document_renames.py"
+      ],
+      "exit_code": 0,
+      "result_tail": "{\n  \"status\": \"PASS\",\n  \"documents_verified\": 53,\n  \"live_reference_files_checked\": 95,\n  \"failures\": [],\n  \"scientific_path_remapping\": false,\n  \"historical_hashes_rewritten\": false\n}\n"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/p21_protocol_validator.py"
+      ],
+      "exit_code": 0,
+      "result_tail": "\"pass\": true\n    },\n    {\n      \"id\": \"forbidden TEST/read and write boundaries\",\n      \"pass\": true\n    },\n    {\n      \"id\": \"claims not based on independent seed tests\",\n      \"pass\": true\n    },\n    {\n      \"id\": \"RQ2 paired same algorithm\",\n      \"pass\": true\n    },\n    {\n      \"id\": \"RQ5 predeclared paired interventions\",\n      \"pass\": true\n    },\n    {\n      \"id\": \"frozen_sha256:src/models/run_unsw_phase9_final_holdout.py\",\n      \"pass\": true\n    },\n    {\n      \"id\": \"frozen_git_lf_and_author_crlf_sha256:results/tuning/unsw_nb15/phase8_controlled/freeze_candidates.json\",\n      \"pass\": true\n    },\n    {\n      \"id\": \"frozen_git_lf_and_author_crlf_sha256:results/feature_selection/unsw_nb15/stage2/subsets/stage2_candidate_subsets.json\",\n      \"pass\": true\n    }\n  ],\n  \"raw_train_read\": false,\n  \"official_test_read\": false,\n  \"training_performed\": false,\n  \"metrics_calculated\": false\n}\n"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "tools/p21_verify_full_five_seed.py"
+      ],
+      "exit_code": 0,
+      "result_tail": "{\n  \"status\": \"PASS_FIVE_SEED_READ_ONLY_AUDIT\",\n  \"completed_seeds_verified\": 5,\n  \"arms_claimed\": 25,\n  \"official_test_opened_by_this_audit\": false,\n  \"metrics_recomputed_from_existing_counts\": true,\n  \"independent_external_validation\": false,\n  \"failures\": []\n}\n"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_p19_safe_review_paths.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "result_tail": "test_archive_traversal_and_absolute_paths_are_rejected (test_p19_safe_review_paths.ReleasePathTests.test_archive_traversal_and_absolute_paths_are_rejected) ... ok\ntest_restricted_artifacts_are_rejected (test_p19_safe_review_paths.ReleasePathTests.test_restricted_artifacts_are_rejected) ... ok\ntest_review_summary_and_approved_pdf_paths_are_allowed (test_p19_safe_review_paths.ReleasePathTests.test_review_summary_and_approved_pdf_paths_are_allowed) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_p20_review_evidence_paths.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "result_tail": "test_packet_relative_path_retains_containment (test_p20_review_evidence_paths.EvidencePaths.test_packet_relative_path_retains_containment) ... ok\ntest_rejects_escape_and_windows_absolute (test_p20_review_evidence_paths.EvidencePaths.test_rejects_escape_and_windows_absolute) ... ok\ntest_whitespace_normalization_does_not_change_numbers (test_p20_review_evidence_paths.EvidencePaths.test_whitespace_normalization_does_not_change_numbers) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.002s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_p20_anchor_erratum.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "result_tail": "test_changed_modelled_csv_or_copy_is_not_an_acceptable_erratum (test_p20_anchor_erratum.ReviewAnchorErratumTests.test_changed_modelled_csv_or_copy_is_not_an_acceptable_erratum) ... ok\ntest_exact_frozen_A_Q11_known_header_typo (test_p20_anchor_erratum.ReviewAnchorErratumTests.test_exact_frozen_A_Q11_known_header_typo) ... ok\ntest_missing_erratum_file_is_not_acceptable (test_p20_anchor_erratum.ReviewAnchorErratumTests.test_missing_erratum_file_is_not_acceptable) ... ok\ntest_wrong_reviewer_question_index_or_anchor_cannot_be_accepted (test_p20_anchor_erratum.ReviewAnchorErratumTests.test_wrong_reviewer_question_index_or_anchor_cannot_be_accepted) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.064s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_p21_train_only_protocol.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "result_tail": "inal_report_output) ... ok\ntest_reject_reused_global_stable17 (test_p21_train_only_protocol.P21TrainOnlyContractTests.test_reject_reused_global_stable17) ... ok\ntest_reject_split_and_group_leakage_policy_weakening (test_p21_train_only_protocol.P21TrainOnlyContractTests.test_reject_split_and_group_leakage_policy_weakening) ... ok\ntest_reject_train_to_test_path_switch (test_p21_train_only_protocol.P21TrainOnlyContractTests.test_reject_train_to_test_path_switch) ... ok\ntest_reject_training_without_explicit_opt_in (test_p21_train_only_protocol.P21TrainOnlyContractTests.test_reject_training_without_explicit_opt_in) ... ok\ntest_reject_unbalanced_resampling_on_validation_context (test_p21_train_only_protocol.P21TrainOnlyContractTests.test_reject_unbalanced_resampling_on_validation_context) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.004s\n\nOK\n"
+    }
+  ],
+  "test_count": 24,
+  "independent_review": "Read-only cleanup_review: no actionable correctness findings; science trees unchanged",
+  "legacy_checkpoint_audit": {
+    "manifest_matches": 547,
+    "manifest_entries": 566,
+    "preservation_matches": 262,
+    "preservation_entries": 282,
+    "interpretation": "Historical expectations remain unchanged. Mutable documentation hash differences from approved navigation changes and pre-existing metadata/absence findings remain visible; this is not a claim of full legacy hash PASS."
+  },
+  "p20_review_audit": {
+    "passed": 944,
+    "failed": 0,
+    "warnings": 1,
+    "local_only_skipped": 14,
+    "scope": "Existing reviewer anchor header discrepancy retained; no reviewer edited"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "user_approved": true,
+  "files": [
+    {
+      "path": "exports/report_revision_v2_2026_10_17/Bao_cao_NCKH_EnsembleLearning_REVISION_V2.pdf",
+      "absolute_path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\exports\\report_revision_v2_2026_10_17\\Bao_cao_NCKH_EnsembleLearning_REVISION_V2.pdf",
+      "bytes_before": 379512,
+      "bytes_after": 0,
+      "sha256_before": "5300f9de92a7fc3834294b015382acfff80c9f0384ef9d6a32419e2bf72b52f3",
+      "reason": "User-approved group B: obsolete V2-V5 PDF exports superseded by accepted V7; upstream already removed these files",
+      "replacement": "presentation/nckh_defense/creative_rebuild_v2/Bao_cao_NCKH_EnsembleLearning_REVISION_V7.pdf",
+      "replacement_sha256": "3579e41be58d24aee3807e000ffe6d762ebb857f1c588c1f0c503ef6f29cee0e",
+      "git_tracked_before": true,
+      "deletion_method": "Fast-forward cleanup branch from 72dd60d to existing origin/main 6d24244",
+      "upstream_deletion_commit": "3dc7caa179ce1baf8441b426ae145a7f7a874c73",
+      "restore_from_commit": "72dd60d669a40554e7c6e884413bb96f837b58ba"
+    },
+    {
+      "path": "exports/report_revision_v3_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V3.pdf",
+      "absolute_path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\exports\\report_revision_v3_2026_10_19\\Bao_cao_NCKH_EnsembleLearning_REVISION_V3.pdf",
+      "bytes_before": 411326,
+      "bytes_after": 0,
+      "sha256_before": "1377ce0a5356e5ad9bfa51f02e28d44f1154a241aa569dec6ac1ae233f52c4fb",
+      "reason": "User-approved group B: obsolete V2-V5 PDF exports superseded by accepted V7; upstream already removed these files",
+      "replacement": "presentation/nckh_defense/creative_rebuild_v2/Bao_cao_NCKH_EnsembleLearning_REVISION_V7.pdf",
+      "replacement_sha256": "3579e41be58d24aee3807e000ffe6d762ebb857f1c588c1f0c503ef6f29cee0e",
+      "git_tracked_before": true,
+      "deletion_method": "Fast-forward cleanup branch from 72dd60d to existing origin/main 6d24244",
+      "upstream_deletion_commit": "3dc7caa179ce1baf8441b426ae145a7f7a874c73",
+      "restore_from_commit": "72dd60d669a40554e7c6e884413bb96f837b58ba"
+    },
+    {
+      "path": "exports/report_revision_v4_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V4.pdf",
+      "absolute_path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\exports\\report_revision_v4_2026_10_19\\Bao_cao_NCKH_EnsembleLearning_REVISION_V4.pdf",
+      "bytes_before": 430720,
+      "bytes_after": 0,
+      "sha256_before": "7e8784d7b415eef5b94003440c8446e46c05b399f91ebde57917d0e2581eea98",
+      "reason": "User-approved group B: obsolete V2-V5 PDF exports superseded by accepted V7; upstream already removed these files",
+      "replacement": "presentation/nckh_defense/creative_rebuild_v2/Bao_cao_NCKH_EnsembleLearning_REVISION_V7.pdf",
+      "replacement_sha256": "3579e41be58d24aee3807e000ffe6d762ebb857f1c588c1f0c503ef6f29cee0e",
+      "git_tracked_before": true,
+      "deletion_method": "Fast-forward cleanup branch from 72dd60d to existing origin/main 6d24244",
+      "upstream_deletion_commit": "3dc7caa179ce1baf8441b426ae145a7f7a874c73",
+      "restore_from_commit": "72dd60d669a40554e7c6e884413bb96f837b58ba"
+    },
+    {
+      "path": "exports/report_revision_v5_2026_10_19/Bao_cao_NCKH_EnsembleLearning_REVISION_V5.pdf",
+      "absolute_path": "C:\\Users\\admin\\Documents\\ChatGPT\\NCKH\\exports\\report_revision_v5_2026_10_19\\Bao_cao_NCKH_EnsembleLearning_REVISION_V5.pdf",
+      "bytes_before": 426545,
+      "bytes_after": 0,
+      "sha256_before": "8e8c558e99501b2b8088332a1edbbc7c7331e6f48e5747b070c82749d31f7d4d",
+      "reason": "User-approved group B: obsolete V2-V5 PDF exports superseded by accepted V7; upstream already removed these files",
+      "replacement": "presentation/nckh_defense/creative_rebuild_v2/Bao_cao_NCKH_EnsembleLearning_REVISION_V7.pdf",
+      "replacement_sha256": "3579e41be58d24aee3807e000ffe6d762ebb857f1c588c1f0c503ef6f29cee0e",
+      "git_tracked_before": true,
+      "deletion_method": "Fast-forward cleanup branch from 72dd60d to existing origin/main 6d24244",
+      "upstream_deletion_commit": "3dc7caa179ce1baf8441b426ae145a7f7a874c73",
+      "restore_from_commit": "72dd60d669a40554e7c6e884413bb96f837b58ba"
+    }
+  ],
+  "deleted_count": 4,
+  "removed_logical_bytes_measured": 1648103,
+  "physical_free_space_change": "NOT_CLAIMED",
+  "git_history_rewritten": false
+}

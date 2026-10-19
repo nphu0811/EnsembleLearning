@@ -35,4 +35,4 @@ The original dataset class distribution must be inspected and the minority class
 5. Only after resource evidence and a **new distinct authorization** may the full P21 5-seed/5-arm scientific comparison start on TRAIN-derived internal validation. Its reported scientific findings must be labeled post-hoc.
 
 ## Current scope acknowledgment
-The existing P21 selector17 pilot passed its bounded report checks (see `docs/research/P21_SELECTOR17_AUTHOR_PILOT_ACCEPTANCE_2026-10-18.md`). This RQ5 design document **does not** mark any RQ5 implementation, author-host pilot, or P21 final evidence as complete.
+The existing P21 selector17 pilot passed its bounded report checks (see `docs/research/SELECTOR17_AUTHOR_PILOT_ACCEPTANCE_2026-10-18.md`). This RQ5 design document **does not** mark any RQ5 implementation, author-host pilot, or P21 final evidence as complete.

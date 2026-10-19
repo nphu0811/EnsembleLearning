@@ -33,6 +33,6 @@ The author requested no arbitrary WALL-CLOCK cutoff on genuinely long full model
 - `tools/p21_rq5_sampling.py`: self-contained pure FIT-only sampling, no training.
 - `tests/test_p21_rq5_sampling.py`: synthetic-only regression tests.
 - CI workflow wired to run the tests; actual result must be checked separately.
-- `docs/research/P21_RQ5_RESOURCE_PILOT_CONTRACT_2026-10-18.md`: bounded resource-gate specification.
+- `docs/research/RQ5_RESOURCE_PILOT_CONTRACT_2026-10-18.md`: bounded resource-gate specification.
 
 **Do not claim:** revised PDF compiled, author-host RQ5 trained, stacking refit, exact NotebookLM 4C/6M fully addressed, P20 final passed, or final publication package ready.

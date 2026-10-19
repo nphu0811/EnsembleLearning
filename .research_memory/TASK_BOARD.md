@@ -423,3 +423,16 @@ DONE_ARTIFACT_VALIDATED: presentation/nckh_defense/ all10required outputs + code
 - Design reference browser study: PARTIAL_ACCESS, CAPTCHA documented;3concepts produced and selected A+B.
 - Native animated PPTX+360sMP4+staticPDF+source+manifests: DELIVERED_ARTIFACT_QA_PASS.
 - Human TTS pronunciation/venue rehearsal: NOT_VERIFIED; no falsePASS.
+
+
+## 2026-10-19 workspace cleanup scope
+- DONE_SCOPED: GON complete single-root Explorer view; workspace_checks.json.
+- DONE_SCOPED: SHA inventory + version/dependency/protection audit; cleanup_audit/01–05 and raw evidence.
+- APPROVAL_PENDING: four V2–V5 local PDF exports already removed upstream; resolve callers before sync/removal. Group A cache DELETE is empty.
+- KEEP: all research/model/source/provenance paths; all PPTX/video pending native runtime safety. No execution/commit/push claimed.
+
+
+## 2026-10-19 approved cleanup execution
+- DONE_SCOPED: 4 approved obsolete PDFs synchronized out of working tree; 53 doc renames + current references; no scientific changes.
+- DONE_SCOPED: opaque hashes1059/1059, rename53/53, protocol29/29, P21 five seeds, 24 tests, P20 scoped944/0; VALIDATION_SUMMARY.json.
+- DOING: commit and push codex/workspace-cleanup-20261019; main final approval remains pending.

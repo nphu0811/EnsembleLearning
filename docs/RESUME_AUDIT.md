@@ -24,7 +24,7 @@ Thư mục bằng chứng: `results/reproducibility/resume_2026_10_16/`.
 
 ## Sửa nhận định lỗi thời
 
-- `docs/P15_03B_SOURCE_AND_P15_04_SCOPE.md` còn ghi chờ output người dùng. P15-04 nay được chạy trực tiếp và có kết quả mới.
+- `docs/SOURCE_AND_SNAPSHOT_SCOPE.md` còn ghi chờ output người dùng. P15-04 nay được chạy trực tiếp và có kết quả mới.
 - Audit 07/10 còn ghi P11 thiếu Weighted-F1/per-class. Các bảng closure đã tồn tại và vừa tái lập giống từng byte; không mở lại gap này.
 - Audit 07/10 còn ghi P14 thiếu feature profiles. Step3–5 có dữ liệu tổng hợp và reconciliation cũ 375/375; phiên này xác nhận file tồn tại, chưa tái chạy 375 phép kiểm hoặc phép nối raw rows. Kế thừa closure với đúng giới hạn đó.
 - `docs/TEMPLATE_MAPPING.md` mô tả DOCX như nằm trong ZIP. ZIP thực tế không chứa DOCX; bản riêng tìm thấy tại Downloads. Nguồn thực tế đã được ghi trong manifest mới.

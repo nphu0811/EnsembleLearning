@@ -64,7 +64,9 @@ class P21TrainOnlyContractTests(unittest.TestCase):
     def test_actual_tracked_json_accepts_windows_byte_representation(self):
         for rel, git_hash in MOD.EXPECTED_GIT_LF.items():
             with self.subTest(file=rel):
-                lf_data = (ROOT / rel).read_bytes()
+                # A Windows checkout may already contain CRLF. Build each
+                # exact representation from LF, avoiding accidental CRCRLF.
+                lf_data = (ROOT / rel).read_bytes().replace(b"\r\n", b"\n")
                 self.assertTrue(
                     MOD.verify_dual_eol_bytes(
                         lf_data, git_hash, MOD.EXPECTED_FROZEN[rel]

@@ -13,7 +13,7 @@ Path tương đối từ workspace root. Hash truy vết ở EVIDENCE_INDEX và 
 | C07 | RQ4 chỉ partial robustness | official/novel rows trong final_metrics.csv | build_unsw_experiment_views.py | Cùng benchmark; không external/time split |
 | C08 | RQ5 thiếu matched resampling | Existing frozen no-resampling protocol | ENSEMBLE_FRAMEWORK.md và nguồn lịch sử | UNSUPPORTED nếu claim sampling kém |
 | C09 | Weighted-F1/per-class report tái lập | phase11_clean_replay/3 CSV + clean_replay_report.json | close_original_phase11.py, isolated stdlib venv | PASS hậu xử lý, không train reproducibility |
-| C10 | Error profiles là mô tả | phase14_error_analysis_step1/3/4/5; PHASE14_ERROR_ANALYSIS_CLOSURE.md | phase14 analysis scripts | Không causal; 375 checks là evidence lịch sử |
+| C10 | Error profiles là mô tả | phase14_error_analysis_step1/3/4/5; ERROR_ANALYSIS_CLOSURE.md | phase14 analysis scripts | Không causal; 375 checks là evidence lịch sử |
 | C11 | FS không nằm trong outer development fold | resume protocol source evidence | select_unsw_features_stage2.py | Bắt buộc công khai; không claim unbiased CV |
 | C12 | Template DOCX riêng, ZIP LaTeX | bootstrap/template_audit.json, proposal_template_structure.json | templates/original/ | Structural PASS, visual QA chưa chạy |
 | C13 | Ensemble+FS/voting không mới tự thân | L05/L06/L12: literature/resume_r02_2026_10_16/READING_NOTES.md và DOI raw | Publisher preview/selected Methods | Prior-art positioning, không novelty survey đầy đủ |

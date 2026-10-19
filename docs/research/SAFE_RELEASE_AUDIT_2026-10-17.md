@@ -82,7 +82,7 @@ or repository cleanup is attempted.
 
 ## P20 and remaining gates
 
-`defense/P20_REVIEW_PACKET_SETUP_2026-10-17.md` prepares common evidence inputs,
+`defense/REVIEW_PACKET_SETUP_2026-10-17.md` prepares common evidence inputs,
 rubric, three future emphasis briefs and evidence-based defense questions.
 **No simulated reviewer reports or independent human review were run.** The draft
 dossier contains status/QA commentary and must not be presented as a final blind

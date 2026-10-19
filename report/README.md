@@ -1,6 +1,6 @@
 # Báo cáo NCKH Ensemble Learning — bản nguồn hiện hành
 
-**Trạng thái 16/10/2026:** báo cáo XeLaTeX gồm **5 chương, 37 trang A4**, theo cách tổ chức của mẫu PTIT được người dùng cung cấp. Bản PDF từ CI đã được kiểm tra kỹ thuật, nhưng chưa phải hồ sơ nộp được khoa/GVHD phê duyệt. Chứng cứ: [P17 Five-Chapter QA](../docs/research/P17_FIVE_CHAPTER_RESTRUCTURE_QA_2026-10-16.md).
+**Trạng thái 16/10/2026:** báo cáo XeLaTeX gồm **5 chương, 37 trang A4**, theo cách tổ chức của mẫu PTIT được người dùng cung cấp. Bản PDF từ CI đã được kiểm tra kỹ thuật, nhưng chưa phải hồ sơ nộp được khoa/GVHD phê duyệt. Chứng cứ: [P17 Five-Chapter QA](../docs/research/FIVE_CHAPTER_RESTRUCTURE_QA_2026-10-16.md).
 
 ## Cấu trúc PDF
 

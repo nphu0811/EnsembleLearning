@@ -33,7 +33,7 @@ Thay tên unique cho lần chạy tiếp theo; chương trình dùng exclusive c
 
 - tools/p15_fulltrain_preflight.py: tiền kiểm chỉ dùng Python standard library.
 - tests/test_p15_fulltrain_preflight.py: sáu unit test sử dụng fixture giả, không đọc official TEST.
-- docs/research/P15_FULLTRAIN_PREFLIGHT_README.md: tài liệu này.
+- docs/research/FULLTRAIN_PREFLIGHT_README.md: tài liệu này.
 
 Không thay hoặc khởi chạy src/models/run_unsw_phase9_final_holdout.py.
 

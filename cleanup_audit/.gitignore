@@ -1,0 +1,18 @@
+# Bulky local inventory, environment hashes and recovery patches are retained locally.
+*
+!.gitignore
+!README.md
+!01_INVENTORY.md
+!02_DUPLICATES.md
+!03_CANONICAL_VERSION_MATRIX.md
+!04_PROTECTED_FILES.md
+!05_DELETION_PLAN.md
+!06_CLEANUP_RESULTS.md
+!DEPENDENCY_ANALYSIS.md
+!EXECUTION_PLAN.md
+!DELETED_FILES_MANIFEST.json
+!RENAMED_FILES_MANIFEST.json
+!VALIDATION_SUMMARY.json
+!PUBLICATION_RECEIPT.json
+!audit_workspace.py
+!refresh_analysis.py

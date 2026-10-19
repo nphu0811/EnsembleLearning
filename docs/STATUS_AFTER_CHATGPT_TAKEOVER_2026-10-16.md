@@ -35,14 +35,14 @@
 ## Kết quả ChatGPT tiếp quản — evidence trực tiếp
 
 **P16-R05 tables / FP-FN figure:**
-- `docs/research/P16_R05_INDEPENDENT_AUDIT_2026-10-16.md`
+- `docs/research/R05_INDEPENDENT_AUDIT_2026-10-16.md`
 - **141/141** fresh independent numeric/source assertions PASS.
 - **14/14** fresh SVG structure assertions PASS; PNG visually previewed.
 - Signed FP−142/FN+118, figure 120×65mm; no numeric differences from frozen CSV.
 - Independent PDF glyph/render check **NOT PERFORMED**. Historical source preflight's 3048mm width WARN is inconsistent with actual 120mm SVG geometry; preserve warning, no silent overwrite.
 
 **P16 paired forest plot:**
-- `docs/research/P16_FOREST_INDEPENDENT_AUDIT_2026-10-16.md`
+- `docs/research/FOREST_INDEPENDENT_AUDIT_2026-10-16.md`
 - **79/79** fresh independent CSV/SVG checks PASS; PNG visually previewed; frame183×100mm.
 - Four correctly selected paired effect rows, all CI fields match frozen source; Macro-F1/MCC CI span zero, FPR negative, FNR positive.
 - Codex's historical PDF text/collision PASS was **read from saved report, not independently rerun**.
@@ -75,17 +75,17 @@
 - Baseline run: https://github.com/nphu0811/EnsembleLearning/actions/runs/38900247221 (22 A4 pages, compile PASS; 16 overfull hbox warnings, max170.67429pt, 4 PDF text blocks outside page safe x-boundary; 12 BibTeX records).
 - Layout fix commit: `cb556fc8d5b587708e747afce0d3024a482833c1` (`xurl` + `\\path{}` and emergency stretch; 5 TeX source files; no scientific numbers altered).
 - Rerun: https://github.com/nphu0811/EnsembleLearning/actions/runs/38901027329 (XeLaTeX/BibTeX build PASS, 22 A4 pages, no missing characters, **0 overfull**, 4 underfull minor warnings, **0 text bounding-box boundary outliers**; 12 bibliography entries and expected model statistics present). Inspection used actual PDF artifact from CI, `fitz` text and page geometry, 22-page contact sheet plus close-up four relevant pages.
-- Formal scoped QA record: `report/P17_PDF_QA_2026-10-16.md`. New workflow gate blocks future Overfull/Missing glyph, not merely compilation failure.
+- Formal scoped QA record: `report/PDF_QA_2026-10-16.md`. New workflow gate blocks future Overfull/Missing glyph, not merely compilation failure.
 - **Scope:** technically rendered standalone working report, not original institutional template with admin data, no claim P17 full DONE or release G4 final acceptance. Original training model/environment not reproduced; P15 still PARTIAL.
 
 ## P18 compiled-report reference QA (2026-10-16)
 
-`docs/research/P18_REPORT_BIBLIOGRAPHY_QA_2026-10-16.md` records real BibTeX output: 12/12 distinct citations/bibitems, 12 unique DOIs, 0 missing/uncited/duplicate keys, no final BibTeX or LaTeX undefined citation warnings. Status **DONE_SCOPED_REPORT_BIBLIOGRAPHY**, not full P18: L03 disputed pagination and non-exhaustive/full-text literature remain OPEN. No changed scientific result or bibliography source values.
+`docs/research/REPORT_BIBLIOGRAPHY_QA_2026-10-16.md` records real BibTeX output: 12/12 distinct citations/bibitems, 12 unique DOIs, 0 missing/uncited/duplicate keys, no final BibTeX or LaTeX undefined citation warnings. Status **DONE_SCOPED_REPORT_BIBLIOGRAPHY**, not full P18: L03 disputed pagination and non-exhaustive/full-text literature remain OPEN. No changed scientific result or bibliography source values.
 
 ## P17 reformatted to 40 pages using sample report as layout reference (2026-10-16)
 
-User-provided `Bao_cao_NetFlow.pdf` inspected as a **64-page structural/visual reference only**. Current report has 8 evidence-bounded chapters, PTIT original logo (no third-party identity reused), double cover frame, carmine-linked TOC, blue accents, 4 original Phase4 EDA figures, 2 P16 figures, and OOF conceptual diagram. XeLaTeX CI run 38907313697 on commit `13f310f975fc2405abbf35bd433b35021f630367` returned 40 A4 pages with 0 overfull, 0 missing glyph, 12 bibliography entries and no out-of-page text. See `report/P17_PTIT_40PAGE_QA_2026-10-16.md`. This supersedes the 22-page *design status* only; preserved historical audit values remain valid for their old artifact. P17 still PARTIAL: administrative names, approved template/signature, P18 total and P20 final approval remain OPEN.
+User-provided `Bao_cao_NetFlow.pdf` inspected as a **64-page structural/visual reference only**. Current report has 8 evidence-bounded chapters, PTIT original logo (no third-party identity reused), double cover frame, carmine-linked TOC, blue accents, 4 original Phase4 EDA figures, 2 P16 figures, and OOF conceptual diagram. XeLaTeX CI run 38907313697 on commit `13f310f975fc2405abbf35bd433b35021f630367` returned 40 A4 pages with 0 overfull, 0 missing glyph, 12 bibliography entries and no out-of-page text. See `report/PTIT_40PAGE_QA_2026-10-16.md`. This supersedes the 22-page *design status* only; preserved historical audit values remain valid for their old artifact. P17 still PARTIAL: administrative names, approved template/signature, P18 total and P20 final approval remain OPEN.
 
 ## 2026-10-16 — P17 five-chapter layout takes precedence
 
-User-requested structure follows five top-level chapters of uploaded PTIT NetFlow reference. The previous eight-chapter 40-page PDF status is preserved in historical QA documents only; **current PDF has five chapters and 37 A4 pages** after removing the abstract and moving the substantive acronym glossary immediately after TOC. Actual compile/run: https://github.com/nphu0811/EnsembleLearning/actions/runs/38916942038 ; QA file `docs/research/P17_FIVE_CHAPTER_RESTRUCTURE_QA_2026-10-16.md`. All frozen experimental results remain unchanged. Nature Skills were not directly available in this ChatGPT runtime, and no Nature skill execution is claimed.
+User-requested structure follows five top-level chapters of uploaded PTIT NetFlow reference. The previous eight-chapter 40-page PDF status is preserved in historical QA documents only; **current PDF has five chapters and 37 A4 pages** after removing the abstract and moving the substantive acronym glossary immediately after TOC. Actual compile/run: https://github.com/nphu0811/EnsembleLearning/actions/runs/38916942038 ; QA file `docs/research/FIVE_CHAPTER_RESTRUCTURE_QA_2026-10-16.md`. All frozen experimental results remain unchanged. Nature Skills were not directly available in this ChatGPT runtime, and no Nature skill execution is claimed.

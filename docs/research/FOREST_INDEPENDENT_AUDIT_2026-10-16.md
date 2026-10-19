@@ -50,4 +50,4 @@ The plot correctly depicts no statistically demonstrated overall superiority of 
 
 ## Next safe work
 
-Pair this scoped QA with `docs/research/P16_R05_INDEPENDENT_AUDIT_2026-10-16.md`. Before closing P16, audit remaining figures/tables and actual assembled report page renders. Continue manuscript source work independently if a safe PDF/TeX runtime is not available. No retraining, no tuning, no official-test reopening for selection.
+Pair this scoped QA with `docs/research/R05_INDEPENDENT_AUDIT_2026-10-16.md`. Before closing P16, audit remaining figures/tables and actual assembled report page renders. Continue manuscript source work independently if a safe PDF/TeX runtime is not available. No retraining, no tuning, no official-test reopening for selection.

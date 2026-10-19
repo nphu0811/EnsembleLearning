@@ -28,4 +28,4 @@ P15/G3 remains **PARTIAL**. The user-approved 5-chapter research PDF, original P
 
 ## Next user action
 
-Pull the latest main, follow `docs/research/P15_LOCAL_12GB_RUNBOOK_2026-10-16.md` to create a clean Python 3.11 venv, run 18 tests, measure RAM. If less than 4 GiB is free, do not train. If >=4 GiB, run only the supervised RF-17 pilot first; inspect `run_report.json` and RAM trace before considering further sequential jobs.
+Pull the latest main, follow `docs/research/LOCAL_12GB_RUNBOOK_2026-10-16.md` to create a clean Python 3.11 venv, run 18 tests, measure RAM. If less than 4 GiB is free, do not train. If >=4 GiB, run only the supervised RF-17 pilot first; inspect `run_report.json` and RAM trace before considering further sequential jobs.

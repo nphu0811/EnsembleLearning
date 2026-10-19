@@ -10,6 +10,7 @@ import zipfile
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
+from verify_document_renames import resolve_document_path
 
 def sha(path):
     h = hashlib.sha256()
@@ -28,16 +29,18 @@ def main():
     state = json.loads((root / '.research_memory/STATE.json').read_text(encoding='utf-8-sig'))
     manifest = []
     for item in state['artifact_manifest']:
-        path = root / item['path']
+        path = resolve_document_path(root, item['path'])
         actual = sha(path) if path.is_file() else None
-        manifest.append(dict(path=item['path'], expected=item['sha256'], actual=actual,
+        manifest.append(dict(path=item['path'], resolved_path=path.relative_to(root).as_posix(),
+                             expected=item['sha256'], actual=actual,
                              passed=actual == item['sha256']))
     preservation = []
     with (root / 'results/reproducibility/resume_2026_10_16/bootstrap/preservation_manifest.csv').open(encoding='utf-8-sig') as stream:
         for item in csv.DictReader(stream):
-            path = root / item['path']
+            path = resolve_document_path(root, item['path'])
             actual = sha(path) if path.is_file() else None
-            preservation.append(dict(path=item['path'], passed=actual == item['sha256']))
+            preservation.append(dict(path=item['path'], resolved_path=path.relative_to(root).as_posix(),
+                                     passed=actual == item['sha256']))
     registry = []
     for path in sorted((Path.home() / '.codex/skills').glob('nature-*/SKILL.md')):
         match = re.search(r'^name:\s*(.+)$', path.read_text(encoding='utf-8'), re.M)

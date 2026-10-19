@@ -4,7 +4,7 @@
 
 ## Evidence and actual tests
 
-- Protocol `docs/research/P21_TRAIN_ONLY_CONTROLLED_EXTENSION_PROTOCOL_2026-10-18.md`, immutable machine-readable contract `config/p21_train_only_protocol_2026_10_18.json`.
+- Protocol `docs/research/TRAIN_ONLY_CONTROLLED_EXTENSION_PROTOCOL_2026-10-18.md`, immutable machine-readable contract `config/p21_train_only_protocol_2026_10_18.json`.
 - Executable **static-only**, stdlib validator `tools/p21_protocol_validator.py` and `tests/test_p21_train_only_protocol.py`: check source input lineage, split/group policy, training-only refitted stable-top17 features, matched RF42/RF17 hyperparameters, three weight/oversample arms, five fixed replication seeds, resource watchdog budget, no official TEST, safety and no frozen artifact overwrite.
 - [GitHub Actions run 39060348600](https://github.com/nphu0811/EnsembleLearning/actions/runs/39060348600) **SUCCESS: 10/10 regression tests, 29/29 protocol/static source checks**, 0 failure. CI never installed sklearn/pandas, loaded raw dataset or model, trained/predicted, or read official TEST.
 - File hash reconciliation: `src/models/run_unsw_phase9_final_holdout.py` Git SHA256 equals frozen P15 `3e7d1369...80ae480`. Git contains LF:

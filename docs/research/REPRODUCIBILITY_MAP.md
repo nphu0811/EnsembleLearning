@@ -151,7 +151,7 @@ TRAIN/TEST official CSV (Phase 2)
 - **Local `phase8_controlled` = canonical Phase 10**; local `phase9_holdout` = canonical Phase 11; local `phase10_statistics` = canonical Phase 12. Giữ nguyên lịch sử tên file hiện tại, chỉ ánh xạ trong tài liệu.
 - **`run_unsw_phase11_results_figures.py` thuộc early artifacts của canonical Phase 16**, không được dùng làm bằng chứng đã đóng Phase 11 trước khi có formal evaluation closure.
 - **Phase13 ablation** đọc saved development OOF, grids và các aggregate đã lưu; không phải thí nghiệm can thiệp factor-controlled đầy đủ. File `results/ablation/.../development_metrics.csv` có provenance chưa rõ, không đưa làm required input.
-- **P14-05** là tổng hợp tài liệu và kiểm toán số liệu, không có train/analyzer mới; hồ sơ `docs/research/PHASE14_ERROR_ANALYSIS_CLOSURE.md` và reconciliation JSON (được giao ở bản handoff trước).
+- **P14-05** là tổng hợp tài liệu và kiểm toán số liệu, không có train/analyzer mới; hồ sơ `docs/research/ERROR_ANALYSIS_CLOSURE.md` và reconciliation JSON (được giao ở bản handoff trước).
 - `attack_cat` chỉ dùng cho mô tả/lỗi theo nhóm, **không phải X binary**. Official TEST đã xem; mọi `rerun` P10/P11 để chọn model/threshold mới đều không hợp lệ với kết quả đã khóa.
 - Feature selection đã chạy trên TRAIN trước development CV: CV có nguy cơ **selection optimism**. Final official holdout là bằng chứng primary (nhưng vẫn giới hạn trong cùng benchmark).
 - Không khẳng định hỗ trợ external multi-dataset, temporal drift hay deployability; novel-vector chỉ là độ nhạy trong cùng benchmark.

@@ -42,7 +42,7 @@ support PDF geometry QA; existing Poppler provided an independent renderer.
 The author then supplied the actual approved PDF in Downloads. Its hash matches
 the previous 37-page five-chapter snapshot. P16 can now verify the actual document,
 not just source or historical QA. Current work and evidence are in
-`docs/research/P16_COMPREHENSIVE_QA_2026-10-17.md`.
+`docs/research/COMPREHENSIVE_QA_2026-10-17.md`.
 
 Priority executed in this session
 
