@@ -43,3 +43,26 @@ Human-facing work can use plain **topic names in navigation** (see README.md), w
 The connected GitHub workspace cannot inspect the author's local Windows ignored files or free space; the saved local script must be run by the user. Deleting tracked binaries from the latest commit does **not** purge those bytes from Git history or necessarily shrink the local `.git` directory. This is deliberate to retain ability to recover exactly.
 
 **Status criterion:** The cleanup is completed when GitHub head lists the four removals, all protected trees are unchanged, and the author has fetched updates. No scientific training, held-out TEST, PDF refitting or content validation is performed by this cleanup.
+
+## Extra no-loss Markdown deduplication
+
+Six Markdown files in the old presentation's `audit/` directory were also removed. **Each was byte-for-byte identical by Git blob SHA** to a copy kept under `presentation/nckh_defense/creative_rebuild_v2/audit/skill_survey_legacy/`. The latter are already referenced by the preserved Creative V2 delivery manifest; they were **not** deleted or renamed. Root-path-specific GitHub code search showed no downstream reference to any of the six old paths.
+
+| Removed redundant file in old presentation `audit/` | Bytes | Unchanged surviving copy |
+|---|---:|---|
+| `craft.md` | 12,758 | `creative_rebuild_v2/audit/skill_survey_legacy/craft.md` |
+| `motion-grammar.md` | 7,623 | `creative_rebuild_v2/audit/skill_survey_legacy/motion-grammar.md` |
+| `qa-checklist.md` | 6,053 | `creative_rebuild_v2/audit/skill_survey_legacy/qa-checklist.md` |
+| `research-protocol.md` | 5,246 | `creative_rebuild_v2/audit/skill_survey_legacy/research-protocol.md` |
+| `speech-craft.md` | 3,774 | `creative_rebuild_v2/audit/skill_survey_legacy/speech-craft.md` |
+| `visual-schema.md` | 5,325 | `creative_rebuild_v2/audit/skill_survey_legacy/visual-schema.md` |
+
+Six removed duplicate Markdown files save a further **40,779 bytes** in the working tree. Source code, scientific method documents, frozen test reports and all other markdown remain unaffected.
+
+### Commits / total accounting
+
+- Regenerable old presentation binary deletions: `9fa595e4543a738b9b577a3e14f71cd608e63d9f` (4 paths).
+- Six exact duplicate Markdown deletions: `dccc5c8b16405fad6dfbbebb6c5ae45460b9f497` (6 paths).
+- **Total: 10 files, 78,327,979 bytes, about 74.70 MiB**, removed from latest checkout; all recoverable from Git history.
+- No bulk file/phase renames were done because every scientific output path must continue to match source, manifests and published experiments. User-friendly topic labels were added to existing root README instead of mutating scientific identities.
+
