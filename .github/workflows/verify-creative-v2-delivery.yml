@@ -1,0 +1,44 @@
+name: Creative V2 independently verify committed delivery
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/verify_creative_release_portable.py"
+      - ".github/workflows/verify-creative-v2-delivery.yml"
+      - "presentation/nckh_defense/creative_rebuild_v2/NCKH_Ensemble_IDS_Creative_Final.pptx"
+      - "presentation/nckh_defense/creative_rebuild_v2/NCKH_Ensemble_IDS_Creative_Preview.mp4"
+      - "presentation/nckh_defense/creative_rebuild_v2/NCKH_Ensemble_IDS_Creative_Delivery.zip"
+      - "presentation/nckh_defense/creative_rebuild_v2/checksums.sha256"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  independent_binary_audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout actual committed binaries
+        uses: actions/checkout@v4
+
+      - name: Install MP4 and PDF file probes
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends ffmpeg poppler-utils
+
+      - name: Validate PPTX, audio/video, report PDF, ZIPs and release hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -X utf8 tools/verify_creative_release_portable.py | tee "${RUNNER_TEMP}/creative_v2_independent_audit.json"
+          cat "${RUNNER_TEMP}/creative_v2_independent_audit.json" >> "${GITHUB_STEP_SUMMARY}"
+
+      - name: Upload read-only acceptance evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nckh-creative-v2-independent-technical-audit
+          path: ${{ runner.temp }}/creative_v2_independent_audit.json
+          if-no-files-found: warn
