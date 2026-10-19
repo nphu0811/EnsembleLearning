@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v4
       - name: Verify all five P21 seed reports against published aggregate (read-only)
         run: python3 -X utf8 tools/p21_verify_full_five_seed.py
       - name: Install XeLaTeX and PDF inspection tools
@@ -156,7 +156,7 @@ jobs:
           fi
       - name: Upload PDF and build evidence
         if: always()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v4
         with:
           name: NCKH_EnsembleLearning_REVISION_V5_2026-10-19
           path: |
