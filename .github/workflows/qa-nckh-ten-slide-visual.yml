@@ -1,0 +1,68 @@
+name: Visual QA of final ten NCKH slides
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/qa-nckh-ten-slide-visual.yml"
+      - "presentation/nckh_defense/script_first_v3/final_10_slide_v1/NCKH_Ensemble_IDS_10_Slides_Final.pptx"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  visual:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Render actual PDF of editable slides
+        run: |
+          set -euo pipefail
+          python -m pip install --quiet pymupdf pillow
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image,ImageOps,ImageDraw,ImageFont
+          import fitz,json,hashlib
+          base=Path("presentation/nckh_defense/script_first_v3/final_10_slide_v1")
+          target=base/"visual_qa"
+          target.mkdir(parents=True,exist_ok=True)
+          pdf=fitz.open(base/"NCKH_Ensemble_IDS_10_Slides_Static.pdf")
+          if len(pdf)!=10:raise RuntimeError("PDF no longer 10 slides")
+          thumbs=[]
+          for i,p in enumerate(pdf):
+              pix=p.get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False)
+              im=Image.frombytes("RGB",(pix.width,pix.height),pix.samples)
+              im.save(target/f"slide_{i+1:02d}.png")
+              reduced=im.copy();reduced.thumbnail((620,350))
+              canvas=Image.new("RGB",(650,398),"#E8E9ED")
+              canvas.paste(reduced,((650-reduced.width)//2,19))
+              d=ImageDraw.Draw(canvas);d.text((18,365),f"{i+1:02d} / NCKH ENSEMBLE IDS",fill="#161928")
+              thumbs.append(canvas)
+          sheet=Image.new("RGB",(650*2,398*5),"white")
+          for idx,im in enumerate(thumbs):
+              sheet.paste(im,((idx%2)*650,(idx//2)*398))
+          sheet.save(target/"contact_sheet_10_slides.jpg",quality=89)
+          sha=hashlib.sha256((base/"NCKH_Ensemble_IDS_10_Slides_Final.pptx").read_bytes()).hexdigest()
+          qa={"status":"PASS_VISUAL_RENDER_10",
+              "actual_slide_count":len(thumbs),
+              "contact_sheet":"contact_sheet_10_slides.jpg",
+              "source_pptx_sha256":sha,
+              "human_review_of_all_layouts":"pending",
+              "notes":"Rendered from committed slide PDF, not generated image mockups"}
+          (target/"QA.json").write_text(json.dumps(qa,indent=2),encoding="utf-8")
+          print(json.dumps(qa,indent=2))
+          PY
+      - name: Commit visual snapshots
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "presentation/nckh_defense/script_first_v3/final_10_slide_v1/visual_qa"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "QA: render ten actual NCKH slide previews and contact sheet"
+          branch=$(git symbolic-ref --short HEAD)
+          git fetch origin "$branch"
+          git rebase "origin/$branch"
+          git push origin "HEAD:$branch"
