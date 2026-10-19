@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "name": "NCKH — Gọn (5 thư mục chính)",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "explorer.sortOrder": "foldersFirst",
+    "explorer.compactFolders": false
+  }
+}
