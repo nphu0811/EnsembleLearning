@@ -1,0 +1,84 @@
+{
+  "folders": [
+    {
+      "name": "01 · Cấu hình",
+      "path": "config"
+    },
+    {
+      "name": "02 · Dữ liệu",
+      "path": "data"
+    },
+    {
+      "name": "03 · Notebook",
+      "path": "notebook"
+    },
+    {
+      "name": "04 · Kết quả thực nghiệm",
+      "path": "results"
+    },
+    {
+      "name": "05 · Mã nguồn",
+      "path": "src"
+    },
+    {
+      "name": "06 · Báo cáo PDF / LaTeX",
+      "path": "report"
+    },
+    {
+      "name": "07 · Slide & video",
+      "path": "presentation"
+    },
+    {
+      "name": "08 · Tài liệu và roadmap",
+      "path": "docs"
+    },
+    {
+      "name": "09 · Tài liệu tham khảo",
+      "path": "literature"
+    },
+    {
+      "name": "10 · Đề cương",
+      "path": "proposal"
+    },
+    {
+      "name": "11 · Các bản xuất cũ",
+      "path": "exports"
+    },
+    {
+      "name": "12 · Kịch bản bảo vệ",
+      "path": "defense"
+    },
+    {
+      "name": "13 · Mẫu biểu",
+      "path": "templates"
+    },
+    {
+      "name": "14 · Release",
+      "path": "release"
+    },
+    {
+      "name": "15 · Công cụ",
+      "path": "tools"
+    },
+    {
+      "name": "16 · Kiểm thử",
+      "path": "tests"
+    },
+    {
+      "name": "17 · Tái lập nghiên cứu",
+      "path": "reproducibility"
+    },
+    {
+      "name": "18 · Nhật ký nghiên cứu",
+      "path": ".research_memory"
+    },
+    {
+      "name": "19 · GitHub workflows",
+      "path": ".github"
+    }
+  ],
+  "settings": {
+    "explorer.sortOrder": "foldersFirst",
+    "explorer.compactFolders": false
+  }
+}
