@@ -1,0 +1,90 @@
+\section{P21: Kết quả đối chứng hậu nghiệm trên internal validation của TRAIN}
+\label{sec:p21-results}
+Báo cáo kết quả bổ sung này được tạo \emph{sau} quá trình đánh giá official TEST lịch sử. Năm seed tạo năm tập FIT 60\,000 dòng khác nhau nhưng tất cả dự đoán trên \textbf{cùng} 35\,069 dòng internal validation của official TRAIN (11\,200 Normal và 23\,869 Attack). Đây không phải năm lần đánh giá độc lập trên TEST hoặc một benchmark ngoài. Tất cả 25 lượt fit (5 arm $\times$ 5 seed) đều hoàn tất, với checksum nguồn dữ liệu và cấu hình khớp, confusion matrix được kiểm tra lại, không truy cập official TEST khi chạy P21.
+
+\begin{table}[htbp]\centering
+\small
+\renewcommand{\arraystretch}{1.26}
+\setlength{\tabcolsep}{3pt}
+\caption{Hiệu năng trung bình qua 5 FIT seed trên \textbf{một} internal validation P21; độ lệch chuẩn mẫu \emph{có điều kiện trên cùng validation} của Macro-F1 và MCC ghi trong ngoặc. FPR/FNR tính bằng phần trăm.}
+\label{tab:p21-five-arm-results}
+\begin{tabular}{lrrrr}
+\toprule
+Arm P21 & \shortstack{Macro-F1\\(SD theo FIT)} & \shortstack{MCC\\(SD theo FIT)} & FPR (\%) & FNR (\%)\\\midrule
+RF42-Lite (A0) & \shortstack{0.945220\\{\scriptsize (0.000399)}} & \shortstack{0.890971\\{\scriptsize (0.000858)}} & 9.6196 & 2.3989\\
+RF17-Lite (A1) & \shortstack{0.936751\\{\scriptsize (0.001291)}} & \shortstack{0.874032\\{\scriptsize (0.002462)}} & 10.7589 & 2.9327\\
+RF42 Balanced (A2) & \shortstack{0.943877\\{\scriptsize (0.000275)}} & \shortstack{0.887909\\{\scriptsize (0.000563)}} & 6.4554 & 4.1870\\
+RF42 Oversample (A3) & \shortstack{0.944886\\{\scriptsize (0.000742)}} & \shortstack{0.889776\\{\scriptsize (0.001480)}} & 7.4107 & 3.5670\\
+Stacking-Lite (A4) & \shortstack{0.944731\\{\scriptsize (0.000340)}} & \shortstack{0.889864\\{\scriptsize (0.000738)}} & 9.4071 & 2.5715\\\bottomrule
+\end{tabular}
+\vspace{3pt}
+
+\begin{minipage}{\linewidth}
+\footnotesize\emph{Lưu ý phương pháp luận:} SD ở đây chỉ phản ánh biến thiên khi thay đổi tập FIT và seed trong khi giữ \textbf{cùng một tập validation 35\,069 dòng}. Đây không phải SD của năm benchmark độc lập, cũng không ước lượng sai số tổng quát hóa trên traffic mới. Không sử dụng năm giá trị này như năm tập TEST độc lập để làm t-test/ANOVA hoặc tuyên bố độ ổn định ngoài phân bố.
+\end{minipage}
+\end{table}
+
+\begin{table}[htbp]\centering
+\small
+\renewcommand{\arraystretch}{1.24}
+\setlength{\tabcolsep}{3pt}
+\caption{Hiệu số \emph{paired FIT seed} của mỗi arm so với RF42-Lite A0; dấu của $\Delta$ là arm $-$ A0. $\Delta$ FPR/FNR tính bằng \emph{điểm phần trăm}, không phải \%.}
+\label{tab:p21-paired-deltas}
+\begin{tabular}{lrrrr}
+\toprule
+So sánh & $\Delta$ Macro-F1 & $\Delta$ MCC & $\Delta$ FPR (đpp) & $\Delta$ FNR (đpp)\\\midrule
+A1 $-$ A0 & $-0.008468$ & $-0.016939$ & $+1.1393$ & $+0.5337$\\
+A2 $-$ A0 & $-0.001343$ & $-0.003062$ & $-3.1643$ & $+1.7881$\\
+A3 $-$ A0 & $-0.000334$ & $-0.001195$ & $-2.2089$ & $+1.1680$\\
+A4 $-$ A0 & $-0.000488$ & $-0.001107$ & $-0.2125$ & $+0.1726$\\\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Độ biến thiên giữa năm FIT seed}
+Năm Macro-F1 của RF42-Lite lần lượt là 0.944741; 0.945712; 0.945546; 0.945080; 0.945019. Tương ứng, Stacking-Lite lần lượt là 0.944444; 0.944559; 0.945079; 0.945121; 0.944454. Hiệu số paired của Stacking trừ RF là $[-0.000297;\,-0.001153;\,-0.000468;\,+0.000041;\,-0.000565]$; có một seed nhỉnh hơn rất nhỏ nhưng không làm đảo dấu hiệu số trung bình.
+
+\begin{table}[htbp]\centering
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{7pt}
+\caption{Macro-F1 theo FIT seed, chỉ mô tả biến thiên huấn luyện có điều kiện; \textbf{cùng} 35\,069 quan sát validation ở cả năm cột.}
+\label{tab:p21-by-seed}
+\begin{tabular}{lrrrrr}
+\toprule
+Arm & 1103 & 2207 & 3301 & 4409 & 5501\\\midrule
+A0 RF42 & 0.944741 & 0.945712 & 0.945546 & 0.945080 & 0.945019\\
+A1 RF17 & 0.938678 & 0.935777 & 0.936491 & 0.935483 & 0.937328\\
+A2 Balanced & 0.944006 & 0.943785 & 0.944231 & 0.943877 & 0.943485\\
+A3 Oversample & 0.944235 & 0.945297 & 0.944752 & 0.944201 & 0.945945\\
+A4 Stacking & 0.944444 & 0.944559 & 0.945079 & 0.945121 & 0.944454\\\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{RQ1: Ensemble và đánh đổi lỗi}
+Stacking-Lite (A4) không tăng Macro-F1/MCC trung bình so với RF42-Lite (A0) trên năm seed; chênh lệch trung bình lần lượt $-0.000488$ và $-0.001107$. Đồng thời FPR giảm 0.2125 điểm phần trăm, FNR tăng 0.1726 điểm. Đây là khác biệt nhỏ trong \emph{cấu hình Lite} được khống chế; nó không bác bỏ lợi ích của mọi cấu trúc ensemble. Không kết luận tương đương thống kê dựa trên năm seed có chung tập validation.
+
+\subsection{RQ2: Đối chứng matched Feature Selection và chi phí thực tế}
+A1 và A0 sử dụng cùng siêu tham số RF, số FIT rows và seed; biến duy nhất trong \emph{mô hình RF} là track 17 thay cho 42 đặc trưng gốc, song toàn bộ pipeline A1 cần bước chọn biến mới. Có 14 đặc trưng xuất hiện trong cả năm bộ top-17, gồm \texttt{ct\_srv\_dst}, \texttt{ct\_state\_ttl}, \texttt{dload}, \texttt{dttl}, \texttt{proto}, \texttt{state}, \texttt{sttl}, \texttt{ct\_dst\_ltm}, \texttt{dmean}, \texttt{dwin}, \texttt{rate}, \texttt{service}, \texttt{swin}, \texttt{is\_sm\_ips\_ports}.
+
+\begin{table}[htbp]\centering\small
+\renewcommand{\arraystretch}{1.22}
+\caption{Chi phí huấn luyện trung bình theo năm FIT seed, đơn vị giây. Các số là thời gian fit ghi từ worker, không phải end-to-end latency triển khai.}
+\label{tab:p21-cost}
+\begin{tabular}{lr}\toprule
+Công đoạn & Thời gian trung bình (s)\\\midrule
+Chỉ fit RF42-Lite & 241.119\\
+Chỉ fit RF17-Lite (sau chọn đặc trưng) & 84.600\\
+Chọn stable17 từ FIT & 225.250\\
+\textbf{Chọn stable17 + fit RF17-Lite} & \textbf{309.850}\\
+Chỉ fit RF42 Balanced & 230.247\\
+Chỉ fit RF42 Oversample & 355.197\\
+Chỉ fit Stacking-Lite & 652.913\\\bottomrule
+\end{tabular}
+\end{table}
+Nếu bỏ qua chi phí chọn feature, A1 fit RF nhanh hơn A0 khoảng 2.85 lần. Trong kịch bản \emph{phải tìm lại 17 đặc trưng cho mỗi lượt huấn luyện}, chi phí \emph{selection + RF fit} của A1 cao hơn khoảng 28.5\% so với riêng fit RF42 trong thiết kế P21. Cả hai tổng này chưa cộng thời gian xử lý dữ liệu ngoài các lời gọi đã đo, lưu artifact, giám sát hay latency phục vụ nên không được gọi là tổng chi phí triển khai end-to-end. Vì vậy không thể dựa vào thời gian fit RF17 để tuyên bố Feature Selection đã làm giảm \emph{tổng} chi phí training.
+
+\subsection{RQ5: Cân bằng lớp không đồng nghĩa tăng phát hiện Attack}
+Trên dữ liệu TRAIN, Normal là lớp ít mẫu và được tăng trọng số hoặc lặp lại trong hai nhánh can thiệp. A2 giảm FPR mạnh hơn A3 nhưng cũng làm FNR tăng mạnh hơn. So với A0, A2 giảm FPR 3.1643 điểm phần trăm, tăng FNR 1.7881 điểm; A3 giảm FPR 2.2089 điểm, tăng FNR 1.1680 điểm. Cả hai làm giảm Macro-F1 trung bình, cho thấy đánh đổi giữa cảnh báo giả và bỏ sót tấn công trong mô hình và benchmark nội bộ cụ thể này. Không chọn ngưỡng mới dựa vào validation đã đánh giá.
+
+\subsection{Chất lượng bằng chứng và giới hạn phát biểu}
+Mỗi seed có năm cấu hình trùng digest FIT source và cùng nhãn true 35\,069 dòng validation, các kiểm tra kết quả phát hiện tổng TN+FP+FN+TP đúng support, khớp các chỉ số Macro-F1/MCC/FPR/FNR và không cho thấy lệch dữ liệu trong metadata. Tuy nhiên đây là \emph{kiểm tra nhất quán báo cáo}, không phải replay độc lập trên máy thứ hai hay đối chứng theo thời gian. Cụm seed chỉ thay đổi mẫu FIT và tính ngẫu nhiên của mô hình; do validation được tái sử dụng, độ lệch chuẩn trong các bảng đo biến thiên \emph{có điều kiện trên validation đó}, không phải sai số tổng quát hóa. Số liệu P21 không được gộp với official TEST 82\,332 dòng của giai đoạn lịch sử để tính p-value hay chọn mô hình cuối.
