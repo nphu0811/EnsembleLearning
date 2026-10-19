@@ -3,10 +3,10 @@
 % Do not overwrite templates/original, frozen experiment outputs or historical research notes.
 \documentclass[a4paper,12pt,oneside]{report}
 \usepackage{fontspec}
-% The NetFlow reference PDF is a traditional Vietnamese Roman serif (VNR12);
-% TeX Gyre Termes is a Unicode Times-compatible font for correct Vietnamese
-% diacritics in XeLaTeX; no embedded third-party font files are copied.
-\IfFontExistsTF{TeX Gyre Termes}{\setmainfont{TeX Gyre Termes}}{\setmainfont{Liberation Serif}}
+% NetFlow sample: Vietnamese Roman serif (VNR12).
+% Liberation Serif is a Unicode Times-compatible alternative, preserving
+% Vietnamese diacritics; use system-installed fonts only.
+\IfFontExistsTF{Liberation Serif}{\setmainfont{Liberation Serif}}{\setmainfont{TeX Gyre Termes}}
 \usepackage[vietnamese]{babel}
 \usepackage[a4paper,top=23mm,bottom=23mm,left=30mm,right=23mm,headheight=17pt,headsep=8mm,footskip=11mm]{geometry}
 \usepackage{xcolor}
@@ -34,7 +34,7 @@
 \setcounter{tocdepth}{2}
 
 % Neutral body and section hierarchy; carmine accent from original PTIT template.
-\titleformat{\chapter}[block]{\normalfont\bfseries\centering\fontsize{15}{20}\selectfont\color{researchred}}{Chương \thechapter.}{0.8em}{\MakeUppercase}
+\titleformat{\chapter}[block]{\normalfont\bfseries\centering\fontsize{15}{20}\selectfont\color{black}}{Chương \thechapter.}{0.8em}{\MakeUppercase}
 \titleformat{name=\chapter,numberless}[block]{\normalfont\bfseries\centering\fontsize{15}{20}\selectfont\color{black}}{}{0em}{}
 \titlespacing*{\chapter}{0pt}{7pt}{16pt}
 \titleformat{\section}{\normalfont\bfseries\fontsize{14}{19}\selectfont\color{black}}{\thesection}{0.8em}{}
@@ -77,6 +77,7 @@
 \fancypagestyle{plain}{\fancyhf{}\fancyhead[L]{\footnotesize\color{black} ĐỀ TÀI NCKH SINH VIÊN}\fancyfoot[L]{\footnotesize\color{black} 09-SV-2026-CNTT2}\fancyfoot[R]{\footnotesize\color{black} \thepage}\renewcommand{\headrulewidth}{0.35pt}\renewcommand{\footrulewidth}{0.35pt}}
 
 \begin{document}
+\raggedbottom
 \begin{titlepage}
 \thispagestyle{empty}
 \begin{tikzpicture}[remember picture,overlay]
