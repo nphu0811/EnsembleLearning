@@ -1,0 +1,61 @@
+name: Enhance ten-slide preview with Vietnamese neural speech
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/nckh-neural-voice.yml"
+      - "presentation/nckh_defense/script_first_v3/final_10_slide_v1/upgrade_neural_voice.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  neural_voice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install open-source narration tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends ffmpeg
+          python -m pip install --disable-pip-version-check edge-tts numpy
+      - name: Synthesize Vietnamese speech for approved ten-slide plan
+        run: python3 -X utf8 "presentation/nckh_defense/script_first_v3/final_10_slide_v1/upgrade_neural_voice.py"
+      - name: Verify separate neural MP4 and publish
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          base=Path("presentation/nckh_defense/script_first_v3/final_10_slide_v1")
+          info=json.loads((base/"neural_voice_qa.json").read_text(encoding="utf-8"))
+          assert info["status"]=="PASS_NEURAL_VIETNAMESE_PREVIEW"
+          assert len(info["narration_slots"])==10
+          mp4=base/"NCKH_Ensemble_IDS_10_Slides_Preview_NeuralVoice.mp4"
+          assert mp4.is_file() and mp4.stat().st_size>100000
+          streams=json.loads(subprocess.check_output([
+             "ffprobe","-v","error","-show_streams","-of","json",str(mp4)]))
+          assert len([x for x in streams["streams"] if x["codec_type"]=="audio"])==1
+          print("PASS separate 10-slide neural-voice video")
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "presentation/nckh_defense/script_first_v3/final_10_slide_v1/NCKH_Ensemble_IDS_10_Slides_Preview_NeuralVoice.mp4" \
+                  "presentation/nckh_defense/script_first_v3/final_10_slide_v1/neural_voice_qa.json"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "presentation: deliver neural Vietnamese narration preview for ten slides"
+          branch=$(git symbolic-ref --short HEAD)
+          git fetch origin "$branch"
+          git rebase "origin/$branch"
+          git push origin "HEAD:$branch"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: NCKH_neural_vietnamese_video
+          path: |
+            presentation/nckh_defense/script_first_v3/final_10_slide_v1/NCKH_Ensemble_IDS_10_Slides_Preview_NeuralVoice.mp4
+            presentation/nckh_defense/script_first_v3/final_10_slide_v1/neural_voice_qa.json
+          if-no-files-found: warn
