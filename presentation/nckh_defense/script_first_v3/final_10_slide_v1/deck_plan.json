@@ -1,0 +1,141 @@
+{
+  "project": "NCKH Ensemble IDS / defense",
+  "source": "Humanized report V7",
+  "presentation_seconds": 360,
+  "presentation_language": "vi-VN",
+  "assets": {
+    "logo": "presentation/nckh_defense/creative_rebuild_v2/report_v7/source/assets/Logo_PTIT_University.png"
+  },
+  "scenes": [
+    {
+      "n": 1,
+      "duration": 12,
+      "type": "cover",
+      "bg": "cream",
+      "eyebrow": "HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG",
+      "title": "ENSEMBLE\nLEARNING\n/ NETWORK IDS",
+      "subtitle": "Nghiên cứu Ensemble Learning cho bài toán phát hiện xâm nhập mạng",
+      "voice": "Kính chào quý thầy cô. Nhóm em xin trình bày đề tài nghiên cứu Ensemble Learning cho bài toán phát hiện xâm nhập mạng, thực nghiệm trên bộ dữ liệu UNSW-NB15.",
+      "source": "PDF V7: trang bìa"
+    },
+    {
+      "n": 2,
+      "duration": 23,
+      "type": "hook",
+      "bg": "ink",
+      "eyebrow": "CÂU HỎI NGHIÊN CỨU",
+      "title": "ÍT CẢNH BÁO.\nAN TOÀN HƠN?",
+      "subtitle": "Giảm báo động giả có đồng nghĩa giảm tấn công bị bỏ sót?",
+      "voice": "Nếu hệ thống phát hiện xâm nhập tạo ra ít cảnh báo hơn, liệu chúng ta đã an toàn hơn chưa? Chưa chắc. Mô hình có thể giảm báo động giả, nhưng đổi lại bỏ sót thêm lưu lượng tấn công. Đó là câu hỏi mở đầu nghiên cứu của nhóm.",
+      "source": "V7: Chương 1, mục 1.1.2"
+    },
+    {
+      "n": 3,
+      "duration": 40,
+      "type": "data",
+      "bg": "cream",
+      "eyebrow": "01 / PROBLEM & DATA",
+      "title": "MỘT BỘ DỮ LIỆU.\nHAI NHÃN.",
+      "subtitle": "UNSW-NB15 · Normal / Attack",
+      "voice": "Nhóm nghiên cứu bài toán phân loại nhị phân trên UNSW-NB15. Mỗi dòng lưu lượng được dự đoán là Normal hoặc Attack. Bộ dữ liệu có một trăm bảy mươi lăm nghìn ba trăm bốn mươi mốt dòng huấn luyện và tám mươi hai nghìn ba trăm ba mươi hai dòng kiểm thử chính thức. Sau khi loại các cột định danh và nhãn, nhóm sử dụng bốn mươi hai đặc trưng dự đoán. Mục tiêu không chỉ là Accuracy cao, mà là hiểu các kiểu sai của mô hình.",
+      "train": 175341,
+      "test": 82332,
+      "features": 42,
+      "source": "V7: Bảng 2.1; mục 3.1"
+    },
+    {
+      "n": 4,
+      "duration": 50,
+      "type": "pipeline",
+      "bg": "white",
+      "eyebrow": "02 / HOW WE TESTED",
+      "title": "TỪ FLOW\nĐẾN QUYẾT ĐỊNH",
+      "subtitle": "RF-42 · RF-17 · Stacking-42",
+      "voice": "Nhóm giữ Random Forest với bốn mươi hai đặc trưng làm đối chứng mạnh. Bên cạnh Random Forest mười bảy đặc trưng, nhóm khảo sát cơ chế Stacking với Logistic Regression, Decision Tree và Random Forest ở tầng cơ sở. Khi huấn luyện Stacking, các dự đoán ngoài fold được dùng để tạo dữ liệu cho Logistic Regression tầng kết hợp. Khi dự đoán, dữ liệu đi qua các mô hình đã huấn luyện để tạo quyết định Normal hoặc Attack. Việc đánh giá trên TEST chính thức chỉ thực hiện với những cấu hình đã khóa.",
+      "source": "V7: mục 3.2–3.4; Bảng 3.1"
+    },
+    {
+      "n": 5,
+      "duration": 30,
+      "type": "metrics",
+      "bg": "ink",
+      "eyebrow": "03 / WHAT MATTERS",
+      "title": "ĐÚNG NHIỀU\nCHƯA ĐỦ.",
+      "subtitle": "Hai sai lầm không có cùng hậu quả",
+      "voice": "Để đọc kết quả IDS, cần phân biệt hai loại lỗi. False Positive là lưu lượng bình thường bị báo nhầm thành tấn công, gây thêm công kiểm tra. False Negative là tấn công bị nhận thành bình thường, có thể khiến sự cố bị bỏ qua. Bởi vậy nhóm xem đồng thời Macro-F1, MCC, tỷ lệ báo động giả FPR và tỷ lệ bỏ sót FNR.",
+      "source": "V7: mục 1.2.1, 1.2.6; công thức 4.1"
+    },
+    {
+      "n": 6,
+      "duration": 61,
+      "type": "historical",
+      "bg": "coral",
+      "eyebrow": "04 / OFFICIAL TEST · 82.332 MẪU",
+      "title": "GIẢM 142 FP.\nTĂNG 118 FN.",
+      "subtitle": "Stacking-42 so với RF-42 · cùng một TEST",
+      "voice": "Đây là kết quả trên cùng tám mươi hai nghìn ba trăm ba mươi hai dòng TEST chính thức. Macro-F1 của Random Forest bốn mươi hai đặc trưng là không phẩy tám sáu ba ba bốn ba; Stacking là không phẩy tám sáu ba tám bốn không. Hiệu số rất nhỏ và khoảng tin cậy chứa số không, nên chưa có bằng chứng để kết luận Stacking vượt trội về điểm tổng hợp. Nhưng Stacking giảm False Positive từ mười nghìn không trăm lẻ ba xuống chín nghìn tám trăm sáu mươi mốt: ít hơn một trăm bốn mươi hai trường hợp. Đổi lại False Negative tăng từ bảy trăm ba mươi bốn lên tám trăm năm mươi hai: thêm một trăm mười tám trường hợp. Điều này cho thấy ít cảnh báo hơn không nhất thiết đồng nghĩa với khả năng phát hiện tấn công tốt hơn.",
+      "rf_f1": 0.863343,
+      "stack_f1": 0.86384,
+      "rf_fp": 10003,
+      "stack_fp": 9861,
+      "rf_fn": 734,
+      "stack_fn": 852,
+      "source": "V7: Bảng 4.1, 4.2; Hình 4.1, 4.2"
+    },
+    {
+      "n": 7,
+      "duration": 43,
+      "type": "p21design",
+      "bg": "cream",
+      "eyebrow": "05 / WHY P21?",
+      "title": "ĐỐI CHỨNG\nCÔNG BẰNG HƠN.",
+      "subtitle": "5 FIT seed × 5 nhánh · 1 validation chung",
+      "voice": "Phần đánh giá lịch sử còn hai hạn chế. Danh sách mười bảy đặc trưng đã được chọn trước development cross-validation; và Random Forest mười bảy với bốn mươi hai đặc trưng không chỉ khác đầu vào mà còn khác siêu tham số. Nhóm vì thế bổ sung P21 để kiểm soát các yếu tố này. P21 chỉ dùng dữ liệu TRAIN, tạo năm tập FIT, mỗi tập sáu mươi nghìn dòng, để kiểm tra năm cấu hình trên cùng một validation ba mươi lăm nghìn không trăm sáu mươi chín dòng. Đó là thí nghiệm nội bộ hậu nghiệm, không phải năm tập TEST độc lập.",
+      "fit": 60000,
+      "val": 35069,
+      "seeds": 5,
+      "arms": 5,
+      "source": "V7: mục 3.2, 3.6; Bảng 3.2"
+    },
+    {
+      "n": 8,
+      "duration": 68,
+      "type": "p21results",
+      "bg": "white",
+      "eyebrow": "06 / CONTROLLED EVIDENCE",
+      "title": "CHẤT LƯỢNG.\nCHI PHÍ. SAI SỐ.",
+      "subtitle": "Kết quả P21 · internal validation chung",
+      "voice": "Kết quả P21 tiếp tục cho thấy Stacking không tự động thắng Random Forest. Macro-F1 trung bình của RF42-Lite là không phẩy chín bốn năm hai hai không, còn Stacking-Lite là không phẩy chín bốn bốn bảy ba một. Khi giữ siêu tham số Random Forest tương đồng, phiên bản mười bảy đặc trưng đạt không phẩy chín ba sáu bảy năm một, thấp hơn bản bốn mươi hai. Riêng thời gian fit, bản mười bảy đặc trưng nhanh hơn, khoảng tám mươi lăm giây so với hai trăm bốn mươi mốt giây. Nhưng cộng khoảng hai trăm hai mươi lăm giây để chọn lại đặc trưng, tổng chi phí các công đoạn đo được là ba trăm mười giây. Các can thiệp cân bằng lớp làm giảm báo động giả nhưng tăng tỷ lệ bỏ sót tấn công. Vì vậy, phải xét cả chất lượng, thời gian và hướng dịch chuyển sai số.",
+      "rf42": 0.94522,
+      "stack": 0.944731,
+      "rf17": 0.936751,
+      "selector": 225.25,
+      "rf17fit": 84.6,
+      "rf42fit": 241.119,
+      "total": 309.85,
+      "source": "V7: Bảng 4.8, 4.9, 4.11; mục 4.9"
+    },
+    {
+      "n": 9,
+      "duration": 19,
+      "type": "conclusion",
+      "bg": "ink",
+      "eyebrow": "07 / CONCLUSION",
+      "title": "KHÔNG CÓ\nMÔ HÌNH TỐT NHẤT\nCHO MỌI LỖI.",
+      "subtitle": "Kiểm chứng có kiểm soát · đánh đổi có giải thích",
+      "voice": "Điều nhóm rút ra là: kết hợp nhiều mô hình chưa chắc giúp phát hiện xâm nhập tốt hơn. Giá trị của nghiên cứu nằm ở việc so sánh có kiểm soát và chỉ rõ mỗi mô hình giảm loại lỗi nào, tăng loại lỗi nào, cùng chi phí phải trả.",
+      "source": "V7: Chương 5, mục 5.4–5.9"
+    },
+    {
+      "n": 10,
+      "duration": 14,
+      "type": "thanks",
+      "bg": "cream",
+      "eyebrow": "08 / NEXT STEP",
+      "title": "XIN CẢM ƠN\nQUÝ THẦY CÔ.",
+      "subtitle": "Dữ liệu mới · temporal/session split · chi phí SOC thực tế",
+      "voice": "Nghiên cứu vẫn giới hạn trong UNSW-NB15 và một validation nội bộ dùng lại cho P21. Hướng tiếp theo là thử dữ liệu mạng độc lập và đo chi phí vận hành thực tế. Nhóm em xin cảm ơn quý thầy cô.",
+      "source": "V7: Chương 5, mục 5.8–5.9"
+    }
+  ]
+}
