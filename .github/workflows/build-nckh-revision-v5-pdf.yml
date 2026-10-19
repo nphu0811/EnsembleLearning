@@ -86,7 +86,7 @@ jobs:
           if len(names)!=21 or names != sorted(names, key=str.casefold):
               raise SystemExit(f"Abbreviations must be exactly 21 rows, alphabetically sorted: {names}")
           main=(root/"main_revision_v5_2026_10_19.tex").read_text(encoding="utf-8")
-          if (r"\\setcounter{secnumdepth}{2}" not in main or
+          if (r"\setcounter{secnumdepth}{2}" not in main or
                   "TS. Lê Ngọc Hiếu" not in main or
                   "TP. Hồ Chí Minh -- 2026" not in main):
               raise SystemExit("V5 heading style/adviser/year-only title-page invariant failed")
