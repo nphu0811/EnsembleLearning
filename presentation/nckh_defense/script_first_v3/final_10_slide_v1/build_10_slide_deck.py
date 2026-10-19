@@ -113,7 +113,9 @@ def make(sl,s):
         box(sl,0,0,2.55,7.5,"red",name="PTIT red margin")
         for a in range(16):
             yy=.4+a*.45;line(sl,.2,yy,2.45,yy,"coral",.5)
-        logo(sl,.62,.7,1.35)
+        # Put the real red PTIT logo on a contrasting LIGHT field, not on brand red.
+        logo(sl,11.68,.48,.85)
+        text(sl,"PTIT",.45,3.50,1.75,.85,39,"cream",True,"White PTIT monogram")
         text(sl,"PTIT / HỌC VIỆN CÔNG NGHỆ\nBƯU CHÍNH VIỄN THÔNG",3.1,.76,9.7,.8,19,"red",True,"Academy header")
         text(sl,s["title"],3.0,1.93,9.7,3.15,57,"ink",True,"Research hero")
         box(sl,3.03,5.29,7.65,.05,"red")
@@ -143,20 +145,34 @@ def make(sl,s):
     elif typ=="pipeline":
         title(sl,s["title"],bg,.6,.93,9.6,49,1.8)
         text(sl,"FIT: OOF ở tầng kết hợp  /  INFERENCE: mô hình đã huấn luyện",.67,2.72,12,.4,17,"gray")
-        centers=[(1.4,4.3),(4.0,4.3),(7.45,4.3),(11.2,4.3)]
-        labels=["FLOW","42 FEATURE","BASE LEARNERS","NORMAL / ATTACK"]
-        widths=[1.65,2.4,2.85,2.45]
-        for i,((x,y),label,w) in enumerate(zip(centers,labels,widths)):
-            cl="ink" if i<3 else "red"
-            box(sl,x-w/2,y-.44,w,.92,cl,rounded=True,name=f"Pipeline {i+1}")
-            text(sl,label,x-w/2+.1,y-.28,w-.2,.65,14,"cream",True,f"Pipeline label {i}")
-            if i:
-                px=centers[i-1][0]+widths[i-1]/2
-                line(sl,px+.12,y,x-w/2-.12,y,"cyan",3,f"Pipe {i}")
-        text(sl,"LOGISTIC REGRESSION  /  DECISION TREE  /  RANDOM FOREST",5.8,5.25,6.3,.6,12,"blue",True)
-        box(sl,6.87,6.05,3.75,.46,"pale",rounded=True)
-        text(sl,"OOF → META LEARNER (LR)",7.08,6.10,3.36,.31,12,"ink",True)
-        for j in range(8):oval(sl,3.06+j*.33,3.4,.10,.10,"cyan",name="Flow point")
+        # "Connected system" rather than four rectangular cards. These rings,
+        # stage labels, branches and connectors are all native PowerPoint shapes.
+        centers=[1.53,4.19,7.64,11.3]
+        radii=[.62,.80,.91,.75]
+        labels=["FLOW","FEATURE\nVECTOR","BASE\nLEARNERS","NORMAL\n/ ATTACK"]
+        for i in range(3):
+            line(sl,centers[i]+radii[i]+.12,4.25,
+                 centers[i+1]-radii[i+1]-.12,4.25,
+                 "cyan" if i!=2 else "red",4,f"Flow connection {i+1}")
+        for i,(x,r,label) in enumerate(zip(centers,radii,labels)):
+            ring="red" if i==3 else ("blue" if i==1 else "cyan")
+            oval(sl,x-r,4.25-r,2*r,2*r,None,ring,name=f"Scientific flow ring {i}")
+            oval(sl,x-r*.83,4.25-r*.83,1.66*r,1.66*r,
+                 "red" if i==3 else "ink",name=f"Scientific flow inner {i}")
+            text(sl,label,x-r+.10,4.25-r*.42,2*r-.20,.76,
+                 13 if i in (1,2) else 14,
+                 "cream",True,f"Scientific stage {i}",
+                 align=PP_ALIGN.CENTER)
+        # Three base learners converging towards the meta-learner:
+        for j,(lab,c) in enumerate([("LR","cyan"),("DT","violet"),("RF","coral")]):
+            xx=6.74+j*.9
+            oval(sl,xx,5.37,.42,.42,c,name="Editable learner node")
+            text(sl,lab,xx+.04,5.45,.35,.22,10,"ink",True,"Learner abbreviation",align=PP_ALIGN.CENTER)
+            line(sl,xx+.20,5.34,7.64,5.24,"gray",.85)
+        box(sl,6.52,6.05,3.3,.50,"pale",rounded=True,name="OOF label")
+        text(sl,"OOF → META LEARNER (LR)",6.70,6.12,3.05,.32,12,"ink",True)
+        for j in range(10):
+            oval(sl,2.62+j*.21,3.33,.075,.075,"cyan",name="Editable flow particle")
     elif typ=="metrics":
         title(sl,s["title"],bg,.70,1.0,10.5,59,1.94)
         box(sl,.72,3.40,5.67,1.72,"cyan",rounded=True)
