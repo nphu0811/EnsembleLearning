@@ -1,0 +1,36 @@
+{
+  "explorer.sortOrder": "foldersFirst",
+  "explorer.compactFolders": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.ipynb_checkpoints": true,
+    "**/.venv": true,
+    "**/.venv-p15-local": true,
+    "**/venv": true,
+    ".github": true,
+    ".research_memory": true,
+    "defense": true,
+    "docs": true,
+    "exports": true,
+    "literature": true,
+    "presentation": true,
+    "proposal": true,
+    "release": true,
+    "report": true,
+    "reproducibility": true,
+    "templates": true,
+    "tests": true,
+    "tools": true,
+    ".gitignore": true,
+    "AGENTS.md": true,
+    "MASTER_PROMPT.md": true,
+    "README_FIRST.md": true
+  },
+  "files.associations": {
+    "*.code-workspace": "jsonc"
+  }
+}
