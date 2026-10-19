@@ -96,8 +96,10 @@ def audit(base):
     assert_true(motion >= 50 and scales >= 10 and effects >= 400,
                 f"Insufficient real in-slide effects: {motion=},{scales=},{effects=}")
     for i, (new, old) in enumerate(zip(slide_rows, original), 1):
-        for field in ("slide", "hidden", "effects", "motion_paths", "scale"):
-            assert_true(new[field] == old[field], f"Slide {i} disagrees with historical stats: {field}")
+        # Native stats JSON stores slide/scene/effects/seconds, not hidden/motion.
+        # Structural hidden/motion checks above use the actual PPTX XML directly.
+        assert_true(new["slide"] == old["slide"] and new["effects"] == old["effects"],
+                    f"Slide {i} effect count differs from author metadata")
 
     timeline = json.loads((base / "timeline.json").read_text(encoding="utf-8"))
     assert_true(len(timeline) == 17, "timeline must have 17 main slides")
