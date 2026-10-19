@@ -1,5 +1,7 @@
 # Ensemble Learning for Network Intrusion Detection
 
+> **Mở dự án gọn như lúc đầu:** [Bản đồ thư mục tiếng Việt](00_BAN_DO_DU_AN.md) · [VS Code — 5 thư mục chính](NCKH_GON.code-workspace) · [VS Code — tất cả thư mục phân loại](NCKH_DAY_DU.code-workspace). Đây chỉ là thay đổi Explorer; **không đổi đường dẫn dữ liệu/model/results/code train**.
+
 ## Dùng file nào? — Tên rõ nghĩa, không cần nhớ mã Phase
 
 - **Báo cáo NCKH đã được người dùng duyệt về nội dung:** [PDF V7, 49 trang](presentation/nckh_defense/creative_rebuild_v2/Bao_cao_NCKH_EnsembleLearning_REVISION_V7.pdf). [Nguồn XeLaTeX và log biên tập](presentation/nckh_defense/creative_rebuild_v2/); bản V6 và các PDF phiên bản trước được giữ để đối chiếu.
