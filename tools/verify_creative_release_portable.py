@@ -148,9 +148,39 @@ def audit(base):
         assert_true(m is not None, f"Invalid SHA manifest row: {line[:100]}")
         expected[m.group(2)] = m.group(1)
     assert_true(len(expected) >= 200, "SHA manifest unexpectedly short")
-    mismatches = [name for name, sha in expected.items()
-                  if not (base / name).is_file() or digest(base / name) != sha]
-    assert_true(not mismatches, f"Release manifest mismatch: {mismatches[:7]}")
+    # The author generated the manifest on Windows. Git normalizes many
+    # tracked UTF-8 text files CRLF -> LF when committing. The ZIP preserves
+    # the author's original bytes, so verify EVERY ZIP member against its
+    # original digest. For a Git working tree, permit only reversible CRLF
+    # normalization on textual files. Binary files must match byte-for-byte.
+    with zipfile.ZipFile(base / files["delivery_zip"]) as z:
+        zip_fails = [name for name, sha in expected.items()
+                     if name not in z.namelist() or
+                     hashlib.sha256(z.read(name)).hexdigest() != sha]
+    assert_true(not zip_fails, f"Delivery ZIP original bytes/hash mismatch: {zip_fails[:7]}")
+    binary_exts = {".pptx", ".mp4", ".pdf", ".zip", ".png",
+                   ".jpg", ".jpeg", ".mp3", ".wav", ".svgz"}
+    missing, binary_fails, unexpected_text_changes, git_lf_files = [], [], [], 0
+    for name, sha in expected.items():
+        local = base / name
+        if not local.is_file():
+            missing.append(name)
+            continue
+        b = local.read_bytes()
+        if hashlib.sha256(b).hexdigest() == sha:
+            continue
+        if local.suffix.lower() in binary_exts:
+            binary_fails.append(name)
+            continue
+        # LF->CRLF is the only allowed conversion for a checked-out text.
+        if b"\r" not in b and hashlib.sha256(b.replace(b"\n", b"\r\n")).hexdigest() == sha:
+            git_lf_files += 1
+        else:
+            unexpected_text_changes.append(name)
+    assert_true(not missing, f"Missing Git checkout artifact: {missing[:7]}")
+    assert_true(not binary_fails, f"Binary artifact changed: {binary_fails[:7]}")
+    assert_true(not unexpected_text_changes,
+                f"Text differs beyond Git CRLF normalization: {unexpected_text_changes[:7]}")
     return {
         "status": "PASS_BINARY_TECHNICAL_AUDIT",
         "commit_artifact_source": str(base),
@@ -165,6 +195,8 @@ def audit(base):
         "mp4_audio_present": True,
         "pdf_pages": reports,
         "sha_manifest_entries": len(expected),
+        "manifest_zip_original_bytes_verified": True,
+        "git_text_files_with_lf_normalization": git_lf_files,
         "delivery_zip_crc_pass": True,
         "latex_source_zip_crc_pass": True,
         "human_audio_pronunciation_verified": False,
