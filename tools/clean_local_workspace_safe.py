@@ -40,14 +40,25 @@ def find_candidates(root, tracked):
                        and not v.lower().startswith((".venv", "venv", "_runtime"))]
             if folder.name not in CACHES:
                 continue
+            # Walk only inside this specific cache directory, including its
+            # internal v/cache hierarchy. Never follow symlinks or descend
+            # through protected path names, and skip Git-tracked members.
             dirs.clear()
-            for name in files:
-                f = folder / name
-                if f.is_symlink() or not f.is_file():
-                    continue
-                rel = f.relative_to(root).as_posix()
-                if rel not in tracked:
-                    out.append((f, f.stat().st_size))
+            for cache_folder, cache_subdirs, cache_files in os.walk(
+                folder, followlinks=False
+            ):
+                parent = Path(cache_folder)
+                cache_subdirs[:] = [
+                    x for x in cache_subdirs if not (parent / x).is_symlink()
+                    and x not in PROTECT
+                ]
+                for name in cache_files:
+                    f = parent / name
+                    if f.is_symlink() or not f.is_file():
+                        continue
+                    rel = f.relative_to(root).as_posix()
+                    if rel not in tracked:
+                        out.append((f, f.stat().st_size))
     return sorted(out, key=lambda item: str(item[0]))
 
 
