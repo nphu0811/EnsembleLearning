@@ -2,7 +2,7 @@
   "status": "PASS_VISUAL_RENDER_10",
   "actual_slide_count": 10,
   "contact_sheet": "contact_sheet_10_slides.jpg",
-  "source_pptx_sha256": "32739830bf8ac33333ab77c34fe02733732b55e58f211698f81805c8bdf99b3c",
+  "source_pptx_sha256": "5b2032223def84cd7f96c547d3eb9aec153605141efb175aed00b0c8e9dfe96c",
   "human_review_of_all_layouts": "pending",
   "notes": "Rendered from committed slide PDF, not generated image mockups"
 }
