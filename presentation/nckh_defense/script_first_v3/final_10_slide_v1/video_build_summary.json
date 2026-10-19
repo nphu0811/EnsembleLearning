@@ -1,0 +1,16 @@
+{
+  "status": "PASS_6MIN_MOTION_PREVIEW",
+  "video": "NCKH_Ensemble_IDS_10_Slides_Preview.mp4",
+  "seconds": 360.0,
+  "scenes": 10,
+  "source": "Editable ten-slide PowerPoint",
+  "motion": "Animated tracking particles, network flow, charts, reveal bars, crossfades",
+  "fps": 30,
+  "frame_source_fps": 15,
+  "resolution": "1920x1080",
+  "narration": "offline espeak-ng rough Vietnamese training voice",
+  "tts_issues": [],
+  "human_narration_QA": false,
+  "powerpoint_native_animations_in_mp4": "Not rendered; video overlays mimic intended motion",
+  "scientific_claims_in_video": "Match locked deck_plan.json and PPTX"
+}

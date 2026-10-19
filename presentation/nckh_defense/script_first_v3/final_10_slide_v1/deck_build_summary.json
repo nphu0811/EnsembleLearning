@@ -1,0 +1,11 @@
+{
+  "status": "CREATED",
+  "slide_count": 10,
+  "duration_seconds": 360,
+  "source": "V7",
+  "pptx": "NCKH_Ensemble_IDS_10_Slides_Final.pptx",
+  "ptit_logo": "/home/runner/work/EnsembleLearning/EnsembleLearning/presentation/nckh_defense/creative_rebuild_v2/report_v7/source/assets/Logo_PTIT_University.png",
+  "native_slide_timings": 10,
+  "native_transitions": "fade+object-continuity visuals",
+  "animation_notice": "Retargeted verified creative native PowerPoint animation to accent dots, not scientific numbers"
+}
