@@ -1,0 +1,489 @@
+{
+  "project": "NCKH Ensemble IDS / full-content V7 defense",
+  "source": "Humanized report V7",
+  "presentation_seconds": 840,
+  "presentation_language": "vi-VN",
+  "assets": {
+    "logo": "presentation/nckh_defense/creative_rebuild_v2/report_v7/source/assets/Logo_PTIT_University.png"
+  },
+  "scenes": [
+    {
+      "n": 1,
+      "duration": 12,
+      "type": "cover",
+      "bg": "cream",
+      "eyebrow": "HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG",
+      "title": "ENSEMBLE\nLEARNING\n/ NETWORK IDS",
+      "subtitle": "Nghiên cứu Ensemble Learning cho bài toán phát hiện xâm nhập mạng",
+      "voice": "Kính chào quý thầy cô. Nhóm em xin trình bày đề tài nghiên cứu Ensemble Learning cho bài toán phát hiện xâm nhập mạng, thực nghiệm trên bộ dữ liệu UNSW-NB15.",
+      "source": "PDF V7: trang bìa"
+    },
+    {
+      "n": 2,
+      "duration": 23,
+      "type": "hook",
+      "bg": "ink",
+      "eyebrow": "CÂU HỎI NGHIÊN CỨU",
+      "title": "ÍT CẢNH BÁO.\nAN TOÀN HƠN?",
+      "subtitle": "Giảm báo động giả có đồng nghĩa giảm tấn công bị bỏ sót?",
+      "voice": "Nếu hệ thống phát hiện xâm nhập tạo ra ít cảnh báo hơn, liệu chúng ta đã an toàn hơn chưa? Chưa chắc. Mô hình có thể giảm báo động giả, nhưng đổi lại bỏ sót thêm lưu lượng tấn công. Đó là câu hỏi mở đầu nghiên cứu của nhóm.",
+      "source": "V7: Chương 1, mục 1.1.2"
+    },
+    {
+      "n": 3,
+      "duration": 40,
+      "type": "data",
+      "bg": "cream",
+      "eyebrow": "01 / PROBLEM & DATA",
+      "title": "MỘT BỘ DỮ LIỆU.\nHAI NHÃN.",
+      "subtitle": "UNSW-NB15 · Normal / Attack",
+      "voice": "Nhóm nghiên cứu bài toán phân loại nhị phân trên UNSW-NB15. Mỗi dòng lưu lượng được dự đoán là Normal hoặc Attack. Bộ dữ liệu có một trăm bảy mươi lăm nghìn ba trăm bốn mươi mốt dòng huấn luyện và tám mươi hai nghìn ba trăm ba mươi hai dòng kiểm thử chính thức. Sau khi loại các cột định danh và nhãn, nhóm sử dụng bốn mươi hai đặc trưng dự đoán. Mục tiêu không chỉ là Accuracy cao, mà là hiểu các kiểu sai của mô hình.",
+      "train": 175341,
+      "test": 82332,
+      "features": 42,
+      "source": "V7: Bảng 2.1; mục 3.1"
+    },
+    {
+      "n": 4,
+      "duration": 40,
+      "type": "full_topic",
+      "bg": "white",
+      "eyebrow": "02 / DATA QUALITY AUDIT",
+      "title": "KIỂM TRA DỮ LIỆU\nTRƯỚC HUẤN LUYỆN",
+      "subtitle": "Audit: tính hợp lệ, trùng lặp và tính nhất quán của nhãn",
+      "voice": "Trước khi huấn luyện, nhóm thực hiện data audit để kiểm tra giá trị thiếu, vô hạn, nhãn và vector đặc trưng trùng lặp. Các vector giống nhau chưa chắc là cùng một sự kiện, đặc biệt khi nhãn khác nhau. Vì vậy nhóm ghi nhận và phân tích chứ không xóa hàng loạt.",
+      "source": "PDF V7: Chương 2, mục 2.3–2.5; src/data/audit_unsw-nb15.py",
+      "cards": [
+        {
+          "label": "NULL / INF",
+          "value": "RÀ SOÁT",
+          "detail": "Kiểm tra thiếu, vô hạn, kiểu dữ liệu và miền giá trị."
+        },
+        {
+          "label": "DUPLICATES",
+          "value": "ĐỐI CHIẾU",
+          "detail": "Kiểm tra trùng vector và xung đột nhãn."
+        },
+        {
+          "label": "NO BLANKET DELETE",
+          "value": "BẢO TOÀN",
+          "detail": "Không xóa toàn bộ các dòng chỉ vì cùng giá trị predictor."
+        }
+      ],
+      "takeaway": "Audit tìm vấn đề dữ liệu; không tự động coi mọi vector trùng là lỗi."
+    },
+    {
+      "n": 5,
+      "duration": 40,
+      "type": "full_topic",
+      "bg": "cream",
+      "eyebrow": "02 / EDA & CLASS DISTRIBUTION",
+      "title": "HIỂU PHÂN BỐ\nTRƯỚC KHI FIT",
+      "subtitle": "EDA mô tả mức lệch nhãn và các nhóm Attack",
+      "voice": "EDA trên bộ dữ liệu cho thấy TRAIN có năm mươi sáu nghìn Normal và một trăm mười chín nghìn ba trăm bốn mươi mốt Attack. Phân bố TEST khác TRAIN, và các họ tấn công cũng chênh lệch mạnh. Nhóm sử dụng mô tả này để phân tích, không lấy nhãn TEST để điều chỉnh mô hình.",
+      "source": "PDF V7: Bảng 2.1, Hình 2.1, mục 2.2; src/data/eda_unsw-nb15.py",
+      "cards": [
+        {
+          "label": "TRAIN",
+          "value": "56.000 / 119.341",
+          "detail": "Normal / Attack. Attack chiếm 68,06% TRAIN."
+        },
+        {
+          "label": "TEST",
+          "value": "37.000 / 45.332",
+          "detail": "Normal / Attack. TEST chỉ phục vụ đánh giá cuối."
+        },
+        {
+          "label": "ATTACK FAMILIES",
+          "value": "9 NHÓM",
+          "detail": "Các họ Attack rất khác nhau về số lượng; không dùng làm predictor."
+        }
+      ],
+      "takeaway": "Attack là lớp đông ở TRAIN; không được mặc định Attack là thiểu số."
+    },
+    {
+      "n": 6,
+      "duration": 40,
+      "type": "full_topic",
+      "bg": "ink",
+      "eyebrow": "02 / OVERLAP & LEAKAGE RISKS",
+      "title": "VECTOR TRÙNG\nKHÔNG PHẢI TEST MỚI",
+      "subtitle": "Kiểm tra trùng lặp chính xác trên 42 predictor",
+      "voice": "Kiểm tra overlap xác định tám nghìn năm trăm bốn mươi mốt dòng TEST có vector 42 predictor trùng chính xác với ít nhất một vector TRAIN. Khi lọc chúng, còn bảy mươi ba nghìn bảy trăm chín mươi mốt dòng cho phân tích độ nhạy. Điều này chưa chứng minh độc lập theo phiên hay thời gian.",
+      "source": "PDF V7: mục 2.5, Bảng 2.3; src/data/audit_unsw-nb15_overlap.py",
+      "cards": [
+        {
+          "label": "EXACT OVERLAP",
+          "value": "8.541",
+          "detail": "Dòng TEST có vector giống ít nhất một vector TRAIN."
+        },
+        {
+          "label": "NOVEL-VECTOR VIEW",
+          "value": "73.791",
+          "detail": "Dòng TEST còn lại sau loại exact-overlap để phân tích độ nhạy."
+        },
+        {
+          "label": "LIMIT",
+          "value": "KHÔNG ĐỘC LẬP",
+          "detail": "Không chứng minh độc lập theo session, host hay thời gian."
+        }
+      ],
+      "takeaway": "Đây là subset của official TEST, không phải một benchmark độc lập."
+    },
+    {
+      "n": 7,
+      "duration": 40,
+      "type": "full_topic",
+      "bg": "white",
+      "eyebrow": "02 / FEATURE ENGINEERING",
+      "title": "TIỀN XỬ LÝ\nTRONG PIPELINE",
+      "subtitle": "Fit biến đổi trên TRAIN hoặc fold FIT — không học từ TEST",
+      "voice": "Tiền xử lý bắt đầu bằng loại id, nhãn label và attack_cat khỏi biến dự đoán. Ba trường phân loại proto, service và state được mã hóa One-Hot với xử lý giá trị mới. Các biến số được chuẩn hóa trong pipeline Logistic Regression; Random Forest và Decision Tree dùng phép xử lý phù hợp. Các phép biến đổi có tham số đều fit trên dữ liệu huấn luyện tương ứng.",
+      "source": "PDF V7: mục 3.1–3.2; run_unsw_phase9_final_holdout.py, build_preprocessor()",
+      "cards": [
+        {
+          "label": "INPUT",
+          "value": "42 BIẾN",
+          "detail": "Loại id, label, attack_cat khỏi X của bài toán nhị phân."
+        },
+        {
+          "label": "CATEGORICAL",
+          "value": "ONE-HOT",
+          "detail": "proto, service, state; handle_unknown=ignore."
+        },
+        {
+          "label": "NUMERIC",
+          "value": "THEO MÔ HÌNH",
+          "detail": "LR chuẩn hóa; RF và DT có nhánh passthrough phù hợp."
+        }
+      ],
+      "takeaway": "Đặt encoder/scaler trong pipeline để học đúng trên dữ liệu fit."
+    },
+    {
+      "n": 8,
+      "duration": 40,
+      "type": "full_topic",
+      "bg": "cream",
+      "eyebrow": "03 / FEATURE SELECTION",
+      "title": "TỪ 42 XUỐNG\n17 ĐẶC TRƯNG",
+      "subtitle": "Filter, embedded và đánh giá độ ổn định — không chỉ nhìn điểm số",
+      "voice": "Nhóm thử các nhóm phương pháp chọn đặc trưng gồm Mutual Information, Logistic Regression L1 và ExtraTrees, kết hợp kiểm tra stability. Track 17 biến được đem so với 42 biến gốc. Tuy nhiên tập stable17 lịch sử được chọn trên toàn TRAIN trước development CV nên có nguy cơ điểm cross-validation lạc quan. P21 sẽ kiểm tra lại theo FIT-only.",
+      "source": "PDF V7: mục 3.2, 4.8.2; select_unsw_features_stage1/2.py",
+      "cards": [
+        {
+          "label": "FILTER",
+          "value": "MI",
+          "detail": "Mutual Information và loại bớt dư thừa tương quan."
+        },
+        {
+          "label": "EMBEDDED",
+          "value": "L1",
+          "detail": "Logistic Regression regularization để xếp hạng biến."
+        },
+        {
+          "label": "TREE",
+          "value": "EXTRATREES",
+          "detail": "Tổng hợp thứ hạng qua seed; đối chiếu RFECV riêng."
+        }
+      ],
+      "takeaway": "Stable17 lịch sử chọn trước CV: có nguy cơ selection optimism; P21 làm FIT-only."
+    },
+    {
+      "n": 9,
+      "duration": 50,
+      "type": "pipeline",
+      "bg": "white",
+      "eyebrow": "02 / HOW WE TESTED",
+      "title": "TỪ FLOW\nĐẾN QUYẾT ĐỊNH",
+      "subtitle": "RF-42 · RF-17 · Stacking-42",
+      "voice": "Nhóm giữ Random Forest với bốn mươi hai đặc trưng làm đối chứng mạnh. Bên cạnh Random Forest mười bảy đặc trưng, nhóm khảo sát cơ chế Stacking với Logistic Regression, Decision Tree và Random Forest ở tầng cơ sở. Khi huấn luyện Stacking, các dự đoán ngoài fold được dùng để tạo dữ liệu cho Logistic Regression tầng kết hợp. Khi dự đoán, dữ liệu đi qua các mô hình đã huấn luyện để tạo quyết định Normal hoặc Attack. Việc đánh giá trên TEST chính thức chỉ thực hiện với những cấu hình đã khóa.",
+      "source": "V7: mục 3.2–3.4; Bảng 3.1"
+    },
+    {
+      "n": 10,
+      "duration": 40,
+      "type": "full_topic",
+      "bg": "ink",
+      "eyebrow": "03 / BASELINE & ENSEMBLE",
+      "title": "ĐỐI CHỨNG MẠNH\nTRƯỚC KHI KẾT HỢP",
+      "subtitle": "LR · DT · RF · Voting · Stacking",
+      "voice": "Nhóm chọn Logistic Regression làm mốc tuyến tính, Decision Tree làm mô hình cây đơn và Random Forest làm đối chứng ensemble mạnh. Voting và AdaBoost được khảo sát trong giai đoạn phát triển. Cuối cùng nhóm khóa ba pipeline RF42, RF17 và Stacking42 để kiểm thử chính thức.",
+      "source": "PDF V7: mục 3.3–3.4, 4.7; run_unsw_baseline_development.py",
+      "cards": [
+        {
+          "label": "LINEAR",
+          "value": "LR",
+          "detail": "Logistic Regression: mốc tuyến tính, dùng scaling."
+        },
+        {
+          "label": "TREE",
+          "value": "DT",
+          "detail": "Decision Tree: quy tắc phi tuyến, dễ quan sát."
+        },
+        {
+          "label": "BAGGING",
+          "value": "RF",
+          "detail": "Random Forest vốn đã là ensemble; baseline RF42."
+        }
+      ],
+      "takeaway": "Voting/AdaBoost khảo sát ở development; final TEST dùng RF42, RF17, Stacking42."
+    },
+    {
+      "n": 11,
+      "duration": 40,
+      "type": "full_topic",
+      "bg": "white",
+      "eyebrow": "03 / CROSS VALIDATION & OOF",
+      "title": "OOF GIÚP TẦNG META\nHỌC ĐÚNG PHẠM VI",
+      "subtitle": "Phân biệt phát triển mô hình, tuning và TEST cuối",
+      "voice": "Trong development, nhóm dùng dự đoán out-of-fold để đánh giá và huấn luyện tầng meta của Stacking. Base learner tạo xác suất trên phần chưa dùng fit trong từng fold; meta Logistic Regression học từ các xác suất đó. Sau quá trình tuning, ba cấu hình cuối được khóa trước khi đánh giá TEST tại ngưỡng 0,5. OOF không đồng nghĩa toàn bộ lựa chọn mô hình đã fully nested.",
+      "source": "PDF V7: mục 3.4, Bảng 3.1, mục 4.7; run_unsw_ensemble_phase7_2.py",
+      "cards": [
+        {
+          "label": "DEVELOPMENT",
+          "value": "3-FOLD",
+          "detail": "Outer StratifiedKFold; seed 42."
+        },
+        {
+          "label": "STACKING",
+          "value": "META LR",
+          "detail": "Base LR / DT / RF tạo OOF từ inner 3-fold; seed 137."
+        },
+        {
+          "label": "FINAL TEST",
+          "value": "0,5",
+          "detail": "Đóng băng cấu hình và ngưỡng trước official TEST."
+        }
+      ],
+      "takeaway": "OOF giảm học từ dự đoán in-sample; không làm toàn pipeline fully-nested."
+    },
+    {
+      "n": 12,
+      "duration": 30,
+      "type": "metrics",
+      "bg": "ink",
+      "eyebrow": "03 / WHAT MATTERS",
+      "title": "ĐÚNG NHIỀU\nCHƯA ĐỦ.",
+      "subtitle": "Hai sai lầm không có cùng hậu quả",
+      "voice": "Để đọc kết quả IDS, cần phân biệt hai loại lỗi. False Positive là lưu lượng bình thường bị báo nhầm thành tấn công, gây thêm công kiểm tra. False Negative là tấn công bị nhận thành bình thường, có thể khiến sự cố bị bỏ qua. Bởi vậy nhóm xem đồng thời Macro-F1, MCC, tỷ lệ báo động giả FPR và tỷ lệ bỏ sót FNR.",
+      "source": "V7: mục 1.2.1, 1.2.6; công thức 4.1"
+    },
+    {
+      "n": 13,
+      "duration": 61,
+      "type": "historical",
+      "bg": "coral",
+      "eyebrow": "04 / OFFICIAL TEST · 82.332 MẪU",
+      "title": "GIẢM 142 FP.\nTĂNG 118 FN.",
+      "subtitle": "Stacking-42 so với RF-42 · cùng một TEST",
+      "voice": "Đây là kết quả trên cùng tám mươi hai nghìn ba trăm ba mươi hai dòng TEST chính thức. Macro-F1 của Random Forest bốn mươi hai đặc trưng là không phẩy tám sáu ba ba bốn ba; Stacking là không phẩy tám sáu ba tám bốn không. Hiệu số rất nhỏ và khoảng tin cậy chứa số không, nên chưa có bằng chứng để kết luận Stacking vượt trội về điểm tổng hợp. Nhưng Stacking giảm False Positive từ mười nghìn không trăm lẻ ba xuống chín nghìn tám trăm sáu mươi mốt: ít hơn một trăm bốn mươi hai trường hợp. Đổi lại False Negative tăng từ bảy trăm ba mươi bốn lên tám trăm năm mươi hai: thêm một trăm mười tám trường hợp. Điều này cho thấy ít cảnh báo hơn không nhất thiết đồng nghĩa với khả năng phát hiện tấn công tốt hơn.",
+      "rf_f1": 0.863343,
+      "stack_f1": 0.86384,
+      "rf_fp": 10003,
+      "stack_fp": 9861,
+      "rf_fn": 734,
+      "stack_fn": 852,
+      "source": "V7: Bảng 4.1, 4.2; Hình 4.1, 4.2"
+    },
+    {
+      "n": 14,
+      "duration": 40,
+      "type": "full_topic",
+      "bg": "white",
+      "eyebrow": "04 / STATISTICAL EVIDENCE",
+      "title": "CHÊNH LỆCH NHỎ\nCẦN KIỂM ĐỊNH",
+      "subtitle": "Stacking42 − RF42 trên cùng official TEST lịch sử",
+      "voice": "Hiệu số Macro-F1 của Stacking so với RF rất nhỏ, khoảng cộng không phẩy không không không bốn chín bảy. Khoảng tin cậy paired bootstrap chín mươi lăm phần trăm chứa số không. McNemar sau hiệu chỉnh Holm cũng không chỉ ra khác biệt rõ về đúng sai tổng thể. Đây không phải bằng chứng hai mô hình tương đương và cũng không đo biến thiên huấn luyện.",
+      "source": "PDF V7: Bảng 4.2, mục 4.3; run_unsw_phase10_statistics.py",
+      "cards": [
+        {
+          "label": "Δ MACRO-F1",
+          "value": "+0,000497",
+          "detail": "Chỉ nhỉnh hơn rất ít trên 82.332 dòng TEST."
+        },
+        {
+          "label": "BOOTSTRAP 95%",
+          "value": "CHỨA 0",
+          "detail": "CI [−0,000312; +0,001309] qua 10.000 lần lấy mẫu cặp."
+        },
+        {
+          "label": "MCNEMAR / HOLM",
+          "value": "0,468377",
+          "detail": "p sau chỉnh Holm cho tính đúng/sai tổng thể."
+        }
+      ],
+      "takeaway": "Chưa chứng minh Stacking vượt trội; cũng KHÔNG chứng minh hai mô hình tương đương."
+    },
+    {
+      "n": 15,
+      "duration": 40,
+      "type": "full_topic",
+      "bg": "cream",
+      "eyebrow": "04 / ATTACK FAMILY ERROR ANALYSIS",
+      "title": "FN KHÔNG PHÂN BỔ\nĐỒNG ĐỀU",
+      "subtitle": "Phân nhóm Attack chỉ sau dự đoán nhị phân",
+      "voice": "Nhóm còn phân tích False Negative theo từng họ Attack. Chẳng hạn trên Fuzzers, Stacking có bảy trăm năm mươi bốn lần bỏ sót, nhiều hơn Random Forest là sáu trăm hai mươi mốt. Nhưng với Generic, Stacking chỉ bỏ sót mười bốn so với năm mươi bảy ở RF42. Đây là phân tích hậu nghiệm lỗi, không phải bài toán phân loại đa lớp.",
+      "source": "PDF V7: mục 4.5, Bảng 4.4–4.5; phase14_step1_error_transitions.py",
+      "cards": [
+        {
+          "label": "FUZZERS / 6.062",
+          "value": "621 → 754",
+          "detail": "FN: RF42 → Stacking42; Stacking bỏ sót nhiều hơn."
+        },
+        {
+          "label": "GENERIC",
+          "value": "57 → 14",
+          "detail": "FN: RF42 → Stacking42; Stacking bỏ sót ít hơn."
+        },
+        {
+          "label": "POST-HOC",
+          "value": "ATTACK_CAT",
+          "detail": "Chỉ dùng để mô tả lỗi, không làm predictor."
+        }
+      ],
+      "takeaway": "Đánh đổi giữa các họ tấn công khác nhau; chưa thể suy ra năng lực đa lớp."
+    },
+    {
+      "n": 16,
+      "duration": 43,
+      "type": "p21design",
+      "bg": "cream",
+      "eyebrow": "05 / WHY P21?",
+      "title": "ĐỐI CHỨNG\nCÔNG BẰNG HƠN.",
+      "subtitle": "5 FIT seed × 5 nhánh · 1 validation chung",
+      "voice": "Phần đánh giá lịch sử còn hai hạn chế. Danh sách mười bảy đặc trưng đã được chọn trước development cross-validation; và Random Forest mười bảy với bốn mươi hai đặc trưng không chỉ khác đầu vào mà còn khác siêu tham số. Nhóm vì thế bổ sung P21 để kiểm soát các yếu tố này. P21 chỉ dùng dữ liệu TRAIN, tạo năm tập FIT, mỗi tập sáu mươi nghìn dòng, để kiểm tra năm cấu hình trên cùng một validation ba mươi lăm nghìn không trăm sáu mươi chín dòng. Đó là thí nghiệm nội bộ hậu nghiệm, không phải năm tập TEST độc lập.",
+      "fit": 60000,
+      "val": 35069,
+      "seeds": 5,
+      "arms": 5,
+      "source": "V7: mục 3.2, 3.6; Bảng 3.2"
+    },
+    {
+      "n": 17,
+      "duration": 40,
+      "type": "full_topic",
+      "bg": "cream",
+      "eyebrow": "04 / P21 FIVE CONTROLLED ARMS",
+      "title": "NĂM CẤU HÌNH\nTRÊN CÙNG VALIDATION",
+      "subtitle": "P21: 5 seed × 60.000 FIT / seed · chung 35.069 validation",
+      "voice": "P21 so sánh năm nhánh. A0 là RF42-Lite cơ sở, A1 là RF17-Lite với chọn biến trên FIT; A2 dùng class weight, A3 oversampling lớp Normal và A4 là Stacking-Lite. Mỗi seed dùng cùng sáu mươi nghìn dòng FIT cho các nhánh và cả năm seed chia sẻ một validation ba mươi lăm nghìn không trăm sáu mươi chín dòng.",
+      "source": "PDF V7: mục 3.6, Bảng 3.2; p21_science_worker.py, p21_science_core.py",
+      "cards": [
+        {
+          "label": "A0 / A1",
+          "value": "RF42 / RF17",
+          "detail": "A1 chọn 17 biến trong FIT; RF hyperparameter matched."
+        },
+        {
+          "label": "A2 / A3",
+          "value": "BAL / OVER",
+          "detail": "Class weighting và oversampling Normal chỉ ở FIT."
+        },
+        {
+          "label": "A4",
+          "value": "STACK LITE",
+          "detail": "Base LR / DT / RF + meta LR, grouped inner CV."
+        }
+      ],
+      "takeaway": "Cùng validation TRAIN-derived, không phải năm TEST ngoài độc lập."
+    },
+    {
+      "n": 18,
+      "duration": 68,
+      "type": "p21results",
+      "bg": "white",
+      "eyebrow": "06 / CONTROLLED EVIDENCE",
+      "title": "CHẤT LƯỢNG.\nCHI PHÍ. SAI SỐ.",
+      "subtitle": "Kết quả P21 · internal validation chung",
+      "voice": "Kết quả P21 tiếp tục cho thấy Stacking không tự động thắng Random Forest. Macro-F1 trung bình của RF42-Lite là không phẩy chín bốn năm hai hai không, còn Stacking-Lite là không phẩy chín bốn bốn bảy ba một. Khi giữ siêu tham số Random Forest tương đồng, phiên bản mười bảy đặc trưng đạt không phẩy chín ba sáu bảy năm một, thấp hơn bản bốn mươi hai. Riêng thời gian fit, bản mười bảy đặc trưng nhanh hơn, khoảng tám mươi lăm giây so với hai trăm bốn mươi mốt giây. Nhưng cộng khoảng hai trăm hai mươi lăm giây để chọn lại đặc trưng, tổng chi phí các công đoạn đo được là ba trăm mười giây. Các can thiệp cân bằng lớp làm giảm báo động giả nhưng tăng tỷ lệ bỏ sót tấn công. Vì vậy, phải xét cả chất lượng, thời gian và hướng dịch chuyển sai số.",
+      "rf42": 0.94522,
+      "stack": 0.944731,
+      "rf17": 0.936751,
+      "selector": 225.25,
+      "rf17fit": 84.6,
+      "rf42fit": 241.119,
+      "total": 309.85,
+      "source": "V7: Bảng 4.8, 4.9, 4.11; mục 4.9"
+    },
+    {
+      "n": 19,
+      "duration": 40,
+      "type": "full_topic",
+      "bg": "ink",
+      "eyebrow": "04 / IMBALANCE ABLATION",
+      "title": "GIẢM FPR NHƯNG\nTĂNG FNR",
+      "subtitle": "So sánh P21 A2/A3 với RF42-Lite A0 · đơn vị điểm phần trăm",
+      "voice": "Trong P21, cân bằng theo trọng số làm FPR giảm khoảng ba phẩy mười sáu điểm phần trăm nhưng FNR tăng khoảng một phẩy bảy chín điểm. Oversampling lớp Normal cũng giảm FPR và tăng FNR. Vì Normal là lớp thiểu số ở TRAIN, cân bằng không tự động giúp recall của Attack cao hơn.",
+      "source": "PDF V7: Bảng 4.9, mục 4.9.4; p21_rq5_sampling.py",
+      "cards": [
+        {
+          "label": "CLASS WEIGHT",
+          "value": "−3,1643",
+          "detail": "FPR giảm; đồng thời FNR tăng 1,7881 điểm."
+        },
+        {
+          "label": "OVERSAMPLING",
+          "value": "−2,2089",
+          "detail": "FPR giảm; đồng thời FNR tăng 1,1680 điểm."
+        },
+        {
+          "label": "LƯU Ý",
+          "value": "NORMAL",
+          "detail": "Normal mới là minority trong TRAIN; không mặc định giúp Attack."
+        }
+      ],
+      "takeaway": "Cân bằng lớp có đánh đổi; đánh giá đồng thời cảnh báo giả và bỏ sót."
+    },
+    {
+      "n": 20,
+      "duration": 40,
+      "type": "full_topic",
+      "bg": "white",
+      "eyebrow": "05 / COST-AWARE DECISION",
+      "title": "CHỌN MÔ HÌNH THEO\nCHI PHÍ HAI LOẠI LỖI",
+      "subtitle": "Một phân tích giả định — chưa có chi phí SOC thực tế",
+      "voice": "Nhóm nối hai loại lỗi với một mô hình chi phí giả định L bằng FP cộng r nhân FN. Với các dự đoán chính thức đã lưu, ngưỡng hòa vốn giữa Random Forest và Stacking là một phẩy hai không ba bốn. Nếu bỏ sót tấn công đắt hơn báo động giả theo tỷ lệ lớn hơn ngưỡng đó thì RF42 có tổn thất thấp hơn cho đúng hai pipeline này. Đây chưa phải chi phí vận hành thực tế.",
+      "source": "PDF V7: Chương 5, mục 5.1, Bảng 5.2",
+      "cards": [
+        {
+          "label": "LOSS",
+          "value": "FP + r×FN",
+          "detail": "r biểu diễn chi phí FN tương đối so với FP."
+        },
+        {
+          "label": "HÒA VỐN",
+          "value": "r = 1,2034",
+          "detail": "Từ chênh lệch Stacking−RF: −142 + 118r."
+        },
+        {
+          "label": "KHI r > 1,2034",
+          "value": "RF42",
+          "detail": "Tổn thất thấp hơn Stacking42 cho cặp dự đoán cố định."
+        }
+      ],
+      "takeaway": "Ngưỡng là giả định vận hành; không thay thế thử nghiệm chi phí thực tế."
+    },
+    {
+      "n": 21,
+      "duration": 19,
+      "type": "conclusion",
+      "bg": "ink",
+      "eyebrow": "07 / CONCLUSION",
+      "title": "KHÔNG CÓ\nMÔ HÌNH TỐT NHẤT\nCHO MỌI LỖI.",
+      "subtitle": "Kiểm chứng có kiểm soát · đánh đổi có giải thích",
+      "voice": "Điều nhóm rút ra là: kết hợp nhiều mô hình chưa chắc giúp phát hiện xâm nhập tốt hơn. Giá trị của nghiên cứu nằm ở việc so sánh có kiểm soát và chỉ rõ mỗi mô hình giảm loại lỗi nào, tăng loại lỗi nào, cùng chi phí phải trả.",
+      "source": "V7: Chương 5, mục 5.4–5.9"
+    },
+    {
+      "n": 22,
+      "duration": 14,
+      "type": "thanks",
+      "bg": "cream",
+      "eyebrow": "08 / NEXT STEP",
+      "title": "XIN CẢM ƠN\nQUÝ THẦY CÔ.",
+      "subtitle": "Dữ liệu mới · temporal/session split · chi phí SOC thực tế",
+      "voice": "Nghiên cứu vẫn giới hạn trong UNSW-NB15 và một validation nội bộ dùng lại cho P21. Hướng tiếp theo là thử dữ liệu mạng độc lập và đo chi phí vận hành thực tế. Nhóm em xin cảm ơn quý thầy cô.",
+      "source": "V7: Chương 5, mục 5.8–5.9"
+    }
+  ]
+}
