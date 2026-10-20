@@ -1,0 +1,97 @@
+name: Build complete V7 NCKH PowerPoint (same layout)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "presentation/nckh_defense/script_first_v3/final_10_slide_v1/deck_plan_full_v7.json"
+      - "presentation/nckh_defense/script_first_v3/final_10_slide_v1/build_full_v7.py"
+      - ".github/workflows/build-nckh-full-v7.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nckh-full-v7-powerpoint
+  cancel-in-progress: false
+
+jobs:
+  pptx:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install editable PowerPoint and renderer dependencies
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends \
+            libreoffice-impress fonts-liberation poppler-utils
+          python -m pip install --disable-pip-version-check python-pptx==1.0.2 lxml
+
+      - name: Generate only the complete PowerPoint (do not touch research)
+        run: |
+          python3 -X utf8 presentation/nckh_defense/script_first_v3/final_10_slide_v1/build_full_v7.py
+
+      - name: Validate OOXML, text, slide coverage and PDF render
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pptx import Presentation
+          from pathlib import Path
+          from zipfile import ZipFile
+          from lxml import etree
+          import re
+          p=Path("presentation/nckh_defense/script_first_v3/final_10_slide_v1/NCKH_Ensemble_IDS_Full_Content_V7.pptx")
+          prs=Presentation(p)
+          assert len(prs.slides)==22, len(prs.slides)
+          text="\n".join(sh.text for slide in prs.slides for sh in slide.shapes if sh.has_text_frame)
+          for term in ["TIỀN XỬ LÝ","ONE-HOT","MI","DUPLICATES","OOF","FUZZERS",
+                       "BOOTSTRAP 95%","OVERSAMPLING","RF42-LITE","1,2034"]:
+              assert term in text,term
+          with ZipFile(p) as z:
+              assert z.testzip() is None
+              names=[x for x in z.namelist() if re.fullmatch(r"ppt/slides/slide\d+\.xml",x)]
+              assert len(names)==22
+              for name in names:
+                  root=etree.fromstring(z.read(name))
+                  assert len(root.xpath("//*[local-name()='sp']")) >= 10
+                  assert len(root.xpath("//*[local-name()='transition']")) == 1
+                  assert len(root.xpath("//*[local-name()='timing']")) == 0
+          print("PASS 22 editable slides, scientific coverage, no unsafe cloned timing")
+          PY
+          mkdir -p /tmp/nckh_full_v7_render
+          libreoffice -env:UserInstallation=file:///tmp/lo-nckh-full-v7 --headless \
+            --convert-to pdf --outdir /tmp/nckh_full_v7_render \
+            presentation/nckh_defense/script_first_v3/final_10_slide_v1/NCKH_Ensemble_IDS_Full_Content_V7.pptx
+          pdfinfo /tmp/nckh_full_v7_render/NCKH_Ensemble_IDS_Full_Content_V7.pdf | grep -E '^Pages:[[:space:]]+22$'
+
+      - name: Commit just the new editable PPTX
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          PPT="presentation/nckh_defense/script_first_v3/final_10_slide_v1/NCKH_Ensemble_IDS_Full_Content_V7.pptx"
+          git add "$PPT"
+          if git diff --cached --quiet; then
+            echo "PowerPoint already current"
+            exit 0
+          fi
+          git commit -m "presentation: publish complete V7 defense PPTX with preprocessing"
+          branch=$(git symbolic-ref --short HEAD)
+          for attempt in 1 2 3; do
+            if git push origin "HEAD:$branch"; then exit 0; fi
+            git fetch origin "$branch"
+            git rebase "origin/$branch"
+          done
+          exit 1
+
+      - name: Upload reviewed PowerPoint
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: NCKH_Full_Content_V7_PPTX
+          path: presentation/nckh_defense/script_first_v3/final_10_slide_v1/NCKH_Ensemble_IDS_Full_Content_V7.pptx
+          if-no-files-found: warn
